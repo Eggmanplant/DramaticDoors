@@ -16,7 +16,6 @@ import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.DoorBlock;
 import net.minecraft.block.HorizontalFaceBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.PushReaction;
@@ -74,6 +73,15 @@ public class TallDoorBlock extends Block {
     public static final String NAME_BOP_REDWOOD = "tall_bop_redwood_door";
     public static final String NAME_BOP_UMBRAN = "tall_bop_umbran_door";
     public static final String NAME_BOP_WILLOW = "tall_bop_willow_door";
+    
+    //Prehistoric Fauna
+    public static final String NAME_ARAUCARIA = "tall_araucaria_door";
+    public static final String NAME_HEIDIPHYLLUM = "tall_heidiphyllum_door";
+    public static final String NAME_LIRIODENDRITES = "tall_liriodendrites_door";
+    public static final String NAME_METASEQUOIA = "tall_metasequoia_door";
+    public static final String NAME_PROTOJUNIPEROXYLON = "tall_protojuniperoxylon_door";
+    public static final String NAME_PROTOPICEOXYLON = "tall_protopiceoxylon_door";
+    public static final String NAME_ZAMITES = "tall_zamites_door";
     
     //Twilight Forest
     public static final String NAME_CANOPY = "tall_canopy_door";
@@ -162,6 +170,12 @@ public class TallDoorBlock extends Block {
 	        return new String[] {
 	                NAME_BOP_CHERRY, NAME_BOP_DEAD, NAME_BOP_FIR, NAME_BOP_HELLBARK, NAME_BOP_JACARANDA, NAME_BOP_MAGIC,
 	                NAME_BOP_MAHOGANY, NAME_BOP_PALM, NAME_BOP_REDWOOD, NAME_BOP_UMBRAN, NAME_BOP_WILLOW };
+	    case BYG:
+	    	throw new NotImplementedException("Oh the Biomes You'll Go mod is not currently implemented.");
+		case PREHISTORIC_FAUNA:
+	        return new String[] {
+	                NAME_ARAUCARIA, NAME_HEIDIPHYLLUM, NAME_LIRIODENDRITES, NAME_METASEQUOIA,
+	                NAME_PROTOJUNIPEROXYLON, NAME_PROTOPICEOXYLON, NAME_ZAMITES };
 		case TWILIGHT_FOREST:
 	        return new String[] {
 	                NAME_CANOPY, NAME_DARKWOOD, NAME_MANGROVE, NAME_MINEWOOD,
@@ -491,11 +505,10 @@ public class TallDoorBlock extends Block {
     }
 
 	public static boolean isWoodenDoor(BlockState state) {
-		return state.getBlock() instanceof DoorBlock && (state.getMaterial() == Material.WOOD || state.getMaterial() == Material.NETHER_WOOD);
+		return state.getBlock() instanceof TallDoorBlock && (state.getMaterial() == Material.WOOD || state.getMaterial() == Material.NETHER_WOOD);
 	}
-
 	
-	//Quark Compatibility
+	//Double Doors Compatibility
 	public static void tryOpenDoubleDoor(World world, BlockState state, BlockPos pos) {
         if (Compats.DOUBLE_DOORS_INSTALLED) {
             Direction direction = state.getValue(TallDoorBlock.FACING);

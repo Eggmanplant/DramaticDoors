@@ -21,6 +21,12 @@ public class ClientRenderer
         for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.BOP_TALL)) {
             RenderTypeLookup.setRenderLayer(doorBlock, RenderType.cutout());
         }
+        /*for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.BYG_TALL)) {
+            RenderTypeLookup.setRenderLayer(doorBlock, RenderType.cutout());
+        }*/
+        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.PREHISTORIC_FAUNA_TALL)) {
+            RenderTypeLookup.setRenderLayer(doorBlock, RenderType.cutout());
+        }
         for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.TWILIGHT_FOREST_TALL)) {
             RenderTypeLookup.setRenderLayer(doorBlock, RenderType.cutout());
         }
