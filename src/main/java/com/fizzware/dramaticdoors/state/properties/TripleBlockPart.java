@@ -1,13 +1,13 @@
 package com.fizzware.dramaticdoors.state.properties;
 
-import net.minecraft.util.StringRepresentable;
+import net.minecraft.util.StringIdentifiable;
 
-public enum TripleBlockPart implements StringRepresentable {
+public enum TripleBlockPart implements StringIdentifiable {
     UPPER,
     MIDDLE,
     LOWER;
 
-    public String toString() { return this.getSerializedName(); }
+    public String asString() { return this.getSerializedName(); }
 
     public String getSerializedName() {
         return this == UPPER ? "upper" : this == MIDDLE ? "middle" : "lower";
