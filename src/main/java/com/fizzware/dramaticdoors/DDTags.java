@@ -6,7 +6,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-public class DramaticDoorsTags
+public class DDTags
 {
 	public static final TagKey<Block> TALL_DOORS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(DramaticDoors.MOD_ID, "tall_doors"));
 	public static final TagKey<Block> TALL_WOODEN_DOORS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(DramaticDoors.MOD_ID, "tall_wooden_doors"));

@@ -7,10 +7,10 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.apache.commons.lang3.NotImplementedException;
 
-import com.fizzware.dramaticdoors.DramaticDoorsTags;
-import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks.DoorSeries;
+import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.blocks.DDBlocks.DoorSeries;
 import com.fizzware.dramaticdoors.compat.Compats;
-import com.fizzware.dramaticdoors.state.properties.DoorBlockStateProperties;
+import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import com.mojang.blaze3d.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -184,6 +184,15 @@ public class TallDoorBlock extends Block {
     //Architects Palette
     public static final String NAME_TWISTED = "tall_twisted_door";
     
+    //Blocks+
+    public static final String NAME_BP_BAMBOO = "tall_bp_bamboo_door";
+    public static final String NAME_BP_MUSHROOM = "tall_bp_mushroom_door";
+    public static final String NAME_BP_COPPER = "tall_bp_copper_door";
+    public static final String NAME_BP_DIAMOND = "tall_bp_diamond_door";
+    public static final String NAME_BP_EMERALD = "tall_bp_emerald_door";
+    public static final String NAME_BP_GOLDEN = "tall_bp_golden_door";
+    public static final String NAME_BP_NETHERITE = "tall_bp_netherite_door";
+    
     //Create: Alloyed
     public static final String NAME_STEEL = "tall_steel_door";
     public static final String NAME_LOCKED_STEEL = "tall_locked_steel_door";
@@ -256,6 +265,11 @@ public class TallDoorBlock extends Block {
     public static final String NAME_LEAD = "tall_lead_door";
     public static final String NAME_NETHERITE = "tall_netherite_door";
     
+    //Undergarden
+    public static final String NAME_GRONGLE = "tall_grongle_door";
+    public static final String NAME_SMOGSTEM = "tall_smogstem_door";
+    public static final String NAME_WIGGLEWOOD = "tall_wigglewood_door";
+    
     public static String[] getNames(DoorSeries series) {
     	switch(series) {
     		case VANILLA:
@@ -305,6 +319,8 @@ public class TallDoorBlock extends Block {
     	        return new String[] { NAME_BROWN_MUSHROOM, NAME_RED_MUSHROOM, NAME_GLOWSHROOM };
     		case ARCHITECTS_PALETTE:
     	        return new String[] { NAME_TWISTED };
+    		case BLOCKS_PLUS:
+    	        return new String[] { NAME_BP_BAMBOO, NAME_BP_MUSHROOM, NAME_BP_COPPER, NAME_BP_GOLDEN, NAME_BP_DIAMOND, NAME_BP_EMERALD, NAME_BP_NETHERITE };
 			case CREATE_ALLOYED:
 		        return new String[] { NAME_STEEL, NAME_LOCKED_STEEL };
 			case CREATE_DECO:
@@ -331,12 +347,14 @@ public class TallDoorBlock extends Block {
 		        return new String[] { NAME_QUARK_AZALEA, NAME_QUARK_BLOSSOM };
 			case SUPPLEMENTARIES:
 		        return new String[] { NAME_GOLD, NAME_SILVER, NAME_LEAD, NAME_NETHERITE };
+			case UNDERGARDEN:
+		        return new String[] { NAME_GRONGLE, NAME_SMOGSTEM, NAME_WIGGLEWOOD };
     		default:
     	        throw new NotImplementedException("Please don't use the tall version of DoorSeries.");
     	}
     }
 
-    public static final EnumProperty<TripleBlockPart> THIRD = DoorBlockStateProperties.TRIPLE_BLOCK_THIRD;
+    public static final EnumProperty<TripleBlockPart> THIRD = DDBlockStateProperties.TRIPLE_BLOCK_THIRD;
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
     public static final EnumProperty<DoorHingeSide> HINGE = BlockStateProperties.DOOR_HINGE;
@@ -467,14 +485,14 @@ public class TallDoorBlock extends Block {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL && !state.is(DramaticDoorsTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
+    	if (this.material == Material.METAL && !state.is(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
             return InteractionResult.PASS;
         } 
     	else {
-        	if (this == DramaticDoorsBlocks.TALL_GOLD_DOOR && state.getValue(POWERED)) {
+        	if (this == DDBlocks.TALL_GOLD_DOOR && state.getValue(POWERED)) {
         		return InteractionResult.PASS;
         	}
-        	if (this == DramaticDoorsBlocks.TALL_SILVER_DOOR && !state.getValue(POWERED)) {
+        	if (this == DDBlocks.TALL_SILVER_DOOR && !state.getValue(POWERED)) {
         		return InteractionResult.PASS;
         	}
         	tryOpenDoubleDoor(level, state, pos);
@@ -482,7 +500,7 @@ public class TallDoorBlock extends Block {
             level.setBlock(pos, state, 10);
             level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
             level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
-            if (DramaticDoorsBlocks.TALL_TOOTH_DOOR != null && this == DramaticDoorsBlocks.TALL_TOOTH_DOOR) {
+            if (DDBlocks.TALL_TOOTH_DOOR != null && this == DDBlocks.TALL_TOOTH_DOOR) {
             	level.scheduleTick(pos, this, 20);
             }
             return InteractionResult.sidedSuccess(level.isClientSide);
@@ -545,7 +563,7 @@ public class TallDoorBlock extends Block {
             }
         }
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	if (this == DramaticDoorsBlocks.TALL_GOLD_DOOR || this == DramaticDoorsBlocks.TALL_SILVER_DOOR || this == DramaticDoorsBlocks.TALL_LEAD_DOOR) {
+        	if (this == DDBlocks.TALL_GOLD_DOOR || this == DDBlocks.TALL_SILVER_DOOR || this == DDBlocks.TALL_LEAD_DOOR) {
         		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {
@@ -640,7 +658,7 @@ public class TallDoorBlock extends Block {
     }
 
 	public static boolean isWoodenDoor(BlockState state) {
-		return state.getBlock() instanceof TallDoorBlock && (state.is(DramaticDoorsTags.TALL_WOODEN_DOORS));
+		return state.getBlock() instanceof TallDoorBlock && (state.is(DDTags.TALL_WOODEN_DOORS));
 	}
     
     //Double Doors Compatibility

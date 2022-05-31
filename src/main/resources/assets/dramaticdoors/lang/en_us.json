@@ -109,6 +109,14 @@
   
   "block.dramaticdoors.tall_twisted_door": "Tall Twisted Door",
 
+  "block.dramaticdoors.tall_bp_bamboo_door": "Tall Bamboo Door",
+  "block.dramaticdoors.tall_bp_mushroom_door": "Tall Mushroom Door",
+  "block.dramaticdoors.tall_bp_copper_door": "Tall Copper Door",
+  "block.dramaticdoors.tall_bp_golden_door": "Tall Golden Door",
+  "block.dramaticdoors.tall_bp_diamond_door": "Tall Diamond Door",
+  "block.dramaticdoors.tall_bp_emerald_door": "Tall Emerald Door",
+  "block.dramaticdoors.tall_bp_netherite_door": "Tall Netherite Door",
+
   "block.dramaticdoors.tall_petrified_door": "Tall Petrified Door",
 
   "block.dramaticdoors.tall_steel_door": "Tall Steel Door",
@@ -169,6 +177,10 @@
   "block.dramaticdoors.tall_netherite_door": "Tall Netherite Door",
   "block.dramaticdoors.tall_silver_door": "Tall Silver Door",
   "block.dramaticdoors.tall_lead_door": "Tall Lead Door",
+  
+  "block.dramaticdoors.tall_grongle_door": "Tall Grongle Door",
+  "block.dramaticdoors.tall_smogstem_door": "Tall Smogstem Door",
+  "block.dramaticdoors.tall_wigglewood_door": "Tall Wigglewood Door",
   
   "itemGroup.dramaticdoors": "Dramatic Doors"
 }

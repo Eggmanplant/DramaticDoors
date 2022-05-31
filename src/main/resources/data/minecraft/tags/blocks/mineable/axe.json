@@ -89,6 +89,8 @@
     "dramaticdoors:tall_red_mushroom_door",
     "dramaticdoors:tall_glowshroom_door",
     "dramaticdoors:tall_twisted_door",
+    "dramaticdoors:tall_bp_bamboo_door",
+    "dramaticdoors:tall_bp_mushroom_door",
     "dramaticdoors:tall_fairy_ring_mushroom_door",
     "dramaticdoors:tall_azure_door",
     "dramaticdoors:tall_eco_azalea_door",
@@ -103,6 +105,9 @@
     "dramaticdoors:tall_pw_willow_door",
     "dramaticdoors:tall_quark_azalea_door",
     "dramaticdoors:tall_quark_blossom_door",
-    "dramaticdoors:tall_cardboard_door"
+    "dramaticdoors:tall_cardboard_door",
+    "dramaticdoors:tall_grongle_door",
+    "dramaticdoors:tall_smogstem_door",
+    "dramaticdoors:tall_wigglewood_door"
   ]
 }

@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import javax.annotation.Nullable;
 
-import com.fizzware.dramaticdoors.DramaticDoorsTags;
+import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
 
 import net.minecraft.core.BlockPos;
@@ -91,7 +91,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
         if (itemHandler.get() != null) {
             for (int _idx = 0; _idx < itemHandler.get().getSlots(); _idx++) {
                 ItemStack stack = itemHandler.get().getStackInSlot(_idx);
-                if (stack.is(DramaticDoorsTags.KEY)) {
+                if (stack.is(DDTags.KEY)) {
                     found = KeyStatus.INCORRECT_KEY;
                     if (isCorrectKey(stack, key)) return KeyStatus.CORRECT_KEY;
                 }
@@ -124,7 +124,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
 
         ItemStack stack = player.getItemInHand(handIn);
 
-        boolean isKey = stack.is(DramaticDoorsTags.KEY);
+        boolean isKey = stack.is(DDTags.KEY);
         //clear ownership
         if (player.isCrouching() && isKey && (player.isCreative() || this.isCorrectKey(stack))) {
         	this.clearOwner();

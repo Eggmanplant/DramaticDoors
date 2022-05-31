@@ -1,7 +1,7 @@
 package com.fizzware.dramaticdoors;
 
 import com.fizzware.dramaticdoors.blockentities.DramaticDoorsBlockEntities;
-import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks;
+import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.client.ClientRenderer;
 
 import net.minecraft.world.item.CreativeModeTab;
@@ -35,8 +35,8 @@ public class DramaticDoors
     }
 
     private void setupCommon(final FMLCommonSetupEvent event) {
-        MinecraftForge.EVENT_BUS.register(new DramaticDoorsUpdateHandler());
-        MinecraftForge.EVENT_BUS.register(new DramaticDoorsEvents());
+        MinecraftForge.EVENT_BUS.register(new DDUpdateHandler());
+        MinecraftForge.EVENT_BUS.register(new DDEvents());
     }
     
     private void setupClient(final FMLClientSetupEvent event) {
@@ -46,7 +46,7 @@ public class DramaticDoors
     public static final CreativeModeTab TAB = new CreativeModeTab("dramaticdoors") {
 		@Override
 		public ItemStack makeIcon() {
-			return new ItemStack(DramaticDoorsBlocks.TALL_OAK_DOOR.asItem());
+			return new ItemStack(DDBlocks.TALL_OAK_DOOR.asItem());
 		}
     };
 

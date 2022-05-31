@@ -188,3 +188,10 @@ license="MIT"
     versionRange="[1.4,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.dramaticdoors]]
+    modId="undergarden"
+    mandatory=false
+    versionRange="[0.7.0,)"
+    ordering="AFTER"
+    side="BOTH"

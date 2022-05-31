@@ -1,7 +1,7 @@
 package com.fizzware.dramaticdoors.blockentities;
 
 import com.fizzware.dramaticdoors.DramaticDoors;
-import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks;
+import com.fizzware.dramaticdoors.blocks.DDBlocks;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -17,7 +17,7 @@ public class DramaticDoorsBlockEntities
 {
 	public static DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, DramaticDoors.MOD_ID);
 	
-	public static final RegistryObject<BlockEntityType<TallNetheriteDoorBlockEntity>> TALL_NETHERITE_DOOR = BLOCK_ENTITIES.register("tall_netherite_door", () -> BlockEntityType.Builder.of(TallNetheriteDoorBlockEntity::new, DramaticDoorsBlocks.TALL_NETHERITE_DOOR).build(null));
+	public static final RegistryObject<BlockEntityType<TallNetheriteDoorBlockEntity>> TALL_NETHERITE_DOOR = BLOCK_ENTITIES.register("tall_netherite_door", () -> BlockEntityType.Builder.of(TallNetheriteDoorBlockEntity::new, DDBlocks.TALL_NETHERITE_DOOR).build(null));
 	
 	@EventBusSubscriber(modid = DramaticDoors.MOD_ID)
 	public static class RegistrationHandler 

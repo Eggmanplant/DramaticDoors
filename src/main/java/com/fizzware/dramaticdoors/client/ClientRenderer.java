@@ -1,7 +1,7 @@
 package com.fizzware.dramaticdoors.client;
 
-import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks;
-import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks.DoorSeries;
+import com.fizzware.dramaticdoors.blocks.DDBlocks;
+import com.fizzware.dramaticdoors.blocks.DDBlocks.DoorSeries;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -13,40 +13,43 @@ public class ClientRenderer
 {
 	public static void setRenderers() {
         // Setup Render Types (mainly for transparent doors like Acacia and Jungle)
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.VANILLA_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.VANILLA_TALL);
         //Conditionally add rendering on where mods are loaded.
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BOP_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BYG_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.POKECUBE_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.PREHISTORIC_FAUNA_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.TWILIGHT_FOREST_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.BOP_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.BYG_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.POKECUBE_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.PREHISTORIC_FAUNA_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.TWILIGHT_FOREST_TALL);
 
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ATMOSPHERIC_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.AUTUMNITY_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BAMBOO_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BUZZIER_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ENDERGETIC_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ENVIRONMENTAL_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.UPGRADE_AQUATIC_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.ATMOSPHERIC_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.AUTUMNITY_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.BAMBOO_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.BUZZIER_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.ENDERGETIC_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.ENVIRONMENTAL_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.UPGRADE_AQUATIC_TALL);
 
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ABUNDANCE_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BAYOU_BLUES_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ENH_MUSHROOMS_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ARCHITECTS_PALETTE_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.CREATE_ALLOYED_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.CREATE_DECO_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.DARKER_DEPTHS_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.DUSTRIAL_DECOR_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ECOLOGICS_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.HABITAT_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.OUTER_END_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.PREMIUM_WOOD_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.QUARK_TALL);
-        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.SUPPLEMENTARIES_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.ABUNDANCE_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.BAYOU_BLUES_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.ENH_MUSHROOMS_TALL);
+        
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.ARCHITECTS_PALETTE_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.BLOCKS_PLUS_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.CREATE_ALLOYED_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.CREATE_DECO_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.DARKER_DEPTHS_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.DUSTRIAL_DECOR_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.ECOLOGICS_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.HABITAT_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.OUTER_END_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.PREMIUM_WOOD_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.QUARK_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.SUPPLEMENTARIES_TALL);
+        setRenderersForDoorSeries(DDBlocks.DoorSeries.UNDERGARDEN_TALL);
 	}
 	
 	private static void setRenderersForDoorSeries(DoorSeries series) {
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(series)) {
+        for (Block doorBlock : DDBlocks.getBlockList(series)) {
         	if (doorBlock != null) {
         		ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.translucent());
         	}

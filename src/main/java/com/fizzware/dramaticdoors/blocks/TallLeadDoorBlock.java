@@ -2,7 +2,7 @@ package com.fizzware.dramaticdoors.blocks;
 
 import java.util.Random;
 
-import com.fizzware.dramaticdoors.state.properties.DoorBlockStateProperties;
+import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
 import net.minecraft.core.BlockPos;
@@ -23,7 +23,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class TallLeadDoorBlock extends TallDoorBlock
 {
-	public static final IntegerProperty OPENING_PROGRESS = DoorBlockStateProperties.OPENING_PROGRESS;
+	public static final IntegerProperty OPENING_PROGRESS = DDBlockStateProperties.OPENING_PROGRESS;
 	
 	public TallLeadDoorBlock(Block from) {
 		super(from);

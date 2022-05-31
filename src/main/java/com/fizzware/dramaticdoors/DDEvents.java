@@ -11,7 +11,7 @@ import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
-public class DramaticDoorsEvents
+public class DDEvents
 {
 
 	@SubscribeEvent

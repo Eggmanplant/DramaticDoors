@@ -14,7 +14,7 @@ import net.minecraftforge.registries.ObjectHolder;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 @ObjectHolder(DramaticDoors.MOD_ID)
-public class DramaticDoorsBlocks {
+public class DDBlocks {
 
     @ObjectHolder(TallDoorBlock.NAME_OAK) public static final Block TALL_OAK_DOOR = null;
     @ObjectHolder(TallDoorBlock.NAME_SPRUCE) public static final Block TALL_SPRUCE_DOOR = null;
@@ -142,6 +142,15 @@ public class DramaticDoorsBlocks {
     //Architects Palette
     @ObjectHolder(TallDoorBlock.NAME_TWISTED) public static final Block TALL_TWISTED_DOOR = null;
     
+    //Blocks Plus
+    @ObjectHolder(TallDoorBlock.NAME_BP_BAMBOO) public static final Block TALL_BP_BAMBOO_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_BP_MUSHROOM) public static final Block TALL_BP_MUSHROOM_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_BP_COPPER) public static final Block TALL_BP_COPPER_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_BP_GOLDEN) public static final Block TALL_BP_GOLDEN_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_BP_DIAMOND) public static final Block TALL_BP_DIAMOND_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_BP_EMERALD) public static final Block TALL_BP_EMERALD_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_BP_NETHERITE) public static final Block TALL_BP_NETHERITE_DOOR = null;
+    
     //Create: Alloyed
     @ObjectHolder(TallDoorBlock.NAME_STEEL) public static final Block TALL_STEEL_DOOR = null;
     @ObjectHolder(TallDoorBlock.NAME_LOCKED_STEEL) public static final Block TALL_LOCKED_STEEL_DOOR = null;
@@ -214,6 +223,11 @@ public class DramaticDoorsBlocks {
     @ObjectHolder(TallDoorBlock.NAME_LEAD) public static final Block TALL_LEAD_DOOR = null;
     @ObjectHolder(TallDoorBlock.NAME_NETHERITE) public static final Block TALL_NETHERITE_DOOR = null;
 
+    //Undergarden
+	@ObjectHolder(TallDoorBlock.NAME_GRONGLE) public static final Block TALL_GRONGLE_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_SMOGSTEM) public static final Block TALL_SMOGSTEM_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_WIGGLEWOOD) public static final Block TALL_WIGGLEWOOD_DOOR = null;
+    
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> blockRegistry) {
         IForgeRegistry<Block> registry = blockRegistry.getRegistry();
@@ -239,6 +253,7 @@ public class DramaticDoorsBlocks {
         addBlockSeries(registry, DoorSeries.ENH_MUSHROOMS, "enhanced_mushrooms");
         //Miscellaneous
         addBlockSeries(registry, DoorSeries.ARCHITECTS_PALETTE, "architects_palette");
+        addBlockSeries(registry, DoorSeries.BLOCKS_PLUS, "blocksplus");
         addBlockSeries(registry, DoorSeries.CREATE_ALLOYED, "alloyed");
         addBlockSeries(registry, DoorSeries.CREATE_DECO, "createdeco");
         addBlockSeries(registry, DoorSeries.DARKER_DEPTHS, "darkerdepths");
@@ -250,6 +265,7 @@ public class DramaticDoorsBlocks {
         addBlockSeries(registry, DoorSeries.PREMIUM_WOOD, "premium_wood");
         addBlockSeries(registry, DoorSeries.QUARK, "quark");
         addBlockSeries(registry, DoorSeries.SUPPLEMENTARIES, "supplementaries");
+        addBlockSeries(registry, DoorSeries.UNDERGARDEN, "undergarden");
     }
     
     private static void addBlockSeries(IForgeRegistry<Block> registry, DoorSeries series, String modid) {
@@ -258,10 +274,10 @@ public class DramaticDoorsBlocks {
 	        Block[] baseDoors = getBlockList(series);
 	        for (int i = 0; i < baseDoors.length; i++) {
 	        	if (baseDoors[i] != null) {
-		        	if (baseDoors[i].getRegistryName().getPath().equalsIgnoreCase("lead_door")) {
+		        	if (series == DoorSeries.SUPPLEMENTARIES && baseDoors[i].getRegistryName().getPath().equalsIgnoreCase("lead_door")) {
 		        		registry.register(new TallLeadDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
 		        	}
-		        	else if (baseDoors[i].getRegistryName().getPath().equalsIgnoreCase("netherite_door")) {
+		        	else if (series == DoorSeries.SUPPLEMENTARIES && baseDoors[i].getRegistryName().getPath().equalsIgnoreCase("netherite_door")) {
 		        		registry.register(new TallNetheriteDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
 		        	}
 		        	else {
@@ -447,6 +463,19 @@ public class DramaticDoorsBlocks {
             	return new Block[] { Registry.BLOCK.get(new ResourceLocation("architects_palette", "twisted_door")) };
             case ARCHITECTS_PALETTE_TALL:
             	return new Block[] { TALL_TWISTED_DOOR };
+            case BLOCKS_PLUS:
+            	return new Block[] { 
+            			Registry.BLOCK.get(new ResourceLocation("blocksplus", "bamboo_door")),
+            			Registry.BLOCK.get(new ResourceLocation("blocksplus", "mushroom_door")),
+            			Registry.BLOCK.get(new ResourceLocation("blocksplus", "copper_door")),
+            			Registry.BLOCK.get(new ResourceLocation("blocksplus", "golden_door")),
+            			Registry.BLOCK.get(new ResourceLocation("blocksplus", "diamond_door")),
+            			Registry.BLOCK.get(new ResourceLocation("blocksplus", "emerald_door")),
+            			Registry.BLOCK.get(new ResourceLocation("blocksplus", "netherite_door")) };
+            case BLOCKS_PLUS_TALL:
+            	return new Block[] { 
+            			TALL_BP_BAMBOO_DOOR, TALL_BP_MUSHROOM_DOOR, TALL_BP_COPPER_DOOR, TALL_BP_GOLDEN_DOOR, 
+            			TALL_BP_DIAMOND_DOOR, TALL_BP_EMERALD_DOOR, TALL_BP_NETHERITE_DOOR };
             case CREATE_ALLOYED:
             	return new Block[] { 
             			Registry.BLOCK.get(new ResourceLocation("alloyed", "steel_door")), 
@@ -544,6 +573,13 @@ public class DramaticDoorsBlocks {
             			Registry.BLOCK.get(new ResourceLocation("supplementaries", "netherite_door"))};
             case SUPPLEMENTARIES_TALL:
             	return new Block[] { TALL_GOLD_DOOR, TALL_SILVER_DOOR, TALL_LEAD_DOOR, TALL_NETHERITE_DOOR };
+            case UNDERGARDEN:
+            	return new Block[] { 
+            			Registry.BLOCK.get(new ResourceLocation("undergarden", "grongle_door")),
+            			Registry.BLOCK.get(new ResourceLocation("undergarden", "smogstem_door")),
+            			Registry.BLOCK.get(new ResourceLocation("undergarden", "wigglewood_door"))};
+            case UNDERGARDEN_TALL:
+            	return new Block[] { TALL_GRONGLE_DOOR, TALL_SMOGSTEM_DOOR, TALL_WIGGLEWOOD_DOOR };
             //Failsafe
             default:
                 return new Block[] {};
@@ -589,6 +625,8 @@ public class DramaticDoorsBlocks {
         //Miscellaneous
         ARCHITECTS_PALETTE,
         ARCHITECTS_PALETTE_TALL,
+        BLOCKS_PLUS,
+        BLOCKS_PLUS_TALL,
         CREATE_ALLOYED,
         CREATE_ALLOYED_TALL,
         CREATE_DECO,
@@ -610,6 +648,8 @@ public class DramaticDoorsBlocks {
         QUARK,
         QUARK_TALL,
         SUPPLEMENTARIES,
-        SUPPLEMENTARIES_TALL
+        SUPPLEMENTARIES_TALL,
+        UNDERGARDEN,
+        UNDERGARDEN_TALL
     }
 }
