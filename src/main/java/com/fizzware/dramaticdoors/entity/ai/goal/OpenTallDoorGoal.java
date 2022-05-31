@@ -4,30 +4,34 @@ import net.minecraft.entity.mob.MobEntity;
 
 public class OpenTallDoorGoal extends TallDoorInteractGoal
 {
-   private final boolean closeDoor;
-   private int forgetTime;
+   private final boolean delayedClose;
+   private int ticksLeft;
 
    public OpenTallDoorGoal(MobEntity entity, boolean close) {
       super(entity);
       this.mob = entity;
-      this.closeDoor = close;
+      this.delayedClose = close;
    }
 
-   public boolean canContinueToUse() {
-      return this.closeDoor && this.forgetTime > 0 && super.canContinueToUse();
+   @Override
+   public boolean shouldContinue() {
+      return this.delayedClose && this.ticksLeft > 0 && super.shouldContinue();
    }
 
+   @Override
    public void start() {
-      this.forgetTime = 20;
-      this.setOpen(true);
+      this.ticksLeft = 20;
+      this.setDoorOpen(true);
    }
 
+   @Override
    public void stop() {
-      this.setOpen(false);
+      this.setDoorOpen(false);
    }
 
+   @Override
    public void tick() {
-      --this.forgetTime;
+      --this.ticksLeft;
       super.tick();
    }
 }

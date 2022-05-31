@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "dramaticdoors",
   "version": "${version}",
 
   "name": "Dramatic Doors (Fabric)",
@@ -13,7 +13,7 @@
     "sources": "https://github.com/TheFizzWare/DramaticDoors"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/dramaticdoors/icon.png",
 
   "environment": "*",
@@ -28,6 +28,7 @@
   "mixins": [
     "dramaticdoors.mixins.json"
   ],
+  "accessWidener": "dramaticdoors.accesswidener",
 
   "depends": {
     "fabricloader": ">=0.14.6",

@@ -9,7 +9,7 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.FacingBlock;
+import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.block.enums.DoorHinge;
@@ -41,7 +41,7 @@ import net.minecraft.world.event.GameEvent;
 public class TallDoorBlock extends Block {
 
     public static final EnumProperty<TripleBlockPart> THIRD = DDProperties.TRIPLE_BLOCK_THIRD;
-    public static final DirectionProperty FACING = FacingBlock.FACING;
+    public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final BooleanProperty OPEN = Properties.OPEN;
     public static final EnumProperty<DoorHinge> HINGE = Properties.DOOR_HINGE;
     public static final BooleanProperty POWERED = Properties.POWERED;
@@ -56,7 +56,7 @@ public class TallDoorBlock extends Block {
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(OPEN, Boolean.FALSE).with(HINGE, DoorHinge.LEFT).with(POWERED, Boolean.FALSE).with(THIRD, TripleBlockPart.LOWER));
     }
 
-    @SuppressWarnings("deprecation")
+	@SuppressWarnings("deprecation")
 	@Override
     public BlockState getStateForNeighborUpdate(BlockState stateIn, Direction facing, BlockState facingState, WorldAccess level, BlockPos currentPos, BlockPos facingPos) {
         TripleBlockPart tripleblockpart = stateIn.get(THIRD);
@@ -290,7 +290,8 @@ public class TallDoorBlock extends Block {
         }
     }
 
-    public boolean canPathfindThrough(BlockState state, BlockView level, BlockPos pos, NavigationType type) {
+    @Override
+    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
         switch(type) {
             case LAND:
                 return state.get(OPEN);
@@ -324,7 +325,7 @@ public class TallDoorBlock extends Block {
 		return state.getBlock() instanceof TallDoorBlock && (state.isIn(DDTags.TALL_WOODEN_DOORS));
 	}
     
-    //Double Doors Compatibility, disabled for Fabric version.
+    //Double Doors Compatibility.
 	public static void tryOpenDoubleDoor(World world, BlockState state, BlockPos pos) {
         if (FabricLoader.getInstance().isModLoaded("doubledoors")) {
             Direction direction = state.get(TallDoorBlock.FACING);

@@ -4,6 +4,9 @@
   "package": "com.fizzware.dramaticdoors.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "LandPathNodeMakerMixin",
+    "PiglinMixin",
+    "VillagerMixin",
     "WitchMixin"
   ],
   "client": [
