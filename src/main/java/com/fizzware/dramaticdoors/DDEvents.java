@@ -18,7 +18,9 @@ public class DDEvents
 	public void entityAdded(EntityJoinWorldEvent event) {
 		if (event.getEntity() instanceof AbstractVillager || event.getEntity() instanceof AbstractPiglin || event.getEntity() instanceof Witch) {
 			Mob mob = (Mob) event.getEntity();
-			mob.goalSelector.addGoal(1, new OpenTallDoorGoal(mob, true));
+			if (mob.getNavigation() instanceof GroundPathNavigation) {
+				mob.goalSelector.addGoal(1, new OpenTallDoorGoal(mob, true));
+			}
 			if (mob instanceof Witch) { // Because witches should be able to open regular doors too.
 				GroundPathNavigation navigator = (GroundPathNavigation) mob.getNavigation();
 				navigator.setCanOpenDoors(true);
