@@ -16,6 +16,7 @@ public class DDBlocks {
     public static final Block TALL_JUNGLE_DOOR = new TallDoorBlock(Blocks.JUNGLE_DOOR);
     public static final Block TALL_ACACIA_DOOR = new TallDoorBlock(Blocks.ACACIA_DOOR);
     public static final Block TALL_DARK_OAK_DOOR = new TallDoorBlock(Blocks.DARK_OAK_DOOR);
+    public static final Block TALL_MANGROVE_DOOR = new TallDoorBlock(Blocks.MANGROVE_DOOR);
     public static final Block TALL_CRIMSON_DOOR = new TallDoorBlock(Blocks.CRIMSON_DOOR);
     public static final Block TALL_WARPED_DOOR = new TallDoorBlock(Blocks.WARPED_DOOR);
 
@@ -27,6 +28,7 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, "tall_jungle_door"), TALL_JUNGLE_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, "tall_acacia_door"), TALL_ACACIA_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, "tall_dark_oak_door"), TALL_DARK_OAK_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, "tall_mangrove_door"), TALL_MANGROVE_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, "tall_crimson_door"), TALL_CRIMSON_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, "tall_warped_door"), TALL_WARPED_DOOR);
     }

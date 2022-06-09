@@ -1,14 +1,14 @@
 {
+  "block.dramaticdoors.tall_iron_door": "Tall Iron Door",
   "block.dramaticdoors.tall_oak_door": "Tall Oak Door",
   "block.dramaticdoors.tall_spruce_door": "Tall Spruce Door",
   "block.dramaticdoors.tall_birch_door": "Tall Birch Door",
   "block.dramaticdoors.tall_jungle_door": "Tall Jungle Door",
   "block.dramaticdoors.tall_acacia_door": "Tall Acacia Door",
   "block.dramaticdoors.tall_dark_oak_door": "Tall Dark Oak Door",
+  "block.dramaticdoors.tall_mangrove_door": "Tall Mangrove Door",
   "block.dramaticdoors.tall_crimson_door": "Tall Crimson Door",
   "block.dramaticdoors.tall_warped_door": "Tall Warped Door",
-  "block.dramaticdoors.tall_mangrove_door": "Tall Mangrove Door",
-  "block.dramaticdoors.tall_iron_door": "Tall Iron Door",
   
   "itemGroup.dramaticdoors.talldoors": "Dramatic Doors"
 }
