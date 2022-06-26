@@ -27,7 +27,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
 	public String password = null;
 	
 	public TallNetheriteDoorBlockEntity(BlockPos pos, BlockState state) {
-		super(DramaticDoorsBlockEntities.TALL_NETHERITE_DOOR.get(), pos, state);
+		super(DDBlockEntities.TALL_NETHERITE_DOOR.get(), pos, state);
 	}
 
 	@Override

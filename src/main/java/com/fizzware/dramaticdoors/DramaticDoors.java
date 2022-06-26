@@ -1,8 +1,9 @@
 package com.fizzware.dramaticdoors;
 
-import com.fizzware.dramaticdoors.blockentities.DramaticDoorsBlockEntities;
+import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.client.ClientRenderer;
+import com.fizzware.dramaticdoors.items.DDItems;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -24,7 +25,9 @@ public class DramaticDoors
     public static final String MOD_ID = "dramaticdoors";
 
     public DramaticDoors() {
-    	DramaticDoorsBlockEntities.BLOCK_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	DDBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	DDItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	DDBlockEntities.BLOCK_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
     	
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupCommon);
         if (FMLEnvironment.dist == Dist.CLIENT) {
@@ -46,7 +49,7 @@ public class DramaticDoors
     public static final CreativeModeTab TAB = new CreativeModeTab("dramaticdoors") {
 		@Override
 		public ItemStack makeIcon() {
-			return new ItemStack(DDBlocks.TALL_OAK_DOOR.asItem());
+			return new ItemStack(DDItems.TALL_OAK_DOOR.get());
 		}
     };
 

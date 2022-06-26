@@ -20,18 +20,18 @@ public class DDUpdateHandler
 		for (RegistryEvent.MissingMappings.Mapping<Block> entry : map) {
 			if (ModList.get().isLoaded("ecologics")) {
 				if (entry.key.getPath().equalsIgnoreCase("tall_ba_azalea_door")) {
-					entry.remap(DDBlocks.TALL_ECO_AZALEA_DOOR);
+					entry.remap(DDBlocks.TALL_ECO_AZALEA_DOOR.get());
 				}
 				if (entry.key.getPath().equalsIgnoreCase("tall_ba_flowering_azalea_door")) {
-					entry.remap(DDBlocks.TALL_ECO_FLOWERING_AZALEA_DOOR);
+					entry.remap(DDBlocks.TALL_ECO_FLOWERING_AZALEA_DOOR.get());
 				}
 				if (entry.key.getPath().equalsIgnoreCase("tall_coconut_door")) {
-					entry.remap(DDBlocks.TALL_ECO_COCONUT_DOOR);
+					entry.remap(DDBlocks.TALL_ECO_COCONUT_DOOR.get());
 				}
 			}
 			if (ModList.get().isLoaded("twlightforest")) {
 				if (entry.key.getPath().equalsIgnoreCase("tall_mangrove_door")) {
-					entry.remap(DDBlocks.TALL_TWILIGHT_MANGROVE_DOOR);
+					entry.remap(DDBlocks.TALL_TWILIGHT_MANGROVE_DOOR.get());
 				}
 			}
 		}
@@ -43,18 +43,18 @@ public class DDUpdateHandler
 		for (RegistryEvent.MissingMappings.Mapping<Item> entry : map) {
 			if (ModList.get().isLoaded("ecologics")) {
 				if (entry.key.getPath().equalsIgnoreCase("tall_ba_azalea_door")) {
-					entry.remap(DDBlocks.TALL_ECO_AZALEA_DOOR.asItem());
+					entry.remap(DDBlocks.TALL_ECO_AZALEA_DOOR.get().asItem());
 				}
 				if (entry.key.getPath().equalsIgnoreCase("tall_ba_flowering_azalea_door")) {
-					entry.remap(DDBlocks.TALL_ECO_FLOWERING_AZALEA_DOOR.asItem());
+					entry.remap(DDBlocks.TALL_ECO_FLOWERING_AZALEA_DOOR.get().asItem());
 				}
 				if (entry.key.getPath().equalsIgnoreCase("tall_coconut_door")) {
-					entry.remap(DDBlocks.TALL_ECO_COCONUT_DOOR.asItem());
+					entry.remap(DDBlocks.TALL_ECO_COCONUT_DOOR.get().asItem());
 				}
 			}
 			if (ModList.get().isLoaded("twlightforest")) {
 				if (entry.key.getPath().equalsIgnoreCase("tall_mangrove_door")) {
-					entry.remap(DDBlocks.TALL_TWILIGHT_MANGROVE_DOOR.asItem());
+					entry.remap(DDBlocks.TALL_TWILIGHT_MANGROVE_DOOR.get().asItem());
 				}
 			}
 		}

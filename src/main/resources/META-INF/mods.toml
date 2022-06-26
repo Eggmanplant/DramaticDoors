@@ -38,7 +38,7 @@ license="MIT"
 [[dependencies.dramaticdoors]]
     modId="forge"
     mandatory=true
-    versionRange="[40.0.2,)"
+    versionRange="[40.1.0,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -101,21 +101,21 @@ license="MIT"
 [[dependencies.dramaticdoors]]
     modId="abundance"
     mandatory=false
-    versionRange="[1.18.2,)"
+    versionRange="[2.0.0,)"
     ordering="AFTER"
     side="BOTH"
     
 [[dependencies.dramaticdoors]]
     modId="bayou_blues"
     mandatory=false
-    versionRange="[1.18.2,)"
+    versionRange="[1.1.0,)"
     ordering="AFTER"
     side="BOTH"
     
 [[dependencies.dramaticdoors]]
     modId="enhanced_mushrooms"
     mandatory=false
-    versionRange="[1.18.2,)"
+    versionRange="[4.0,)"
     ordering="AFTER"
     side="BOTH"
     
