@@ -4,7 +4,6 @@ import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 
-import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.ModList;
@@ -215,8 +214,8 @@ public class DDItems {
     
     // Supplementaries
     public static final RegistryObject<Item> TALL_GOLD_DOOR = ITEMS.register(DDNames.NAME_GOLD, () -> new TallDoorItem(DDBlocks.TALL_GOLD_DOOR.get(), conditionalTabProperties("supplementaries")));
-    public static final RegistryObject<Item> TALL_SILVER_DOOR = ITEMS.register(DDNames.NAME_SILVER, () -> new TallDoorItem(DDBlocks.TALL_SILVER_DOOR.get(), conditionalTabProperties("supplementaries")));
-    public static final RegistryObject<Item> TALL_LEAD_DOOR = ITEMS.register(DDNames.NAME_LEAD, () -> new TallDoorItem(DDBlocks.TALL_LEAD_DOOR.get(), conditionalTabProperties("supplementaries")));
+    public static final RegistryObject<Item> TALL_SILVER_DOOR = ITEMS.register(DDNames.NAME_SILVER, () -> new TallDoorItem(DDBlocks.TALL_SILVER_DOOR.get(), addIfItemIsAvailable(new ResourceLocation("supplementaries", "silver_door"), conditionalTabProperties("supplementaries"))));
+    public static final RegistryObject<Item> TALL_LEAD_DOOR = ITEMS.register(DDNames.NAME_LEAD, () -> new TallDoorItem(DDBlocks.TALL_LEAD_DOOR.get(), addIfItemIsAvailable(new ResourceLocation("supplementaries", "lead_door"), conditionalTabProperties("supplementaries"))));
     public static final RegistryObject<Item> TALL_NETHERITE_DOOR = ITEMS.register(DDNames.NAME_NETHERITE, () -> new TallDoorItem(DDBlocks.TALL_NETHERITE_DOOR.get(), conditionalTabProperties("supplementaries")));
     
     // Undergarden
@@ -229,19 +228,13 @@ public class DDItems {
     }
     
     // If a mod conditionally adds doors, only make doors available if the corresponding normal-sized doors are available.
-    @SuppressWarnings("deprecation")
 	private static Item.Properties addIfItemIsAvailable(ResourceLocation loc, Item.Properties tabProperties) {
-    	Item item = Registry.ITEM.get(loc);
-    	if (item != null) {
-    		if (item.getItemCategory() != null) {
-    			return tabProperties;
-    		}
-    		else {
-    			return PROPERTIES.tab(null);
-    		}
+    	if (ForgeRegistries.ITEMS.containsKey(loc)) {
+    		Item item = ForgeRegistries.ITEMS.getValue(loc);
+	    	if (item.getItemCategory() != null) {
+	    		return tabProperties;
+	    	}
     	}
-    	else {
-    		return PROPERTIES.tab(null);
-    	}
+    	return PROPERTIES.tab(null);
     }
 }

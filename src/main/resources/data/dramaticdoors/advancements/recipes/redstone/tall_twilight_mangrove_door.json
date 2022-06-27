@@ -2,14 +2,14 @@
   "parent": "dramaticdoors:recipes/root",
   "rewards": {
     "recipes": [
-      "dramaticdoors:tall_glowshroom_door"
+      "dramaticdoors:tall_twilight_mangrove_door"
     ]
   },
   "criteria": {
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "dramaticdoors:tall_glowshroom_door"
+        "recipe": "dramaticdoors:tall_twilight_mangrove_door"
       }
     },
     "has_items": {
@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "enhanced_mushrooms:glowshroom_door" ]
+            "items": [ "twilightforest:mangrove_door" ]
           }
         ]
       }
@@ -32,7 +32,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "enhanced_mushrooms"
+      "modid": "twilightforest"
     }
   ]
 }

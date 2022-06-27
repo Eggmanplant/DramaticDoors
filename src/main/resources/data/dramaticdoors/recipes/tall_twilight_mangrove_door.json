@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "tall_wooden_door",
+  "group": "tall_twl_wooden_door",
   "pattern": [
     "#",
     "#",
@@ -8,17 +8,17 @@
   ],
   "key": {
     "#": {
-      "item": "enhanced_mushrooms:glowshroom_door"
+      "item": "twilightforest:mangrove_door"
     }
   },
   "result": {
-    "item": "dramaticdoors:tall_glowshroom_door",
+    "item": "dramaticdoors:tall_twilight_mangrove_door",
     "count": 2
   },
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "enhanced_mushrooms"
+      "modid": "twilightforest"
     }
   ]
 }
