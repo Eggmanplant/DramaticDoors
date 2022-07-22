@@ -3,16 +3,13 @@ package com.fizzware.dramaticdoors;
 import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.client.ClientRenderer;
+import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.items.DDItems;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -46,19 +43,18 @@ public class DramaticDoors
     	ClientRenderer.setRenderers();
     }
 
-    public static final CreativeModeTab TAB = new CreativeModeTab("dramaticdoors") {
+    public static final CreativeModeTab MAIN_TAB = new CreativeModeTab("dramaticdoors") {
 		@Override
 		public ItemStack makeIcon() {
 			return new ItemStack(DDItems.TALL_OAK_DOOR.get());
 		}
     };
+    
+    public static final CreativeModeTab MACAW_TAB = Compats.MACAWS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_macaw") {
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR.get());
+		}
+    } : null;
 
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {}
-
-    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {}
-    }
 }
