@@ -115,11 +115,11 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             BlockState blockstate1 = level.getBlockState(otherPos1);
             BlockState blockstate2 = level.getBlockState(otherPos2);
             if (blockstate1.getBlock() == state.getBlock() && blockstate1.getValue(THIRD) == TripleBlockPart.LOWER) {
-                level.setBlock(otherPos1, state.getValue(WATERLOGGED) ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState(), 35);
+                level.setBlock(otherPos1, blockstate1.getValue(WATERLOGGED) ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState(), 35);
                 level.levelEvent(player, 2001, otherPos1, Block.getId(blockstate1));
             }
             if (blockstate2.getBlock() == state.getBlock() && blockstate2.getValue(THIRD) == TripleBlockPart.LOWER) {
-                level.setBlock(otherPos2, state.getValue(WATERLOGGED) ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState(), 35);
+                level.setBlock(otherPos2, blockstate2.getValue(WATERLOGGED) ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState(), 35);
                 level.levelEvent(player, 2001, otherPos1, Block.getId(blockstate1));
             }
         }

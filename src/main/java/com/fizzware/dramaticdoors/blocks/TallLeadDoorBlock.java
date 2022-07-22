@@ -6,7 +6,6 @@ import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -17,7 +16,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 
@@ -27,7 +25,7 @@ public class TallLeadDoorBlock extends TallDoorBlock
 	
 	public TallLeadDoorBlock(Block from) {
 		super(from);
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER).setValue(WATERLOGGED, Boolean.FALSE).setValue(OPENING_PROGRESS, 0));
+		this.registerDefaultState(super.defaultBlockState().setValue(OPENING_PROGRESS, 0));
 	}
 
     public boolean canBeOpened(BlockState state) {
@@ -36,7 +34,8 @@ public class TallLeadDoorBlock extends TallDoorBlock
 	
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(THIRD, FACING, OPEN, HINGE, POWERED, WATERLOGGED, OPENING_PROGRESS);
+    	super.createBlockStateDefinition(builder);
+        builder.add(OPENING_PROGRESS);
     }
     
     @Override

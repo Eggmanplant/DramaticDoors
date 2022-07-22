@@ -10,6 +10,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -32,6 +33,9 @@ public class DramaticDoors
         }
 
         MinecraftForge.EVENT_BUS.register(this);
+        if (DDConfig.waterloggableFenceGates.get() && ModList.get().isLoaded("supplementaries")) {
+        	throw new IllegalArgumentException("Waterlogged Fence Gates not currently supported with Supplementaries mod installed. Please disable the setting and re-launch.");
+        }
     }
 
     private void setupCommon(final FMLCommonSetupEvent event) {
