@@ -189,10 +189,15 @@ public class DDNames
     public static final String TALL_ECO_WALNUT = "tall_eco_walnut_door";
     
     //End's Phantasm
+    public static final String TALL_EBONY = "tall_ebony_door";
     public static final String TALL_PREAM = "tall_pream_door";
     
     //Habitat
     public static final String TALL_FAIRY_RING_MUSHROOM = "tall_fairy_ring_mushroom_door";
+    
+    //Nether's Exoticism
+    public static final String TALL_JABOTICABA = "tall_jaboticaba_door";
+    public static final String TALL_RAMBOUTAN = "tall_ramboutan_door";    
     
     //Outer End
     public static final String TALL_AZURE = "tall_azure_door";

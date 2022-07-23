@@ -187,10 +187,15 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_ECO_WALNUT_DOOR = ITEMS.register(DDNames.TALL_ECO_WALNUT, () -> new TallDoorItem(DDBlocks.TALL_ECO_WALNUT_DOOR.get(), conditionalTabProperties("ecologics")));
     
     // End's Phantasm
+    public static final RegistryObject<Item> TALL_EBONY_DOOR = ITEMS.register(DDNames.TALL_EBONY, () -> new TallDoorItem(DDBlocks.TALL_EBONY_DOOR.get(), conditionalTabProperties("phantasm")));
     public static final RegistryObject<Item> TALL_PREAM_DOOR = ITEMS.register(DDNames.TALL_PREAM, () -> new TallDoorItem(DDBlocks.TALL_PREAM_DOOR.get(), conditionalTabProperties("phantasm")));
      
     // Habitat
     public static final RegistryObject<Item> TALL_FAIRY_RING_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_FAIRY_RING_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_FAIRY_RING_MUSHROOM_DOOR.get(), addIfItemIsAvailable(new ResourceLocation("habitat", "fairy_ring_mushroom_door"), conditionalTabProperties("habitat"))));
+    
+    // Nether's Exoticism
+    public static final RegistryObject<Item> TALL_JABOTICABA_DOOR = ITEMS.register(DDNames.TALL_JABOTICABA, () -> new TallDoorItem(DDBlocks.TALL_JABOTICABA_DOOR.get(), conditionalTabProperties("nethers_exoticism")));
+    public static final RegistryObject<Item> TALL_RAMBOUTAN_DOOR = ITEMS.register(DDNames.TALL_RAMBOUTAN, () -> new TallDoorItem(DDBlocks.TALL_RAMBOUTAN_DOOR.get(), conditionalTabProperties("nethers_exoticism")));    
     
     // Outer End
     public static final RegistryObject<Item> TALL_AZURE_DOOR = ITEMS.register(DDNames.TALL_AZURE, () -> new TallDoorItem(DDBlocks.TALL_AZURE_DOOR.get(), conditionalTabProperties("outer_end")));

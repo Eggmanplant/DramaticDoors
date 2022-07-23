@@ -13,7 +13,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class DDEvents
 {
-
+	
 	@SubscribeEvent
 	public void entityAdded(EntityJoinWorldEvent event) {
 		if (event.getEntity() instanceof AbstractVillager || event.getEntity() instanceof AbstractPiglin || event.getEntity() instanceof Witch) {
@@ -28,6 +28,5 @@ public class DDEvents
 			}
 		}
 	}
-	
 	
 }

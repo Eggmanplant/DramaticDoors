@@ -27,19 +27,19 @@ public class DramaticDoors
     	DDBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     	DDItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     	DDBlockEntities.BLOCK_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DDConfig.CONFIG);
     	
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupCommon);
         if (FMLEnvironment.dist == Dist.CLIENT) { FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient); }
 
         MinecraftForge.EVENT_BUS.register(this);
-        
-        if (DDConfig.waterloggableFenceGates.get() && Compats.SUPPLEMENTARIES_INSTALLED) {
-        	throw new IllegalArgumentException("Waterlogged Fence Gates not currently supported with Supplementaries mod installed due to conflicting waterlogged states. Please disable the setting and re-launch.");
-        }
+    	if (DDConfig.waterloggableFenceGates.get() && Compats.SUPPLEMENTARIES_INSTALLED) {
+    		throw new IllegalArgumentException("Waterlogged Fence Gates not currently supported with Supplementaries mod installed due to conflicting waterlogged states. Please disable the setting and re-launch.");
+    	}
     }
 
     private void setupCommon(final FMLCommonSetupEvent event) {
-    	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DDConfig.CONFIG);
+    	
     	if (Compats.AUTOMATIC_DOORS_INSTALLED) {
     		MinecraftForge.EVENT_BUS.register(new AutomaticDoorCompat());
     	}

@@ -71,6 +71,7 @@
   "block.dramaticdoors.tall_timewood_door": "Tall Timewood Door",
   "block.dramaticdoors.tall_transwood_door": "Tall Transwood Door",
   "block.dramaticdoors.tall_twilight_oak_door": "Tall Twilight Oak Door",
+  "block.dramaticdoors.tall_towerwood_door": "Tall Towerwood Door",
 
   "block.dramaticdoors.tall_aspen_door": "Tall Aspen Door",
   "block.dramaticdoors.tall_grimwood_door": "Tall Grimwood Door",
@@ -117,6 +118,9 @@
   "block.dramaticdoors.tall_bp_emerald_door": "Tall Emerald Door",
   "block.dramaticdoors.tall_bp_netherite_door": "Tall Netherite Door",
 
+  "block.dramaticdoors.tall_ceiltrunk_door": "Tall Ceiltrunk Door",
+  "block.dramaticdoors.tall_luzawood_door": "Tall Luzawood Door",
+
   "block.dramaticdoors.tall_petrified_door": "Tall Petrified Door",
 
   "block.dramaticdoors.tall_steel_door": "Tall Steel Door",
@@ -145,9 +149,13 @@
   "block.dramaticdoors.tall_eco_coconut_door": "Tall Coconut Door",
   "block.dramaticdoors.tall_eco_walnut_door": "Tall Walnut Door",
 
+  "block.dramaticdoors.tall_ebony_door": "Tall Ebony Door",
   "block.dramaticdoors.tall_pream_door": "Tall Pream Door",
 
   "block.dramaticdoors.tall_fairy_ring_mushroom_door": "Tall Fairy Ring Mushroom Door",
+
+  "block.dramaticdoors.tall_jaboticaba_door": "Tall Jabuticaba Door",
+  "block.dramaticdoors.tall_ramboutan_door": "Tall Rambutan Door",
   
   "block.dramaticdoors.tall_azure_door": "Tall Azure Door",
 
