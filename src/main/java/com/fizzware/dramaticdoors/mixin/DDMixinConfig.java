@@ -15,7 +15,7 @@ public class DDMixinConfig implements IMixinConfigPlugin
 
 	@Override
 	public void onLoad(String mixinPackage) {
-		DDConfig.loadConfig(DDConfig.CONFIG, FMLPaths.CONFIGDIR.get().resolve("dramaticdoors.toml"));
+		DDConfig.loadConfig(DDConfig.CONFIG, FMLPaths.CONFIGDIR.get().resolve("dramaticdoors-common.toml"));
 	}
 
 	@Override

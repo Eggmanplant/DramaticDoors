@@ -3,15 +3,16 @@ package com.fizzware.dramaticdoors;
 import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.client.ClientRenderer;
+import com.fizzware.dramaticdoors.compat.AutomaticDoorCompat;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.items.DDItems;
-
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -21,24 +22,27 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 public class DramaticDoors
 {
     public static final String MOD_ID = "dramaticdoors";
-
+    
     public DramaticDoors() {
     	DDBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     	DDItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     	DDBlockEntities.BLOCK_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
     	
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupCommon);
-        if (FMLEnvironment.dist == Dist.CLIENT) {
-        	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient); 
-        }
+        if (FMLEnvironment.dist == Dist.CLIENT) { FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient); }
 
         MinecraftForge.EVENT_BUS.register(this);
-        if (DDConfig.waterloggableFenceGates.get() && ModList.get().isLoaded("supplementaries")) {
-        	throw new IllegalArgumentException("Waterlogged Fence Gates not currently supported with Supplementaries mod installed. Please disable the setting and re-launch.");
+        
+        if (DDConfig.waterloggableFenceGates.get() && Compats.SUPPLEMENTARIES_INSTALLED) {
+        	throw new IllegalArgumentException("Waterlogged Fence Gates not currently supported with Supplementaries mod installed due to conflicting waterlogged states. Please disable the setting and re-launch.");
         }
     }
 
     private void setupCommon(final FMLCommonSetupEvent event) {
+    	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DDConfig.CONFIG);
+    	if (Compats.AUTOMATIC_DOORS_INSTALLED) {
+    		MinecraftForge.EVENT_BUS.register(new AutomaticDoorCompat());
+    	}
         MinecraftForge.EVENT_BUS.register(new DDUpdateHandler());
         MinecraftForge.EVENT_BUS.register(new DDEvents());
     }
