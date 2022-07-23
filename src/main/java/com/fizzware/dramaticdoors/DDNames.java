@@ -224,6 +224,9 @@ public class DDNames
     public static final String TALL_QUARK_AZALEA = "tall_quark_azalea_door";
     public static final String TALL_QUARK_BLOSSOM = "tall_quark_blossom_door";
     
+    //Snowy Spirit
+    public static final String TALL_GINGERBREAD = "tall_gingerbread_door";
+    
     //Supplementaries
     public static final String TALL_GOLD = "tall_gold_door";
     public static final String TALL_SILVER = "tall_silver_door";
