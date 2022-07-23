@@ -185,7 +185,13 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_SILVER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_LEAD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_NETHERITE_DOOR.get(), RenderType.cutout());
-		
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_TWIGS_BAMBOO_DOOR.get(), RenderType.cutout());
+				
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_GRONGLE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_SMOGSTEM_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_WIGGLEWOOD_DOOR.get(), RenderType.cutout());
+
 		// Set up rendering for all the Macaw doors.
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_JAIL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_METAL_DOOR.get(), RenderType.cutout());
