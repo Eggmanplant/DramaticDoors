@@ -4,14 +4,17 @@
   "package": "com.fizzware.dramaticdoors.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AdvancementManagerMixin",
+    "RecipeManagerMixin",
     "LandPathNodeMakerMixin",
-    "PiglinMixin",
-    "VillagerMixin",
+    "DoorInteractGoalMixin",
+    "OpenDoorsTaskMixin",
     "WitchMixin"
   ],
   "client": [
   ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "refmap": "DramaticDoors-Fabric-refmap.json"
 }

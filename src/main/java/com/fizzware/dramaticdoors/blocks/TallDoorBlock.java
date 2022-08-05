@@ -2,6 +2,7 @@ package com.fizzware.dramaticdoors.blocks;
 
 import javax.annotation.Nullable;
 import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.state.properties.DDProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
@@ -327,7 +328,7 @@ public class TallDoorBlock extends Block {
     
     //Double Doors Compatibility.
 	public static void tryOpenDoubleDoor(World world, BlockState state, BlockPos pos) {
-        if (FabricLoader.getInstance().isModLoaded("doubledoors")) {
+        if (Compats.DOUBLE_DOORS_INSTALLED) {
             Direction direction = state.get(TallDoorBlock.FACING);
             boolean isOpen = state.get(TallDoorBlock.OPEN);
             DoorHinge isMirrored = state.get(TallDoorBlock.HINGE);
