@@ -7,6 +7,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
 import net.minecraft.entity.ai.pathing.LandPathNodeMaker;
 import net.minecraft.entity.ai.pathing.PathNodeType;
 import net.minecraft.util.math.BlockPos;
@@ -21,5 +22,12 @@ public class LandPathNodeMakerMixin
 		if (TallDoorBlock.isWoodenDoor(blockStateDDCheck) && !blockStateDDCheck.get(TallDoorBlock.OPEN).booleanValue()) {
             callback.setReturnValue(PathNodeType.DOOR_WOOD_CLOSED);
         }
+		if (blockStateDDCheck.getBlock() instanceof TallDoorBlock && blockStateDDCheck.getMaterial() == Material.METAL && !blockStateDDCheck.get(TallDoorBlock.OPEN).booleanValue()) {
+            callback.setReturnValue(PathNodeType.DOOR_IRON_CLOSED);
+        }
+		if (blockStateDDCheck.getBlock() instanceof TallDoorBlock && blockStateDDCheck.get(TallDoorBlock.OPEN).booleanValue()) {
+            callback.setReturnValue(PathNodeType.DOOR_OPEN);
+        }
 	}
+
 }

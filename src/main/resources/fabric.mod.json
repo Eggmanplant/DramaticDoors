@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Dramatic Doors (Fabric)",
-  "description": "Fabric version of Dramatic Doors, the mod that adds three block tall doors! ",
+  "description": "Fabric version of Dramatic Doors, the mod that adds three block tall doors! End Endermen discrimination!",
   "authors": [
     "Fizzware (Original creator)", "Kitteh6660 (Fabric port)"
   ],
@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/dramaticdoors/icon.png",
+  "icon": "assets/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -37,6 +37,10 @@
     "java": ">=17"
   },
   "suggests": {
-    "another-mod": "*"
+    "doubledoors": "*",
+    "bewitchment": "*",
+    "ceilands": "*",
+    "ecologics": "*",
+    "twilightforest": "*"
   }
 }

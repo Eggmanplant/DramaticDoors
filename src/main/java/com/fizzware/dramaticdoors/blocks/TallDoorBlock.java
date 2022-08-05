@@ -2,22 +2,25 @@ package com.fizzware.dramaticdoors.blocks;
 
 import javax.annotation.Nullable;
 import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.state.properties.DDProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.block.Waterloggable;
 import net.minecraft.block.enums.DoorHinge;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.FluidState;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
@@ -38,13 +41,14 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
 
-public class TallDoorBlock extends Block {
+public class TallDoorBlock extends Block implements Waterloggable {
 
     public static final EnumProperty<TripleBlockPart> THIRD = DDProperties.TRIPLE_BLOCK_THIRD;
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final BooleanProperty OPEN = Properties.OPEN;
     public static final EnumProperty<DoorHinge> HINGE = Properties.DOOR_HINGE;
     public static final BooleanProperty POWERED = Properties.POWERED;
+    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     protected static final VoxelShape SOUTH_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D);
     protected static final VoxelShape NORTH_AABB = Block.createCuboidShape(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape WEST_AABB = Block.createCuboidShape(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
@@ -53,7 +57,7 @@ public class TallDoorBlock extends Block {
 
     public TallDoorBlock(Block from) {
         super(Settings.copy(from));
-        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(OPEN, Boolean.FALSE).with(HINGE, DoorHinge.LEFT).with(POWERED, Boolean.FALSE).with(THIRD, TripleBlockPart.LOWER));
+        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(OPEN, Boolean.FALSE).with(HINGE, DoorHinge.LEFT).with(POWERED, Boolean.FALSE).with(THIRD, TripleBlockPart.LOWER).with(WATERLOGGED, Boolean.FALSE));
     }
 
 	@SuppressWarnings("deprecation")
@@ -98,11 +102,11 @@ public class TallDoorBlock extends Block {
             BlockState blockstate1 = level.getBlockState(otherPos1);
             BlockState blockstate2 = level.getBlockState(otherPos2);
             if (blockstate1.getBlock() == state.getBlock() && blockstate1.get(THIRD) == TripleBlockPart.LOWER) {
-                level.setBlockState(otherPos1, Blocks.AIR.getDefaultState(), 35);
+                level.setBlockState(otherPos1, level.getFluidState(otherPos1).getFluid() == Fluids.WATER ? Blocks.WATER.getDefaultState() : Blocks.AIR.getDefaultState(), 35);
                 level.syncWorldEvent(player, 2001, otherPos1, Block.getRawIdFromState(blockstate1));
             }
             if (blockstate2.getBlock() == state.getBlock() && blockstate2.get(THIRD) == TripleBlockPart.LOWER) {
-                level.setBlockState(otherPos2, Blocks.AIR.getDefaultState(), 35);
+                level.setBlockState(otherPos2, level.getFluidState(otherPos2).getFluid() == Fluids.WATER ? Blocks.WATER.getDefaultState() : Blocks.AIR.getDefaultState(), 35);
                 level.syncWorldEvent(player, 2001, otherPos1, Block.getRawIdFromState(blockstate1));
             }
         }
@@ -124,7 +128,8 @@ public class TallDoorBlock extends Block {
         if (blockpos.getY() < context.getWorld().getTopY() - 2 && context.getWorld().getBlockState(blockpos.up()).canReplace(context) && context.getWorld().getBlockState(blockpos.up(2)).canReplace(context)) {
             World level = context.getWorld();
             boolean flag = level.isReceivingRedstonePower(blockpos) || level.isReceivingRedstonePower(blockpos.up());
-            return this.getDefaultState().with(FACING, context.getPlayerFacing()).with(HINGE, this.getHinge(context)).with(POWERED, flag).with(OPEN, flag).with(THIRD, TripleBlockPart.LOWER);
+            boolean waterfilled = level.getFluidState(blockpos).getFluid() == Fluids.WATER; 
+            return this.getDefaultState().with(FACING, context.getPlayerFacing()).with(HINGE, this.getHinge(context)).with(POWERED, flag).with(OPEN, flag).with(THIRD, TripleBlockPart.LOWER).with(WATERLOGGED, waterfilled);
         } else {
             return null;
         }
@@ -132,8 +137,10 @@ public class TallDoorBlock extends Block {
 
     @Override
     public void onPlaced(World level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
-        level.setBlockState(pos.up(), state.with(THIRD, TripleBlockPart.MIDDLE), 3);
-        level.setBlockState(pos.up(2), state.with(THIRD, TripleBlockPart.UPPER), 3);
+    	boolean waterfilled = level.getFluidState(pos.up(1)).getFluid() == Fluids.WATER; 
+    	boolean waterfilled2 = level.getFluidState(pos.up(2)).getFluid() == Fluids.WATER; 
+        level.setBlockState(pos.up(), state.with(THIRD, TripleBlockPart.MIDDLE).with(WATERLOGGED, waterfilled), 3);
+        level.setBlockState(pos.up(2), state.with(THIRD, TripleBlockPart.UPPER).with(WATERLOGGED, waterfilled2), 3);
     }
 
     private DoorHinge getHinge(ItemPlacementContext context) {
@@ -270,9 +277,14 @@ public class TallDoorBlock extends Block {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(THIRD, FACING, OPEN, HINGE, POWERED);
+        builder.add(THIRD, FACING, OPEN, HINGE, POWERED, WATERLOGGED);
     }
 
+    @Override
+	public FluidState getFluidState(BlockState state) {
+		return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : Fluids.EMPTY.getDefaultState();
+	}
+    
     public VoxelShape getOutlineShape(BlockState state, BlockView level, BlockPos pos, ShapeContext context) {
         Direction direction = state.get(FACING);
         boolean flag = !state.get(OPEN);
@@ -327,7 +339,7 @@ public class TallDoorBlock extends Block {
     
     //Double Doors Compatibility.
 	public static void tryOpenDoubleDoor(World world, BlockState state, BlockPos pos) {
-        if (FabricLoader.getInstance().isModLoaded("doubledoors")) {
+        if (Compats.DOUBLE_DOORS_INSTALLED) {
             Direction direction = state.get(TallDoorBlock.FACING);
             boolean isOpen = state.get(TallDoorBlock.OPEN);
             DoorHinge isMirrored = state.get(TallDoorBlock.HINGE);

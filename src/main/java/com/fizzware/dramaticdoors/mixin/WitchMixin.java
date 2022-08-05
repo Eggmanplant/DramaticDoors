@@ -10,8 +10,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.fizzware.dramaticdoors.entity.ai.goal.OpenTallDoorGoal;
-
 @Mixin(WitchEntity.class)
 public class WitchMixin 
 {	
@@ -19,6 +17,5 @@ public class WitchMixin
 	private void addDoorGoals(CallbackInfo info) {
 		((MobNavigation)((MobEntity)(Object)this).navigation).setCanPathThroughDoors(true);
 		((MobEntity)(Object)this).goalSelector.add(1, new LongDoorInteractGoal((MobEntity)(Object)this, true));
-		((MobEntity)(Object)this).goalSelector.add(1, new OpenTallDoorGoal((MobEntity)(Object)this, true));
 	}
 }
