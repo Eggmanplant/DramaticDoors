@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"1": "dramaticdoors:blocks/macaw/tall_jail_door_upper",
-		"particle": "dramaticdoors:blocks/macaw/tall_jail_door_lower"
+		"1": "dramaticdoors:block/macaw/tall_jail_door_upper",
+		"particle": "dramaticdoors:block/macaw/tall_jail_door_lower"
 	},
 	"elements": [
 		{

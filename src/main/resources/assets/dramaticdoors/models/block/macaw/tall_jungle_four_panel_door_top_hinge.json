@@ -1,8 +1,8 @@
 {
     "parent": "block/door_top_rh",
     "textures": {
-        "bottom": "dramaticdoors:blocks/macaw/tall_jungle_four_panel_door_lower",
-        "middle": "dramaticdoors:blocks/macaw/tall_jungle_four_panel_door_middle",
-        "top": "dramaticdoors:blocks/macaw/tall_jungle_four_panel_door_upper"
+        "bottom": "dramaticdoors:block/macaw/tall_jungle_four_panel_door_lower",
+        "middle": "dramaticdoors:block/macaw/tall_jungle_four_panel_door_middle",
+        "top": "dramaticdoors:block/macaw/tall_jungle_four_panel_door_upper"
     }
 }
