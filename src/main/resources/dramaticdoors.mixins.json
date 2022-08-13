@@ -6,6 +6,8 @@
   "mixins": [
     "AdvancementManagerMixin",
     "RecipeManagerMixin",
+    "CPIMMixin",
+    "SPIMMixin",
     "LandPathNodeMakerMixin",
     "DoorInteractGoalMixin",
     "OpenDoorsTaskMixin",

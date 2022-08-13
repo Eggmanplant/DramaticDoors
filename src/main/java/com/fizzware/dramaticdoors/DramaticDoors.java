@@ -3,13 +3,14 @@ package com.fizzware.dramaticdoors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.crafting.DDAdvancementCompats;
 import com.fizzware.dramaticdoors.crafting.DDRecipeCompats;
+import com.fizzware.dramaticdoors.items.DDFuels;
 import com.fizzware.dramaticdoors.items.DDItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -27,38 +28,9 @@ public class DramaticDoors implements ModInitializer
     	// Register stuff.
     	DDBlocks.registerBlocks();
     	DDItems.registerItems();
+    	DDBlockEntities.registerBlockEntities();
+    	DDFuels.addFuels();
     	DDRecipeCompats.initializeRecipes();
     	DDAdvancementCompats.initializeAdvancements();
-		
-		// Set up fuel. Only wooden doors can be used as fuel. Nether wood excluded.
-		FuelRegistry.INSTANCE.add(DDItems.TALL_OAK_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_SPRUCE_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_BIRCH_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_JUNGLE_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_ACACIA_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_DARK_OAK_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_MANGROVE_DOOR, 300);
-		
-		FuelRegistry.INSTANCE.add(DDItems.TALL_CYPRESS_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_DRAGONS_BLOOD_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_ELDER_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_JUNIPER_DOOR, 300);
-
-		FuelRegistry.INSTANCE.add(DDItems.TALL_CEILTRUNK_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_LUZAWOOD_DOOR, 300);
-
-		FuelRegistry.INSTANCE.add(DDItems.TALL_ECO_AZALEA_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_ECO_FLOWERING_AZALEA_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_ECO_COCONUT_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_ECO_WALNUT_DOOR, 300);
-
-		FuelRegistry.INSTANCE.add(DDItems.TALL_CANOPY_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_DARKWOOD_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_MINEWOOD_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_SORTINGWOOD_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_TIMEWOOD_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_TRANSWOOD_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_TWILIGHT_OAK_DOOR, 300);
-		FuelRegistry.INSTANCE.add(DDItems.TALL_TWILIGHT_MANGROVE_DOOR, 300);
 	}
 }

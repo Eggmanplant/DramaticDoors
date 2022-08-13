@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/dramaticdoors/icon.png",
+  "icon": "icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -39,8 +39,13 @@
   "suggests": {
     "doubledoors-fabric": "*",
     "bewitchment": "*",
+    "biomemakeover": "*",
+    "byg": "*",
     "ceilands": "*",
     "ecologics": "*",
+    "snowyspirit": "*",
+    "supplementaries": "*",
+    "twigs": "*",
     "twilightforest": "*"
   }
 }

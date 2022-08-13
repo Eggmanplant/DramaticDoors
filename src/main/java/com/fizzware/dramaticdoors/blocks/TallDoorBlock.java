@@ -6,7 +6,6 @@ import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.state.properties.DDProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -110,11 +109,11 @@ public class TallDoorBlock extends Block {
         super.onBreak(level, pos, state, player);
     }
 
-    private int getCloseSound() {
+    protected int getCloseSound() {
         return this.material == Material.METAL ? 1011 : 1012;
     }
 
-    private int getOpenSound() {
+    protected int getOpenSound() {
         return this.material == Material.METAL ? 1005 : 1006;
     }
 
@@ -173,7 +172,7 @@ public class TallDoorBlock extends Block {
 
     @Override
     public ActionResult onUse(BlockState state, World level, BlockPos pos, PlayerEntity player, Hand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL) {
+    	if (this.material == Material.METAL && !state.isIn(DDTags.HAND_OPENABLE_TALL_METAL_DOORS) || (this == DDBlocks.TALL_GOLD_DOOR && state.get(POWERED))) {
             return ActionResult.PASS;
         } 
     	else {
@@ -233,11 +232,16 @@ public class TallDoorBlock extends Block {
             }
         }
         if (blockIn != this && flag != state.get(POWERED)) {
-            if (flag != state.get(OPEN)) {
-                this.playOpenCloseSound(level, pos, flag);
-            }
-            tryOpenDoubleDoor(level, state, pos);
-            level.setBlockState(pos, state.with(POWERED, flag).with(OPEN, flag), 2);
+        	if (this == DDBlocks.TALL_GOLD_DOOR) {
+        		level.setBlockState(pos, state.with(POWERED, flag), 2);
+        	}
+        	else {
+	            if (flag != state.get(OPEN)) {
+	                this.playOpenCloseSound(level, pos, flag);
+	            }
+	            tryOpenDoubleDoor(level, state, pos);
+	            level.setBlockState(pos, state.with(POWERED, flag).with(OPEN, flag), 2);
+        	}
         }
     }
 
