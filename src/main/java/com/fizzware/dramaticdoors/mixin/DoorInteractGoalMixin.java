@@ -48,10 +48,10 @@ public class DoorInteractGoalMixin
 		}
 	}
 	
-	@Inject(method = "canStart()Z", at = @At(value = "RETURN"))
+	/*@Inject(method = "canStart()Z", at = @At(value = "RETURN"))
 	private void injectCanStartAtReturn(CallbackInfoReturnable<Boolean> ci) {
 		if (!this.doorValid) {
 			this.doorValid = TallDoorBlock.isWoodenDoor(this.mob.world, this.doorPos);
 		}
-	}
+	}*/
 }

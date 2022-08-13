@@ -113,11 +113,11 @@ public class TallDoorBlock extends Block implements Waterloggable {
         super.onBreak(level, pos, state, player);
     }
 
-    private int getCloseSound() {
+    protected int getCloseSound() {
         return this.material == Material.METAL ? 1011 : 1012;
     }
 
-    private int getOpenSound() {
+    protected int getOpenSound() {
         return this.material == Material.METAL ? 1005 : 1006;
     }
 
@@ -179,10 +179,13 @@ public class TallDoorBlock extends Block implements Waterloggable {
 
     @Override
     public ActionResult onUse(BlockState state, World level, BlockPos pos, PlayerEntity player, Hand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL) {
+    	if (this.material == Material.METAL && !state.isIn(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
             return ActionResult.PASS;
         } 
     	else {
+        	if (this == DDBlocks.TALL_GOLD_DOOR && state.get(POWERED)) {
+        		return ActionResult.PASS;
+        	}
         	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
             level.setBlockState(pos, state, 10);

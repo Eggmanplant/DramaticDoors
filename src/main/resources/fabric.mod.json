@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/icon.png",
+  "icon": "icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -37,10 +37,16 @@
     "java": ">=17"
   },
   "suggests": {
-    "doubledoors": "*",
+    "doubledoors-fabric": "*",
     "bewitchment": "*",
+    "biomemakeover": "*",
+    "byg": "*",
     "ceilands": "*",
     "ecologics": "*",
-    "twilightforest": "*"
+    "snowyspirit": "*",
+    "supplementaries": "*",
+    "twigs": "*",
+    "twilightforest": "*",
+    "wildbackport": "*"
   }
 }
