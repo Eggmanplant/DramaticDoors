@@ -126,7 +126,7 @@ public class DDNames
     public static final String TALL_RIVER = "tall_river_door";
     public static final String TALL_GLASS = "tall_glass_door";
     public static final String TALL_TOOTH = "tall_tooth_door";
-    
+        
     //Abundance
     public static final String TALL_JACARANDA = "tall_jacaranda_door";
     public static final String TALL_REDBUD = "tall_redbud_door";
@@ -141,6 +141,15 @@ public class DDNames
 
     //Architects Palette
     public static final String TALL_TWISTED = "tall_twisted_door";
+
+    //Ars Nouveau
+    public static final String TALL_ARCHWOOD = "tall_archwood_door";
+    
+    //Biome Makeover
+    public static final String TALL_BM_ANCIENT_OAK = "tall_bm_ancient_oak_door";
+    public static final String TALL_BM_BLIGHTED_BALSA = "tall_bm_blighted_balsa_door";
+    public static final String TALL_BM_SWAMP_CYPRESS = "tall_bm_swamp_cypress_door";
+    public static final String TALL_BM_WILLOW = "tall_bm_willow_door";
     
     //Blocks+
     public static final String TALL_BP_BAMBOO = "tall_bp_bamboo_door";
@@ -202,7 +211,7 @@ public class DDNames
     public static final String TALL_CERULEAN = "tall_cerulean_door";
     public static final String TALL_SELDGE = "tall_seldge_door";
     public static final String TALL_STALK = "tall_stalk_door";
-    public static final String TALL_VERDANT = "tall_verdant_door";    
+    public static final String TALL_VERDANT = "tall_verdant_door";
     
     //Habitat
     public static final String TALL_FAIRY_RING_MUSHROOM = "tall_fairy_ring_mushroom_door";
