@@ -11,12 +11,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.Packet;
 import net.minecraft.network.listener.ClientPlayPacketListener;
+import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 
+// Not used in 1.18.2.
 public class TallNetheriteDoorBlockEntity extends BlockEntity
 {
 	
@@ -135,6 +137,11 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
 
     @Override
     public Packet<ClientPlayPacketListener> toUpdatePacket() {
-        return this.toUpdatePacket();
+        return BlockEntityUpdateS2CPacket.create(this);
     }
+    
+	@Override
+	public NbtCompound toInitialChunkDataNbt() {
+		return createNbt();
+	}
 }

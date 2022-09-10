@@ -2,7 +2,17 @@
   "replace": false,
   "values": [
     "dramaticdoors:tall_iron_door",
+    "dramaticdoors:tall_iron_glass_door",
+    "dramaticdoors:tall_blockus_blackstone_door",
+    "dramaticdoors:tall_blockus_obsidian_reinforced_door",
+    "dramaticdoors:tall_blockus_stone_door",
     "dramaticdoors:tall_gold_door",
-    "dramaticdoors:tall_netherite_door"
+    "dramaticdoors:tall_netherite_door",
+    "dramaticdoors:tall_macaw_jail_door",
+    "dramaticdoors:tall_macaw_metal_door",
+    "dramaticdoors:tall_macaw_metal_hospital_door",
+    "dramaticdoors:tall_macaw_metal_reinforced_door",
+    "dramaticdoors:tall_macaw_metal_warning_door",
+    "dramaticdoors:tall_macaw_metal_windowed_door"
   ]
 }

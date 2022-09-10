@@ -47,4 +47,8 @@ public class TallNetheriteDoorBlock extends TallDoorBlock implements BlockEntity
 	    return ActionResult.success(level.isClient);
 	}
 	
+	@Override
+    public void neighborUpdate(BlockState state, World level, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
+		//Tall Netherite door doesn't change with redstone.
+	}
 }
