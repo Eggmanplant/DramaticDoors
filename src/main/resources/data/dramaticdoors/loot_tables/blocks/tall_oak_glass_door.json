@@ -9,13 +9,13 @@
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "dramaticdoors:tall_oak_glass_glass_door",
+              "block": "dramaticdoors:tall_oak_glass_door",
               "properties": {
                 "third": "lower"
               }
             }
           ],
-          "name": "dramaticdoors:tall_oak_glass_glass_door"
+          "name": "dramaticdoors:tall_oak_glass_door"
         }
       ],
       "conditions": [

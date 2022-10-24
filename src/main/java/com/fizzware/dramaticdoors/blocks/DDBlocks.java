@@ -22,6 +22,15 @@ public class DDBlocks {
     public static final Block TALL_CRIMSON_DOOR = new TallDoorBlock(Blocks.CRIMSON_DOOR);
     public static final Block TALL_WARPED_DOOR = new TallDoorBlock(Blocks.WARPED_DOOR);
 
+    // Ad Astra
+    public static final Block TALL_AERONOS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ad_astra", "aeronos_door")));
+    public static final Block TALL_GLACIAN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ad_astra", "glacian_door")));
+    public static final Block TALL_STROPHAR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ad_astra", "strophar_door")));
+    public static final Block TALL_STEEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ad_astra", "steel_door"), Blocks.IRON_DOOR));
+    
+    // Architects Palette
+    public static final Block TALL_TWISTED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("architects_palette", "twisted_door")));
+    
     // Bewitchment
     public static final Block TALL_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("bewitchment", "cypress_door")));
     public static final Block TALL_DRAGONS_BLOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("bewitchment", "dragons_blood_door")));
@@ -56,8 +65,8 @@ public class DDBlocks {
     public static final Block TALL_ECO_FLOWERING_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ecologics", "flowering_azalea_door")));
     public static final Block TALL_ECO_COCONUT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ecologics", "coconut_door")));
     public static final Block TALL_ECO_WALNUT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ecologics", "walnut_door")));
-    
-    // Modern Glass
+        
+    // Glass Doors
     public static final Block TALL_IRON_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("glassdoor", "iron_glassdoor"), Blocks.IRON_DOOR));
     public static final Block TALL_OAK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("glassdoor", "oak_glassdoor")));
     public static final Block TALL_SPRUCE_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("glassdoor", "spruce_glassdoor")));
@@ -68,6 +77,11 @@ public class DDBlocks {
     public static final Block TALL_CRIMSON_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("glassdoor", "crimson_glassdoor")));
     public static final Block TALL_WARPED_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("glassdoor", "warped_glassdoor")));    
     
+    // Hephaestus
+    public static final Block TALL_BLOODSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("tconstruct", "bloodshroom_door")));
+    public static final Block TALL_GREENHEART_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("tconstruct", "greenheart_door")));
+    public static final Block TALL_SKYROOT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("tconstruct", "skyroot_door")));
+
     // Oh the Biomes You'll Go
     public static final Block TALL_BYG_ASPEN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("byg", "tall_byg_aspen_door")));
     public static final Block TALL_BYG_BAOBAB_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("byg", "tall_byg_baobab_door")));
@@ -102,12 +116,20 @@ public class DDBlocks {
     public static final Block TALL_BYG_WITCH_HAZEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("byg", "tall_byg_witch_hazel_door")));
     public static final Block TALL_BYG_ZELKOVA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("byg", "tall_byg_zelkova_door")));
     
+    // Promenade
+    public static final Block TALL_PROMENADE_CHERRY_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("promenade", "cherry_oak_door")));
+    public static final Block TALL_PROMENADE_DARK_AMARANTH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("promenade", "dark_amaranth_door")));
+    public static final Block TALL_PROMENADE_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("promenade", "palm_door")));    
+    
     // Snowy Spirit
     public static final Block TALL_GINGERBREAD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("snowyspirit", "gingerbread_door")));
     
     // Supplementaries
     public static final Block TALL_GOLD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("supplementaries", "gold_door")));
     public static final Block TALL_NETHERITE_DOOR = new TallNetheriteDoorBlock(getBlockFromResourceLocation(new Identifier("supplementaries", "netherite_door")));
+    
+    // Tech Reborn
+    public static final Block TALL_RUBBER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("tech_reborn", "rubber_door")));    
     
     // Traverse
     public static final Block TALL_TRAVERSE_FIR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("traverse", "fir_door")));
@@ -124,6 +146,9 @@ public class DDBlocks {
     public static final Block TALL_TRANSWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("twilightforest", "tranformation_door")));
     public static final Block TALL_TWILIGHT_MANGROVE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("twilightforest", "mangrove_door")));
     public static final Block TALL_TWILIGHT_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("twilightforest", "twilight_oak_door")));
+    
+    // XP Obelisk
+    public static final Block TALL_SOUL_COPPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("xps_additions", "soul_copper_door"), Blocks.IRON_DOOR));    
     
     // Macaw's Doors (The biggest compat)
     public static final Block TALL_MACAW_JAIL_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "jail_door"), Blocks.IRON_DOOR));
@@ -262,6 +287,15 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "crimson_four_panel_door")));
 	public static final Block TALL_MACAW_WARPED_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "warped_four_panel_door")));
 
+	public static final Block TALL_MACAW_OAK_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "oak_swamp_door")));
+	public static final Block TALL_MACAW_SPRUCE_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "spruce_swamp_door")));
+	public static final Block TALL_MACAW_BIRCH_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "birch_swamp_door")));
+	public static final Block TALL_MACAW_JUNGLE_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "jungle_swamp_door")));
+	public static final Block TALL_MACAW_ACACIA_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "acacia_swamp_door")));
+	public static final Block TALL_MACAW_DARK_OAK_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "dark_oak_swamp_door")));
+	public static final Block TALL_MACAW_CRIMSON_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "crimson_swamp_door")));
+	public static final Block TALL_MACAW_WARPED_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "warped_swamp_door")));
+	
 	public static final Block TALL_MACAW_OAK_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "oak_nether_door")));
 	public static final Block TALL_MACAW_SPRUCE_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "spruce_nether_door")));
 	public static final Block TALL_MACAW_BIRCH_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "birch_nether_door")));
@@ -323,6 +357,13 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BYG_WITCH_HAZEL), TALL_BYG_WITCH_HAZEL_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BYG_ZELKOVA), TALL_BYG_ZELKOVA_DOOR);
 
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_AERONOS), TALL_AERONOS_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_GLACIAN), TALL_GLACIAN_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_STROPHAR), TALL_STROPHAR_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_STEEL), TALL_STEEL_DOOR);
+
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TWISTED), TALL_TWISTED_DOOR);
+
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CYPRESS), TALL_CYPRESS_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_DRAGONS_BLOOD), TALL_DRAGONS_BLOOD_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ELDER), TALL_ELDER_DOOR);
@@ -351,7 +392,7 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ECO_FLOWERING_AZALEA), TALL_ECO_FLOWERING_AZALEA_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ECO_COCONUT), TALL_ECO_COCONUT_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ECO_WALNUT), TALL_ECO_WALNUT_DOOR);
-        
+
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_IRON_GLASS), TALL_IRON_GLASS_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_OAK_GLASS), TALL_OAK_GLASS_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_SPRUCE_GLASS), TALL_SPRUCE_GLASS_DOOR);
@@ -362,10 +403,20 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CRIMSON_GLASS), TALL_CRIMSON_GLASS_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_WARPED_GLASS), TALL_WARPED_GLASS_DOOR);
 
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BLOODSHROOM), TALL_BLOODSHROOM_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_GREENHEART), TALL_GREENHEART_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_SKYROOT), TALL_SKYROOT_DOOR);
+
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_CHERRY_OAK), TALL_PROMENADE_CHERRY_OAK_DOOR);
+		Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_DARK_AMARANTH), TALL_PROMENADE_DARK_AMARANTH_DOOR);
+		Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_PALM), TALL_PROMENADE_PALM_DOOR);
+
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_GINGERBREAD), TALL_GINGERBREAD_DOOR);
 
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_GOLD), TALL_GOLD_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_NETHERITE), TALL_NETHERITE_DOOR);
+
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_RUBBER), TALL_RUBBER_DOOR);
 
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TRAVERSE_FIR), TALL_TRAVERSE_FIR_DOOR);
 
@@ -379,6 +430,8 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TRANSWOOD), TALL_TRANSWOOD_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TWILIGHT_MANGROVE), TALL_TWILIGHT_MANGROVE_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TWILIGHT_OAK), TALL_TWILIGHT_OAK_DOOR);
+
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_SOUL_COPPER), TALL_SOUL_COPPER_DOOR);
 
         //Register all those Macaw doors.
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JAIL), TALL_MACAW_JAIL_DOOR);
@@ -516,6 +569,15 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_FOUR_PANEL), TALL_MACAW_ACACIA_FOUR_PANEL_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_FOUR_PANEL), TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_FOUR_PANEL), TALL_MACAW_WARPED_FOUR_PANEL_DOOR);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_OAK_SWAMP), TALL_MACAW_OAK_SWAMP_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_SPRUCE_SWAMP), TALL_MACAW_SPRUCE_SWAMP_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BIRCH_SWAMP), TALL_MACAW_BIRCH_SWAMP_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_SWAMP), TALL_MACAW_JUNGLE_SWAMP_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_SWAMP), TALL_MACAW_ACACIA_SWAMP_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_SWAMP), TALL_MACAW_DARK_OAK_SWAMP_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_SWAMP), TALL_MACAW_CRIMSON_SWAMP_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_SWAMP), TALL_MACAW_WARPED_SWAMP_DOOR);
 
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_OAK_NETHER), TALL_MACAW_OAK_NETHER_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_SPRUCE_NETHER), TALL_MACAW_SPRUCE_NETHER_DOOR);
@@ -532,7 +594,6 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_MYSTIC), TALL_MACAW_ACACIA_MYSTIC_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_MYSTIC), TALL_MACAW_DARK_OAK_MYSTIC_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_MYSTIC), TALL_MACAW_CRIMSON_MYSTIC_DOOR);
-
     }
     
     public static Block getBlockFromResourceLocation(Identifier resource) {

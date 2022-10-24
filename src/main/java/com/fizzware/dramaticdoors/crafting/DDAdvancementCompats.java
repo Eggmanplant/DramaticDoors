@@ -17,6 +17,15 @@ public class DDAdvancementCompats
 	public static List<JsonObject> RECIPE_ADVANCEMENTS = new ArrayList<JsonObject>();
 	
 	public static void initializeAdvancements() {
+		if (FabricLoader.getInstance().isModLoaded("ad_astra")) {
+			createRecipeAdvancementJson(DDNames.TALL_AERONOS, new Identifier("ad_astra", "aeronos_door"));
+			createRecipeAdvancementJson(DDNames.TALL_GLACIAN, new Identifier("ad_astra", "glacian_door"));
+			createRecipeAdvancementJson(DDNames.TALL_STROPHAR, new Identifier("ad_astra", "strophar_door"));
+			createRecipeAdvancementJson(DDNames.TALL_STEEL, new Identifier("ad_astra", "steel_door"));
+		}
+		if (FabricLoader.getInstance().isModLoaded("architects_palette")) {
+			createRecipeAdvancementJson(DDNames.TALL_TWISTED, new Identifier("architects_palette", "twisted_door"));
+		}
 		if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
 			createRecipeAdvancementJson(DDNames.TALL_CYPRESS, new Identifier("bewitchment", "cypress_door"));
 			createRecipeAdvancementJson(DDNames.TALL_DRAGONS_BLOOD, new Identifier("bewitchment", "dragons_blood_door"));
@@ -97,12 +106,25 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_CRIMSON_GLASS, new Identifier("glassdoor", "crimson_glassdoor"));
 			createRecipeAdvancementJson(DDNames.TALL_WARPED_GLASS, new Identifier("glassdoor", "warped_glassdoor"));
 		}
+		if (FabricLoader.getInstance().isModLoaded("promenade")) {
+			createRecipeAdvancementJson(DDNames.TALL_PROMENADE_CHERRY_OAK, new Identifier("promenade", "cherry_oak_door"));
+			createRecipeAdvancementJson(DDNames.TALL_PROMENADE_DARK_AMARANTH, new Identifier("promenade", "dark_amaranth_door"));
+			createRecipeAdvancementJson(DDNames.TALL_PROMENADE_PALM, new Identifier("promenade", "palm_door"));
+		}
 		if (FabricLoader.getInstance().isModLoaded("snowyspirit")) {
 			createRecipeAdvancementJson(DDNames.TALL_GINGERBREAD, new Identifier("snowyspirit", "gingerbread_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("supplementaries")) {
 			createRecipeAdvancementJson(DDNames.TALL_GOLD, new Identifier("supplementaries", "gold_door"));
 			createRecipeAdvancementJson(DDNames.TALL_NETHERITE, new Identifier("supplementaries", "netherite_door"));
+		}
+		if (FabricLoader.getInstance().isModLoaded("tconstruct")) {
+			createRecipeAdvancementJson(DDNames.TALL_BLOODSHROOM, new Identifier("tconstruct", "bloodshroom_door"));
+			createRecipeAdvancementJson(DDNames.TALL_GREENHEART, new Identifier("tconstruct", "greenheart_door"));
+			createRecipeAdvancementJson(DDNames.TALL_SKYROOT, new Identifier("tconstruct", "skyroot_door"));
+		}
+		if (FabricLoader.getInstance().isModLoaded("techreborn")) {
+			createRecipeAdvancementJson(DDNames.TALL_RUBBER, new Identifier("techreborn", "rubber_door"));			
 		}
 		if (FabricLoader.getInstance().isModLoaded("traverse")) {
 			createRecipeAdvancementJson(DDNames.TALL_TRAVERSE_FIR, new Identifier("traverse", "fir_door"));	
@@ -122,6 +144,9 @@ public class DDAdvancementCompats
 		}
 		if (FabricLoader.getInstance().isModLoaded("wildbackport")) {
 			createRecipeAdvancementJson(DDNames.TALL_MANGROVE, new Identifier("wildbackport", "mangrove_door"));			
+		}
+		if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
+			createRecipeAdvancementJson(DDNames.TALL_SOUL_COPPER, new Identifier("xps_additions", "soul_copper_door"));			
 		}
 		if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
 			createRecipeAdvancementJson(DDNames.TALL_MACAW_JAIL, new Identifier("mcwdoors", "jail_door"));
@@ -244,6 +269,14 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_MACAW_ACACIA_FOUR_PANEL, new Identifier("mcwdoors", "acacia_four_panel_door"));
 			createRecipeAdvancementJson(DDNames.TALL_MACAW_CRIMSON_FOUR_PANEL, new Identifier("mcwdoors", "crimson_four_panel_door"));
 			createRecipeAdvancementJson(DDNames.TALL_MACAW_WARPED_FOUR_PANEL, new Identifier("mcwdoors", "warped_four_panel_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MACAW_OAK_SWAMP, new Identifier("mcwdoors", "oak_swamp_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MACAW_SPRUCE_SWAMP, new Identifier("mcwdoors", "spruce_swamp_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MACAW_BIRCH_SWAMP, new Identifier("mcwdoors", "birch_swamp_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MACAW_JUNGLE_SWAMP, new Identifier("mcwdoors", "jungle_swamp_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MACAW_ACACIA_SWAMP, new Identifier("mcwdoors", "acacia_swamp_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MACAW_DARK_OAK_SWAMP, new Identifier("mcwdoors", "dark_oak_swamp_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MACAW_CRIMSON_SWAMP, new Identifier("mcwdoors", "crimson_swamp_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MACAW_WARPED_SWAMP, new Identifier("mcwdoors", "warped_swamp_door"));
 			createRecipeAdvancementJson(DDNames.TALL_MACAW_OAK_NETHER, new Identifier("mcwdoors", "oak_nether_door"));
 			createRecipeAdvancementJson(DDNames.TALL_MACAW_SPRUCE_NETHER, new Identifier("mcwdoors", "spruce_nether_door"));
 			createRecipeAdvancementJson(DDNames.TALL_MACAW_BIRCH_NETHER, new Identifier("mcwdoors", "birch_nether_door"));

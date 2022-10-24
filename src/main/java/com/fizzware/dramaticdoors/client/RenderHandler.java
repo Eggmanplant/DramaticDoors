@@ -54,13 +54,12 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BYG_WITCH_HAZEL_DOOR, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BYG_ZELKOVA_DOOR, RenderLayer.getTranslucent());
 
-		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_BAMBOO_DOOR, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_BLACKSTONE_DOOR, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_CHARRED_DOOR, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_OBSIDIAN_REINFORCED_DOOR, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_PAPER_DOOR, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_STONE_DOOR, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_WHITE_OAK_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_AERONOS_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_GLACIAN_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_STROPHAR_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_STEEL_DOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TWISTED_DOOR, RenderLayer.getCutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CYPRESS_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_DRAGONS_BLOOD_DOOR, RenderLayer.getCutout());
@@ -71,6 +70,14 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLIGHTED_BALSA_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_SWAMP_CYPRESS_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_WILLOW_DOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_BAMBOO_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_BLACKSTONE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_CHARRED_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_OBSIDIAN_REINFORCED_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_PAPER_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_STONE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_WHITE_OAK_DOOR, RenderLayer.getCutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CEILTRUNK_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_LUZAWOOD_DOOR, RenderLayer.getCutout());
@@ -92,11 +99,21 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_DARK_OAK_GLASS_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CRIMSON_GLASS_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_WARPED_GLASS_DOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOODSHROOM_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_GREENHEART_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_SKYROOT_DOOR, RenderLayer.getCutout());
 		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_PROMENADE_CHERRY_OAK_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_PROMENADE_DARK_AMARANTH_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_PROMENADE_PALM_DOOR, RenderLayer.getCutout());
+
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_GINGERBREAD_DOOR, RenderLayer.getCutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_GOLD_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_NETHERITE_DOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_RUBBER_DOOR, RenderLayer.getCutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TRAVERSE_FIR_DOOR, RenderLayer.getCutout());
 
@@ -110,7 +127,9 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TRANSWOOD_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TWILIGHT_OAK_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TWILIGHT_MANGROVE_DOOR, RenderLayer.getCutout());
-		
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_SOUL_COPPER_DOOR, RenderLayer.getCutout());
+
 		// Set up rendering for all the Macaw doors.
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_JAIL_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_METAL_DOOR, RenderLayer.getCutout());
@@ -229,6 +248,14 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_OAK_FOUR_PANEL_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_SPRUCE_FOUR_PANEL_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_FOUR_PANEL_DOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_SWAMP_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_SWAMP_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_SWAMP_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_JUNGLE_SWAMP_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_OAK_SWAMP_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_SPRUCE_SWAMP_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_SWAMP_DOOR, RenderLayer.getCutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_NETHER_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_NETHER_DOOR, RenderLayer.getCutout());

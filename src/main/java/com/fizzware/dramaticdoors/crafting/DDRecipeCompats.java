@@ -19,6 +19,15 @@ public class DDRecipeCompats
 	public static List<JsonObject> RECIPES = new ArrayList<JsonObject>();
 	
 	public static void initializeRecipes() {
+		if (FabricLoader.getInstance().isModLoaded("ad_astra")) {
+			createTallDoorRecipeJson(DDNames.TALL_AERONOS, new Identifier("ad_astra", "aeronos_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_GLACIAN, new Identifier("ad_astra", "glacian_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_STROPHAR, new Identifier("ad_astra", "strophar_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_STEEL, new Identifier("ad_astra", "steel_door"), "tall_metal_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("architects_palette")) {
+			createTallDoorRecipeJson(DDNames.TALL_TWISTED, new Identifier("architects_palette", "twisted_door"), "tall_wooden_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
 			createTallDoorRecipeJson(DDNames.TALL_CYPRESS, new Identifier("bewitchment", "cypress_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_DRAGONS_BLOOD, new Identifier("bewitchment", "dragons_blood_door"), "tall_wooden_door");
@@ -100,6 +109,11 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_CRIMSON_GLASS, new Identifier("glassdoor", "crimson_glassdoor"), "tall_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_WARPED_GLASS, new Identifier("glassdoor", "warped_glassdoor"), "tall_glass_door");
 		}
+		if (FabricLoader.getInstance().isModLoaded("promenade")) {
+			createTallDoorRecipeJson(DDNames.TALL_PROMENADE_CHERRY_OAK, new Identifier("promenade", "cherry_oak_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_PROMENADE_DARK_AMARANTH, new Identifier("promenade", "dark_amaranth_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_PROMENADE_PALM, new Identifier("promenade", "palm_door"), "tall_wooden_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("snowyspirit")) {
 			createTallDoorRecipeJson(DDNames.TALL_GINGERBREAD, new Identifier("snowyspirit", "gingerbread_door"), "tall_wooden_door");	
 		}
@@ -107,8 +121,16 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_GOLD, new Identifier("supplementaries", "gold_door"), "tall_metal_door");
 			createTallDoorRecipeJson(DDNames.TALL_NETHERITE, new Identifier("supplementaries", "netherite_door"), "tall_metal_door");			
 		}
+		if (FabricLoader.getInstance().isModLoaded("tconstruct")) {
+			createTallDoorRecipeJson(DDNames.TALL_BLOODSHROOM, new Identifier("tconstruct", "bloodshroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_GREENHEART, new Identifier("tconstruct", "greenheart_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_SKYROOT, new Identifier("tconstruct", "skyroot_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("techreborn")) {
+			createTallDoorRecipeJson(DDNames.TALL_RUBBER, new Identifier("techreborn", "rubber_door"), "tall_wooden_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("traverse")) {
-			createTallDoorRecipeJson(DDNames.TALL_TRAVERSE_FIR, new Identifier("traverse", "fir_door"), "tall_wooden_door");			
+			createTallDoorRecipeJson(DDNames.TALL_TRAVERSE_FIR, new Identifier("traverse", "fir_door"), "tall_wooden_door");
 		}
 		if (FabricLoader.getInstance().isModLoaded("twigs")) {
 			createTallDoorRecipeJson(DDNames.TALL_STRIPPED_BAMBOO, new Identifier("twigs", "stripped_bamboo_door"), "tall_wooden_door");			
@@ -125,6 +147,9 @@ public class DDRecipeCompats
 		}
 		if (FabricLoader.getInstance().isModLoaded("wildbackport")) {
 			createTallDoorRecipeJson(DDNames.TALL_MANGROVE, new Identifier("wildbackport", "mangrove_door"), "tall_wooden_door");			
+		}
+		if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
+			createTallDoorRecipeJson(DDNames.TALL_SOUL_COPPER, new Identifier("xps_additions", "soul_copper_door"), "tall_metal_door");			
 		}
 		if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_JAIL, new Identifier("mcwdoors", "jail_door"), "tall_macaw_metal_door");
@@ -247,6 +272,14 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_FOUR_PANEL, new Identifier("mcwdoors", "acacia_four_panel_door"), "tall_macaw_four_panel_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_FOUR_PANEL, new Identifier("mcwdoors", "crimson_four_panel_door"), "tall_macaw_four_panel_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_FOUR_PANEL, new Identifier("mcwdoors", "warped_four_panel_door"), "tall_macaw_four_panel_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_SWAMP, new Identifier("mcwdoors", "oak_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_SPRUCE_SWAMP, new Identifier("mcwdoors", "spruce_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BIRCH_SWAMP, new Identifier("mcwdoors", "birch_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_JUNGLE_SWAMP, new Identifier("mcwdoors", "jungle_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_SWAMP, new Identifier("mcwdoors", "acacia_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_SWAMP, new Identifier("mcwdoors", "dark_oak_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_SWAMP, new Identifier("mcwdoors", "crimson_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_SWAMP, new Identifier("mcwdoors", "warped_swamp_door"), "tall_macaw_swamp_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_NETHER, new Identifier("mcwdoors", "oak_nether_door"), "tall_macaw_nether_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_SPRUCE_NETHER, new Identifier("mcwdoors", "spruce_nether_door"), "tall_macaw_nether_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_BIRCH_NETHER, new Identifier("mcwdoors", "birch_nether_door"), "tall_macaw_nether_door");

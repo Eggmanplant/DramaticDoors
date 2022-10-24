@@ -42,6 +42,13 @@
   "block.dramaticdoors.tall_byg_zelkova_door": "Tall Zelkova Door",
   "block.dramaticdoors.tall_byg_blue_enchanted_door": "Tall Blue Enchanted Door",
   "block.dramaticdoors.tall_byg_green_enchanted_door": "Tall Green Enchanted Door",
+
+  "block.dramaticdoors.tall_aeronos_door": "Tall Aeronos Door",
+  "block.dramaticdoors.tall_glacian_door": "Tall Glacian Door",
+  "block.dramaticdoors.tall_strophar_door": "Tall Strophar Door",
+  "block.dramaticdoors.tall_steel_door": "Tall Steel Door",
+
+  "block.dramaticdoors.tall_twisted_door": "Tall Twisted Door",
   
   "block.dramaticdoors.tall_cypress_door": "Tall Cypress Door",
   "block.dramaticdoors.tall_dragons_blood_door": "Tall Dragon's Blood Door",
@@ -72,6 +79,10 @@
   "block.dramaticdoors.tall_eco_coconut_door": "Tall Coconut Door",
   "block.dramaticdoors.tall_eco_walnut_door": "Tall Walnut Door",
 
+  "block.dramaticdoors.tall_bloodshroom_door": "Tall Bloodshroom Door",
+  "block.dramaticdoors.tall_greenheart_door": "Tall Greenheart Door",
+  "block.dramaticdoors.tall_skyroot_door": "Tall Skyroot Door",
+
   "block.dramaticdoors.tall_iron_glass_door": "Tall Iron Glass Door",
   "block.dramaticdoors.tall_oak_glass_door": "Tall Oak Glass Door",
   "block.dramaticdoors.tall_spruce_glass_door": "Tall Spruce Glass Door",
@@ -82,10 +93,16 @@
   "block.dramaticdoors.tall_crimson_glass_door": "Tall Crimson Glass Door",
   "block.dramaticdoors.tall_warped_glass_door": "Tall Warped Glass Door",
   
+  "block.dramaticdoors.tall_promenade_cherry_oak_door": "Tall Cherry Oak Door",
+  "block.dramaticdoors.tall_promenade_dark_amaranth_door": "Tall Dark Amaranth Door",
+  "block.dramaticdoors.tall_promenade_palm_door": "Tall Palm Door",
+
   "block.dramaticdoors.tall_gingerbread_door": "Tall Gingerbread Door",
   
   "block.dramaticdoors.tall_gold_door": "Tall Gold Door",
   "block.dramaticdoors.tall_netherite_door": "Tall Netherite Door",
+
+  "block.dramaticdoors.tall_rubber_door": "Tall Rubber Door",
 
   "block.dramaticdoors.tall_traverse_fir_door": "Tall Fir Door",
 
@@ -100,6 +117,8 @@
   "block.dramaticdoors.tall_twilight_mangrove_door": "Tall Twilight Mangrove Door",
   "block.dramaticdoors.tall_twilight_oak_door": "Tall Twilight Oak Door",
   "block.dramaticdoors.tall_towerwood_door": "Tall Towerwood Door",
+
+  "block.dramaticdoors.tall_soul_copper_door": "Tall Soulcopper Door",
   
   "block.dramaticdoors.tall_macaw_jail_door": "Tall Jail Door",
   "block.dramaticdoors.tall_macaw_metal_door": "Tall Metal Door",
@@ -267,6 +286,16 @@
   "block.dramaticdoors.tall_macaw_oak_paper_door": "Tall Oak Paper Door",
   "block.dramaticdoors.tall_macaw_spruce_paper_door": "Tall Spruce Paper Door",
   "block.dramaticdoors.tall_macaw_warped_paper_door": "Tall Warped Paper Door",
+  
+  "block.dramaticdoors.tall_macaw_acacia_swamp_door": "Tall Acacia Swamp Door",
+  "block.dramaticdoors.tall_macaw_birch_swamp_door": "Tall Birch Swamp Door",
+  "block.dramaticdoors.tall_macaw_crimson_swamp_door": "Tall Crimson Swamp Door",
+  "block.dramaticdoors.tall_macaw_dark_oak_swamp_door": "Tall Dark Oak Swamp Door",
+  "block.dramaticdoors.tall_macaw_jungle_swamp_door": "Tall Jungle Swamp Door",
+  "block.dramaticdoors.tall_macaw_mangrove_swamp_door": "Tall Mangrove Swamp Door",
+  "block.dramaticdoors.tall_macaw_oak_swamp_door": "Tall Oak Swamp Door",
+  "block.dramaticdoors.tall_macaw_spruce_swamp_door": "Tall Spruce Swamp Door",
+  "block.dramaticdoors.tall_macaw_warped_swamp_door": "Tall Warped Swamp Door",
   
   "block.dramaticdoors.tall_macaw_acacia_tropical_door": "Tall Acacia Tropical Door",
   "block.dramaticdoors.tall_macaw_birch_tropical_door": "Tall Birch Tropical Door",
