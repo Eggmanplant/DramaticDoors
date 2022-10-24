@@ -176,6 +176,9 @@ public class TallDoorBlock extends Block {
             return ActionResult.PASS;
         } 
     	else {
+        	if (this == DDBlocks.TALL_GOLD_DOOR && state.get(POWERED)) {
+        		return ActionResult.PASS;
+        	}
         	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
             level.setBlockState(pos, state, 10);
@@ -332,7 +335,7 @@ public class TallDoorBlock extends Block {
     
     //Double Doors Compatibility.
 	public static void tryOpenDoubleDoor(World world, BlockState state, BlockPos pos) {
-        if (Compats.DOUBLE_DOORS_INSTALLED) {
+        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.COUPLINGS_INSTALLED) {
             Direction direction = state.get(TallDoorBlock.FACING);
             boolean isOpen = state.get(TallDoorBlock.OPEN);
             DoorHinge isMirrored = state.get(TallDoorBlock.HINGE);

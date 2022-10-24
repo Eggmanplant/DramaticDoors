@@ -33,18 +33,25 @@
   "depends": {
     "fabricloader": ">=0.14.8",
     "fabric": "*",
-    "minecraft": "~1.19.1",
+    "minecraft": ">=1.19",
     "java": ">=17"
   },
   "suggests": {
     "doubledoors-fabric": "*",
+    "ad_astra": "*",
     "bewitchment": "*",
     "biomemakeover": "*",
     "byg": "*",
     "ceilands": "*",
+    "charm": "*",
     "ecologics": "*",
+    "glassdoor": "*",
+    "promenade": "*",
     "snowyspirit": "*",
     "supplementaries": "*",
+    "tconstruct": "*",
+    "techreborn": "*",
+    "traverse": "*",
     "twigs": "*",
     "twilightforest": "*"
   }
