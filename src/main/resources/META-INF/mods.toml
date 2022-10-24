@@ -1,10 +1,11 @@
 modLoader="javafml"
 loaderVersion="[36,)"
 license="MIT"
+logoFile="icon.png"
 
 [[mods]]
     modId="dramaticdoors"
-    version="1.16.5-1.5.0"
+    version="${file.jarVersion}"
     displayName="Dramatic Doors"
     displayURL="https://www.curseforge.com/minecraft/mc-mods/dramatic-doors"
     issueTrackerURL="https://github.com/TheFizzWare/DramaticDoors/issues"
@@ -38,7 +39,7 @@ license="MIT"
 [[dependencies.dramaticdoors]]
     modId="forge"
     mandatory=true
-    versionRange="[36,)"
+    versionRange="[36.2.34,)"
     ordering="AFTER"
     side="BOTH"
 
