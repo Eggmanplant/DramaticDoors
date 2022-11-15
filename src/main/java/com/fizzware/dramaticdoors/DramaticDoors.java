@@ -62,6 +62,13 @@ public class DramaticDoors
 		}
     };
     
+    public static final CreativeModeTab CHIPPED_TAB = Compats.CHIPPED_INSTALLED ? new CreativeModeTab("dramaticdoors_chipped") {
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_DOOR_07.get());
+		}
+    } : null;
+    
     public static final CreativeModeTab MACAW_TAB = Compats.MACAWS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_macaw") {
 		@Override
 		public ItemStack makeIcon() {

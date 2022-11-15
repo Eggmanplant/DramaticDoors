@@ -213,12 +213,22 @@ public class DDNames
     public static final String TALL_STALK = "tall_stalk_door";
     public static final String TALL_VERDANT = "tall_verdant_door";
     
+    //Forbidden & Arcanus
+    public static final String TALL_ARCANE_GOLD = "tall_arcane_gold_door";
+    public static final String TALL_CHERRYWOOD = "tall_cherrywood_door";
+    public static final String TALL_EDELWOOD = "tall_edelwood_door";
+    public static final String TALL_FUNGYSS = "tall_fungyss_door";
+    public static final String TALL_MYSTERYWOOD = "tall_mysterywood_door";
+    
     //Habitat
     public static final String TALL_FAIRY_RING_MUSHROOM = "tall_fairy_ring_mushroom_door";
     
     //Nether's Exoticism
     public static final String TALL_JABOTICABA = "tall_jaboticaba_door";
-    public static final String TALL_RAMBOUTAN = "tall_ramboutan_door";    
+    public static final String TALL_RAMBOUTAN = "tall_ramboutan_door";
+    
+    //New World
+    public static final String TALL_FIR = "tall_fir_door";
     
     //Outer End
     public static final String TALL_AZURE = "tall_azure_door";
@@ -267,7 +277,176 @@ public class DDNames
     public static final String TALL_SMOGSTEM = "tall_smogstem_door";
     public static final String TALL_WIGGLEWOOD = "tall_wigglewood_door";
     
-    //Macaw (Holy hell)
+    //Chipped (Holy hell!)
+    public static final String TALL_CHIPPED_OAK_01 = "tall_chipped_oak_door_01";
+    public static final String TALL_CHIPPED_OAK_02 = "tall_chipped_oak_door_02";
+    public static final String TALL_CHIPPED_OAK_03 = "tall_chipped_oak_door_03";
+    public static final String TALL_CHIPPED_OAK_04 = "tall_chipped_oak_door_04";
+    public static final String TALL_CHIPPED_OAK_05 = "tall_chipped_oak_door_05";
+    public static final String TALL_CHIPPED_OAK_06 = "tall_chipped_oak_door_06";
+    public static final String TALL_CHIPPED_OAK_07 = "tall_chipped_oak_door_07";
+    public static final String TALL_CHIPPED_OAK_08 = "tall_chipped_oak_door_08";
+    public static final String TALL_CHIPPED_OAK_09 = "tall_chipped_oak_door_09";
+    public static final String TALL_CHIPPED_OAK_10 = "tall_chipped_oak_door_10";
+    public static final String TALL_CHIPPED_OAK_11 = "tall_chipped_oak_door_11";
+    public static final String TALL_CHIPPED_OAK_12 = "tall_chipped_oak_door_12";
+    public static final String TALL_CHIPPED_OAK_13 = "tall_chipped_oak_door_13";
+    public static final String TALL_CHIPPED_OAK_14 = "tall_chipped_oak_door_14";
+    public static final String TALL_CHIPPED_OAK_15 = "tall_chipped_oak_door_15";
+    public static final String TALL_CHIPPED_OAK_16 = "tall_chipped_oak_door_16";
+    public static final String TALL_CHIPPED_OAK_17 = "tall_chipped_oak_door_17";
+    public static final String TALL_CHIPPED_OAK_18 = "tall_chipped_oak_door_18";
+    public static final String TALL_CHIPPED_OAK_19 = "tall_chipped_oak_door_19";
+    public static final String TALL_CHIPPED_OAK_20 = "tall_chipped_oak_door_20";
+    
+    public static final String TALL_CHIPPED_SPRUCE_01 = "tall_chipped_spruce_door_01";
+    public static final String TALL_CHIPPED_SPRUCE_02 = "tall_chipped_spruce_door_02";
+    public static final String TALL_CHIPPED_SPRUCE_03 = "tall_chipped_spruce_door_03";
+    public static final String TALL_CHIPPED_SPRUCE_04 = "tall_chipped_spruce_door_04";
+    public static final String TALL_CHIPPED_SPRUCE_05 = "tall_chipped_spruce_door_05";
+    public static final String TALL_CHIPPED_SPRUCE_06 = "tall_chipped_spruce_door_06";
+    public static final String TALL_CHIPPED_SPRUCE_07 = "tall_chipped_spruce_door_07";
+    public static final String TALL_CHIPPED_SPRUCE_08 = "tall_chipped_spruce_door_08";
+    public static final String TALL_CHIPPED_SPRUCE_09 = "tall_chipped_spruce_door_09";
+    public static final String TALL_CHIPPED_SPRUCE_10 = "tall_chipped_spruce_door_10";
+    public static final String TALL_CHIPPED_SPRUCE_11 = "tall_chipped_spruce_door_11";
+    public static final String TALL_CHIPPED_SPRUCE_12 = "tall_chipped_spruce_door_12";
+    public static final String TALL_CHIPPED_SPRUCE_13 = "tall_chipped_spruce_door_13";
+    public static final String TALL_CHIPPED_SPRUCE_14 = "tall_chipped_spruce_door_14";
+    public static final String TALL_CHIPPED_SPRUCE_15 = "tall_chipped_spruce_door_15";
+    public static final String TALL_CHIPPED_SPRUCE_16 = "tall_chipped_spruce_door_16";
+    public static final String TALL_CHIPPED_SPRUCE_17 = "tall_chipped_spruce_door_17";
+    public static final String TALL_CHIPPED_SPRUCE_18 = "tall_chipped_spruce_door_18";
+    public static final String TALL_CHIPPED_SPRUCE_19 = "tall_chipped_spruce_door_19";
+    public static final String TALL_CHIPPED_SPRUCE_20 = "tall_chipped_spruce_door_20";
+
+    public static final String TALL_CHIPPED_BIRCH_01 = "tall_chipped_birch_door_01";
+    public static final String TALL_CHIPPED_BIRCH_02 = "tall_chipped_birch_door_02";
+    public static final String TALL_CHIPPED_BIRCH_03 = "tall_chipped_birch_door_03";
+    public static final String TALL_CHIPPED_BIRCH_04 = "tall_chipped_birch_door_04";
+    public static final String TALL_CHIPPED_BIRCH_05 = "tall_chipped_birch_door_05";
+    public static final String TALL_CHIPPED_BIRCH_06 = "tall_chipped_birch_door_06";
+    public static final String TALL_CHIPPED_BIRCH_07 = "tall_chipped_birch_door_07";
+    public static final String TALL_CHIPPED_BIRCH_08 = "tall_chipped_birch_door_08";
+    public static final String TALL_CHIPPED_BIRCH_09 = "tall_chipped_birch_door_09";
+    public static final String TALL_CHIPPED_BIRCH_10 = "tall_chipped_birch_door_10";
+    public static final String TALL_CHIPPED_BIRCH_11 = "tall_chipped_birch_door_11";
+    public static final String TALL_CHIPPED_BIRCH_12 = "tall_chipped_birch_door_12";
+    public static final String TALL_CHIPPED_BIRCH_13 = "tall_chipped_birch_door_13";
+    public static final String TALL_CHIPPED_BIRCH_14 = "tall_chipped_birch_door_14";
+    public static final String TALL_CHIPPED_BIRCH_15 = "tall_chipped_birch_door_15";
+    public static final String TALL_CHIPPED_BIRCH_16 = "tall_chipped_birch_door_16";
+    public static final String TALL_CHIPPED_BIRCH_17 = "tall_chipped_birch_door_17";
+    public static final String TALL_CHIPPED_BIRCH_18 = "tall_chipped_birch_door_18";
+    public static final String TALL_CHIPPED_BIRCH_19 = "tall_chipped_birch_door_19";
+    public static final String TALL_CHIPPED_BIRCH_20 = "tall_chipped_birch_door_20";
+
+    public static final String TALL_CHIPPED_JUNGLE_01 = "tall_chipped_jungle_door_01";
+    public static final String TALL_CHIPPED_JUNGLE_02 = "tall_chipped_jungle_door_02";
+    public static final String TALL_CHIPPED_JUNGLE_03 = "tall_chipped_jungle_door_03";
+    public static final String TALL_CHIPPED_JUNGLE_04 = "tall_chipped_jungle_door_04";
+    public static final String TALL_CHIPPED_JUNGLE_05 = "tall_chipped_jungle_door_05";
+    public static final String TALL_CHIPPED_JUNGLE_06 = "tall_chipped_jungle_door_06";
+    public static final String TALL_CHIPPED_JUNGLE_07 = "tall_chipped_jungle_door_07";
+    public static final String TALL_CHIPPED_JUNGLE_08 = "tall_chipped_jungle_door_08";
+    public static final String TALL_CHIPPED_JUNGLE_09 = "tall_chipped_jungle_door_09";
+    public static final String TALL_CHIPPED_JUNGLE_10 = "tall_chipped_jungle_door_10";
+    public static final String TALL_CHIPPED_JUNGLE_11 = "tall_chipped_jungle_door_11";
+    public static final String TALL_CHIPPED_JUNGLE_12 = "tall_chipped_jungle_door_12";
+    public static final String TALL_CHIPPED_JUNGLE_13 = "tall_chipped_jungle_door_13";
+    public static final String TALL_CHIPPED_JUNGLE_14 = "tall_chipped_jungle_door_14";
+    public static final String TALL_CHIPPED_JUNGLE_15 = "tall_chipped_jungle_door_15";
+    public static final String TALL_CHIPPED_JUNGLE_16 = "tall_chipped_jungle_door_16";
+    public static final String TALL_CHIPPED_JUNGLE_17 = "tall_chipped_jungle_door_17";
+    public static final String TALL_CHIPPED_JUNGLE_18 = "tall_chipped_jungle_door_18";
+    public static final String TALL_CHIPPED_JUNGLE_19 = "tall_chipped_jungle_door_19";
+    public static final String TALL_CHIPPED_JUNGLE_20 = "tall_chipped_jungle_door_20";
+
+    public static final String TALL_CHIPPED_ACACIA_01 = "tall_chipped_acacia_door_01";
+    public static final String TALL_CHIPPED_ACACIA_02 = "tall_chipped_acacia_door_02";
+    public static final String TALL_CHIPPED_ACACIA_03 = "tall_chipped_acacia_door_03";
+    public static final String TALL_CHIPPED_ACACIA_04 = "tall_chipped_acacia_door_04";
+    public static final String TALL_CHIPPED_ACACIA_05 = "tall_chipped_acacia_door_05";
+    public static final String TALL_CHIPPED_ACACIA_06 = "tall_chipped_acacia_door_06";
+    public static final String TALL_CHIPPED_ACACIA_07 = "tall_chipped_acacia_door_07";
+    public static final String TALL_CHIPPED_ACACIA_08 = "tall_chipped_acacia_door_08";
+    public static final String TALL_CHIPPED_ACACIA_09 = "tall_chipped_acacia_door_09";
+    public static final String TALL_CHIPPED_ACACIA_10 = "tall_chipped_acacia_door_10";
+    public static final String TALL_CHIPPED_ACACIA_11 = "tall_chipped_acacia_door_11";
+    public static final String TALL_CHIPPED_ACACIA_12 = "tall_chipped_acacia_door_12";
+    public static final String TALL_CHIPPED_ACACIA_13 = "tall_chipped_acacia_door_13";
+    public static final String TALL_CHIPPED_ACACIA_14 = "tall_chipped_acacia_door_14";
+    public static final String TALL_CHIPPED_ACACIA_15 = "tall_chipped_acacia_door_15";
+    public static final String TALL_CHIPPED_ACACIA_16 = "tall_chipped_acacia_door_16";
+    public static final String TALL_CHIPPED_ACACIA_17 = "tall_chipped_acacia_door_17";
+    public static final String TALL_CHIPPED_ACACIA_18 = "tall_chipped_acacia_door_18";
+    public static final String TALL_CHIPPED_ACACIA_19 = "tall_chipped_acacia_door_19";
+    public static final String TALL_CHIPPED_ACACIA_20 = "tall_chipped_acacia_door_20";
+
+    public static final String TALL_CHIPPED_DARK_OAK_01 = "tall_chipped_dark_oak_door_01";
+    public static final String TALL_CHIPPED_DARK_OAK_02 = "tall_chipped_dark_oak_door_02";
+    public static final String TALL_CHIPPED_DARK_OAK_03 = "tall_chipped_dark_oak_door_03";
+    public static final String TALL_CHIPPED_DARK_OAK_04 = "tall_chipped_dark_oak_door_04";
+    public static final String TALL_CHIPPED_DARK_OAK_05 = "tall_chipped_dark_oak_door_05";
+    public static final String TALL_CHIPPED_DARK_OAK_06 = "tall_chipped_dark_oak_door_06";
+    public static final String TALL_CHIPPED_DARK_OAK_07 = "tall_chipped_dark_oak_door_07";
+    public static final String TALL_CHIPPED_DARK_OAK_08 = "tall_chipped_dark_oak_door_08";
+    public static final String TALL_CHIPPED_DARK_OAK_09 = "tall_chipped_dark_oak_door_09";
+    public static final String TALL_CHIPPED_DARK_OAK_10 = "tall_chipped_dark_oak_door_10";
+    public static final String TALL_CHIPPED_DARK_OAK_11 = "tall_chipped_dark_oak_door_11";
+    public static final String TALL_CHIPPED_DARK_OAK_12 = "tall_chipped_dark_oak_door_12";
+    public static final String TALL_CHIPPED_DARK_OAK_13 = "tall_chipped_dark_oak_door_13";
+    public static final String TALL_CHIPPED_DARK_OAK_14 = "tall_chipped_dark_oak_door_14";
+    public static final String TALL_CHIPPED_DARK_OAK_15 = "tall_chipped_dark_oak_door_15";
+    public static final String TALL_CHIPPED_DARK_OAK_16 = "tall_chipped_dark_oak_door_16";
+    public static final String TALL_CHIPPED_DARK_OAK_17 = "tall_chipped_dark_oak_door_17";
+    public static final String TALL_CHIPPED_DARK_OAK_18 = "tall_chipped_dark_oak_door_18";
+    public static final String TALL_CHIPPED_DARK_OAK_19 = "tall_chipped_dark_oak_door_19";
+    public static final String TALL_CHIPPED_DARK_OAK_20 = "tall_chipped_dark_oak_door_20";
+
+    public static final String TALL_CHIPPED_CRIMSON_01 = "tall_chipped_crimson_door_01";
+    public static final String TALL_CHIPPED_CRIMSON_02 = "tall_chipped_crimson_door_02";
+    public static final String TALL_CHIPPED_CRIMSON_03 = "tall_chipped_crimson_door_03";
+    public static final String TALL_CHIPPED_CRIMSON_04 = "tall_chipped_crimson_door_04";
+    public static final String TALL_CHIPPED_CRIMSON_05 = "tall_chipped_crimson_door_05";
+    public static final String TALL_CHIPPED_CRIMSON_06 = "tall_chipped_crimson_door_06";
+    public static final String TALL_CHIPPED_CRIMSON_07 = "tall_chipped_crimson_door_07";
+    public static final String TALL_CHIPPED_CRIMSON_08 = "tall_chipped_crimson_door_08";
+    public static final String TALL_CHIPPED_CRIMSON_09 = "tall_chipped_crimson_door_09";
+    public static final String TALL_CHIPPED_CRIMSON_10 = "tall_chipped_crimson_door_10";
+    public static final String TALL_CHIPPED_CRIMSON_11 = "tall_chipped_crimson_door_11";
+    public static final String TALL_CHIPPED_CRIMSON_12 = "tall_chipped_crimson_door_12";
+    public static final String TALL_CHIPPED_CRIMSON_13 = "tall_chipped_crimson_door_13";
+    public static final String TALL_CHIPPED_CRIMSON_14 = "tall_chipped_crimson_door_14";
+    public static final String TALL_CHIPPED_CRIMSON_15 = "tall_chipped_crimson_door_15";
+    public static final String TALL_CHIPPED_CRIMSON_16 = "tall_chipped_crimson_door_16";
+    public static final String TALL_CHIPPED_CRIMSON_17 = "tall_chipped_crimson_door_17";
+    public static final String TALL_CHIPPED_CRIMSON_18 = "tall_chipped_crimson_door_18";
+    public static final String TALL_CHIPPED_CRIMSON_19 = "tall_chipped_crimson_door_19";
+    public static final String TALL_CHIPPED_CRIMSON_20 = "tall_chipped_crimson_door_20";
+
+    public static final String TALL_CHIPPED_WARPED_01 = "tall_chipped_warped_door_01";
+    public static final String TALL_CHIPPED_WARPED_02 = "tall_chipped_warped_door_02";
+    public static final String TALL_CHIPPED_WARPED_03 = "tall_chipped_warped_door_03";
+    public static final String TALL_CHIPPED_WARPED_04 = "tall_chipped_warped_door_04";
+    public static final String TALL_CHIPPED_WARPED_05 = "tall_chipped_warped_door_05";
+    public static final String TALL_CHIPPED_WARPED_06 = "tall_chipped_warped_door_06";
+    public static final String TALL_CHIPPED_WARPED_07 = "tall_chipped_warped_door_07";
+    public static final String TALL_CHIPPED_WARPED_08 = "tall_chipped_warped_door_08";
+    public static final String TALL_CHIPPED_WARPED_09 = "tall_chipped_warped_door_09";
+    public static final String TALL_CHIPPED_WARPED_10 = "tall_chipped_warped_door_10";
+    public static final String TALL_CHIPPED_WARPED_11 = "tall_chipped_warped_door_11";
+    public static final String TALL_CHIPPED_WARPED_12 = "tall_chipped_warped_door_12";
+    public static final String TALL_CHIPPED_WARPED_13 = "tall_chipped_warped_door_13";
+    public static final String TALL_CHIPPED_WARPED_14 = "tall_chipped_warped_door_14";
+    public static final String TALL_CHIPPED_WARPED_15 = "tall_chipped_warped_door_15";
+    public static final String TALL_CHIPPED_WARPED_16 = "tall_chipped_warped_door_16";
+    public static final String TALL_CHIPPED_WARPED_17 = "tall_chipped_warped_door_17";
+    public static final String TALL_CHIPPED_WARPED_18 = "tall_chipped_warped_door_18";
+    public static final String TALL_CHIPPED_WARPED_19 = "tall_chipped_warped_door_19";
+    public static final String TALL_CHIPPED_WARPED_20 = "tall_chipped_warped_door_20";
+    
+    //Macaw (Also, holy hell)
     public static final String TALL_MACAW_JAIL = "tall_macaw_jail_door";
     public static final String TALL_MACAW_METAL = "tall_macaw_metal_door";
     public static final String TALL_MACAW_METAL_HOSPITAL = "tall_macaw_metal_hospital_door";
@@ -418,6 +597,15 @@ public class DDNames
     public static final String TALL_MACAW_OAK_PAPER = "tall_macaw_oak_paper_door";
     public static final String TALL_MACAW_SPRUCE_PAPER = "tall_macaw_spruce_paper_door";
     public static final String TALL_MACAW_WARPED_PAPER = "tall_macaw_warped_paper_door";
+    
+    public static final String TALL_MACAW_ACACIA_SWAMP = "tall_macaw_acacia_swamp_door";
+    public static final String TALL_MACAW_BIRCH_SWAMP = "tall_macaw_birch_swamp_door";
+    public static final String TALL_MACAW_CRIMSON_SWAMP = "tall_macaw_crimson_swamp_door";
+    public static final String TALL_MACAW_DARK_OAK_SWAMP = "tall_macaw_dark_oak_swamp_door";
+    public static final String TALL_MACAW_JUNGLE_SWAMP = "tall_macaw_jungle_swamp_door";
+    public static final String TALL_MACAW_OAK_SWAMP = "tall_macaw_oak_swamp_door";
+    public static final String TALL_MACAW_SPRUCE_SWAMP = "tall_macaw_spruce_swamp_door";
+    public static final String TALL_MACAW_WARPED_SWAMP = "tall_macaw_warped_swamp_door";
     
     public static final String TALL_MACAW_ACACIA_TROPICAL = "tall_macaw_acacia_tropical_door";
     public static final String TALL_MACAW_BIRCH_TROPICAL = "tall_macaw_birch_tropical_door";

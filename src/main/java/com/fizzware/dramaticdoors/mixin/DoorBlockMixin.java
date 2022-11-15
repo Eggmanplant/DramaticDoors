@@ -66,6 +66,10 @@ public class DoorBlockMixin implements SimpleWaterloggedBlock
 		callback.cancel();
 	}
 
+	public FluidState getFluidState(BlockState state) {
+		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
+	}
+	
 	public FluidState m_5888_(BlockState state) {
 		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
 	}

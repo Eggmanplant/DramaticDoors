@@ -200,6 +200,6 @@ logoFile="icon.png"
 [[dependencies.dramaticdoors]]
     modId="mcwdoors"
     mandatory=false
-    versionRange="[1.0.6,)"
+    versionRange="[1.0.7,)"
     ordering="AFTER"
     side="BOTH"
