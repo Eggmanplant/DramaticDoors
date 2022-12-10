@@ -5,10 +5,10 @@ import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -1064,11 +1064,556 @@ public class DDItems {
         Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_MYSTIC), TALL_MACAW_CRIMSON_MYSTIC_DOOR);
     }
 	
-    private static ItemGroup conditionalTabProperties(String modid, ItemGroup tab) {
-    	return FabricLoader.getInstance().isModLoaded(modid) ? tab : null;
-    }
-    
     public static void assignItemsToTabs() {
-    	ItemGroupEvents.modifyEntriesEvent(DramaticDoors.DD_MAIN_TAB).register(entries -> entries.add(TALL_IRON_DOOR));
+    	ItemGroupEvents.modifyEntriesEvent(DramaticDoors.DD_MAIN_TAB).register(DDItems::addMainTabEntries);
+        if (FabricLoader.getInstance().isModLoaded("chipped")) {
+            ItemGroupEvents.modifyEntriesEvent(DramaticDoors.DD_CHIPPED_TAB).register(DDItems::addChippedTabEntries);
+        }
+        if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
+            ItemGroupEvents.modifyEntriesEvent(DramaticDoors.DD_MACAW_TAB).register(DDItems::addMacawTabEntries);
+        }
+    }
+
+    private static void addMainTabEntries(FabricItemGroupEntries entries) {
+        entries.add(TALL_IRON_DOOR);
+        entries.add(TALL_OAK_DOOR);
+        entries.add(TALL_SPRUCE_DOOR);
+        entries.add(TALL_BIRCH_DOOR);
+        entries.add(TALL_JUNGLE_DOOR);
+        entries.add(TALL_ACACIA_DOOR);
+        entries.add(TALL_DARK_OAK_DOOR);
+        entries.add(TALL_MANGROVE_DOOR);
+        // TODO bamboo is load-conditional on 1.20
+        entries.add(TALL_BAMBOO_DOOR);
+        entries.add(TALL_CRIMSON_DOOR);
+        entries.add(TALL_WARPED_DOOR);
+        if (FabricLoader.getInstance().isModLoaded("abundance")) {
+            entries.add(TALL_JACARANDA_DOOR);
+            entries.add(TALL_REDBUD_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("bayou_blues")) {
+            entries.add(TALL_CYPRESS_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("enhanced_mushrooms")) {
+            entries.add(TALL_BROWN_MUSHROOM_DOOR);
+            entries.add(TALL_RED_MUSHROOM_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("ad_astra")) {
+            entries.add(TALL_AERONOS_DOOR);
+            entries.add(TALL_GLACIAN_DOOR);
+            entries.add(TALL_STROPHAR_DOOR);
+            entries.add(TALL_STEEL_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("architects_palette")) {
+            entries.add(TALL_TWISTED_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("betterend")) {
+            entries.add(TALL_TERMINITE_DOOR);
+            entries.add(TALL_THALLASIUM_DOOR);
+            entries.add(TALL_DRAGON_TREE_DOOR);
+            entries.add(TALL_END_LOTUS_DOOR);
+            entries.add(TALL_HELIX_TREE_DOOR);
+            entries.add(TALL_JELLYSHROOM_DOOR);
+            entries.add(TALL_LACUGROVE_DOOR);
+            entries.add(TALL_LUCERNIA_DOOR);
+            entries.add(TALL_MOSSY_GLOWSHROOM_DOOR);
+            entries.add(TALL_PYTHADENDRON_DOOR);
+            entries.add(TALL_TENANEA_DOOR);
+            entries.add(TALL_UMBRELLA_TREE_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("betternether")) {
+            entries.add(TALL_ANCHOR_TREE_DOOR);
+            entries.add(TALL_BONE_CIN_DOOR);
+            entries.add(TALL_BONE_REED_DOOR);
+            entries.add(TALL_MUSHROOM_FIR_DOOR);
+            entries.add(TALL_NETHER_MUSHROOM_DOOR);
+            entries.add(TALL_NETHER_REED_DOOR);
+            entries.add(TALL_NETHER_SAKURA_DOOR);
+            entries.add(TALL_RUBEUS_DOOR);
+            entries.add(TALL_STALAGNATE_DOOR);
+            entries.add(TALL_WART_DOOR);
+            entries.add(TALL_BN_WILLOW_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
+            entries.add(TALL_BW_CYPRESS_DOOR);
+            entries.add(TALL_DRAGONS_BLOOD_DOOR);
+            entries.add(TALL_ELDER_DOOR);
+            entries.add(TALL_JUNIPER_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("biomemakeover")) {
+            entries.add(TALL_ANCIENT_OAK_DOOR);
+            entries.add(TALL_BLIGHTED_BALSA_DOOR);
+            entries.add(TALL_SWAMP_CYPRESS_DOOR);
+            entries.add(TALL_WILLOW_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("blockus")) {
+            entries.add(TALL_BLOCKUS_BAMBOO_DOOR);
+            entries.add(TALL_BLOCKUS_CHARRED_DOOR);
+            entries.add(TALL_BLOCKUS_PAPER_DOOR);
+            entries.add(TALL_BLOCKUS_WHITE_OAK_DOOR);
+            entries.add(TALL_BLOCKUS_STONE_DOOR);
+            entries.add(TALL_BLOCKUS_BLACKSTONE_DOOR);
+            entries.add(TALL_BLOCKUS_OBSIDIAN_REINFORCED_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("ceilands")) {
+            entries.add(TALL_CEILTRUNK_DOOR);
+            entries.add(TALL_LUZAWOOD_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("charm")) {
+            entries.add(TALL_CHARM_AZALEA_DOOR);
+            entries.add(TALL_CHARM_EBONY_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("createdeco")) {
+            entries.add(TALL_ANDESITE_DOOR);
+            entries.add(TALL_BRASS_DOOR);
+            entries.add(TALL_COPPER_DOOR);
+            entries.add(TALL_ZINC_DOOR);
+            entries.add(TALL_LOCKED_ANDESITE_DOOR);
+            entries.add(TALL_LOCKED_BRASS_DOOR);
+            entries.add(TALL_LOCKED_COPPER_DOOR);
+            entries.add(TALL_LOCKED_ZINC_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("ecologics")) {
+            entries.add(TALL_ECO_AZALEA_DOOR);
+            entries.add(TALL_ECO_FLOWERING_AZALEA_DOOR);
+            entries.add(TALL_ECO_COCONUT_DOOR);
+            entries.add(TALL_ECO_WALNUT_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("glassdoor")) {
+            entries.add(TALL_IRON_GLASS_DOOR);
+            entries.add(TALL_OAK_GLASS_DOOR);
+            entries.add(TALL_SPRUCE_GLASS_DOOR);
+            entries.add(TALL_BIRCH_GLASS_DOOR);
+            entries.add(TALL_JUNGLE_GLASS_DOOR);
+            entries.add(TALL_ACACIA_GLASS_DOOR);
+            entries.add(TALL_DARK_OAK_GLASS_DOOR);
+            entries.add(TALL_MANGROVE_GLASS_DOOR);
+            entries.add(TALL_CRIMSON_GLASS_DOOR);
+            entries.add(TALL_WARPED_GLASS_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("tconstruct")) {
+            entries.add(TALL_BLOODSHROOM_DOOR);
+            entries.add(TALL_GREENHEART_DOOR);
+            entries.add(TALL_SKYROOT_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("byg")) {
+            entries.add(TALL_BYG_ASPEN_DOOR);
+            entries.add(TALL_BYG_BAOBAB_DOOR);
+            entries.add(TALL_BYG_BLUE_ENCHANTED_DOOR);
+            entries.add(TALL_BYG_BULBIS_DOOR);
+            entries.add(TALL_BYG_CHERRY_DOOR);
+            entries.add(TALL_BYG_CIKA_DOOR);
+            entries.add(TALL_BYG_CYPRESS_DOOR);
+            entries.add(TALL_BYG_EBONY_DOOR);
+            entries.add(TALL_BYG_EMBUR_DOOR);
+            entries.add(TALL_BYG_ETHER_DOOR);
+            entries.add(TALL_BYG_FIR_DOOR);
+            entries.add(TALL_BYG_FLORUS_DOOR);
+            entries.add(TALL_BYG_GREEN_ENCHANTED_DOOR);
+            entries.add(TALL_BYG_HOLLY_DOOR);
+            entries.add(TALL_BYG_IMPARIUS_DOOR);
+            entries.add(TALL_BYG_IRONWOOD_DOOR);
+            entries.add(TALL_BYG_JACARANDA_DOOR);
+            entries.add(TALL_BYG_LAMENT_DOOR);
+            entries.add(TALL_BYG_MAHOGANY_DOOR);
+            entries.add(TALL_BYG_MAPLE_DOOR);
+            entries.add(TALL_BYG_NIGHTSHADE_DOOR);
+            entries.add(TALL_BYG_PALM_DOOR);
+            entries.add(TALL_BYG_PINE_DOOR);
+            entries.add(TALL_BYG_RAINBOW_EUCALYPTUS_DOOR);
+            entries.add(TALL_BYG_REDWOOD_DOOR);
+            entries.add(TALL_BYG_SKYRIS_DOOR);
+            entries.add(TALL_BYG_SOUL_SHROOM_DOOR);
+            entries.add(TALL_BYG_SYTHIAN_DOOR);
+            entries.add(TALL_BYG_WHITE_MANGROVE_DOOR);
+            entries.add(TALL_BYG_WILLOW_DOOR);
+            entries.add(TALL_BYG_WITCH_HAZEL_DOOR);
+            entries.add(TALL_BYG_ZELKOVA_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("promenade")) {
+            entries.add(TALL_PROMENADE_CHERRY_OAK_DOOR);
+            entries.add(TALL_PROMENADE_DARK_AMARANTH_DOOR);
+            entries.add(TALL_PROMENADE_PALM_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("snowyspirit")) {
+            entries.add(TALL_GINGERBREAD_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("supplementaries")) {
+            entries.add(TALL_GOLD_DOOR);
+            entries.add(TALL_NETHERITE_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("techreborn")) {
+            entries.add(TALL_RUBBER_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("traverse")) {
+            entries.add(TALL_TRAVERSE_FIR_DOOR);
+        }
+        // TODO is this load conditional on 1.20?
+        if (FabricLoader.getInstance().isModLoaded("twigs")) {
+            entries.add(TALL_STRIPPED_BAMBOO_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("twilightforest")) {
+            entries.add(TALL_CANOPY_DOOR);
+            entries.add(TALL_DARKWOOD_DOOR);
+            entries.add(TALL_MINEWOOD_DOOR);
+            entries.add(TALL_SORTINGWOOD_DOOR);
+            entries.add(TALL_TIMEWOOD_DOOR);
+            entries.add(TALL_TRANSWOOD_DOOR);
+            entries.add(TALL_TWILIGHT_MANGROVE_DOOR);
+            entries.add(TALL_TWILIGHT_OAK_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
+            entries.add(TALL_SOUL_COPPER_DOOR);
+        }
+    }
+
+    private static void addChippedTabEntries(FabricItemGroupEntries entries) {
+        entries.add(TALL_CHIPPED_OAK_DOOR_01);
+        entries.add(TALL_CHIPPED_OAK_DOOR_02);
+        entries.add(TALL_CHIPPED_OAK_DOOR_03);
+        entries.add(TALL_CHIPPED_OAK_DOOR_04);
+        entries.add(TALL_CHIPPED_OAK_DOOR_05);
+        entries.add(TALL_CHIPPED_OAK_DOOR_06);
+        entries.add(TALL_CHIPPED_OAK_DOOR_07);
+        entries.add(TALL_CHIPPED_OAK_DOOR_08);
+        entries.add(TALL_CHIPPED_OAK_DOOR_09);
+        entries.add(TALL_CHIPPED_OAK_DOOR_10);
+        entries.add(TALL_CHIPPED_OAK_DOOR_11);
+        entries.add(TALL_CHIPPED_OAK_DOOR_12);
+        entries.add(TALL_CHIPPED_OAK_DOOR_13);
+        entries.add(TALL_CHIPPED_OAK_DOOR_14);
+        entries.add(TALL_CHIPPED_OAK_DOOR_15);
+        entries.add(TALL_CHIPPED_OAK_DOOR_16);
+        entries.add(TALL_CHIPPED_OAK_DOOR_17);
+        entries.add(TALL_CHIPPED_OAK_DOOR_18);
+        entries.add(TALL_CHIPPED_OAK_DOOR_19);
+        entries.add(TALL_CHIPPED_OAK_DOOR_20);
+
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_01);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_02);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_03);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_04);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_05);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_06);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_07);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_08);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_09);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_10);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_11);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_12);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_13);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_14);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_15);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_16);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_17);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_18);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_19);
+        entries.add(TALL_CHIPPED_SPRUCE_DOOR_20);
+
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_01);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_02);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_03);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_04);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_05);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_06);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_07);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_08);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_09);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_10);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_11);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_12);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_13);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_14);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_15);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_16);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_17);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_18);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_19);
+        entries.add(TALL_CHIPPED_BIRCH_DOOR_20);
+
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_01);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_02);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_03);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_04);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_05);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_06);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_07);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_08);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_09);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_10);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_11);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_12);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_13);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_14);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_15);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_16);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_17);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_18);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_19);
+        entries.add(TALL_CHIPPED_JUNGLE_DOOR_20);
+
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_01);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_02);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_03);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_04);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_05);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_06);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_07);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_08);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_09);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_10);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_11);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_12);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_13);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_14);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_15);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_16);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_17);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_18);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_19);
+        entries.add(TALL_CHIPPED_ACACIA_DOOR_20);
+
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_01);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_02);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_03);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_04);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_05);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_06);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_07);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_08);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_09);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_10);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_11);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_12);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_13);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_14);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_15);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_16);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_17);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_18);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_19);
+        entries.add(TALL_CHIPPED_DARK_OAK_DOOR_20);
+
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_01);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_02);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_03);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_04);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_05);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_06);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_07);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_08);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_09);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_10);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_11);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_12);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_13);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_14);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_15);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_16);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_17);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_18);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_19);
+        entries.add(TALL_CHIPPED_CRIMSON_DOOR_20);
+
+        entries.add(TALL_CHIPPED_WARPED_DOOR_01);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_02);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_03);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_04);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_05);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_06);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_07);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_08);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_09);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_10);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_11);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_12);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_13);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_14);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_15);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_16);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_17);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_18);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_19);
+        entries.add(TALL_CHIPPED_WARPED_DOOR_20);
+    }
+
+    private static void addMacawTabEntries(FabricItemGroupEntries entries) {
+        entries.add(TALL_MACAW_JAIL_DOOR);
+        entries.add(TALL_MACAW_METAL_DOOR);
+        entries.add(TALL_MACAW_METAL_HOSPITAL_DOOR);
+        entries.add(TALL_MACAW_METAL_REINFORCED_DOOR);
+        entries.add(TALL_MACAW_METAL_WARNING_DOOR);
+        entries.add(TALL_MACAW_METAL_WINDOWED_DOOR);
+
+        entries.add(TALL_MACAW_OAK_BARN_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_BARN_DOOR);
+        entries.add(TALL_MACAW_BIRCH_BARN_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_BARN_DOOR);
+        entries.add(TALL_MACAW_ACACIA_BARN_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_BARN_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_BARN_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_BARN_DOOR);
+        entries.add(TALL_MACAW_WARPED_BARN_DOOR);
+
+        entries.add(TALL_MACAW_OAK_BARN_GLASS_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_BARN_GLASS_DOOR);
+        entries.add(TALL_MACAW_BIRCH_BARN_GLASS_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_BARN_GLASS_DOOR);
+        entries.add(TALL_MACAW_ACACIA_BARN_GLASS_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_BARN_GLASS_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_BARN_GLASS_DOOR);
+        entries.add(TALL_MACAW_WARPED_BARN_GLASS_DOOR);
+
+        entries.add(TALL_MACAW_OAK_STABLE_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_STABLE_DOOR);
+        entries.add(TALL_MACAW_BIRCH_STABLE_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_STABLE_DOOR);
+        entries.add(TALL_MACAW_ACACIA_STABLE_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_STABLE_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_STABLE_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_STABLE_DOOR);
+        entries.add(TALL_MACAW_WARPED_STABLE_DOOR);
+
+        entries.add(TALL_MACAW_OAK_STABLE_HEAD_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_STABLE_HEAD_DOOR);
+        entries.add(TALL_MACAW_BIRCH_STABLE_HEAD_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_STABLE_HEAD_DOOR);
+        entries.add(TALL_MACAW_ACACIA_STABLE_HEAD_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_STABLE_HEAD_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR);
+        entries.add(TALL_MACAW_WARPED_STABLE_HEAD_DOOR);
+
+        entries.add(TALL_MACAW_OAK_BARK_GLASS_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_BARK_GLASS_DOOR);
+        entries.add(TALL_MACAW_BIRCH_BARK_GLASS_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_BARK_GLASS_DOOR);
+        entries.add(TALL_MACAW_ACACIA_BARK_GLASS_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_BARK_GLASS_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_STEM_GLASS_DOOR);
+        entries.add(TALL_MACAW_WARPED_STEM_GLASS_DOOR);
+
+        entries.add(TALL_MACAW_OAK_GLASS_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_GLASS_DOOR);
+        entries.add(TALL_MACAW_BIRCH_GLASS_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_GLASS_DOOR);
+        entries.add(TALL_MACAW_ACACIA_GLASS_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_GLASS_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_GLASS_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_GLASS_DOOR);
+        entries.add(TALL_MACAW_WARPED_GLASS_DOOR);
+
+        entries.add(TALL_MACAW_OAK_MODERN_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_MODERN_DOOR);
+        entries.add(TALL_MACAW_BIRCH_MODERN_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_MODERN_DOOR);
+        entries.add(TALL_MACAW_ACACIA_MODERN_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_MODERN_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_MODERN_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_MODERN_DOOR);
+        entries.add(TALL_MACAW_WARPED_MODERN_DOOR);
+
+        entries.add(TALL_MACAW_OAK_JAPANESE_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_JAPANESE_DOOR);
+        entries.add(TALL_MACAW_BIRCH_JAPANESE_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_JAPANESE_DOOR);
+        entries.add(TALL_MACAW_ACACIA_JAPANESE_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_JAPANESE_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_JAPANESE_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_JAPANESE_DOOR);
+        entries.add(TALL_MACAW_WARPED_JAPANESE_DOOR);
+
+        entries.add(TALL_MACAW_OAK_JAPANESE2_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_JAPANESE2_DOOR);
+        entries.add(TALL_MACAW_BIRCH_JAPANESE2_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_JAPANESE2_DOOR);
+        entries.add(TALL_MACAW_ACACIA_JAPANESE2_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_JAPANESE2_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_JAPANESE2_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_JAPANESE2_DOOR);
+        entries.add(TALL_MACAW_WARPED_JAPANESE2_DOOR);
+
+        entries.add(TALL_MACAW_SPRUCE_CLASSIC_DOOR);
+        entries.add(TALL_MACAW_BIRCH_CLASSIC_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_CLASSIC_DOOR);
+        entries.add(TALL_MACAW_ACACIA_CLASSIC_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_CLASSIC_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_CLASSIC_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_CLASSIC_DOOR);
+        entries.add(TALL_MACAW_WARPED_CLASSIC_DOOR);
+
+        entries.add(TALL_MACAW_OAK_COTTAGE_DOOR);
+        entries.add(TALL_MACAW_BIRCH_COTTAGE_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_COTTAGE_DOOR);
+        entries.add(TALL_MACAW_ACACIA_COTTAGE_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_COTTAGE_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_COTTAGE_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_COTTAGE_DOOR);
+        entries.add(TALL_MACAW_WARPED_COTTAGE_DOOR);
+
+        entries.add(TALL_MACAW_OAK_PAPER_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_PAPER_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_PAPER_DOOR);
+        entries.add(TALL_MACAW_ACACIA_PAPER_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_PAPER_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_PAPER_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_PAPER_DOOR);
+        entries.add(TALL_MACAW_WARPED_PAPER_DOOR);
+
+        entries.add(TALL_MACAW_OAK_BEACH_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_BEACH_DOOR);
+        entries.add(TALL_MACAW_BIRCH_BEACH_DOOR);
+        entries.add(TALL_MACAW_ACACIA_BEACH_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_BEACH_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_BEACH_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_BEACH_DOOR);
+        entries.add(TALL_MACAW_WARPED_BEACH_DOOR);
+
+        entries.add(TALL_MACAW_OAK_TROPICAL_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_TROPICAL_DOOR);
+        entries.add(TALL_MACAW_BIRCH_TROPICAL_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_TROPICAL_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_TROPICAL_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_TROPICAL_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_TROPICAL_DOOR);
+        entries.add(TALL_MACAW_WARPED_TROPICAL_DOOR);
+
+        entries.add(TALL_MACAW_OAK_FOUR_PANEL_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_FOUR_PANEL_DOOR);
+        entries.add(TALL_MACAW_BIRCH_FOUR_PANEL_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR);
+        entries.add(TALL_MACAW_ACACIA_FOUR_PANEL_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_FOUR_PANEL_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR);
+        entries.add(TALL_MACAW_WARPED_FOUR_PANEL_DOOR);
+
+        entries.add(TALL_MACAW_OAK_SWAMP_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_SWAMP_DOOR);
+        entries.add(TALL_MACAW_BIRCH_SWAMP_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_SWAMP_DOOR);
+        entries.add(TALL_MACAW_ACACIA_SWAMP_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_SWAMP_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_SWAMP_DOOR);
+        entries.add(TALL_MACAW_WARPED_SWAMP_DOOR);
+
+        entries.add(TALL_MACAW_OAK_NETHER_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_NETHER_DOOR);
+        entries.add(TALL_MACAW_BIRCH_NETHER_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_NETHER_DOOR);
+        entries.add(TALL_MACAW_ACACIA_NETHER_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_NETHER_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_NETHER_DOOR);
+        entries.add(TALL_MACAW_WARPED_NETHER_DOOR);
+
+        entries.add(TALL_MACAW_OAK_MYSTIC_DOOR);
+        entries.add(TALL_MACAW_SPRUCE_MYSTIC_DOOR);
+        entries.add(TALL_MACAW_BIRCH_MYSTIC_DOOR);
+        entries.add(TALL_MACAW_JUNGLE_MYSTIC_DOOR);
+        entries.add(TALL_MACAW_ACACIA_MYSTIC_DOOR);
+        entries.add(TALL_MACAW_DARK_OAK_MYSTIC_DOOR);
+        entries.add(TALL_MACAW_MANGROVE_MYSTIC_DOOR);
+        entries.add(TALL_MACAW_CRIMSON_MYSTIC_DOOR);
     }
 }
