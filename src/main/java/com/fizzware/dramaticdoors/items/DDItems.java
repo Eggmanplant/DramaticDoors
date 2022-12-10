@@ -9,6 +9,8 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -1072,6 +1074,7 @@ public class DDItems {
         if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
             ItemGroupEvents.modifyEntriesEvent(DramaticDoors.DD_MACAW_TAB).register(DDItems::addMacawTabEntries);
         }
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(DDItems::addBuildingBlocks);
     }
 
     private static void addMainTabEntries(FabricItemGroupEntries entries) {
@@ -1615,5 +1618,20 @@ public class DDItems {
         entries.add(TALL_MACAW_DARK_OAK_MYSTIC_DOOR);
         entries.add(TALL_MACAW_MANGROVE_MYSTIC_DOOR);
         entries.add(TALL_MACAW_CRIMSON_MYSTIC_DOOR);
+    }
+    
+    private static void addBuildingBlocks(FabricItemGroupEntries entries) {
+        entries.addAfter(Items.IRON_DOOR, TALL_IRON_DOOR);
+        entries.addAfter(Items.OAK_DOOR, TALL_OAK_DOOR);
+        entries.addAfter(Items.SPRUCE_DOOR, TALL_SPRUCE_DOOR);
+        entries.addAfter(Items.BIRCH_DOOR, TALL_BIRCH_DOOR);
+        entries.addAfter(Items.JUNGLE_DOOR, TALL_JUNGLE_DOOR);
+        entries.addAfter(Items.ACACIA_DOOR, TALL_ACACIA_DOOR);
+        entries.addAfter(Items.DARK_OAK_DOOR, TALL_DARK_OAK_DOOR);
+        entries.addAfter(Items.MANGROVE_DOOR, TALL_MANGROVE_DOOR);
+        // TODO bamboo is load-conditional on 1.20
+        entries.addAfter(Items.BAMBOO_DOOR, TALL_BAMBOO_DOOR);
+        entries.addAfter(Items.CRIMSON_DOOR, TALL_CRIMSON_DOOR);
+        entries.addAfter(Items.WARPED_DOOR, TALL_WARPED_DOOR);
     }
 }
