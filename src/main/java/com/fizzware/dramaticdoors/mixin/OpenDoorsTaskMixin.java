@@ -26,6 +26,7 @@ import net.minecraft.util.math.GlobalPos;
 @Mixin(OpenDoorsTask.class)
 public class OpenDoorsTaskMixin
 {
+	//TODO: Update this code to adapt for new code.
 	@Inject(method = "run(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;J)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/ai/brain/task/OpenDoorsTask;pathToDoor(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/entity/ai/pathing/PathNode;Lnet/minecraft/entity/ai/pathing/PathNode;)V"))
 	private void injectRun(ServerWorld world, LivingEntity entity, long time, CallbackInfo ci) {
 		TallDoorBlock tallDoorBlock;
@@ -35,7 +36,7 @@ public class OpenDoorsTaskMixin
 		BlockPos blockPosDD;
 		if ((blockStateDD = world.getBlockState(blockPosDD = pathNode2.getBlockPos())).isIn(DDTags.TALL_WOODEN_DOORS, state -> state.getBlock() instanceof TallDoorBlock) && !(tallDoorBlock = (TallDoorBlock)blockStateDD.getBlock()).isOpen(blockStateDD)) {
             tallDoorBlock.setOpen(entity, world, blockStateDD, blockPosDD, true);
-            ((OpenDoorsTask)(Object)this).rememberToCloseDoor(world, entity, blockPosDD);
+            ((OpenDoorsTask)(Object)this).storePos(world, entity, blockPosDD);
         }
 	}
 	//, BlockState blockState
