@@ -22,6 +22,15 @@ public class DDBlocks {
     public static final Block TALL_CRIMSON_DOOR = new TallDoorBlock(Blocks.CRIMSON_DOOR);
     public static final Block TALL_WARPED_DOOR = new TallDoorBlock(Blocks.WARPED_DOOR);
 
+    // Team Aurora Mods
+    public static final Block TALL_JACARANDA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("abundance", "jacaranda_door")));
+    public static final Block TALL_REDBUD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("abundance", "redbud_door")));
+
+    public static final Block TALL_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("bayou_blues", "cypress_door")));
+
+    public static final Block TALL_BROWN_MUSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("enhanced_mushrooms", "brown_mushroom_door")));
+    public static final Block TALL_RED_MUSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("enhanced_mushrooms", "red_mushroom_door")));
+    
     // Ad Astra
     public static final Block TALL_AERONOS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ad_astra", "aeronos_door")));
     public static final Block TALL_GLACIAN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ad_astra", "glacian_door")));
@@ -31,8 +40,35 @@ public class DDBlocks {
     // Architects Palette
     public static final Block TALL_TWISTED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("architects_palette", "twisted_door")));
 
+    // Better End
+    public static final Block TALL_TERMINITE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "terminite_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_THALLASIUM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "thallasium_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_DRAGON_TREE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "dragon_tree_door")));
+    public static final Block TALL_END_LOTUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "end_lotus_door")));
+    public static final Block TALL_HELIX_TREE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "helix_tree_door")));
+    public static final Block TALL_JELLYSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "jellyshroom_door")));
+    public static final Block TALL_LACUGROVE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "lacugrove_door")));
+    public static final Block TALL_LUCERNIA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "lucernia_door")));
+    public static final Block TALL_MOSSY_GLOWSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "mossy_glowshroom_door")));
+    public static final Block TALL_PYTHADENDRON_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "pythadendron_door")));
+    public static final Block TALL_TENANEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "tenanea_door")));
+    public static final Block TALL_UMBRELLA_TREE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betterend", "umbrella_tree_door")));
+    
+    // Better Nether
+    public static final Block TALL_ANCHOR_TREE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "anchor_tree_door")));
+    public static final Block TALL_BONE_CIN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "bone_cincinnasite_door")));
+    public static final Block TALL_BONE_REED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "bone_reed_door")));
+    public static final Block TALL_MUSHROOM_FIR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "mushroom_fir_door")));
+    public static final Block TALL_NETHER_MUSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "nether_mushroom_door")));
+    public static final Block TALL_NETHER_REED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "nether_reed_door")));
+    public static final Block TALL_NETHER_SAKURA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "nether_sakura_door")));
+    public static final Block TALL_RUBEUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "rubeus_door")));
+    public static final Block TALL_STALAGNATE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "stalagnate_door")));
+    public static final Block TALL_WART_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "wart_door")));
+    public static final Block TALL_BN_WILLOW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("betternether", "willow_door")));
+    
     // Bewitchment
-    public static final Block TALL_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("bewitchment", "cypress_door")));
+    public static final Block TALL_BW_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("bewitchment", "cypress_door")));
     public static final Block TALL_DRAGONS_BLOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("bewitchment", "dragons_blood_door")));
     public static final Block TALL_ELDER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("bewitchment", "elder_door")));
     public static final Block TALL_JUNIPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("bewitchment", "juniper_door")));
@@ -60,6 +96,16 @@ public class DDBlocks {
     public static final Block TALL_CHARM_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("charm", "azalea_door")));
     public static final Block TALL_CHARM_EBONY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("charm", "ebony_door")));
 
+    // Create: Deco
+    public static final Block TALL_ANDESITE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("createdeco", "andesite_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_BRASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("createdeco", "brass_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_COPPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("createdeco", "copper_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_ZINC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("createdeco", "zinc_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_LOCKED_ANDESITE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("createdeco", "locked_andesite_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_LOCKED_BRASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("createdeco", "locked_brass_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_LOCKED_COPPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("createdeco", "locked_copper_door"), Blocks.IRON_DOOR));
+    public static final Block TALL_LOCKED_ZINC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("createdeco", "locked_zinc_door"), Blocks.IRON_DOOR));
+    
     // Ecologics
     public static final Block TALL_ECO_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ecologics", "azalea_door")));
     public static final Block TALL_ECO_FLOWERING_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("ecologics", "flowering_azalea_door")));
@@ -120,7 +166,7 @@ public class DDBlocks {
     // Promenade
     public static final Block TALL_PROMENADE_CHERRY_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("promenade", "cherry_oak_door")));
     public static final Block TALL_PROMENADE_DARK_AMARANTH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("promenade", "dark_amaranth_door")));
-    public static final Block TALL_PROMENADE_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("promenade", "palm_door")));    
+    public static final Block TALL_PROMENADE_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("promenade", "palm_door")));
     
     // Snowy Spirit
     public static final Block TALL_GINGERBREAD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("snowyspirit", "gingerbread_door")));
@@ -150,6 +196,175 @@ public class DDBlocks {
     
     // XP Obelisk
     public static final Block TALL_SOUL_COPPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("xps_additions", "soul_copper_door"), Blocks.IRON_DOOR));
+    
+    // Chipped (The biggest compat)
+    public static final Block TALL_CHIPPED_OAK_DOOR_01 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_1")));    
+    public static final Block TALL_CHIPPED_OAK_DOOR_02 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_2")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_03 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_3")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_04 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_4")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_05 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_5")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_06 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_6")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_07 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_7")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_08 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_8")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_09 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_9")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_10 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_10")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_11 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_11")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_12 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_12")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_13 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_13")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_14 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_14")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_15 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_15")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_16 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_16")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_17 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_17")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_18 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_18")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_19 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_19")));
+    public static final Block TALL_CHIPPED_OAK_DOOR_20 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "oak_door_20")));
+
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_01 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_1")));    
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_02 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_2")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_03 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_3")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_04 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_4")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_05 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_5")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_06 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_6")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_07 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_7")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_08 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_8")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_09 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_9")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_10 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_10")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_11 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_11")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_12 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_12")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_13 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_13")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_14 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_14")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_15 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_15")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_16 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_16")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_17 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_17")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_18 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_18")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_19 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_19")));
+    public static final Block TALL_CHIPPED_SPRUCE_DOOR_20 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "spruce_door_20")));
+    
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_01 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_1")));    
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_02 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_2")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_03 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_3")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_04 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_4")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_05 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_5")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_06 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_6")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_07 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_7")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_08 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_8")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_09 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_9")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_10 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_10")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_11 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_11")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_12 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_12")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_13 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_13")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_14 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_14")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_15 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_15")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_16 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_16")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_17 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_17")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_18 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_18")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_19 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_19")));
+    public static final Block TALL_CHIPPED_BIRCH_DOOR_20 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "birch_door_20")));
+
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_01 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_1")));    
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_02 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_2")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_03 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_3")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_04 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_4")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_05 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_5")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_06 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_6")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_07 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_7")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_08 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_8")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_09 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_9")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_10 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_10")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_11 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_11")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_12 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_12")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_13 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_13")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_14 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_14")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_15 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_15")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_16 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_16")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_17 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_17")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_18 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_18")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_19 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_19")));
+    public static final Block TALL_CHIPPED_JUNGLE_DOOR_20 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "jungle_door_20")));
+
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_01 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_1")));    
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_02 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_2")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_03 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_3")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_04 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_4")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_05 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_5")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_06 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_6")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_07 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_7")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_08 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_8")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_09 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_9")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_10 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_10")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_11 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_11")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_12 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_12")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_13 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_13")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_14 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_14")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_15 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_15")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_16 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_16")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_17 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_17")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_18 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_18")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_19 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_19")));
+    public static final Block TALL_CHIPPED_ACACIA_DOOR_20 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "acacia_door_20")));
+
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_01 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_1")));    
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_02 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_2")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_03 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_3")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_04 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_4")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_05 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_5")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_06 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_6")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_07 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_7")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_08 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_8")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_09 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_9")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_10 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_10")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_11 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_11")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_12 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_12")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_13 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_13")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_14 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_14")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_15 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_15")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_16 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_16")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_17 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_17")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_18 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_18")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_19 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_19")));
+    public static final Block TALL_CHIPPED_DARK_OAK_DOOR_20 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "dark_oak_door_20")));
+
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_01 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_1")));    
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_02 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_2")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_03 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_3")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_04 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_4")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_05 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_5")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_06 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_6")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_07 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_7")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_08 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_8")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_09 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_9")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_10 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_10")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_11 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_11")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_12 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_12")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_13 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_13")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_14 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_14")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_15 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_15")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_16 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_16")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_17 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_17")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_18 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_18")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_19 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_19")));
+    public static final Block TALL_CHIPPED_CRIMSON_DOOR_20 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "crimson_door_20")));
+
+    public static final Block TALL_CHIPPED_WARPED_DOOR_01 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_1")));    
+    public static final Block TALL_CHIPPED_WARPED_DOOR_02 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_2")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_03 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_3")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_04 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_4")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_05 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_5")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_06 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_6")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_07 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_7")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_08 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_8")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_09 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_9")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_10 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_10")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_11 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_11")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_12 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_12")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_13 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_13")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_14 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_14")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_15 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_15")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_16 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_16")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_17 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_17")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_18 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_18")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_19 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_19")));
+    public static final Block TALL_CHIPPED_WARPED_DOOR_20 = new TallDoorBlock(getBlockFromResourceLocation(new Identifier("chipped", "warped_door_20")));
     
     // Macaw's Doors (The biggest compat)
     public static final Block TALL_MACAW_JAIL_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new Identifier("mcwdoors", "jail_door"), Blocks.IRON_DOOR));
@@ -375,14 +590,47 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BYG_WITCH_HAZEL), TALL_BYG_WITCH_HAZEL_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BYG_ZELKOVA), TALL_BYG_ZELKOVA_DOOR);
         
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_JACARANDA), TALL_JACARANDA_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_REDBUD), TALL_REDBUD_DOOR);
+
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CYPRESS), TALL_CYPRESS_DOOR);
+
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BROWN_MUSHROOM), TALL_BROWN_MUSHROOM_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_RED_MUSHROOM), TALL_RED_MUSHROOM_DOOR);
+        
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_AERONOS), TALL_AERONOS_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_GLACIAN), TALL_GLACIAN_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_STROPHAR), TALL_STROPHAR_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_STEEL), TALL_STEEL_DOOR);
 
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TWISTED), TALL_TWISTED_DOOR);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TERMINITE), TALL_TERMINITE_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_THALLASIUM), TALL_THALLASIUM_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_DRAGON_TREE), TALL_DRAGON_TREE_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_END_LOTUS), TALL_END_LOTUS_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_HELIX_TREE), TALL_HELIX_TREE_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_JELLYSHROOM), TALL_JELLYSHROOM_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LACUGROVE), TALL_LACUGROVE_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LUCERNIA), TALL_LUCERNIA_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MOSSY_GLOWSHROOM), TALL_MOSSY_GLOWSHROOM_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_PYTHADENDRON), TALL_PYTHADENDRON_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TENANEA), TALL_TENANEA_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_UMBRELLA_TREE), TALL_UMBRELLA_TREE_DOOR);
 
-        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CYPRESS), TALL_CYPRESS_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ANCHOR_TREE), TALL_ANCHOR_TREE_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BONE_CIN), TALL_BONE_CIN_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BONE_REED), TALL_BONE_REED_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MUSHROOM_FIR), TALL_MUSHROOM_FIR_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_NETHER_MUSHROOM), TALL_NETHER_MUSHROOM_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_NETHER_REED), TALL_NETHER_REED_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_NETHER_SAKURA), TALL_NETHER_SAKURA_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_RUBEUS), TALL_RUBEUS_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_STALAGNATE), TALL_STALAGNATE_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_WART), TALL_WART_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BN_WILLOW), TALL_BN_WILLOW_DOOR);
+
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BW_CYPRESS), TALL_BW_CYPRESS_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_DRAGONS_BLOOD), TALL_DRAGONS_BLOOD_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ELDER), TALL_ELDER_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_JUNIPER), TALL_JUNIPER_DOOR);
@@ -405,6 +653,15 @@ public class DDBlocks {
         
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHARM_AZALEA), TALL_CHARM_AZALEA_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHARM_EBONY), TALL_CHARM_EBONY_DOOR);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ANDESITE), TALL_ANDESITE_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BRASS), TALL_BRASS_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_COPPER), TALL_COPPER_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ZINC), TALL_ZINC_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_ANDESITE), TALL_LOCKED_ANDESITE_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_BRASS), TALL_LOCKED_BRASS_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_COPPER), TALL_LOCKED_COPPER_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_ZINC), TALL_LOCKED_ZINC_DOOR);
 
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ECO_AZALEA), TALL_ECO_AZALEA_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ECO_FLOWERING_AZALEA), TALL_ECO_FLOWERING_AZALEA_DOOR);
@@ -451,6 +708,175 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TWILIGHT_OAK), TALL_TWILIGHT_OAK_DOOR);
         
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_SOUL_COPPER), TALL_SOUL_COPPER_DOOR);
+        
+        //Register all those Chipped doors.
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_01), TALL_CHIPPED_OAK_DOOR_01);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_02), TALL_CHIPPED_OAK_DOOR_02);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_03), TALL_CHIPPED_OAK_DOOR_03);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_04), TALL_CHIPPED_OAK_DOOR_04);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_05), TALL_CHIPPED_OAK_DOOR_05);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_06), TALL_CHIPPED_OAK_DOOR_06);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_07), TALL_CHIPPED_OAK_DOOR_07);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_08), TALL_CHIPPED_OAK_DOOR_08);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_09), TALL_CHIPPED_OAK_DOOR_09);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_10), TALL_CHIPPED_OAK_DOOR_10);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_11), TALL_CHIPPED_OAK_DOOR_11);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_12), TALL_CHIPPED_OAK_DOOR_12);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_13), TALL_CHIPPED_OAK_DOOR_13);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_14), TALL_CHIPPED_OAK_DOOR_14);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_15), TALL_CHIPPED_OAK_DOOR_15);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_16), TALL_CHIPPED_OAK_DOOR_16);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_17), TALL_CHIPPED_OAK_DOOR_17);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_18), TALL_CHIPPED_OAK_DOOR_18);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_19), TALL_CHIPPED_OAK_DOOR_19);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_20), TALL_CHIPPED_OAK_DOOR_20);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_01), TALL_CHIPPED_SPRUCE_DOOR_01);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_02), TALL_CHIPPED_SPRUCE_DOOR_02);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_03), TALL_CHIPPED_SPRUCE_DOOR_03);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_04), TALL_CHIPPED_SPRUCE_DOOR_04);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_05), TALL_CHIPPED_SPRUCE_DOOR_05);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_06), TALL_CHIPPED_SPRUCE_DOOR_06);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_07), TALL_CHIPPED_SPRUCE_DOOR_07);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_08), TALL_CHIPPED_SPRUCE_DOOR_08);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_09), TALL_CHIPPED_SPRUCE_DOOR_09);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_10), TALL_CHIPPED_SPRUCE_DOOR_10);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_11), TALL_CHIPPED_SPRUCE_DOOR_11);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_12), TALL_CHIPPED_SPRUCE_DOOR_12);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_13), TALL_CHIPPED_SPRUCE_DOOR_13);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_14), TALL_CHIPPED_SPRUCE_DOOR_14);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_15), TALL_CHIPPED_SPRUCE_DOOR_15);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_16), TALL_CHIPPED_SPRUCE_DOOR_16);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_17), TALL_CHIPPED_SPRUCE_DOOR_17);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_18), TALL_CHIPPED_SPRUCE_DOOR_18);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_19), TALL_CHIPPED_SPRUCE_DOOR_19);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_SPRUCE_20), TALL_CHIPPED_SPRUCE_DOOR_20);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_01), TALL_CHIPPED_BIRCH_DOOR_01);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_02), TALL_CHIPPED_BIRCH_DOOR_02);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_03), TALL_CHIPPED_BIRCH_DOOR_03);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_04), TALL_CHIPPED_BIRCH_DOOR_04);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_05), TALL_CHIPPED_BIRCH_DOOR_05);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_06), TALL_CHIPPED_BIRCH_DOOR_06);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_07), TALL_CHIPPED_BIRCH_DOOR_07);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_08), TALL_CHIPPED_BIRCH_DOOR_08);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_09), TALL_CHIPPED_BIRCH_DOOR_09);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_10), TALL_CHIPPED_BIRCH_DOOR_10);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_11), TALL_CHIPPED_BIRCH_DOOR_11);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_12), TALL_CHIPPED_BIRCH_DOOR_12);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_13), TALL_CHIPPED_BIRCH_DOOR_13);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_14), TALL_CHIPPED_BIRCH_DOOR_14);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_15), TALL_CHIPPED_BIRCH_DOOR_15);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_16), TALL_CHIPPED_BIRCH_DOOR_16);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_17), TALL_CHIPPED_BIRCH_DOOR_17);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_18), TALL_CHIPPED_BIRCH_DOOR_18);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_19), TALL_CHIPPED_BIRCH_DOOR_19);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_20), TALL_CHIPPED_BIRCH_DOOR_20);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_01), TALL_CHIPPED_JUNGLE_DOOR_01);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_02), TALL_CHIPPED_JUNGLE_DOOR_02);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_03), TALL_CHIPPED_JUNGLE_DOOR_03);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_04), TALL_CHIPPED_JUNGLE_DOOR_04);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_05), TALL_CHIPPED_JUNGLE_DOOR_05);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_06), TALL_CHIPPED_JUNGLE_DOOR_06);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_07), TALL_CHIPPED_JUNGLE_DOOR_07);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_08), TALL_CHIPPED_JUNGLE_DOOR_08);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_09), TALL_CHIPPED_JUNGLE_DOOR_09);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_10), TALL_CHIPPED_JUNGLE_DOOR_10);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_11), TALL_CHIPPED_JUNGLE_DOOR_11);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_12), TALL_CHIPPED_JUNGLE_DOOR_12);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_13), TALL_CHIPPED_JUNGLE_DOOR_13);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_14), TALL_CHIPPED_JUNGLE_DOOR_14);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_15), TALL_CHIPPED_JUNGLE_DOOR_15);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_16), TALL_CHIPPED_JUNGLE_DOOR_16);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_17), TALL_CHIPPED_JUNGLE_DOOR_17);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_18), TALL_CHIPPED_JUNGLE_DOOR_18);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_19), TALL_CHIPPED_JUNGLE_DOOR_19);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_JUNGLE_20), TALL_CHIPPED_JUNGLE_DOOR_20);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_01), TALL_CHIPPED_ACACIA_DOOR_01);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_02), TALL_CHIPPED_ACACIA_DOOR_02);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_03), TALL_CHIPPED_ACACIA_DOOR_03);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_04), TALL_CHIPPED_ACACIA_DOOR_04);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_05), TALL_CHIPPED_ACACIA_DOOR_05);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_06), TALL_CHIPPED_ACACIA_DOOR_06);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_07), TALL_CHIPPED_ACACIA_DOOR_07);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_08), TALL_CHIPPED_ACACIA_DOOR_08);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_09), TALL_CHIPPED_ACACIA_DOOR_09);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_10), TALL_CHIPPED_ACACIA_DOOR_10);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_11), TALL_CHIPPED_ACACIA_DOOR_11);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_12), TALL_CHIPPED_ACACIA_DOOR_12);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_13), TALL_CHIPPED_ACACIA_DOOR_13);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_14), TALL_CHIPPED_ACACIA_DOOR_14);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_15), TALL_CHIPPED_ACACIA_DOOR_15);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_16), TALL_CHIPPED_ACACIA_DOOR_16);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_17), TALL_CHIPPED_ACACIA_DOOR_17);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_18), TALL_CHIPPED_ACACIA_DOOR_18);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_19), TALL_CHIPPED_ACACIA_DOOR_19);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_ACACIA_20), TALL_CHIPPED_ACACIA_DOOR_20);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_01), TALL_CHIPPED_DARK_OAK_DOOR_01);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_02), TALL_CHIPPED_DARK_OAK_DOOR_02);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_03), TALL_CHIPPED_DARK_OAK_DOOR_03);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_04), TALL_CHIPPED_DARK_OAK_DOOR_04);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_05), TALL_CHIPPED_DARK_OAK_DOOR_05);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_06), TALL_CHIPPED_DARK_OAK_DOOR_06);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_07), TALL_CHIPPED_DARK_OAK_DOOR_07);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_08), TALL_CHIPPED_DARK_OAK_DOOR_08);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_09), TALL_CHIPPED_DARK_OAK_DOOR_09);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_10), TALL_CHIPPED_DARK_OAK_DOOR_10);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_11), TALL_CHIPPED_DARK_OAK_DOOR_11);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_12), TALL_CHIPPED_DARK_OAK_DOOR_12);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_13), TALL_CHIPPED_DARK_OAK_DOOR_13);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_14), TALL_CHIPPED_DARK_OAK_DOOR_14);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_15), TALL_CHIPPED_DARK_OAK_DOOR_15);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_16), TALL_CHIPPED_DARK_OAK_DOOR_16);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_17), TALL_CHIPPED_DARK_OAK_DOOR_17);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_18), TALL_CHIPPED_DARK_OAK_DOOR_18);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_19), TALL_CHIPPED_DARK_OAK_DOOR_19);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_DARK_OAK_20), TALL_CHIPPED_DARK_OAK_DOOR_20);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_01), TALL_CHIPPED_CRIMSON_DOOR_01);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_02), TALL_CHIPPED_CRIMSON_DOOR_02);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_03), TALL_CHIPPED_CRIMSON_DOOR_03);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_04), TALL_CHIPPED_CRIMSON_DOOR_04);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_05), TALL_CHIPPED_CRIMSON_DOOR_05);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_06), TALL_CHIPPED_CRIMSON_DOOR_06);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_07), TALL_CHIPPED_CRIMSON_DOOR_07);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_08), TALL_CHIPPED_CRIMSON_DOOR_08);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_09), TALL_CHIPPED_CRIMSON_DOOR_09);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_10), TALL_CHIPPED_CRIMSON_DOOR_10);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_11), TALL_CHIPPED_CRIMSON_DOOR_11);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_12), TALL_CHIPPED_CRIMSON_DOOR_12);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_13), TALL_CHIPPED_CRIMSON_DOOR_13);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_14), TALL_CHIPPED_CRIMSON_DOOR_14);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_15), TALL_CHIPPED_CRIMSON_DOOR_15);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_16), TALL_CHIPPED_CRIMSON_DOOR_16);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_17), TALL_CHIPPED_CRIMSON_DOOR_17);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_18), TALL_CHIPPED_CRIMSON_DOOR_18);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_19), TALL_CHIPPED_CRIMSON_DOOR_19);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_CRIMSON_20), TALL_CHIPPED_CRIMSON_DOOR_20);
+        
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_01), TALL_CHIPPED_WARPED_DOOR_01);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_02), TALL_CHIPPED_WARPED_DOOR_02);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_03), TALL_CHIPPED_WARPED_DOOR_03);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_04), TALL_CHIPPED_WARPED_DOOR_04);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_05), TALL_CHIPPED_WARPED_DOOR_05);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_06), TALL_CHIPPED_WARPED_DOOR_06);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_07), TALL_CHIPPED_WARPED_DOOR_07);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_08), TALL_CHIPPED_WARPED_DOOR_08);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_09), TALL_CHIPPED_WARPED_DOOR_09);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_10), TALL_CHIPPED_WARPED_DOOR_10);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_11), TALL_CHIPPED_WARPED_DOOR_11);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_12), TALL_CHIPPED_WARPED_DOOR_12);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_13), TALL_CHIPPED_WARPED_DOOR_13);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_14), TALL_CHIPPED_WARPED_DOOR_14);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_15), TALL_CHIPPED_WARPED_DOOR_15);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_16), TALL_CHIPPED_WARPED_DOOR_16);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_17), TALL_CHIPPED_WARPED_DOOR_17);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_18), TALL_CHIPPED_WARPED_DOOR_18);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_19), TALL_CHIPPED_WARPED_DOOR_19);
+        Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_20), TALL_CHIPPED_WARPED_DOOR_20);
         
         //Register all those Macaw doors.
         Registry.register(Registry.BLOCK, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JAIL), TALL_MACAW_JAIL_DOOR);

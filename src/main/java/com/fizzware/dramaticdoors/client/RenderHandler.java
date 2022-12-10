@@ -54,12 +54,43 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BYG_WITCH_HAZEL_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BYG_ZELKOVA_DOOR, RenderLayer.getCutout());
 		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_JACARANDA_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_REDBUD_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CYPRESS_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BROWN_MUSHROOM_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_RED_MUSHROOM_DOOR, RenderLayer.getCutout());
+
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_AERONOS_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_GLACIAN_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_STROPHAR_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_STEEL_DOOR, RenderLayer.getCutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TWISTED_DOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERMINITE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_THALLASIUM_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_DRAGON_TREE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_END_LOTUS_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_HELIX_TREE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_JELLYSHROOM_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_LACUGROVE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_LUCERNIA_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MOSSY_GLOWSHROOM_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_PYTHADENDRON_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TENANEA_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_UMBRELLA_TREE_DOOR, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_ANCHOR_TREE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BONE_CIN_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BONE_REED_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MUSHROOM_FIR_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_NETHER_MUSHROOM_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_NETHER_REED_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_NETHER_SAKURA_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_RUBEUS_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_STALAGNATE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_WART_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BN_WILLOW_DOOR, RenderLayer.getCutout());
 		
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_BAMBOO_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_BLACKSTONE_DOOR, RenderLayer.getCutout());
@@ -69,7 +100,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_STONE_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BLOCKUS_WHITE_OAK_DOOR, RenderLayer.getCutout());
 
-		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CYPRESS_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BW_CYPRESS_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_DRAGONS_BLOOD_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_ELDER_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_JUNIPER_DOOR, RenderLayer.getCutout());
@@ -84,6 +115,15 @@ public class RenderHandler implements ClientModInitializer
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHARM_AZALEA_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHARM_EBONY_DOOR, RenderLayer.getCutout());
+		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_ANDESITE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BRASS_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_COPPER_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_ZINC_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_LOCKED_ANDESITE_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_LOCKED_BRASS_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_LOCKED_COPPER_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_LOCKED_ZINC_DOOR, RenderLayer.getCutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_ECO_AZALEA_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_ECO_FLOWERING_AZALEA_DOOR, RenderLayer.getCutout());
@@ -130,6 +170,175 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TWILIGHT_MANGROVE_DOOR, RenderLayer.getCutout());
 		
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_SOUL_COPPER_DOOR, RenderLayer.getCutout());
+		
+		// Set up rendering for all the Chipped doors.
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_01, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_02, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_03, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_04, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_05, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_06, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_07, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_08, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_09, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_10, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_11, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_12, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_13, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_14, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_15, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_16, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_17, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_18, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_19, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_OAK_DOOR_20, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_01, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_02, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_03, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_04, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_05, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_06, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_07, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_08, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_09, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_10, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_11, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_12, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_13, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_14, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_15, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_16, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_17, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_18, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_19, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_20, RenderLayer.getCutout());
+		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_01, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_02, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_03, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_04, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_05, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_06, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_07, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_08, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_09, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_10, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_11, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_12, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_13, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_14, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_15, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_16, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_17, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_18, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_19, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_20, RenderLayer.getCutout());
+		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_01, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_02, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_03, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_04, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_05, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_06, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_07, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_08, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_09, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_10, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_11, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_12, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_13, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_14, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_15, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_16, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_17, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_18, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_19, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_20, RenderLayer.getCutout());
+		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_01, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_02, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_03, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_04, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_05, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_06, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_07, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_08, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_09, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_10, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_11, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_12, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_13, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_14, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_15, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_16, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_17, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_18, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_19, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_20, RenderLayer.getCutout());
+		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_01, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_02, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_03, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_04, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_05, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_06, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_07, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_08, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_09, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_10, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_11, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_12, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_13, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_14, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_15, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_16, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_17, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_18, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_19, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_20, RenderLayer.getCutout());
+		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_01, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_02, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_03, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_04, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_05, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_06, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_07, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_08, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_09, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_10, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_11, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_12, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_13, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_14, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_15, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_16, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_17, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_18, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_19, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_20, RenderLayer.getCutout());
+		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_01, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_02, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_03, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_04, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_05, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_06, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_07, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_08, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_09, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_10, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_11, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_12, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_13, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_14, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_15, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_16, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_17, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_18, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_19, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_20, RenderLayer.getCutout());
 		
 		// Set up rendering for all the Macaw doors.
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_JAIL_DOOR, RenderLayer.getCutout());

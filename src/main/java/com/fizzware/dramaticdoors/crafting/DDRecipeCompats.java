@@ -19,6 +19,17 @@ public class DDRecipeCompats
 	public static List<JsonObject> RECIPES = new ArrayList<JsonObject>();
 	
 	public static void initializeRecipes() {
+		if (FabricLoader.getInstance().isModLoaded("abundance")) {
+			createTallDoorRecipeJson(DDNames.TALL_JACARANDA, new Identifier("abundance", "jacaranda_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_REDBUD, new Identifier("abundance", "redbud_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("bayou_blues")) {
+			createTallDoorRecipeJson(DDNames.TALL_CYPRESS, new Identifier("bayou_blues", "cypress_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("enhanced_mushrooms")) {
+			createTallDoorRecipeJson(DDNames.TALL_BROWN_MUSHROOM, new Identifier("enhanced_mushrooms", "brown_mushroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_RED_MUSHROOM, new Identifier("enhanced_mushrooms", "red_mushroom_door"), "tall_wooden_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("ad_astra")) {
 			createTallDoorRecipeJson(DDNames.TALL_AERONOS, new Identifier("ad_astra", "aeronos_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_GLACIAN, new Identifier("ad_astra", "glacian_door"), "tall_wooden_door");
@@ -27,6 +38,33 @@ public class DDRecipeCompats
 		}
 		if (FabricLoader.getInstance().isModLoaded("architects_palette")) {
 			createTallDoorRecipeJson(DDNames.TALL_TWISTED, new Identifier("architects_palette", "twisted_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("betterend")) {
+			createTallDoorRecipeJson(DDNames.TALL_TERMINITE, new Identifier("betterend", "terminite_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_THALLASIUM, new Identifier("betterend", "thallasium_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_DRAGON_TREE, new Identifier("betterend", "dragon_tree_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_END_LOTUS, new Identifier("betterend", "end_lotus_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_HELIX_TREE, new Identifier("betterend", "helix_tree_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_JELLYSHROOM, new Identifier("betterend", "jellyshroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_LACUGROVE, new Identifier("betterend", "lacugrove_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_LUCERNIA, new Identifier("betterend", "lucernia_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_MOSSY_GLOWSHROOM, new Identifier("betterend", "mossy_glowshroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_PYTHADENDRON, new Identifier("betterend", "pythadendron_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TENANEA, new Identifier("betterend", "tenanea_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_UMBRELLA_TREE, new Identifier("betterend", "umbrella_tree_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("betternether")) {
+			createTallDoorRecipeJson(DDNames.TALL_ANCHOR_TREE, new Identifier("betternether", "anchor_tree_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_BONE_CIN, new Identifier("betternether", "bone_cincinnasite_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_BONE_REED, new Identifier("betternether", "bone_reed_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_MUSHROOM_FIR, new Identifier("betternether", "mushroom_fir_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_NETHER_MUSHROOM, new Identifier("betternether", "nether_mushroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_NETHER_REED, new Identifier("betternether", "nether_reed_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_NETHER_SAKURA, new Identifier("betternether", "nether_sakura_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_RUBEUS, new Identifier("betternether", "rubeus_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_STALAGNATE, new Identifier("betternether", "stalagnate_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_WART, new Identifier("betternether", "wart_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_BN_WILLOW, new Identifier("betternether", "willow_door"), "tall_wooden_door");
 		}
 		if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
 			createTallDoorRecipeJson(DDNames.TALL_CYPRESS, new Identifier("bewitchment", "cypress_door"), "tall_wooden_door");
@@ -92,6 +130,16 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_CHARM_AZALEA, new Identifier("charm", "azalea_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_CHARM_EBONY, new Identifier("charm", "ebony_door"), "tall_wooden_door");
 		}
+		if (FabricLoader.getInstance().isModLoaded("createdeco")) {
+			createTallDoorRecipeJson(DDNames.TALL_ANDESITE, new Identifier("createdeco", "andesite_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_BRASS, new Identifier("createdeco", "brass_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_COPPER, new Identifier("createdeco", "copper_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_ZINC, new Identifier("createdeco", "zinc_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_LOCKED_ANDESITE, new Identifier("createdeco", "locked_andesite_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_LOCKED_BRASS, new Identifier("createdeco", "locked_brass_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_LOCKED_COPPER, new Identifier("createdeco", "locked_copper_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_LOCKED_ZINC, new Identifier("createdeco", "locked_zinc_door"), "tall_metal_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("ecologics")) {
 			createTallDoorRecipeJson(DDNames.TALL_ECO_AZALEA, new Identifier("ecologics", "azalea_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_ECO_FLOWERING_AZALEA, new Identifier("ecologics", "flowering_azalea_door"), "tall_wooden_door");
@@ -148,6 +196,168 @@ public class DDRecipeCompats
 		}
 		if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
 			createTallDoorRecipeJson(DDNames.TALL_SOUL_COPPER, new Identifier("xps_additions", "soul_copper_door"), "tall_metal_door");			
+		}
+		if (FabricLoader.getInstance().isModLoaded("chipped")) {
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_01, new Identifier("chipped", "oak_door_1"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_02, new Identifier("chipped", "oak_door_2"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_03, new Identifier("chipped", "oak_door_3"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_04, new Identifier("chipped", "oak_door_4"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_05, new Identifier("chipped", "oak_door_5"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_06, new Identifier("chipped", "oak_door_6"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_07, new Identifier("chipped", "oak_door_7"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_08, new Identifier("chipped", "oak_door_8"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_09, new Identifier("chipped", "oak_door_9"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_10, new Identifier("chipped", "oak_door_10"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_11, new Identifier("chipped", "oak_door_11"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_12, new Identifier("chipped", "oak_door_12"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_13, new Identifier("chipped", "oak_door_13"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_14, new Identifier("chipped", "oak_door_14"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_15, new Identifier("chipped", "oak_door_15"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_16, new Identifier("chipped", "oak_door_16"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_17, new Identifier("chipped", "oak_door_17"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_18, new Identifier("chipped", "oak_door_18"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_19, new Identifier("chipped", "oak_door_19"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_OAK_20, new Identifier("chipped", "oak_door_20"), "tall_chipped_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_01, new Identifier("chipped", "spruce_door_1"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_02, new Identifier("chipped", "spruce_door_2"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_03, new Identifier("chipped", "spruce_door_3"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_04, new Identifier("chipped", "spruce_door_4"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_05, new Identifier("chipped", "spruce_door_5"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_06, new Identifier("chipped", "spruce_door_6"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_07, new Identifier("chipped", "spruce_door_7"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_08, new Identifier("chipped", "spruce_door_8"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_09, new Identifier("chipped", "spruce_door_9"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_10, new Identifier("chipped", "spruce_door_10"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_11, new Identifier("chipped", "spruce_door_11"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_12, new Identifier("chipped", "spruce_door_12"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_13, new Identifier("chipped", "spruce_door_13"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_14, new Identifier("chipped", "spruce_door_14"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_15, new Identifier("chipped", "spruce_door_15"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_16, new Identifier("chipped", "spruce_door_16"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_17, new Identifier("chipped", "spruce_door_17"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_18, new Identifier("chipped", "spruce_door_18"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_19, new Identifier("chipped", "spruce_door_19"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_SPRUCE_20, new Identifier("chipped", "spruce_door_20"), "tall_chipped_spruce_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_01, new Identifier("chipped", "birch_door_1"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_02, new Identifier("chipped", "birch_door_2"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_03, new Identifier("chipped", "birch_door_3"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_04, new Identifier("chipped", "birch_door_4"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_05, new Identifier("chipped", "birch_door_5"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_06, new Identifier("chipped", "birch_door_6"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_07, new Identifier("chipped", "birch_door_7"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_08, new Identifier("chipped", "birch_door_8"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_09, new Identifier("chipped", "birch_door_9"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_10, new Identifier("chipped", "birch_door_10"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_11, new Identifier("chipped", "birch_door_11"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_12, new Identifier("chipped", "birch_door_12"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_13, new Identifier("chipped", "birch_door_13"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_14, new Identifier("chipped", "birch_door_14"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_15, new Identifier("chipped", "birch_door_15"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_16, new Identifier("chipped", "birch_door_16"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_17, new Identifier("chipped", "birch_door_17"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_18, new Identifier("chipped", "birch_door_18"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_19, new Identifier("chipped", "birch_door_19"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_BIRCH_20, new Identifier("chipped", "birch_door_20"), "tall_chipped_birch_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_01, new Identifier("chipped", "jungle_door_1"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_02, new Identifier("chipped", "jungle_door_2"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_03, new Identifier("chipped", "jungle_door_3"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_04, new Identifier("chipped", "jungle_door_4"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_05, new Identifier("chipped", "jungle_door_5"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_06, new Identifier("chipped", "jungle_door_6"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_07, new Identifier("chipped", "jungle_door_7"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_08, new Identifier("chipped", "jungle_door_8"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_09, new Identifier("chipped", "jungle_door_9"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_10, new Identifier("chipped", "jungle_door_10"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_11, new Identifier("chipped", "jungle_door_11"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_12, new Identifier("chipped", "jungle_door_12"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_13, new Identifier("chipped", "jungle_door_13"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_14, new Identifier("chipped", "jungle_door_14"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_15, new Identifier("chipped", "jungle_door_15"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_16, new Identifier("chipped", "jungle_door_16"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_17, new Identifier("chipped", "jungle_door_17"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_18, new Identifier("chipped", "jungle_door_18"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_19, new Identifier("chipped", "jungle_door_19"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_JUNGLE_20, new Identifier("chipped", "jungle_door_20"), "tall_chipped_jungle_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_01, new Identifier("chipped", "acacia_door_1"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_02, new Identifier("chipped", "acacia_door_2"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_03, new Identifier("chipped", "acacia_door_3"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_04, new Identifier("chipped", "acacia_door_4"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_05, new Identifier("chipped", "acacia_door_5"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_06, new Identifier("chipped", "acacia_door_6"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_07, new Identifier("chipped", "acacia_door_7"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_08, new Identifier("chipped", "acacia_door_8"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_09, new Identifier("chipped", "acacia_door_9"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_10, new Identifier("chipped", "acacia_door_10"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_11, new Identifier("chipped", "acacia_door_11"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_12, new Identifier("chipped", "acacia_door_12"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_13, new Identifier("chipped", "acacia_door_13"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_14, new Identifier("chipped", "acacia_door_14"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_15, new Identifier("chipped", "acacia_door_15"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_16, new Identifier("chipped", "acacia_door_16"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_17, new Identifier("chipped", "acacia_door_17"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_18, new Identifier("chipped", "acacia_door_18"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_19, new Identifier("chipped", "acacia_door_19"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_ACACIA_20, new Identifier("chipped", "acacia_door_20"), "tall_chipped_acacia_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_01, new Identifier("chipped", "dark_oak_door_1"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_02, new Identifier("chipped", "dark_oak_door_2"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_03, new Identifier("chipped", "dark_oak_door_3"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_04, new Identifier("chipped", "dark_oak_door_4"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_05, new Identifier("chipped", "dark_oak_door_5"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_06, new Identifier("chipped", "dark_oak_door_6"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_07, new Identifier("chipped", "dark_oak_door_7"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_08, new Identifier("chipped", "dark_oak_door_8"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_09, new Identifier("chipped", "dark_oak_door_9"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_10, new Identifier("chipped", "dark_oak_door_10"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_11, new Identifier("chipped", "dark_oak_door_11"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_12, new Identifier("chipped", "dark_oak_door_12"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_13, new Identifier("chipped", "dark_oak_door_13"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_14, new Identifier("chipped", "dark_oak_door_14"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_15, new Identifier("chipped", "dark_oak_door_15"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_16, new Identifier("chipped", "dark_oak_door_16"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_17, new Identifier("chipped", "dark_oak_door_17"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_18, new Identifier("chipped", "dark_oak_door_18"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_19, new Identifier("chipped", "dark_oak_door_19"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_DARK_OAK_20, new Identifier("chipped", "dark_oak_door_20"), "tall_chipped_dark_oak_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_01, new Identifier("chipped", "crimson_door_1"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_02, new Identifier("chipped", "crimson_door_2"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_03, new Identifier("chipped", "crimson_door_3"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_04, new Identifier("chipped", "crimson_door_4"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_05, new Identifier("chipped", "crimson_door_5"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_06, new Identifier("chipped", "crimson_door_6"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_07, new Identifier("chipped", "crimson_door_7"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_08, new Identifier("chipped", "crimson_door_8"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_09, new Identifier("chipped", "crimson_door_9"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_10, new Identifier("chipped", "crimson_door_10"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_11, new Identifier("chipped", "crimson_door_11"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_12, new Identifier("chipped", "crimson_door_12"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_13, new Identifier("chipped", "crimson_door_13"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_14, new Identifier("chipped", "crimson_door_14"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_15, new Identifier("chipped", "crimson_door_15"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_16, new Identifier("chipped", "crimson_door_16"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_17, new Identifier("chipped", "crimson_door_17"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_18, new Identifier("chipped", "crimson_door_18"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_19, new Identifier("chipped", "crimson_door_19"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_CRIMSON_20, new Identifier("chipped", "crimson_door_20"), "tall_chipped_crimson_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_01, new Identifier("chipped", "warped_door_1"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_02, new Identifier("chipped", "warped_door_2"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_03, new Identifier("chipped", "warped_door_3"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_04, new Identifier("chipped", "warped_door_4"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_05, new Identifier("chipped", "warped_door_5"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_06, new Identifier("chipped", "warped_door_6"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_07, new Identifier("chipped", "warped_door_7"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_08, new Identifier("chipped", "warped_door_8"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_09, new Identifier("chipped", "warped_door_9"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_10, new Identifier("chipped", "warped_door_10"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_11, new Identifier("chipped", "warped_door_11"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_12, new Identifier("chipped", "warped_door_12"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_13, new Identifier("chipped", "warped_door_13"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_14, new Identifier("chipped", "warped_door_14"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_15, new Identifier("chipped", "warped_door_15"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_16, new Identifier("chipped", "warped_door_16"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_17, new Identifier("chipped", "warped_door_17"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_18, new Identifier("chipped", "warped_door_18"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_19, new Identifier("chipped", "warped_door_19"), "tall_chipped_warped_door");
+			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_20, new Identifier("chipped", "warped_door_20"), "tall_chipped_warped_door");
 		}
 		if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_JAIL, new Identifier("mcwdoors", "jail_door"), "tall_macaw_metal_door");
@@ -362,7 +572,7 @@ public class DDRecipeCompats
         //Finally, we define our result object
         JsonObject result = new JsonObject();
         result.addProperty("item", output.toString());
-        result.addProperty("count", 1);
+        result.addProperty("count", 2);
         json.add("result", result);
  
         return json;
