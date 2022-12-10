@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:tall_ancient_oak_door",
+    "dramaticdoors:tall_blighted_balsa_door",
+    "dramaticdoors:tall_swamp_cypress_door",
+    "dramaticdoors:tall_willow_door"
+  ]
+}

@@ -19,6 +19,17 @@ public class DDRecipeCompats
 	public static List<JsonObject> RECIPES = new ArrayList<JsonObject>();
 	
 	public static void initializeRecipes() {
+		if (FabricLoader.getInstance().isModLoaded("abundance")) {
+			createTallDoorRecipeJson(DDNames.TALL_JACARANDA, new Identifier("abundance", "jacaranda_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_REDBUD, new Identifier("abundance", "redbud_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("bayou_blues")) {
+			createTallDoorRecipeJson(DDNames.TALL_CYPRESS, new Identifier("bayou_blues", "cypress_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("enhanced_mushrooms")) {
+			createTallDoorRecipeJson(DDNames.TALL_BROWN_MUSHROOM, new Identifier("enhanced_mushrooms", "brown_mushroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_RED_MUSHROOM, new Identifier("enhanced_mushrooms", "red_mushroom_door"), "tall_wooden_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("ad_astra")) {
 			createTallDoorRecipeJson(DDNames.TALL_AERONOS, new Identifier("ad_astra", "aeronos_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_GLACIAN, new Identifier("ad_astra", "glacian_door"), "tall_wooden_door");
@@ -28,8 +39,35 @@ public class DDRecipeCompats
 		if (FabricLoader.getInstance().isModLoaded("architects_palette")) {
 			createTallDoorRecipeJson(DDNames.TALL_TWISTED, new Identifier("architects_palette", "twisted_door"), "tall_wooden_door");
 		}
+		if (FabricLoader.getInstance().isModLoaded("betterend")) {
+			createTallDoorRecipeJson(DDNames.TALL_TERMINITE, new Identifier("betterend", "terminite_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_THALLASIUM, new Identifier("betterend", "thallasium_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_DRAGON_TREE, new Identifier("betterend", "dragon_tree_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_END_LOTUS, new Identifier("betterend", "end_lotus_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_HELIX_TREE, new Identifier("betterend", "helix_tree_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_JELLYSHROOM, new Identifier("betterend", "jellyshroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_LACUGROVE, new Identifier("betterend", "lacugrove_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_LUCERNIA, new Identifier("betterend", "lucernia_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_MOSSY_GLOWSHROOM, new Identifier("betterend", "mossy_glowshroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_PYTHADENDRON, new Identifier("betterend", "pythadendron_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TENANEA, new Identifier("betterend", "tenanea_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_UMBRELLA_TREE, new Identifier("betterend", "umbrella_tree_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("betternether")) {
+			createTallDoorRecipeJson(DDNames.TALL_ANCHOR_TREE, new Identifier("betternether", "anchor_tree_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_BONE_CIN, new Identifier("betternether", "bone_cincinnasite_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_BONE_REED, new Identifier("betternether", "bone_reed_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_MUSHROOM_FIR, new Identifier("betternether", "mushroom_fir_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_NETHER_MUSHROOM, new Identifier("betternether", "nether_mushroom_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_NETHER_REED, new Identifier("betternether", "nether_reed_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_NETHER_SAKURA, new Identifier("betternether", "nether_sakura_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_RUBEUS, new Identifier("betternether", "rubeus_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_STALAGNATE, new Identifier("betternether", "stalagnate_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_WART, new Identifier("betternether", "wart_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_BN_WILLOW, new Identifier("betternether", "willow_door"), "tall_wooden_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
-			createTallDoorRecipeJson(DDNames.TALL_CYPRESS, new Identifier("bewitchment", "cypress_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_BW_CYPRESS, new Identifier("bewitchment", "cypress_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_DRAGONS_BLOOD, new Identifier("bewitchment", "dragons_blood_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_ELDER, new Identifier("bewitchment", "elder_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_JUNIPER, new Identifier("bewitchment", "juniper_door"), "tall_wooden_door");
@@ -91,6 +129,16 @@ public class DDRecipeCompats
 		if (FabricLoader.getInstance().isModLoaded("charm")) {
 			createTallDoorRecipeJson(DDNames.TALL_CHARM_AZALEA, new Identifier("charm", "azalea_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_CHARM_EBONY, new Identifier("charm", "ebony_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("createdeco")) {
+			createTallDoorRecipeJson(DDNames.TALL_ANDESITE, new Identifier("createdeco", "andesite_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_BRASS, new Identifier("createdeco", "brass_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_COPPER, new Identifier("createdeco", "copper_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_ZINC, new Identifier("createdeco", "zinc_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_LOCKED_ANDESITE, new Identifier("createdeco", "locked_andesite_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_LOCKED_BRASS, new Identifier("createdeco", "locked_brass_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_LOCKED_COPPER, new Identifier("createdeco", "locked_copper_door"), "tall_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_LOCKED_ZINC, new Identifier("createdeco", "locked_zinc_door"), "tall_metal_door");
 		}
 		if (FabricLoader.getInstance().isModLoaded("ecologics")) {
 			createTallDoorRecipeJson(DDNames.TALL_ECO_AZALEA, new Identifier("ecologics", "azalea_door"), "tall_wooden_door");

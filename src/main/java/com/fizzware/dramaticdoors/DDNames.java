@@ -14,6 +14,7 @@ public class DDNames
     public static final String TALL_CRIMSON = "tall_crimson_door";
     public static final String TALL_WARPED = "tall_warped_door";
 
+    // -- The Big Popular Mods --
     //Oh the Biomes You'll Go
     public static final String TALL_BYG_ASPEN = "tall_byg_aspen_door";
     public static final String TALL_BYG_BAOBAB = "tall_byg_baobab_door";
@@ -48,6 +49,30 @@ public class DDNames
     public static final String TALL_BYG_WITCH_HAZEL = "tall_byg_witch_hazel_door";
     public static final String TALL_BYG_ZELKOVA = "tall_byg_zelkova_door";
     
+    //Twilight Forest
+    public static final String TALL_CANOPY = "tall_canopy_door";
+    public static final String TALL_DARKWOOD = "tall_darkwood_door";
+    public static final String TALL_TWILIGHT_MANGROVE = "tall_twilight_mangrove_door";
+    public static final String TALL_MINEWOOD = "tall_minewood_door";
+    public static final String TALL_SORTINGWOOD = "tall_sortingwood_door";
+    public static final String TALL_TIMEWOOD = "tall_timewood_door";
+    public static final String TALL_TRANSWOOD = "tall_transwood_door";
+    public static final String TALL_TWILIGHT_OAK = "tall_twilight_oak_door";
+    
+    // -- Team Aurora Mods --
+    //Abundance
+    public static final String TALL_JACARANDA = "tall_jacaranda_door";
+    public static final String TALL_REDBUD = "tall_redbud_door";
+    
+    //Bayou Blues
+    public static final String TALL_CYPRESS = "tall_cypress_door";
+    
+    //Enhanced Mushrooms
+    public static final String TALL_BROWN_MUSHROOM = "tall_brown_mushroom_door";
+    public static final String TALL_RED_MUSHROOM = "tall_red_mushroom_door";
+    public static final String TALL_GLOWSHROOM = "tall_glowshroom_door";
+    
+    // -- Other Mods --
     //Ad Astra
     public static final String TALL_AERONOS = "tall_aeronos_door";
     public static final String TALL_GLACIAN = "tall_glacian_door";
@@ -56,9 +81,36 @@ public class DDNames
     
     //Architects Palette
     public static final String TALL_TWISTED = "tall_twisted_door";
+        
+    //Better End
+    public static final String TALL_TERMINITE = "tall_terminite_door";
+    public static final String TALL_THALLASIUM = "tall_thallasium_door";
+    public static final String TALL_DRAGON_TREE = "tall_dragon_tree_door";
+    public static final String TALL_END_LOTUS = "tall_end_lotus_door";
+    public static final String TALL_HELIX_TREE = "tall_helix_tree_door";
+    public static final String TALL_JELLYSHROOM = "tall_jellyshroom_door";
+    public static final String TALL_LACUGROVE = "tall_lacugrove_door";
+    public static final String TALL_LUCERNIA = "tall_lucernia_door";
+    public static final String TALL_MOSSY_GLOWSHROOM = "tall_mossy_glowshroom_door";
+    public static final String TALL_PYTHADENDRON = "tall_pythadendron_door";
+    public static final String TALL_TENANEA = "tall_tenanea_door";
+    public static final String TALL_UMBRELLA_TREE = "tall_umbrella_tree_door";
+    
+    //Better Nether
+    public static final String TALL_ANCHOR_TREE = "tall_anchor_tree_door";
+    public static final String TALL_BONE_CIN = "tall_bone_cin_door";
+    public static final String TALL_BONE_REED = "tall_bone_reed_door";
+    public static final String TALL_MUSHROOM_FIR = "tall_mushroom_fir_door";
+    public static final String TALL_NETHER_REED = "tall_nether_reed_door";
+    public static final String TALL_NETHER_MUSHROOM = "tall_nether_mushroom_door";
+    public static final String TALL_NETHER_SAKURA = "tall_nether_sakura_door";
+    public static final String TALL_RUBEUS = "tall_rubeus_door";
+    public static final String TALL_STALAGNATE = "tall_stalagnate_door";
+    public static final String TALL_WART = "tall_wart_door";
+    public static final String TALL_BN_WILLOW = "tall_bn_willow_door";
     
     //Bewitchment
-    public static final String TALL_CYPRESS = "tall_cypress_door";
+    public static final String TALL_BW_CYPRESS = "tall_bw_cypress_door";
     public static final String TALL_DRAGONS_BLOOD = "tall_dragons_blood_door";
     public static final String TALL_ELDER = "tall_elder_door";
     public static final String TALL_JUNIPER = "tall_juniper_door";
@@ -86,6 +138,16 @@ public class DDNames
     public static final String TALL_CHARM_AZALEA = "tall_charm_azalea_door";
     public static final String TALL_CHARM_EBONY = "tall_charm_ebony_door";
     
+    //Create: Deco
+    public static final String TALL_ANDESITE = "tall_andesite_door";
+    public static final String TALL_BRASS = "tall_brass_door";
+    public static final String TALL_COPPER = "tall_copper_door";
+    public static final String TALL_ZINC = "tall_zinc_door";
+    public static final String TALL_LOCKED_ANDESITE = "tall_locked_andesite_door";
+    public static final String TALL_LOCKED_BRASS = "tall_locked_brass_door";
+    public static final String TALL_LOCKED_COPPER = "tall_locked_copper_door";
+    public static final String TALL_LOCKED_ZINC = "tall_locked_zinc_door";
+    
     //Ecologics
     public static final String TALL_ECO_AZALEA = "tall_eco_azalea_door";
     public static final String TALL_ECO_FLOWERING_AZALEA = "tall_eco_flowering_azalea_door";
@@ -103,7 +165,7 @@ public class DDNames
     public static final String TALL_CRIMSON_GLASS = "tall_crimson_glass_door";
     public static final String TALL_WARPED_GLASS = "tall_warped_glass_door";
     
-    //Hephaestus
+    //Hephaestus (Tinkers Construct)
     public static final String TALL_BLOODSHROOM = "tall_bloodshroom_door";
     public static final String TALL_GREENHEART = "tall_greenheart_door";
     public static final String TALL_SKYROOT = "tall_skyroot_door";
@@ -128,16 +190,6 @@ public class DDNames
     
     //Twigs
     public static final String TALL_STRIPPED_BAMBOO = "tall_stripped_bamboo_door";
-    
-    //Twilight Forest
-    public static final String TALL_CANOPY = "tall_canopy_door";
-    public static final String TALL_DARKWOOD = "tall_darkwood_door";
-    public static final String TALL_TWILIGHT_MANGROVE = "tall_twilight_mangrove_door";
-    public static final String TALL_MINEWOOD = "tall_minewood_door";
-    public static final String TALL_SORTINGWOOD = "tall_sortingwood_door";
-    public static final String TALL_TIMEWOOD = "tall_timewood_door";
-    public static final String TALL_TRANSWOOD = "tall_transwood_door";
-    public static final String TALL_TWILIGHT_OAK = "tall_twilight_oak_door";
 
     //XP Obelisk's Additions
     public static final String TALL_SOUL_COPPER = "tall_soul_copper_door";

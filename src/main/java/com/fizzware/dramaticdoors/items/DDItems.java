@@ -24,6 +24,15 @@ public class DDItems {
     public static final Item TALL_CRIMSON_DOOR = new TallDoorItem(DDBlocks.TALL_CRIMSON_DOOR, new FabricItemSettings().group(DramaticDoors.DD_MAIN_TAB));
     public static final Item TALL_WARPED_DOOR = new TallDoorItem(DDBlocks.TALL_WARPED_DOOR, new FabricItemSettings().group(DramaticDoors.DD_MAIN_TAB));
 
+    // Team Aurora
+    public static final Item TALL_JACARANDA_DOOR = new TallDoorItem(DDBlocks.TALL_JACARANDA_DOOR, new FabricItemSettings().group(conditionalTabProperties("abundance", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_REDBUD_DOOR = new TallDoorItem(DDBlocks.TALL_REDBUD_DOOR, new FabricItemSettings().group(conditionalTabProperties("abundance", DramaticDoors.DD_MAIN_TAB)));
+    
+    public static final Item TALL_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_CYPRESS_DOOR, new FabricItemSettings().group(conditionalTabProperties("bayou_blues", DramaticDoors.DD_MAIN_TAB)));
+
+    public static final Item TALL_BROWN_MUSHROOM_DOOR = new TallDoorItem(DDBlocks.TALL_BROWN_MUSHROOM_DOOR, new FabricItemSettings().group(conditionalTabProperties("enhanced_mushrooms", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_RED_MUSHROOM_DOOR = new TallDoorItem(DDBlocks.TALL_RED_MUSHROOM_DOOR, new FabricItemSettings().group(conditionalTabProperties("enhanced_mushrooms", DramaticDoors.DD_MAIN_TAB)));
+    
     // Ad Astra
     public static final Item TALL_AERONOS_DOOR = new TallDoorItem(DDBlocks.TALL_AERONOS_DOOR, new FabricItemSettings().group(conditionalTabProperties("ad_astra", DramaticDoors.DD_MAIN_TAB)));
     public static final Item TALL_GLACIAN_DOOR = new TallDoorItem(DDBlocks.TALL_GLACIAN_DOOR, new FabricItemSettings().group(conditionalTabProperties("ad_astra", DramaticDoors.DD_MAIN_TAB)));
@@ -33,8 +42,35 @@ public class DDItems {
     // Architects Palette
     public static final Item TALL_TWISTED_DOOR = new TallDoorItem(DDBlocks.TALL_TWISTED_DOOR, new FabricItemSettings().group(conditionalTabProperties("architects_palette", DramaticDoors.DD_MAIN_TAB)));
     
+    // Better End
+    public static final Item TALL_TERMINITE_DOOR = new TallDoorItem(DDBlocks.TALL_TERMINITE_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_THALLASIUM_DOOR = new TallDoorItem(DDBlocks.TALL_THALLASIUM_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_DRAGON_TREE_DOOR = new TallDoorItem(DDBlocks.TALL_DRAGON_TREE_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_END_LOTUS_DOOR = new TallDoorItem(DDBlocks.TALL_END_LOTUS_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_HELIX_TREE_DOOR = new TallDoorItem(DDBlocks.TALL_HELIX_TREE_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_JELLYSHROOM_DOOR = new TallDoorItem(DDBlocks.TALL_JELLYSHROOM_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_LACUGROVE_DOOR = new TallDoorItem(DDBlocks.TALL_LACUGROVE_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_LUCERNIA_DOOR = new TallDoorItem(DDBlocks.TALL_LUCERNIA_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_MOSSY_GLOWSHROOM_DOOR = new TallDoorItem(DDBlocks.TALL_MOSSY_GLOWSHROOM_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_PYTHADENDRON_DOOR = new TallDoorItem(DDBlocks.TALL_PYTHADENDRON_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_TENANEA_DOOR = new TallDoorItem(DDBlocks.TALL_TENANEA_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_UMBRELLA_TREE_DOOR = new TallDoorItem(DDBlocks.TALL_UMBRELLA_TREE_DOOR, new FabricItemSettings().group(conditionalTabProperties("betterend", DramaticDoors.DD_MAIN_TAB)));
+    
+    // Better Nether
+    public static final Item TALL_ANCHOR_TREE_DOOR = new TallDoorItem(DDBlocks.TALL_ANCHOR_TREE_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_BONE_CIN_DOOR = new TallDoorItem(DDBlocks.TALL_BONE_CIN_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_BONE_REED_DOOR = new TallDoorItem(DDBlocks.TALL_BONE_REED_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_MUSHROOM_FIR_DOOR = new TallDoorItem(DDBlocks.TALL_MUSHROOM_FIR_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_NETHER_MUSHROOM_DOOR = new TallDoorItem(DDBlocks.TALL_NETHER_MUSHROOM_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_NETHER_REED_DOOR = new TallDoorItem(DDBlocks.TALL_NETHER_REED_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_NETHER_SAKURA_DOOR = new TallDoorItem(DDBlocks.TALL_NETHER_SAKURA_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_RUBEUS_DOOR = new TallDoorItem(DDBlocks.TALL_RUBEUS_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_STALAGNATE_DOOR = new TallDoorItem(DDBlocks.TALL_STALAGNATE_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_WART_DOOR = new TallDoorItem(DDBlocks.TALL_WART_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_BN_WILLOW_DOOR = new TallDoorItem(DDBlocks.TALL_BN_WILLOW_DOOR, new FabricItemSettings().group(conditionalTabProperties("betternether", DramaticDoors.DD_MAIN_TAB)));
+    
     // Bewitchment
-    public static final Item TALL_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_CYPRESS_DOOR, new FabricItemSettings().group(conditionalTabProperties("bewitchment", DramaticDoors.DD_MAIN_TAB)));
+    public static final Item TALL_BW_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_BW_CYPRESS_DOOR, new FabricItemSettings().group(conditionalTabProperties("bewitchment", DramaticDoors.DD_MAIN_TAB)));
     public static final Item TALL_DRAGONS_BLOOD_DOOR = new TallDoorItem(DDBlocks.TALL_DRAGONS_BLOOD_DOOR, new FabricItemSettings().group(conditionalTabProperties("bewitchment", DramaticDoors.DD_MAIN_TAB)));
     public static final Item TALL_ELDER_DOOR = new TallDoorItem(DDBlocks.TALL_ELDER_DOOR, new FabricItemSettings().group(conditionalTabProperties("bewitchment", DramaticDoors.DD_MAIN_TAB)));
     public static final Item TALL_JUNIPER_DOOR = new TallDoorItem(DDBlocks.TALL_JUNIPER_DOOR, new FabricItemSettings().group(conditionalTabProperties("bewitchment", DramaticDoors.DD_MAIN_TAB)));
@@ -61,6 +97,16 @@ public class DDItems {
     // Charm
     public static final Item TALL_CHARM_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_CHARM_AZALEA_DOOR, new FabricItemSettings().group(conditionalTabProperties("charm", DramaticDoors.DD_MAIN_TAB)));
     public static final Item TALL_CHARM_EBONY_DOOR = new TallDoorItem(DDBlocks.TALL_CHARM_EBONY_DOOR, new FabricItemSettings().group(conditionalTabProperties("charm", DramaticDoors.DD_MAIN_TAB)));    
+    
+    // Create: Deco
+    public static final Item TALL_ANDESITE_DOOR = new TallDoorItem(DDBlocks.TALL_ANDESITE_DOOR, new FabricItemSettings().group(conditionalTabProperties("createdeco", DramaticDoors.DD_MAIN_TAB)));    
+    public static final Item TALL_BRASS_DOOR = new TallDoorItem(DDBlocks.TALL_BRASS_DOOR, new FabricItemSettings().group(conditionalTabProperties("createdeco", DramaticDoors.DD_MAIN_TAB)));    
+    public static final Item TALL_COPPER_DOOR = new TallDoorItem(DDBlocks.TALL_COPPER_DOOR, new FabricItemSettings().group(conditionalTabProperties("createdeco", DramaticDoors.DD_MAIN_TAB)));    
+    public static final Item TALL_ZINC_DOOR = new TallDoorItem(DDBlocks.TALL_ZINC_DOOR, new FabricItemSettings().group(conditionalTabProperties("createdeco", DramaticDoors.DD_MAIN_TAB)));    
+    public static final Item TALL_LOCKED_ANDESITE_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_ANDESITE_DOOR, new FabricItemSettings().group(conditionalTabProperties("createdeco", DramaticDoors.DD_MAIN_TAB)));    
+    public static final Item TALL_LOCKED_BRASS_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_BRASS_DOOR, new FabricItemSettings().group(conditionalTabProperties("createdeco", DramaticDoors.DD_MAIN_TAB)));    
+    public static final Item TALL_LOCKED_COPPER_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_COPPER_DOOR, new FabricItemSettings().group(conditionalTabProperties("createdeco", DramaticDoors.DD_MAIN_TAB)));    
+    public static final Item TALL_LOCKED_ZINC_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_ZINC_DOOR, new FabricItemSettings().group(conditionalTabProperties("createdeco", DramaticDoors.DD_MAIN_TAB)));    
     
     // Ecologics
     public static final Item TALL_ECO_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_ECO_AZALEA_DOOR, new FabricItemSettings().group(conditionalTabProperties("ecologics", DramaticDoors.DD_MAIN_TAB)));
@@ -495,6 +541,14 @@ public class DDItems {
 		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CRIMSON), TALL_CRIMSON_DOOR);
 		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_WARPED), TALL_WARPED_DOOR);
 
+		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_JACARANDA), TALL_JACARANDA_DOOR);
+		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_REDBUD), TALL_REDBUD_DOOR);
+		
+		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CYPRESS), TALL_CYPRESS_DOOR);
+		
+		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BROWN_MUSHROOM), TALL_BROWN_MUSHROOM_DOOR);
+		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_RED_MUSHROOM), TALL_RED_MUSHROOM_DOOR);
+
         Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BYG_ASPEN), TALL_BYG_ASPEN_DOOR);
         Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BYG_BAOBAB), TALL_BYG_BAOBAB_DOOR);
         Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BYG_BLUE_ENCHANTED), TALL_BYG_BLUE_ENCHANTED_DOOR);
@@ -535,7 +589,32 @@ public class DDItems {
         
         Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TWISTED), TALL_TWISTED_DOOR);
 		
-		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CYPRESS), TALL_CYPRESS_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TERMINITE), TALL_TERMINITE_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_THALLASIUM), TALL_THALLASIUM_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_DRAGON_TREE), TALL_DRAGON_TREE_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_END_LOTUS), TALL_END_LOTUS_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_HELIX_TREE), TALL_HELIX_TREE_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_JELLYSHROOM), TALL_JELLYSHROOM_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LACUGROVE), TALL_LACUGROVE_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LUCERNIA), TALL_LUCERNIA_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MOSSY_GLOWSHROOM), TALL_MOSSY_GLOWSHROOM_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_PYTHADENDRON), TALL_PYTHADENDRON_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_TENANEA), TALL_TENANEA_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_UMBRELLA_TREE), TALL_UMBRELLA_TREE_DOOR);
+
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ANCHOR_TREE), TALL_ANCHOR_TREE_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BONE_CIN), TALL_BONE_CIN_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BONE_REED), TALL_BONE_REED_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MUSHROOM_FIR), TALL_MUSHROOM_FIR_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_NETHER_MUSHROOM), TALL_NETHER_MUSHROOM_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_NETHER_REED), TALL_NETHER_REED_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_NETHER_SAKURA), TALL_NETHER_SAKURA_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_RUBEUS), TALL_RUBEUS_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_STALAGNATE), TALL_STALAGNATE_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_WART), TALL_WART_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BN_WILLOW), TALL_BN_WILLOW_DOOR);
+        
+		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BW_CYPRESS), TALL_BW_CYPRESS_DOOR);
 		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_DRAGONS_BLOOD), TALL_DRAGONS_BLOOD_DOOR);
 		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ELDER), TALL_ELDER_DOOR);
 		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_JUNIPER), TALL_JUNIPER_DOOR);
@@ -559,6 +638,15 @@ public class DDItems {
         Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHARM_AZALEA), TALL_CHARM_AZALEA_DOOR);
         Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CHARM_EBONY), TALL_CHARM_EBONY_DOOR);
 		
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ANDESITE), TALL_ANDESITE_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BRASS), TALL_BRASS_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_COPPER), TALL_COPPER_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ZINC), TALL_ZINC_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_ANDESITE), TALL_LOCKED_ANDESITE_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_BRASS), TALL_LOCKED_BRASS_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_COPPER), TALL_LOCKED_COPPER_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_ZINC), TALL_LOCKED_ZINC_DOOR);
+        
 		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ECO_AZALEA), TALL_ECO_AZALEA_DOOR);
 		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ECO_FLOWERING_AZALEA), TALL_ECO_FLOWERING_AZALEA_DOOR);
 		Registry.register(Registry.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ECO_COCONUT), TALL_ECO_COCONUT_DOOR);

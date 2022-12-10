@@ -47,11 +47,17 @@ public class DDFuels
 		FuelRegistry.INSTANCE.add(DDItems.TALL_BYG_WITCH_HAZEL_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_BYG_ZELKOVA_DOOR, 300);
 
+		FuelRegistry.INSTANCE.add(DDItems.TALL_JACARANDA_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_REDBUD_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_CYPRESS_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_BROWN_MUSHROOM_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_RED_MUSHROOM_DOOR, 300);
+
 		FuelRegistry.INSTANCE.add(DDItems.TALL_AERONOS_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_GLACIAN_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_STROPHAR_DOOR, 300);
 
-		FuelRegistry.INSTANCE.add(DDItems.TALL_CYPRESS_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_BW_CYPRESS_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_DRAGONS_BLOOD_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_ELDER_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_JUNIPER_DOOR, 300);
