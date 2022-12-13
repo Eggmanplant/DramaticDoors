@@ -1,6 +1,6 @@
 package com.fizzware.dramaticdoors.blocks;
 
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.state.properties.DDProperties;
@@ -20,6 +20,9 @@ import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.resource.featuretoggle.FeatureFlag;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
@@ -49,11 +52,22 @@ public class TallDoorBlock extends Block {
     protected static final VoxelShape NORTH_AABB = Block.createCuboidShape(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape WEST_AABB = Block.createCuboidShape(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape EAST_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D);
+    protected final SoundEvent closeSound;
+    protected final SoundEvent openSound;
 
-
-    public TallDoorBlock(Block from) {
+    public TallDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
         super(Settings.copy(from));
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(OPEN, Boolean.FALSE).with(HINGE, DoorHinge.LEFT).with(POWERED, Boolean.FALSE).with(THIRD, TripleBlockPart.LOWER));
+	    this.closeSound = closeSound;
+	    this.openSound = openSound;
+    }
+    
+    public TallDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound, FeatureFlag flag) {
+        super(Settings.copy(from).requires(flag));
+        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(OPEN, Boolean.FALSE).with(HINGE, DoorHinge.LEFT).with(POWERED, Boolean.FALSE).with(THIRD, TripleBlockPart.LOWER));
+        this.closeSound = closeSound;
+        this.openSound = openSound;
+
     }
 
 	@SuppressWarnings("deprecation")
@@ -107,14 +121,6 @@ public class TallDoorBlock extends Block {
             }
         }
         super.onBreak(level, pos, state, player);
-    }
-
-    protected int getCloseSound() {
-        return this.material == Material.METAL ? 1011 : 1012;
-    }
-
-    protected int getOpenSound() {
-        return this.material == Material.METAL ? 1005 : 1006;
     }
 
     @Nullable
@@ -182,7 +188,7 @@ public class TallDoorBlock extends Block {
         	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
             level.setBlockState(pos, state, 10);
-            level.syncWorldEvent(player, state.get(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+            this.playOpenCloseSound(player, level, pos, state.get(OPEN));
             level.emitGameEvent(player, state.get(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
             return ActionResult.success(level.isClient);
         }
@@ -202,7 +208,7 @@ public class TallDoorBlock extends Block {
                     level.setBlockState(pos.down(2), middle.with(OPEN, open), 10);
                 }
             }
-            this.playOpenCloseSound(level, pos, open);
+            this.playOpenCloseSound(null, level, pos, open);
         }
     }
 
@@ -213,7 +219,7 @@ public class TallDoorBlock extends Block {
 	public void setOpen(@Nullable Entity entity, World level, BlockState state, BlockPos pos, boolean open) {
 		if (state.isOf(this) && state.get(OPEN) != open) {
 			level.setBlockState(pos, state.with(OPEN, Boolean.valueOf(open)), 10);
-			this.playOpenCloseSound(level, pos, open);
+			this.playOpenCloseSound(entity, level, pos, open);
 			level.emitGameEvent(entity, open ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 		}
  	}
@@ -240,7 +246,7 @@ public class TallDoorBlock extends Block {
         	}
         	else {
 	            if (flag != state.get(OPEN)) {
-	                this.playOpenCloseSound(level, pos, flag);
+	                this.playOpenCloseSound(null, level, pos, flag);
 	            }
 	            tryOpenDoubleDoor(level, state, pos);
 	            level.setBlockState(pos, state.with(POWERED, flag).with(OPEN, flag), 2);
@@ -267,8 +273,8 @@ public class TallDoorBlock extends Block {
         }
     }
 
-    private void playOpenCloseSound(World level, BlockPos pos, boolean isOpen) {
-        level.syncWorldEvent(null, isOpen ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+    protected void playOpenCloseSound(@Nullable Entity entity, World world, BlockPos pos, boolean open) {
+        world.playSound(entity, pos, open ? this.openSound : this.closeSound, SoundCategory.BLOCKS, 1.0f, world.getRandom().nextFloat() * 0.1f + 0.9f);
     }
 
     @Override

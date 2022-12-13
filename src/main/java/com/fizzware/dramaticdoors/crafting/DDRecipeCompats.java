@@ -3,7 +3,7 @@ package com.fizzware.dramaticdoors.crafting;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import com.fizzware.dramaticdoors.DDNames;
 import com.google.common.collect.Lists;

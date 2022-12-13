@@ -13,6 +13,7 @@ public class DDNames
     public static final String TALL_MANGROVE = "tall_mangrove_door";
     public static final String TALL_CRIMSON = "tall_crimson_door";
     public static final String TALL_WARPED = "tall_warped_door";
+    public static final String TALL_BAMBOO = "tall_bamboo_door";
 
     // -- The Big Popular Mods --
     //Oh the Biomes You'll Go
@@ -165,6 +166,7 @@ public class DDNames
     public static final String TALL_MANGROVE_GLASS = "tall_mangrove_glass_door";
     public static final String TALL_CRIMSON_GLASS = "tall_crimson_glass_door";
     public static final String TALL_WARPED_GLASS = "tall_warped_glass_door";
+    public static final String TALL_BAMBOO_GLASS = "tall_bamboo_glass_door";
     
     //Hephaestus
     public static final String TALL_BLOODSHROOM = "tall_bloodshroom_door";

@@ -1,6 +1,6 @@
 package com.fizzware.dramaticdoors.blockentities;
 
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import com.fizzware.dramaticdoors.DDTags;
 import net.minecraft.block.BlockState;

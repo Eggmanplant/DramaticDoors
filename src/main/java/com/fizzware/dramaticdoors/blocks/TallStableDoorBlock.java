@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.block.enums.DoorHinge;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -24,8 +25,8 @@ public class TallStableDoorBlock extends TallDoorBlock
     protected static final VoxelShape WEST_OPEN_LEFT_AABB = Block.createCuboidShape(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D).offset(0.0D, 0.0D, 0.75D);
     protected static final VoxelShape EAST_OPEN_LEFT_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D).offset(0.0D, 0.0D, -0.75D);
 
-	public TallStableDoorBlock(Block from) {
-		super(from);
+	public TallStableDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
+		super(from, closeSound, openSound);
 	}
 
 	@Override

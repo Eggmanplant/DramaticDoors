@@ -8,6 +8,7 @@ import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -18,7 +19,7 @@ import net.minecraft.world.event.GameEvent;
 public class TallNetheriteDoorBlock extends TallDoorBlock implements BlockEntityProvider
 {
 	public TallNetheriteDoorBlock(Block from) {
-		super(from);
+		super(from, SoundEvents.BLOCK_IRON_DOOR_CLOSE, SoundEvents.BLOCK_IRON_DOOR_OPEN);
 	}
 
 	@Override
@@ -40,7 +41,7 @@ public class TallNetheriteDoorBlock extends TallDoorBlock implements BlockEntity
 				tryOpenDoubleDoor(level, state, pos);
 				BlockState newState = state.cycle(OPEN);
 				level.setBlockState(pos, newState, 10);
-	            level.syncWorldEvent(player, state.get(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+	            this.playOpenCloseSound(player, level, pos, state.get(OPEN));
 	            level.emitGameEvent(player, state.get(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 			}
 		}

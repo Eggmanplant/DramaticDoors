@@ -11,6 +11,8 @@
     "LandPathNodeMakerMixin",
     "DoorInteractGoalMixin",
     "OpenDoorsTaskMixin",
+    "PiglinBrainMixin",
+    "VillagerMixin",
     "WitchMixin"
   ],
   "client": [

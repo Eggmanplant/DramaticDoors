@@ -31,8 +31,8 @@
   "accessWidener": "dramaticdoors.accesswidener",
 
   "depends": {
-    "fabricloader": ">=0.14.8",
-    "fabric-api": "*",
+    "fabricloader": ">=0.14.11",
+    "fabric-api": ">=0.69.0",
     "minecraft": ">=1.19.3",
     "java": ">=17"
   },

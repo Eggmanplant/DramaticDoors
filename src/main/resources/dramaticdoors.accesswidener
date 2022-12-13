@@ -3,6 +3,7 @@ accessWidener	v1	named
 # Widens the access of certain mobs to make mixin possible.
 accessible field net/minecraft/entity/mob/MobEntity goalSelector Lnet/minecraft/entity/ai/goal/GoalSelector;
 accessible field net/minecraft/entity/mob/MobEntity navigation Lnet/minecraft/entity/ai/pathing/EntityNavigation;
-accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask rememberToCloseDoor (Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/util/math/BlockPos;)V
-accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask hasOtherMobReachedDoor (Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/util/math/BlockPos;)Z
+accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask pathToDoor (Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/entity/ai/pathing/PathNode;Lnet/minecraft/entity/ai/pathing/PathNode;Ljava/util/Set;Ljava/util/Optional;)V
+accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask hasOtherMobReachedDoor (Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/util/math/BlockPos;Ljava/util/Optional;)Z
 accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask cannotReachDoor (Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/util/math/GlobalPos;)Z
+accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask storePos (Lnet/minecraft/entity/ai/brain/MemoryQueryResult;Ljava/util/Optional;Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/util/math/BlockPos;)Ljava/util/Optional;

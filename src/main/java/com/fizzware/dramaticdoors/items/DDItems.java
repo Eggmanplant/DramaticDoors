@@ -13,6 +13,7 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.util.Identifier;
 
 public class DDItems {
@@ -26,7 +27,7 @@ public class DDItems {
     public static final Item TALL_ACACIA_DOOR = new TallDoorItem(DDBlocks.TALL_ACACIA_DOOR, new FabricItemSettings());
     public static final Item TALL_DARK_OAK_DOOR = new TallDoorItem(DDBlocks.TALL_DARK_OAK_DOOR, new FabricItemSettings());
     public static final Item TALL_MANGROVE_DOOR = new TallDoorItem(DDBlocks.TALL_MANGROVE_DOOR, new FabricItemSettings());
-    public static final Item TALL_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR, new FabricItemSettings());
+    public static final Item TALL_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR, new FabricItemSettings().requires(FeatureFlags.UPDATE_1_20));
     public static final Item TALL_CRIMSON_DOOR = new TallDoorItem(DDBlocks.TALL_CRIMSON_DOOR, new FabricItemSettings());
     public static final Item TALL_WARPED_DOOR = new TallDoorItem(DDBlocks.TALL_WARPED_DOOR, new FabricItemSettings());
     
@@ -129,6 +130,7 @@ public class DDItems {
     public static final Item TALL_ACACIA_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_ACACIA_GLASS_DOOR, new FabricItemSettings());
     public static final Item TALL_DARK_OAK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_DARK_OAK_GLASS_DOOR, new FabricItemSettings());
     public static final Item TALL_MANGROVE_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MANGROVE_GLASS_DOOR, new FabricItemSettings());
+    public static final Item TALL_BAMBOO_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_BAMBOO_GLASS_DOOR, new FabricItemSettings().requires(FeatureFlags.UPDATE_1_20));
     public static final Item TALL_CRIMSON_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_CRIMSON_GLASS_DOOR, new FabricItemSettings());
     public static final Item TALL_WARPED_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_WARPED_GLASS_DOOR, new FabricItemSettings());
         
@@ -562,6 +564,7 @@ public class DDItems {
 		Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ACACIA), TALL_ACACIA_DOOR);
 		Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_DARK_OAK), TALL_DARK_OAK_DOOR);
 		Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MANGROVE), TALL_MANGROVE_DOOR);
+		Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BAMBOO), TALL_BAMBOO_DOOR);
 		Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CRIMSON), TALL_CRIMSON_DOOR);
 		Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_WARPED), TALL_WARPED_DOOR);
 		
@@ -688,6 +691,7 @@ public class DDItems {
         Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_ACACIA_GLASS), TALL_ACACIA_GLASS_DOOR);
         Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_DARK_OAK_GLASS), TALL_DARK_OAK_GLASS_DOOR);
         Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_MANGROVE_GLASS), TALL_MANGROVE_GLASS_DOOR);
+        Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_BAMBOO_GLASS), TALL_BAMBOO_GLASS_DOOR);
         Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_CRIMSON_GLASS), TALL_CRIMSON_GLASS_DOOR);
         Registry.register(Registries.ITEM, new Identifier(DramaticDoors.MOD_ID, DDNames.TALL_WARPED_GLASS), TALL_WARPED_GLASS_DOOR);
 		
@@ -1086,8 +1090,7 @@ public class DDItems {
         entries.add(TALL_ACACIA_DOOR);
         entries.add(TALL_DARK_OAK_DOOR);
         entries.add(TALL_MANGROVE_DOOR);
-        // TODO bamboo is load-conditional on 1.20
-        entries.add(TALL_BAMBOO_DOOR);
+        entries.add(TALL_BAMBOO_DOOR); // Bamboo is load-conditional on 1.20
         entries.add(TALL_CRIMSON_DOOR);
         entries.add(TALL_WARPED_DOOR);
         if (FabricLoader.getInstance().isModLoaded("abundance")) {
@@ -1629,7 +1632,6 @@ public class DDItems {
         entries.addAfter(Items.ACACIA_DOOR, TALL_ACACIA_DOOR);
         entries.addAfter(Items.DARK_OAK_DOOR, TALL_DARK_OAK_DOOR);
         entries.addAfter(Items.MANGROVE_DOOR, TALL_MANGROVE_DOOR);
-        // TODO bamboo is load-conditional on 1.20
         entries.addAfter(Items.BAMBOO_DOOR, TALL_BAMBOO_DOOR);
         entries.addAfter(Items.CRIMSON_DOOR, TALL_CRIMSON_DOOR);
         entries.addAfter(Items.WARPED_DOOR, TALL_WARPED_DOOR);
