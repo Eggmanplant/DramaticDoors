@@ -11,6 +11,7 @@ public class DDNames
     public static final String TALL_DARK_OAK = "tall_dark_oak_door";
     public static final String TALL_IRON = "tall_iron_door";
     public static final String TALL_MANGROVE = "tall_mangrove_door";
+    public static final String TALL_BAMBOO = "tall_bamboo_door";
     public static final String TALL_CRIMSON = "tall_crimson_door";
     public static final String TALL_WARPED = "tall_warped_door";
 
@@ -103,10 +104,7 @@ public class DDNames
     
     //Autumnity
     public static final String TALL_MAPLE = "tall_maple_door";
-    
-    //Bamboo Blocks
-    public static final String TALL_BAMBOO = "tall_bamboo_door";
-    
+        
     //Buzzier Bees
     public static final String TALL_HONEYCOMB = "tall_honeycomb_door";
     
@@ -145,6 +143,9 @@ public class DDNames
     //Ars Nouveau
     public static final String TALL_ARCHWOOD = "tall_archwood_door";
     
+    //Biomancy
+    public static final String TALL_FLESH = "tall_flesh_door";
+    
     //Biome Makeover
     public static final String TALL_BM_ANCIENT_OAK = "tall_bm_ancient_oak_door";
     public static final String TALL_BM_BLIGHTED_BALSA = "tall_bm_blighted_balsa_door";
@@ -159,6 +160,19 @@ public class DDNames
     public static final String TALL_BP_EMERALD = "tall_bp_emerald_door";
     public static final String TALL_BP_GOLDEN = "tall_bp_golden_door";
     public static final String TALL_BP_NETHERITE = "tall_bp_netherite_door";
+    
+    //Blue Skies
+    public static final String TALL_BS_BLUEBRIGHT = "tall_bs_bluebright_door";
+    public static final String TALL_BS_CHERRY = "tall_bs_cherry_door";
+    public static final String TALL_BS_CRYSTALLIZED = "tall_bs_crystallized_door";
+    public static final String TALL_BS_DUSK = "tall_bs_dusk_door";
+    public static final String TALL_BS_FROSTBRIGHT = "tall_bs_frostbright_door";
+    public static final String TALL_BS_LUNAR = "tall_bs_lunar_door";
+    public static final String TALL_BS_MAPLE = "tall_bs_maple_door";
+    public static final String TALL_BS_STARLIT = "tall_bs_starlit_door";
+    
+    //Caupona
+    public static final String TALL_WALNUT = "tall_walnut_door";
     
     //The Ceilands
     public static final String TALL_CEILTRUNK = "tall_ceiltrunk_door";
@@ -223,6 +237,17 @@ public class DDNames
     //Habitat
     public static final String TALL_FAIRY_RING_MUSHROOM = "tall_fairy_ring_mushroom_door";
     
+    //Hexerei
+    public static final String TALL_HEXEREI_MAHOGANY = "tall_hexerei_mahogany_door";
+    public static final String TALL_HEXEREI_WILLOW = "tall_hexerei_willow_door";
+    
+    //Integrated Dynamics
+    public static final String TALL_MENRIL = "tall_menril_door";
+    
+    //Malum
+    public static final String TALL_RUNEWOOD = "tall_runewood_door";
+    public static final String TALL_SOULWOOD = "tall_soulwood_door";
+    
     //Nether's Exoticism
     public static final String TALL_JABOTICABA = "tall_jaboticaba_door";
     public static final String TALL_RAMBOUTAN = "tall_ramboutan_door";
@@ -268,6 +293,21 @@ public class DDNames
     public static final String TALL_SILVER = "tall_silver_door";
     public static final String TALL_LEAD = "tall_lead_door";
     public static final String TALL_NETHERITE = "tall_netherite_door";
+    
+    //The Abyss II
+    public static final String TALL_BLARU = "tall_blaru_door";
+    public static final String TALL_BOG = "tall_bog_door";
+    public static final String TALL_FROZEN = "tall_frozen_door";
+    public static final String TALL_ROGGEN = "tall_roggen_door";
+    public static final String TALL_RUMA = "tall_ruma_door";
+    public static final String TALL_SAL = "tall_sal_door";
+    public static final String TALL_SLIMED = "tall_slimed_door";
+    public static final String TALL_TANTRA = "tall_tantra_door";
+    
+    //Tinkers Construct
+    public static final String TALL_BLOODSHROOM = "tall_bloodshroom_door";
+    public static final String TALL_GREENHEART = "tall_greenheart_door";
+    public static final String TALL_SKYROOT = "tall_skyroot_door";
     
     //Twigs
     public static final String TALL_TWIGS_BAMBOO = "tall_twigs_bamboo_door";

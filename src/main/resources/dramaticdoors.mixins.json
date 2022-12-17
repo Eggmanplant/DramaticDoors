@@ -6,7 +6,12 @@
 	"plugin": "com.fizzware.dramaticdoors.mixin.DDMixinConfig",
 	"mixins": [
         "DoorBlockMixin",
-        "FenceGateBlockMixin"
+        "FenceGateBlockMixin",
+        "IronGateBlockMixin",
+        "LandPathNodeMakerMixin",
+        "OpenDoorsTaskMixin",
+        "DoorInteractGoalMixin",
+        "WitchMixin"
 	],
 	"minVersion": "0.8"
 }

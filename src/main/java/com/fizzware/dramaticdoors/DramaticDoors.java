@@ -34,9 +34,9 @@ public class DramaticDoors
         if (FMLEnvironment.dist == Dist.CLIENT) { FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient); }
 
         MinecraftForge.EVENT_BUS.register(this);
-    	if (DDConfig.waterloggableFenceGates.get() && Compats.SUPPLEMENTARIES_INSTALLED) {
-    		throw new IllegalArgumentException("Waterlogged Fence Gates not currently supported with Supplementaries mod installed due to conflicting waterlogged states. Please disable the setting and re-launch.");
-    	}
+    	//if (DDConfig.waterloggableFenceGates.get() && Compats.SUPPLEMENTARIES_INSTALLED) {
+    	//	throw new IllegalArgumentException("Waterlogged Fence Gates not currently supported with Supplementaries mod installed due to conflicting waterlogged states. Please disable the setting and re-launch.");
+    	//}
     }
 
     private void setupCommon(final FMLCommonSetupEvent event) {
@@ -48,7 +48,6 @@ public class DramaticDoors
     		MinecraftForge.EVENT_BUS.register(new QuarkCompat());
     	}
         MinecraftForge.EVENT_BUS.register(new DDUpdateHandler());
-        MinecraftForge.EVENT_BUS.register(new DDEvents());
     }
     
     private void setupClient(final FMLClientSetupEvent event) {

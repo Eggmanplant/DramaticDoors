@@ -110,6 +110,8 @@
   "block.dramaticdoors.tall_twisted_door": "Tall Twisted Door",
   
   "block.dramaticdoors.tall_archwood_door": "Tall Archwood Door",
+
+  "block.dramaticdoors.tall_flesh_door": "Tall Flesh Door",
   
   "block.dramaticdoors.tall_bm_ancient_oak_door": "Tall Ancient Oak Door",
   "block.dramaticdoors.tall_bm_blighted_balsa_door": "Tall Blighted Balsa Door",
@@ -123,6 +125,17 @@
   "block.dramaticdoors.tall_bp_diamond_door": "Tall Diamond Door",
   "block.dramaticdoors.tall_bp_emerald_door": "Tall Emerald Door",
   "block.dramaticdoors.tall_bp_netherite_door": "Tall Netherite Door",
+
+  "block.dramaticdoors.tall_bs_bluebright_door": "Tall Bluebright Door",
+  "block.dramaticdoors.tall_bs_cherry_door": "Tall Cherry Door",
+  "block.dramaticdoors.tall_bs_crystallized_door": "Tall Crystallized Door",
+  "block.dramaticdoors.tall_bs_dusk_door": "Tall Dusk Door",
+  "block.dramaticdoors.tall_bs_frostbright_door": "Tall Frostbright Door",
+  "block.dramaticdoors.tall_bs_lunar_door": "Tall Lunar Door",
+  "block.dramaticdoors.tall_bs_maple_door": "Tall Maple Door",
+  "block.dramaticdoors.tall_bs_starlit_door": "Tall Starlit Door",
+  
+  "block.dramaticdoors.tall_walnut_door": "Tall Walnut Door",
 
   "block.dramaticdoors.tall_ceiltrunk_door": "Tall Ceiltrunk Door",
   "block.dramaticdoors.tall_luzawood_door": "Tall Luzawood Door",
@@ -174,6 +187,14 @@
   "block.dramaticdoors.tall_mysterywood_door": "Tall Mysterywood Door",
 
   "block.dramaticdoors.tall_fairy_ring_mushroom_door": "Tall Fairy Ring Mushroom Door",
+  
+  "block.dramaticdoors.tall_hexerei_mahogany_door": "Tall Mahogany Door",
+  "block.dramaticdoors.tall_hexerei_willow_door": "Tall Willow Door",
+
+  "block.dramaticdoors.tall_menril_door": "Tall Menril Door",
+
+  "block.dramaticdoors.tall_runewood_door": "Tall Runewood Door",
+  "block.dramaticdoors.tall_soulwood_door": "Tall Soulwood Door",
 
   "block.dramaticdoors.tall_jaboticaba_door": "Tall Jabuticaba Door",
   "block.dramaticdoors.tall_ramboutan_door": "Tall Rambutan Door",
@@ -212,6 +233,10 @@
   "block.dramaticdoors.tall_netherite_door": "Tall Netherite Door",
   "block.dramaticdoors.tall_silver_door": "Tall Silver Door",
   "block.dramaticdoors.tall_lead_door": "Tall Lead Door",
+  
+  "block.dramaticdoors.tall_bloodshroom_door": "Tall Bloodshroom Door",
+  "block.dramaticdoors.tall_greenheart_door": "Tall Greenheart Door",
+  "block.dramaticdoors.tall_skyroot_door": "Tall Skyroot Door",
   
   "block.dramaticdoors.tall_twigs_bamboo_door": "Tall Stripped Bamboo Door",
 

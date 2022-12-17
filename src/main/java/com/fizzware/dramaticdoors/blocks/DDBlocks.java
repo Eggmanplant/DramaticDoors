@@ -145,6 +145,9 @@ public class DDBlocks {
     // Ars Nouveau
     public static final RegistryObject<Block> TALL_ARCHWOOD_DOOR = BLOCKS.register(DDNames.TALL_ARCHWOOD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ars_nouveau", "archwood_door"))));
     
+    // Biomancy
+    public static final RegistryObject<Block> TALL_FLESH_DOOR = BLOCKS.register(DDNames.TALL_FLESH, () -> new TallFleshDoorBlock(getBlockByKey(new ResourceLocation("biomancy", "flesh_door"))));    
+    
     // Biome Makeover
     public static final RegistryObject<Block> TALL_BM_ANCIENT_OAK_DOOR = BLOCKS.register(DDNames.TALL_BM_ANCIENT_OAK, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("biomemakeover", "ancient_oak_door"))));
     public static final RegistryObject<Block> TALL_BM_BLIGHTED_BALSA_DOOR = BLOCKS.register(DDNames.TALL_BM_BLIGHTED_BALSA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("biomemakeover", "blighted_balsa_door"))));
@@ -160,6 +163,19 @@ public class DDBlocks {
     public static final RegistryObject<Block> TALL_BP_EMERALD_DOOR = BLOCKS.register(DDNames.TALL_BP_EMERALD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blocksplus", "emerald_door"))));
     public static final RegistryObject<Block> TALL_BP_NETHERITE_DOOR = BLOCKS.register(DDNames.TALL_BP_NETHERITE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blocksplus", "netherite_door"))));
 
+    // Blue Skies
+    public static final RegistryObject<Block> TALL_BS_BLUEBRIGHT_DOOR = BLOCKS.register(DDNames.TALL_BS_BLUEBRIGHT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blue_skies", "bluebright_door"))));
+    public static final RegistryObject<Block> TALL_BS_CHERRY_DOOR = BLOCKS.register(DDNames.TALL_BS_CHERRY, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blue_skies", "cherry_door"))));
+    public static final RegistryObject<Block> TALL_BS_CRYSTALLIZED_DOOR = BLOCKS.register(DDNames.TALL_BS_CRYSTALLIZED, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blue_skies", "crystallized_door"))));
+    public static final RegistryObject<Block> TALL_BS_DUSK_DOOR = BLOCKS.register(DDNames.TALL_BS_DUSK, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blue_skies", "dusk_door"))));
+    public static final RegistryObject<Block> TALL_BS_FROSTBRIGHT_DOOR = BLOCKS.register(DDNames.TALL_BS_FROSTBRIGHT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blue_skies", "frostbright_door"))));
+    public static final RegistryObject<Block> TALL_BS_LUNAR_DOOR = BLOCKS.register(DDNames.TALL_BS_LUNAR, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blue_skies", "lunar_door"))));
+    public static final RegistryObject<Block> TALL_BS_MAPLE_DOOR = BLOCKS.register(DDNames.TALL_BS_MAPLE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blue_skies", "maple_door"))));
+    public static final RegistryObject<Block> TALL_BS_STARLIT_DOOR = BLOCKS.register(DDNames.TALL_BS_STARLIT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blue_skies", "starlit_door"))));
+    
+    // Caupona
+    public static final RegistryObject<Block> TALL_WALNUT_DOOR = BLOCKS.register(DDNames.TALL_WALNUT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("caupona", "walnut_door"))));    
+    
     // Ceilands
     public static final RegistryObject<Block> TALL_CEILTRUNK_DOOR = BLOCKS.register(DDNames.TALL_CEILTRUNK, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ceilands", "ceiltrunk_door"))));
     public static final RegistryObject<Block> TALL_LUZAWOOD_DOOR = BLOCKS.register(DDNames.TALL_LUZAWOOD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ceilands", "luzawood_door"))));
@@ -223,6 +239,17 @@ public class DDBlocks {
     // Habitat
     public static final RegistryObject<Block> TALL_FAIRY_RING_MUSHROOM_DOOR = BLOCKS.register(DDNames.TALL_FAIRY_RING_MUSHROOM, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("habitat", "fairy_ring_mushroom_door"))));
     
+    // Hexerei
+    public static final RegistryObject<Block> TALL_HEXEREI_MAHOGANY_DOOR = BLOCKS.register(DDNames.TALL_HEXEREI_MAHOGANY, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("hexerei", "mahogany_door"))));
+    public static final RegistryObject<Block> TALL_HEXEREI_WILLOW_DOOR = BLOCKS.register(DDNames.TALL_HEXEREI_WILLOW, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("hexerei", "willow_door"))));
+    
+    // Integrated Dynamics
+    public static final RegistryObject<Block> TALL_MENRIL_DOOR = BLOCKS.register(DDNames.TALL_MENRIL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("integrateddynamics", "menril_door"))));
+    
+    // Malum
+    public static final RegistryObject<Block> TALL_RUNEWOOD_DOOR = BLOCKS.register(DDNames.TALL_RUNEWOOD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("malum", "runewood_door"))));
+    public static final RegistryObject<Block> TALL_SOULWOOD_DOOR = BLOCKS.register(DDNames.TALL_SOULWOOD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("malum", "soulwood_door"))));
+    
     // Nether's Exoticism
     public static final RegistryObject<Block> TALL_JABOTICABA_DOOR = BLOCKS.register(DDNames.TALL_JABOTICABA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("nethers_exoticism", "jaboticaba_door"))));
     public static final RegistryObject<Block> TALL_RAMBOUTAN_DOOR = BLOCKS.register(DDNames.TALL_RAMBOUTAN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("nethers_exoticism", "ramboutan_door"))));
@@ -269,6 +296,11 @@ public class DDBlocks {
     public static final RegistryObject<Block> TALL_LEAD_DOOR = BLOCKS.register(DDNames.TALL_LEAD, () -> new TallLeadDoorBlock(getBlockByKey(new ResourceLocation("supplementaries", "lead_door"))));
     public static final RegistryObject<Block> TALL_NETHERITE_DOOR = BLOCKS.register(DDNames.TALL_NETHERITE, () -> new TallNetheriteDoorBlock(getBlockByKey(new ResourceLocation("supplementaries", "netherite_door"))));
 
+    // Tinkers Construct
+	public static final RegistryObject<Block> TALL_BLOODSHROOM_DOOR = BLOCKS.register(DDNames.TALL_BLOODSHROOM, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("tconstruct", "bloodshroom_door"))));    
+	public static final RegistryObject<Block> TALL_GREENHEART_DOOR = BLOCKS.register(DDNames.TALL_GREENHEART, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("tconstruct", "greenheart_door"))));    
+	public static final RegistryObject<Block> TALL_SKYROOT_DOOR = BLOCKS.register(DDNames.TALL_SKYROOT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("tconstruct", "skyroot_door"))));        
+    
     // Twigs
 	public static final RegistryObject<Block> TALL_TWIGS_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_TWIGS_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("twigs", "bamboo_door"))));    
     

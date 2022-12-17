@@ -340,12 +340,12 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
         }
     }
 
-    public boolean allowsMovement(BlockState state, BlockGetter level, BlockPos pos, BlockPathTypes type) {
+    public boolean isPathfindable(BlockState state, BlockGetter level, BlockPos pos, BlockPathTypes type) {
         switch(type) {
             case WALKABLE:
                 return state.getValue(OPEN);
             case WATER:
-                return false;
+                return state.getValue(OPEN) && state.getValue(WATERLOGGED);
             case OPEN:
                 return state.getValue(OPEN);
             default:
