@@ -1,5 +1,8 @@
 package com.fizzware.dramaticdoors;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.client.ClientRenderer;
@@ -23,6 +26,7 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 public class DramaticDoors
 {
     public static final String MOD_ID = "dramaticdoors";
+    public static final Logger LOGGER = LogManager.getLogger();
     
     public DramaticDoors() {
     	DDBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -34,9 +38,6 @@ public class DramaticDoors
         if (FMLEnvironment.dist == Dist.CLIENT) { FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient); }
 
         MinecraftForge.EVENT_BUS.register(this);
-    	//if (DDConfig.waterloggableFenceGates.get() && Compats.SUPPLEMENTARIES_INSTALLED) {
-    	//	throw new IllegalArgumentException("Waterlogged Fence Gates not currently supported with Supplementaries mod installed due to conflicting waterlogged states. Please disable the setting and re-launch.");
-    	//}
     }
 
     private void setupCommon(final FMLCommonSetupEvent event) {

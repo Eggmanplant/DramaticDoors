@@ -211,6 +211,9 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             if (DDBlocks.TALL_TOOTH_DOOR != null && this == DDBlocks.TALL_TOOTH_DOOR.get()) {
             	level.scheduleTick(pos, this, 20);
             }
+            if (state.getValue(WATERLOGGED)) {
+            	level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+            }
             return InteractionResult.sidedSuccess(level.isClientSide);
         }
     }
