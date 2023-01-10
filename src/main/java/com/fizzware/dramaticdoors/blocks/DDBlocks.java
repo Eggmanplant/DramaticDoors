@@ -378,6 +378,7 @@ public class DDBlocks {
     public static final RegistryObject<Block> TALL_WIGGLEWOOD_DOOR = BLOCKS.register(DDNames.TALL_WIGGLEWOOD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("undergarden", "wigglewood_door"))));
 
     // Windswept
+    public static final RegistryObject<Block> TALL_GOLDEN_DOOR = BLOCKS.register(DDNames.TALL_GOLDEN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("windswept", "golden_door"), Blocks.IRON_DOOR)));
     public static final RegistryObject<Block> TALL_CHESTNUT_DOOR = BLOCKS.register(DDNames.TALL_CHESTNUT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("windswept", "chestnut_door"))));
     public static final RegistryObject<Block> TALL_HOLLY_DOOR = BLOCKS.register(DDNames.TALL_HOLLY, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("windswept", "holly_door"))));
 

@@ -373,6 +373,7 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_WIGGLEWOOD_DOOR = ITEMS.register(DDNames.TALL_WIGGLEWOOD, () -> new TallDoorItem(DDBlocks.TALL_WIGGLEWOOD_DOOR.get(), conditionalTabProperties("undergarden")));
     
     // Windswept
+    public static final RegistryObject<Item> TALL_GOLDEN_DOOR = ITEMS.register(DDNames.TALL_GOLDEN, () -> new TallDoorItem(DDBlocks.TALL_GOLDEN_DOOR.get(), conditionalTabProperties("windswept")));
     public static final RegistryObject<Item> TALL_CHESTNUT_DOOR = ITEMS.register(DDNames.TALL_CHESTNUT, () -> new TallDoorItem(DDBlocks.TALL_CHESTNUT_DOOR.get(), conditionalTabProperties("windswept")));
     public static final RegistryObject<Item> TALL_HOLLY_DOOR = ITEMS.register(DDNames.TALL_HOLLY, () -> new TallDoorItem(DDBlocks.TALL_HOLLY_DOOR.get(), conditionalTabProperties("windswept")));    
     

@@ -385,6 +385,7 @@ public class DDNames
     public static final String TALL_WIGGLEWOOD = "tall_wigglewood_door";
     
     //Windswept
+    public static final String TALL_GOLDEN = "tall_golden_door";
     public static final String TALL_CHESTNUT = "tall_chestnut_door";
     public static final String TALL_HOLLY = "tall_holly_door";
     

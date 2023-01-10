@@ -24,11 +24,7 @@ public class DDBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
     	// Insert any tall doors that needs to be data-generated. Example below:
-    	//tallDoorBlock(DDBlocks.TALL_OAK_DOOR.get(), "block/tall_oak");
-    	tallDoorBlock(DDBlocks.TALL_AERONOS_DOOR.get(), "block/tall_aeronos");
-    	tallDoorBlock(DDBlocks.TALL_GLACIAN_DOOR.get(), "block/tall_glacian");
-    	tallDoorBlock(DDBlocks.TALL_STROPHAR_DOOR.get(), "block/tall_strophar");
-    	tallDoorBlock(DDBlocks.TALL_AA_STEEL_DOOR.get(), "block/tall_aa_steel");
+    	tallDoorBlock(DDBlocks.TALL_OAK_DOOR.get(), "block/tall_oak");
     }
     
     /*private void tallDoorBlockAlt(Block block, String baseName, String texName) {
