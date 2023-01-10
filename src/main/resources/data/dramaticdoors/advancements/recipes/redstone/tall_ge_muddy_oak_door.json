@@ -2,14 +2,14 @@
   "parent": "dramaticdoors:recipes/root",
   "rewards": {
     "recipes": [
-      "dramaticdoors:tall_muddy_oak_door"
+      "dramaticdoors:tall_ge_muddy_oak_door"
     ]
   },
   "criteria": {
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "dramaticdoors:tall_muddy_oak_door"
+        "recipe": "dramaticdoors:tall_ge_muddy_oak_door"
       }
     },
     "has_items": {

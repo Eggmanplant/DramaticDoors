@@ -153,8 +153,8 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
     	boolean waterfilled = level.getFluidState(pos.above(1)).getType() == Fluids.WATER; 
     	boolean waterfilled2 = level.getFluidState(pos.above(2)).getType() == Fluids.WATER; 
-        level.setBlock(pos.above(), state.setValue(THIRD, TripleBlockPart.MIDDLE).setValue(WATERLOGGED, waterfilled), 3);
-        level.setBlock(pos.above().above(), state.setValue(THIRD, TripleBlockPart.UPPER).setValue(WATERLOGGED, waterfilled2), 3);
+        level.setBlock(pos.above(), state.setValue(THIRD, TripleBlockPart.MIDDLE).setValue(WATERLOGGED, waterfilled), Block.UPDATE_ALL);
+        level.setBlock(pos.above().above(), state.setValue(THIRD, TripleBlockPart.UPPER).setValue(WATERLOGGED, waterfilled2), Block.UPDATE_ALL);
     }
 
     private DoorHingeSide getHinge(BlockPlaceContext context) {
@@ -306,7 +306,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
         }
     }
 
-    private void playSound(Level level, BlockPos pos, boolean isOpen) {
+    protected void playSound(Level level, BlockPos pos, boolean isOpen) {
         level.levelEvent(null, isOpen ? this.getOpenSound() : this.getCloseSound(), pos, 0);
     }
 
