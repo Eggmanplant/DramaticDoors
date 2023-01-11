@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -79,6 +80,10 @@ public class TallFleshDoorBlock extends TallDoorBlock
 		}
 
 		BlockState state = defaultBlockState();
+		boolean waterfilled = level.getFluidState(pos).getType() == Fluids.WATER;
+		if (waterfilled) {
+			state = state.setValue(WATERLOGGED, true);
+		}
 		if (!context.replacingClickedOnBlock()) {
 			Orientation orientation = Orientation.getXZOrientationFrom(context);
 			state = state.setValue(ORIENTATION, orientation);
