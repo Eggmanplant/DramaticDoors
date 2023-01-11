@@ -6,6 +6,7 @@ import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
@@ -24,8 +25,8 @@ public class TallLeadDoorBlock extends TallDoorBlock
 {
 	public static final IntegerProperty OPENING_PROGRESS = DDBlockStateProperties.OPENING_PROGRESS;
 	
-	public TallLeadDoorBlock(Block from) {
-		super(from);
+	public TallLeadDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
+		super(from, closeSound, openSound);
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER).setValue(WATERLOGGED, false).setValue(OPENING_PROGRESS, 0));
 	}
 

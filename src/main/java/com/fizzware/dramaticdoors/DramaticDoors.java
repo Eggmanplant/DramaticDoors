@@ -8,8 +8,6 @@ import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.compat.QuarkCompat;
 import com.fizzware.dramaticdoors.items.DDItems;
 
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -48,26 +46,33 @@ public class DramaticDoors
     	if (Compats.QUARK_INSTALLED) {
     		MinecraftForge.EVENT_BUS.register(new QuarkCompat());
     	}
-        MinecraftForge.EVENT_BUS.register(new DDEvents());
     }
     
     private void setupClient(final FMLClientSetupEvent event) {
     	ClientRenderer.setRenderers();
+    	//DDItems.assignItemsToTabs();
     }
 
-    public static final CreativeModeTab MAIN_TAB = new CreativeModeTab("dramaticdoors") {
+    /*public static final CreativeModeTab MAIN_TAB = CreativeModeTab.builder(Row.TOP "dramaticdoors") {
 		@Override
 		public ItemStack makeIcon() {
 			return new ItemStack(DDItems.TALL_OAK_DOOR.get());
 		}
     };
     
-    public static final CreativeModeTab MACAW_TAB = Compats.MACAWS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_macaw") {
+    public static final CreativeModeTab CHIPPED_TAB = Compats.CHIPPED_INSTALLED ? CreativeModeTab.builder("dramaticdoors_chipped") {
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_DOOR_07.get());
+		}
+    } : null;
+    
+    public static final CreativeModeTab MACAW_TAB = Compats.MACAWS_DOORS_INSTALLED ? CreativeModeTab.builder("dramaticdoors_macaw") {
 		@Override
 		public ItemStack makeIcon() {
 			return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR.get());
 		}
-    } : null;
+    } : null;*/
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {}

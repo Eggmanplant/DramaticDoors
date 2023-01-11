@@ -3,6 +3,7 @@ package com.fizzware.dramaticdoors.datagen;
 import com.fizzware.dramaticdoors.DramaticDoors;
 
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,9 +16,10 @@ public final class DramaticDoorsDataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator gen = event.getGenerator();
+        PackOutput output = gen.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-        gen.addProvider(true, new DDBlockStateProvider(gen, existingFileHelper));
-
+        gen.addProvider(true, new DDBlockStateProvider(output, existingFileHelper));
+        gen.addProvider(true, new DDItemModelProvider(output, existingFileHelper));
     }
 }

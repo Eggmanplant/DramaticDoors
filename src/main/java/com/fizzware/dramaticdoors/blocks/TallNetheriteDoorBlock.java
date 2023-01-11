@@ -4,6 +4,7 @@ import com.fizzware.dramaticdoors.blockentities.TallNetheriteDoorBlockEntity;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -17,8 +18,8 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class TallNetheriteDoorBlock extends TallDoorBlock implements EntityBlock
 {
-	public TallNetheriteDoorBlock(Block from) {
-		super(from);
+	public TallNetheriteDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
+		super(from, closeSound, openSound);
 	}
 
 	@Override
@@ -31,7 +32,6 @@ public class TallNetheriteDoorBlock extends TallDoorBlock implements EntityBlock
 	
 	@Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-		
 		BlockPos delegatedPos = state.getValue(THIRD) == TripleBlockPart.LOWER ? pos : (state.getValue(THIRD) == TripleBlockPart.UPPER ? pos.below(2) : pos.below(1));
 		BlockEntity be = level.getBlockEntity(delegatedPos);
 		//Execute action.
@@ -41,7 +41,7 @@ public class TallNetheriteDoorBlock extends TallDoorBlock implements EntityBlock
 				tryOpenDoubleDoor(level, state, pos);
 				BlockState newState = state.cycle(OPEN);
 				level.setBlock(pos, newState, 10);
-	            level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+	            this.playSound(player, level, pos, state.getValue(OPEN));
 	            level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 			}
 		}
