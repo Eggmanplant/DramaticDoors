@@ -3,35 +3,35 @@ package com.fizzware.dramaticdoors.blocks;
 import com.fizzware.dramaticdoors.blockentities.TallNetheriteDoorBlockEntity;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockEntityProvider;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import net.minecraft.world.event.GameEvent;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.phys.BlockHitResult;
 
-public class TallNetheriteDoorBlock extends TallDoorBlock implements BlockEntityProvider
+public class TallNetheriteDoorBlock extends TallDoorBlock implements EntityBlock
 {
 	public TallNetheriteDoorBlock(Block from) {
 		super(from);
 	}
 
 	@Override
-	public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-		if (state.get(THIRD) == TripleBlockPart.LOWER) {
+	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+		if (state.getValue(THIRD) == TripleBlockPart.LOWER) {
 			return new TallNetheriteDoorBlockEntity(pos, state);
 		}
 		return null;
 	}
 	
 	@Override
-    public ActionResult onUse(BlockState state, World level, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-		BlockPos delegatedPos = state.get(THIRD) == TripleBlockPart.LOWER ? pos : (state.get(THIRD) == TripleBlockPart.UPPER ? pos.down(2) : pos.down(1));
+    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+		BlockPos delegatedPos = state.getValue(THIRD) == TripleBlockPart.LOWER ? pos : (state.getValue(THIRD) == TripleBlockPart.UPPER ? pos.below(2) : pos.below(1));
 		BlockEntity be = level.getBlockEntity(delegatedPos);
 		//Execute action.
 		if (be != null && be instanceof TallNetheriteDoorBlockEntity) {
@@ -39,16 +39,17 @@ public class TallNetheriteDoorBlock extends TallDoorBlock implements BlockEntity
 			if (door.handleAction(player, hand, "door")) {
 				tryOpenDoubleDoor(level, state, pos);
 				BlockState newState = state.cycle(OPEN);
-				level.setBlockState(pos, newState, 10);
-	            level.syncWorldEvent(player, state.get(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
-	            level.emitGameEvent(player, state.get(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+				level.setBlock(pos, newState, 10);
+	            level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+	            level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 			}
 		}
-	    return ActionResult.success(level.isClient);
+	    return InteractionResult.sidedSuccess(level.isClientSide);
 	}
 	
 	@Override
-    public void neighborUpdate(BlockState state, World level, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
 		//Tall Netherite door doesn't change with redstone.
 	}
+
 }

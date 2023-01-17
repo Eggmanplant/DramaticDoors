@@ -3,26 +3,26 @@ package com.fizzware.dramaticdoors.mixin;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.At.Shift;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.fizzware.dramaticdoors.DDTags;
 
-import net.minecraft.client.network.ClientPlayerEntity;
-import net.minecraft.client.network.ClientPlayerInteractionManager;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.client.multiplayer.MultiPlayerGameMode;
+import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.phys.BlockHitResult;
 
-@Mixin(ClientPlayerInteractionManager.class)
+@Mixin(MultiPlayerGameMode.class)
 public class CPIMMixin
 {
 	
-	@Inject(method = "interactBlockInternal(Lnet/minecraft/client/network/ClientPlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/hit/BlockHitResult;)Lnet/minecraft/util/ActionResult;", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/GameMode;isCreative()Z", shift = Shift.BEFORE), cancellable = true)
-	private void injectInteractBlockInternal(ClientPlayerEntity player, Hand hand, BlockHitResult hitResult, CallbackInfoReturnable<ActionResult> ci) {
-		boolean blWithKey = player.getMainHandStack() != null && player.getMainHandStack().isIn(DDTags.KEY);
-		if (blWithKey) {
-			ci.setReturnValue(player.getEntityWorld().getBlockState(hitResult.getBlockPos()).onUse(player.getEntityWorld(), player, hand, hitResult));
+	@Inject(method = "performUseItemOn(Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;", at = @At(value = "RETURN"), cancellable = true)
+	private void injectUse(LocalPlayer player, InteractionHand hand, BlockHitResult hitResult, CallbackInfoReturnable<InteractionResult> ci) {
+		boolean blWithKey = player.getMainHandItem() != null && player.getMainHandItem().is(DDTags.KEY);
+		if (blWithKey && ci.isCancellable()) {
+			ci.setReturnValue(player.getLevel().getBlockState(hitResult.getBlockPos()).use(player.getLevel(), player, hand, hitResult));
 		}
 	}
+	
 }

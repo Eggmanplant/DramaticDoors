@@ -62,6 +62,9 @@ public class DDFuels
 		FuelRegistry.INSTANCE.add(DDItems.TALL_ELDER_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_JUNIPER_DOOR, 300);
 
+		FuelRegistry.INSTANCE.add(DDItems.TALL_BE_BAMBOO_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_BE_DRY_BAMBOO_DOOR, 300);
+
 		FuelRegistry.INSTANCE.add(DDItems.TALL_ANCIENT_OAK_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_BLIGHTED_BALSA_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_SWAMP_CYPRESS_DOOR, 300);
@@ -78,6 +81,16 @@ public class DDFuels
 		FuelRegistry.INSTANCE.add(DDItems.TALL_CHARM_AZALEA_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_CHARM_EBONY_DOOR, 300);
 
+		FuelRegistry.INSTANCE.add(DDItems.TALL_AZULE_AZALEA_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_BRIGHT_AZALEA_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_FISS_AZALEA_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_ROZE_AZALEA_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_TECAL_AZALEA_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_TITANIUM_AZALEA_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_WALNUT_AZALEA_DOOR, 300);
+
+		FuelRegistry.INSTANCE.add(DDItems.TALL_ECHO_DOOR, 300);
+
 		FuelRegistry.INSTANCE.add(DDItems.TALL_ECO_AZALEA_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_ECO_FLOWERING_AZALEA_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_ECO_COCONUT_DOOR, 300);
@@ -90,6 +103,11 @@ public class DDFuels
 		FuelRegistry.INSTANCE.add(DDItems.TALL_ACACIA_GLASS_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_DARK_OAK_GLASS_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_MANGROVE_GLASS_DOOR, 300);
+
+		FuelRegistry.INSTANCE.add(DDItems.TALL_GE_CYPRESS_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_GE_MUDDY_OAK_DOOR, 300);
+
+		FuelRegistry.INSTANCE.add(DDItems.TALL_AKASHIC_DOOR, 300);
 
 		FuelRegistry.INSTANCE.add(DDItems.TALL_BLOODSHROOM_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_GREENHEART_DOOR, 300);
@@ -113,6 +131,7 @@ public class DDFuels
 		FuelRegistry.INSTANCE.add(DDItems.TALL_TRANSWOOD_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_TWILIGHT_OAK_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_TWILIGHT_MANGROVE_DOOR, 300);
+		FuelRegistry.INSTANCE.add(DDItems.TALL_TOWERWOOD_DOOR, 300);
 		
 		//Chipped. Any wooden doors can be used as fuel except for Nether wood.
 		FuelRegistry.INSTANCE.add(DDItems.TALL_CHIPPED_OAK_DOOR_01, 300);

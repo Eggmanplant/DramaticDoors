@@ -1,37 +1,33 @@
 package com.fizzware.dramaticdoors.entity.ai.goal;
 
-import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.world.entity.Mob;
 
 public class OpenTallDoorGoal extends TallDoorInteractGoal
 {
-   private final boolean delayedClose;
-   private int ticksLeft;
+   private final boolean closeDoor;
+   private int forgetTime;
 
-   public OpenTallDoorGoal(MobEntity entity, boolean close) {
+   public OpenTallDoorGoal(Mob entity, boolean close) {
       super(entity);
       this.mob = entity;
-      this.delayedClose = close;
+      this.closeDoor = close;
    }
 
-   @Override
-   public boolean shouldContinue() {
-      return this.delayedClose && this.ticksLeft > 0 && super.shouldContinue();
+   public boolean canContinueToUse() {
+      return this.closeDoor && this.forgetTime > 0 && super.canContinueToUse();
    }
 
-   @Override
    public void start() {
-      this.ticksLeft = 20;
-      this.setDoorOpen(true);
+      this.forgetTime = 20;
+      this.setOpen(true);
    }
 
-   @Override
    public void stop() {
-      this.setDoorOpen(false);
+      this.setOpen(false);
    }
 
-   @Override
    public void tick() {
-      --this.ticksLeft;
+      --this.forgetTime;
       super.tick();
    }
 }

@@ -3,17 +3,23 @@
   "minVersion": "0.8",
   "package": "com.fizzware.dramaticdoors.mixin",
   "compatibilityLevel": "JAVA_17",
+  "plugin": "com.fizzware.dramaticdoors.mixin.DDMixinConfig",
   "mixins": [
     "AdvancementManagerMixin",
     "RecipeManagerMixin",
-    "CPIMMixin",
-    "SPIMMixin",
+    "DoorBlockMixin",
+    "FenceGateBlockMixin",
+    "IronGateBlockMixin",
     "LandPathNodeMakerMixin",
     "DoorInteractGoalMixin",
     "OpenDoorsTaskMixin",
     "WitchMixin"
   ],
   "client": [
+    "CPIMMixin"
+  ],
+  "server": [
+    "SPIMMixin"
   ],
   "injectors": {
     "defaultRequire": 1

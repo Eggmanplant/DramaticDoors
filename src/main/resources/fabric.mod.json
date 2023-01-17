@@ -37,6 +37,7 @@
     "java": ">=17"
   },
   "suggests": {
+    "yet-another-config-lib": ">=1.7.1",
     "doubledoors-fabric": "*",
     "ad_astra": "*",
     "bewitchment": "*",
