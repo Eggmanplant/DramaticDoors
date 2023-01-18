@@ -8,6 +8,7 @@
         "DoorBlockMixin",
         "FenceGateBlockMixin",
         "IronGateBlockMixin",
+        "DoorFrameBlockMixin",
         "LandPathNodeMakerMixin",
         "OpenDoorsTaskMixin",
         "DoorInteractGoalMixin",

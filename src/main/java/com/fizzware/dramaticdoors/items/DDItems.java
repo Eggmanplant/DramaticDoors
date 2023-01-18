@@ -149,7 +149,6 @@ public class DDItems {
 
     public static final RegistryObject<Item> TALL_BROWN_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_BROWN_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_BROWN_MUSHROOM_DOOR.get(), conditionalTabProperties("enhanced_mushrooms")));
     public static final RegistryObject<Item> TALL_RED_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_RED_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_RED_MUSHROOM_DOOR.get(), conditionalTabProperties("enhanced_mushrooms")));
-    public static final RegistryObject<Item> TALL_GLOWSHROOM_DOOR = ITEMS.register(DDNames.TALL_GLOWSHROOM, () -> new TallDoorItem(DDBlocks.TALL_GLOWSHROOM_DOOR.get(), addIfItemIsAvailable(new ResourceLocation("enhanced_mushrooms", "glowshroom_door"), conditionalTabProperties("enhanced_mushrooms"))));
 
     // Ad Astra
     public static final RegistryObject<Item> TALL_AERONOS_DOOR = ITEMS.register(DDNames.TALL_AERONOS, () -> new TallDoorItem(DDBlocks.TALL_AERONOS_DOOR.get(), conditionalTabProperties("ad_astra")));
@@ -279,12 +278,27 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_EC_WAXED_WEATHERED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WAXED_WEATHERED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WAXED_WEATHERED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
     public static final RegistryObject<Item> TALL_EC_WAXED_OXIDIZED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WAXED_OXIDIZED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WAXED_OXIDIZED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
     
+    // Extended Mushrooms
+    public static final RegistryObject<Item> TALL_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_MUSHROOM_DOOR.get(), conditionalTabProperties("extendedmushrooms")));
+    public static final RegistryObject<Item> TALL_GLOWSHROOM_DOOR = ITEMS.register(DDNames.TALL_GLOWSHROOM, () -> new TallDoorItem(DDBlocks.TALL_GLOWSHROOM_DOOR.get(), conditionalTabProperties("extendedmushrooms")));
+    public static final RegistryObject<Item> TALL_POISONOUS_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_POISONOUS_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_POISONOUS_MUSHROOM_DOOR.get(), conditionalTabProperties("extendedmushrooms")));
+    public static final RegistryObject<Item> TALL_HONEY_FUNGUS_DOOR = ITEMS.register(DDNames.TALL_HONEY_FUNGUS, () -> new TallDoorItem(DDBlocks.TALL_HONEY_FUNGUS_DOOR.get(), conditionalTabProperties("extendedmushrooms")));
+    
     // Forbidden & Arcanus
     public static final RegistryObject<Item> TALL_ARCANE_GOLD_DOOR = ITEMS.register(DDNames.TALL_ARCANE_GOLD, () -> new TallDoorItem(DDBlocks.TALL_ARCANE_GOLD_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
     public static final RegistryObject<Item> TALL_CHERRYWOOD_DOOR = ITEMS.register(DDNames.TALL_CHERRYWOOD, () -> new TallDoorItem(DDBlocks.TALL_CHERRYWOOD_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
     public static final RegistryObject<Item> TALL_EDELWOOD_DOOR = ITEMS.register(DDNames.TALL_EDELWOOD, () -> new TallDoorItem(DDBlocks.TALL_EDELWOOD_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
     public static final RegistryObject<Item> TALL_FUNGYSS_DOOR = ITEMS.register(DDNames.TALL_FUNGYSS, () -> new TallDoorItem(DDBlocks.TALL_FUNGYSS_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
     public static final RegistryObject<Item> TALL_MYSTERYWOOD_DOOR = ITEMS.register(DDNames.TALL_MYSTERYWOOD, () -> new TallDoorItem(DDBlocks.TALL_MYSTERYWOOD_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
+    
+    // Fruit Trees
+    public static final RegistryObject<Item> TALL_FT_CHERRY_DOOR = ITEMS.register(DDNames.TALL_FT_CHERRY, () -> new TallDoorItem(DDBlocks.TALL_FT_CHERRY_DOOR.get(), conditionalTabProperties("fruittrees")));
+    public static final RegistryObject<Item> TALL_FT_CHERRY_SLIDING_DOOR = ITEMS.register(DDNames.TALL_FT_CHERRY_SLIDING, () -> new TallDoorItem(DDBlocks.TALL_FT_CHERRY_SLIDING_DOOR.get(), addIfItemIsAvailable(new ResourceLocation("fruittrees", "cherry_sliding_door"), conditionalTabProperties("fruittrees"))));
+    public static final RegistryObject<Item> TALL_FT_CITRUS_DOOR = ITEMS.register(DDNames.TALL_FT_CITRUS, () -> new TallDoorItem(DDBlocks.TALL_FT_CITRUS_DOOR.get(), conditionalTabProperties("fruittrees")));
+        
+    // Garden of the Dead
+    public static final RegistryObject<Item> TALL_SOULBLIGHT_DOOR = ITEMS.register(DDNames.TALL_SOULBLIGHT, () -> new TallDoorItem(DDBlocks.TALL_SOULBLIGHT_DOOR.get(), conditionalTabProperties("gardens_of_the_dead")));
+    public static final RegistryObject<Item> TALL_WHISTLECANE_DOOR = ITEMS.register(DDNames.TALL_WHISTLECANE, () -> new TallDoorItem(DDBlocks.TALL_WHISTLECANE_DOOR.get(), conditionalTabProperties("gardens_of_the_dead")));
     
     // Good Ending
     public static final RegistryObject<Item> TALL_GE_CYPRESS_DOOR = ITEMS.register(DDNames.TALL_GE_CYPRESS, () -> new TallDoorItem(DDBlocks.TALL_GE_CYPRESS_DOOR.get(), conditionalTabProperties("goodending")));
@@ -342,6 +356,10 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_PW_SILVERBELL_DOOR = ITEMS.register(DDNames.TALL_PW_SILVERBELL, () -> new TallDoorItem(DDBlocks.TALL_PW_SILVERBELL_DOOR.get(), conditionalTabProperties("premium_wood")));
     public static final RegistryObject<Item> TALL_PW_TIGER_DOOR = ITEMS.register(DDNames.TALL_PW_TIGER, () -> new TallDoorItem(DDBlocks.TALL_PW_TIGER_DOOR.get(), conditionalTabProperties("premium_wood")));
     public static final RegistryObject<Item> TALL_PW_WILLOW_DOOR = ITEMS.register(DDNames.TALL_PW_WILLOW, () -> new TallDoorItem(DDBlocks.TALL_PW_WILLOW_DOOR.get(), conditionalTabProperties("premium_wood")));
+    
+    // Pyromancer
+    public static final RegistryObject<Item> TALL_PYROWOOD_DOOR = ITEMS.register(DDNames.TALL_PYROWOOD, () -> new TallDoorItem(DDBlocks.TALL_PYROWOOD_DOOR.get(), conditionalTabProperties("pyromancer")));
+    public static final RegistryObject<Item> TALL_ROTTEN_PLANKS_DOOR = ITEMS.register(DDNames.TALL_ROTTEN_PLANKS, () -> new TallDoorItem(DDBlocks.TALL_ROTTEN_PLANKS_DOOR.get(), conditionalTabProperties("pyromancer")));
     
     // Quark
     public static final RegistryObject<Item> TALL_QUARK_AZALEA_DOOR = ITEMS.register(DDNames.TALL_QUARK_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_QUARK_AZALEA_DOOR.get(), conditionalTabProperties("quark")));

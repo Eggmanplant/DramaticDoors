@@ -29,6 +29,9 @@ public class DDMixinConfig implements IMixinConfigPlugin
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {			
 			return DDConfig.waterloggableDoors.get();
 		}
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorFrameBlockMixin")) {			
+			return DDConfig.waterloggableDoors.get() && LoadingModList.get().getModFileById("blockcarpentry") != null;
+		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.FenceGateBlockMixin")) {
 			return DDConfig.waterloggableFenceGates.get();
 		}
