@@ -6,27 +6,28 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Material;
-import net.minecraft.entity.ai.pathing.LandPathNodeMaker;
-import net.minecraft.entity.ai.pathing.PathNodeType;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.BlockView;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.pathfinder.WalkNodeEvaluator;
 
-@Mixin(LandPathNodeMaker.class)
+// Ported from Fabric version of Dramatic Doors.
+@Mixin(WalkNodeEvaluator.class)
 public class LandPathNodeMakerMixin
 {
-	@Inject(at = @At("RETURN"), method = "getCommonNodeType(Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/entity/ai/pathing/PathNodeType;", cancellable = true)
-	private static void injectDoorType(BlockView world, BlockPos pos, CallbackInfoReturnable<PathNodeType> callback) {
+	@Inject(at = @At("RETURN"), method = "getBlockPathTypeRaw(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;", cancellable = true)
+	private static void injectDoorType(BlockGetter world, BlockPos pos, CallbackInfoReturnable<BlockPathTypes> callback) {
 		BlockState blockStateDDCheck = world.getBlockState(pos);
-		if (TallDoorBlock.isWoodenDoor(blockStateDDCheck) && !blockStateDDCheck.get(TallDoorBlock.OPEN).booleanValue()) {
-            callback.setReturnValue(PathNodeType.DOOR_WOOD_CLOSED);
+		if (TallDoorBlock.isWoodenDoor(blockStateDDCheck) && !blockStateDDCheck.getValue(TallDoorBlock.OPEN).booleanValue()) {
+            callback.setReturnValue(BlockPathTypes.DOOR_WOOD_CLOSED);
         }
-		if (blockStateDDCheck.getBlock() instanceof TallDoorBlock && blockStateDDCheck.getMaterial() == Material.METAL && !blockStateDDCheck.get(TallDoorBlock.OPEN).booleanValue()) {
-            callback.setReturnValue(PathNodeType.DOOR_IRON_CLOSED);
+		if (blockStateDDCheck.getBlock() instanceof TallDoorBlock && blockStateDDCheck.getMaterial() == Material.METAL && !blockStateDDCheck.getValue(TallDoorBlock.OPEN).booleanValue()) {
+            callback.setReturnValue(BlockPathTypes.DOOR_IRON_CLOSED);
         }
-		if (blockStateDDCheck.getBlock() instanceof TallDoorBlock && blockStateDDCheck.get(TallDoorBlock.OPEN).booleanValue()) {
-            callback.setReturnValue(PathNodeType.DOOR_OPEN);
+		if (blockStateDDCheck.getBlock() instanceof TallDoorBlock && blockStateDDCheck.getValue(TallDoorBlock.OPEN).booleanValue()) {
+            callback.setReturnValue(BlockPathTypes.DOOR_OPEN);
         }
 	}
 

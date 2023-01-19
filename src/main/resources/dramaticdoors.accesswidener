@@ -1,8 +1,11 @@
 accessWidener	v1	named
 
 # Widens the access of certain mobs to make mixin possible.
-accessible field net/minecraft/entity/mob/MobEntity goalSelector Lnet/minecraft/entity/ai/goal/GoalSelector;
-accessible field net/minecraft/entity/mob/MobEntity navigation Lnet/minecraft/entity/ai/pathing/EntityNavigation;
-accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask rememberToCloseDoor (Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/util/math/BlockPos;)V
-accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask hasOtherMobReachedDoor (Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/util/math/BlockPos;)Z
-accessible method net/minecraft/entity/ai/brain/task/OpenDoorsTask cannotReachDoor (Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/util/dynamic/GlobalPos;)Z
+accessible field net/minecraft/world/entity/Mob goalSelector Lnet/minecraft/world/entity/ai/goal/GoalSelector;
+accessible field net/minecraft/world/entity/Mob navigation Lnet/minecraft/world/entity/ai/navigation/PathNavigation;
+accessible method net/minecraft/world/level/block/Block registerDefaultState (Lnet/minecraft/world/level/block/state/BlockState;)V
+accessible method net/minecraft/world/level/block/FenceGateBlock isWall (Lnet/minecraft/world/level/block/state/BlockState;)Z
+accessible method net/minecraft/world/level/block/DoorBlock getHinge (Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/properties/DoorHingeSide;
+accessible method net/minecraft/world/entity/ai/behavior/InteractWithDoor rememberDoorToClose (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;)V
+accessible method net/minecraft/world/entity/ai/behavior/InteractWithDoor isMobComingThroughDoor (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;)Z
+accessible method net/minecraft/world/entity/ai/behavior/InteractWithDoor isDoorTooFarAway (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/GlobalPos;)Z

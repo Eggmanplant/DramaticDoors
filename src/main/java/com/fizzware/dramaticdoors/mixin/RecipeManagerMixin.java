@@ -6,20 +6,19 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
 import com.fizzware.dramaticdoors.crafting.DDRecipeCompats;
 import com.google.gson.JsonElement;
 
-import net.minecraft.recipe.RecipeManager;
-import net.minecraft.resource.ResourceManager;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.profiler.Profiler;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.util.profiling.ProfilerFiller;
+import net.minecraft.world.item.crafting.RecipeManager;
 
 @Mixin(RecipeManager.class)
 public abstract class RecipeManagerMixin 
 {	
     @Inject(method = "apply", at = @At("HEAD"))
-    public void interceptApply(Map<Identifier, JsonElement> map, ResourceManager resourceManager, Profiler profiler, CallbackInfo info) {
-    	DDRecipeCompats.RECIPES.forEach((recipe) -> { map.put(new Identifier(recipe.get("result").getAsJsonObject().get("item").getAsString()), recipe); } );
+    public void interceptApply(Map<ResourceLocation, JsonElement> map, ResourceManager resourceManager, ProfilerFiller profiler, CallbackInfo info) {
+    	DDRecipeCompats.RECIPES.forEach((recipe) -> { map.put(new ResourceLocation(recipe.get("result").getAsJsonObject().get("item").getAsString()), recipe); } );
     }
 }
