@@ -18,7 +18,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
-version = '1.18.2-2.1.8'
+version = '1.18.2-2.1.9'
 group = 'com.fizzware.dramaticdoors' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'DramaticDoors-Forge'
 
