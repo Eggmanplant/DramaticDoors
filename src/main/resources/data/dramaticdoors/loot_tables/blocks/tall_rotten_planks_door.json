@@ -9,13 +9,13 @@
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "dramaticdoors:tall_rotten_door",
+              "block": "dramaticdoors:tall_rotten_planks_door",
               "properties": {
                 "third": "lower"
               }
             }
           ],
-          "name": "dramaticdoors:tall_rotten_door"
+          "name": "dramaticdoors:tall_rotten_planks_door"
         }
       ],
       "conditions": [
