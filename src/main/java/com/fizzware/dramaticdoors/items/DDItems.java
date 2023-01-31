@@ -30,6 +30,7 @@ public class DDItems {
 	private static CreativeModeTab MAIN_TAB;
 	private static CreativeModeTab CHIPPED_TAB;
 	private static CreativeModeTab MACAW_TAB;
+	private static CreativeModeTab MANYIDEAS_TAB;
 	
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DramaticDoors.MOD_ID);
 
@@ -165,7 +166,6 @@ public class DDItems {
 
     public static final RegistryObject<Item> TALL_BROWN_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_BROWN_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_BROWN_MUSHROOM_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_RED_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_RED_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_RED_MUSHROOM_DOOR.get(), PROPERTIES));
-    public static final RegistryObject<Item> TALL_GLOWSHROOM_DOOR = ITEMS.register(DDNames.TALL_GLOWSHROOM, () -> new TallDoorItem(DDBlocks.TALL_GLOWSHROOM_DOOR.get(), PROPERTIES));
 
     // Ad Astra
     public static final RegistryObject<Item> TALL_AERONOS_DOOR = ITEMS.register(DDNames.TALL_AERONOS, () -> new TallDoorItem(DDBlocks.TALL_AERONOS_DOOR.get(), PROPERTIES));
@@ -295,6 +295,12 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_EC_WAXED_WEATHERED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WAXED_WEATHERED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WAXED_WEATHERED_COPPER_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_EC_WAXED_OXIDIZED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WAXED_OXIDIZED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WAXED_OXIDIZED_COPPER_DOOR.get(), PROPERTIES));
     
+    // Extended Mushrooms
+    public static final RegistryObject<Item> TALL_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_MUSHROOM_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_GLOWSHROOM_DOOR = ITEMS.register(DDNames.TALL_GLOWSHROOM, () -> new TallDoorItem(DDBlocks.TALL_GLOWSHROOM_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_POISONOUS_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_POISONOUS_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_POISONOUS_MUSHROOM_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_HONEY_FUNGUS_DOOR = ITEMS.register(DDNames.TALL_HONEY_FUNGUS, () -> new TallDoorItem(DDBlocks.TALL_HONEY_FUNGUS_DOOR.get(), PROPERTIES));
+    
     // Forbidden & Arcanus
     public static final RegistryObject<Item> TALL_ARCANE_GOLD_DOOR = ITEMS.register(DDNames.TALL_ARCANE_GOLD, () -> new TallDoorItem(DDBlocks.TALL_ARCANE_GOLD_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_ARCANE_EDELWOOD_DOOR = ITEMS.register(DDNames.TALL_ARCANE_EDELWOOD, () -> new TallDoorItem(DDBlocks.TALL_ARCANE_EDELWOOD_DOOR.get(), PROPERTIES));
@@ -302,6 +308,15 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_EDELWOOD_DOOR = ITEMS.register(DDNames.TALL_EDELWOOD, () -> new TallDoorItem(DDBlocks.TALL_EDELWOOD_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_FUNGYSS_DOOR = ITEMS.register(DDNames.TALL_FUNGYSS, () -> new TallDoorItem(DDBlocks.TALL_FUNGYSS_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_MYSTERYWOOD_DOOR = ITEMS.register(DDNames.TALL_MYSTERYWOOD, () -> new TallDoorItem(DDBlocks.TALL_MYSTERYWOOD_DOOR.get(), PROPERTIES));
+    
+    // Fruit Trees
+    public static final RegistryObject<Item> TALL_FT_CHERRY_DOOR = ITEMS.register(DDNames.TALL_FT_CHERRY, () -> new TallDoorItem(DDBlocks.TALL_FT_CHERRY_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_FT_CHERRY_SLIDING_DOOR = ITEMS.register(DDNames.TALL_FT_CHERRY_SLIDING, () -> new TallDoorItem(DDBlocks.TALL_FT_CHERRY_SLIDING_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_FT_CITRUS_DOOR = ITEMS.register(DDNames.TALL_FT_CITRUS, () -> new TallDoorItem(DDBlocks.TALL_FT_CITRUS_DOOR.get(), PROPERTIES));
+        
+    // Garden of the Dead
+    public static final RegistryObject<Item> TALL_SOULBLIGHT_DOOR = ITEMS.register(DDNames.TALL_SOULBLIGHT, () -> new TallDoorItem(DDBlocks.TALL_SOULBLIGHT_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_WHISTLECANE_DOOR = ITEMS.register(DDNames.TALL_WHISTLECANE, () -> new TallDoorItem(DDBlocks.TALL_WHISTLECANE_DOOR.get(), PROPERTIES));
     
     // Good Ending
     public static final RegistryObject<Item> TALL_GE_CYPRESS_DOOR = ITEMS.register(DDNames.TALL_GE_CYPRESS, () -> new TallDoorItem(DDBlocks.TALL_GE_CYPRESS_DOOR.get(), PROPERTIES));
@@ -326,6 +341,36 @@ public class DDItems {
     // Malum
     public static final RegistryObject<Item> TALL_RUNEWOOD_DOOR = ITEMS.register(DDNames.TALL_RUNEWOOD, () -> new TallDoorItem(DDBlocks.TALL_RUNEWOOD_DOOR.get(), PROPERTIES));    
     public static final RegistryObject<Item> TALL_SOULWOOD_DOOR = ITEMS.register(DDNames.TALL_SOULWOOD, () -> new TallDoorItem(DDBlocks.TALL_SOULWOOD_DOOR.get(), PROPERTIES));        
+    
+    // Mo' Shiz
+    public static final RegistryObject<Item> TALL_MS_IRON_BAR_DOOR = ITEMS.register(DDNames.TALL_MS_IRON_BAR, () -> new TallDoorItem(DDBlocks.TALL_MS_IRON_BAR_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_MS_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_MS_BAMBOO_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_CHERRY_DOOR = ITEMS.register(DDNames.TALL_MS_CHERRY, () -> new TallDoorItem(DDBlocks.TALL_MS_CHERRY_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_GLOWOOD_DOOR = ITEMS.register(DDNames.TALL_MS_GLOWOOD, () -> new TallDoorItem(DDBlocks.TALL_MS_GLOWOOD_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_HELLWOOD_DOOR = ITEMS.register(DDNames.TALL_MS_HELLWOOD, () -> new TallDoorItem(DDBlocks.TALL_MS_HELLWOOD_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_MAPLE_DOOR = ITEMS.register(DDNames.TALL_MS_MAPLE, () -> new TallDoorItem(DDBlocks.TALL_MS_MAPLE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_SILVERBELL_DOOR = ITEMS.register(DDNames.TALL_MS_SILVERBELL, () -> new TallDoorItem(DDBlocks.TALL_MS_SILVERBELL_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_TIGERWOOD_DOOR = ITEMS.register(DDNames.TALL_MS_TIGERWOOD, () -> new TallDoorItem(DDBlocks.TALL_MS_TIGERWOOD_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_WILLOW_DOOR = ITEMS.register(DDNames.TALL_MS_WILLOW, () -> new TallDoorItem(DDBlocks.TALL_MS_WILLOW_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_SOUL_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_SOUL_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_SOUL_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_TINTED_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_TINTED_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_TINTED_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_BLACK_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_BLACK_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_BLACK_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_GREY_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_GREY_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_GREY_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_LIGHT_GREY_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_LIGHT_GREY_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_LIGHT_GREY_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_WHITE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_WHITE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_WHITE_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_RED_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_RED_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_RED_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_ORANGE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_ORANGE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_ORANGE_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_YELLOW_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_YELLOW_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_YELLOW_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_LIME_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_LIME_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_LIME_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_GREEN_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_GREEN_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_GREEN_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_CYAN_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_CYAN_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_CYAN_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_BLUE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_BLUE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_BLUE_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_PURPLE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_PURPLE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_PURPLE_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_MAGENTA_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_MAGENTA_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_MAGENTA_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_PINK_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_PINK_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_PINK_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_LIGHT_BLUE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_LIGHT_BLUE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_LIGHT_BLUE_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MS_BROWN_GLASS_DOOR = ITEMS.register(DDNames.TALL_MS_BROWN_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MS_BROWN_GLASS_DOOR.get(), PROPERTIES));
     
     // Morecraft
     public static final RegistryObject<Item> TALL_MORECRAFT_NETHERBRICK_DOOR = ITEMS.register(DDNames.TALL_MORECRAFT_NETHERBRICK, () -> new TallDoorItem(DDBlocks.TALL_MORECRAFT_NETHERBRICK_DOOR.get(), PROPERTIES));
@@ -368,7 +413,12 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_PW_TIGER_DOOR = ITEMS.register(DDNames.TALL_PW_TIGER, () -> new TallDoorItem(DDBlocks.TALL_PW_TIGER_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_PW_WILLOW_DOOR = ITEMS.register(DDNames.TALL_PW_WILLOW, () -> new TallDoorItem(DDBlocks.TALL_PW_WILLOW_DOOR.get(), PROPERTIES));
     
+    // Pyromancer
+    public static final RegistryObject<Item> TALL_PYROWOOD_DOOR = ITEMS.register(DDNames.TALL_PYROWOOD, () -> new TallDoorItem(DDBlocks.TALL_PYROWOOD_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_ROTTEN_PLANKS_DOOR = ITEMS.register(DDNames.TALL_ROTTEN_PLANKS, () -> new TallDoorItem(DDBlocks.TALL_ROTTEN_PLANKS_DOOR.get(), PROPERTIES));
+    
     // Quark
+    public static final RegistryObject<Item> TALL_QUARK_ANCIENT_DOOR = ITEMS.register(DDNames.TALL_QUARK_ANCIENT, () -> new TallDoorItem(DDBlocks.TALL_QUARK_ANCIENT_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_QUARK_AZALEA_DOOR = ITEMS.register(DDNames.TALL_QUARK_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_QUARK_AZALEA_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_QUARK_BLOSSOM_DOOR = ITEMS.register(DDNames.TALL_QUARK_BLOSSOM, () -> new TallDoorItem(DDBlocks.TALL_QUARK_BLOSSOM_DOOR.get(), PROPERTIES));
     
@@ -771,6 +821,128 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_MACAW_DARK_OAK_MYSTIC_DOOR = ITEMS.register(DDNames.TALL_MACAW_DARK_OAK_MYSTIC, () -> new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_MYSTIC_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_MACAW_CRIMSON_MYSTIC_DOOR = ITEMS.register(DDNames.TALL_MACAW_CRIMSON_MYSTIC, () -> new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_MYSTIC_DOOR.get(), PROPERTIES));
 
+    // ManyIdeas Doors
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_BAR_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_BAR, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_BAR_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_BARREL_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_BARREL, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_BARREL_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_BRICK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_BRICK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_BRICK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_CORRUGATED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_CORRUGATED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_CORRUGATED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_FACTORY_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_FACTORY, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_FACTORY_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_MODERN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_MODERN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_MODERN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_SHIP_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_SHIP, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_SHIP_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_SMOOTH_SANDSTONE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_SMOOTH_SANDSTONE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_SMOOTH_SANDSTONE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_COPPER_STEAMPUNK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_COPPER_STEAMPUNK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_COPPER_STEAMPUNK_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_DWARF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_DWARF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_DWARF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_FANTASY_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_FANTASY, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_FANTASY_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_LABORATORY_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_LABORATORY, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_LABORATORY_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_RUSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_RUSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_RUSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_SAFE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_SAFE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_SAFE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_SHIP_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_SHIP, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_SHIP_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_SPACE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_SPACE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_SPACE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_IRON_STONE_BRICK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_IRON_STONE_BRICK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_IRON_STONE_BRICK_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_OAK_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_OAK_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_OAK_SHOJI_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_SPRUCE_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_SPRUCE_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_SPRUCE_SHOJI_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_BIRCH_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_BIRCH_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_BIRCH_SHOJI_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_JUNGLE_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_JUNGLE_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_JUNGLE_SHOJI_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_ACACIA_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_ACACIA_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_ACACIA_SHOJI_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_DARK_OAK_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_DARK_OAK_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_DARK_OAK_SHOJI_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_MANGROVE_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_MANGROVE_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_MANGROVE_SHOJI_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_CRIMSON_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_CRIMSON_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_CRIMSON_SHOJI_DOOR.get(), PROPERTIES));
+
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_BLANK_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_BLANK, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_BLANK_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_BOOKSHELF_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_BOOKSHELF, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_BOOKSHELF_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_CASSETTE_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_CASSETTE, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_CASSETTE_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_FRENCH_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_FRENCH, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_FRENCH_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_FROSTED_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_FROSTED, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_FROSTED_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_GLASS_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_GLASS_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_HEART_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_HEART, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_HEART_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_ORIGIN_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_RUSTIC_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_SHOJI_DOOR.get(), PROPERTIES));
+    
     @SubscribeEvent
     public static void registerCreativeTabs(CreativeModeTabEvent.Register event) {
     	MAIN_TAB = event.registerCreativeModeTab(new ResourceLocation(DramaticDoors.MOD_ID, "main_tab"), builder -> builder.title(Component.translatable("itemGroup.dramaticdoors")).icon(() -> { return new ItemStack(DDItems.TALL_OAK_DOOR.get()); } ).build());
@@ -780,6 +952,10 @@ public class DDItems {
     	if (Compats.MACAWS_DOORS_INSTALLED) {
     		MACAW_TAB = event.registerCreativeModeTab(new ResourceLocation(DramaticDoors.MOD_ID, "macaw_tab"), builder -> builder.title(Component.translatable("itemGroup.dramaticdoors_macaw")).icon(() -> { return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR.get()); } ).build());
     	}
+    	if (Compats.MANYIDEAS_DOORS_INSTALLED) {
+    		MANYIDEAS_TAB = event.registerCreativeModeTab(new ResourceLocation(DramaticDoors.MOD_ID, "manyideas_tab"), builder -> builder.title(Component.translatable("itemGroup.dramaticdoors_manyideas")).icon(() -> { return new ItemStack(DDItems.TALL_MANYIDEAS_CRIMSON_BLANK_DOOR.get()); } ).build());
+    	}
+
     }
     
     @SubscribeEvent
@@ -957,7 +1133,6 @@ public class DDItems {
     		if (ModList.get().isLoaded("enhanced_mushrooms")) {
     			map.put(TALL_BROWN_MUSHROOM_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_RED_MUSHROOM_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			if (ModList.get().isLoaded("quark")) { map.put(TALL_GLOWSHROOM_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS); }
     		}
     		// Other Mods
     		if (ModList.get().isLoaded("abundant_atmosphere")) {
@@ -1076,6 +1251,12 @@ public class DDItems {
     			map.put(TALL_EC_WAXED_WEATHERED_COPPER_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_EC_WAXED_OXIDIZED_COPPER_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
+    		if (ModList.get().isLoaded("extendedmushrooms")) {
+    			map.put(TALL_MUSHROOM_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_POISONOUS_MUSHROOM_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_GLOWSHROOM_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_HONEY_FUNGUS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    		}
     		if (ModList.get().isLoaded("forbidden_arcanus")) {
     			map.put(TALL_ARCANE_GOLD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_ARCANE_EDELWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -1083,6 +1264,15 @@ public class DDItems {
     			map.put(TALL_EDELWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_FUNGYSS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_MYSTERYWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    		}
+    		if (ModList.get().isLoaded("fruittrees")) {
+    			map.put(TALL_FT_CHERRY_SLIDING_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_FT_CHERRY_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_FT_CITRUS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);    			
+    		}
+    		if (ModList.get().isLoaded("gardens_of_the_dead")) {
+    			map.put(TALL_SOULBLIGHT_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_WHISTLECANE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);    			
     		}
     		if (ModList.get().isLoaded("goodending")) {
     			map.put(TALL_GE_CYPRESS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -1107,6 +1297,36 @@ public class DDItems {
     		if (ModList.get().isLoaded("malum")) {
     			map.put(TALL_RUNEWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_SOULWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    		}
+    		if (ModList.get().isLoaded("ms")) {
+    			map.put(TALL_MS_IRON_BAR_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_BAMBOO_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_CHERRY_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_GLOWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_HELLWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_MAPLE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_SILVERBELL_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_TIGERWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_WILLOW_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_SOUL_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_TINTED_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_BLACK_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_GREY_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_LIGHT_GREY_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_WHITE_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_RED_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_ORANGE_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_YELLOW_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_LIME_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_GREEN_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_CYAN_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_BLUE_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_PURPLE_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_MAGENTA_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_PINK_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_LIGHT_BLUE_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MS_BROWN_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
     		if (ModList.get().isLoaded("morecraft")) {
     			map.put(TALL_MORECRAFT_BONE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -1148,6 +1368,10 @@ public class DDItems {
     			map.put(TALL_PW_SILVERBELL_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_PW_TIGER_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_PW_WILLOW_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);    			
+    		}
+    		if (ModList.get().isLoaded("pyromancer")) {
+    			map.put(TALL_PYROWOOD_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_ROTTEN_PLANKS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
     		if (ModList.get().isLoaded("quark")) {
     			map.put(TALL_QUARK_AZALEA_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -1555,6 +1779,119 @@ public class DDItems {
     			map.put(TALL_MACAW_DARK_OAK_MYSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_MACAW_MANGROVE_MYSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(TALL_MACAW_CRIMSON_MYSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    		}
+    	}
+    	if (Compats.MANYIDEAS_DOORS_INSTALLED && event.getTab() == MANYIDEAS_TAB) {
+    		if (ModList.get().isLoaded("manyideas_doors")) {
+    			map.put(TALL_MANYIDEAS_COPPER_BAR_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_BARREL_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_BRICK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_CORRUGATED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_FACTORY_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_MODERN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_SHIP_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_SMOOTH_SANDSTONE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_COPPER_STEAMPUNK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+
+    			map.put(TALL_MANYIDEAS_IRON_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_DWARF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_FANTASY_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_LABORATORY_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_RUSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_SAFE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_SHIP_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_SPACE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_IRON_STONE_BRICK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+
+    			map.put(TALL_MANYIDEAS_ACACIA_BLANK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_CASSETTE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_FRENCH_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_FROSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_HEART_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_ORIGIN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_RUSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_SHOJI_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+
+    			map.put(TALL_MANYIDEAS_SPRUCE_BLANK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_CASSETTE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_FRENCH_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_FROSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_HEART_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_ORIGIN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_RUSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_SPRUCE_SHOJI_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+
+    			map.put(TALL_MANYIDEAS_BIRCH_BLANK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_CASSETTE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_FRENCH_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_FROSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_HEART_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_ORIGIN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_RUSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_BIRCH_SHOJI_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+
+    			map.put(TALL_MANYIDEAS_JUNGLE_BLANK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_CASSETTE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_FRENCH_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_FROSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_HEART_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_ORIGIN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_RUSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_JUNGLE_SHOJI_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+
+    			map.put(TALL_MANYIDEAS_ACACIA_BLANK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_CASSETTE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_FRENCH_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_FROSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_HEART_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_ORIGIN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_RUSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_ACACIA_SHOJI_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+
+    			map.put(TALL_MANYIDEAS_DARK_OAK_BLANK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_CASSETTE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_FRENCH_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_FROSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_HEART_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_ORIGIN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_RUSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_DARK_OAK_SHOJI_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+
+    			map.put(TALL_MANYIDEAS_CRIMSON_BLANK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_CASSETTE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_FRENCH_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_FROSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_HEART_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_ORIGIN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_RUSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_CRIMSON_SHOJI_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			
+    			map.put(TALL_MANYIDEAS_WARPED_BLANK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_BOOKSHELF_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_CASSETTE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_FRENCH_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_FROSTED_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_GLASS_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_HEART_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_ORIGIN_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_RUSTIC_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(TALL_MANYIDEAS_WARPED_SHOJI_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
     	}
     }

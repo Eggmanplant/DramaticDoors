@@ -22,12 +22,16 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 
 @Mixin(FenceGateBlock.class)
-public class FenceGateBlockMixin
+public class FenceGateBlockMixin extends Block
 {
+	public FenceGateBlockMixin(Properties properties) {
+		super(properties); // Doesn't do anything here.
+	}
+	
 	private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	@Inject(at = @At("TAIL"), method = "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundEvent;)V")
-	private void enhanceConstructor(BlockBehaviour.Properties properties, SoundEvent closeSound, SoundEvent openSound, CallbackInfo callback) {
+	private void enhanceConstructor(BlockBehaviour.Properties properties, SoundEvent closeEvent, SoundEvent openEvent, CallbackInfo callback) {
 		((FenceGateBlock)(Object)this).registerDefaultState(((FenceGateBlock) (Object) this).defaultBlockState().setValue(WATERLOGGED, false));
 	}
 
@@ -49,7 +53,7 @@ public class FenceGateBlockMixin
 		callback.cancel();
 	}
 
-	public FluidState m_5888_(BlockState state) {
+	public FluidState getFluidState(BlockState state) {
 		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
 	}
 	

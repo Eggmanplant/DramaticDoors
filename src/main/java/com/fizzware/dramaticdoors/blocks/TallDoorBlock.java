@@ -74,14 +74,11 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     protected final SoundEvent openSound;
 
     public TallDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
-        super(Properties.copy(from));
-        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER));
-        this.closeSound = closeSound;
-        this.openSound = openSound;
+        this(from, closeSound, openSound, null);
     }
     
-    public TallDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound, FeatureFlag flag) {
-        super(Properties.copy(from).requiredFeatures(flag));
+    public TallDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound, @Nullable FeatureFlag flag) {
+    	super(flag != null ? Properties.copy(from).requiredFeatures(flag) : Properties.copy(from));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER));
         this.closeSound = closeSound;
         this.openSound = openSound;
@@ -98,7 +95,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             }
         } else {
             if (tripleblockpart == TripleBlockPart.LOWER && facing == Direction.DOWN && !stateIn.canSurvive(level, currentPos)) {
-                return level.getFluidState(currentPos).getType() == Fluids.WATER ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState();
+                return Blocks.AIR.defaultBlockState();
             } else {
                 return super.updateShape(stateIn, facing, facingState, level, currentPos, facingPos);
             }
@@ -221,6 +218,9 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     
 	@Override
 	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+		if (this != DDBlocks.TALL_TOOTH_DOOR.get()) {
+			return; // Should stop the 'dancing' doors.
+		}
 		if (!level.isClientSide) {
 			state = state.cycle(OPEN);
 			level.setBlock(pos, state, 10);
@@ -255,6 +255,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 			level.setBlock(pos, state.setValue(OPEN, Boolean.valueOf(open)), 10);
 			this.playSound(entity, level, pos, open);
 			level.gameEvent(entity, open ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+			tryOpenDoubleDoor(level, state, pos);
 		}
  	}
     
@@ -378,7 +379,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     
     //Double Doors Compatibility
 	public static void tryOpenDoubleDoor(Level world, BlockState state, BlockPos pos) {
-        if (Compats.DOUBLE_DOORS_INSTALLED || QuarkCompat.hasQuarkDoubleDoorsModule()) {
+        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.MANYIDEAS_DOORS_INSTALLED || QuarkCompat.hasQuarkDoubleDoorsModule()) {
             Direction direction = state.getValue(TallDoorBlock.FACING);
             boolean isOpen = state.getValue(TallDoorBlock.OPEN);
             DoorHingeSide isMirrored = state.getValue(TallDoorBlock.HINGE);

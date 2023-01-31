@@ -3,13 +3,13 @@ package com.fizzware.dramaticdoors;
 public class DDNames
 {
 	//Vanilla
+    public static final String TALL_IRON = "tall_iron_door";
     public static final String TALL_OAK = "tall_oak_door";
     public static final String TALL_SPRUCE = "tall_spruce_door";
     public static final String TALL_BIRCH = "tall_birch_door";
     public static final String TALL_JUNGLE = "tall_jungle_door";
     public static final String TALL_ACACIA = "tall_acacia_door";
     public static final String TALL_DARK_OAK = "tall_dark_oak_door";
-    public static final String TALL_IRON = "tall_iron_door";
     public static final String TALL_MANGROVE = "tall_mangrove_door";
     public static final String TALL_BAMBOO = "tall_bamboo_door";
     public static final String TALL_CRIMSON = "tall_crimson_door";
@@ -139,7 +139,6 @@ public class DDNames
     //Enhanced Mushrooms
     public static final String TALL_BROWN_MUSHROOM = "tall_brown_mushroom_door";
     public static final String TALL_RED_MUSHROOM = "tall_red_mushroom_door";
-    public static final String TALL_GLOWSHROOM = "tall_glowshroom_door";
 
     //Abundant Atmosphere
     public static final String TALL_ASH = "tall_ash_door";
@@ -273,6 +272,12 @@ public class DDNames
     public static final String TALL_EC_WAXED_WEATHERED_COPPER = "tall_ec_waxed_weathered_copper_door";
     public static final String TALL_EC_WAXED_OXIDIZED_COPPER = "tall_ec_waxed_oxidized_copper_door";
     
+    //Extended Mushrooms
+    public static final String TALL_MUSHROOM = "tall_mushroom_door";
+    public static final String TALL_GLOWSHROOM = "tall_glowshroom_door";
+    public static final String TALL_POISONOUS_MUSHROOM = "tall_poisonous_mushroom_door";
+    public static final String TALL_HONEY_FUNGUS = "tall_honey_fungus_door";
+    
     //Forbidden & Arcanus
     public static final String TALL_ARCANE_GOLD = "tall_arcane_gold_door";
     public static final String TALL_ARCANE_EDELWOOD = "tall_arcane_edelwood_door";
@@ -280,6 +285,15 @@ public class DDNames
     public static final String TALL_EDELWOOD = "tall_edelwood_door";
     public static final String TALL_FUNGYSS = "tall_fungyss_door";
     public static final String TALL_MYSTERYWOOD = "tall_mysterywood_door";
+    
+    //Fruit Trees
+    public static final String TALL_FT_CHERRY = "tall_ft_cherry_door";
+    public static final String TALL_FT_CHERRY_SLIDING = "tall_ft_cherry_sliding_door";
+    public static final String TALL_FT_CITRUS = "tall_ft_citrus_door";
+    
+    //Gardens of the Dead
+    public static final String TALL_SOULBLIGHT = "tall_soulblight_door";
+    public static final String TALL_WHISTLECANE = "tall_whistlecane_door";
     
     //Good Ending
     public static final String TALL_GE_CYPRESS = "tall_ge_cypress_door";
@@ -304,6 +318,36 @@ public class DDNames
     //Malum
     public static final String TALL_RUNEWOOD = "tall_runewood_door";
     public static final String TALL_SOULWOOD = "tall_soulwood_door";
+    
+    //Mo'Shiz
+    public static final String TALL_MS_IRON_BAR = "tall_ms_iron_bar_door";
+    public static final String TALL_MS_BAMBOO = "tall_ms_bamboo_door";
+    public static final String TALL_MS_CHERRY = "tall_ms_cherry_door";
+    public static final String TALL_MS_GLOWOOD = "tall_ms_glowood_door";
+    public static final String TALL_MS_HELLWOOD = "tall_ms_hellwood_door";
+    public static final String TALL_MS_MAPLE = "tall_ms_maple_door";
+    public static final String TALL_MS_SILVERBELL = "tall_ms_silverbell_door";
+    public static final String TALL_MS_TIGERWOOD = "tall_ms_tigerwood_door";
+    public static final String TALL_MS_WILLOW = "tall_ms_willow_door";
+    public static final String TALL_MS_GLASS = "tall_ms_glass_door";
+    public static final String TALL_MS_SOUL_GLASS = "tall_ms_soul_glass_door";
+    public static final String TALL_MS_TINTED_GLASS = "tall_ms_tinted_glass_door";
+    public static final String TALL_MS_BLACK_GLASS = "tall_ms_black_glass_door";
+    public static final String TALL_MS_GREY_GLASS = "tall_ms_grey_glass_door";
+    public static final String TALL_MS_LIGHT_GREY_GLASS = "tall_ms_light_grey_glass_door";
+    public static final String TALL_MS_WHITE_GLASS = "tall_ms_white_glass_door";
+    public static final String TALL_MS_RED_GLASS = "tall_ms_red_glass_door";
+    public static final String TALL_MS_ORANGE_GLASS = "tall_ms_orange_glass_door";
+    public static final String TALL_MS_YELLOW_GLASS = "tall_ms_yellow_glass_door";
+    public static final String TALL_MS_LIME_GLASS = "tall_ms_lime_glass_door";
+    public static final String TALL_MS_GREEN_GLASS = "tall_ms_green_glass_door";
+    public static final String TALL_MS_CYAN_GLASS = "tall_ms_cyan_glass_door";
+    public static final String TALL_MS_BLUE_GLASS = "tall_ms_blue_glass_door";
+    public static final String TALL_MS_PURPLE_GLASS = "tall_ms_purple_glass_door";
+    public static final String TALL_MS_MAGENTA_GLASS = "tall_ms_magenta_glass_door";
+    public static final String TALL_MS_PINK_GLASS = "tall_ms_pink_glass_door";
+    public static final String TALL_MS_LIGHT_BLUE_GLASS = "tall_ms_light_blue_glass_door";
+    public static final String TALL_MS_BROWN_GLASS = "tall_ms_brown_glass_door";
     
     //Morecraft
     public static final String TALL_MORECRAFT_BONE = "tall_morecraft_bone_door";
@@ -346,7 +390,12 @@ public class DDNames
     public static final String TALL_PW_TIGER = "tall_pw_tiger_door";
     public static final String TALL_PW_WILLOW = "tall_pw_willow_door";
     
+    //Pyromancer
+    public static final String TALL_PYROWOOD = "tall_pyrowood_door";
+    public static final String TALL_ROTTEN_PLANKS = "tall_rotten_planks_door";
+    
     //Quark
+    public static final String TALL_QUARK_ANCIENT = "tall_quark_ancient_door";
     public static final String TALL_QUARK_AZALEA = "tall_quark_azalea_door";
     public static final String TALL_QUARK_BLOSSOM = "tall_quark_blossom_door";
     
@@ -757,4 +806,126 @@ public class DDNames
     public static final String TALL_MACAW_OAK_TROPICAL = "tall_macaw_oak_tropical_door";
     public static final String TALL_MACAW_SPRUCE_TROPICAL = "tall_macaw_spruce_tropical_door";
     public static final String TALL_MACAW_WARPED_TROPICAL = "tall_macaw_warped_tropical_door";
+    
+    //ManyIdeas Doors
+    public static final String TALL_MANYIDEAS_COPPER_BAR = "tall_manyideas_copper_bar_door";
+    public static final String TALL_MANYIDEAS_COPPER_BARREL = "tall_manyideas_copper_barrel_door";
+    public static final String TALL_MANYIDEAS_COPPER_BRICK = "tall_manyideas_copper_brick_door";
+    public static final String TALL_MANYIDEAS_COPPER_CORRUGATED = "tall_manyideas_copper_corrugated_door";
+    public static final String TALL_MANYIDEAS_COPPER_FACTORY = "tall_manyideas_copper_factory_door";
+    public static final String TALL_MANYIDEAS_COPPER_GLASS = "tall_manyideas_copper_glass_door";
+    public static final String TALL_MANYIDEAS_COPPER_MODERN = "tall_manyideas_copper_modern_door";
+    public static final String TALL_MANYIDEAS_COPPER_SHIP = "tall_manyideas_copper_ship_door";
+    public static final String TALL_MANYIDEAS_COPPER_SMOOTH_SANDSTONE = "tall_manyideas_copper_smooth_sandstone_door";
+    public static final String TALL_MANYIDEAS_COPPER_STEAMPUNK = "tall_manyideas_copper_steampunk_door";
+    
+    public static final String TALL_MANYIDEAS_IRON_BOOKSHELF = "tall_manyideas_iron_bookshelf_door";
+    public static final String TALL_MANYIDEAS_IRON_DWARF = "tall_manyideas_iron_dwarf_door";
+    public static final String TALL_MANYIDEAS_IRON_FANTASY = "tall_manyideas_iron_fantasy_door";
+    public static final String TALL_MANYIDEAS_IRON_GLASS = "tall_manyideas_iron_glass_door";
+    public static final String TALL_MANYIDEAS_IRON_LABORATORY = "tall_manyideas_iron_laboratory_door";
+    public static final String TALL_MANYIDEAS_IRON_RUSTED = "tall_manyideas_iron_rusted_door";
+    public static final String TALL_MANYIDEAS_IRON_SAFE = "tall_manyideas_iron_safe_door";
+    public static final String TALL_MANYIDEAS_IRON_SHIP = "tall_manyideas_iron_ship_door";
+    public static final String TALL_MANYIDEAS_IRON_SPACE = "tall_manyideas_iron_space_door";
+    public static final String TALL_MANYIDEAS_IRON_STONE_BRICK = "tall_manyideas_iron_stone_brick_door";
+
+    public static final String TALL_MANYIDEAS_OAK_BLANK = "tall_manyideas_oak_blank_door";
+    public static final String TALL_MANYIDEAS_OAK_BOOKSHELF = "tall_manyideas_oak_bookshelf_door";
+    public static final String TALL_MANYIDEAS_OAK_CASSETTE = "tall_manyideas_oak_cassette_door";
+    public static final String TALL_MANYIDEAS_OAK_FRENCH = "tall_manyideas_oak_french_door";
+    public static final String TALL_MANYIDEAS_OAK_FROSTED = "tall_manyideas_oak_frosted_door";
+    public static final String TALL_MANYIDEAS_OAK_GLASS = "tall_manyideas_oak_glass_door";
+    public static final String TALL_MANYIDEAS_OAK_HEART = "tall_manyideas_oak_heart_door";
+    public static final String TALL_MANYIDEAS_OAK_ORIGIN = "tall_manyideas_oak_origin_door";
+    public static final String TALL_MANYIDEAS_OAK_RUSTIC = "tall_manyideas_oak_rustic_door";
+    public static final String TALL_MANYIDEAS_OAK_SHOJI = "tall_manyideas_oak_shoji_door";
+    
+    public static final String TALL_MANYIDEAS_SPRUCE_BLANK = "tall_manyideas_spruce_blank_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_BOOKSHELF = "tall_manyideas_spruce_bookshelf_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_CASSETTE = "tall_manyideas_spruce_cassette_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_FRENCH = "tall_manyideas_spruce_french_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_FROSTED = "tall_manyideas_spruce_frosted_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_GLASS = "tall_manyideas_spruce_glass_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_HEART = "tall_manyideas_spruce_heart_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_ORIGIN = "tall_manyideas_spruce_origin_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_RUSTIC = "tall_manyideas_spruce_rustic_door";
+    public static final String TALL_MANYIDEAS_SPRUCE_SHOJI = "tall_manyideas_spruce_shoji_door";
+
+    public static final String TALL_MANYIDEAS_BIRCH_BLANK = "tall_manyideas_birch_blank_door";
+    public static final String TALL_MANYIDEAS_BIRCH_BOOKSHELF = "tall_manyideas_birch_bookshelf_door";
+    public static final String TALL_MANYIDEAS_BIRCH_CASSETTE = "tall_manyideas_birch_cassette_door";
+    public static final String TALL_MANYIDEAS_BIRCH_FRENCH = "tall_manyideas_birch_french_door";
+    public static final String TALL_MANYIDEAS_BIRCH_FROSTED = "tall_manyideas_birch_frosted_door";
+    public static final String TALL_MANYIDEAS_BIRCH_GLASS = "tall_manyideas_birch_glass_door";
+    public static final String TALL_MANYIDEAS_BIRCH_HEART = "tall_manyideas_birch_heart_door";
+    public static final String TALL_MANYIDEAS_BIRCH_ORIGIN = "tall_manyideas_birch_origin_door";
+    public static final String TALL_MANYIDEAS_BIRCH_RUSTIC = "tall_manyideas_birch_rustic_door";
+    public static final String TALL_MANYIDEAS_BIRCH_SHOJI = "tall_manyideas_birch_shoji_door";
+
+    public static final String TALL_MANYIDEAS_JUNGLE_BLANK = "tall_manyideas_jungle_blank_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_BOOKSHELF = "tall_manyideas_jungle_bookshelf_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_CASSETTE = "tall_manyideas_jungle_cassette_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_FRENCH = "tall_manyideas_jungle_french_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_FROSTED = "tall_manyideas_jungle_frosted_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_GLASS = "tall_manyideas_jungle_glass_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_HEART = "tall_manyideas_jungle_heart_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_ORIGIN = "tall_manyideas_jungle_origin_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_RUSTIC = "tall_manyideas_jungle_rustic_door";
+    public static final String TALL_MANYIDEAS_JUNGLE_SHOJI = "tall_manyideas_jungle_shoji_door";
+    
+    public static final String TALL_MANYIDEAS_ACACIA_BLANK = "tall_manyideas_acacia_blank_door";
+    public static final String TALL_MANYIDEAS_ACACIA_BOOKSHELF = "tall_manyideas_acacia_bookshelf_door";
+    public static final String TALL_MANYIDEAS_ACACIA_CASSETTE = "tall_manyideas_acacia_cassette_door";
+    public static final String TALL_MANYIDEAS_ACACIA_FRENCH = "tall_manyideas_acacia_french_door";
+    public static final String TALL_MANYIDEAS_ACACIA_FROSTED = "tall_manyideas_acacia_frosted_door";
+    public static final String TALL_MANYIDEAS_ACACIA_GLASS = "tall_manyideas_acacia_glass_door";
+    public static final String TALL_MANYIDEAS_ACACIA_HEART = "tall_manyideas_acacia_heart_door";
+    public static final String TALL_MANYIDEAS_ACACIA_ORIGIN = "tall_manyideas_acacia_origin_door";
+    public static final String TALL_MANYIDEAS_ACACIA_RUSTIC = "tall_manyideas_acacia_rustic_door";
+    public static final String TALL_MANYIDEAS_ACACIA_SHOJI = "tall_manyideas_acacia_shoji_door";
+    
+    public static final String TALL_MANYIDEAS_DARK_OAK_BLANK = "tall_manyideas_dark_oak_blank_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_BOOKSHELF = "tall_manyideas_dark_oak_bookshelf_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_CASSETTE = "tall_manyideas_dark_oak_cassette_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_FRENCH = "tall_manyideas_dark_oak_french_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_FROSTED = "tall_manyideas_dark_oak_frosted_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_GLASS = "tall_manyideas_dark_oak_glass_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_HEART = "tall_manyideas_dark_oak_heart_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_ORIGIN = "tall_manyideas_dark_oak_origin_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_RUSTIC = "tall_manyideas_dark_oak_rustic_door";
+    public static final String TALL_MANYIDEAS_DARK_OAK_SHOJI = "tall_manyideas_dark_oak_shoji_door";
+
+    public static final String TALL_MANYIDEAS_MANGROVE_BLANK = "tall_manyideas_mangrove_blank_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_BOOKSHELF = "tall_manyideas_mangrove_bookshelf_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_CASSETTE = "tall_manyideas_mangrove_cassette_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_FRENCH = "tall_manyideas_mangrove_french_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_FROSTED = "tall_manyideas_mangrove_frosted_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_GLASS = "tall_manyideas_mangrove_glass_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_HEART = "tall_manyideas_mangrove_heart_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_ORIGIN = "tall_manyideas_mangrove_origin_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_RUSTIC = "tall_manyideas_mangrove_rustic_door";
+    public static final String TALL_MANYIDEAS_MANGROVE_SHOJI = "tall_manyideas_mangrove_shoji_door";
+
+    public static final String TALL_MANYIDEAS_CRIMSON_BLANK = "tall_manyideas_crimson_blank_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_BOOKSHELF = "tall_manyideas_crimson_bookshelf_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_CASSETTE = "tall_manyideas_crimson_cassette_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_FRENCH = "tall_manyideas_crimson_french_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_FROSTED = "tall_manyideas_crimson_frosted_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_GLASS = "tall_manyideas_crimson_glass_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_HEART = "tall_manyideas_crimson_heart_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_ORIGIN = "tall_manyideas_crimson_origin_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_RUSTIC = "tall_manyideas_crimson_rustic_door";
+    public static final String TALL_MANYIDEAS_CRIMSON_SHOJI = "tall_manyideas_crimson_shoji_door";
+
+    public static final String TALL_MANYIDEAS_WARPED_BLANK = "tall_manyideas_warped_blank_door";
+    public static final String TALL_MANYIDEAS_WARPED_BOOKSHELF = "tall_manyideas_warped_bookshelf_door";
+    public static final String TALL_MANYIDEAS_WARPED_CASSETTE = "tall_manyideas_warped_cassette_door";
+    public static final String TALL_MANYIDEAS_WARPED_FRENCH = "tall_manyideas_warped_french_door";
+    public static final String TALL_MANYIDEAS_WARPED_FROSTED = "tall_manyideas_warped_frosted_door";
+    public static final String TALL_MANYIDEAS_WARPED_GLASS = "tall_manyideas_warped_glass_door";
+    public static final String TALL_MANYIDEAS_WARPED_HEART = "tall_manyideas_warped_heart_door";
+    public static final String TALL_MANYIDEAS_WARPED_ORIGIN = "tall_manyideas_warped_origin_door";
+    public static final String TALL_MANYIDEAS_WARPED_RUSTIC = "tall_manyideas_warped_rustic_door";
+    public static final String TALL_MANYIDEAS_WARPED_SHOJI = "tall_manyideas_warped_shoji_door";
 }
