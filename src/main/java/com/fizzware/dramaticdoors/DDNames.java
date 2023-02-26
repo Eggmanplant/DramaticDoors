@@ -122,6 +122,9 @@ public class DDNames
     public static final String TALL_ELDER = "tall_elder_door";
     public static final String TALL_JUNIPER = "tall_juniper_door";
     
+    //Bewitchment Plus
+    public static final String TALL_YEW = "tall_yew_door";
+    
     //Biomancy
     public static final String TALL_FLESH = "tall_flesh_door";
     public static final String TALL_FULL_FLESH = "tall_full_flesh_door";

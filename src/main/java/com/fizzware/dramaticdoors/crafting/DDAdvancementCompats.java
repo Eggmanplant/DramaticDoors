@@ -74,6 +74,9 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_ELDER, new ResourceLocation("bewitchment", "elder_door"));
 			createRecipeAdvancementJson(DDNames.TALL_JUNIPER, new ResourceLocation("bewitchment", "juniper_door"));
 		}
+		if (FabricLoader.getInstance().isModLoaded("bwplus")) {
+			createRecipeAdvancementJson(DDNames.TALL_YEW, new ResourceLocation("bwplus", "yew_door"));
+		}
 		if (FabricLoader.getInstance().isModLoaded("biomancy")) {
 			createRecipeAdvancementJson(DDNames.TALL_FLESH, new ResourceLocation("biomancy", "flesh_door"));
 			createRecipeAdvancementJson(DDNames.TALL_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));

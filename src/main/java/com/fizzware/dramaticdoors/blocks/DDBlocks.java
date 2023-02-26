@@ -78,6 +78,9 @@ public class DDBlocks {
     public static final Block TALL_ELDER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "elder_door")));
     public static final Block TALL_JUNIPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "juniper_door")));
 
+    // Bewitchment Plus
+    public static final Block TALL_YEW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bwplus", "yew_door")));
+    
     // Biomancy
     public static final Block TALL_FLESH_DOOR = new TallFleshDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "flesh_door")));
     public static final Block TALL_FULL_FLESH_DOOR = new TallFullFleshDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "full_flesh_door")));
@@ -654,6 +657,8 @@ public class DDBlocks {
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DRAGONS_BLOOD), TALL_DRAGONS_BLOOD_DOOR);
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ELDER), TALL_ELDER_DOOR);
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_JUNIPER), TALL_JUNIPER_DOOR);
+        
+        Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_YEW), TALL_YEW_DOOR);
 
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ANCIENT_OAK), TALL_ANCIENT_OAK_DOOR);
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLIGHTED_BALSA), TALL_BLIGHTED_BALSA_DOOR);

@@ -81,6 +81,8 @@ public class DDItems {
     public static final Item TALL_ELDER_DOOR = new TallDoorItem(DDBlocks.TALL_ELDER_DOOR, new FabricItemSettings().group(conditionalTabProperties("bewitchment", DramaticDoors.DD_MAIN_TAB)));
     public static final Item TALL_JUNIPER_DOOR = new TallDoorItem(DDBlocks.TALL_JUNIPER_DOOR, new FabricItemSettings().group(conditionalTabProperties("bewitchment", DramaticDoors.DD_MAIN_TAB)));
     
+    public static final Item TALL_YEW_DOOR = new TallDoorItem(DDBlocks.TALL_YEW_DOOR, new FabricItemSettings().group(conditionalTabProperties("bwplus", DramaticDoors.DD_MAIN_TAB)));
+    
     // Biomancy
     public static final Item TALL_FLESH_DOOR = new TallDoorItem(DDBlocks.TALL_FLESH_DOOR, new FabricItemSettings().group(conditionalTabProperties("biomancy", DramaticDoors.DD_MAIN_TAB)));
     public static final Item TALL_FULL_FLESH_DOOR = new TallDoorItem(DDBlocks.TALL_FULL_FLESH_DOOR, new FabricItemSettings().group(conditionalTabProperties("biomancy", DramaticDoors.DD_MAIN_TAB)));
@@ -657,6 +659,8 @@ public class DDItems {
 		Registry.register(Registry.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DRAGONS_BLOOD), TALL_DRAGONS_BLOOD_DOOR);
 		Registry.register(Registry.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ELDER), TALL_ELDER_DOOR);
 		Registry.register(Registry.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_JUNIPER), TALL_JUNIPER_DOOR);
+		
+		Registry.register(Registry.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_YEW), TALL_YEW_DOOR);
 		
         Registry.register(Registry.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ANCIENT_OAK), TALL_ANCIENT_OAK_DOOR);
         Registry.register(Registry.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLIGHTED_BALSA), TALL_BLIGHTED_BALSA_DOOR);

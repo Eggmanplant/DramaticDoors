@@ -62,6 +62,8 @@ public class DDFuels
 		FuelRegistry.INSTANCE.add(DDItems.TALL_ELDER_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_JUNIPER_DOOR, 300);
 
+		FuelRegistry.INSTANCE.add(DDItems.TALL_YEW_DOOR, 300);
+
 		FuelRegistry.INSTANCE.add(DDItems.TALL_BE_BAMBOO_DOOR, 300);
 		FuelRegistry.INSTANCE.add(DDItems.TALL_BE_DRY_BAMBOO_DOOR, 300);
 
