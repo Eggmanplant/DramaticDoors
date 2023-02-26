@@ -16,7 +16,7 @@ For issues:
 
 **Important Information**
 Minecraft Version: **[Here]**
-Forge Version: **[Here]**
+Mod Loader System: **[Here]** (Forge or Fabric)
 DramaticDoors Version: **[Here]**
 
 **Describe the bug**
