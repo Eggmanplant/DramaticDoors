@@ -12,14 +12,10 @@ import net.fabricmc.loader.api.FabricLoader;
 
 public class DDMixinConfig implements IMixinConfigPlugin
 {
-	private boolean waterloggableDoors = true;
-	private boolean waterloggableFenceGates = true;
 
 	@Override
 	public void onLoad(String mixinPackage) {
 		DDConfig.initializeConfigs();
-		waterloggableDoors = DDConfig.CONFIG.getOrDefault("dramaticdoors.waterloggable_doors", true);
-		waterloggableFenceGates = DDConfig.CONFIG.getOrDefault("dramaticdoors.waterloggable_fence_gates", true);
 	}
 
 	@Override
@@ -30,13 +26,13 @@ public class DDMixinConfig implements IMixinConfigPlugin
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {
-			return waterloggableDoors;
+			return DDConfig.waterloggableDoors;
 		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.FenceGateBlockMixin")) {
-			return waterloggableFenceGates;
+			return DDConfig.waterloggableFenceGates;
 		}
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.IronGateBlockMixin")) {
-			return waterloggableFenceGates && FabricLoader.getInstance().isModLoaded("supplementaries");
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.CPlusFenceGateBlockMixin")) {
+			return DDConfig.waterloggableFenceGates && FabricLoader.getInstance().isModLoaded("consistency_plus");
 		}
 		return true;
 	}

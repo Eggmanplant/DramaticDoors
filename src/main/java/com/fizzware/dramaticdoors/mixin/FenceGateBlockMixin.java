@@ -6,6 +6,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import com.fizzware.dramaticdoors.DramaticDoors;
+import com.fizzware.dramaticdoors.config.DDConfig;
+
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -33,31 +36,47 @@ public class FenceGateBlockMixin extends Block implements SimpleWaterloggedBlock
 
 	@Inject(at = @At("TAIL"), method = "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V")
 	private void enhanceConstructor(BlockBehaviour.Properties properties, CallbackInfo callback) {
-		((FenceGateBlock)(Object)this).registerDefaultState(((FenceGateBlock) (Object) this).defaultBlockState().setValue(WATERLOGGED, false));
+		if (((FenceGateBlock)(Object)this).defaultBlockState().hasProperty(WATERLOGGED)) {
+			((FenceGateBlock)(Object)this).registerDefaultState(((FenceGateBlock) (Object) this).defaultBlockState().setValue(WATERLOGGED, false));
+		}
 	}
 
 	@Inject(at = @At("TAIL"), method = "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V")
 	protected void injectBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder, CallbackInfo callback) {
-		if (!FabricLoader.getInstance().isModLoaded("fixedwaterlogging")) {
+    	if (FabricLoader.getInstance().isModLoaded("supplementaries") && !FabricLoader.getInstance().isModLoaded("statement")) {
+    		if (DDConfig.waterloggableFenceGates) {
+    			DramaticDoors.LOGGER.warn("You are using Dramatic Doors and Supplementaries together while having waterlogged fence gates enabled without having Statement mod installed."); 
+    			DramaticDoors.LOGGER.warn("Statement mod is HIGHLY recommended for better compatiblity! Grab the mod here: https://www.curseforge.com/minecraft/mc-mods/statement");
+    			DramaticDoors.LOGGER.warn("Alternatively, you can disable fence gate waterlogging within dramaticdoors-fabric config file located within config folder.");
+    		}
+    	}
+		if (!FabricLoader.getInstance().isModLoaded("fixedwaterlogging") && !FabricLoader.getInstance().isModLoaded("statement")) {
 			builder.add(WATERLOGGED);
 		}
 	}
 
 	@Inject(at = @At("HEAD"), method = "getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;", cancellable = true)
 	private void injectPlacementState(BlockPlaceContext context, CallbackInfoReturnable<BlockState> callback) {
-		BlockPos blockpos = context.getClickedPos();
-		Level level = context.getLevel();
-		boolean flag = level.hasNeighborSignal(blockpos);
-		boolean waterfilled = level.getFluidState(blockpos).getType() == Fluids.WATER;
-		Direction direction = context.getHorizontalDirection();
-		Direction.Axis direction$axis = direction.getAxis();
-		boolean flag1 = direction$axis == Direction.Axis.Z && (((FenceGateBlock)(Object)this).isWall(level.getBlockState(blockpos.west())) || ((FenceGateBlock)(Object)this).isWall(level.getBlockState(blockpos.east()))) || direction$axis == Direction.Axis.X && (((FenceGateBlock)(Object)this).isWall(level.getBlockState(blockpos.north())) || ((FenceGateBlock)(Object)this).isWall(level.getBlockState(blockpos.south())));
-		callback.setReturnValue(((FenceGateBlock)(Object)this).defaultBlockState().setValue(FenceGateBlock.FACING, direction).setValue(FenceGateBlock.OPEN, Boolean.valueOf(flag)).setValue(FenceGateBlock.POWERED, Boolean.valueOf(flag)).setValue(FenceGateBlock.IN_WALL, Boolean.valueOf(flag1)).setValue(WATERLOGGED, waterfilled));
-		callback.cancel();
+		if (((FenceGateBlock)(Object)this).defaultBlockState().hasProperty(WATERLOGGED)) {
+			BlockPos blockpos = context.getClickedPos();
+			Level level = context.getLevel();
+			boolean flag = level.hasNeighborSignal(blockpos);
+			boolean waterfilled = level.getFluidState(blockpos).getType() == Fluids.WATER;
+			Direction direction = context.getHorizontalDirection();
+			Direction.Axis direction$axis = direction.getAxis();
+			boolean flag1 = direction$axis == Direction.Axis.Z && (((FenceGateBlock)(Object)this).isWall(level.getBlockState(blockpos.west())) || ((FenceGateBlock)(Object)this).isWall(level.getBlockState(blockpos.east()))) || direction$axis == Direction.Axis.X && (((FenceGateBlock)(Object)this).isWall(level.getBlockState(blockpos.north())) || ((FenceGateBlock)(Object)this).isWall(level.getBlockState(blockpos.south())));
+			callback.setReturnValue(((FenceGateBlock)(Object)this).defaultBlockState().setValue(FenceGateBlock.FACING, direction).setValue(FenceGateBlock.OPEN, Boolean.valueOf(flag)).setValue(FenceGateBlock.POWERED, Boolean.valueOf(flag)).setValue(FenceGateBlock.IN_WALL, Boolean.valueOf(flag1)).setValue(WATERLOGGED, waterfilled));
+			callback.cancel();
+		}
 	}
 	
 	public FluidState getFluidState(BlockState state) {
-		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
+		if (state.hasProperty(WATERLOGGED)) {
+			return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
+		}
+		else {
+			return Fluids.EMPTY.defaultFluidState();
+		}
 	}
 	
 }

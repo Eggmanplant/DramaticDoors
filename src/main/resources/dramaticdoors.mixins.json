@@ -9,7 +9,7 @@
     "RecipeManagerMixin",
     "DoorBlockMixin",
     "FenceGateBlockMixin",
-    "IronGateBlockMixin",
+    "CPlusFenceGateBlockMixin",
     "LandPathNodeMakerMixin",
     "DoorInteractGoalMixin",
     "OpenDoorsTaskMixin",

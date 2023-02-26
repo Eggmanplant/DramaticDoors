@@ -109,6 +109,8 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_ELDER_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_JUNIPER_DOOR, RenderType.cutout());
 
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_YEW_DOOR, RenderType.cutout());
+
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_FLESH_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_FULL_FLESH_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_FLESHKIN_DOOR, RenderType.cutout());
@@ -123,6 +125,9 @@ public class RenderHandler implements ClientModInitializer
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHARM_AZALEA_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHARM_EBONY_DOOR, RenderType.cutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_SCORCHED_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_UMBRAL_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_AZULE_AZALEA_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_BRIGHT_AZALEA_DOOR, RenderType.cutout());
@@ -180,6 +185,16 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_NETHERITE_DOOR, RenderType.cutout());
 		
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_RUBBER_DOOR, RenderType.cutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_CYPRESS_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_HEMLOCK_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_JAPANESE_MAPLE_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_RAINBOW_EUCALYPTUS_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_REDWOOD_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_RUBBER_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_SAKURA_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_WILLOW_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TERRESTRIA_YUCCA_PALM_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TRAVERSE_FIR_DOOR, RenderType.cutout());
 
@@ -368,6 +383,9 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_CHIPPED_WARPED_DOOR_20, RenderType.cutout());
 		
 		// Set up rendering for all the Macaw doors.
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_STORE_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_SLIDING_GLASS_DOOR, RenderType.cutout());
+		
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_JAIL_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_METAL_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_METAL_HOSPITAL_DOOR, RenderType.cutout());
@@ -376,6 +394,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_METAL_WINDOWED_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_BARN_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_BARN_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_BARN_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_BARN_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_BARN_DOOR, RenderType.cutout());
@@ -386,6 +405,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_BARN_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_BARN_GLASS_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_BARN_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_BARN_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_BARN_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR, RenderType.cutout());
@@ -396,6 +416,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_BARN_GLASS_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_STABLE_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_STABLE_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_STABLE_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_STABLE_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_STABLE_DOOR, RenderType.cutout());
@@ -406,6 +427,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_STABLE_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_STABLE_HEAD_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_STABLE_HEAD_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR, RenderType.cutout());
@@ -416,6 +438,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_STABLE_HEAD_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_GLASS_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_GLASS_DOOR, RenderType.cutout());
@@ -426,6 +449,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_GLASS_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_BARK_GLASS_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_BARK_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_BARK_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_STEM_GLASS_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR, RenderType.cutout());
@@ -436,6 +460,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_STEM_GLASS_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_MODERN_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_MODERN_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_MODERN_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_MODERN_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_MODERN_DOOR, RenderType.cutout());
@@ -446,6 +471,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_MODERN_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_CLASSIC_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_CLASSIC_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_CLASSIC_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_CLASSIC_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_CLASSIC_DOOR, RenderType.cutout());
@@ -455,6 +481,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_CLASSIC_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_COTTAGE_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_COTTAGE_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_COTTAGE_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_COTTAGE_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_COTTAGE_DOOR, RenderType.cutout());
@@ -464,6 +491,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_COTTAGE_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_PAPER_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_PAPER_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_PAPER_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_PAPER_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_JUNGLE_PAPER_DOOR, RenderType.cutout());
@@ -473,6 +501,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_PAPER_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_BEACH_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_BEACH_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_BEACH_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_BEACH_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_BEACH_DOOR, RenderType.cutout());
@@ -481,6 +510,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_SPRUCE_BEACH_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_BEACH_DOOR, RenderType.cutout());
 
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_TROPICAL_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_TROPICAL_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_TROPICAL_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_TROPICAL_DOOR, RenderType.cutout());
@@ -491,6 +521,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_TROPICAL_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_FOUR_PANEL_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_FOUR_PANEL_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR, RenderType.cutout());
@@ -500,6 +531,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_FOUR_PANEL_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_SWAMP_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_SWAMP_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_SWAMP_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_SWAMP_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_SWAMP_DOOR, RenderType.cutout());
@@ -508,7 +540,18 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_SPRUCE_SWAMP_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_SWAMP_DOOR, RenderType.cutout());
 		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_BAMBOO_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_BAMBOO_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_BAMBOO_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_BAMBOO_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_JUNGLE_BAMBOO_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_MANGROVE_BAMBOO_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_OAK_BAMBOO_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_SPRUCE_BAMBOO_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_BAMBOO_DOOR, RenderType.cutout());
+		
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_NETHER_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_NETHER_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_NETHER_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_NETHER_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_JUNGLE_NETHER_DOOR, RenderType.cutout());
@@ -518,6 +561,7 @@ public class RenderHandler implements ClientModInitializer
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_WARPED_NETHER_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_ACACIA_MYSTIC_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BAMBOO_MYSTIC_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_BIRCH_MYSTIC_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_CRIMSON_MYSTIC_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_MACAW_DARK_OAK_MYSTIC_DOOR, RenderType.cutout());

@@ -118,6 +118,7 @@ public class SimpleConfig
 
 	}
 
+	@SuppressWarnings("resource")
 	private void loadConfig() throws IOException {
 		Scanner reader = new Scanner(request.file);
 		for (int line = 1; reader.hasNextLine(); line++) {

@@ -23,11 +23,13 @@ repositories {
     maven {
 		name = 'ParchmentMC'
 		url = 'https://maven.parchmentmc.org'
+    }
+	maven {
         url "https://cursemaven.com"
         content {
-            includeGroup "curse.maven"
+           includeGroup "curse.maven"
         }
-    }
+	}
 }
 
 dependencies {
@@ -43,8 +45,13 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modRuntimeOnly "curse.maven:selene-499980:4331303"
-	modImplementation "curse.maven:supplementaries-412082:4312528"
+	modRuntimeOnly "curse.maven:selene-499980:4412070"
+	modImplementation "curse.maven:supplementaries-412082:4410940"
+	modRuntimeOnly "curse.maven:architectury-api-419699:4147351"
+	modImplementation "curse.maven:consistencyplus-430445:3971956"
+	modRuntimeOnly "curse.maven:configured-457570:4011355"
+	modRuntimeOnly "curse.maven:configured-457570:4011355"
+	modImplementation "curse.maven:statement-340604:4275909"
 }
 
 processResources {

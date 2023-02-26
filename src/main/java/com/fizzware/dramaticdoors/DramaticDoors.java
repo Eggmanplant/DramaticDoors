@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
+import com.fizzware.dramaticdoors.compat.StatementCompat;
 import com.fizzware.dramaticdoors.config.DDConfig;
 import com.fizzware.dramaticdoors.crafting.DDAdvancementCompats;
 import com.fizzware.dramaticdoors.crafting.DDRecipeCompats;
@@ -38,5 +39,8 @@ public class DramaticDoors implements ModInitializer
     	DDFuels.addFuels();
     	DDRecipeCompats.initializeRecipes();
     	DDAdvancementCompats.initializeAdvancements();
+    	if (FabricLoader.getInstance().isModLoaded("statement")) {
+    		StatementCompat.implementWaterlogging();
+    	}
 	}
 }

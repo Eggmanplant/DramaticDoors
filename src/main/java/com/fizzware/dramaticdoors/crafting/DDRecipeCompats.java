@@ -76,6 +76,9 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_ELDER, new ResourceLocation("bewitchment", "elder_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_JUNIPER, new ResourceLocation("bewitchment", "juniper_door"), "tall_wooden_door");
 		}
+		if (FabricLoader.getInstance().isModLoaded("bwplus")) {
+			createTallDoorRecipeJson(DDNames.TALL_YEW, new ResourceLocation("bwplus", "yew_door"), "tall_wooden_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("biomancy")) {
 			createTallDoorRecipeJson(DDNames.TALL_FLESH, new ResourceLocation("biomancy", "flesh_door"), "tall_misc_door");
 			createTallDoorRecipeJson(DDNames.TALL_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"), "tall_misc_door");
@@ -139,14 +142,18 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"), "tall_wooden_door");
 			createTallDoorRecipeJson(DDNames.TALL_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"), "tall_wooden_door");
 		}
-		if (FabricLoader.getInstance().isModLoaded("colorful-azaleas")) {
-			createTallDoorRecipeJson(DDNames.TALL_AZULE_AZALEA, new ResourceLocation("colorful-azaleas", "azule_azalea_door"), "tall_ca_azalea_door");
-			createTallDoorRecipeJson(DDNames.TALL_BRIGHT_AZALEA, new ResourceLocation("colorful-azaleas", "bright_azalea_door"), "tall_ca_azalea_door");
-			createTallDoorRecipeJson(DDNames.TALL_FISS_AZALEA, new ResourceLocation("colorful-azaleas", "fiss_azalea_door"), "tall_ca_azalea_door");
-			createTallDoorRecipeJson(DDNames.TALL_ROZE_AZALEA, new ResourceLocation("colorful-azaleas", "roze_azalea_door"), "tall_ca_azalea_door");
-			createTallDoorRecipeJson(DDNames.TALL_TECAL_AZALEA, new ResourceLocation("colorful-azaleas", "tecal_azalea_door"), "tall_ca_azalea_door");
-			createTallDoorRecipeJson(DDNames.TALL_TITANIUM_AZALEA, new ResourceLocation("colorful-azaleas", "titanium_azalea_door"), "tall_ca_azalea_door");
-			createTallDoorRecipeJson(DDNames.TALL_WALNUT_AZALEA, new ResourceLocation("colorful-azaleas", "walnut_azalea_door"), "tall_ca_azalea_door");
+		if (FabricLoader.getInstance().isModLoaded("cinderscapes")) {
+			createTallDoorRecipeJson(DDNames.TALL_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"), "tall_wooden_door");			
+		}
+		if (FabricLoader.getInstance().isModLoaded("colorfulazaleas")) {
+			createTallDoorRecipeJson(DDNames.TALL_AZULE_AZALEA, new ResourceLocation("colorfulazaleas", "azule_azalea_door"), "tall_ca_azalea_door");
+			createTallDoorRecipeJson(DDNames.TALL_BRIGHT_AZALEA, new ResourceLocation("colorfulazaleas", "bright_azalea_door"), "tall_ca_azalea_door");
+			createTallDoorRecipeJson(DDNames.TALL_FISS_AZALEA, new ResourceLocation("colorfulazaleas", "fiss_azalea_door"), "tall_ca_azalea_door");
+			createTallDoorRecipeJson(DDNames.TALL_ROZE_AZALEA, new ResourceLocation("colorfulazaleas", "roze_azalea_door"), "tall_ca_azalea_door");
+			createTallDoorRecipeJson(DDNames.TALL_TECAL_AZALEA, new ResourceLocation("colorfulazaleas", "tecal_azalea_door"), "tall_ca_azalea_door");
+			createTallDoorRecipeJson(DDNames.TALL_TITANIUM_AZALEA, new ResourceLocation("colorfulazaleas", "titanium_azalea_door"), "tall_ca_azalea_door");
+			createTallDoorRecipeJson(DDNames.TALL_WALNUT_AZALEA, new ResourceLocation("colorfulazaleas", "walnut_azalea_door"), "tall_ca_azalea_door");
 		}
 		if (FabricLoader.getInstance().isModLoaded("createdeco")) {
 			createTallDoorRecipeJson(DDNames.TALL_ANDESITE, new ResourceLocation("createdeco", "andesite_door"), "tall_metal_door");
@@ -208,6 +215,17 @@ public class DDRecipeCompats
 		}
 		if (FabricLoader.getInstance().isModLoaded("techreborn")) {
 			createTallDoorRecipeJson(DDNames.TALL_RUBBER, new ResourceLocation("techreborn", "rubber_door"), "tall_wooden_door");
+		}
+		if (FabricLoader.getInstance().isModLoaded("terrestria")) {
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"), "tall_terrestria_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"), "tall_terrestria_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"), "tall_terrestria_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"), "tall_terrestria_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"), "tall_terrestria_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"), "tall_terrestria_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"), "tall_terrestria_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"), "tall_terrestria_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"), "tall_terrestria_wooden_door");
 		}
 		if (FabricLoader.getInstance().isModLoaded("traverse")) {
 			createTallDoorRecipeJson(DDNames.TALL_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"), "tall_wooden_door");			
@@ -394,6 +412,8 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_CHIPPED_WARPED_20, new ResourceLocation("chipped", "warped_door_20"), "tall_chipped_warped_door");
 		}
 		if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_STORE, new ResourceLocation("mcwdoors", "store_door"), "tall_macaw_metal_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_SLIDING_GLASS, new ResourceLocation("mcwdoors", "sliding_glass_door"), "tall_macaw_metal_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_JAIL, new ResourceLocation("mcwdoors", "jail_door"), "tall_macaw_metal_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_METAL, new ResourceLocation("mcwdoors", "metal_door"), "tall_macaw_metal_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_METAL_HOSPITAL, new ResourceLocation("mcwdoors", "metal_hospital_door"), "tall_macaw_metal_door");
@@ -407,6 +427,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_BARN, new ResourceLocation("mcwdoors", "acacia_barn_door"), "tall_macaw_barn_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_BARN, new ResourceLocation("mcwdoors", "dark_oak_barn_door"), "tall_macaw_barn_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_BARN, new ResourceLocation("mcwdoors", "mangrove_barn_door"), "tall_macaw_barn_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_BARN, new ResourceLocation("mcwdoors", "bamboo_barn_door"), "tall_macaw_barn_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_BARN, new ResourceLocation("mcwdoors", "crimson_barn_door"), "tall_macaw_barn_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_BARN, new ResourceLocation("mcwdoors", "warped_barn_door"), "tall_macaw_barn_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_BARN_GLASS, new ResourceLocation("mcwdoors", "oak_barn_glass_door"), "tall_macaw_barn_glass_door");
@@ -416,6 +437,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_BARN_GLASS, new ResourceLocation("mcwdoors", "acacia_barn_glass_door"), "tall_macaw_barn_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_BARN_GLASS, new ResourceLocation("mcwdoors", "dark_oak_barn_glass_door"), "tall_macaw_barn_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_BARN_GLASS, new ResourceLocation("mcwdoors", "mangrove_barn_glass_door"), "tall_macaw_barn_glass_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_BARN_GLASS, new ResourceLocation("mcwdoors", "bamboo_barn_glass_door"), "tall_macaw_barn_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_BARN_GLASS, new ResourceLocation("mcwdoors", "crimson_barn_glass_door"), "tall_macaw_barn_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_BARN_GLASS, new ResourceLocation("mcwdoors", "warped_barn_glass_door"), "tall_macaw_barn_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_STABLE, new ResourceLocation("mcwdoors", "oak_stable_door"), "tall_macaw_stable_door");
@@ -425,6 +447,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_STABLE, new ResourceLocation("mcwdoors", "acacia_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_STABLE, new ResourceLocation("mcwdoors", "dark_oak_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_STABLE, new ResourceLocation("mcwdoors", "crimson_stable_door"), "tall_macaw_stable_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_STABLE, new ResourceLocation("mcwdoors", "bamboo_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_STABLE, new ResourceLocation("mcwdoors", "crimson_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_STABLE, new ResourceLocation("mcwdoors", "warped_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_STABLE_HEAD, new ResourceLocation("mcwdoors", "oak_stable_head_door"), "tall_macaw_stable_head_door");
@@ -434,6 +457,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_STABLE_HEAD, new ResourceLocation("mcwdoors", "acacia_stable_head_door"), "tall_macaw_stable_head_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_STABLE_HEAD, new ResourceLocation("mcwdoors", "dark_oak_stable_head_door"), "tall_macaw_stable_head_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_STABLE_HEAD, new ResourceLocation("mcwdoors", "mangrove_stable_head_door"), "tall_macaw_stable_head_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_STABLE_HEAD, new ResourceLocation("mcwdoors", "bamboo_stable_head_door"), "tall_macaw_stable_head_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_STABLE_HEAD, new ResourceLocation("mcwdoors", "crimson_stable_head_door"), "tall_macaw_stable_head_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_STABLE_HEAD, new ResourceLocation("mcwdoors", "warped_stable_head_door"), "tall_macaw_stable_head_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_BARK_GLASS, new ResourceLocation("mcwdoors", "oak_bark_glass_door"), "tall_macaw_bark_glass_door");
@@ -443,6 +467,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_BARK_GLASS, new ResourceLocation("mcwdoors", "acacia_bark_glass_door"), "tall_macaw_bark_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_BARK_GLASS, new ResourceLocation("mcwdoors", "dark_oak_bark_glass_door"), "tall_macaw_bark_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_BARK_GLASS, new ResourceLocation("mcwdoors", "mangrove_bark_glass_door"), "tall_macaw_bark_glass_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_BARK_GLASS, new ResourceLocation("mcwdoors", "bamboo_bark_glass_door"), "tall_macaw_bark_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_STEM_GLASS, new ResourceLocation("mcwdoors", "crimson_stem_glass_door"), "tall_macaw_bark_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_STEM_GLASS, new ResourceLocation("mcwdoors", "warped_stem_glass_door"), "tall_macaw_bark_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_GLASS, new ResourceLocation("mcwdoors", "oak_glass_door"), "tall_macaw_glass_door");
@@ -452,6 +477,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_GLASS, new ResourceLocation("mcwdoors", "acacia_glass_door"), "tall_macaw_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_GLASS, new ResourceLocation("mcwdoors", "dark_oak_glass_door"), "tall_macaw_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_GLASS, new ResourceLocation("mcwdoors", "mangrove_glass_door"), "tall_macaw_glass_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_GLASS, new ResourceLocation("mcwdoors", "bamboo_glass_door"), "tall_macaw_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_GLASS, new ResourceLocation("mcwdoors", "crimson_glass_door"), "tall_macaw_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_GLASS, new ResourceLocation("mcwdoors", "warped_glass_door"), "tall_macaw_glass_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_MODERN, new ResourceLocation("mcwdoors", "oak_modern_door"), "tall_macaw_modern_door");
@@ -461,6 +487,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_MODERN, new ResourceLocation("mcwdoors", "acacia_modern_door"), "tall_macaw_modern_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_MODERN, new ResourceLocation("mcwdoors", "dark_oak_modern_door"), "tall_macaw_modern_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_MODERN, new ResourceLocation("mcwdoors", "mangrove_modern_door"), "tall_macaw_modern_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_MODERN, new ResourceLocation("mcwdoors", "bamboo_modern_door"), "tall_macaw_modern_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_MODERN, new ResourceLocation("mcwdoors", "crimson_modern_door"), "tall_macaw_modern_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_MODERN, new ResourceLocation("mcwdoors", "warped_modern_door"), "tall_macaw_modern_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_JAPANESE, new ResourceLocation("mcwdoors", "oak_japanese_door"), "tall_macaw_japanese_door");
@@ -469,8 +496,9 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_JUNGLE_JAPANESE, new ResourceLocation("mcwdoors", "jungle_japanese_door"), "tall_macaw_japanese_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_JAPANESE, new ResourceLocation("mcwdoors", "acacia_japanese_door"), "tall_macaw_japanese_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_JAPANESE, new ResourceLocation("mcwdoors", "dark_oak_japanese_door"), "tall_macaw_japanese_door");
-			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_JAPANESE, new ResourceLocation("mcwdoors", "crimson_japanese_door"), "tall_macaw_japanese_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_JAPANESE, new ResourceLocation("mcwdoors", "mangrove_japanese_door"), "tall_macaw_japanese_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_JAPANESE, new ResourceLocation("mcwdoors", "bamboo_japanese_door"), "tall_macaw_japanese_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_JAPANESE, new ResourceLocation("mcwdoors", "crimson_japanese_door"), "tall_macaw_japanese_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_JAPANESE, new ResourceLocation("mcwdoors", "warped_japanese_door"), "tall_macaw_japanese_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_JAPANESE2, new ResourceLocation("mcwdoors", "oak_japanese2_door"), "tall_macaw_japanese2_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_SPRUCE_JAPANESE2, new ResourceLocation("mcwdoors", "spruce_japanese2_door"), "tall_macaw_japanese2_door");
@@ -479,6 +507,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_JAPANESE2, new ResourceLocation("mcwdoors", "acacia_japanese2_door"), "tall_macaw_japanese2_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_JAPANESE2, new ResourceLocation("mcwdoors", "dark_oak_japanese2_door"), "tall_macaw_japanese2_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_JAPANESE2, new ResourceLocation("mcwdoors", "mangrove_japanese2_door"), "tall_macaw_japanese2_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_JAPANESE2, new ResourceLocation("mcwdoors", "bamboo_japanese2_door"), "tall_macaw_japanese2_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_JAPANESE2, new ResourceLocation("mcwdoors", "crimson_japanese2_door"), "tall_macaw_japanese2_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_JAPANESE2, new ResourceLocation("mcwdoors", "warped_japanese2_door"), "tall_macaw_japanese2_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_SPRUCE_CLASSIC, new ResourceLocation("mcwdoors", "spruce_classic_door"), "tall_macaw_classic_door");
@@ -487,6 +516,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_CLASSIC, new ResourceLocation("mcwdoors", "acacia_classic_door"), "tall_macaw_classic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_CLASSIC, new ResourceLocation("mcwdoors", "dark_oak_classic_door"), "tall_macaw_classic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_CLASSIC, new ResourceLocation("mcwdoors", "mangrove_classic_door"), "tall_macaw_classic_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_CLASSIC, new ResourceLocation("mcwdoors", "bamboo_classic_door"), "tall_macaw_classic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_CLASSIC, new ResourceLocation("mcwdoors", "crimson_classic_door"), "tall_macaw_classic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_CLASSIC, new ResourceLocation("mcwdoors", "warped_classic_door"), "tall_macaw_classic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_COTTAGE, new ResourceLocation("mcwdoors", "oak_cottage_door"), "tall_macaw_cottage_door");
@@ -495,6 +525,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_COTTAGE, new ResourceLocation("mcwdoors", "acacia_cottage_door"), "tall_macaw_cottage_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_COTTAGE, new ResourceLocation("mcwdoors", "dark_oak_cottage_door"), "tall_macaw_cottage_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_COTTAGE, new ResourceLocation("mcwdoors", "mangrove_cottage_door"), "tall_macaw_cottage_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_COTTAGE, new ResourceLocation("mcwdoors", "bamboo_cottage_door"), "tall_macaw_cottage_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_COTTAGE, new ResourceLocation("mcwdoors", "crimson_cottage_door"), "tall_macaw_cottage_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_COTTAGE, new ResourceLocation("mcwdoors", "warped_cottage_door"), "tall_macaw_cottage_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_PAPER, new ResourceLocation("mcwdoors", "oak_paper_door"), "tall_macaw_paper_door");
@@ -503,6 +534,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_PAPER, new ResourceLocation("mcwdoors", "acacia_paper_door"), "tall_macaw_paper_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_PAPER, new ResourceLocation("mcwdoors", "dark_oak_paper_door"), "tall_macaw_paper_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_PAPER, new ResourceLocation("mcwdoors", "mangrove_paper_door"), "tall_macaw_paper_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_PAPER, new ResourceLocation("mcwdoors", "bamboo_paper_door"), "tall_macaw_paper_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_PAPER, new ResourceLocation("mcwdoors", "crimson_paper_door"), "tall_macaw_paper_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_PAPER, new ResourceLocation("mcwdoors", "warped_paper_door"), "tall_macaw_paper_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_BEACH, new ResourceLocation("mcwdoors", "oak_beach_door"), "tall_macaw_beach_door");
@@ -511,6 +543,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_BEACH, new ResourceLocation("mcwdoors", "acacia_beach_door"), "tall_macaw_beach_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_BEACH, new ResourceLocation("mcwdoors", "dark_oak_beach_door"), "tall_macaw_beach_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_BEACH, new ResourceLocation("mcwdoors", "mangrove_beach_door"), "tall_macaw_beach_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_BEACH, new ResourceLocation("mcwdoors", "bamboo_beach_door"), "tall_macaw_beach_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_BEACH, new ResourceLocation("mcwdoors", "crimson_beach_door"), "tall_macaw_beach_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_BEACH, new ResourceLocation("mcwdoors", "warped_beach_door"), "tall_macaw_beach_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_TROPICAL, new ResourceLocation("mcwdoors", "oak_tropical_door"), "tall_macaw_tropical_door");
@@ -519,6 +552,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_JUNGLE_TROPICAL, new ResourceLocation("mcwdoors", "jungle_tropical_door"), "tall_macaw_tropical_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_TROPICAL, new ResourceLocation("mcwdoors", "dark_oak_tropical_door"), "tall_macaw_tropical_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_TROPICAL, new ResourceLocation("mcwdoors", "mangrove_tropical_door"), "tall_macaw_tropical_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_TROPICAL, new ResourceLocation("mcwdoors", "bamboo_tropical_door"), "tall_macaw_tropical_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_TROPICAL, new ResourceLocation("mcwdoors", "crimson_tropical_door"), "tall_macaw_tropical_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_TROPICAL, new ResourceLocation("mcwdoors", "warped_tropical_door"), "tall_macaw_tropical_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_FOUR_PANEL, new ResourceLocation("mcwdoors", "oak_four_panel_door"), "tall_macaw_four_panel_door");
@@ -527,6 +561,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_JUNGLE_FOUR_PANEL, new ResourceLocation("mcwdoors", "jungle_four_panel_door"), "tall_macaw_four_panel_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_FOUR_PANEL, new ResourceLocation("mcwdoors", "acacia_four_panel_door"), "tall_macaw_four_panel_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_FOUR_PANEL, new ResourceLocation("mcwdoors", "mangrove_four_panel_door"), "tall_macaw_four_panel_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_FOUR_PANEL, new ResourceLocation("mcwdoors", "bamboo_four_panel_door"), "tall_macaw_four_panel_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_FOUR_PANEL, new ResourceLocation("mcwdoors", "crimson_four_panel_door"), "tall_macaw_four_panel_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_FOUR_PANEL, new ResourceLocation("mcwdoors", "warped_four_panel_door"), "tall_macaw_four_panel_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_SWAMP, new ResourceLocation("mcwdoors", "oak_swamp_door"), "tall_macaw_swamp_door");
@@ -535,8 +570,18 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_JUNGLE_SWAMP, new ResourceLocation("mcwdoors", "jungle_swamp_door"), "tall_macaw_swamp_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_SWAMP, new ResourceLocation("mcwdoors", "acacia_swamp_door"), "tall_macaw_swamp_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_SWAMP, new ResourceLocation("mcwdoors", "dark_oak_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_SWAMP, new ResourceLocation("mcwdoors", "bamboo_swamp_door"), "tall_macaw_swamp_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_SWAMP, new ResourceLocation("mcwdoors", "crimson_swamp_door"), "tall_macaw_swamp_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_SWAMP, new ResourceLocation("mcwdoors", "warped_swamp_door"), "tall_macaw_swamp_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_BAMBOO, new ResourceLocation("mcwdoors", "oak_bamboo_door"), "tall_macaw_bamboo_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_SPRUCE_BAMBOO, new ResourceLocation("mcwdoors", "spruce_bamboo_door"), "tall_macaw_bamboo_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BIRCH_BAMBOO, new ResourceLocation("mcwdoors", "birch_bamboo_door"), "tall_macaw_bamboo_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_JUNGLE_BAMBOO, new ResourceLocation("mcwdoors", "jungle_bamboo_door"), "tall_macaw_bamboo_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_BAMBOO, new ResourceLocation("mcwdoors", "acacia_bamboo_door"), "tall_macaw_bamboo_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_BAMBOO, new ResourceLocation("mcwdoors", "dark_oak_bamboo_door"), "tall_macaw_bamboo_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_BAMBOO, new ResourceLocation("mcwdoors", "mangrove_bamboo_door"), "tall_macaw_bamboo_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_BAMBOO, new ResourceLocation("mcwdoors", "crimson_bamboo_door"), "tall_macaw_bamboo_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_BAMBOO, new ResourceLocation("mcwdoors", "warped_bamboo_door"), "tall_macaw_bamboo_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_NETHER, new ResourceLocation("mcwdoors", "oak_nether_door"), "tall_macaw_nether_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_SPRUCE_NETHER, new ResourceLocation("mcwdoors", "spruce_nether_door"), "tall_macaw_nether_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_BIRCH_NETHER, new ResourceLocation("mcwdoors", "birch_nether_door"), "tall_macaw_nether_door");
@@ -544,6 +589,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_NETHER, new ResourceLocation("mcwdoors", "acacia_nether_door"), "tall_macaw_nether_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_NETHER, new ResourceLocation("mcwdoors", "dark_oak_nether_door"), "tall_macaw_nether_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_NETHER, new ResourceLocation("mcwdoors", "mangrove_nether_door"), "tall_macaw_nether_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_NETHER, new ResourceLocation("mcwdoors", "bamboo_nether_door"), "tall_macaw_nether_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_NETHER, new ResourceLocation("mcwdoors", "warped_nether_door"), "tall_macaw_nether_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_OAK_MYSTIC, new ResourceLocation("mcwdoors", "oak_mystic_door"), "tall_macaw_mystic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_SPRUCE_MYSTIC, new ResourceLocation("mcwdoors", "spruce_mystic_door"), "tall_macaw_mystic_door");
@@ -552,6 +598,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_MYSTIC, new ResourceLocation("mcwdoors", "acacia_mystic_door"), "tall_macaw_mystic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_MYSTIC, new ResourceLocation("mcwdoors", "dark_oak_mystic_door"), "tall_macaw_mystic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_MYSTIC, new ResourceLocation("mcwdoors", "mangrove_mystic_door"), "tall_macaw_mystic_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_MYSTIC, new ResourceLocation("mcwdoors", "bamboo_mystic_door"), "tall_macaw_mystic_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_MYSTIC, new ResourceLocation("mcwdoors", "crimson_mystic_door"), "tall_macaw_mystic_door");
 		}
 	}

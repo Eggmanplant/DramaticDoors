@@ -6,7 +6,10 @@ public class DDConfig
 {
 	private static ModConfigProvider configProvider;
 	public static SimpleConfig CONFIG;
-  
+
+	public static boolean waterloggableDoors = true;
+	public static boolean waterloggableFenceGates = true;
+	
 	public static void initializeConfigs() {
 		configProvider = new ModConfigProvider();
 		createConfigs();
@@ -21,7 +24,7 @@ public class DDConfig
 	}
 	
 	private static void assignConfigs() {
-		CONFIG.getOrDefault("dramaticdoors.waterloggable_doors", true);
-		CONFIG.getOrDefault("dramaticdoors.waterloggable_fence_gates", true);
+		waterloggableDoors = CONFIG.getOrDefault("dramaticdoors.waterloggable_doors", true);
+		waterloggableFenceGates = CONFIG.getOrDefault("dramaticdoors.waterloggable_fence_gates", true);
 	}
 }
