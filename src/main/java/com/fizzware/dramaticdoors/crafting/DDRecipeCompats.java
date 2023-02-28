@@ -446,7 +446,7 @@ public class DDRecipeCompats
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_JUNGLE_STABLE, new ResourceLocation("mcwdoors", "jungle_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_ACACIA_STABLE, new ResourceLocation("mcwdoors", "acacia_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_DARK_OAK_STABLE, new ResourceLocation("mcwdoors", "dark_oak_stable_door"), "tall_macaw_stable_door");
-			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_STABLE, new ResourceLocation("mcwdoors", "crimson_stable_door"), "tall_macaw_stable_door");
+			createTallDoorRecipeJson(DDNames.TALL_MACAW_MANGROVE_STABLE, new ResourceLocation("mcwdoors", "mangrove_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_BAMBOO_STABLE, new ResourceLocation("mcwdoors", "bamboo_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_CRIMSON_STABLE, new ResourceLocation("mcwdoors", "crimson_stable_door"), "tall_macaw_stable_door");
 			createTallDoorRecipeJson(DDNames.TALL_MACAW_WARPED_STABLE, new ResourceLocation("mcwdoors", "warped_stable_door"), "tall_macaw_stable_door");
