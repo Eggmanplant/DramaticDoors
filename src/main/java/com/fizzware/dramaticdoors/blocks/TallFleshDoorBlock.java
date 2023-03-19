@@ -8,7 +8,6 @@ import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -17,6 +16,7 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.shapes.BooleanOp;
@@ -41,8 +41,8 @@ public class TallFleshDoorBlock extends TallDoorBlock
 	protected static final VoxelShape[] Z_POS_AABB = createClosedAndOpenShape(0, 0, 16d - THICKNESS, 16, 16, 16);
 
 	
-	public TallFleshDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
-		super(from, closeSound, openSound);
+	public TallFleshDoorBlock(Block from, BlockSetType blockset) {
+		super(from, blockset);
 		registerDefaultState(defaultBlockState().setValue(ORIENTATION, Orientation.X_MIDDLE));
 	}
 

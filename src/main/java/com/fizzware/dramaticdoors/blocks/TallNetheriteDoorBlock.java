@@ -4,7 +4,6 @@ import com.fizzware.dramaticdoors.blockentities.TallNetheriteDoorBlockEntity;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -13,13 +12,14 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class TallNetheriteDoorBlock extends TallDoorBlock implements EntityBlock
 {
-	public TallNetheriteDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
-		super(from, closeSound, openSound);
+	public TallNetheriteDoorBlock(Block from, BlockSetType blockset) {
+		super(from, blockset);
 	}
 
 	@Override

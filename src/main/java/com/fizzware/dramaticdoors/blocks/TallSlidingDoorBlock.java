@@ -2,10 +2,10 @@ package com.fizzware.dramaticdoors.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -25,8 +25,8 @@ public class TallSlidingDoorBlock extends TallDoorBlock
     protected static final VoxelShape WEST_OPEN_LEFT_AABB = Block.box(7.0D, 0.0D, 0.0D, 9.0D, 16.0D, 16.0D).move(0.0D, 0.0D, 0.6875D);
     protected static final VoxelShape EAST_OPEN_LEFT_AABB = Block.box(7.0D, 0.0D, 0.0D, 9.0D, 16.0D, 16.0D).move(0.0D, 0.0D, -0.6875D);
     
-	public TallSlidingDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
-		super(from, closeSound, openSound);
+	public TallSlidingDoorBlock(Block from, BlockSetType blockset) {
+		super(from, blockset);
 	}
 
 	@Override

@@ -35,6 +35,7 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -73,15 +74,15 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     protected final SoundEvent closeSound;
     protected final SoundEvent openSound;
 
-    public TallDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
-        this(from, closeSound, openSound, null);
+    public TallDoorBlock(Block from, BlockSetType blockset) {
+        this(from, blockset, null);
     }
     
-    public TallDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound, @Nullable FeatureFlag flag) {
+    public TallDoorBlock(Block from, BlockSetType blockset, @Nullable FeatureFlag flag) {
     	super(flag != null ? Properties.copy(from).requiredFeatures(flag) : Properties.copy(from));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER));
-        this.closeSound = closeSound;
-        this.openSound = openSound;
+        this.closeSound = blockset.doorClose();
+        this.openSound = blockset.doorOpen();
     }
 
     @Override

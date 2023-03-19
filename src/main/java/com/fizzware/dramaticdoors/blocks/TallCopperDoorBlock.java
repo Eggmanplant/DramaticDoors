@@ -12,7 +12,6 @@ import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
@@ -28,6 +27,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChangeOverTimeBlock;
 import net.minecraft.world.level.block.WeatheringCopper;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 
@@ -40,8 +40,8 @@ public class TallCopperDoorBlock extends TallDoorBlock implements WeatheringCopp
 
 	private final WeatheringCopper.WeatherState weatherState;
 
-	public TallCopperDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound, WeatherState state) {
-		super(from, closeSound, openSound);
+	public TallCopperDoorBlock(Block from, BlockSetType blockset, WeatherState state) {
+		super(from, blockset);
 		this.weatherState = state;
 	}
 

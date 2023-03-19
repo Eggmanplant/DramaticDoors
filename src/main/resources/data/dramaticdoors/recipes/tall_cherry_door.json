@@ -8,17 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "environmental:cherry_door"
+      "item": "minecraft:cherry_door"
     }
   },
   "result": {
     "item": "dramaticdoors:tall_cherry_door",
     "count": 2
-  },
-  "conditions": [
-    {
-      "type": "forge:mod_loaded",
-      "modid": "environmental"
-    }
-  ]
+  }
 }
