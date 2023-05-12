@@ -5,6 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import com.fizzware.dramaticdoors.entity.ai.goal.OpenShortDoorsTask;
 import com.fizzware.dramaticdoors.entity.ai.goal.OpenTallDoorsTask;
 import com.google.common.collect.ImmutableList;
 
@@ -19,10 +20,11 @@ public class PiglinBrainMixin
 
 	@Inject(method = "makeBrain(Lnet/minecraft/world/entity/monster/piglin/Piglin;Lnet/minecraft/world/entity/ai/Brain;)Lnet/minecraft/world/entity/ai/Brain;", at = @At (value = "RETURN"))
 	private static void injectCreate(Piglin piglin, Brain<Piglin> brain, CallbackInfoReturnable<Brain<?>> cir) {
-		initTallDoorActivities(brain);
+		initDramaticDoorActivities(brain);
 	}
 	
-    private static void initTallDoorActivities(Brain<Piglin> brain) {
+    private static void initDramaticDoorActivities(Brain<Piglin> brain) {
         brain.addActivity(Activity.CORE, 1, ImmutableList.of(OpenTallDoorsTask.create()));
+        brain.addActivity(Activity.CORE, 1, ImmutableList.of(OpenShortDoorsTask.create()));
     }
 }

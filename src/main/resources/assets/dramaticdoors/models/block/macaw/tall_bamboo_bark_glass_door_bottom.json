@@ -3,8 +3,8 @@
     "ambientocclusion": false,
     "textures": {
 		"3": "minecraft:block/glass",
-		"particle": "minecraft:block/bamboo_block",
-		"top": "minecraft:block/bamboo_block"
+		"particle": "dramaticdoors:block/macaw/bamboo_log",
+		"top": "dramaticdoors:block/macaw/bamboo_log"
     }
 }
 

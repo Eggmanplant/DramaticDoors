@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "dustrial_decor:rusty_sheet_metal_door"
+  },
+  "result": "dramaticdoors:short_rusty_sheet_metal_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "dustrial_decor"
+    }
+  ]
+}

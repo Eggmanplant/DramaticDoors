@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "integrateddynamics:menril_door"
+  },
+  "result": "dramaticdoors:short_menril_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "integrateddynamics"
+        }
+      ]
+    }
+  ]
+}

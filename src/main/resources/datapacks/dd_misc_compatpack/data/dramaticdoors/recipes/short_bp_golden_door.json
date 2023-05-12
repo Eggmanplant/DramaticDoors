@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "blocksplus:golden_door"
+  },
+  "result": "dramaticdoors:short_bp_golden_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blocksplus"
+    }
+  ]
+}

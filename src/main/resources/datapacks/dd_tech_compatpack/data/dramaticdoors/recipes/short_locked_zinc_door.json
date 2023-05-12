@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "createdeco:locked_zinc_door"
+  },
+  "result": "dramaticdoors:short_locked_zinc_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "createdeco"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "everythingcopper:weathered_copper_door"
+  },
+  "result": "dramaticdoors:short_ec_weathered_copper_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "everythingcopper"
+    }
+  ]
+}
