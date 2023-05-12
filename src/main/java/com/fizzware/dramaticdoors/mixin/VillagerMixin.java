@@ -8,16 +8,16 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import com.fizzware.dramaticdoors.entity.ai.goal.DDVillagerTasks;
 
-import net.minecraft.entity.ai.brain.Activity;
-import net.minecraft.entity.ai.brain.Brain;
-import net.minecraft.entity.passive.VillagerEntity;
-import net.minecraft.village.VillagerProfession;
+import net.minecraft.world.entity.ai.Brain;
+import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.npc.VillagerProfession;
+import net.minecraft.world.entity.schedule.Activity;
 
-@Mixin(VillagerEntity.class)
+@Mixin(Villager.class)
 public class VillagerMixin
 {
-	@Inject(method = "initBrain(Lnet/minecraft/entity/ai/brain/Brain;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/ai/brain/task/VillagerTaskListProvider;createCoreTasks(Lnet/minecraft/village/VillagerProfession;F)Lcom/google/common/collect/ImmutableList;"), locals = LocalCapture.CAPTURE_FAILSOFT)
-	private void injectInitBrain(Brain<VillagerEntity> brain, CallbackInfo ci, VillagerProfession villagerProfession) {
-		brain.setTaskList(Activity.CORE, DDVillagerTasks.createTallDoorTasks(villagerProfession, 0.5f));
+	@Inject(method = "registerBrainGoals(Lnet/minecraft/world/entity/ai/Brain;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/ai/behavior/VillagerGoalPackages;getCorePackage(Lnet/minecraft/world/entity/npc/VillagerProfession;F)Lcom/google/common/collect/ImmutableList;"), locals = LocalCapture.CAPTURE_FAILSOFT)
+	private void injectInitBrain(Brain<Villager> brain, CallbackInfo ci, VillagerProfession villagerProfession) {
+		brain.addActivity(Activity.CORE, DDVillagerTasks.createTallDoorTasks(villagerProfession, 0.5f));
 	}
 }

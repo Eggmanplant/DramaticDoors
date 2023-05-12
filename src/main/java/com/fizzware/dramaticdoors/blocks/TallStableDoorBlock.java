@@ -1,39 +1,39 @@
 package com.fizzware.dramaticdoors.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
-import net.minecraft.block.enums.DoorHinge;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.world.BlockView;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.DoorHingeSide;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class TallStableDoorBlock extends TallDoorBlock
 {
-    protected static final VoxelShape SOUTH_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D);
-    protected static final VoxelShape NORTH_AABB = Block.createCuboidShape(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
-    protected static final VoxelShape WEST_AABB = Block.createCuboidShape(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
-    protected static final VoxelShape EAST_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D);
-    protected static final VoxelShape SOUTH_OPEN_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D).offset(-0.75D, 0.0D, 0.0D);
-    protected static final VoxelShape NORTH_OPEN_AABB = Block.createCuboidShape(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D).offset(0.75D, 0.0D, 0.0D);
-    protected static final VoxelShape WEST_OPEN_AABB = Block.createCuboidShape(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D).offset(0.0D, 0.0D, -0.75D);
-    protected static final VoxelShape EAST_OPEN_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D).offset(0.0D, 0.0D, 0.75D);
-    protected static final VoxelShape SOUTH_OPEN_LEFT_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D).offset(0.75D, 0.0D, 0.0D);
-    protected static final VoxelShape NORTH_OPEN_LEFT_AABB = Block.createCuboidShape(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D).offset(-0.75D, 0.0D, 0.0D);
-    protected static final VoxelShape WEST_OPEN_LEFT_AABB = Block.createCuboidShape(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D).offset(0.0D, 0.0D, 0.75D);
-    protected static final VoxelShape EAST_OPEN_LEFT_AABB = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D).offset(0.0D, 0.0D, -0.75D);
+    protected static final VoxelShape SOUTH_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D);
+    protected static final VoxelShape NORTH_AABB = Block.box(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape WEST_AABB = Block.box(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape EAST_AABB = Block.box(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D);
+    protected static final VoxelShape SOUTH_OPEN_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D).move(-0.75D, 0.0D, 0.0D);
+    protected static final VoxelShape NORTH_OPEN_AABB = Block.box(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D).move(0.75D, 0.0D, 0.0D);
+    protected static final VoxelShape WEST_OPEN_AABB = Block.box(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D).move(0.0D, 0.0D, -0.75D);
+    protected static final VoxelShape EAST_OPEN_AABB = Block.box(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D).move(0.0D, 0.0D, 0.75D);
+    protected static final VoxelShape SOUTH_OPEN_LEFT_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D).move(0.75D, 0.0D, 0.0D);
+    protected static final VoxelShape NORTH_OPEN_LEFT_AABB = Block.box(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D).move(-0.75D, 0.0D, 0.0D);
+    protected static final VoxelShape WEST_OPEN_LEFT_AABB = Block.box(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D).move(0.0D, 0.0D, 0.75D);
+    protected static final VoxelShape EAST_OPEN_LEFT_AABB = Block.box(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D).move(0.0D, 0.0D, -0.75D);
 
-	public TallStableDoorBlock(Block from, SoundEvent closeSound, SoundEvent openSound) {
-		super(from, closeSound, openSound);
+	public TallStableDoorBlock(Block from, BlockSetType blockset) {
+		super(from, blockset);
 	}
 
 	@Override
-	public VoxelShape getOutlineShape(BlockState state, BlockView level, BlockPos pos, ShapeContext context) {
-        Direction direction = state.get(FACING);
-        boolean flag = !state.get(OPEN);
-        boolean flag1 = state.get(HINGE) == DoorHinge.LEFT;
+	public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        Direction direction = state.getValue(FACING);
+        boolean flag = !state.getValue(OPEN);
+        boolean flag1 = state.getValue(HINGE) == DoorHingeSide.LEFT;
         switch(direction) {
             case EAST:
             default:

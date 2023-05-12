@@ -3,41 +3,39 @@ package com.fizzware.dramaticdoors.blockentities;
 import org.jetbrains.annotations.Nullable;
 
 import com.fizzware.dramaticdoors.DDTags;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.Inventory;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.network.Packet;
-import net.minecraft.network.listener.ClientPlayPacketListener;
-import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.Text;
-import net.minecraft.util.Hand;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class TallNetheriteDoorBlockEntity extends BlockEntity
 {
 	
-	public String password = "";
+	public String password = null;
 	
 	public TallNetheriteDoorBlockEntity(BlockPos pos, BlockState state) {
 		super(DDBlockEntities.TALL_NETHERITE_DOOR, pos, state);
 	}
 
 	@Override
-	public void writeNbt(NbtCompound tag) {
-		super.writeNbt(tag);
+	public void saveAdditional(CompoundTag tag) {
+		super.saveAdditional(tag);
         if (this.password != null) {
             tag.putString("Password", this.password);
         }
 	}
 	
 	@Override
-	public void readNbt(NbtCompound tag) {
-		super.readNbt(tag);
+	public void load(CompoundTag tag) {
+		super.load(tag);
         if (tag.contains("Password")) {
             this.password = tag.getString("Password");
         }
@@ -48,7 +46,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
     }
 
     public void setPassword(ItemStack stack) {
-        this.setPassword(stack.getName().getString());
+        this.setPassword(stack.getHoverName().getString());
     }
     
     @Nullable
@@ -61,7 +59,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
     }
 
     public static boolean isCorrectKey(ItemStack key, String password) {
-        return key.getName().getString().equals(password);
+        return key.getHoverName().getString().equals(password);
     }
 
     public boolean isCorrectKey(ItemStack key) {
@@ -74,13 +72,13 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
         NO_KEY
     }
 
-    public static KeyStatus hasKeyInInventory(PlayerEntity player, String key) {
+    public static KeyStatus hasKeyInInventory(Player player, String key) {
         if (key == null) return KeyStatus.CORRECT_KEY;
-        KeyStatus found = KeyStatus.NO_KEY;
+        KeyStatus found = KeyStatus.INCORRECT_KEY;
         Inventory inventory = player.getInventory();
-        for (int idx = 0; idx < inventory.size(); idx++) {
-            ItemStack stack = inventory.getStack(idx);
-            if (stack.isIn(DDTags.KEY)) {
+        for (int idx = 0; idx < inventory.getContainerSize(); idx++) {
+            ItemStack stack = inventory.getItem(idx);
+            if (stack.is(DDTags.KEY)) {
                 found = KeyStatus.INCORRECT_KEY;
                 if (isCorrectKey(stack, key)) return KeyStatus.CORRECT_KEY;
             }
@@ -88,11 +86,11 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
         return found;
     }
 
-    public static boolean doesPlayerHaveKeyToOpen(PlayerEntity player, String lockPassword, boolean feedbackMessage, @Nullable String translName) {
+    public static boolean doesPlayerHaveKeyToOpen(Player player, String lockPassword, boolean feedbackMessage, @Nullable String translName) {
         KeyStatus key = hasKeyInInventory(player, lockPassword);
         if (key == KeyStatus.INCORRECT_KEY) {
             if (feedbackMessage) {
-                player.sendMessage(Text.translatable("message.supplementaries.safe.incorrect_key"), true);
+                player.displayClientMessage(Component.translatable("message.supplementaries.safe.incorrect_key"), true);
             }
             return false;
         } 
@@ -100,30 +98,32 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
         	return true;
         }
         if (feedbackMessage) {
-            player.sendMessage(Text.translatable("message.supplementaries." + translName + ".locked"), true);
+            player.displayClientMessage(Component.translatable("message.supplementaries." + translName + ".locked"), true);
         }
         return false;
     }
 
 
     //returns true if door has to open
-    public boolean handleAction(PlayerEntity player, Hand handIn, String translName) {
+    public boolean handleAction(Player player, InteractionHand handIn, String translName) {
         if (player.isSpectator()) return false;
-        ItemStack stack = player.getStackInHand(handIn);
-        boolean isKey = stack.isIn(DDTags.KEY);
+
+        ItemStack stack = player.getItemInHand(handIn);
+
+        boolean isKey = stack.is(DDTags.KEY);
         //clear ownership
-        if (player.isSneaking() && isKey && (player.isCreative() || this.isCorrectKey(stack))) {
+        if (player.isCrouching() && isKey && (player.isCreative() || this.isCorrectKey(stack))) {
         	this.clearOwner();
-            player.sendMessage(Text.translatable("message.supplementaries.safe.cleared"), true);
-            this.world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN, SoundCategory.BLOCKS, 0.5F, 1.5F);
+            player.displayClientMessage(Component.translatable("message.supplementaries.safe.cleared"), true);
+            this.level.playSound(null, worldPosition.getX() + 0.5, worldPosition.getY() + 0.5, worldPosition.getZ() + 0.5, SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.BLOCKS, 0.5F, 1.5F);
             return false;
         }
         //set key
-        else if (this.password == null || this.password.equals("")) {
-            if (isKey && !player.isSneaking()) {
+        else if (this.password == null) {
+            if (isKey) {
             	this.setPassword(stack);
-                player.sendMessage(Text.translatable("message.supplementaries.safe.assigned_key", this.password), true);
-                this.world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN, SoundCategory.BLOCKS, 0.5F, 1.5F);
+                player.displayClientMessage(Component.translatable("message.supplementaries.safe.assigned_key", this.password), true);
+                this.level.playSound(null, worldPosition.getX() + 0.5, worldPosition.getY() + 0.5, worldPosition.getZ() + 0.5, SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.BLOCKS, 0.5F, 1.5F);
                 return false;
             }
             return true;
@@ -133,12 +133,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
     }
 
     @Override
-    public Packet<ClientPlayPacketListener> toUpdatePacket() {
-        return BlockEntityUpdateS2CPacket.create(this);
+    public ClientboundBlockEntityDataPacket getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
     }
-    
-	@Override
-	public NbtCompound toInitialChunkDataNbt() {
-		return createNbt();
-	}
 }

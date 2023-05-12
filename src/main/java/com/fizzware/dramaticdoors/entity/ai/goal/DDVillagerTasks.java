@@ -3,13 +3,13 @@ package com.fizzware.dramaticdoors.entity.ai.goal;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
 
-import net.minecraft.entity.ai.brain.task.Task;
-import net.minecraft.entity.passive.VillagerEntity;
-import net.minecraft.village.VillagerProfession;
+import net.minecraft.world.entity.ai.behavior.BehaviorControl;
+import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.npc.VillagerProfession;
 
 public class DDVillagerTasks
 {
-    public static ImmutableList<Pair<Integer, ? extends Task<? super VillagerEntity>>> createTallDoorTasks(VillagerProfession profession, float speed) {
+    public static ImmutableList<Pair<Integer, ? extends BehaviorControl<? super Villager>>> createTallDoorTasks(VillagerProfession profession, float speed) {
         return ImmutableList.of(Pair.of(0, OpenTallDoorsTask.create()));
     }
 }

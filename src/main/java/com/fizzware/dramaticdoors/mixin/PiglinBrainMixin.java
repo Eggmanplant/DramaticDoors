@@ -8,21 +8,21 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.fizzware.dramaticdoors.entity.ai.goal.OpenTallDoorsTask;
 import com.google.common.collect.ImmutableList;
 
-import net.minecraft.entity.ai.brain.Activity;
-import net.minecraft.entity.ai.brain.Brain;
-import net.minecraft.entity.mob.PiglinBrain;
-import net.minecraft.entity.mob.PiglinEntity;
+import net.minecraft.world.entity.ai.Brain;
+import net.minecraft.world.entity.monster.piglin.Piglin;
+import net.minecraft.world.entity.monster.piglin.PiglinAi;
+import net.minecraft.world.entity.schedule.Activity;
 
-@Mixin(PiglinBrain.class)
+@Mixin(PiglinAi.class)
 public class PiglinBrainMixin
 {
 
-	@Inject(method = "create(Lnet/minecraft/entity/mob/PiglinEntity;Lnet/minecraft/entity/ai/brain/Brain;)Lnet/minecraft/entity/ai/brain/Brain;", at = @At (value = "RETURN"))
-	private static void injectCreate(PiglinEntity piglin, Brain<PiglinEntity> brain, CallbackInfoReturnable<Brain<?>> cir) {
-		addTallDoorActivities(brain);
+	@Inject(method = "makeBrain(Lnet/minecraft/world/entity/monster/piglin/Piglin;Lnet/minecraft/world/entity/ai/Brain;)Lnet/minecraft/world/entity/ai/Brain;", at = @At (value = "RETURN"))
+	private static void injectCreate(Piglin piglin, Brain<Piglin> brain, CallbackInfoReturnable<Brain<?>> cir) {
+		initTallDoorActivities(brain);
 	}
 	
-    private static void addTallDoorActivities(Brain<PiglinEntity> piglin) {
-        piglin.setTaskList(Activity.CORE, 1, ImmutableList.of(OpenTallDoorsTask.create()));
+    private static void initTallDoorActivities(Brain<Piglin> brain) {
+        brain.addActivity(Activity.CORE, 1, ImmutableList.of(OpenTallDoorsTask.create()));
     }
 }
