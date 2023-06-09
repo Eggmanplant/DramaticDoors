@@ -272,6 +272,11 @@ public class DDMiscPackRegistry
 		
 			helper.register(DDNames.TALL_TWIGS_BAMBOO, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("twigs", "bamboo_door")), BlockSetType.BAMBOO));
 		    
+			// Yippee
+			helper.register(DDNames.SHORT_MYSTICAL_OAK, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("yippee", "mystical_oak_door")), BlockSetType.OAK));    
+		
+			helper.register(DDNames.TALL_MYSTICAL_OAK, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("yippee", "mystical_oak_door")), BlockSetType.OAK));    
+
 		});
 		event.register(ForgeRegistries.Keys.ITEMS, helper -> {
 			// Mo' Shiz
@@ -497,6 +502,11 @@ public class DDMiscPackRegistry
 		
 		    helper.register(DDNames.TALL_TWIGS_BAMBOO, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWIGS_BAMBOO)), DDItems.PROPERTIES));
 		
+		    // Yippee
+		    helper.register(DDNames.SHORT_MYSTICAL_OAK, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MYSTICAL_OAK)), DDItems.PROPERTIES));
+		
+		    helper.register(DDNames.TALL_MYSTICAL_OAK, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MYSTICAL_OAK)), DDItems.PROPERTIES));		    
+
 		});
 	}
 }

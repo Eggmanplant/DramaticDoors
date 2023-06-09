@@ -764,6 +764,14 @@ public class DDItems {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MORECRAFT_NETHERWOOD)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MORECRAFT_NETHERWOOD)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
+    		if (ModList.get().isLoaded("mysticsbiomes")) {
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MB_CHERRY)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MB_CHERRY)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MB_JACARANDA)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MB_JACARANDA)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MB_STRAWBERRY)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MB_STRAWBERRY)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    		}
     		if (ModList.get().isLoaded("nethers_exoticism")) {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JABOTICABA)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_JABOTICABA)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -877,6 +885,10 @@ public class DDItems {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHESTNUT)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_HOLLY)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_HOLLY)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    		}
+    		if (ModList.get().isLoaded("yippee")) {
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MYSTICAL_OAK)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MYSTICAL_OAK)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
     	}
     	if (Compats.CHIPPED_INSTALLED && event.getTab() == CHIPPED_TAB) {
@@ -1299,16 +1311,16 @@ public class DDItems {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_IRON_SPACE)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_IRON_STONE_BRICK)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
 
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_BLANK)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_BOOKSHELF)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_CASSETTE)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_FRENCH)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_FROSTED)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_GLASS)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_HEART)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_ORIGIN)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_RUSTIC)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
-    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_ACACIA_SHOJI)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_BLANK)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_BOOKSHELF)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_CASSETTE)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_FRENCH)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_FROSTED)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_GLASS)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_HEART)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_ORIGIN)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_RUSTIC)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
+    			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_OAK_SHOJI)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
 
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_SPRUCE_BLANK)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_SPRUCE_BOOKSHELF)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
