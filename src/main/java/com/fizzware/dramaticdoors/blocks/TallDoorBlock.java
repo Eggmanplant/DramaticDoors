@@ -14,7 +14,6 @@ import com.mojang.blaze3d.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.*;
 import net.minecraft.world.InteractionHand;
@@ -31,6 +30,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
@@ -45,7 +45,6 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.phys.BlockHitResult;
@@ -54,8 +53,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
@@ -72,8 +69,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     protected static final VoxelShape NORTH_AABB = Block.box(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape WEST_AABB = Block.box(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape EAST_AABB = Block.box(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D);
-    protected final SoundEvent closeSound;
-    protected final SoundEvent openSound;
+    private final BlockSetType type;
 
     public TallDoorBlock(Block from, BlockSetType blockset) {
         this(from, blockset, null);
@@ -82,8 +78,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     public TallDoorBlock(Block from, BlockSetType blockset, @Nullable FeatureFlag flag) {
     	super(flag != null ? Properties.copy(from).requiredFeatures(flag) : Properties.copy(from));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER));
-        this.closeSound = blockset.doorClose();
-        this.openSound = blockset.doorOpen();
+        this.type = blockset;
     }
 
     @Override
@@ -196,7 +191,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL && !state.is(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
+    	if (!this.type.canOpenByHand() && !state.is(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
             return InteractionResult.PASS;
         } 
     	else {
@@ -311,7 +306,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     protected void playSound(@Nullable Entity entity, Level level, BlockPos pos, boolean isOpen) {
-        level.playSound(entity, pos, isOpen ? this.openSound : this.closeSound, SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.1F + 0.9F);
+        level.playSound(entity, pos, isOpen ? this.type.doorOpen() : this.type.doorClose(), SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.1F + 0.9F);
     }
 
     @Override
@@ -396,4 +391,8 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             }
         }
     }
+	
+	public BlockSetType type() {
+		return this.type;
+	}
 }

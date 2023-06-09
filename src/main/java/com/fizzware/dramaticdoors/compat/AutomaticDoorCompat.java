@@ -14,7 +14,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.AABB;
 import net.minecraftforge.event.TickEvent.LevelTickEvent;
 import net.minecraftforge.event.TickEvent.Phase;
@@ -173,11 +172,14 @@ public class AutomaticDoorCompat
 	}
 	
 	private static boolean isDoorHandOpenable(BlockState state) {
-		if (!(state.getMaterial() == Material.METAL || state.getMaterial() == Material.HEAVY_METAL)) {
-			return true;
-		}
-		if ((state.getMaterial() == Material.METAL || state.getMaterial() == Material.HEAVY_METAL) && state.is(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
-			return true;
+		Block block = state.getBlock();
+		if (block instanceof TallDoorBlock) {
+			if (((TallDoorBlock)block).type().canOpenByHand()) {
+				return true;
+			}
+			if (!((TallDoorBlock)block).type().canOpenByHand() && state.is(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
+				return true;
+			}
 		}
 		return shouldOpenIronDoors;
 	}

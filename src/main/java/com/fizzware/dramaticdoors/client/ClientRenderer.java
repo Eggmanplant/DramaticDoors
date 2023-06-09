@@ -15,7 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 @OnlyIn(Dist.CLIENT)
 public class ClientRenderer
 {
-	@SuppressWarnings("removal")
+	@SuppressWarnings("deprecation")
 	public static void setRenderers() {
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.SHORT_IRON_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.SHORT_OAK_DOOR.get(), RenderType.cutout());

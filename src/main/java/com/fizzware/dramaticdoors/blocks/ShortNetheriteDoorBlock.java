@@ -37,7 +37,7 @@ public class ShortNetheriteDoorBlock extends ShortDoorBlock implements EntityBlo
 				tryOpenDoubleDoor(level, state, pos);
 				BlockState newState = state.cycle(OPEN);
 				level.setBlock(pos, newState, 10);
-	            level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+	            this.playSound(player, level, pos, state.getValue(OPEN));
 	            level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 			}
 		}

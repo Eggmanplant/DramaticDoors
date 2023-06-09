@@ -1,39 +1,37 @@
 package com.fizzware.dramaticdoors.items;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.compat.Compats;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTab.TabVisibility;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
-
 import net.minecraftforge.common.util.MutableHashedLinkedMap;
 import net.minecraft.world.item.Items;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DDItems {
 
-	private static CreativeModeTab MAIN_TAB;
-	private static CreativeModeTab CHIPPED_TAB;
-	private static CreativeModeTab MACAW_TAB;
-	private static CreativeModeTab MANYIDEAS_TAB;
+	public static final ResourceKey<CreativeModeTab> MAIN_TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation("dramaticdoors", "main_tab"));
+	public static final ResourceKey<CreativeModeTab> CHIPPED_TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation("dramaticdoors", "chipped_tab"));
+	public static final ResourceKey<CreativeModeTab> MACAW_TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation("dramaticdoors", "macaw_tab"));
+	public static final ResourceKey<CreativeModeTab> MANYIDEAS_TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation("dramaticdoors", "manyideas_tab"));
 	
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DramaticDoors.MOD_ID);
 
@@ -48,8 +46,8 @@ public class DDItems {
     public static final RegistryObject<Item> SHORT_ACACIA_DOOR = ITEMS.register(DDNames.SHORT_ACACIA, () -> new ShortDoorItem(DDBlocks.SHORT_ACACIA_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> SHORT_DARK_OAK_DOOR = ITEMS.register(DDNames.SHORT_DARK_OAK, () -> new ShortDoorItem(DDBlocks.SHORT_DARK_OAK_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> SHORT_MANGROVE_DOOR = ITEMS.register(DDNames.SHORT_MANGROVE, () -> new ShortDoorItem(DDBlocks.SHORT_MANGROVE_DOOR.get(), PROPERTIES));
-    public static final RegistryObject<Item> SHORT_BAMBOO_DOOR = ITEMS.register(DDNames.SHORT_BAMBOO, () -> new ShortDoorItem(DDBlocks.SHORT_BAMBOO_DOOR.get(), PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20)));
-    public static final RegistryObject<Item> SHORT_CHERRY_DOOR = ITEMS.register(DDNames.SHORT_CHERRY, () -> new ShortDoorItem(DDBlocks.SHORT_CHERRY_DOOR.get(), PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20)));
+    public static final RegistryObject<Item> SHORT_BAMBOO_DOOR = ITEMS.register(DDNames.SHORT_BAMBOO, () -> new ShortDoorItem(DDBlocks.SHORT_BAMBOO_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> SHORT_CHERRY_DOOR = ITEMS.register(DDNames.SHORT_CHERRY, () -> new ShortDoorItem(DDBlocks.SHORT_CHERRY_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> SHORT_CRIMSON_DOOR = ITEMS.register(DDNames.SHORT_CRIMSON, () -> new ShortDoorItem(DDBlocks.SHORT_CRIMSON_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> SHORT_WARPED_DOOR = ITEMS.register(DDNames.SHORT_WARPED, () -> new ShortDoorItem(DDBlocks.SHORT_WARPED_DOOR.get(), PROPERTIES));
     
@@ -61,34 +59,32 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_ACACIA_DOOR = ITEMS.register(DDNames.TALL_ACACIA, () -> new TallDoorItem(DDBlocks.TALL_ACACIA_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_DARK_OAK_DOOR = ITEMS.register(DDNames.TALL_DARK_OAK, () -> new TallDoorItem(DDBlocks.TALL_DARK_OAK_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_MANGROVE_DOOR = ITEMS.register(DDNames.TALL_MANGROVE, () -> new TallDoorItem(DDBlocks.TALL_MANGROVE_DOOR.get(), PROPERTIES));
-    public static final RegistryObject<Item> TALL_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR.get(), PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20)));
-    public static final RegistryObject<Item> TALL_CHERRY_DOOR = ITEMS.register(DDNames.TALL_CHERRY, () -> new TallDoorItem(DDBlocks.TALL_CHERRY_DOOR.get(), PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20)));
+    public static final RegistryObject<Item> TALL_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR.get(), PROPERTIES));
+    public static final RegistryObject<Item> TALL_CHERRY_DOOR = ITEMS.register(DDNames.TALL_CHERRY, () -> new TallDoorItem(DDBlocks.TALL_CHERRY_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_CRIMSON_DOOR = ITEMS.register(DDNames.TALL_CRIMSON, () -> new TallDoorItem(DDBlocks.TALL_CRIMSON_DOOR.get(), PROPERTIES));
     public static final RegistryObject<Item> TALL_WARPED_DOOR = ITEMS.register(DDNames.TALL_WARPED, () -> new TallDoorItem(DDBlocks.TALL_WARPED_DOOR.get(), PROPERTIES));
     
     @SubscribeEvent
-    public static void registerCreativeTabs(CreativeModeTabEvent.Register event) {
-    	List<Object> list = new ArrayList<Object>();
-    	if (ModList.get().isLoaded("chipped")) {
-    		CHIPPED_TAB = event.registerCreativeModeTab(new ResourceLocation(DramaticDoors.MOD_ID, "chipped_tab"), List.of(), List.of(CreativeModeTabs.SPAWN_EGGS), builder -> builder.title(Component.translatable("itemGroup.dramaticdoors_chipped")).icon(() -> { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_GATED))); } ).build());
-    		list.add(CHIPPED_TAB);
-    	}
-    	if (ModList.get().isLoaded("mcwdoors")) {
-    		MACAW_TAB = event.registerCreativeModeTab(new ResourceLocation(DramaticDoors.MOD_ID, "macaw_tab"), List.of(), List.of(CreativeModeTabs.SPAWN_EGGS), builder -> builder.title(Component.translatable("itemGroup.dramaticdoors_macaw")).icon(() -> { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARN))); } ).build());
-    		list.add(MACAW_TAB);
-    	}
-    	if (ModList.get().isLoaded("manyideas_doors")) {
-    		MANYIDEAS_TAB = event.registerCreativeModeTab(new ResourceLocation(DramaticDoors.MOD_ID, "manyideas_tab"), List.of(), List.of(CreativeModeTabs.SPAWN_EGGS), builder -> builder.title(Component.translatable("itemGroup.dramaticdoors_manyideas")).icon(() -> { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_CRIMSON_BLANK))); } ).build());
-    		list.add(MANYIDEAS_TAB);
-    	}
-    	MAIN_TAB = event.registerCreativeModeTab(new ResourceLocation(DramaticDoors.MOD_ID, "main_tab"), list, List.of(CreativeModeTabs.SPAWN_EGGS), builder -> builder.title(Component.translatable("itemGroup.dramaticdoors")).icon(() -> { return new ItemStack(DDItems.TALL_OAK_DOOR.get()); } ).build());
+    public static void registerCreativeTabs(RegisterEvent event) {
+    	event.register(Registries.CREATIVE_MODE_TAB, helper -> {
+    		helper.register(MAIN_TAB, CreativeModeTab.builder().title(Component.translatable("itemGroup.dramaticdoors")).withTabsBefore(CreativeModeTabs.SPAWN_EGGS).icon(() -> { return new ItemStack(DDItems.TALL_OAK_DOOR.get()); }).build());
+    		if (ModList.get().isLoaded("chipped")) {
+    			helper.register(CHIPPED_TAB, CreativeModeTab.builder().title(Component.translatable("itemGroup.dramaticdoors_chipped")).withTabsBefore(CreativeModeTabs.SPAWN_EGGS).icon(() -> { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_BIRCH_GATED))); }).build());
+    		}
+    		if (ModList.get().isLoaded("mcwdoors")) {
+    			helper.register(MACAW_TAB, CreativeModeTab.builder().title(Component.translatable("itemGroup.dramaticdodramaticdoors_macawors")).withTabsBefore(CreativeModeTabs.SPAWN_EGGS).icon(() -> { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARN))); }).build());
+    		}
+    		if (ModList.get().isLoaded("manyideas_doors")) {
+    			helper.register(MANYIDEAS_TAB, CreativeModeTab.builder().title(Component.translatable("itemGroup.dramaticdoors_manyideas")).withTabsBefore(CreativeModeTabs.SPAWN_EGGS).icon(() -> { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_CRIMSON_BLANK))); }).build());
+    		}
+    	});
     }
         
     @SubscribeEvent
-    public static void assignItemsToTabs(CreativeModeTabEvent.BuildContents event) {
+    public static void assignItemsToTabs(BuildCreativeModeTabContentsEvent event) {
     	MutableHashedLinkedMap<ItemStack, TabVisibility> map = event.getEntries();
     	// Insert into vanilla tabs.
-    	if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+    	if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
     		map.putBefore(Items.IRON_DOOR.getDefaultInstance(), SHORT_IRON_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
     		map.putBefore(Items.OAK_DOOR.getDefaultInstance(), SHORT_OAK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
     		map.putBefore(Items.SPRUCE_DOOR.getDefaultInstance(), SHORT_SPRUCE_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
@@ -114,14 +110,14 @@ public class DDItems {
     		map.putAfter(Items.BAMBOO_DOOR.getDefaultInstance(), TALL_BAMBOO_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
     		map.putAfter(Items.CHERRY_DOOR.getDefaultInstance(), TALL_CHERRY_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
     	}
-    	if (event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS) {
+    	if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
     		map.putBefore(Items.IRON_DOOR.getDefaultInstance(), SHORT_IRON_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
     		map.putBefore(Items.OAK_DOOR.getDefaultInstance(), SHORT_OAK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
     		map.putAfter(Items.IRON_DOOR.getDefaultInstance(), TALL_IRON_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
     		map.putAfter(Items.OAK_DOOR.getDefaultInstance(), TALL_OAK_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_TAB_ONLY);
     	}
     	// Insert into Dramatic Doors tabs.
-    	if (event.getTab() == MAIN_TAB) {
+    	if (event.getTabKey() == MAIN_TAB) {
     		// Vanilla
     		map.put(SHORT_IRON_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		map.put(TALL_IRON_DOOR.get().getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -891,7 +887,7 @@ public class DDItems {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MYSTICAL_OAK)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
     	}
-    	if (Compats.CHIPPED_INSTALLED && event.getTab() == CHIPPED_TAB) {
+    	if (Compats.CHIPPED_INSTALLED && event.getTabKey() == CHIPPED_TAB) {
     		if (ModList.get().isLoaded("chipped")) {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_HEAVY)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_DUAL_PANELED)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -1076,7 +1072,7 @@ public class DDItems {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_WARPED_SUPPORTED)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
     	}
-    	if (Compats.MACAWS_DOORS_INSTALLED && event.getTab() == MACAW_TAB) {
+    	if (Compats.MACAWS_DOORS_INSTALLED && event.getTabKey() == MACAW_TAB) {
     		if (ModList.get().isLoaded("mcwdoors")) {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_STORE)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_SLIDING_GLASS)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -1287,7 +1283,7 @@ public class DDItems {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_MYSTIC)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     		}
     	}
-    	if (Compats.MANYIDEAS_DOORS_INSTALLED && event.getTab() == MANYIDEAS_TAB) {
+    	if (Compats.MANYIDEAS_DOORS_INSTALLED && event.getTabKey() == MANYIDEAS_TAB) {
     		if (ModList.get().isLoaded("manyideas_doors")) {
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_COPPER_BAR)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
     			map.put(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANYIDEAS_COPPER_BARREL)).getDefaultInstance(), TabVisibility.PARENT_AND_SEARCH_TABS);
