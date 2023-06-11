@@ -27,7 +27,7 @@ public class DramaticDoors implements ModInitializer
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     
     public static final CreativeModeTab DD_MAIN_TAB = FabricItemGroupBuilder.build(new ResourceLocation(MOD_ID, "talldoors"), () -> { return new ItemStack(DDItems.TALL_OAK_DOOR); } );
-    public static final CreativeModeTab DD_CHIPPED_TAB = FabricLoader.getInstance().isModLoaded("chipped") ? FabricItemGroupBuilder.build(new ResourceLocation(MOD_ID, "talldoors_chipped"), () -> { return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_DOOR_07); } ) : null;
+    public static final CreativeModeTab DD_CHIPPED_TAB = FabricLoader.getInstance().isModLoaded("chipped") ? FabricItemGroupBuilder.build(new ResourceLocation(MOD_ID, "talldoors_chipped"), () -> { return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_GATED_DOOR); } ) : null;
     public static final CreativeModeTab DD_MACAW_TAB = FabricLoader.getInstance().isModLoaded("mcwdoors") ? FabricItemGroupBuilder.build(new ResourceLocation(MOD_ID, "talldoors_macaw"), () -> { return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR); } ) : null;
     
     @Override

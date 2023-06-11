@@ -12,6 +12,20 @@ group = project.maven_group
 
 loom {
 	accessWidenerPath = file("src/main/resources/dramaticdoors.accesswidener")
+	runs {
+        //
+        // This adds a new gradle task that runs the datagen API: "gradlew runDatagenClient"
+        //
+        data {
+            inherit client
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
+            vmArg "-Dfabric-api.datagen.modid=${modid}"
+ 
+            runDir "build/datagen"
+        }
+    }
 }
 
 repositories {
@@ -45,12 +59,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modRuntimeOnly "curse.maven:selene-499980:4412070"
-	modImplementation "curse.maven:supplementaries-412082:4410940"
-	modRuntimeOnly "curse.maven:architectury-api-419699:4147351"
-	modImplementation "curse.maven:consistencyplus-430445:3971956"
-	modRuntimeOnly "curse.maven:configured-457570:4011355"
-	modRuntimeOnly "curse.maven:configured-457570:4011355"
+	modRuntimeOnly "curse.maven:selene-499980:4569959"
+	modImplementation "curse.maven:supplementaries-412082:4568478"
+	//modRuntimeOnly "curse.maven:architectury-api-419699:4147351"
+	//modImplementation "curse.maven:consistencyplus-430445:3971956"
+	//modRuntimeOnly "curse.maven:configured-457570:4011355"
 	modImplementation "curse.maven:statement-340604:4275909"
 }
 

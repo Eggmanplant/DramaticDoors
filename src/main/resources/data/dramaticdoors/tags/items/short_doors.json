@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "#dramaticdoors:short_wooden_doors",
+    "dramaticdoors:short_iron_door",
+    "dramaticdoors:short_iron_glass_door",
+    "dramaticdoors:short_terminite_door",
+    "dramaticdoors:short_thallasium_door",
+    "dramaticdoors:short_blockus_blackstone_door",
+    "dramaticdoors:short_blockus_obsidian_reinforced_door",
+    "dramaticdoors:short_blockus_stone_door",
+    "dramaticdoors:short_andesite_door",
+    "dramaticdoors:short_brass_door",
+    "dramaticdoors:short_copper_door",
+    "dramaticdoors:short_zinc_door",
+    "dramaticdoors:short_locked_andesite_door",
+    "dramaticdoors:short_locked_brass_door",
+    "dramaticdoors:short_locked_copper_door",
+    "dramaticdoors:short_locked_zinc_door",
+    "dramaticdoors:short_dark_iron_door",
+    "dramaticdoors:short_steel_door",
+    "dramaticdoors:short_gold_door",
+    "dramaticdoors:short_netherite_door",
+    "dramaticdoors:short_flesh_door",
+    "dramaticdoors:short_full_flesh_door",
+    "dramaticdoors:short_fleshkin_door",
+    "dramaticdoors:short_soul_copper_door"
+  ]
+}

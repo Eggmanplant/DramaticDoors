@@ -354,7 +354,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
 	public static boolean isWoodenDoor(BlockState state) {
-		return state.getBlock() instanceof TallDoorBlock && (state.is(DDTags.TALL_WOODEN_DOORS));
+		return state.getBlock() instanceof TallDoorBlock && (state.is(DDTags.TALL_WOODEN_DOORS) || state.is(DDTags.MOB_OPENABLE_TALL_METAL_DOORS));
 	}
 	
     //Double Doors Compatibility.

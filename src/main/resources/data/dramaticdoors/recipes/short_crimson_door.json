@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "minecraft:crimson_door"
+  },
+  "result": "dramaticdoors:short_crimson_door",
+  "count": 2
+}

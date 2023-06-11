@@ -23,6 +23,9 @@
     ],
     "client": [
       "com.fizzware.dramaticdoors.client.RenderHandler"
+    ],
+    "fabric-datagen": [
+      "com.fizzware.dramaticdoors.datagen.DramaticDoorsDataGenerators"
     ]
   },
   "mixins": [
