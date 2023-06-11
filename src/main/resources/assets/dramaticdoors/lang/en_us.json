@@ -830,9 +830,9 @@
   "block.dramaticdoors.tall_macaw_spruce_tropical_door": "Tall Spruce Tropical Door",
   "block.dramaticdoors.tall_macaw_warped_tropical_door": "Tall Warped Tropical Door",
   
-  "itemGroup.dramaticdoors.talldoors": "Dramatic Doors",
-  "itemGroup.dramaticdoors.talldoors_chipped": "Dramatic Doors: Chipped",
-  "itemGroup.dramaticdoors.talldoors_macaw": "Dramatic Doors: Macaw's Doors",
+  "itemGroup.dramaticdoors": "Dramatic Doors",
+  "itemGroup.dramaticdoors_chipped": "Dramatic Doors: Chipped",
+  "itemGroup.dramaticdoors_macaw": "Dramatic Doors: Macaw's Doors",
   
   "config.dramaticdoors.waterloggable_doors.name": "Waterloggable Doors",
   "config.dramaticdoors.waterloggable_doors.tooltip": "Allow doors to be waterlogged. Enable to allow waterlogging. Disable for compatibility with certain mods. Requires restart after changing.  Default: true",

@@ -6,11 +6,8 @@ import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
@@ -40,7 +37,6 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.phys.BlockHitResult;
@@ -60,8 +56,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     protected static final VoxelShape NORTH_AABB = Block.box(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape WEST_AABB = Block.box(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape EAST_AABB = Block.box(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D);
-    protected final SoundEvent closeSound;
-    protected final SoundEvent openSound;
+    private final BlockSetType type;
 	
     public ShortDoorBlock(Block from, BlockSetType blockset) {
         this(from, blockset, null);
@@ -70,8 +65,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 	public ShortDoorBlock(Block from, BlockSetType blockset, @Nullable FeatureFlag flag) {
     	super(flag != null ? Properties.copy(from).requiredFeatures(flag) : Properties.copy(from));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE));
-        this.closeSound = blockset.doorClose();
-        this.openSound = blockset.doorOpen();
+        this.type = blockset;
 	}
 
     @Override
@@ -82,14 +76,6 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     @Override
     public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
         super.playerWillDestroy(level, pos, state, player);
-    }
-
-    protected int getCloseSound() {
-        return this.material == Material.METAL ? 1011 : 1012;
-    }
-
-    protected int getOpenSound() {
-        return this.material == Material.METAL ? 1005 : 1006;
     }
 
     @Nullable
@@ -146,7 +132,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL && !state.is(DDTags.HAND_OPENABLE_SHORT_METAL_DOORS)) {
+    	if (!this.type.canOpenByHand() && !state.is(DDTags.HAND_OPENABLE_SHORT_METAL_DOORS)) {
             return InteractionResult.PASS;
         } 
     	else {
@@ -156,7 +142,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
         	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
             level.setBlock(pos, state, 10);
-            this.playSound(player, level, pos, state.getValue(OPEN));
+	        this.playSound(player, level, pos, state.getValue(OPEN));
             level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 			if (state.getValue(WATERLOGGED)) {
 				level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
@@ -164,15 +150,6 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
             return InteractionResult.sidedSuccess(level.isClientSide);
         }
     }
-    
-	@Override
-	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-		if (!level.isClientSide) {
-			state = state.cycle(OPEN);
-			level.setBlock(pos, state, 10);
-			level.levelEvent(null, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
-		}
-	}
 
     public void toggleDoor(Level level, BlockPos pos, boolean open) {
         BlockState blockstate = level.getBlockState(pos);
@@ -211,7 +188,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
         	}
         	else {
 	            if (flag != state.getValue(OPEN)) {
-	            	this.playSound((Entity)null, level, pos, flag);
+	                this.playSound(null, level, pos, flag);
 	            }
 	            tryOpenDoubleDoor(level, state, pos);
 	            level.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), Block.UPDATE_CLIENTS);
@@ -235,7 +212,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     protected void playSound(@Nullable Entity entity, Level level, BlockPos pos, boolean isOpen) {
-        level.playSound(entity, pos, isOpen ? this.openSound : this.closeSound, SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.1F + 0.9F);
+        level.playSound(entity, pos, isOpen ? this.type.doorOpen() : this.type.doorClose(), SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.1F + 0.9F);
     }
 
     @Override
@@ -319,4 +296,8 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
             }
         }
     }
+	
+	public BlockSetType type() {
+		return this.type;
+	}
 }

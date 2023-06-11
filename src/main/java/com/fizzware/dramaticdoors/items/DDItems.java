@@ -4,18 +4,27 @@ import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 public class DDItems {
+	
+    public static final ResourceKey<CreativeModeTab> DD_MAIN_TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(DramaticDoors.MOD_ID, "main_tab"));
+    public static final ResourceKey<CreativeModeTab> DD_CHIPPED_TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(DramaticDoors.MOD_ID, "chipped_tab"));
+    public static final ResourceKey<CreativeModeTab> DD_MACAW_TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(DramaticDoors.MOD_ID, "macaw_tab"));
 	
 	public static final Item.Properties PROPERTIES = new FabricItemSettings();
 	
@@ -28,8 +37,8 @@ public class DDItems {
     public static final Item SHORT_ACACIA_DOOR = new ShortDoorItem(DDBlocks.SHORT_ACACIA_DOOR, PROPERTIES);
     public static final Item SHORT_DARK_OAK_DOOR = new ShortDoorItem(DDBlocks.SHORT_DARK_OAK_DOOR, PROPERTIES);
     public static final Item SHORT_MANGROVE_DOOR = new ShortDoorItem(DDBlocks.SHORT_MANGROVE_DOOR, PROPERTIES);
-    public static final Item SHORT_BAMBOO_DOOR = new ShortDoorItem(DDBlocks.SHORT_BAMBOO_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
-    public static final Item SHORT_CHERRY_DOOR = new ShortDoorItem(DDBlocks.SHORT_CHERRY_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
+    public static final Item SHORT_BAMBOO_DOOR = new ShortDoorItem(DDBlocks.SHORT_BAMBOO_DOOR, PROPERTIES);
+    public static final Item SHORT_CHERRY_DOOR = new ShortDoorItem(DDBlocks.SHORT_CHERRY_DOOR, PROPERTIES);
     public static final Item SHORT_CRIMSON_DOOR = new ShortDoorItem(DDBlocks.SHORT_CRIMSON_DOOR, PROPERTIES);
     public static final Item SHORT_WARPED_DOOR = new ShortDoorItem(DDBlocks.SHORT_WARPED_DOOR, PROPERTIES);
 
@@ -41,8 +50,8 @@ public class DDItems {
     public static final Item TALL_ACACIA_DOOR = new TallDoorItem(DDBlocks.TALL_ACACIA_DOOR, PROPERTIES);
     public static final Item TALL_DARK_OAK_DOOR = new TallDoorItem(DDBlocks.TALL_DARK_OAK_DOOR, PROPERTIES);
     public static final Item TALL_MANGROVE_DOOR = new TallDoorItem(DDBlocks.TALL_MANGROVE_DOOR, PROPERTIES);
-    public static final Item TALL_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
-    public static final Item TALL_CHERRY_DOOR = new TallDoorItem(DDBlocks.TALL_CHERRY_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
+    public static final Item TALL_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR, PROPERTIES);
+    public static final Item TALL_CHERRY_DOOR = new TallDoorItem(DDBlocks.TALL_CHERRY_DOOR, PROPERTIES);
     public static final Item TALL_CRIMSON_DOOR = new TallDoorItem(DDBlocks.TALL_CRIMSON_DOOR, PROPERTIES);
     public static final Item TALL_WARPED_DOOR = new TallDoorItem(DDBlocks.TALL_WARPED_DOOR, PROPERTIES);
     
@@ -285,8 +294,8 @@ public class DDItems {
     public static final Item SHORT_ACACIA_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_ACACIA_GLASS_DOOR, PROPERTIES);
     public static final Item SHORT_DARK_OAK_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_DARK_OAK_GLASS_DOOR, PROPERTIES);
     public static final Item SHORT_MANGROVE_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_MANGROVE_GLASS_DOOR, PROPERTIES);
-    public static final Item SHORT_BAMBOO_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BAMBOO_GLASS_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
-    public static final Item SHORT_CHERRY_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_CHERRY_GLASS_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
+    public static final Item SHORT_BAMBOO_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BAMBOO_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_CHERRY_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_CHERRY_GLASS_DOOR, PROPERTIES);
     public static final Item SHORT_CRIMSON_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_CRIMSON_GLASS_DOOR, PROPERTIES);
     public static final Item SHORT_WARPED_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_WARPED_GLASS_DOOR, PROPERTIES);
 
@@ -298,8 +307,8 @@ public class DDItems {
     public static final Item TALL_ACACIA_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_ACACIA_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_DARK_OAK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_DARK_OAK_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_MANGROVE_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MANGROVE_GLASS_DOOR, PROPERTIES);
-    public static final Item TALL_BAMBOO_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_BAMBOO_GLASS_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
-    public static final Item TALL_CHERRY_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_CHERRY_GLASS_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
+    public static final Item TALL_BAMBOO_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_BAMBOO_GLASS_DOOR, PROPERTIES);
+    public static final Item TALL_CHERRY_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_CHERRY_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_CRIMSON_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_CRIMSON_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_WARPED_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_WARPED_GLASS_DOOR, PROPERTIES);
 
@@ -1745,16 +1754,26 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_MYSTIC), TALL_MACAW_CRIMSON_MYSTIC_DOOR);
     }
 	
+	public static void registerCreativeTabs() {
+		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, DD_MAIN_TAB.location(), FabricItemGroup.builder().title(Component.translatable("itemGroup.dramaticdoors")).icon(() -> { return new ItemStack(DDItems.TALL_OAK_DOOR); } ).build());
+		if (FabricLoader.getInstance().isModLoaded("chipped")) {
+			Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, DD_CHIPPED_TAB.location(), FabricItemGroup.builder().title(Component.translatable("itemGroup.dramaticdoors_chipped")).icon(() -> { return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_GATED_DOOR); } ).build());
+		}
+		if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
+			Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, DD_MACAW_TAB.location(), FabricItemGroup.builder().title(Component.translatable("itemGroup.dramaticdoors_macaw")).icon(() -> { return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR); } ).build());
+		}
+	}
+	
     public static void assignItemsToTabs() {
-    	ItemGroupEvents.modifyEntriesEvent(DramaticDoors.DD_MAIN_TAB).register(DDItems::addMainTabEntries);
-        if (FabricLoader.getInstance().isModLoaded("chipped")) {
-            ItemGroupEvents.modifyEntriesEvent(DramaticDoors.DD_CHIPPED_TAB).register(DDItems::addChippedTabEntries);
-        }
-        if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
-            ItemGroupEvents.modifyEntriesEvent(DramaticDoors.DD_MACAW_TAB).register(DDItems::addMacawTabEntries);
-        }
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register(DDItems::addBuildingBlocks);
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(DDItems::addRedstoneBlocks);
+    	ItemGroupEvents.modifyEntriesEvent(DD_MAIN_TAB).register(DDItems::addMainTabEntries);
+        if (FabricLoader.getInstance().isModLoaded("chipped")) {
+            ItemGroupEvents.modifyEntriesEvent(DD_CHIPPED_TAB).register(DDItems::addChippedTabEntries);
+        }
+        if (FabricLoader.getInstance().isModLoaded("mcwdoors")) {
+            ItemGroupEvents.modifyEntriesEvent(DD_MACAW_TAB).register(DDItems::addMacawTabEntries);
+        }
     }
 
     private static void addMainTabEntries(FabricItemGroupEntries entries) {
@@ -1774,10 +1793,10 @@ public class DDItems {
         entries.accept(TALL_DARK_OAK_DOOR);
         entries.accept(SHORT_MANGROVE_DOOR);
         entries.accept(TALL_MANGROVE_DOOR);
-        entries.accept(SHORT_BAMBOO_DOOR); // Bamboo is load-conditional on 1.20
-        entries.accept(TALL_BAMBOO_DOOR); // Bamboo is load-conditional on 1.20
-        entries.accept(SHORT_CHERRY_DOOR); // Cherry is also load-conditional on 1.20
-        entries.accept(TALL_CHERRY_DOOR); // Cherry is also load-conditional on 1.20
+        entries.accept(SHORT_BAMBOO_DOOR);
+        entries.accept(TALL_BAMBOO_DOOR);
+        entries.accept(SHORT_CHERRY_DOOR);
+        entries.accept(TALL_CHERRY_DOOR);
         entries.accept(SHORT_CRIMSON_DOOR);
         entries.accept(TALL_CRIMSON_DOOR);
         entries.accept(SHORT_WARPED_DOOR);
