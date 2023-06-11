@@ -5,6 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import com.fizzware.dramaticdoors.entity.ai.goal.OpenShortDoorsTask;
 import com.fizzware.dramaticdoors.entity.ai.goal.OpenTallDoorsTask;
 import com.google.common.collect.ImmutableList;
 
@@ -24,5 +25,6 @@ public class PiglinBrainMixin
 	
     private static void initTallDoorActivities(Brain<Piglin> brain) {
         brain.addActivity(Activity.CORE, 1, ImmutableList.of(OpenTallDoorsTask.create()));
+        brain.addActivity(Activity.CORE, 1, ImmutableList.of(OpenShortDoorsTask.create()));
     }
 }

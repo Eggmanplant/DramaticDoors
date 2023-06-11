@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 public class DDBlocks {
 
 	// Vanilla
-    /*public static final Block SHORT_IRON_DOOR = new ShortDoorBlock(Blocks.IRON_DOOR, BlockSetType.IRON);
+    public static final Block SHORT_IRON_DOOR = new ShortDoorBlock(Blocks.IRON_DOOR, BlockSetType.IRON);
     public static final Block SHORT_OAK_DOOR = new ShortDoorBlock(Blocks.OAK_DOOR, BlockSetType.OAK);
     public static final Block SHORT_SPRUCE_DOOR = new ShortDoorBlock(Blocks.SPRUCE_DOOR, BlockSetType.SPRUCE);
     public static final Block SHORT_BIRCH_DOOR = new ShortDoorBlock(Blocks.BIRCH_DOOR, BlockSetType.BIRCH);
@@ -25,7 +25,7 @@ public class DDBlocks {
     public static final Block SHORT_BAMBOO_DOOR = new ShortDoorBlock(Blocks.BAMBOO_DOOR, BlockSetType.BAMBOO, FeatureFlags.UPDATE_1_20);
     public static final Block SHORT_CHERRY_DOOR = new ShortDoorBlock(Blocks.CHERRY_DOOR, BlockSetType.CHERRY, FeatureFlags.UPDATE_1_20);
     public static final Block SHORT_CRIMSON_DOOR = new ShortDoorBlock(Blocks.CRIMSON_DOOR, BlockSetType.CRIMSON);
-    public static final Block SHORT_WARPED_DOOR = new ShortDoorBlock(Blocks.WARPED_DOOR, BlockSetType.WARPED);*/
+    public static final Block SHORT_WARPED_DOOR = new ShortDoorBlock(Blocks.WARPED_DOOR, BlockSetType.WARPED);
     
     public static final Block TALL_IRON_DOOR = new TallDoorBlock(Blocks.IRON_DOOR, BlockSetType.IRON);
     public static final Block TALL_OAK_DOOR = new TallDoorBlock(Blocks.OAK_DOOR, BlockSetType.OAK);
@@ -41,30 +41,60 @@ public class DDBlocks {
     public static final Block TALL_WARPED_DOOR = new TallDoorBlock(Blocks.WARPED_DOOR, BlockSetType.WARPED);
 
     // Team Aurora Mods
+    public static final Block SHORT_JACARANDA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("abundance", "jacaranda_door")), BlockSetType.OAK);
+    public static final Block SHORT_REDBUD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("abundance", "redbud_door")), BlockSetType.OAK);
+    public static final Block SHORT_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bayou_blues", "cypress_door")), BlockSetType.OAK);
+    public static final Block SHORT_BROWN_MUSHROOM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("enhanced_mushrooms", "brown_mushroom_door")), BlockSetType.OAK);
+    public static final Block SHORT_RED_MUSHROOM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("enhanced_mushrooms", "red_mushroom_door")), BlockSetType.OAK);
+
     public static final Block TALL_JACARANDA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("abundance", "jacaranda_door")), BlockSetType.OAK);
     public static final Block TALL_REDBUD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("abundance", "redbud_door")), BlockSetType.OAK);
     public static final Block TALL_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bayou_blues", "cypress_door")), BlockSetType.OAK);
-
     public static final Block TALL_BROWN_MUSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("enhanced_mushrooms", "brown_mushroom_door")), BlockSetType.OAK);
     public static final Block TALL_RED_MUSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("enhanced_mushrooms", "red_mushroom_door")), BlockSetType.OAK);
     
     // Ad Astra
+    public static final Block SHORT_AERONOS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ad_astra", "aeronos_door")), BlockSetType.WARPED);
+    public static final Block SHORT_GLACIAN_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ad_astra", "glacian_door")), BlockSetType.WARPED);
+    public static final Block SHORT_STROPHAR_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ad_astra", "strophar_door")), BlockSetType.WARPED);
+    public static final Block SHORT_STEEL_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ad_astra", "steel_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+
     public static final Block TALL_AERONOS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ad_astra", "aeronos_door")), BlockSetType.OAK);
     public static final Block TALL_GLACIAN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ad_astra", "glacian_door")), BlockSetType.OAK);
     public static final Block TALL_STROPHAR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ad_astra", "strophar_door")), BlockSetType.OAK);
     public static final Block TALL_STEEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ad_astra", "steel_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
 
     // Aether
+    public static final Block SHORT_AETHER_SKYROOT_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("aether", "skyroot_door")), BlockSetType.OAK);
+
     public static final Block TALL_AETHER_SKYROOT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("aether", "skyroot_door")), BlockSetType.OAK);
     
     // Architects Palette
-    public static final Block TALL_TWISTED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("architects_palette", "twisted_door")), BlockSetType.OAK);
+    public static final Block SHORT_TWISTED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("architects_palette", "twisted_door")), BlockSetType.WARPED);
+
+    public static final Block TALL_TWISTED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("architects_palette", "twisted_door")), BlockSetType.WARPED);
 
     // Bamboo Everything
-    public static final Block TALL_BE_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bambooeverything", "bamboo_door")), BlockSetType.OAK);
-    public static final Block TALL_BE_DRY_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bambooeverything", "dry_bamboo_door")), BlockSetType.OAK);
+    public static final Block SHORT_BE_BAMBOO_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bambooeverything", "bamboo_door")), BlockSetType.BAMBOO);
+    public static final Block SHORT_BE_DRY_BAMBOO_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bambooeverything", "dry_bamboo_door")), BlockSetType.BAMBOO);
+
+    public static final Block TALL_BE_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bambooeverything", "bamboo_door")), BlockSetType.BAMBOO);
+    public static final Block TALL_BE_DRY_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bambooeverything", "dry_bamboo_door")), BlockSetType.BAMBOO);
     
     // Better End
+    public static final Block SHORT_TERMINITE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "terminite_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_THALLASIUM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "thallasium_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_DRAGON_TREE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "dragon_tree_door")), BlockSetType.OAK);
+    public static final Block SHORT_END_LOTUS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "end_lotus_door")), BlockSetType.OAK);
+    public static final Block SHORT_HELIX_TREE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "helix_tree_door")), BlockSetType.OAK);
+    public static final Block SHORT_JELLYSHROOM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "jellyshroom_door")), BlockSetType.OAK);
+    public static final Block SHORT_LACUGROVE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "lacugrove_door")), BlockSetType.OAK);
+    public static final Block SHORT_LUCERNIA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "lucernia_door")), BlockSetType.OAK);
+    public static final Block SHORT_MOSSY_GLOWSHROOM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "mossy_glowshroom_door")), BlockSetType.WARPED);
+    public static final Block SHORT_PYTHADENDRON_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "pythadendron_door")), BlockSetType.OAK);
+    public static final Block SHORT_TENANEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "tenanea_door")), BlockSetType.OAK);
+    public static final Block SHORT_UMBRELLA_TREE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "umbrella_tree_door")), BlockSetType.WARPED);
+
     public static final Block TALL_TERMINITE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "terminite_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
     public static final Block TALL_THALLASIUM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "thallasium_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
     public static final Block TALL_DRAGON_TREE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "dragon_tree_door")), BlockSetType.OAK);
@@ -73,12 +103,24 @@ public class DDBlocks {
     public static final Block TALL_JELLYSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "jellyshroom_door")), BlockSetType.OAK);
     public static final Block TALL_LACUGROVE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "lacugrove_door")), BlockSetType.OAK);
     public static final Block TALL_LUCERNIA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "lucernia_door")), BlockSetType.OAK);
-    public static final Block TALL_MOSSY_GLOWSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "mossy_glowshroom_door")), BlockSetType.OAK);
+    public static final Block TALL_MOSSY_GLOWSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "mossy_glowshroom_door")), BlockSetType.WARPED);
     public static final Block TALL_PYTHADENDRON_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "pythadendron_door")), BlockSetType.OAK);
     public static final Block TALL_TENANEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "tenanea_door")), BlockSetType.OAK);
-    public static final Block TALL_UMBRELLA_TREE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "umbrella_tree_door")), BlockSetType.OAK);
+    public static final Block TALL_UMBRELLA_TREE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betterend", "umbrella_tree_door")), BlockSetType.WARPED);
     
     // Better Nether
+    public static final Block SHORT_ANCHOR_TREE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "anchor_tree_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_BONE_CIN_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "bone_cincinnasite_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_BONE_REED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "bone_reed_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_MUSHROOM_FIR_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "mushroom_fir_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_NETHER_MUSHROOM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "nether_mushroom_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_NETHER_REED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "nether_reed_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_NETHER_SAKURA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "nether_sakura_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_RUBEUS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "rubeus_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_STALAGNATE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "stalagnate_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_WART_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "wart_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_BN_WILLOW_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "willow_door")), BlockSetType.CRIMSON);
+
     public static final Block TALL_ANCHOR_TREE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "anchor_tree_door")), BlockSetType.CRIMSON);
     public static final Block TALL_BONE_CIN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "bone_cincinnasite_door")), BlockSetType.CRIMSON);
     public static final Block TALL_BONE_REED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "bone_reed_door")), BlockSetType.CRIMSON);
@@ -89,53 +131,96 @@ public class DDBlocks {
     public static final Block TALL_RUBEUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "rubeus_door")), BlockSetType.CRIMSON);
     public static final Block TALL_STALAGNATE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "stalagnate_door")), BlockSetType.CRIMSON);
     public static final Block TALL_WART_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "wart_door")), BlockSetType.CRIMSON);
-    public static final Block TALL_BN_WILLOW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "willow_door")), BlockSetType.OAK);
+    public static final Block TALL_BN_WILLOW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("betternether", "willow_door")), BlockSetType.CRIMSON);
     
     // Bewitchment
-    public static final Block TALL_BW_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "cypress_door")), BlockSetType.OAK);
-    public static final Block TALL_DRAGONS_BLOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "dragons_blood_door")), BlockSetType.OAK);
-    public static final Block TALL_ELDER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "elder_door")), BlockSetType.OAK);
-    public static final Block TALL_JUNIPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "juniper_door")), BlockSetType.OAK);
+    public static final Block SHORT_BW_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "cypress_door")), BlockSetType.MANGROVE);
+    public static final Block SHORT_DRAGONS_BLOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "dragons_blood_door")), BlockSetType.MANGROVE);
+    public static final Block SHORT_ELDER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "elder_door")), BlockSetType.MANGROVE);
+    public static final Block SHORT_JUNIPER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "juniper_door")), BlockSetType.MANGROVE);
+
+    public static final Block TALL_BW_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "cypress_door")), BlockSetType.MANGROVE);
+    public static final Block TALL_DRAGONS_BLOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "dragons_blood_door")), BlockSetType.MANGROVE);
+    public static final Block TALL_ELDER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "elder_door")), BlockSetType.MANGROVE);
+    public static final Block TALL_JUNIPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bewitchment", "juniper_door")), BlockSetType.MANGROVE);
 
     // Bewitchment Plus
-    public static final Block TALL_YEW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bwplus", "yew_door")), BlockSetType.OAK);
+    public static final Block SHORT_YEW_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bwplus", "yew_door")), BlockSetType.MANGROVE);
 
+    public static final Block TALL_YEW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("bwplus", "yew_door")), BlockSetType.MANGROVE);
+    
     // Biomancy
-    public static final Block TALL_FLESH_DOOR = new TallFleshDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "flesh_door")), BlockSetType.OAK);
-    public static final Block TALL_FULL_FLESH_DOOR = new TallFullFleshDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "full_flesh_door")), BlockSetType.OAK);
-    public static final Block TALL_FLESHKIN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "fleshkin_door")), BlockSetType.OAK);
+    public static final Block SHORT_FLESH_DOOR = new ShortFleshDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "flesh_door")), BlockSetType.STONE);
+    public static final Block SHORT_FULL_FLESH_DOOR = new ShortFullFleshDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "full_flesh_door")), BlockSetType.STONE);
+    public static final Block SHORT_FLESHKIN_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "fleshkin_door")), BlockSetType.STONE);
+
+    public static final Block TALL_FLESH_DOOR = new TallFleshDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "flesh_door")), BlockSetType.STONE);
+    public static final Block TALL_FULL_FLESH_DOOR = new TallFullFleshDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "full_flesh_door")), BlockSetType.STONE);
+    public static final Block TALL_FLESHKIN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomancy", "fleshkin_door")), BlockSetType.STONE);
     
     // Biome Makeover
-    public static final Block TALL_ANCIENT_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "ancient_oak_door")), BlockSetType.OAK);
-    public static final Block TALL_BLIGHTED_BALSA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "blighted_balsa_door")), BlockSetType.OAK);
-    public static final Block TALL_SWAMP_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "swamp_cypress_door")), BlockSetType.OAK);
-    public static final Block TALL_WILLOW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "willow_door")), BlockSetType.OAK);
+    public static final Block SHORT_BM_ANCIENT_OAK_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "ancient_oak_door")), BlockSetType.OAK);
+    public static final Block SHORT_BM_BLIGHTED_BALSA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "blighted_balsa_door")), BlockSetType.OAK);
+    public static final Block SHORT_BM_SWAMP_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "swamp_cypress_door")), BlockSetType.OAK);
+    public static final Block SHORT_BM_WILLOW_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "willow_door")), BlockSetType.OAK);
+
+    public static final Block TALL_BM_ANCIENT_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "ancient_oak_door")), BlockSetType.OAK);
+    public static final Block TALL_BM_BLIGHTED_BALSA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "blighted_balsa_door")), BlockSetType.OAK);
+    public static final Block TALL_BM_SWAMP_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "swamp_cypress_door")), BlockSetType.OAK);
+    public static final Block TALL_BM_WILLOW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("biomemakeover", "willow_door")), BlockSetType.OAK);
     
     // Blockus
-    public static final Block TALL_BLOCKUS_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "bamboo_door")), BlockSetType.OAK);
-    public static final Block TALL_BLOCKUS_BLACKSTONE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "blackstone_door")), BlockSetType.OAK);
-    public static final Block TALL_BLOCKUS_CHARRED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "charred_door")), BlockSetType.OAK);
+    public static final Block SHORT_BLOCKUS_BAMBOO_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "bamboo_door")), BlockSetType.BAMBOO);
+    public static final Block SHORT_BLOCKUS_BLACKSTONE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "blackstone_door")), BlockSetType.POLISHED_BLACKSTONE);
+    public static final Block SHORT_BLOCKUS_CHARRED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "charred_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_BLOCKUS_OBSIDIAN_REINFORCED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "obsidian_reinforced_door")), BlockSetType.IRON);
+    public static final Block SHORT_BLOCKUS_PAPER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "paper_door")), BlockSetType.BIRCH);
+    public static final Block SHORT_BLOCKUS_STONE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "stone_door")), BlockSetType.STONE);
+    public static final Block SHORT_BLOCKUS_WHITE_OAK_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "white_oak_door")), BlockSetType.OAK);
+
+    public static final Block TALL_BLOCKUS_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "bamboo_door")), BlockSetType.BAMBOO);
+    public static final Block TALL_BLOCKUS_BLACKSTONE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "blackstone_door")), BlockSetType.POLISHED_BLACKSTONE);
+    public static final Block TALL_BLOCKUS_CHARRED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "charred_door")), BlockSetType.CRIMSON);
     public static final Block TALL_BLOCKUS_OBSIDIAN_REINFORCED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "obsidian_reinforced_door")), BlockSetType.IRON);
-    public static final Block TALL_BLOCKUS_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "paper_door")), BlockSetType.OAK);
-    public static final Block TALL_BLOCKUS_STONE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "stone_door")), BlockSetType.OAK);
+    public static final Block TALL_BLOCKUS_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "paper_door")), BlockSetType.BIRCH);
+    public static final Block TALL_BLOCKUS_STONE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "stone_door")), BlockSetType.STONE);
     public static final Block TALL_BLOCKUS_WHITE_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("blockus", "white_oak_door")), BlockSetType.OAK);
     
     // The Ceilands
-    public static final Block TALL_CEILTRUNK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ceilands", "ceiltrunk_door")), BlockSetType.OAK);
+    public static final Block SHORT_CEILTRUNK_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ceilands", "ceiltrunk_door")), BlockSetType.JUNGLE);
+    public static final Block SHORT_LUZAWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ceilands", "luzawood_door")), BlockSetType.OAK);
+
+    public static final Block TALL_CEILTRUNK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ceilands", "ceiltrunk_door")), BlockSetType.JUNGLE);
     public static final Block TALL_LUZAWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ceilands", "luzawood_door")), BlockSetType.OAK);
 
     // Charm
+    public static final Block SHORT_CHARM_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("charm", "azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_CHARM_EBONY_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("charm", "ebony_door")), BlockSetType.JUNGLE);
+
     public static final Block TALL_CHARM_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("charm", "azalea_door")), BlockSetType.OAK);
-    public static final Block TALL_CHARM_EBONY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("charm", "ebony_door")), BlockSetType.OAK);
+    public static final Block TALL_CHARM_EBONY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("charm", "ebony_door")), BlockSetType.JUNGLE);
 
     // Cinderscapes
+    public static final Block SHORT_SCORCHED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("cinderscapes", "scorched_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_UMBRAL_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("cinderscapes", "umbral_door")), BlockSetType.CRIMSON);
+
     public static final Block TALL_SCORCHED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("cinderscapes", "scorched_door")), BlockSetType.CRIMSON);
     public static final Block TALL_UMBRAL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("cinderscapes", "umbral_door")), BlockSetType.CRIMSON);
     
     // Cobblemon
+    public static final Block SHORT_APRICORN_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("cobblemon", "apricorn_door")), BlockSetType.OAK);
+
     public static final Block TALL_APRICORN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("cobblemon", "apricorn_door")), BlockSetType.OAK);
     
     // Colourful Azaleas
+    public static final Block SHORT_AZULE_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "azule_azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_BRIGHT_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "bright_azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_FISS_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "fiss_azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_ROZE_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "roze_azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_TECAL_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "tecal_azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_TITANIUM_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "titanium_azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_WALNUT_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "walnut_azalea_door")), BlockSetType.OAK);
+
     public static final Block TALL_AZULE_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "azule_azalea_door")), BlockSetType.OAK);
     public static final Block TALL_BRIGHT_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "bright_azalea_door")), BlockSetType.OAK);
     public static final Block TALL_FISS_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "fiss_azalea_door")), BlockSetType.OAK);
@@ -143,8 +228,17 @@ public class DDBlocks {
     public static final Block TALL_TECAL_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "tecal_azalea_door")), BlockSetType.OAK);
     public static final Block TALL_TITANIUM_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "titanium_azalea_door")), BlockSetType.OAK);
     public static final Block TALL_WALNUT_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("colorfulazaleas", "walnut_azalea_door")), BlockSetType.OAK);
-
+    
     // Create: Deco
+    public static final Block SHORT_ANDESITE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "andesite_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_BRASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "brass_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_COPPER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "copper_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_ZINC_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "zinc_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_LOCKED_ANDESITE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "locked_andesite_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_LOCKED_BRASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "locked_brass_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_LOCKED_COPPER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "locked_copper_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_LOCKED_ZINC_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "locked_zinc_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+
     public static final Block TALL_ANDESITE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "andesite_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
     public static final Block TALL_BRASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "brass_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
     public static final Block TALL_COPPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "copper_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
@@ -155,25 +249,59 @@ public class DDBlocks {
     public static final Block TALL_LOCKED_ZINC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("createdeco", "locked_zinc_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
     
     // Deeper and Darker
+    public static final Block SHORT_ECHO_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("deeperdarker", "echo_door")), BlockSetType.OAK);
+
     public static final Block TALL_ECHO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("deeperdarker", "echo_door")), BlockSetType.OAK);
     
     // Ecologics
+    public static final Block SHORT_ECO_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_ECO_FLOWERING_AZALEA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "flowering_azalea_door")), BlockSetType.OAK);
+    public static final Block SHORT_ECO_COCONUT_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "coconut_door")), BlockSetType.BAMBOO);
+    public static final Block SHORT_ECO_WALNUT_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "walnut_door")), BlockSetType.OAK);
+
     public static final Block TALL_ECO_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "azalea_door")), BlockSetType.OAK);
     public static final Block TALL_ECO_FLOWERING_AZALEA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "flowering_azalea_door")), BlockSetType.OAK);
-    public static final Block TALL_ECO_COCONUT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "coconut_door")), BlockSetType.OAK);
+    public static final Block TALL_ECO_COCONUT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "coconut_door")), BlockSetType.BAMBOO);
     public static final Block TALL_ECO_WALNUT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("ecologics", "walnut_door")), BlockSetType.OAK);
+    
+    // Gardens of the Dead
+    public static final Block SHORT_SOULBLIGHT_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("gardens_of_the_dead", "soulblight_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_WHISTLECANE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("gardens_of_the_dead", "whistlecane_door")), BlockSetType.WARPED);
 
+    public static final Block TALL_SOULBLIGHT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("gardens_of_the_dead", "soulblight_door")), BlockSetType.CRIMSON);
+    public static final Block TALL_WHISTLECANE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("gardens_of_the_dead", "whistlecane_door")), BlockSetType.WARPED);
+    
     // Good Ending
-    public static final Block TALL_GE_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("goodending", "cypress_door")), BlockSetType.OAK);
+    public static final Block SHORT_GE_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("goodending", "cypress_door")), BlockSetType.MANGROVE);
+    public static final Block SHORT_GE_MUDDY_OAK_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("goodending", "muddy_oak_door")), BlockSetType.OAK);
+
+    public static final Block TALL_GE_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("goodending", "cypress_door")), BlockSetType.MANGROVE);
     public static final Block TALL_GE_MUDDY_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("goodending", "muddy_oak_door")), BlockSetType.OAK);
 
     // Graveyard
+    public static final Block SHORT_DARK_IRON_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("graveyard", "dark_iron_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+
     public static final Block TALL_DARK_IRON_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("graveyard", "dark_iron_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
     
     // Hexcasting
-    public static final Block TALL_AKASHIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("hexcasting", "akashic_door")), BlockSetType.OAK);
+    public static final Block SHORT_EDIFIED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("hexcasting", "edified_door")), BlockSetType.CRIMSON);
+
+    public static final Block TALL_EDIFIED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("hexcasting", "edified_door")), BlockSetType.CRIMSON);
     
     // Modern Glass
+    public static final Block SHORT_IRON_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "iron_glassdoor"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    public static final Block SHORT_OAK_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "oak_glassdoor")), BlockSetType.OAK);
+    public static final Block SHORT_SPRUCE_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "spruce_glassdoor")), BlockSetType.SPRUCE);
+    public static final Block SHORT_BIRCH_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "birch_glassdoor")), BlockSetType.BIRCH);
+    public static final Block SHORT_JUNGLE_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "jungle_glassdoor")), BlockSetType.JUNGLE);
+    public static final Block SHORT_ACACIA_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "acacia_glassdoor")), BlockSetType.ACACIA);
+    public static final Block SHORT_DARK_OAK_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "dark_oak_glassdoor")), BlockSetType.DARK_OAK);
+    public static final Block SHORT_MANGROVE_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "mangrove_glassdoor")), BlockSetType.MANGROVE);
+    public static final Block SHORT_BAMBOO_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "bamboo_glassdoor")), BlockSetType.BAMBOO, FeatureFlags.UPDATE_1_20);
+    public static final Block SHORT_CHERRY_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "cherry_glassdoor")), BlockSetType.CHERRY, FeatureFlags.UPDATE_1_20);
+    public static final Block SHORT_CRIMSON_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "crimson_glassdoor")), BlockSetType.CRIMSON);
+    public static final Block SHORT_WARPED_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "warped_glassdoor")), BlockSetType.WARPED);
+
     public static final Block TALL_IRON_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "iron_glassdoor"), Blocks.IRON_DOOR), BlockSetType.IRON);
     public static final Block TALL_OAK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "oak_glassdoor")), BlockSetType.OAK);
     public static final Block TALL_SPRUCE_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "spruce_glassdoor")), BlockSetType.SPRUCE);
@@ -183,54 +311,112 @@ public class DDBlocks {
     public static final Block TALL_DARK_OAK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "dark_oak_glassdoor")), BlockSetType.DARK_OAK);
     public static final Block TALL_MANGROVE_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "mangrove_glassdoor")), BlockSetType.MANGROVE);
     public static final Block TALL_BAMBOO_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "bamboo_glassdoor")), BlockSetType.BAMBOO, FeatureFlags.UPDATE_1_20);
+    public static final Block TALL_CHERRY_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "cherry_glassdoor")), BlockSetType.CHERRY, FeatureFlags.UPDATE_1_20);
     public static final Block TALL_CRIMSON_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "crimson_glassdoor")), BlockSetType.CRIMSON);
     public static final Block TALL_WARPED_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "warped_glassdoor")), BlockSetType.WARPED);
 
     // Hephaestus
+    public static final Block SHORT_BLOODSHROOM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tconstruct", "bloodshroom_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_GREENHEART_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tconstruct", "greenheart_door")), BlockSetType.OAK);
+    public static final Block SHORT_SKYROOT_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tconstruct", "skyroot_door")), BlockSetType.OAK);
+
     public static final Block TALL_BLOODSHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tconstruct", "bloodshroom_door")), BlockSetType.CRIMSON);
     public static final Block TALL_GREENHEART_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tconstruct", "greenheart_door")), BlockSetType.OAK);
     public static final Block TALL_SKYROOT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tconstruct", "skyroot_door")), BlockSetType.OAK);
     
     // Oh the Biomes You'll Go
-    public static final Block TALL_BYG_ASPEN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_aspen_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_BAOBAB_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_baobab_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_BLUE_ENCHANTED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_blue_enchanted_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_BULBIS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_bulbis_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_CHERRY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_cherry_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_CIKA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_cika_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_cypress_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_EBONY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_ebony_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_EMBUR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_embur_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_ETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_ether_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_FIR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_fir_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_FLORUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_florus_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_GREEN_ENCHANTED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_green_enchanted_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_HOLLY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_holly_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_IMPARIUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_imparius_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_IRONWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_ironwood_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_JACARANDA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_jacaranda_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_LAMENT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_lament_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_MAHOGANY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_mahogany_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_MAPLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_maple_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_NIGHTSHADE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_nightshade_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_palm_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_PINE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_pine_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_RAINBOW_EUCALYPTUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_rainbow_eucalyptus_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_REDWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_redwood_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_SKYRIS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_skyris_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_SOUL_SHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_soul_shroom_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_SYTHIAN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_sythian_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_WHITE_MANGROVE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_mangrove_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_WILLOW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_willow_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_WITCH_HAZEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_witch_hazel_door")), BlockSetType.OAK);
-    public static final Block TALL_BYG_ZELKOVA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "tall_byg_zelkova_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_ASPEN_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_aspen_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_BAOBAB_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_baobab_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_BLUE_ENCHANTED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_blue_enchanted_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_BULBIS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_bulbis_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_CHERRY_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_cherry_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_CIKA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_cika_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_cypress_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_EBONY_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_ebony_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_EMBUR_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_embur_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_ETHER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_ether_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_FIR_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_fir_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_FLORUS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_florus_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_GREEN_ENCHANTED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_green_enchanted_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_HOLLY_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_holly_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_IMPARIUS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_imparius_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_IRONWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_ironwood_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_JACARANDA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_jacaranda_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_LAMENT_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_lament_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_MAHOGANY_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_mahogany_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_MAPLE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_maple_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_NIGHTSHADE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_nightshade_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_PALM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_palm_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_PINE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_pine_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_RAINBOW_EUCALYPTUS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_rainbow_eucalyptus_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_REDWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_redwood_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_SKYRIS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_skyris_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_SOUL_SHROOM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_soul_shroom_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_SYTHIAN_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_sythian_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_WHITE_MANGROVE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_mangrove_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_WILLOW_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_willow_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_WITCH_HAZEL_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_witch_hazel_door")), BlockSetType.OAK);
+    public static final Block SHORT_BYG_ZELKOVA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_zelkova_door")), BlockSetType.OAK);
+
+    public static final Block TALL_BYG_ASPEN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_aspen_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_BAOBAB_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_baobab_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_BLUE_ENCHANTED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_blue_enchanted_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_BULBIS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_bulbis_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_CHERRY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_cherry_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_CIKA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_cika_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_cypress_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_EBONY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_ebony_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_EMBUR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_embur_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_ETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_ether_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_FIR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_fir_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_FLORUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_florus_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_GREEN_ENCHANTED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_green_enchanted_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_HOLLY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_holly_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_IMPARIUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_imparius_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_IRONWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_ironwood_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_JACARANDA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_jacaranda_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_LAMENT_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_lament_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_MAHOGANY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_mahogany_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_MAPLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_maple_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_NIGHTSHADE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_nightshade_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_palm_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_PINE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_pine_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_RAINBOW_EUCALYPTUS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_rainbow_eucalyptus_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_REDWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_redwood_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_SKYRIS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_skyris_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_SOUL_SHROOM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_soul_shroom_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_SYTHIAN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_sythian_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_WHITE_MANGROVE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_mangrove_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_WILLOW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_willow_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_WITCH_HAZEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_witch_hazel_door")), BlockSetType.OAK);
+    public static final Block TALL_BYG_ZELKOVA_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("byg", "byg_zelkova_door")), BlockSetType.OAK);
     
     // Promenade
+    public static final Block SHORT_PROMENADE_CHERRY_OAK_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("promenade", "cherry_oak_door")), BlockSetType.OAK);
+    public static final Block SHORT_PROMENADE_DARK_AMARANTH_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("promenade", "dark_amaranth_door")), BlockSetType.OAK);
+    public static final Block SHORT_PROMENADE_PALM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("promenade", "palm_door")), BlockSetType.OAK);
+
     public static final Block TALL_PROMENADE_CHERRY_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("promenade", "cherry_oak_door")), BlockSetType.OAK);
     public static final Block TALL_PROMENADE_DARK_AMARANTH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("promenade", "dark_amaranth_door")), BlockSetType.OAK);
     public static final Block TALL_PROMENADE_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("promenade", "palm_door")), BlockSetType.OAK);
     
     // Regions Unexplored
+    public static final Block SHORT_RUE_BAOBAB_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "baobab_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_BLACKWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "blackwood_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_BRIMWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "brimwood_door")), BlockSetType.CRIMSON);
+    public static final Block SHORT_RUE_CHERRY_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "cherry_door")), BlockSetType.CHERRY);
+    public static final Block SHORT_RUE_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "cypress_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_DEAD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "dead_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_EUCALYPTUS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "eucalyptus_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_JOSHUA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "joshua_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_LARCH_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "larch_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_MAPLE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "maple_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_MAUVE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "mauve_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_PALM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "palm_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_PINE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "pine_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_REDWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "redwood_door")), BlockSetType.OAK);
+    public static final Block SHORT_RUE_WILLOW_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "willow_door")), BlockSetType.OAK);
+
     public static final Block TALL_RUE_BAOBAB_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "baobab_door")), BlockSetType.OAK);
     public static final Block TALL_RUE_BLACKWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "blackwood_door")), BlockSetType.OAK);
     public static final Block TALL_RUE_BRIMWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "brimwood_door")), BlockSetType.CRIMSON);
@@ -248,16 +434,33 @@ public class DDBlocks {
     public static final Block TALL_RUE_WILLOW_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("regions_unexplored", "willow_door")), BlockSetType.OAK);
     
     // Snowy Spirit
+    public static final Block SHORT_GINGERBREAD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("snowyspirit", "gingerbread_door")), BlockSetType.OAK);
+
     public static final Block TALL_GINGERBREAD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("snowyspirit", "gingerbread_door")), BlockSetType.OAK);
     
     // Supplementaries
+    public static final Block SHORT_GOLD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("supplementaries", "gold_door")), BlockSetType.IRON);
+    public static final Block SHORT_NETHERITE_DOOR = new ShortNetheriteDoorBlock(getBlockFromResourceLocation(new ResourceLocation("supplementaries", "netherite_door")), BlockSetType.IRON);
+
     public static final Block TALL_GOLD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("supplementaries", "gold_door")), BlockSetType.IRON);
     public static final Block TALL_NETHERITE_DOOR = new TallNetheriteDoorBlock(getBlockFromResourceLocation(new ResourceLocation("supplementaries", "netherite_door")), BlockSetType.IRON);
     
     // Tech Reborn
+    public static final Block SHORT_RUBBER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tech_reborn", "rubber_door")), BlockSetType.OAK);
+
     public static final Block TALL_RUBBER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tech_reborn", "rubber_door")), BlockSetType.OAK);
     
     // Terrestria
+    public static final Block SHORT_TERRESTRIA_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "cypress_door")), BlockSetType.OAK);
+    public static final Block SHORT_TERRESTRIA_HEMLOCK_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "hemlock_door")), BlockSetType.OAK);
+    public static final Block SHORT_TERRESTRIA_JAPANESE_MAPLE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "japanese_maple_door")), BlockSetType.OAK);
+    public static final Block SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "rainbow_eucalyptus_door")), BlockSetType.OAK);
+    public static final Block SHORT_TERRESTRIA_REDWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "redwood_door")), BlockSetType.OAK);
+    public static final Block SHORT_TERRESTRIA_RUBBER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "rubber_door")), BlockSetType.OAK);
+    public static final Block SHORT_TERRESTRIA_SAKURA_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "sakura_door")), BlockSetType.OAK);
+    public static final Block SHORT_TERRESTRIA_WILLOW_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "willow_door")), BlockSetType.OAK);
+    public static final Block SHORT_TERRESTRIA_YUCCA_PALM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "yucca_palm_door")), BlockSetType.OAK);
+
     public static final Block TALL_TERRESTRIA_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "cypress_door")), BlockSetType.OAK);
     public static final Block TALL_TERRESTRIA_HEMLOCK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "hemlock_door")), BlockSetType.OAK);
     public static final Block TALL_TERRESTRIA_JAPANESE_MAPLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "japanese_maple_door")), BlockSetType.OAK);
@@ -269,12 +472,27 @@ public class DDBlocks {
     public static final Block TALL_TERRESTRIA_YUCCA_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("terrestria", "yucca_palm_door")), BlockSetType.OAK);
     
     // Traverse
+    public static final Block SHORT_TRAVERSE_FIR_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("traverse", "fir_door")), BlockSetType.OAK);
+
     public static final Block TALL_TRAVERSE_FIR_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("traverse", "fir_door")), BlockSetType.OAK);
     
     // Twigs
+    public static final Block SHORT_STRIPPED_BAMBOO_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twigs", "stripped_bamboo_door")), BlockSetType.BAMBOO);
+
     public static final Block TALL_STRIPPED_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twigs", "stripped_bamboo_door")), BlockSetType.BAMBOO);
     
     // Twilight Forest
+    public static final Block SHORT_CANOPY_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "canopy_door")), BlockSetType.OAK);
+    public static final Block SHORT_DARKWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "dark_door")), BlockSetType.OAK);
+    public static final Block SHORT_MINEWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "mining_door")), BlockSetType.OAK);
+    public static final Block SHORT_SORTINGWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "sorting_door")), BlockSetType.OAK);
+    public static final Block SHORT_TIMEWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "time_door")), BlockSetType.OAK);
+    public static final Block SHORT_TRANSWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "tranformation_door")), BlockSetType.OAK);
+    public static final Block SHORT_TWILIGHT_MANGROVE_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "mangrove_door")), BlockSetType.OAK);
+    public static final Block SHORT_TWILIGHT_OAK_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "twilight_oak_door")), BlockSetType.OAK);
+    
+    public static final Block SHORT_TOWERWOOD_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tflostblocks", "towerwood_door")), BlockSetType.OAK);
+
     public static final Block TALL_CANOPY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "canopy_door")), BlockSetType.OAK);
     public static final Block TALL_DARKWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "dark_door")), BlockSetType.OAK);
     public static final Block TALL_MINEWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("twilightforest", "mining_door")), BlockSetType.OAK);
@@ -287,7 +505,14 @@ public class DDBlocks {
     public static final Block TALL_TOWERWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tflostblocks", "towerwood_door")), BlockSetType.OAK);
     
     // XP Obelisk
+    public static final Block SHORT_SOUL_COPPER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("xps_additions", "soul_copper_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+
     public static final Block TALL_SOUL_COPPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("xps_additions", "soul_copper_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
+    
+    // Yippee
+    public static final Block SHORT_MYSTICAL_OAK_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("yippee", "mystical_oak_door")), BlockSetType.OAK);
+
+    public static final Block TALL_MYSTICAL_OAK_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("yippee", "mystical_oak_door")), BlockSetType.OAK);
     
     // Chipped (The biggest compat)
     public static final Block TALL_CHIPPED_OAK_HEAVY_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("chipped", "heavy_oak_door")), BlockSetType.OAK);    
@@ -691,6 +916,18 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_CRIMSON_MYSTIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_mystic_door")), BlockSetType.CRIMSON);
     
     public static void registerBlocks() {
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_IRON), SHORT_IRON_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_OAK), SHORT_OAK_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SPRUCE), SHORT_SPRUCE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BIRCH), SHORT_BIRCH_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JUNGLE), SHORT_JUNGLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ACACIA), SHORT_ACACIA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARK_OAK), SHORT_DARK_OAK_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MANGROVE), SHORT_MANGROVE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BAMBOO), SHORT_BAMBOO_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHERRY), SHORT_CHERRY_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CRIMSON), SHORT_CRIMSON_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WARPED), SHORT_WARPED_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_IRON), TALL_IRON_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_OAK), TALL_OAK_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SPRUCE), TALL_SPRUCE_DOOR);
@@ -704,6 +941,38 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CRIMSON), TALL_CRIMSON_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WARPED), TALL_WARPED_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_ASPEN), SHORT_BYG_ASPEN_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_BAOBAB), SHORT_BYG_BAOBAB_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_BLUE_ENCHANTED), SHORT_BYG_BLUE_ENCHANTED_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_BULBIS), SHORT_BYG_BULBIS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_CHERRY), SHORT_BYG_CHERRY_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_CIKA), SHORT_BYG_CIKA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_CYPRESS), SHORT_BYG_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_EBONY), SHORT_BYG_EBONY_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_EMBUR), SHORT_BYG_EMBUR_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_ETHER), SHORT_BYG_ETHER_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_FIR), SHORT_BYG_FIR_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_FLORUS), SHORT_BYG_FLORUS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_GREEN_ENCHANTED), SHORT_BYG_GREEN_ENCHANTED_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_HOLLY), SHORT_BYG_HOLLY_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_IMPARIUS), SHORT_BYG_IMPARIUS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_IRONWOOD), SHORT_BYG_IRONWOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_JACARANDA), SHORT_BYG_JACARANDA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_LAMENT), SHORT_BYG_LAMENT_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_MAHOGANY), SHORT_BYG_MAHOGANY_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_MAPLE), SHORT_BYG_MAPLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_NIGHTSHADE), SHORT_BYG_NIGHTSHADE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_PALM), SHORT_BYG_PALM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_PINE), SHORT_BYG_PINE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_RAINBOW_EUCALYPTUS), SHORT_BYG_RAINBOW_EUCALYPTUS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_REDWOOD), SHORT_BYG_REDWOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_SKYRIS), SHORT_BYG_SKYRIS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_SOUL_SHROOM), SHORT_BYG_SOUL_SHROOM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_SYTHIAN), SHORT_BYG_SYTHIAN_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_WHITE_MANGROVE), SHORT_BYG_WHITE_MANGROVE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_WILLOW), SHORT_BYG_WILLOW_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_WITCH_HAZEL), SHORT_BYG_WITCH_HAZEL_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_ZELKOVA), SHORT_BYG_ZELKOVA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_ASPEN), TALL_BYG_ASPEN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_BAOBAB), TALL_BYG_BAOBAB_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_BLUE_ENCHANTED), TALL_BYG_BLUE_ENCHANTED_DOOR);
@@ -737,26 +1006,49 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_WITCH_HAZEL), TALL_BYG_WITCH_HAZEL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_ZELKOVA), TALL_BYG_ZELKOVA_DOOR);
         
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JACARANDA), SHORT_JACARANDA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_REDBUD), SHORT_REDBUD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CYPRESS), SHORT_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BROWN_MUSHROOM), SHORT_BROWN_MUSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RED_MUSHROOM), SHORT_RED_MUSHROOM_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_JACARANDA), TALL_JACARANDA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_REDBUD), TALL_REDBUD_DOOR);
-
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CYPRESS), TALL_CYPRESS_DOOR);
-
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BROWN_MUSHROOM), TALL_BROWN_MUSHROOM_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RED_MUSHROOM), TALL_RED_MUSHROOM_DOOR);
         
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AERONOS), SHORT_AERONOS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GLACIAN), SHORT_GLACIAN_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_STROPHAR), SHORT_STROPHAR_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_STEEL), SHORT_STEEL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AERONOS), TALL_AERONOS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GLACIAN), TALL_GLACIAN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_STROPHAR), TALL_STROPHAR_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_STEEL), TALL_STEEL_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AETHER_SKYROOT), SHORT_AETHER_SKYROOT_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AETHER_SKYROOT), TALL_AETHER_SKYROOT_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWISTED), SHORT_TWISTED_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWISTED), TALL_TWISTED_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BE_BAMBOO), SHORT_BE_BAMBOO_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BE_DRY_BAMBOO), SHORT_BE_DRY_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BE_BAMBOO), TALL_BE_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BE_DRY_BAMBOO), TALL_BE_DRY_BAMBOO_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERMINITE), SHORT_TERMINITE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_THALLASIUM), SHORT_THALLASIUM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DRAGON_TREE), SHORT_DRAGON_TREE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_END_LOTUS), SHORT_END_LOTUS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_HELIX_TREE), SHORT_HELIX_TREE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JELLYSHROOM), SHORT_JELLYSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LACUGROVE), SHORT_LACUGROVE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LUCERNIA), SHORT_LUCERNIA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MOSSY_GLOWSHROOM), SHORT_MOSSY_GLOWSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PYTHADENDRON), SHORT_PYTHADENDRON_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TENANEA), SHORT_TENANEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_UMBRELLA_TREE), SHORT_UMBRELLA_TREE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERMINITE), TALL_TERMINITE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_THALLASIUM), TALL_THALLASIUM_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DRAGON_TREE), TALL_DRAGON_TREE_DOOR);
@@ -770,6 +1062,17 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TENANEA), TALL_TENANEA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_UMBRELLA_TREE), TALL_UMBRELLA_TREE_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ANCHOR_TREE), SHORT_ANCHOR_TREE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BONE_CIN), SHORT_BONE_CIN_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BONE_REED), SHORT_BONE_REED_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MUSHROOM_FIR), SHORT_MUSHROOM_FIR_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHER_MUSHROOM), SHORT_NETHER_MUSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHER_REED), SHORT_NETHER_REED_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHER_SAKURA), SHORT_NETHER_SAKURA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUBEUS), SHORT_RUBEUS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_STALAGNATE), SHORT_STALAGNATE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WART), SHORT_WART_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BN_WILLOW), SHORT_BN_WILLOW_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ANCHOR_TREE), TALL_ANCHOR_TREE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BONE_CIN), TALL_BONE_CIN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BONE_REED), TALL_BONE_REED_DOOR);
@@ -782,22 +1085,41 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WART), TALL_WART_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BN_WILLOW), TALL_BN_WILLOW_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BW_CYPRESS), SHORT_BW_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DRAGONS_BLOOD), SHORT_DRAGONS_BLOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ELDER), SHORT_ELDER_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JUNIPER), SHORT_JUNIPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BW_CYPRESS), TALL_BW_CYPRESS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DRAGONS_BLOOD), TALL_DRAGONS_BLOOD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ELDER), TALL_ELDER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_JUNIPER), TALL_JUNIPER_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_YEW), SHORT_YEW_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_YEW), TALL_YEW_DOOR);
 
-        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ANCIENT_OAK), TALL_ANCIENT_OAK_DOOR);
-        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLIGHTED_BALSA), TALL_BLIGHTED_BALSA_DOOR);
-        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SWAMP_CYPRESS), TALL_SWAMP_CYPRESS_DOOR);
-        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WILLOW), TALL_WILLOW_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BM_ANCIENT_OAK), SHORT_BM_ANCIENT_OAK_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BM_BLIGHTED_BALSA), SHORT_BM_BLIGHTED_BALSA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BM_SWAMP_CYPRESS), SHORT_BM_SWAMP_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BM_WILLOW), SHORT_BM_WILLOW_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BM_ANCIENT_OAK), TALL_BM_ANCIENT_OAK_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BM_BLIGHTED_BALSA), TALL_BM_BLIGHTED_BALSA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BM_SWAMP_CYPRESS), TALL_BM_SWAMP_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BM_WILLOW), TALL_BM_WILLOW_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FLESH), SHORT_FLESH_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FULL_FLESH), SHORT_FULL_FLESH_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FLESHKIN), SHORT_FLESHKIN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FLESH), TALL_FLESH_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FULL_FLESH), TALL_FULL_FLESH_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FLESHKIN), TALL_FLESHKIN_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_BAMBOO), SHORT_BLOCKUS_BAMBOO_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_BLACKSTONE), SHORT_BLOCKUS_BLACKSTONE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_CHARRED), SHORT_BLOCKUS_CHARRED_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED), SHORT_BLOCKUS_OBSIDIAN_REINFORCED_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_PAPER), SHORT_BLOCKUS_PAPER_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_STONE), SHORT_BLOCKUS_STONE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_WHITE_OAK), SHORT_BLOCKUS_WHITE_OAK_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_BAMBOO), TALL_BLOCKUS_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_BLACKSTONE), TALL_BLOCKUS_BLACKSTONE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_CHARRED), TALL_BLOCKUS_CHARRED_DOOR);
@@ -806,17 +1128,31 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_STONE), TALL_BLOCKUS_STONE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_WHITE_OAK), TALL_BLOCKUS_WHITE_OAK_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CEILTRUNK), SHORT_CEILTRUNK_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LUZAWOOD), SHORT_LUZAWOOD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CEILTRUNK), TALL_CEILTRUNK_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LUZAWOOD), TALL_LUZAWOOD_DOOR);
         
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHARM_AZALEA), SHORT_CHARM_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHARM_EBONY), SHORT_CHARM_EBONY_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHARM_AZALEA), TALL_CHARM_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHARM_EBONY), TALL_CHARM_EBONY_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SCORCHED), SHORT_SCORCHED_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_UMBRAL), SHORT_UMBRAL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SCORCHED), TALL_SCORCHED_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_UMBRAL), TALL_UMBRAL_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_APRICORN), SHORT_APRICORN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_APRICORN), TALL_APRICORN_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AZULE_AZALEA), SHORT_AZULE_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BRIGHT_AZALEA), SHORT_BRIGHT_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FISS_AZALEA), SHORT_FISS_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ROZE_AZALEA), SHORT_ROZE_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TECAL_AZALEA), SHORT_TECAL_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TITANIUM_AZALEA), SHORT_TITANIUM_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WALNUT_AZALEA), SHORT_WALNUT_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AZULE_AZALEA), TALL_AZULE_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BRIGHT_AZALEA), TALL_BRIGHT_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FISS_AZALEA), TALL_FISS_AZALEA_DOOR);
@@ -825,6 +1161,14 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TITANIUM_AZALEA), TALL_TITANIUM_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WALNUT_AZALEA), TALL_WALNUT_AZALEA_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ANDESITE), SHORT_ANDESITE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BRASS), SHORT_BRASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_COPPER), SHORT_COPPER_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ZINC), SHORT_ZINC_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LOCKED_ANDESITE), SHORT_LOCKED_ANDESITE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LOCKED_BRASS), SHORT_LOCKED_BRASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LOCKED_COPPER), SHORT_LOCKED_COPPER_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LOCKED_ZINC), SHORT_LOCKED_ZINC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ANDESITE), TALL_ANDESITE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BRASS), TALL_BRASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_COPPER), TALL_COPPER_DOOR);
@@ -834,20 +1178,46 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_COPPER), TALL_LOCKED_COPPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_ZINC), TALL_LOCKED_ZINC_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECHO), SHORT_ECHO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECHO), TALL_ECHO_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_AZALEA), SHORT_ECO_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_FLOWERING_AZALEA), SHORT_ECO_FLOWERING_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_COCONUT), SHORT_ECO_COCONUT_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_WALNUT), SHORT_ECO_WALNUT_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_AZALEA), TALL_ECO_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_FLOWERING_AZALEA), TALL_ECO_FLOWERING_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_COCONUT), TALL_ECO_COCONUT_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_WALNUT), TALL_ECO_WALNUT_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SOULBLIGHT), SHORT_SOULBLIGHT_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WHISTLECANE), SHORT_WHISTLECANE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SOULBLIGHT), TALL_SOULBLIGHT_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WHISTLECANE), TALL_WHISTLECANE_DOOR);
+
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GE_CYPRESS), SHORT_GE_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GE_MUDDY_OAK), SHORT_GE_MUDDY_OAK_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GE_CYPRESS), TALL_GE_CYPRESS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GE_MUDDY_OAK), TALL_GE_MUDDY_OAK_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARK_IRON), SHORT_DARK_IRON_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DARK_IRON), TALL_DARK_IRON_DOOR);
 
-        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AKASHIC), TALL_AKASHIC_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_EDIFIED), SHORT_EDIFIED_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_EDIFIED), TALL_EDIFIED_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_IRON_GLASS), SHORT_IRON_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_OAK_GLASS), SHORT_OAK_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SPRUCE_GLASS), SHORT_SPRUCE_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BIRCH_GLASS), SHORT_BIRCH_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JUNGLE_GLASS), SHORT_JUNGLE_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ACACIA_GLASS), SHORT_ACACIA_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARK_OAK_GLASS), SHORT_DARK_OAK_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MANGROVE_GLASS), SHORT_MANGROVE_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BAMBOO_GLASS), SHORT_BAMBOO_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHERRY_GLASS), SHORT_CHERRY_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CRIMSON_GLASS), SHORT_CRIMSON_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WARPED_GLASS), SHORT_WARPED_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_IRON_GLASS), TALL_IRON_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_OAK_GLASS), TALL_OAK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SPRUCE_GLASS), TALL_SPRUCE_GLASS_DOOR);
@@ -857,17 +1227,39 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DARK_OAK_GLASS), TALL_DARK_OAK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANGROVE_GLASS), TALL_MANGROVE_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BAMBOO_GLASS), TALL_BAMBOO_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHERRY_GLASS), TALL_CHERRY_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CRIMSON_GLASS), TALL_CRIMSON_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WARPED_GLASS), TALL_WARPED_GLASS_DOOR);
         
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOODSHROOM), SHORT_BLOODSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GREENHEART), SHORT_GREENHEART_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SKYROOT), SHORT_SKYROOT_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOODSHROOM), TALL_BLOODSHROOM_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GREENHEART), TALL_GREENHEART_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SKYROOT), TALL_SKYROOT_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PROMENADE_CHERRY_OAK), SHORT_PROMENADE_CHERRY_OAK_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PROMENADE_DARK_AMARANTH), SHORT_PROMENADE_DARK_AMARANTH_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PROMENADE_PALM), SHORT_PROMENADE_PALM_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_CHERRY_OAK), TALL_PROMENADE_CHERRY_OAK_DOOR);
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_DARK_AMARANTH), TALL_PROMENADE_DARK_AMARANTH_DOOR);
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_PALM), TALL_PROMENADE_PALM_DOOR);
-		
+
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BAOBAB), SHORT_RUE_BAOBAB_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BLACKWOOD), SHORT_RUE_BLACKWOOD_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BRIMWOOD), SHORT_RUE_BRIMWOOD_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_CHERRY), SHORT_RUE_CHERRY_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_CYPRESS), SHORT_RUE_CYPRESS_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_DEAD), SHORT_RUE_DEAD_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_EUCALYPTUS), SHORT_RUE_EUCALYPTUS_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_JOSHUA), SHORT_RUE_JOSHUA_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_LARCH), SHORT_RUE_LARCH_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_MAPLE), SHORT_RUE_MAPLE_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_MAUVE), SHORT_RUE_MAUVE_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_PALM), SHORT_RUE_PALM_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_PINE), SHORT_RUE_PINE_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_REDWOOD), SHORT_RUE_REDWOOD_DOOR);
+		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_WILLOW), SHORT_RUE_WILLOW_DOOR);
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BAOBAB), TALL_RUE_BAOBAB_DOOR);
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BLACKWOOD), TALL_RUE_BLACKWOOD_DOOR);
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BRIMWOOD), TALL_RUE_BRIMWOOD_DOOR);
@@ -883,14 +1275,27 @@ public class DDBlocks {
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_PINE), TALL_RUE_PINE_DOOR);
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_REDWOOD), TALL_RUE_REDWOOD_DOOR);
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_WILLOW), TALL_RUE_WILLOW_DOOR);
-
+		
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GINGERBREAD), SHORT_GINGERBREAD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GINGERBREAD), TALL_GINGERBREAD_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GOLD), SHORT_GOLD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHERITE), SHORT_NETHERITE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GOLD), TALL_GOLD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_NETHERITE), TALL_NETHERITE_DOOR);
         
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUBBER), SHORT_RUBBER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUBBER), TALL_RUBBER_DOOR);
-        
+
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_CYPRESS), SHORT_TERRESTRIA_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_HEMLOCK), SHORT_TERRESTRIA_HEMLOCK_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_JAPANESE_MAPLE), SHORT_TERRESTRIA_JAPANESE_MAPLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS), SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_REDWOOD), SHORT_TERRESTRIA_REDWOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_RUBBER), SHORT_TERRESTRIA_RUBBER_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_SAKURA), SHORT_TERRESTRIA_SAKURA_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_WILLOW), SHORT_TERRESTRIA_WILLOW_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_YUCCA_PALM), SHORT_TERRESTRIA_YUCCA_PALM_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_CYPRESS), TALL_TERRESTRIA_CYPRESS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_HEMLOCK), TALL_TERRESTRIA_HEMLOCK_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_JAPANESE_MAPLE), TALL_TERRESTRIA_JAPANESE_MAPLE_DOOR);
@@ -900,11 +1305,21 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_SAKURA), TALL_TERRESTRIA_SAKURA_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_WILLOW), TALL_TERRESTRIA_WILLOW_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_YUCCA_PALM), TALL_TERRESTRIA_YUCCA_PALM_DOOR);
-        
+
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TRAVERSE_FIR), SHORT_TRAVERSE_FIR_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TRAVERSE_FIR), TALL_TRAVERSE_FIR_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_STRIPPED_BAMBOO), SHORT_STRIPPED_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_STRIPPED_BAMBOO), TALL_STRIPPED_BAMBOO_DOOR);
 
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CANOPY), SHORT_CANOPY_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARKWOOD), SHORT_DARKWOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MINEWOOD), SHORT_MINEWOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SORTINGWOOD), SHORT_SORTINGWOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TIMEWOOD), SHORT_TIMEWOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TRANSWOOD), SHORT_TRANSWOOD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWILIGHT_MANGROVE), SHORT_TWILIGHT_MANGROVE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWILIGHT_OAK), SHORT_TWILIGHT_OAK_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CANOPY), TALL_CANOPY_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DARKWOOD), TALL_DARKWOOD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MINEWOOD), TALL_MINEWOOD_DOOR);
@@ -914,9 +1329,14 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWILIGHT_MANGROVE), TALL_TWILIGHT_MANGROVE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWILIGHT_OAK), TALL_TWILIGHT_OAK_DOOR);
         
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TOWERWOOD), SHORT_TOWERWOOD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TOWERWOOD), TALL_TOWERWOOD_DOOR);
         
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SOUL_COPPER), SHORT_SOUL_COPPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SOUL_COPPER), TALL_SOUL_COPPER_DOOR);
+
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MYSTICAL_OAK), SHORT_MYSTICAL_OAK_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MYSTICAL_OAK), TALL_MYSTICAL_OAK_DOOR);
         
         //Register all those Chipped doors.
 		Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_HEAVY), TALL_CHIPPED_OAK_HEAVY_DOOR);

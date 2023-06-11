@@ -3,9 +3,6 @@ plugins {
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
 archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
@@ -29,13 +26,27 @@ repositories {
 	}
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/dramaticdoors.accesswidener")
+	runs {
+        data {
+            inherit client
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
+            vmArg "-Dfabric-api.datagen.modid=${modid}"
+ 
+            runDir "build/datagen"
+        }
+    }
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	// mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     mappings loom.layered() {
         officialMojangMappings()
-        // parchment("org.parchmentmc.data:parchment-1.19.4:2023.03.19@zip")
     }
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
@@ -47,12 +58,6 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	
-	
-
-}
-
-loom {
-	accessWidenerPath = file("src/main/resources/dramaticdoors.accesswidener")
 }
 
 processResources {
@@ -73,6 +78,9 @@ java {
 	// if it is present.
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
+	
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
 }
 
 jar {

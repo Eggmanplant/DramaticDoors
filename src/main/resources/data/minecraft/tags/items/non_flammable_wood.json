@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "dramaticdoors:short_crimson_door",
+    "dramaticdoors:short_warped_door",
+    "dramaticdoors:short_scorched_door",
+    "dramaticdoors:short_umbral_door",
     "dramaticdoors:tall_crimson_door",
     "dramaticdoors:tall_warped_door",
     "dramaticdoors:tall_scorched_door",

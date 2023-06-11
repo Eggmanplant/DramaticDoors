@@ -20,7 +20,7 @@ public class DDItems {
 	public static final Item.Properties PROPERTIES = new FabricItemSettings();
 	
 	// Vanilla
-    /*public static final Item SHORT_IRON_DOOR = new ShortDoorItem(DDBlocks.SHORT_IRON_DOOR, PROPERTIES);
+    public static final Item SHORT_IRON_DOOR = new ShortDoorItem(DDBlocks.SHORT_IRON_DOOR, PROPERTIES);
     public static final Item SHORT_OAK_DOOR = new ShortDoorItem(DDBlocks.SHORT_OAK_DOOR, PROPERTIES);
     public static final Item SHORT_SPRUCE_DOOR = new ShortDoorItem(DDBlocks.SHORT_SPRUCE_DOOR, PROPERTIES);
     public static final Item SHORT_BIRCH_DOOR = new ShortDoorItem(DDBlocks.SHORT_BIRCH_DOOR, PROPERTIES);
@@ -31,7 +31,7 @@ public class DDItems {
     public static final Item SHORT_BAMBOO_DOOR = new ShortDoorItem(DDBlocks.SHORT_BAMBOO_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
     public static final Item SHORT_CHERRY_DOOR = new ShortDoorItem(DDBlocks.SHORT_CHERRY_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
     public static final Item SHORT_CRIMSON_DOOR = new ShortDoorItem(DDBlocks.SHORT_CRIMSON_DOOR, PROPERTIES);
-    public static final Item SHORT_WARPED_DOOR = new ShortDoorItem(DDBlocks.SHORT_WARPED_DOOR, PROPERTIES);*/
+    public static final Item SHORT_WARPED_DOOR = new ShortDoorItem(DDBlocks.SHORT_WARPED_DOOR, PROPERTIES);
 
     public static final Item TALL_IRON_DOOR = new TallDoorItem(DDBlocks.TALL_IRON_DOOR, PROPERTIES);
     public static final Item TALL_OAK_DOOR = new TallDoorItem(DDBlocks.TALL_OAK_DOOR, PROPERTIES);
@@ -47,31 +47,60 @@ public class DDItems {
     public static final Item TALL_WARPED_DOOR = new TallDoorItem(DDBlocks.TALL_WARPED_DOOR, PROPERTIES);
     
     // Team Aurora
+    public static final Item SHORT_JACARANDA_DOOR = new ShortDoorItem(DDBlocks.SHORT_JACARANDA_DOOR, PROPERTIES);
+    public static final Item SHORT_REDBUD_DOOR = new ShortDoorItem(DDBlocks.SHORT_REDBUD_DOOR, PROPERTIES);
+    public static final Item SHORT_CYPRESS_DOOR = new ShortDoorItem(DDBlocks.SHORT_CYPRESS_DOOR, PROPERTIES);
+    public static final Item SHORT_BROWN_MUSHROOM_DOOR = new ShortDoorItem(DDBlocks.SHORT_BROWN_MUSHROOM_DOOR, PROPERTIES);
+    public static final Item SHORT_RED_MUSHROOM_DOOR = new ShortDoorItem(DDBlocks.SHORT_RED_MUSHROOM_DOOR, PROPERTIES);
+
     public static final Item TALL_JACARANDA_DOOR = new TallDoorItem(DDBlocks.TALL_JACARANDA_DOOR, PROPERTIES);
     public static final Item TALL_REDBUD_DOOR = new TallDoorItem(DDBlocks.TALL_REDBUD_DOOR, PROPERTIES);
-    
     public static final Item TALL_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_CYPRESS_DOOR, PROPERTIES);
-
     public static final Item TALL_BROWN_MUSHROOM_DOOR = new TallDoorItem(DDBlocks.TALL_BROWN_MUSHROOM_DOOR, PROPERTIES);
     public static final Item TALL_RED_MUSHROOM_DOOR = new TallDoorItem(DDBlocks.TALL_RED_MUSHROOM_DOOR, PROPERTIES);
     
     // Ad Astra
+    public static final Item SHORT_AERONOS_DOOR = new ShortDoorItem(DDBlocks.SHORT_AERONOS_DOOR, PROPERTIES);
+    public static final Item SHORT_GLACIAN_DOOR = new ShortDoorItem(DDBlocks.SHORT_GLACIAN_DOOR, PROPERTIES);
+    public static final Item SHORT_STROPHAR_DOOR = new ShortDoorItem(DDBlocks.SHORT_STROPHAR_DOOR, PROPERTIES);
+    public static final Item SHORT_STEEL_DOOR = new ShortDoorItem(DDBlocks.SHORT_STEEL_DOOR, PROPERTIES);
+
     public static final Item TALL_AERONOS_DOOR = new TallDoorItem(DDBlocks.TALL_AERONOS_DOOR, PROPERTIES);
     public static final Item TALL_GLACIAN_DOOR = new TallDoorItem(DDBlocks.TALL_GLACIAN_DOOR, PROPERTIES);
     public static final Item TALL_STROPHAR_DOOR = new TallDoorItem(DDBlocks.TALL_STROPHAR_DOOR, PROPERTIES);
-    public static final Item TALL_STEEL_DOOR = new TallDoorItem(DDBlocks.TALL_STEEL_DOOR, PROPERTIES);    
+    public static final Item TALL_STEEL_DOOR = new TallDoorItem(DDBlocks.TALL_STEEL_DOOR, PROPERTIES);
     
     // Aether
+    public static final Item SHORT_AETHER_SKYROOT_DOOR = new ShortDoorItem(DDBlocks.SHORT_AETHER_SKYROOT_DOOR, PROPERTIES);
+
     public static final Item TALL_AETHER_SKYROOT_DOOR = new TallDoorItem(DDBlocks.TALL_AETHER_SKYROOT_DOOR, PROPERTIES);
     
     // Architects Palette
+    public static final Item SHORT_TWISTED_DOOR = new ShortDoorItem(DDBlocks.SHORT_TWISTED_DOOR, PROPERTIES);
+
     public static final Item TALL_TWISTED_DOOR = new TallDoorItem(DDBlocks.TALL_TWISTED_DOOR, PROPERTIES);
     
     // Bamboo Everything
+    public static final Item SHORT_BE_BAMBOO_DOOR = new ShortDoorItem(DDBlocks.SHORT_BE_BAMBOO_DOOR, PROPERTIES);
+    public static final Item SHORT_BE_DRY_BAMBOO_DOOR = new ShortDoorItem(DDBlocks.SHORT_BE_DRY_BAMBOO_DOOR, PROPERTIES);
+
     public static final Item TALL_BE_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_BE_BAMBOO_DOOR, PROPERTIES);
     public static final Item TALL_BE_DRY_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_BE_DRY_BAMBOO_DOOR, PROPERTIES);
     
     // Better End
+    public static final Item SHORT_TERMINITE_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERMINITE_DOOR, PROPERTIES);
+    public static final Item SHORT_THALLASIUM_DOOR = new ShortDoorItem(DDBlocks.SHORT_THALLASIUM_DOOR, PROPERTIES);
+    public static final Item SHORT_DRAGON_TREE_DOOR = new ShortDoorItem(DDBlocks.SHORT_DRAGON_TREE_DOOR, PROPERTIES);
+    public static final Item SHORT_END_LOTUS_DOOR = new ShortDoorItem(DDBlocks.SHORT_END_LOTUS_DOOR, PROPERTIES);
+    public static final Item SHORT_HELIX_TREE_DOOR = new ShortDoorItem(DDBlocks.SHORT_HELIX_TREE_DOOR, PROPERTIES);
+    public static final Item SHORT_JELLYSHROOM_DOOR = new ShortDoorItem(DDBlocks.SHORT_JELLYSHROOM_DOOR, PROPERTIES);
+    public static final Item SHORT_LACUGROVE_DOOR = new ShortDoorItem(DDBlocks.SHORT_LACUGROVE_DOOR, PROPERTIES);
+    public static final Item SHORT_LUCERNIA_DOOR = new ShortDoorItem(DDBlocks.SHORT_LUCERNIA_DOOR, PROPERTIES);
+    public static final Item SHORT_MOSSY_GLOWSHROOM_DOOR = new ShortDoorItem(DDBlocks.SHORT_MOSSY_GLOWSHROOM_DOOR, PROPERTIES);
+    public static final Item SHORT_PYTHADENDRON_DOOR = new ShortDoorItem(DDBlocks.SHORT_PYTHADENDRON_DOOR, PROPERTIES);
+    public static final Item SHORT_TENANEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_TENANEA_DOOR, PROPERTIES);
+    public static final Item SHORT_UMBRELLA_TREE_DOOR = new ShortDoorItem(DDBlocks.SHORT_UMBRELLA_TREE_DOOR, PROPERTIES);
+
     public static final Item TALL_TERMINITE_DOOR = new TallDoorItem(DDBlocks.TALL_TERMINITE_DOOR, PROPERTIES);
     public static final Item TALL_THALLASIUM_DOOR = new TallDoorItem(DDBlocks.TALL_THALLASIUM_DOOR, PROPERTIES);
     public static final Item TALL_DRAGON_TREE_DOOR = new TallDoorItem(DDBlocks.TALL_DRAGON_TREE_DOOR, PROPERTIES);
@@ -86,6 +115,18 @@ public class DDItems {
     public static final Item TALL_UMBRELLA_TREE_DOOR = new TallDoorItem(DDBlocks.TALL_UMBRELLA_TREE_DOOR, PROPERTIES);
     
     // Better Nether
+    public static final Item SHORT_ANCHOR_TREE_DOOR = new ShortDoorItem(DDBlocks.SHORT_ANCHOR_TREE_DOOR, PROPERTIES);
+    public static final Item SHORT_BONE_CIN_DOOR = new ShortDoorItem(DDBlocks.SHORT_BONE_CIN_DOOR, PROPERTIES);
+    public static final Item SHORT_BONE_REED_DOOR = new ShortDoorItem(DDBlocks.SHORT_BONE_REED_DOOR, PROPERTIES);
+    public static final Item SHORT_MUSHROOM_FIR_DOOR = new ShortDoorItem(DDBlocks.SHORT_MUSHROOM_FIR_DOOR, PROPERTIES);
+    public static final Item SHORT_NETHER_MUSHROOM_DOOR = new ShortDoorItem(DDBlocks.SHORT_NETHER_MUSHROOM_DOOR, PROPERTIES);
+    public static final Item SHORT_NETHER_REED_DOOR = new ShortDoorItem(DDBlocks.SHORT_NETHER_REED_DOOR, PROPERTIES);
+    public static final Item SHORT_NETHER_SAKURA_DOOR = new ShortDoorItem(DDBlocks.SHORT_NETHER_SAKURA_DOOR, PROPERTIES);
+    public static final Item SHORT_RUBEUS_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUBEUS_DOOR, PROPERTIES);
+    public static final Item SHORT_STALAGNATE_DOOR = new ShortDoorItem(DDBlocks.SHORT_STALAGNATE_DOOR, PROPERTIES);
+    public static final Item SHORT_WART_DOOR = new ShortDoorItem(DDBlocks.SHORT_WART_DOOR, PROPERTIES);
+    public static final Item SHORT_BN_WILLOW_DOOR = new ShortDoorItem(DDBlocks.SHORT_BN_WILLOW_DOOR, PROPERTIES);
+
     public static final Item TALL_ANCHOR_TREE_DOOR = new TallDoorItem(DDBlocks.TALL_ANCHOR_TREE_DOOR, PROPERTIES);
     public static final Item TALL_BONE_CIN_DOOR = new TallDoorItem(DDBlocks.TALL_BONE_CIN_DOOR, PROPERTIES);
     public static final Item TALL_BONE_REED_DOOR = new TallDoorItem(DDBlocks.TALL_BONE_REED_DOOR, PROPERTIES);
@@ -99,6 +140,13 @@ public class DDItems {
     public static final Item TALL_BN_WILLOW_DOOR = new TallDoorItem(DDBlocks.TALL_BN_WILLOW_DOOR, PROPERTIES);
     
     // Bewitchment
+    public static final Item SHORT_BW_CYPRESS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BW_CYPRESS_DOOR, PROPERTIES);
+    public static final Item SHORT_DRAGONS_BLOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_DRAGONS_BLOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_ELDER_DOOR = new ShortDoorItem(DDBlocks.SHORT_ELDER_DOOR, PROPERTIES);
+    public static final Item SHORT_JUNIPER_DOOR = new ShortDoorItem(DDBlocks.SHORT_JUNIPER_DOOR, PROPERTIES);
+    
+    public static final Item SHORT_YEW_DOOR = new ShortDoorItem(DDBlocks.SHORT_YEW_DOOR, PROPERTIES);
+
     public static final Item TALL_BW_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_BW_CYPRESS_DOOR, PROPERTIES);
     public static final Item TALL_DRAGONS_BLOOD_DOOR = new TallDoorItem(DDBlocks.TALL_DRAGONS_BLOOD_DOOR, PROPERTIES);
     public static final Item TALL_ELDER_DOOR = new TallDoorItem(DDBlocks.TALL_ELDER_DOOR, PROPERTIES);
@@ -107,17 +155,34 @@ public class DDItems {
     public static final Item TALL_YEW_DOOR = new TallDoorItem(DDBlocks.TALL_YEW_DOOR, PROPERTIES);
     
     // Biome Makeover
-    public static final Item TALL_ANCIENT_OAK_DOOR = new TallDoorItem(DDBlocks.TALL_ANCIENT_OAK_DOOR, PROPERTIES);
-    public static final Item TALL_BLIGHTED_BALSA_DOOR = new TallDoorItem(DDBlocks.TALL_BLIGHTED_BALSA_DOOR, PROPERTIES);
-    public static final Item TALL_SWAMP_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_SWAMP_CYPRESS_DOOR, PROPERTIES);
-    public static final Item TALL_WILLOW_DOOR = new TallDoorItem(DDBlocks.TALL_WILLOW_DOOR, PROPERTIES);
+    public static final Item SHORT_BM_ANCIENT_OAK_DOOR = new ShortDoorItem(DDBlocks.SHORT_BM_ANCIENT_OAK_DOOR, PROPERTIES);
+    public static final Item SHORT_BM_BLIGHTED_BALSA_DOOR = new ShortDoorItem(DDBlocks.SHORT_BM_BLIGHTED_BALSA_DOOR, PROPERTIES);
+    public static final Item SHORT_BM_SWAMP_CYPRESS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BM_SWAMP_CYPRESS_DOOR, PROPERTIES);
+    public static final Item SHORT_BM_WILLOW_DOOR = new ShortDoorItem(DDBlocks.SHORT_BM_WILLOW_DOOR, PROPERTIES);
+
+    public static final Item TALL_BM_ANCIENT_OAK_DOOR = new TallDoorItem(DDBlocks.TALL_BM_ANCIENT_OAK_DOOR, PROPERTIES);
+    public static final Item TALL_BM_BLIGHTED_BALSA_DOOR = new TallDoorItem(DDBlocks.TALL_BM_BLIGHTED_BALSA_DOOR, PROPERTIES);
+    public static final Item TALL_BM_SWAMP_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_BM_SWAMP_CYPRESS_DOOR, PROPERTIES);
+    public static final Item TALL_BM_WILLOW_DOOR = new TallDoorItem(DDBlocks.TALL_BM_WILLOW_DOOR, PROPERTIES);
 
     // Biomancy
+    public static final Item SHORT_FLESH_DOOR = new ShortDoorItem(DDBlocks.SHORT_FLESH_DOOR, PROPERTIES);
+    public static final Item SHORT_FULL_FLESH_DOOR = new ShortDoorItem(DDBlocks.SHORT_FULL_FLESH_DOOR, PROPERTIES);
+    public static final Item SHORT_FLESHKIN_DOOR = new ShortDoorItem(DDBlocks.SHORT_FLESHKIN_DOOR, PROPERTIES);
+
     public static final Item TALL_FLESH_DOOR = new TallDoorItem(DDBlocks.TALL_FLESH_DOOR, PROPERTIES);
     public static final Item TALL_FULL_FLESH_DOOR = new TallDoorItem(DDBlocks.TALL_FULL_FLESH_DOOR, PROPERTIES);
     public static final Item TALL_FLESHKIN_DOOR = new TallDoorItem(DDBlocks.TALL_FLESHKIN_DOOR, PROPERTIES);
     
     // Blockus
+    public static final Item SHORT_BLOCKUS_BAMBOO_DOOR = new ShortDoorItem(DDBlocks.SHORT_BLOCKUS_BAMBOO_DOOR, PROPERTIES);
+    public static final Item SHORT_BLOCKUS_CHARRED_DOOR = new ShortDoorItem(DDBlocks.SHORT_BLOCKUS_CHARRED_DOOR, PROPERTIES);
+    public static final Item SHORT_BLOCKUS_PAPER_DOOR = new ShortDoorItem(DDBlocks.SHORT_BLOCKUS_PAPER_DOOR, PROPERTIES);
+    public static final Item SHORT_BLOCKUS_WHITE_OAK_DOOR = new ShortDoorItem(DDBlocks.SHORT_BLOCKUS_WHITE_OAK_DOOR, PROPERTIES);
+    public static final Item SHORT_BLOCKUS_STONE_DOOR = new ShortDoorItem(DDBlocks.SHORT_BLOCKUS_STONE_DOOR, PROPERTIES);
+    public static final Item SHORT_BLOCKUS_BLACKSTONE_DOOR = new ShortDoorItem(DDBlocks.SHORT_BLOCKUS_BLACKSTONE_DOOR, PROPERTIES);
+    public static final Item SHORT_BLOCKUS_OBSIDIAN_REINFORCED_DOOR = new ShortDoorItem(DDBlocks.SHORT_BLOCKUS_OBSIDIAN_REINFORCED_DOOR, PROPERTIES);
+
     public static final Item TALL_BLOCKUS_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_BLOCKUS_BAMBOO_DOOR, PROPERTIES);
     public static final Item TALL_BLOCKUS_CHARRED_DOOR = new TallDoorItem(DDBlocks.TALL_BLOCKUS_CHARRED_DOOR, PROPERTIES);
     public static final Item TALL_BLOCKUS_PAPER_DOOR = new TallDoorItem(DDBlocks.TALL_BLOCKUS_PAPER_DOOR, PROPERTIES);
@@ -127,21 +192,40 @@ public class DDItems {
     public static final Item TALL_BLOCKUS_OBSIDIAN_REINFORCED_DOOR = new TallDoorItem(DDBlocks.TALL_BLOCKUS_OBSIDIAN_REINFORCED_DOOR, PROPERTIES);
 
     // The Ceilands
+    public static final Item SHORT_CEILTRUNK_DOOR = new ShortDoorItem(DDBlocks.SHORT_CEILTRUNK_DOOR, PROPERTIES);
+    public static final Item SHORT_LUZAWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_LUZAWOOD_DOOR, PROPERTIES);
+
     public static final Item TALL_CEILTRUNK_DOOR = new TallDoorItem(DDBlocks.TALL_CEILTRUNK_DOOR, PROPERTIES);
     public static final Item TALL_LUZAWOOD_DOOR = new TallDoorItem(DDBlocks.TALL_LUZAWOOD_DOOR, PROPERTIES);
     
     // Charm
+    public static final Item SHORT_CHARM_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_CHARM_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_CHARM_EBONY_DOOR = new ShortDoorItem(DDBlocks.SHORT_CHARM_EBONY_DOOR, PROPERTIES);
+
     public static final Item TALL_CHARM_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_CHARM_AZALEA_DOOR, PROPERTIES);
     public static final Item TALL_CHARM_EBONY_DOOR = new TallDoorItem(DDBlocks.TALL_CHARM_EBONY_DOOR, PROPERTIES);
     
     // Cinderscapes
+    public static final Item SHORT_SCORCHED_DOOR = new ShortDoorItem(DDBlocks.SHORT_SCORCHED_DOOR, PROPERTIES);
+    public static final Item SHORT_UMBRAL_DOOR = new ShortDoorItem(DDBlocks.SHORT_UMBRAL_DOOR, PROPERTIES);
+
     public static final Item TALL_SCORCHED_DOOR = new TallDoorItem(DDBlocks.TALL_SCORCHED_DOOR, PROPERTIES);
     public static final Item TALL_UMBRAL_DOOR = new TallDoorItem(DDBlocks.TALL_UMBRAL_DOOR, PROPERTIES);
     
     // Cobblemon
+    public static final Item SHORT_APRICORN_DOOR = new ShortDoorItem(DDBlocks.SHORT_APRICORN_DOOR, PROPERTIES);
+
     public static final Item TALL_APRICORN_DOOR = new TallDoorItem(DDBlocks.TALL_APRICORN_DOOR, PROPERTIES);
     
     // Colourful Azaleas
+    public static final Item SHORT_AZULE_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_AZULE_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_BRIGHT_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_BRIGHT_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_FISS_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_FISS_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_ROZE_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_ROZE_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_TECAL_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_TECAL_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_TITANIUM_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_TITANIUM_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_WALNUT_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_WALNUT_AZALEA_DOOR, PROPERTIES);
+
     public static final Item TALL_AZULE_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_AZULE_AZALEA_DOOR, PROPERTIES);
     public static final Item TALL_BRIGHT_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_BRIGHT_AZALEA_DOOR, PROPERTIES);
     public static final Item TALL_FISS_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_FISS_AZALEA_DOOR, PROPERTIES);
@@ -151,6 +235,15 @@ public class DDItems {
     public static final Item TALL_WALNUT_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_WALNUT_AZALEA_DOOR, PROPERTIES);
     
     // Create: Deco
+    public static final Item SHORT_ANDESITE_DOOR = new ShortDoorItem(DDBlocks.SHORT_ANDESITE_DOOR, PROPERTIES);    
+    public static final Item SHORT_BRASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BRASS_DOOR, PROPERTIES);    
+    public static final Item SHORT_COPPER_DOOR = new ShortDoorItem(DDBlocks.SHORT_COPPER_DOOR, PROPERTIES);    
+    public static final Item SHORT_ZINC_DOOR = new ShortDoorItem(DDBlocks.SHORT_ZINC_DOOR, PROPERTIES);    
+    public static final Item SHORT_LOCKED_ANDESITE_DOOR = new ShortDoorItem(DDBlocks.SHORT_LOCKED_ANDESITE_DOOR, PROPERTIES);    
+    public static final Item SHORT_LOCKED_BRASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_LOCKED_BRASS_DOOR, PROPERTIES);    
+    public static final Item SHORT_LOCKED_COPPER_DOOR = new ShortDoorItem(DDBlocks.SHORT_LOCKED_COPPER_DOOR, PROPERTIES);    
+    public static final Item SHORT_LOCKED_ZINC_DOOR = new ShortDoorItem(DDBlocks.SHORT_LOCKED_ZINC_DOOR, PROPERTIES);
+
     public static final Item TALL_ANDESITE_DOOR = new TallDoorItem(DDBlocks.TALL_ANDESITE_DOOR, PROPERTIES);    
     public static final Item TALL_BRASS_DOOR = new TallDoorItem(DDBlocks.TALL_BRASS_DOOR, PROPERTIES);    
     public static final Item TALL_COPPER_DOOR = new TallDoorItem(DDBlocks.TALL_COPPER_DOOR, PROPERTIES);    
@@ -158,18 +251,45 @@ public class DDItems {
     public static final Item TALL_LOCKED_ANDESITE_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_ANDESITE_DOOR, PROPERTIES);    
     public static final Item TALL_LOCKED_BRASS_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_BRASS_DOOR, PROPERTIES);    
     public static final Item TALL_LOCKED_COPPER_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_COPPER_DOOR, PROPERTIES);    
-    public static final Item TALL_LOCKED_ZINC_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_ZINC_DOOR, PROPERTIES);    
+    public static final Item TALL_LOCKED_ZINC_DOOR = new TallDoorItem(DDBlocks.TALL_LOCKED_ZINC_DOOR, PROPERTIES);
     
     // Deeper Darker
+    public static final Item SHORT_ECHO_DOOR = new ShortDoorItem(DDBlocks.SHORT_ECHO_DOOR, PROPERTIES);
+
     public static final Item TALL_ECHO_DOOR = new TallDoorItem(DDBlocks.TALL_ECHO_DOOR, PROPERTIES);
     
     // Ecologics
+    public static final Item SHORT_ECO_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_ECO_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_ECO_FLOWERING_AZALEA_DOOR = new ShortDoorItem(DDBlocks.SHORT_ECO_FLOWERING_AZALEA_DOOR, PROPERTIES);
+    public static final Item SHORT_ECO_COCONUT_DOOR = new ShortDoorItem(DDBlocks.SHORT_ECO_COCONUT_DOOR, PROPERTIES);
+    public static final Item SHORT_ECO_WALNUT_DOOR = new ShortDoorItem(DDBlocks.SHORT_ECO_WALNUT_DOOR, PROPERTIES);
+
     public static final Item TALL_ECO_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_ECO_AZALEA_DOOR, PROPERTIES);
     public static final Item TALL_ECO_FLOWERING_AZALEA_DOOR = new TallDoorItem(DDBlocks.TALL_ECO_FLOWERING_AZALEA_DOOR, PROPERTIES);
     public static final Item TALL_ECO_COCONUT_DOOR = new TallDoorItem(DDBlocks.TALL_ECO_COCONUT_DOOR, PROPERTIES);
     public static final Item TALL_ECO_WALNUT_DOOR = new TallDoorItem(DDBlocks.TALL_ECO_WALNUT_DOOR, PROPERTIES);
     
+    // Gardens of the Dead
+    public static final Item SHORT_SOULBLIGHT_DOOR = new ShortDoorItem(DDBlocks.SHORT_SOULBLIGHT_DOOR, PROPERTIES);
+    public static final Item SHORT_WHISTLECANE_DOOR = new ShortDoorItem(DDBlocks.SHORT_WHISTLECANE_DOOR, PROPERTIES);
+
+    public static final Item TALL_SOULBLIGHT_DOOR = new TallDoorItem(DDBlocks.TALL_SOULBLIGHT_DOOR, PROPERTIES);
+    public static final Item TALL_WHISTLECANE_DOOR = new TallDoorItem(DDBlocks.TALL_WHISTLECANE_DOOR, PROPERTIES);    
+    
     // Glass Doors
+    public static final Item SHORT_IRON_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_IRON_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_OAK_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_OAK_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_SPRUCE_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_SPRUCE_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_BIRCH_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BIRCH_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_JUNGLE_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_JUNGLE_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_ACACIA_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_ACACIA_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_DARK_OAK_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_DARK_OAK_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_MANGROVE_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_MANGROVE_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_BAMBOO_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BAMBOO_GLASS_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
+    public static final Item SHORT_CHERRY_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_CHERRY_GLASS_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
+    public static final Item SHORT_CRIMSON_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_CRIMSON_GLASS_DOOR, PROPERTIES);
+    public static final Item SHORT_WARPED_GLASS_DOOR = new ShortDoorItem(DDBlocks.SHORT_WARPED_GLASS_DOOR, PROPERTIES);
+
     public static final Item TALL_IRON_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_IRON_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_OAK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_OAK_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_SPRUCE_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_SPRUCE_GLASS_DOOR, PROPERTIES);
@@ -179,25 +299,70 @@ public class DDItems {
     public static final Item TALL_DARK_OAK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_DARK_OAK_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_MANGROVE_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MANGROVE_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_BAMBOO_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_BAMBOO_GLASS_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
+    public static final Item TALL_CHERRY_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_CHERRY_GLASS_DOOR, PROPERTIES.requiredFeatures(FeatureFlags.UPDATE_1_20));
     public static final Item TALL_CRIMSON_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_CRIMSON_GLASS_DOOR, PROPERTIES);
     public static final Item TALL_WARPED_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_WARPED_GLASS_DOOR, PROPERTIES);
 
     // Good Ending
+    public static final Item SHORT_GE_CYPRESS_DOOR = new ShortDoorItem(DDBlocks.SHORT_GE_CYPRESS_DOOR, PROPERTIES);
+    public static final Item SHORT_GE_MUDDY_OAK_DOOR = new ShortDoorItem(DDBlocks.SHORT_GE_MUDDY_OAK_DOOR, PROPERTIES);
+
     public static final Item TALL_GE_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_GE_CYPRESS_DOOR, PROPERTIES);
     public static final Item TALL_GE_MUDDY_OAK_DOOR = new TallDoorItem(DDBlocks.TALL_GE_MUDDY_OAK_DOOR, PROPERTIES);
     
     // Graveyard
+    public static final Item SHORT_DARK_IRON_DOOR = new ShortDoorItem(DDBlocks.SHORT_DARK_IRON_DOOR, PROPERTIES);
+
     public static final Item TALL_DARK_IRON_DOOR = new TallDoorItem(DDBlocks.TALL_DARK_IRON_DOOR, PROPERTIES);
 
     // Hephaestus
+    public static final Item SHORT_BLOODSHROOM_DOOR = new ShortDoorItem(DDBlocks.SHORT_BLOODSHROOM_DOOR, PROPERTIES);
+    public static final Item SHORT_GREENHEART_DOOR = new ShortDoorItem(DDBlocks.SHORT_GREENHEART_DOOR, PROPERTIES);
+    public static final Item SHORT_SKYROOT_DOOR = new ShortDoorItem(DDBlocks.SHORT_SKYROOT_DOOR, PROPERTIES);    
+
     public static final Item TALL_BLOODSHROOM_DOOR = new TallDoorItem(DDBlocks.TALL_BLOODSHROOM_DOOR, PROPERTIES);
     public static final Item TALL_GREENHEART_DOOR = new TallDoorItem(DDBlocks.TALL_GREENHEART_DOOR, PROPERTIES);
     public static final Item TALL_SKYROOT_DOOR = new TallDoorItem(DDBlocks.TALL_SKYROOT_DOOR, PROPERTIES);    
 
     // Hexcasting
-    public static final Item TALL_AKASHIC_DOOR = new TallDoorItem(DDBlocks.TALL_AKASHIC_DOOR, PROPERTIES);    
+    public static final Item SHORT_EDIFIED_DOOR = new ShortDoorItem(DDBlocks.SHORT_EDIFIED_DOOR, PROPERTIES);    
+
+    public static final Item TALL_EDIFIED_DOOR = new TallDoorItem(DDBlocks.TALL_EDIFIED_DOOR, PROPERTIES);    
     
     // Oh the Biomes You'll Go
+    public static final Item SHORT_BYG_ASPEN_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_ASPEN_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_BAOBAB_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_BAOBAB_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_BLUE_ENCHANTED_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_BLUE_ENCHANTED_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_BULBIS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_BULBIS_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_CHERRY_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_CHERRY_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_CIKA_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_CIKA_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_CYPRESS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_CYPRESS_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_EBONY_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_EBONY_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_EMBUR_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_EMBUR_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_ETHER_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_ETHER_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_FIR_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_FIR_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_FLORUS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_FLORUS_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_GREEN_ENCHANTED_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_GREEN_ENCHANTED_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_HOLLY_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_HOLLY_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_IMPARIUS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_IMPARIUS_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_IRONWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_IRONWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_JACARANDA_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_JACARANDA_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_LAMENT_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_LAMENT_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_MAHOGANY_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_MAHOGANY_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_MAPLE_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_MAPLE_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_NIGHTSHADE_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_NIGHTSHADE_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_PALM_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_PALM_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_PINE_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_PINE_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_RAINBOW_EUCALYPTUS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_RAINBOW_EUCALYPTUS_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_REDWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_REDWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_SKYRIS_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_SKYRIS_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_SOUL_SHROOM_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_SOUL_SHROOM_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_SYTHIAN_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_SYTHIAN_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_WHITE_MANGROVE_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_WHITE_MANGROVE_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_WILLOW_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_WILLOW_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_WITCH_HAZEL_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_WITCH_HAZEL_DOOR, PROPERTIES);
+    public static final Item SHORT_BYG_ZELKOVA_DOOR = new ShortDoorItem(DDBlocks.SHORT_BYG_ZELKOVA_DOOR, PROPERTIES);
+
     public static final Item TALL_BYG_ASPEN_DOOR = new TallDoorItem(DDBlocks.TALL_BYG_ASPEN_DOOR, PROPERTIES);
     public static final Item TALL_BYG_BAOBAB_DOOR = new TallDoorItem(DDBlocks.TALL_BYG_BAOBAB_DOOR, PROPERTIES);
     public static final Item TALL_BYG_BLUE_ENCHANTED_DOOR = new TallDoorItem(DDBlocks.TALL_BYG_BLUE_ENCHANTED_DOOR, PROPERTIES);
@@ -232,11 +397,31 @@ public class DDItems {
     public static final Item TALL_BYG_ZELKOVA_DOOR = new TallDoorItem(DDBlocks.TALL_BYG_ZELKOVA_DOOR, PROPERTIES);
     
     // Promenade
+    public static final Item SHORT_PROMENADE_CHERRY_OAK_DOOR = new ShortDoorItem(DDBlocks.SHORT_PROMENADE_CHERRY_OAK_DOOR, PROPERTIES);
+    public static final Item SHORT_PROMENADE_DARK_AMARANTH_DOOR = new ShortDoorItem(DDBlocks.SHORT_PROMENADE_DARK_AMARANTH_DOOR, PROPERTIES);
+    public static final Item SHORT_PROMENADE_PALM_DOOR = new ShortDoorItem(DDBlocks.SHORT_PROMENADE_PALM_DOOR, PROPERTIES);    
+
     public static final Item TALL_PROMENADE_CHERRY_OAK_DOOR = new TallDoorItem(DDBlocks.TALL_PROMENADE_CHERRY_OAK_DOOR, PROPERTIES);
     public static final Item TALL_PROMENADE_DARK_AMARANTH_DOOR = new TallDoorItem(DDBlocks.TALL_PROMENADE_DARK_AMARANTH_DOOR, PROPERTIES);
     public static final Item TALL_PROMENADE_PALM_DOOR = new TallDoorItem(DDBlocks.TALL_PROMENADE_PALM_DOOR, PROPERTIES);    
     
     // Regions Unexplored
+    public static final Item SHORT_RUE_BAOBAB_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_BAOBAB_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_BLACKWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_BLACKWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_BRIMWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_BRIMWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_CHERRY_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_CHERRY_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_CYPRESS_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_CYPRESS_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_DEAD_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_DEAD_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_EUCALYPTUS_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_EUCALYPTUS_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_JOSHUA_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_JOSHUA_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_LARCH_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_LARCH_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_MAPLE_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_MAPLE_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_MAUVE_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_MAUVE_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_PALM_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_PALM_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_PINE_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_PINE_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_REDWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_REDWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_RUE_WILLOW_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUE_WILLOW_DOOR, PROPERTIES);
+
     public static final Item TALL_RUE_BAOBAB_DOOR = new TallDoorItem(DDBlocks.TALL_RUE_BAOBAB_DOOR, PROPERTIES);
     public static final Item TALL_RUE_BLACKWOOD_DOOR = new TallDoorItem(DDBlocks.TALL_RUE_BLACKWOOD_DOOR, PROPERTIES);
     public static final Item TALL_RUE_BRIMWOOD_DOOR = new TallDoorItem(DDBlocks.TALL_RUE_BRIMWOOD_DOOR, PROPERTIES);
@@ -254,16 +439,33 @@ public class DDItems {
     public static final Item TALL_RUE_WILLOW_DOOR = new TallDoorItem(DDBlocks.TALL_RUE_WILLOW_DOOR, PROPERTIES);
     
     // Snowy Spirit
+    public static final Item SHORT_GINGERBREAD_DOOR = new ShortDoorItem(DDBlocks.SHORT_GINGERBREAD_DOOR, PROPERTIES);
+
     public static final Item TALL_GINGERBREAD_DOOR = new TallDoorItem(DDBlocks.TALL_GINGERBREAD_DOOR, PROPERTIES);
     
     // Supplementaries
+    public static final Item SHORT_GOLD_DOOR = new ShortDoorItem(DDBlocks.SHORT_GOLD_DOOR, PROPERTIES);
+    public static final Item SHORT_NETHERITE_DOOR = new ShortDoorItem(DDBlocks.SHORT_NETHERITE_DOOR, PROPERTIES);
+
     public static final Item TALL_GOLD_DOOR = new TallDoorItem(DDBlocks.TALL_GOLD_DOOR, PROPERTIES);
     public static final Item TALL_NETHERITE_DOOR = new TallDoorItem(DDBlocks.TALL_NETHERITE_DOOR, PROPERTIES);
 
     // Tech Reborn
+    public static final Item SHORT_RUBBER_DOOR = new ShortDoorItem(DDBlocks.SHORT_RUBBER_DOOR, PROPERTIES);
+
     public static final Item TALL_RUBBER_DOOR = new TallDoorItem(DDBlocks.TALL_RUBBER_DOOR, PROPERTIES);
     
     // Terrestria
+    public static final Item SHORT_TERRESTRIA_CYPRESS_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_CYPRESS_DOOR, PROPERTIES);
+    public static final Item SHORT_TERRESTRIA_HEMLOCK_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_HEMLOCK_DOOR, PROPERTIES);
+    public static final Item SHORT_TERRESTRIA_JAPANESE_MAPLE_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_JAPANESE_MAPLE_DOOR, PROPERTIES);
+    public static final Item SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS_DOOR, PROPERTIES);
+    public static final Item SHORT_TERRESTRIA_REDWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_REDWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_TERRESTRIA_RUBBER_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_RUBBER_DOOR, PROPERTIES);
+    public static final Item SHORT_TERRESTRIA_SAKURA_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_SAKURA_DOOR, PROPERTIES);
+    public static final Item SHORT_TERRESTRIA_WILLOW_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_WILLOW_DOOR, PROPERTIES);
+    public static final Item SHORT_TERRESTRIA_YUCCA_PALM_DOOR = new ShortDoorItem(DDBlocks.SHORT_TERRESTRIA_YUCCA_PALM_DOOR, PROPERTIES);
+
     public static final Item TALL_TERRESTRIA_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_TERRESTRIA_CYPRESS_DOOR, PROPERTIES);
     public static final Item TALL_TERRESTRIA_HEMLOCK_DOOR = new TallDoorItem(DDBlocks.TALL_TERRESTRIA_HEMLOCK_DOOR, PROPERTIES);
     public static final Item TALL_TERRESTRIA_JAPANESE_MAPLE_DOOR = new TallDoorItem(DDBlocks.TALL_TERRESTRIA_JAPANESE_MAPLE_DOOR, PROPERTIES);
@@ -275,12 +477,27 @@ public class DDItems {
     public static final Item TALL_TERRESTRIA_YUCCA_PALM_DOOR = new TallDoorItem(DDBlocks.TALL_TERRESTRIA_YUCCA_PALM_DOOR, PROPERTIES);
     
     // Traverse
+    public static final Item SHORT_TRAVERSE_FIR_DOOR = new ShortDoorItem(DDBlocks.SHORT_TRAVERSE_FIR_DOOR, PROPERTIES);
+
     public static final Item TALL_TRAVERSE_FIR_DOOR = new TallDoorItem(DDBlocks.TALL_TRAVERSE_FIR_DOOR, PROPERTIES);
     
     // Twigs
+    public static final Item SHORT_STRIPPED_BAMBOO_DOOR = new ShortDoorItem(DDBlocks.SHORT_STRIPPED_BAMBOO_DOOR, PROPERTIES);
+
     public static final Item TALL_STRIPPED_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_STRIPPED_BAMBOO_DOOR, PROPERTIES);
     
     // Twilight Forest
+    public static final Item SHORT_CANOPY_DOOR = new ShortDoorItem(DDBlocks.SHORT_CANOPY_DOOR, PROPERTIES);
+    public static final Item SHORT_DARKWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_DARKWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_MINEWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_MINEWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_SORTINGWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_SORTINGWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_TIMEWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_TIMEWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_TRANSWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_TRANSWOOD_DOOR, PROPERTIES);
+    public static final Item SHORT_TWILIGHT_MANGROVE_DOOR = new ShortDoorItem(DDBlocks.SHORT_TWILIGHT_MANGROVE_DOOR, PROPERTIES);
+    public static final Item SHORT_TWILIGHT_OAK_DOOR = new ShortDoorItem(DDBlocks.SHORT_TWILIGHT_OAK_DOOR, PROPERTIES);
+    
+    public static final Item SHORT_TOWERWOOD_DOOR = new ShortDoorItem(DDBlocks.SHORT_TOWERWOOD_DOOR, PROPERTIES);
+
     public static final Item TALL_CANOPY_DOOR = new TallDoorItem(DDBlocks.TALL_CANOPY_DOOR, PROPERTIES);
     public static final Item TALL_DARKWOOD_DOOR = new TallDoorItem(DDBlocks.TALL_DARKWOOD_DOOR, PROPERTIES);
     public static final Item TALL_MINEWOOD_DOOR = new TallDoorItem(DDBlocks.TALL_MINEWOOD_DOOR, PROPERTIES);
@@ -293,7 +510,14 @@ public class DDItems {
     public static final Item TALL_TOWERWOOD_DOOR = new TallDoorItem(DDBlocks.TALL_TOWERWOOD_DOOR, PROPERTIES);
     
     // XP Obelisk
+    public static final Item SHORT_SOUL_COPPER_DOOR = new ShortDoorItem(DDBlocks.SHORT_SOUL_COPPER_DOOR, PROPERTIES);
+
     public static final Item TALL_SOUL_COPPER_DOOR = new TallDoorItem(DDBlocks.TALL_SOUL_COPPER_DOOR, PROPERTIES);
+    
+    // Yippee
+    public static final Item SHORT_MYSTICAL_OAK_DOOR = new ShortDoorItem(DDBlocks.SHORT_MYSTICAL_OAK_DOOR, PROPERTIES);
+
+    public static final Item TALL_MYSTICAL_OAK_DOOR = new TallDoorItem(DDBlocks.TALL_MYSTICAL_OAK_DOOR, PROPERTIES);
     
     // Chipped (The biggest compat)
     public static final Item TALL_CHIPPED_OAK_HEAVY_DOOR = new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_HEAVY_DOOR, PROPERTIES);
@@ -697,6 +921,18 @@ public class DDItems {
 	public static final Item TALL_MACAW_CRIMSON_MYSTIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_MYSTIC_DOOR, PROPERTIES);
     
 	public static void registerItems() {
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_IRON), SHORT_IRON_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_OAK), SHORT_OAK_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SPRUCE), SHORT_SPRUCE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BIRCH), SHORT_BIRCH_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JUNGLE), SHORT_JUNGLE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ACACIA), SHORT_ACACIA_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARK_OAK), SHORT_DARK_OAK_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MANGROVE), SHORT_MANGROVE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BAMBOO), SHORT_BAMBOO_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHERRY), SHORT_CHERRY_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CRIMSON), SHORT_CRIMSON_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WARPED), SHORT_WARPED_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_IRON), TALL_IRON_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_OAK), TALL_OAK_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SPRUCE), TALL_SPRUCE_DOOR);
@@ -710,14 +946,49 @@ public class DDItems {
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CRIMSON), TALL_CRIMSON_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WARPED), TALL_WARPED_DOOR);
 		
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JACARANDA), SHORT_JACARANDA_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_REDBUD), SHORT_REDBUD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CYPRESS), SHORT_CYPRESS_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BROWN_MUSHROOM), SHORT_BROWN_MUSHROOM_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RED_MUSHROOM), SHORT_RED_MUSHROOM_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_JACARANDA), TALL_JACARANDA_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_REDBUD), TALL_REDBUD_DOOR);
-		
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CYPRESS), TALL_CYPRESS_DOOR);
-		
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BROWN_MUSHROOM), TALL_BROWN_MUSHROOM_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RED_MUSHROOM), TALL_RED_MUSHROOM_DOOR);
 
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_ASPEN), SHORT_BYG_ASPEN_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_BAOBAB), SHORT_BYG_BAOBAB_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_BLUE_ENCHANTED), SHORT_BYG_BLUE_ENCHANTED_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_BULBIS), SHORT_BYG_BULBIS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_CHERRY), SHORT_BYG_CHERRY_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_CIKA), SHORT_BYG_CIKA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_CYPRESS), SHORT_BYG_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_EBONY), SHORT_BYG_EBONY_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_EMBUR), SHORT_BYG_EMBUR_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_ETHER), SHORT_BYG_ETHER_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_FIR), SHORT_BYG_FIR_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_FLORUS), SHORT_BYG_FLORUS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_GREEN_ENCHANTED), SHORT_BYG_GREEN_ENCHANTED_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_HOLLY), SHORT_BYG_HOLLY_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_IMPARIUS), SHORT_BYG_IMPARIUS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_IRONWOOD), SHORT_BYG_IRONWOOD_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_JACARANDA), SHORT_BYG_JACARANDA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_LAMENT), SHORT_BYG_LAMENT_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_MAHOGANY), SHORT_BYG_MAHOGANY_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_MAPLE), SHORT_BYG_MAPLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_NIGHTSHADE), SHORT_BYG_NIGHTSHADE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_PALM), SHORT_BYG_PALM_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_PINE), SHORT_BYG_PINE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_RAINBOW_EUCALYPTUS), SHORT_BYG_RAINBOW_EUCALYPTUS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_REDWOOD), SHORT_BYG_REDWOOD_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_SKYRIS), SHORT_BYG_SKYRIS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_SOUL_SHROOM), SHORT_BYG_SOUL_SHROOM_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_SYTHIAN), SHORT_BYG_SYTHIAN_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_WHITE_MANGROVE), SHORT_BYG_WHITE_MANGROVE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_WILLOW), SHORT_BYG_WILLOW_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_WITCH_HAZEL), SHORT_BYG_WITCH_HAZEL_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BYG_ZELKOVA), SHORT_BYG_ZELKOVA_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_ASPEN), TALL_BYG_ASPEN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_BAOBAB), TALL_BYG_BAOBAB_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_BLUE_ENCHANTED), TALL_BYG_BLUE_ENCHANTED_DOOR);
@@ -751,18 +1022,38 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_WITCH_HAZEL), TALL_BYG_WITCH_HAZEL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BYG_ZELKOVA), TALL_BYG_ZELKOVA_DOOR);
 
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AERONOS), SHORT_AERONOS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GLACIAN), SHORT_GLACIAN_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_STROPHAR), SHORT_STROPHAR_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_STEEL), SHORT_STEEL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AERONOS), TALL_AERONOS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GLACIAN), TALL_GLACIAN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_STROPHAR), TALL_STROPHAR_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_STEEL), TALL_STEEL_DOOR);
-        
+
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AETHER_SKYROOT), SHORT_AETHER_SKYROOT_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AETHER_SKYROOT), TALL_AETHER_SKYROOT_DOOR);
 
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWISTED), SHORT_TWISTED_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWISTED), TALL_TWISTED_DOOR);
         
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BE_BAMBOO), SHORT_BE_BAMBOO_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BE_DRY_BAMBOO), SHORT_BE_DRY_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BE_BAMBOO), TALL_BE_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BE_DRY_BAMBOO), TALL_BE_DRY_BAMBOO_DOOR);
         
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERMINITE), SHORT_TERMINITE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_THALLASIUM), SHORT_THALLASIUM_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DRAGON_TREE), SHORT_DRAGON_TREE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_END_LOTUS), SHORT_END_LOTUS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_HELIX_TREE), SHORT_HELIX_TREE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JELLYSHROOM), SHORT_JELLYSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LACUGROVE), SHORT_LACUGROVE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LUCERNIA), SHORT_LUCERNIA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MOSSY_GLOWSHROOM), SHORT_MOSSY_GLOWSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PYTHADENDRON), SHORT_PYTHADENDRON_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TENANEA), SHORT_TENANEA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_UMBRELLA_TREE), SHORT_UMBRELLA_TREE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERMINITE), TALL_TERMINITE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_THALLASIUM), TALL_THALLASIUM_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DRAGON_TREE), TALL_DRAGON_TREE_DOOR);
@@ -776,6 +1067,17 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TENANEA), TALL_TENANEA_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_UMBRELLA_TREE), TALL_UMBRELLA_TREE_DOOR);
 
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ANCHOR_TREE), SHORT_ANCHOR_TREE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BONE_CIN), SHORT_BONE_CIN_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BONE_REED), SHORT_BONE_REED_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MUSHROOM_FIR), SHORT_MUSHROOM_FIR_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHER_MUSHROOM), SHORT_NETHER_MUSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHER_REED), SHORT_NETHER_REED_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHER_SAKURA), SHORT_NETHER_SAKURA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUBEUS), SHORT_RUBEUS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_STALAGNATE), SHORT_STALAGNATE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WART), SHORT_WART_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BN_WILLOW), SHORT_BN_WILLOW_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ANCHOR_TREE), TALL_ANCHOR_TREE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BONE_CIN), TALL_BONE_CIN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BONE_REED), TALL_BONE_REED_DOOR);
@@ -788,22 +1090,41 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WART), TALL_WART_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BN_WILLOW), TALL_BN_WILLOW_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BW_CYPRESS), SHORT_BW_CYPRESS_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DRAGONS_BLOOD), SHORT_DRAGONS_BLOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ELDER), SHORT_ELDER_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JUNIPER), SHORT_JUNIPER_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BW_CYPRESS), TALL_BW_CYPRESS_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DRAGONS_BLOOD), TALL_DRAGONS_BLOOD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ELDER), TALL_ELDER_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_JUNIPER), TALL_JUNIPER_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_YEW), SHORT_YEW_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_YEW), TALL_YEW_DOOR);
 
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ANCIENT_OAK), TALL_ANCIENT_OAK_DOOR);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLIGHTED_BALSA), TALL_BLIGHTED_BALSA_DOOR);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SWAMP_CYPRESS), TALL_SWAMP_CYPRESS_DOOR);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WILLOW), TALL_WILLOW_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BM_ANCIENT_OAK), SHORT_BM_ANCIENT_OAK_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BM_BLIGHTED_BALSA), SHORT_BM_BLIGHTED_BALSA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BM_SWAMP_CYPRESS), SHORT_BM_SWAMP_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BM_WILLOW), SHORT_BM_WILLOW_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BM_ANCIENT_OAK), TALL_BM_ANCIENT_OAK_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BM_BLIGHTED_BALSA), TALL_BM_BLIGHTED_BALSA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BM_SWAMP_CYPRESS), TALL_BM_SWAMP_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BM_WILLOW), TALL_BM_WILLOW_DOOR);
         
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FLESH), SHORT_FLESH_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FULL_FLESH), SHORT_FULL_FLESH_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FLESHKIN), SHORT_FLESHKIN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FLESH), TALL_FLESH_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FULL_FLESH), TALL_FULL_FLESH_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FLESHKIN), TALL_FLESHKIN_DOOR);
         
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_BAMBOO), SHORT_BLOCKUS_BAMBOO_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_BLACKSTONE), SHORT_BLOCKUS_BLACKSTONE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_CHARRED), SHORT_BLOCKUS_CHARRED_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED), SHORT_BLOCKUS_OBSIDIAN_REINFORCED_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_PAPER), SHORT_BLOCKUS_PAPER_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_STONE), SHORT_BLOCKUS_STONE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOCKUS_WHITE_OAK), SHORT_BLOCKUS_WHITE_OAK_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_BAMBOO), TALL_BLOCKUS_BAMBOO_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_BLACKSTONE), TALL_BLOCKUS_BLACKSTONE_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_CHARRED), TALL_BLOCKUS_CHARRED_DOOR);
@@ -812,17 +1133,31 @@ public class DDItems {
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_STONE), TALL_BLOCKUS_STONE_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOCKUS_WHITE_OAK), TALL_BLOCKUS_WHITE_OAK_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CEILTRUNK), SHORT_CEILTRUNK_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LUZAWOOD), SHORT_LUZAWOOD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CEILTRUNK), TALL_CEILTRUNK_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LUZAWOOD), TALL_LUZAWOOD_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHARM_AZALEA), SHORT_CHARM_AZALEA_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHARM_EBONY), SHORT_CHARM_EBONY_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHARM_AZALEA), TALL_CHARM_AZALEA_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHARM_EBONY), TALL_CHARM_EBONY_DOOR);
-		
+
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SCORCHED), SHORT_SCORCHED_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_UMBRAL), SHORT_UMBRAL_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SCORCHED), TALL_SCORCHED_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_UMBRAL), TALL_UMBRAL_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_APRICORN), SHORT_APRICORN_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_APRICORN), TALL_APRICORN_DOOR);
 
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AZULE_AZALEA), SHORT_AZULE_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BRIGHT_AZALEA), SHORT_BRIGHT_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FISS_AZALEA), SHORT_FISS_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ROZE_AZALEA), SHORT_ROZE_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TECAL_AZALEA), SHORT_TECAL_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TITANIUM_AZALEA), SHORT_TITANIUM_AZALEA_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WALNUT_AZALEA), SHORT_WALNUT_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AZULE_AZALEA), TALL_AZULE_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BRIGHT_AZALEA), TALL_BRIGHT_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FISS_AZALEA), TALL_FISS_AZALEA_DOOR);
@@ -831,6 +1166,14 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TITANIUM_AZALEA), TALL_TITANIUM_AZALEA_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WALNUT_AZALEA), TALL_WALNUT_AZALEA_DOOR);
 		
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ANDESITE), SHORT_ANDESITE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BRASS), SHORT_BRASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_COPPER), SHORT_COPPER_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ZINC), SHORT_ZINC_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LOCKED_ANDESITE), SHORT_LOCKED_ANDESITE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LOCKED_BRASS), SHORT_LOCKED_BRASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LOCKED_COPPER), SHORT_LOCKED_COPPER_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LOCKED_ZINC), SHORT_LOCKED_ZINC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ANDESITE), TALL_ANDESITE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BRASS), TALL_BRASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_COPPER), TALL_COPPER_DOOR);
@@ -840,24 +1183,53 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_COPPER), TALL_LOCKED_COPPER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LOCKED_ZINC), TALL_LOCKED_ZINC_DOOR);
 
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECHO), SHORT_ECHO_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECHO), TALL_ECHO_DOOR);
         
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_AZALEA), SHORT_ECO_AZALEA_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_FLOWERING_AZALEA), SHORT_ECO_FLOWERING_AZALEA_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_COCONUT), SHORT_ECO_COCONUT_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_WALNUT), SHORT_ECO_WALNUT_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_AZALEA), TALL_ECO_AZALEA_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_FLOWERING_AZALEA), TALL_ECO_FLOWERING_AZALEA_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_COCONUT), TALL_ECO_COCONUT_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_WALNUT), TALL_ECO_WALNUT_DOOR);
 
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SOULBLIGHT), SHORT_SOULBLIGHT_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WHISTLECANE), SHORT_WHISTLECANE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SOULBLIGHT), TALL_SOULBLIGHT_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WHISTLECANE), TALL_WHISTLECANE_DOOR);
+
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GE_CYPRESS), SHORT_GE_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GE_MUDDY_OAK), SHORT_GE_MUDDY_OAK_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GE_CYPRESS), TALL_GE_CYPRESS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GE_MUDDY_OAK), TALL_GE_MUDDY_OAK_DOOR);
 
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARK_IRON), SHORT_DARK_IRON_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DARK_IRON), TALL_DARK_IRON_DOOR);
 
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AKASHIC), TALL_AKASHIC_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_EDIFIED), SHORT_EDIFIED_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_EDIFIED), TALL_EDIFIED_DOOR);
 		
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BLOODSHROOM), SHORT_BLOODSHROOM_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GREENHEART), SHORT_GREENHEART_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SKYROOT), SHORT_SKYROOT_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BLOODSHROOM), TALL_BLOODSHROOM_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GREENHEART), TALL_GREENHEART_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SKYROOT), TALL_SKYROOT_DOOR);
-
+        
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_IRON_GLASS), SHORT_IRON_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_OAK_GLASS), SHORT_OAK_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SPRUCE_GLASS), SHORT_SPRUCE_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BIRCH_GLASS), SHORT_BIRCH_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JUNGLE_GLASS), SHORT_JUNGLE_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ACACIA_GLASS), SHORT_ACACIA_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARK_OAK_GLASS), SHORT_DARK_OAK_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MANGROVE_GLASS), SHORT_MANGROVE_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BAMBOO_GLASS), SHORT_BAMBOO_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHERRY_GLASS), SHORT_CHERRY_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CRIMSON_GLASS), SHORT_CRIMSON_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WARPED_GLASS), SHORT_WARPED_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_IRON_GLASS), TALL_IRON_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_OAK_GLASS), TALL_OAK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SPRUCE_GLASS), TALL_SPRUCE_GLASS_DOOR);
@@ -867,13 +1239,32 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DARK_OAK_GLASS), TALL_DARK_OAK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MANGROVE_GLASS), TALL_MANGROVE_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BAMBOO_GLASS), TALL_BAMBOO_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHERRY_GLASS), TALL_CHERRY_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CRIMSON_GLASS), TALL_CRIMSON_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WARPED_GLASS), TALL_WARPED_GLASS_DOOR);
 		
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PROMENADE_CHERRY_OAK), SHORT_PROMENADE_CHERRY_OAK_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PROMENADE_DARK_AMARANTH), SHORT_PROMENADE_DARK_AMARANTH_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PROMENADE_PALM), SHORT_PROMENADE_PALM_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_CHERRY_OAK), TALL_PROMENADE_CHERRY_OAK_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_DARK_AMARANTH), TALL_PROMENADE_DARK_AMARANTH_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PROMENADE_PALM), TALL_PROMENADE_PALM_DOOR);
-
+        
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BAOBAB), SHORT_RUE_BAOBAB_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BLACKWOOD), SHORT_RUE_BLACKWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BRIMWOOD), SHORT_RUE_BRIMWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_CHERRY), SHORT_RUE_CHERRY_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_CYPRESS), SHORT_RUE_CYPRESS_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_DEAD), SHORT_RUE_DEAD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_EUCALYPTUS), SHORT_RUE_EUCALYPTUS_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_JOSHUA), SHORT_RUE_JOSHUA_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_LARCH), SHORT_RUE_LARCH_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_MAPLE), SHORT_RUE_MAPLE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_MAUVE), SHORT_RUE_MAUVE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_PALM), SHORT_RUE_PALM_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_PINE), SHORT_RUE_PINE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_REDWOOD), SHORT_RUE_REDWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_WILLOW), SHORT_RUE_WILLOW_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BAOBAB), TALL_RUE_BAOBAB_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BLACKWOOD), TALL_RUE_BLACKWOOD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BRIMWOOD), TALL_RUE_BRIMWOOD_DOOR);
@@ -889,14 +1280,27 @@ public class DDItems {
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_PINE), TALL_RUE_PINE_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_REDWOOD), TALL_RUE_REDWOOD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_WILLOW), TALL_RUE_WILLOW_DOOR);
-
+		
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GINGERBREAD), SHORT_GINGERBREAD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GINGERBREAD), TALL_GINGERBREAD_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GOLD), SHORT_GOLD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHERITE), SHORT_NETHERITE_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GOLD), TALL_GOLD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_NETHERITE), TALL_NETHERITE_DOOR);
 		
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUBBER), SHORT_RUBBER_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUBBER), TALL_RUBBER_DOOR);
-		
+
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_CYPRESS), SHORT_TERRESTRIA_CYPRESS_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_HEMLOCK), SHORT_TERRESTRIA_HEMLOCK_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_JAPANESE_MAPLE), SHORT_TERRESTRIA_JAPANESE_MAPLE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS), SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_REDWOOD), SHORT_TERRESTRIA_REDWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_RUBBER), SHORT_TERRESTRIA_RUBBER_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_SAKURA), SHORT_TERRESTRIA_SAKURA_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_WILLOW), SHORT_TERRESTRIA_WILLOW_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERRESTRIA_YUCCA_PALM), SHORT_TERRESTRIA_YUCCA_PALM_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_CYPRESS), TALL_TERRESTRIA_CYPRESS_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_HEMLOCK), TALL_TERRESTRIA_HEMLOCK_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_JAPANESE_MAPLE), TALL_TERRESTRIA_JAPANESE_MAPLE_DOOR);
@@ -907,10 +1311,20 @@ public class DDItems {
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_WILLOW), TALL_TERRESTRIA_WILLOW_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TERRESTRIA_YUCCA_PALM), TALL_TERRESTRIA_YUCCA_PALM_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TRAVERSE_FIR), SHORT_TRAVERSE_FIR_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TRAVERSE_FIR), TALL_TRAVERSE_FIR_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_STRIPPED_BAMBOO), SHORT_STRIPPED_BAMBOO_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_STRIPPED_BAMBOO), TALL_STRIPPED_BAMBOO_DOOR);
 		
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CANOPY), SHORT_CANOPY_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARKWOOD), SHORT_DARKWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MINEWOOD), SHORT_MINEWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SORTINGWOOD), SHORT_SORTINGWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TIMEWOOD), SHORT_TIMEWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TRANSWOOD), SHORT_TRANSWOOD_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWILIGHT_MANGROVE), SHORT_TWILIGHT_MANGROVE_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWILIGHT_OAK), SHORT_TWILIGHT_OAK_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CANOPY), TALL_CANOPY_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DARKWOOD), TALL_DARKWOOD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MINEWOOD), TALL_MINEWOOD_DOOR);
@@ -920,9 +1334,14 @@ public class DDItems {
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWILIGHT_MANGROVE), TALL_TWILIGHT_MANGROVE_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWILIGHT_OAK), TALL_TWILIGHT_OAK_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TOWERWOOD), SHORT_TOWERWOOD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TOWERWOOD), TALL_TOWERWOOD_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SOUL_COPPER), SHORT_SOUL_COPPER_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SOUL_COPPER), TALL_SOUL_COPPER_DOOR);
+
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MYSTICAL_OAK), SHORT_MYSTICAL_OAK_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MYSTICAL_OAK), TALL_MYSTICAL_OAK_DOOR);
 		
         //Register all those Chipped doors.
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHIPPED_OAK_HEAVY), TALL_CHIPPED_OAK_HEAVY_DOOR);
@@ -1339,270 +1758,459 @@ public class DDItems {
     }
 
     private static void addMainTabEntries(FabricItemGroupEntries entries) {
+        entries.accept(SHORT_IRON_DOOR);
         entries.accept(TALL_IRON_DOOR);
+        entries.accept(SHORT_OAK_DOOR);
         entries.accept(TALL_OAK_DOOR);
+        entries.accept(SHORT_SPRUCE_DOOR);
         entries.accept(TALL_SPRUCE_DOOR);
+        entries.accept(SHORT_BIRCH_DOOR);
         entries.accept(TALL_BIRCH_DOOR);
+        entries.accept(SHORT_JUNGLE_DOOR);
         entries.accept(TALL_JUNGLE_DOOR);
+        entries.accept(SHORT_ACACIA_DOOR);
         entries.accept(TALL_ACACIA_DOOR);
+        entries.accept(SHORT_DARK_OAK_DOOR);
         entries.accept(TALL_DARK_OAK_DOOR);
+        entries.accept(SHORT_MANGROVE_DOOR);
         entries.accept(TALL_MANGROVE_DOOR);
+        entries.accept(SHORT_BAMBOO_DOOR); // Bamboo is load-conditional on 1.20
         entries.accept(TALL_BAMBOO_DOOR); // Bamboo is load-conditional on 1.20
+        entries.accept(SHORT_CHERRY_DOOR); // Cherry is also load-conditional on 1.20
         entries.accept(TALL_CHERRY_DOOR); // Cherry is also load-conditional on 1.20
+        entries.accept(SHORT_CRIMSON_DOOR);
         entries.accept(TALL_CRIMSON_DOOR);
+        entries.accept(SHORT_WARPED_DOOR);
         entries.accept(TALL_WARPED_DOOR);
-        if (FabricLoader.getInstance().isModLoaded("abundance")) {
+        if (FabricLoader.getInstance().isModLoaded("horizons")) {
+            entries.accept(SHORT_JACARANDA_DOOR);
             entries.accept(TALL_JACARANDA_DOOR);
+            entries.accept(SHORT_REDBUD_DOOR);
             entries.accept(TALL_REDBUD_DOOR);
-        }
-        if (FabricLoader.getInstance().isModLoaded("bayou_blues")) {
+            entries.accept(SHORT_CYPRESS_DOOR);
             entries.accept(TALL_CYPRESS_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("enhanced_mushrooms")) {
+            entries.accept(SHORT_BROWN_MUSHROOM_DOOR);
             entries.accept(TALL_BROWN_MUSHROOM_DOOR);
+            entries.accept(SHORT_RED_MUSHROOM_DOOR);
             entries.accept(TALL_RED_MUSHROOM_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("ad_astra")) {
+            entries.accept(SHORT_AERONOS_DOOR);
             entries.accept(TALL_AERONOS_DOOR);
+            entries.accept(SHORT_GLACIAN_DOOR);
             entries.accept(TALL_GLACIAN_DOOR);
+            entries.accept(SHORT_STROPHAR_DOOR);
             entries.accept(TALL_STROPHAR_DOOR);
+            entries.accept(SHORT_STEEL_DOOR);
             entries.accept(TALL_STEEL_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("aether")) {
+            entries.accept(SHORT_AETHER_SKYROOT_DOOR);
             entries.accept(TALL_AETHER_SKYROOT_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("architects_palette")) {
+            entries.accept(SHORT_TWISTED_DOOR);
             entries.accept(TALL_TWISTED_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("bambooeverything")) {
+            entries.accept(SHORT_BE_BAMBOO_DOOR);
             entries.accept(TALL_BE_BAMBOO_DOOR);
+            entries.accept(SHORT_BE_DRY_BAMBOO_DOOR);
             entries.accept(TALL_BE_DRY_BAMBOO_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("betterend")) {
+            entries.accept(SHORT_TERMINITE_DOOR);
             entries.accept(TALL_TERMINITE_DOOR);
+            entries.accept(SHORT_THALLASIUM_DOOR);
             entries.accept(TALL_THALLASIUM_DOOR);
+            entries.accept(SHORT_DRAGON_TREE_DOOR);
             entries.accept(TALL_DRAGON_TREE_DOOR);
+            entries.accept(SHORT_END_LOTUS_DOOR);
             entries.accept(TALL_END_LOTUS_DOOR);
+            entries.accept(SHORT_HELIX_TREE_DOOR);
             entries.accept(TALL_HELIX_TREE_DOOR);
+            entries.accept(SHORT_JELLYSHROOM_DOOR);
             entries.accept(TALL_JELLYSHROOM_DOOR);
+            entries.accept(SHORT_LACUGROVE_DOOR);
             entries.accept(TALL_LACUGROVE_DOOR);
+            entries.accept(SHORT_LUCERNIA_DOOR);
             entries.accept(TALL_LUCERNIA_DOOR);
+            entries.accept(SHORT_MOSSY_GLOWSHROOM_DOOR);
             entries.accept(TALL_MOSSY_GLOWSHROOM_DOOR);
+            entries.accept(SHORT_PYTHADENDRON_DOOR);
             entries.accept(TALL_PYTHADENDRON_DOOR);
+            entries.accept(SHORT_TENANEA_DOOR);
             entries.accept(TALL_TENANEA_DOOR);
+            entries.accept(SHORT_UMBRELLA_TREE_DOOR);
             entries.accept(TALL_UMBRELLA_TREE_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("betternether")) {
+            entries.accept(SHORT_ANCHOR_TREE_DOOR);
             entries.accept(TALL_ANCHOR_TREE_DOOR);
+            entries.accept(SHORT_BONE_CIN_DOOR);
             entries.accept(TALL_BONE_CIN_DOOR);
+            entries.accept(SHORT_BONE_REED_DOOR);
             entries.accept(TALL_BONE_REED_DOOR);
+            entries.accept(SHORT_MUSHROOM_FIR_DOOR);
             entries.accept(TALL_MUSHROOM_FIR_DOOR);
+            entries.accept(SHORT_NETHER_MUSHROOM_DOOR);
             entries.accept(TALL_NETHER_MUSHROOM_DOOR);
+            entries.accept(SHORT_NETHER_REED_DOOR);
             entries.accept(TALL_NETHER_REED_DOOR);
+            entries.accept(SHORT_NETHER_SAKURA_DOOR);
             entries.accept(TALL_NETHER_SAKURA_DOOR);
+            entries.accept(SHORT_RUBEUS_DOOR);
             entries.accept(TALL_RUBEUS_DOOR);
+            entries.accept(SHORT_STALAGNATE_DOOR);
             entries.accept(TALL_STALAGNATE_DOOR);
+            entries.accept(SHORT_WART_DOOR);
             entries.accept(TALL_WART_DOOR);
+            entries.accept(SHORT_BN_WILLOW_DOOR);
             entries.accept(TALL_BN_WILLOW_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
+            entries.accept(SHORT_BW_CYPRESS_DOOR);
             entries.accept(TALL_BW_CYPRESS_DOOR);
+            entries.accept(SHORT_DRAGONS_BLOOD_DOOR);
             entries.accept(TALL_DRAGONS_BLOOD_DOOR);
+            entries.accept(SHORT_ELDER_DOOR);
             entries.accept(TALL_ELDER_DOOR);
+            entries.accept(SHORT_JUNIPER_DOOR);
             entries.accept(TALL_JUNIPER_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("bwplus")) {
+            entries.accept(SHORT_YEW_DOOR);
             entries.accept(TALL_YEW_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("biomancy")) {
+            entries.accept(SHORT_FLESH_DOOR);
             entries.accept(TALL_FLESH_DOOR);
+            entries.accept(SHORT_FULL_FLESH_DOOR);
             entries.accept(TALL_FULL_FLESH_DOOR);
+            entries.accept(SHORT_FLESHKIN_DOOR);
             entries.accept(TALL_FLESHKIN_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("biomemakeover")) {
-            entries.accept(TALL_ANCIENT_OAK_DOOR);
-            entries.accept(TALL_BLIGHTED_BALSA_DOOR);
-            entries.accept(TALL_SWAMP_CYPRESS_DOOR);
-            entries.accept(TALL_WILLOW_DOOR);
+            entries.accept(SHORT_BM_ANCIENT_OAK_DOOR);
+            entries.accept(TALL_BM_ANCIENT_OAK_DOOR);
+            entries.accept(SHORT_BM_BLIGHTED_BALSA_DOOR);
+            entries.accept(TALL_BM_BLIGHTED_BALSA_DOOR);
+            entries.accept(SHORT_BM_SWAMP_CYPRESS_DOOR);
+            entries.accept(TALL_BM_SWAMP_CYPRESS_DOOR);
+            entries.accept(SHORT_BM_WILLOW_DOOR);
+            entries.accept(TALL_BM_WILLOW_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("blockus")) {
+            entries.accept(SHORT_BLOCKUS_BAMBOO_DOOR);
             entries.accept(TALL_BLOCKUS_BAMBOO_DOOR);
+            entries.accept(SHORT_BLOCKUS_CHARRED_DOOR);
             entries.accept(TALL_BLOCKUS_CHARRED_DOOR);
+            entries.accept(SHORT_BLOCKUS_PAPER_DOOR);
             entries.accept(TALL_BLOCKUS_PAPER_DOOR);
+            entries.accept(SHORT_BLOCKUS_WHITE_OAK_DOOR);
             entries.accept(TALL_BLOCKUS_WHITE_OAK_DOOR);
+            entries.accept(SHORT_BLOCKUS_STONE_DOOR);
             entries.accept(TALL_BLOCKUS_STONE_DOOR);
+            entries.accept(SHORT_BLOCKUS_BLACKSTONE_DOOR);
             entries.accept(TALL_BLOCKUS_BLACKSTONE_DOOR);
+            entries.accept(SHORT_BLOCKUS_OBSIDIAN_REINFORCED_DOOR);
             entries.accept(TALL_BLOCKUS_OBSIDIAN_REINFORCED_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("ceilands")) {
+            entries.accept(SHORT_CEILTRUNK_DOOR);
             entries.accept(TALL_CEILTRUNK_DOOR);
+            entries.accept(SHORT_LUZAWOOD_DOOR);
             entries.accept(TALL_LUZAWOOD_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("charm")) {
+            entries.accept(SHORT_CHARM_AZALEA_DOOR);
             entries.accept(TALL_CHARM_AZALEA_DOOR);
+            entries.accept(SHORT_CHARM_EBONY_DOOR);
             entries.accept(TALL_CHARM_EBONY_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("cinderscapes")) {
+            entries.accept(SHORT_SCORCHED_DOOR);
             entries.accept(TALL_SCORCHED_DOOR);
+            entries.accept(SHORT_UMBRAL_DOOR);
             entries.accept(TALL_UMBRAL_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("cobblemon")) {
+            entries.accept(SHORT_APRICORN_DOOR);
             entries.accept(TALL_APRICORN_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("colorfulazaleas")) {
+            entries.accept(SHORT_AZULE_AZALEA_DOOR);
             entries.accept(TALL_AZULE_AZALEA_DOOR);
+            entries.accept(SHORT_BRIGHT_AZALEA_DOOR);
             entries.accept(TALL_BRIGHT_AZALEA_DOOR);
+            entries.accept(SHORT_FISS_AZALEA_DOOR);
             entries.accept(TALL_FISS_AZALEA_DOOR);
+            entries.accept(SHORT_ROZE_AZALEA_DOOR);
             entries.accept(TALL_ROZE_AZALEA_DOOR);
+            entries.accept(SHORT_TECAL_AZALEA_DOOR);
             entries.accept(TALL_TECAL_AZALEA_DOOR);
+            entries.accept(SHORT_TITANIUM_AZALEA_DOOR);
             entries.accept(TALL_TITANIUM_AZALEA_DOOR);
+            entries.accept(SHORT_WALNUT_AZALEA_DOOR);
             entries.accept(TALL_WALNUT_AZALEA_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("createdeco")) {
-            entries.accept(TALL_ANDESITE_DOOR);
+            entries.accept(SHORT_ANDESITE_DOOR);
             entries.accept(TALL_BRASS_DOOR);
-            entries.accept(TALL_COPPER_DOOR);
+            entries.accept(SHORT_COPPER_DOOR);
             entries.accept(TALL_ZINC_DOOR);
-            entries.accept(TALL_LOCKED_ANDESITE_DOOR);
+            entries.accept(SHORT_LOCKED_ANDESITE_DOOR);
             entries.accept(TALL_LOCKED_BRASS_DOOR);
-            entries.accept(TALL_LOCKED_COPPER_DOOR);
+            entries.accept(SHORT_LOCKED_COPPER_DOOR);
             entries.accept(TALL_LOCKED_ZINC_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+            entries.accept(SHORT_ECHO_DOOR);
             entries.accept(TALL_ECHO_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("ecologics")) {
+            entries.accept(SHORT_ECO_AZALEA_DOOR);
             entries.accept(TALL_ECO_AZALEA_DOOR);
+            entries.accept(SHORT_ECO_FLOWERING_AZALEA_DOOR);
             entries.accept(TALL_ECO_FLOWERING_AZALEA_DOOR);
+            entries.accept(SHORT_ECO_COCONUT_DOOR);
             entries.accept(TALL_ECO_COCONUT_DOOR);
+            entries.accept(SHORT_ECO_WALNUT_DOOR);
             entries.accept(TALL_ECO_WALNUT_DOOR);
         }
-        if (FabricLoader.getInstance().isModLoaded("glassdoor")) {
+        if (FabricLoader.getInstance().isModLoaded("gardens_of_the_dead")) {
+            entries.accept(SHORT_SOULBLIGHT_DOOR);
+            entries.accept(TALL_SOULBLIGHT_DOOR);
+            entries.accept(SHORT_WHISTLECANE_DOOR);
+            entries.accept(TALL_WHISTLECANE_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("modern_glass_doors")) {
+            entries.accept(SHORT_IRON_GLASS_DOOR);
             entries.accept(TALL_IRON_GLASS_DOOR);
+            entries.accept(SHORT_OAK_GLASS_DOOR);
             entries.accept(TALL_OAK_GLASS_DOOR);
+            entries.accept(SHORT_SPRUCE_GLASS_DOOR);
             entries.accept(TALL_SPRUCE_GLASS_DOOR);
+            entries.accept(SHORT_BIRCH_GLASS_DOOR);
             entries.accept(TALL_BIRCH_GLASS_DOOR);
+            entries.accept(SHORT_JUNGLE_GLASS_DOOR);
             entries.accept(TALL_JUNGLE_GLASS_DOOR);
+            entries.accept(SHORT_ACACIA_GLASS_DOOR);
             entries.accept(TALL_ACACIA_GLASS_DOOR);
+            entries.accept(SHORT_DARK_OAK_GLASS_DOOR);
             entries.accept(TALL_DARK_OAK_GLASS_DOOR);
+            entries.accept(SHORT_MANGROVE_GLASS_DOOR);
             entries.accept(TALL_MANGROVE_GLASS_DOOR);
+            entries.accept(SHORT_BAMBOO_GLASS_DOOR);
             entries.accept(TALL_BAMBOO_GLASS_DOOR);
+            entries.accept(SHORT_CHERRY_GLASS_DOOR);
+            entries.accept(TALL_CHERRY_GLASS_DOOR);
+            entries.accept(SHORT_CRIMSON_GLASS_DOOR);
             entries.accept(TALL_CRIMSON_GLASS_DOOR);
+            entries.accept(SHORT_WARPED_GLASS_DOOR);
             entries.accept(TALL_WARPED_GLASS_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("goodending")) {
+            entries.accept(SHORT_GE_CYPRESS_DOOR);
             entries.accept(TALL_GE_CYPRESS_DOOR);
+            entries.accept(SHORT_GE_MUDDY_OAK_DOOR);
             entries.accept(TALL_GE_MUDDY_OAK_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("graveyard")) {
+            entries.accept(SHORT_DARK_IRON_DOOR);
             entries.accept(TALL_DARK_IRON_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("hexcasting")) {
-            entries.accept(TALL_AKASHIC_DOOR);
+            entries.accept(SHORT_EDIFIED_DOOR);
+            entries.accept(TALL_EDIFIED_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("tconstruct")) {
+            entries.accept(SHORT_BLOODSHROOM_DOOR);
             entries.accept(TALL_BLOODSHROOM_DOOR);
+            entries.accept(SHORT_GREENHEART_DOOR);
             entries.accept(TALL_GREENHEART_DOOR);
+            entries.accept(SHORT_SKYROOT_DOOR);
             entries.accept(TALL_SKYROOT_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("byg")) {
+            entries.accept(SHORT_BYG_ASPEN_DOOR);
             entries.accept(TALL_BYG_ASPEN_DOOR);
+            entries.accept(SHORT_BYG_BAOBAB_DOOR);
             entries.accept(TALL_BYG_BAOBAB_DOOR);
+            entries.accept(SHORT_BYG_BLUE_ENCHANTED_DOOR);
             entries.accept(TALL_BYG_BLUE_ENCHANTED_DOOR);
+            entries.accept(SHORT_BYG_BULBIS_DOOR);
             entries.accept(TALL_BYG_BULBIS_DOOR);
+            entries.accept(SHORT_BYG_CHERRY_DOOR);
             entries.accept(TALL_BYG_CHERRY_DOOR);
+            entries.accept(SHORT_BYG_CIKA_DOOR);
             entries.accept(TALL_BYG_CIKA_DOOR);
+            entries.accept(SHORT_BYG_CYPRESS_DOOR);
             entries.accept(TALL_BYG_CYPRESS_DOOR);
+            entries.accept(SHORT_BYG_EBONY_DOOR);
             entries.accept(TALL_BYG_EBONY_DOOR);
+            entries.accept(SHORT_BYG_EMBUR_DOOR);
             entries.accept(TALL_BYG_EMBUR_DOOR);
+            entries.accept(SHORT_BYG_ETHER_DOOR);
             entries.accept(TALL_BYG_ETHER_DOOR);
+            entries.accept(SHORT_BYG_FIR_DOOR);
             entries.accept(TALL_BYG_FIR_DOOR);
+            entries.accept(SHORT_BYG_FLORUS_DOOR);
             entries.accept(TALL_BYG_FLORUS_DOOR);
+            entries.accept(SHORT_BYG_GREEN_ENCHANTED_DOOR);
             entries.accept(TALL_BYG_GREEN_ENCHANTED_DOOR);
+            entries.accept(SHORT_BYG_HOLLY_DOOR);
             entries.accept(TALL_BYG_HOLLY_DOOR);
+            entries.accept(SHORT_BYG_IMPARIUS_DOOR);
             entries.accept(TALL_BYG_IMPARIUS_DOOR);
+            entries.accept(SHORT_BYG_IRONWOOD_DOOR);
             entries.accept(TALL_BYG_IRONWOOD_DOOR);
+            entries.accept(SHORT_BYG_JACARANDA_DOOR);
             entries.accept(TALL_BYG_JACARANDA_DOOR);
+            entries.accept(SHORT_BYG_LAMENT_DOOR);
             entries.accept(TALL_BYG_LAMENT_DOOR);
+            entries.accept(SHORT_BYG_MAHOGANY_DOOR);
             entries.accept(TALL_BYG_MAHOGANY_DOOR);
+            entries.accept(SHORT_BYG_MAPLE_DOOR);
             entries.accept(TALL_BYG_MAPLE_DOOR);
+            entries.accept(SHORT_BYG_NIGHTSHADE_DOOR);
             entries.accept(TALL_BYG_NIGHTSHADE_DOOR);
+            entries.accept(SHORT_BYG_PALM_DOOR);
             entries.accept(TALL_BYG_PALM_DOOR);
+            entries.accept(SHORT_BYG_PINE_DOOR);
             entries.accept(TALL_BYG_PINE_DOOR);
+            entries.accept(SHORT_BYG_RAINBOW_EUCALYPTUS_DOOR);
             entries.accept(TALL_BYG_RAINBOW_EUCALYPTUS_DOOR);
+            entries.accept(SHORT_BYG_REDWOOD_DOOR);
             entries.accept(TALL_BYG_REDWOOD_DOOR);
+            entries.accept(SHORT_BYG_SKYRIS_DOOR);
             entries.accept(TALL_BYG_SKYRIS_DOOR);
+            entries.accept(SHORT_BYG_SOUL_SHROOM_DOOR);
             entries.accept(TALL_BYG_SOUL_SHROOM_DOOR);
+            entries.accept(SHORT_BYG_SYTHIAN_DOOR);
             entries.accept(TALL_BYG_SYTHIAN_DOOR);
+            entries.accept(SHORT_BYG_WHITE_MANGROVE_DOOR);
             entries.accept(TALL_BYG_WHITE_MANGROVE_DOOR);
+            entries.accept(SHORT_BYG_WILLOW_DOOR);
             entries.accept(TALL_BYG_WILLOW_DOOR);
+            entries.accept(SHORT_BYG_WITCH_HAZEL_DOOR);
             entries.accept(TALL_BYG_WITCH_HAZEL_DOOR);
+            entries.accept(SHORT_BYG_ZELKOVA_DOOR);
             entries.accept(TALL_BYG_ZELKOVA_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("promenade")) {
+            entries.accept(SHORT_PROMENADE_CHERRY_OAK_DOOR);
             entries.accept(TALL_PROMENADE_CHERRY_OAK_DOOR);
+            entries.accept(SHORT_PROMENADE_DARK_AMARANTH_DOOR);
             entries.accept(TALL_PROMENADE_DARK_AMARANTH_DOOR);
+            entries.accept(SHORT_PROMENADE_PALM_DOOR);
             entries.accept(TALL_PROMENADE_PALM_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("regions_unexplored")) {
+            entries.accept(SHORT_RUE_BAOBAB_DOOR);
             entries.accept(TALL_RUE_BAOBAB_DOOR);
+            entries.accept(SHORT_RUE_BLACKWOOD_DOOR);
             entries.accept(TALL_RUE_BLACKWOOD_DOOR);
+            entries.accept(SHORT_RUE_BRIMWOOD_DOOR);
             entries.accept(TALL_RUE_BRIMWOOD_DOOR);
+            entries.accept(SHORT_RUE_CHERRY_DOOR);
             entries.accept(TALL_RUE_CHERRY_DOOR);
+            entries.accept(SHORT_RUE_CYPRESS_DOOR);
             entries.accept(TALL_RUE_CYPRESS_DOOR);
+            entries.accept(SHORT_RUE_DEAD_DOOR);
             entries.accept(TALL_RUE_DEAD_DOOR);
+            entries.accept(SHORT_RUE_EUCALYPTUS_DOOR);
             entries.accept(TALL_RUE_EUCALYPTUS_DOOR);
+            entries.accept(SHORT_RUE_JOSHUA_DOOR);
             entries.accept(TALL_RUE_JOSHUA_DOOR);
+            entries.accept(SHORT_RUE_LARCH_DOOR);
             entries.accept(TALL_RUE_LARCH_DOOR);
+            entries.accept(SHORT_RUE_MAPLE_DOOR);
             entries.accept(TALL_RUE_MAPLE_DOOR);
+            entries.accept(SHORT_RUE_MAUVE_DOOR);
             entries.accept(TALL_RUE_MAUVE_DOOR);
+            entries.accept(SHORT_RUE_PALM_DOOR);
             entries.accept(TALL_RUE_PALM_DOOR);
+            entries.accept(SHORT_RUE_PINE_DOOR);
             entries.accept(TALL_RUE_PINE_DOOR);
+            entries.accept(SHORT_RUE_REDWOOD_DOOR);
             entries.accept(TALL_RUE_REDWOOD_DOOR);
+            entries.accept(SHORT_RUE_WILLOW_DOOR);
             entries.accept(TALL_RUE_WILLOW_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("snowyspirit")) {
+            entries.accept(SHORT_GINGERBREAD_DOOR);
             entries.accept(TALL_GINGERBREAD_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("supplementaries")) {
+            entries.accept(SHORT_GOLD_DOOR);
             entries.accept(TALL_GOLD_DOOR);
+            entries.accept(SHORT_NETHERITE_DOOR);
             entries.accept(TALL_NETHERITE_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("techreborn")) {
+            entries.accept(SHORT_RUBBER_DOOR);
             entries.accept(TALL_RUBBER_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("terrestria")) {
+            entries.accept(SHORT_TERRESTRIA_CYPRESS_DOOR);
             entries.accept(TALL_TERRESTRIA_CYPRESS_DOOR);
+            entries.accept(SHORT_TERRESTRIA_HEMLOCK_DOOR);
             entries.accept(TALL_TERRESTRIA_HEMLOCK_DOOR);
+            entries.accept(SHORT_TERRESTRIA_JAPANESE_MAPLE_DOOR);
             entries.accept(TALL_TERRESTRIA_JAPANESE_MAPLE_DOOR);
+            entries.accept(SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS_DOOR);
             entries.accept(TALL_TERRESTRIA_RAINBOW_EUCALYPTUS_DOOR);
+            entries.accept(SHORT_TERRESTRIA_REDWOOD_DOOR);
             entries.accept(TALL_TERRESTRIA_REDWOOD_DOOR);
+            entries.accept(SHORT_TERRESTRIA_RUBBER_DOOR);
             entries.accept(TALL_TERRESTRIA_RUBBER_DOOR);
+            entries.accept(SHORT_TERRESTRIA_SAKURA_DOOR);
             entries.accept(TALL_TERRESTRIA_SAKURA_DOOR);
+            entries.accept(SHORT_TERRESTRIA_WILLOW_DOOR);
             entries.accept(TALL_TERRESTRIA_WILLOW_DOOR);
+            entries.accept(SHORT_TERRESTRIA_YUCCA_PALM_DOOR);
             entries.accept(TALL_TERRESTRIA_YUCCA_PALM_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("traverse")) {
+            entries.accept(SHORT_TRAVERSE_FIR_DOOR);
             entries.accept(TALL_TRAVERSE_FIR_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("twigs")) {
+            entries.accept(SHORT_STRIPPED_BAMBOO_DOOR);
             entries.accept(TALL_STRIPPED_BAMBOO_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("twilightforest")) {
+            entries.accept(SHORT_CANOPY_DOOR);
             entries.accept(TALL_CANOPY_DOOR);
+            entries.accept(SHORT_DARKWOOD_DOOR);
             entries.accept(TALL_DARKWOOD_DOOR);
+            entries.accept(SHORT_MINEWOOD_DOOR);
             entries.accept(TALL_MINEWOOD_DOOR);
+            entries.accept(SHORT_SORTINGWOOD_DOOR);
             entries.accept(TALL_SORTINGWOOD_DOOR);
+            entries.accept(SHORT_TIMEWOOD_DOOR);
             entries.accept(TALL_TIMEWOOD_DOOR);
+            entries.accept(SHORT_TRANSWOOD_DOOR);
             entries.accept(TALL_TRANSWOOD_DOOR);
+            entries.accept(SHORT_TWILIGHT_MANGROVE_DOOR);
             entries.accept(TALL_TWILIGHT_MANGROVE_DOOR);
+            entries.accept(SHORT_TWILIGHT_OAK_DOOR);
             entries.accept(TALL_TWILIGHT_OAK_DOOR);
         }
-        if (FabricLoader.getInstance().isModLoaded("twilightforest")) {
+        if (FabricLoader.getInstance().isModLoaded("tflostblocks")) {
+            entries.accept(SHORT_TOWERWOOD_DOOR);
             entries.accept(TALL_TOWERWOOD_DOOR);
         }
         if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
+            entries.accept(SHORT_SOUL_COPPER_DOOR);
             entries.accept(TALL_SOUL_COPPER_DOOR);
+        }
+        if (FabricLoader.getInstance().isModLoaded("yippee")) {
+            entries.accept(SHORT_MYSTICAL_OAK_DOOR);
+            entries.accept(TALL_MYSTICAL_OAK_DOOR);
         }
     }
 
@@ -2000,6 +2608,18 @@ public class DDItems {
     }
     
     private static void addBuildingBlocks(FabricItemGroupEntries entries) {
+        entries.addBefore(Items.IRON_DOOR, SHORT_IRON_DOOR);
+        entries.addBefore(Items.OAK_DOOR, SHORT_OAK_DOOR);
+        entries.addBefore(Items.SPRUCE_DOOR, SHORT_SPRUCE_DOOR);
+        entries.addBefore(Items.BIRCH_DOOR, SHORT_BIRCH_DOOR);
+        entries.addBefore(Items.JUNGLE_DOOR, SHORT_JUNGLE_DOOR);
+        entries.addBefore(Items.ACACIA_DOOR, SHORT_ACACIA_DOOR);
+        entries.addBefore(Items.DARK_OAK_DOOR, SHORT_DARK_OAK_DOOR);
+        entries.addBefore(Items.MANGROVE_DOOR, SHORT_MANGROVE_DOOR);
+        entries.addBefore(Items.BAMBOO_DOOR, SHORT_BAMBOO_DOOR);
+        entries.addBefore(Items.CHERRY_DOOR, SHORT_CHERRY_DOOR);
+        entries.addBefore(Items.CRIMSON_DOOR, SHORT_CRIMSON_DOOR);
+        entries.addBefore(Items.WARPED_DOOR, SHORT_WARPED_DOOR);
         entries.addAfter(Items.IRON_DOOR, TALL_IRON_DOOR);
         entries.addAfter(Items.OAK_DOOR, TALL_OAK_DOOR);
         entries.addAfter(Items.SPRUCE_DOOR, TALL_SPRUCE_DOOR);
@@ -2015,6 +2635,8 @@ public class DDItems {
     }
     
     private static void addRedstoneBlocks(FabricItemGroupEntries entries) {
+        entries.addBefore(Items.IRON_DOOR, SHORT_IRON_DOOR);
+        entries.addBefore(Items.OAK_DOOR, SHORT_OAK_DOOR);
         entries.addAfter(Items.IRON_DOOR, TALL_IRON_DOOR);
         entries.addAfter(Items.OAK_DOOR, TALL_OAK_DOOR);
     }

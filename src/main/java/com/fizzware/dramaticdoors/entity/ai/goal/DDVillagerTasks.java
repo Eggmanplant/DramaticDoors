@@ -12,4 +12,8 @@ public class DDVillagerTasks
     public static ImmutableList<Pair<Integer, ? extends BehaviorControl<? super Villager>>> createTallDoorTasks(VillagerProfession profession, float speed) {
         return ImmutableList.of(Pair.of(0, OpenTallDoorsTask.create()));
     }
+    
+    public static ImmutableList<Pair<Integer, ? extends BehaviorControl<? super Villager>>> createShortDoorTasks(VillagerProfession profession, float speed) {
+        return ImmutableList.of(Pair.of(0, OpenShortDoorsTask.create()));
+    }
 }

@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 
 import net.minecraft.core.BlockPos;
@@ -70,6 +71,10 @@ public class OpenDoorsTaskMixin
         if (blockStateDD.is(DDTags.TALL_WOODEN_DOORS, state -> state.getBlock() instanceof TallDoorBlock)) {
         	TallDoorBlock tallDoorBlock = (TallDoorBlock)blockStateDD.getBlock();
         	tallDoorBlock.setOpen(entity, world, blockStateDD, blockPos, false);
+        }
+        if (blockStateDD.is(DDTags.SHORT_WOODEN_DOORS, state -> state.getBlock() instanceof ShortDoorBlock)) {
+        	ShortDoorBlock shortDoorBlock = (ShortDoorBlock)blockStateDD.getBlock();
+        	shortDoorBlock.setOpen(entity, world, blockStateDD, blockPos, false);
         }
 	}
 }

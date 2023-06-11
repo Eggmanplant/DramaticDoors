@@ -8,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
@@ -149,16 +150,13 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
             return InteractionResult.PASS;
         } 
     	else {
-        	/*if (this == DDBlocks.SHORT_GOLD_DOOR && state.getValue(POWERED)) {
+        	if (this == DDBlocks.SHORT_GOLD_DOOR && state.getValue(POWERED)) {
         		return InteractionResult.PASS;
         	}
-        	if (this == DDBlocks.SHORT_SILVER_DOOR && !state.getValue(POWERED)) {
-        		return InteractionResult.PASS;
-        	}*/
         	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
             level.setBlock(pos, state, 10);
-            level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+            this.playSound(player, level, pos, state.getValue(OPEN));
             level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 			if (state.getValue(WATERLOGGED)) {
 				level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
@@ -180,7 +178,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
         BlockState blockstate = level.getBlockState(pos);
         if (blockstate.getBlock() == this && blockstate.getValue(OPEN) != open) {
             level.setBlock(pos, blockstate.setValue(OPEN, open), 10);
-            this.playSound(level, pos, open);
+            this.playSound(null, level, pos, open);
         }
     }
 
@@ -191,7 +189,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 	public void setOpen(@Nullable Entity entity, Level level, BlockState state, BlockPos pos, boolean open) {
 		if (state.is(this) && state.getValue(OPEN) != open) {
 			level.setBlock(pos, state.setValue(OPEN, Boolean.valueOf(open)), 10);
-			this.playSound(level, pos, open);
+			this.playSound(entity, level, pos, open);
 			level.gameEvent(entity, open ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 			tryOpenDoubleDoor(level, state, pos);
 			// If there is a short door above, also try to open that half.
@@ -208,19 +206,19 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
         boolean flag = level.hasNeighborSignal(pos);
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	/*if (this == DDBlocks.SHORT_GOLD_DOOR || this == DDBlocks.SHORT_SILVER_DOOR || this == DDBlocks.SHORT_LEAD_DOOR) {
+        	if (this == DDBlocks.SHORT_GOLD_DOOR) {
         		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
-        	else {*/
+        	else {
 	            if (flag != state.getValue(OPEN)) {
-	                this.playSound(level, pos, flag);
+	            	this.playSound((Entity)null, level, pos, flag);
 	            }
 	            tryOpenDoubleDoor(level, state, pos);
 	            level.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), Block.UPDATE_CLIENTS);
 				if (state.getValue(WATERLOGGED)) {
 					level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
 				}
-        	//}
+        	}
         }
     }
 
@@ -236,8 +234,8 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
         return result;*/
     }
 
-    protected void playSound(Level level, BlockPos pos, boolean isOpen) {
-        level.levelEvent(null, isOpen ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+    protected void playSound(@Nullable Entity entity, Level level, BlockPos pos, boolean isOpen) {
+        level.playSound(entity, pos, isOpen ? this.openSound : this.closeSound, SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.1F + 0.9F);
     }
 
     @Override

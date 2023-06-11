@@ -17,34 +17,57 @@ public class DDAdvancementCompats
 	public static List<JsonObject> RECIPE_ADVANCEMENTS = new ArrayList<JsonObject>();
 
 	public static void initializeAdvancements() {
-		if (FabricLoader.getInstance().isModLoaded("abundance")) {
-			createRecipeAdvancementJson(DDNames.TALL_JACARANDA, new ResourceLocation("abundance", "jacaranda_door"));
-			createRecipeAdvancementJson(DDNames.TALL_REDBUD, new ResourceLocation("abundance", "redbud_door"));
-		}
-		if (FabricLoader.getInstance().isModLoaded("bayou_blues")) {
-			createRecipeAdvancementJson(DDNames.TALL_CYPRESS, new ResourceLocation("bayou_blues", "cypress_door"));
+		if (FabricLoader.getInstance().isModLoaded("horizons")) {
+			createRecipeAdvancementJson(DDNames.SHORT_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_REDBUD, new ResourceLocation("horizons", "redbud_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_CYPRESS, new ResourceLocation("horizons", "cypress_door"));
+			createRecipeAdvancementJson(DDNames.TALL_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"));
+			createRecipeAdvancementJson(DDNames.TALL_REDBUD, new ResourceLocation("horizons", "redbud_door"));
+			createRecipeAdvancementJson(DDNames.TALL_CYPRESS, new ResourceLocation("horizons", "cypress_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("enhanced_mushrooms")) {
+			createRecipeAdvancementJson(DDNames.SHORT_BROWN_MUSHROOM, new ResourceLocation("enhanced_mushrooms", "brown_mushroom_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RED_MUSHROOM, new ResourceLocation("enhanced_mushrooms", "red_mushroom_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BROWN_MUSHROOM, new ResourceLocation("enhanced_mushrooms", "brown_mushroom_door"));
 			createRecipeAdvancementJson(DDNames.TALL_RED_MUSHROOM, new ResourceLocation("enhanced_mushrooms", "red_mushroom_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("ad_astra")) {
+			createRecipeAdvancementJson(DDNames.SHORT_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_STEEL, new ResourceLocation("ad_astra", "steel_door"));
 			createRecipeAdvancementJson(DDNames.TALL_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"));
 			createRecipeAdvancementJson(DDNames.TALL_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"));
 			createRecipeAdvancementJson(DDNames.TALL_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"));
 			createRecipeAdvancementJson(DDNames.TALL_STEEL, new ResourceLocation("ad_astra", "steel_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("aether")) {
+			createRecipeAdvancementJson(DDNames.SHORT_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"));
 			createRecipeAdvancementJson(DDNames.TALL_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("architects_palette")) {
+			createRecipeAdvancementJson(DDNames.SHORT_TWISTED, new ResourceLocation("architects_palette", "twisted_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TWISTED, new ResourceLocation("architects_palette", "twisted_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("bambooeverything")) {
+			createRecipeAdvancementJson(DDNames.SHORT_BE_BAMBOO, new ResourceLocation("bambooeverything", "bamboo_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BE_DRY_BAMBOO, new ResourceLocation("bambooeverything", "dry_bamboo_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BE_BAMBOO, new ResourceLocation("bambooeverything", "bamboo_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BE_DRY_BAMBOO, new ResourceLocation("bambooeverything", "dry_bamboo_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("betterend")) {
+			createRecipeAdvancementJson(DDNames.SHORT_TERMINITE, new ResourceLocation("betterend", "terminite_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_THALLASIUM, new ResourceLocation("betterend", "thallasium_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_DRAGON_TREE, new ResourceLocation("betterend", "dragon_tree_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_END_LOTUS, new ResourceLocation("betterend", "end_lotus_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_HELIX_TREE, new ResourceLocation("betterend", "helix_tree_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_JELLYSHROOM, new ResourceLocation("betterend", "jellyshroom_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_LACUGROVE, new ResourceLocation("betterend", "lacugrove_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_LUCERNIA, new ResourceLocation("betterend", "lucernia_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_MOSSY_GLOWSHROOM, new ResourceLocation("betterend", "mossy_glowshroom_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_PYTHADENDRON, new ResourceLocation("betterend", "pythadendron_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TENANEA, new ResourceLocation("betterend", "tenanea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_UMBRELLA_TREE, new ResourceLocation("betterend", "umbrella_tree_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TERMINITE, new ResourceLocation("betterend", "terminite_door"));
 			createRecipeAdvancementJson(DDNames.TALL_THALLASIUM, new ResourceLocation("betterend", "thallasium_door"));
 			createRecipeAdvancementJson(DDNames.TALL_DRAGON_TREE, new ResourceLocation("betterend", "dragon_tree_door"));
@@ -59,6 +82,17 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_UMBRELLA_TREE, new ResourceLocation("betterend", "umbrella_tree_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("betternether")) {
+			createRecipeAdvancementJson(DDNames.SHORT_ANCHOR_TREE, new ResourceLocation("betternether", "anchor_tree_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BONE_CIN, new ResourceLocation("betternether", "bone_cincinnasite_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BONE_REED, new ResourceLocation("betternether", "bone_reed_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_MUSHROOM_FIR, new ResourceLocation("betternether", "mushroom_fir_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_NETHER_MUSHROOM, new ResourceLocation("betternether", "nether_mushroom_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_NETHER_REED, new ResourceLocation("betternether", "nether_reed_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_NETHER_SAKURA, new ResourceLocation("betternether", "nether_sakura_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUBEUS, new ResourceLocation("betternether", "rubeus_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_STALAGNATE, new ResourceLocation("betternether", "stalagnate_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_WART, new ResourceLocation("betternether", "wart_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BN_WILLOW, new ResourceLocation("betternether", "willow_door"));
 			createRecipeAdvancementJson(DDNames.TALL_ANCHOR_TREE, new ResourceLocation("betternether", "anchor_tree_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BONE_CIN, new ResourceLocation("betternether", "bone_cincinnasite_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BONE_REED, new ResourceLocation("betternether", "bone_reed_door"));
@@ -72,26 +106,70 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_BN_WILLOW, new ResourceLocation("betternether", "willow_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
+			createRecipeAdvancementJson(DDNames.SHORT_CYPRESS, new ResourceLocation("bewitchment", "cypress_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_DRAGONS_BLOOD, new ResourceLocation("bewitchment", "dragons_blood_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_ELDER, new ResourceLocation("bewitchment", "elder_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_JUNIPER, new ResourceLocation("bewitchment", "juniper_door"));
 			createRecipeAdvancementJson(DDNames.TALL_CYPRESS, new ResourceLocation("bewitchment", "cypress_door"));
 			createRecipeAdvancementJson(DDNames.TALL_DRAGONS_BLOOD, new ResourceLocation("bewitchment", "dragons_blood_door"));
 			createRecipeAdvancementJson(DDNames.TALL_ELDER, new ResourceLocation("bewitchment", "elder_door"));
 			createRecipeAdvancementJson(DDNames.TALL_JUNIPER, new ResourceLocation("bewitchment", "juniper_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("bwplus")) {
+			createRecipeAdvancementJson(DDNames.SHORT_YEW, new ResourceLocation("bwplus", "yew_door"));
 			createRecipeAdvancementJson(DDNames.TALL_YEW, new ResourceLocation("bwplus", "yew_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("biomancy")) {
+			createRecipeAdvancementJson(DDNames.SHORT_FLESH, new ResourceLocation("biomancy", "flesh_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"));
 			createRecipeAdvancementJson(DDNames.TALL_FLESH, new ResourceLocation("biomancy", "flesh_door"));
 			createRecipeAdvancementJson(DDNames.TALL_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));
 			createRecipeAdvancementJson(DDNames.TALL_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("biomemakeover")) {
-			createRecipeAdvancementJson(DDNames.TALL_ANCIENT_OAK, new ResourceLocation("biomemakeover", "ancient_oak_door"));
-			createRecipeAdvancementJson(DDNames.TALL_BLIGHTED_BALSA, new ResourceLocation("biomemakeover", "blighted_balsa_door"));
-			createRecipeAdvancementJson(DDNames.TALL_SWAMP_CYPRESS, new ResourceLocation("biomemakeover", "swamp_cypress_door"));
-			createRecipeAdvancementJson(DDNames.TALL_WILLOW, new ResourceLocation("biomemakeover", "willow_door"));			
+			createRecipeAdvancementJson(DDNames.SHORT_BM_ANCIENT_OAK, new ResourceLocation("biomemakeover", "ancient_oak_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BM_BLIGHTED_BALSA, new ResourceLocation("biomemakeover", "blighted_balsa_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BM_SWAMP_CYPRESS, new ResourceLocation("biomemakeover", "swamp_cypress_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BM_WILLOW, new ResourceLocation("biomemakeover", "willow_door"));
+			createRecipeAdvancementJson(DDNames.TALL_BM_ANCIENT_OAK, new ResourceLocation("biomemakeover", "ancient_oak_door"));
+			createRecipeAdvancementJson(DDNames.TALL_BM_BLIGHTED_BALSA, new ResourceLocation("biomemakeover", "blighted_balsa_door"));
+			createRecipeAdvancementJson(DDNames.TALL_BM_SWAMP_CYPRESS, new ResourceLocation("biomemakeover", "swamp_cypress_door"));
+			createRecipeAdvancementJson(DDNames.TALL_BM_WILLOW, new ResourceLocation("biomemakeover", "willow_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("byg")) {
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_ASPEN, new ResourceLocation("byg", "aspen_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_BAOBAB, new ResourceLocation("byg", "baobab_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_BLUE_ENCHANTED, new ResourceLocation("byg", "blue_enchanted_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_BULBIS, new ResourceLocation("byg", "bulbis_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_CHERRY, new ResourceLocation("byg", "cherry_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_CIKA, new ResourceLocation("byg", "cika_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_CYPRESS, new ResourceLocation("byg", "cypress_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_EBONY, new ResourceLocation("byg", "ebony_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_EMBUR, new ResourceLocation("byg", "embur_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_ETHER, new ResourceLocation("byg", "ether_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_FIR, new ResourceLocation("byg", "fir_door"));
+			//createRecipeAdvancementJson(DDNames.SHORT_BYG_FLORUS, new ResourceLocation("byg", "florus_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_GREEN_ENCHANTED, new ResourceLocation("byg", "green_enchanted_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_HOLLY, new ResourceLocation("byg", "holly_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_IMPARIUS, new ResourceLocation("byg", "imparius_door"));
+			//createRecipeAdvancementJson(DDNames.SHORT_BYG_IRONWOOD, new ResourceLocation("byg", "ironwood_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_JACARANDA, new ResourceLocation("byg", "jacaranda_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_LAMENT, new ResourceLocation("byg", "lament_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_MAHOGANY, new ResourceLocation("byg", "mahogany_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_MAPLE, new ResourceLocation("byg", "maple_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_NIGHTSHADE, new ResourceLocation("byg", "nightshade_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_PALM, new ResourceLocation("byg", "palm_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_PINE, new ResourceLocation("byg", "pine_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_RAINBOW_EUCALYPTUS, new ResourceLocation("byg", "rainbow_eucalyptus_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_REDWOOD, new ResourceLocation("byg", "redwood_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_SKYRIS, new ResourceLocation("byg", "skyris_door"));
+			//createRecipeAdvancementJson(DDNames.SHORT_BYG_SOUL_SHROOM, new ResourceLocation("byg", "soul_shroom_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_SYTHIAN, new ResourceLocation("byg", "sythian_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_WHITE_MANGROVE, new ResourceLocation("byg", "white_mangrove_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_WILLOW, new ResourceLocation("byg", "willow_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_WITCH_HAZEL, new ResourceLocation("byg", "witch_hazel_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BYG_ZELKOVA, new ResourceLocation("byg", "zelkova_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BYG_ASPEN, new ResourceLocation("byg", "aspen_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BYG_BAOBAB, new ResourceLocation("byg", "baobab_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BYG_BLUE_ENCHANTED, new ResourceLocation("byg", "blue_enchanted_door"));
@@ -126,6 +204,13 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_BYG_ZELKOVA, new ResourceLocation("byg", "zelkova_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("blockus")) {
+			createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_BAMBOO, new ResourceLocation("blockus", "bamboo_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_BAMBOO, new ResourceLocation("blockus", "bamboo_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"));
@@ -135,21 +220,35 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("ceilands")) {
+			createRecipeAdvancementJson(DDNames.SHORT_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"));
 			createRecipeAdvancementJson(DDNames.TALL_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"));
 			createRecipeAdvancementJson(DDNames.TALL_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("charm")) {
+			createRecipeAdvancementJson(DDNames.SHORT_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"));
 			createRecipeAdvancementJson(DDNames.TALL_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"));
 			createRecipeAdvancementJson(DDNames.TALL_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("cinderscapes")) {
+			createRecipeAdvancementJson(DDNames.SHORT_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"));
 			createRecipeAdvancementJson(DDNames.TALL_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"));
-			createRecipeAdvancementJson(DDNames.TALL_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"));			
+			createRecipeAdvancementJson(DDNames.TALL_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("cobblemon")) {
+			createRecipeAdvancementJson(DDNames.SHORT_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"));
 			createRecipeAdvancementJson(DDNames.TALL_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("colorfulazaleas")) {
+			createRecipeAdvancementJson(DDNames.SHORT_AZULE_AZALEA, new ResourceLocation("colorfulazaleas", "azule_azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BRIGHT_AZALEA, new ResourceLocation("colorfulazaleas", "bright_azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_FISS_AZALEA, new ResourceLocation("colorfulazaleas", "fiss_azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_ROZE_AZALEA, new ResourceLocation("colorfulazaleas", "roze_azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TECAL_AZALEA, new ResourceLocation("colorfulazaleas", "tecal_azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TITANIUM_AZALEA, new ResourceLocation("colorfulazaleas", "titanium_azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_WALNUT_AZALEA, new ResourceLocation("colorfulazaleas", "walnut_azalea_door"));
 			createRecipeAdvancementJson(DDNames.TALL_AZULE_AZALEA, new ResourceLocation("colorfulazaleas", "azule_azalea_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BRIGHT_AZALEA, new ResourceLocation("colorfulazaleas", "bright_azalea_door"));
 			createRecipeAdvancementJson(DDNames.TALL_FISS_AZALEA, new ResourceLocation("colorfulazaleas", "fiss_azalea_door"));
@@ -159,6 +258,14 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_WALNUT_AZALEA, new ResourceLocation("colorfulazaleas", "walnut_azalea_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("createdeco")) {
+			createRecipeAdvancementJson(DDNames.SHORT_ANDESITE, new ResourceLocation("createdeco", "andesite_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BRASS, new ResourceLocation("createdeco", "brass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_COPPER, new ResourceLocation("createdeco", "copper_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_ZINC, new ResourceLocation("createdeco", "zinc_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"));
 			createRecipeAdvancementJson(DDNames.TALL_ANDESITE, new ResourceLocation("createdeco", "andesite_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BRASS, new ResourceLocation("createdeco", "brass_door"));
 			createRecipeAdvancementJson(DDNames.TALL_COPPER, new ResourceLocation("createdeco", "copper_door"));
@@ -169,43 +276,89 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+			createRecipeAdvancementJson(DDNames.SHORT_ECHO, new ResourceLocation("deeperdarker", "echo_door"));
 			createRecipeAdvancementJson(DDNames.TALL_ECHO, new ResourceLocation("deeperdarker", "echo_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("ecologics")) {
+			createRecipeAdvancementJson(DDNames.SHORT_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"));
 			createRecipeAdvancementJson(DDNames.TALL_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"));
 			createRecipeAdvancementJson(DDNames.TALL_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"));
 			createRecipeAdvancementJson(DDNames.TALL_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"));
 			createRecipeAdvancementJson(DDNames.TALL_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"));
 		}
-		if (FabricLoader.getInstance().isModLoaded("glassdoor")) {
-			createRecipeAdvancementJson(DDNames.TALL_IRON_GLASS, new ResourceLocation("glassdoor", "iron_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_OAK_GLASS, new ResourceLocation("glassdoor", "oak_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_SPRUCE_GLASS, new ResourceLocation("glassdoor", "spruce_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_BIRCH_GLASS, new ResourceLocation("glassdoor", "birch_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_JUNGLE_GLASS, new ResourceLocation("glassdoor", "jungle_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_ACACIA_GLASS, new ResourceLocation("glassdoor", "acacia_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_DARK_OAK_GLASS, new ResourceLocation("glassdoor", "dark_oak_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_MANGROVE_GLASS, new ResourceLocation("glassdoor", "mangrove_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_BAMBOO_GLASS, new ResourceLocation("glassdoor", "bamboo_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_CRIMSON_GLASS, new ResourceLocation("glassdoor", "crimson_glassdoor"));
-			createRecipeAdvancementJson(DDNames.TALL_WARPED_GLASS, new ResourceLocation("glassdoor", "warped_glassdoor"));
+		if (FabricLoader.getInstance().isModLoaded("gardens_of_the_dead")) {
+			createRecipeAdvancementJson(DDNames.SHORT_SOULBLIGHT, new ResourceLocation("gardens_of_the_dead", "soulblight_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_WHISTLECANE, new ResourceLocation("gardens_of_the_dead", "whistlecane_door"));
+			createRecipeAdvancementJson(DDNames.TALL_SOULBLIGHT, new ResourceLocation("gardens_of_the_dead", "soulblight_door"));
+			createRecipeAdvancementJson(DDNames.TALL_WHISTLECANE, new ResourceLocation("gardens_of_the_dead", "whistlecane_door"));
+		}
+		if (FabricLoader.getInstance().isModLoaded("modern_glass_doors")) {
+			createRecipeAdvancementJson(DDNames.SHORT_IRON_GLASS, new ResourceLocation("modern_glass_doors", "iron_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_OAK_GLASS, new ResourceLocation("modern_glass_doors", "oak_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_SPRUCE_GLASS, new ResourceLocation("modern_glass_doors", "spruce_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BIRCH_GLASS, new ResourceLocation("modern_glass_doors", "birch_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_JUNGLE_GLASS, new ResourceLocation("modern_glass_doors", "jungle_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_ACACIA_GLASS, new ResourceLocation("modern_glass_doors", "acacia_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_DARK_OAK_GLASS, new ResourceLocation("modern_glass_doors", "dark_oak_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_MANGROVE_GLASS, new ResourceLocation("modern_glass_doors", "mangrove_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_BAMBOO_GLASS, new ResourceLocation("modern_glass_doors", "bamboo_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_CHERRY_GLASS, new ResourceLocation("modern_glass_doors", "cherry_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_CRIMSON_GLASS, new ResourceLocation("modern_glass_doors", "crimson_glass_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_WARPED_GLASS, new ResourceLocation("modern_glass_doors", "warped_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_IRON_GLASS, new ResourceLocation("modern_glass_doors", "iron_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_OAK_GLASS, new ResourceLocation("modern_glass_doors", "oak_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_SPRUCE_GLASS, new ResourceLocation("modern_glass_doors", "spruce_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_BIRCH_GLASS, new ResourceLocation("modern_glass_doors", "birch_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_JUNGLE_GLASS, new ResourceLocation("modern_glass_doors", "jungle_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_ACACIA_GLASS, new ResourceLocation("modern_glass_doors", "acacia_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_DARK_OAK_GLASS, new ResourceLocation("modern_glass_doors", "dark_oak_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MANGROVE_GLASS, new ResourceLocation("modern_glass_doors", "mangrove_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_BAMBOO_GLASS, new ResourceLocation("modern_glass_doors", "bamboo_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_CHERRY_GLASS, new ResourceLocation("modern_glass_doors", "cherry_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_CRIMSON_GLASS, new ResourceLocation("modern_glass_doors", "crimson_glass_door"));
+			createRecipeAdvancementJson(DDNames.TALL_WARPED_GLASS, new ResourceLocation("modern_glass_doors", "warped_glass_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("goodending")) {
+			createRecipeAdvancementJson(DDNames.SHORT_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"));
 			createRecipeAdvancementJson(DDNames.TALL_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"));
 			createRecipeAdvancementJson(DDNames.TALL_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("graveyard")) {
+			createRecipeAdvancementJson(DDNames.SHORT_DARK_IRON, new ResourceLocation("graveyard", "dark_iron_door"));
 			createRecipeAdvancementJson(DDNames.TALL_DARK_IRON, new ResourceLocation("graveyard", "dark_iron_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("hexcasting")) {
-			createRecipeAdvancementJson(DDNames.TALL_AKASHIC, new ResourceLocation("hexcasting", "edified_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_EDIFIED, new ResourceLocation("hexcasting", "edified_door"));
+			createRecipeAdvancementJson(DDNames.TALL_EDIFIED, new ResourceLocation("hexcasting", "edified_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("promenade")) {
+			createRecipeAdvancementJson(DDNames.SHORT_PROMENADE_CHERRY_OAK, new ResourceLocation("promenade", "cherry_oak_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_PROMENADE_DARK_AMARANTH, new ResourceLocation("promenade", "dark_amaranth_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_PROMENADE_PALM, new ResourceLocation("promenade", "palm_door"));
 			createRecipeAdvancementJson(DDNames.TALL_PROMENADE_CHERRY_OAK, new ResourceLocation("promenade", "cherry_oak_door"));
 			createRecipeAdvancementJson(DDNames.TALL_PROMENADE_DARK_AMARANTH, new ResourceLocation("promenade", "dark_amaranth_door"));
 			createRecipeAdvancementJson(DDNames.TALL_PROMENADE_PALM, new ResourceLocation("promenade", "palm_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("regions_unexplored")) {
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_BAOBAB, new ResourceLocation("regions_unexplored", "baobab_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_BLACKWOOD, new ResourceLocation("regions_unexplored", "blackwood_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_BRIMWOOD, new ResourceLocation("regions_unexplored", "brimwood_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_CHERRY, new ResourceLocation("regions_unexplored", "cherry_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_CYPRESS, new ResourceLocation("regions_unexplored", "cypress_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_DEAD, new ResourceLocation("regions_unexplored", "dead_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_EUCALYPTUS, new ResourceLocation("regions_unexplored", "eucalyptus_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_JOSHUA, new ResourceLocation("regions_unexplored", "joshua_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_LARCH, new ResourceLocation("regions_unexplored", "larch_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_MAPLE, new ResourceLocation("regions_unexplored", "maple_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_MAUVE, new ResourceLocation("regions_unexplored", "mauve_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_PALM, new ResourceLocation("regions_unexplored", "palm_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_PINE, new ResourceLocation("regions_unexplored", "pine_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_REDWOOD, new ResourceLocation("regions_unexplored", "redwood_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_RUE_WILLOW, new ResourceLocation("regions_unexplored", "willow_door"));
 			createRecipeAdvancementJson(DDNames.TALL_RUE_BAOBAB, new ResourceLocation("regions_unexplored", "baobab_door"));
 			createRecipeAdvancementJson(DDNames.TALL_RUE_BLACKWOOD, new ResourceLocation("regions_unexplored", "blackwood_door"));
 			createRecipeAdvancementJson(DDNames.TALL_RUE_BRIMWOOD, new ResourceLocation("regions_unexplored", "brimwood_door"));
@@ -223,21 +376,37 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_RUE_WILLOW, new ResourceLocation("regions_unexplored", "willow_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("snowyspirit")) {
-			createRecipeAdvancementJson(DDNames.TALL_GINGERBREAD, new ResourceLocation("snowyspirit", "gingerbread_door"));	
+			createRecipeAdvancementJson(DDNames.SHORT_GINGERBREAD, new ResourceLocation("snowyspirit", "gingerbread_door"));
+			createRecipeAdvancementJson(DDNames.TALL_GINGERBREAD, new ResourceLocation("snowyspirit", "gingerbread_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("supplementaries")) {
+			createRecipeAdvancementJson(DDNames.SHORT_GOLD, new ResourceLocation("supplementaries", "gold_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));
 			createRecipeAdvancementJson(DDNames.TALL_GOLD, new ResourceLocation("supplementaries", "gold_door"));
-			createRecipeAdvancementJson(DDNames.TALL_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));			
+			createRecipeAdvancementJson(DDNames.TALL_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("tconstruct")) {
+			createRecipeAdvancementJson(DDNames.SHORT_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"));
 			createRecipeAdvancementJson(DDNames.TALL_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"));
 			createRecipeAdvancementJson(DDNames.TALL_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"));
 			createRecipeAdvancementJson(DDNames.TALL_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("techreborn")) {
-			createRecipeAdvancementJson(DDNames.TALL_RUBBER, new ResourceLocation("techreborn", "rubber_door"));			
+			createRecipeAdvancementJson(DDNames.SHORT_RUBBER, new ResourceLocation("techreborn", "rubber_door"));
+			createRecipeAdvancementJson(DDNames.TALL_RUBBER, new ResourceLocation("techreborn", "rubber_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("terrestria")) {
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"));
@@ -249,12 +418,22 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("traverse")) {
-			createRecipeAdvancementJson(DDNames.TALL_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));	
+			createRecipeAdvancementJson(DDNames.SHORT_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));
+			createRecipeAdvancementJson(DDNames.TALL_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("twigs")) {
-			createRecipeAdvancementJson(DDNames.TALL_GOLD, new ResourceLocation("twigs", "stripped_bamboo_door"));			
+			createRecipeAdvancementJson(DDNames.SHORT_STRIPPED_BAMBOO, new ResourceLocation("twigs", "stripped_bamboo_door"));
+			createRecipeAdvancementJson(DDNames.TALL_STRIPPED_BAMBOO, new ResourceLocation("twigs", "stripped_bamboo_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("twilightforest")) {
+			createRecipeAdvancementJson(DDNames.SHORT_CANOPY, new ResourceLocation("twilightforest", "canopy_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"));
 			createRecipeAdvancementJson(DDNames.TALL_CANOPY, new ResourceLocation("twilightforest", "canopy_door"));
 			createRecipeAdvancementJson(DDNames.TALL_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"));
@@ -262,13 +441,19 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.TALL_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"));
-			createRecipeAdvancementJson(DDNames.TALL_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"));			
+			createRecipeAdvancementJson(DDNames.TALL_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("tflostblocks")) {
-			createRecipeAdvancementJson(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));			
+			createRecipeAdvancementJson(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
+			createRecipeAdvancementJson(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
-			createRecipeAdvancementJson(DDNames.TALL_SOUL_COPPER, new ResourceLocation("xps_additions", "soul_copper_door"));			
+			createRecipeAdvancementJson(DDNames.SHORT_SOUL_COPPER, new ResourceLocation("xps_additions", "soul_copper_door"));
+			createRecipeAdvancementJson(DDNames.TALL_SOUL_COPPER, new ResourceLocation("xps_additions", "soul_copper_door"));
+		}
+		if (FabricLoader.getInstance().isModLoaded("yippee")) {
+			createRecipeAdvancementJson(DDNames.SHORT_MYSTICAL_OAK, new ResourceLocation("yippee", "mystical_oak_door"));
+			createRecipeAdvancementJson(DDNames.TALL_MYSTICAL_OAK, new ResourceLocation("yippee", "mystical_oak_door"));
 		}
 		if (FabricLoader.getInstance().isModLoaded("chipped")) {
 			createRecipeAdvancementJson(DDNames.TALL_CHIPPED_OAK_HEAVY, new ResourceLocation("chipped", "heavy_oak_door"));
