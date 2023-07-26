@@ -279,9 +279,9 @@ public class DDBlocks {
     public static final Block TALL_DARK_IRON_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("graveyard", "dark_iron_door"), Blocks.IRON_DOOR));
     
     // Hexcasting
-    public static final Block SHORT_EDIFIED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("hexcasting", "akashic_door")));
+    public static final Block SHORT_EDIFIED_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("hexcasting", "edified_door")));
 
-    public static final Block TALL_EDIFIED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("hexcasting", "akashic_door")));
+    public static final Block TALL_EDIFIED_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("hexcasting", "edified_door")));
     
     // Modern Glass
     public static final Block SHORT_IRON_GLASS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("glassdoor", "iron_glassdoor"), Blocks.IRON_DOOR));
@@ -495,6 +495,15 @@ public class DDBlocks {
 
     public static final Block TALL_TOWERWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tflostblocks", "towerwood_door")));
 
+    // Wilder Wild
+    public static final Block SHORT_WW_BAOBAB_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "baobab_door")));
+    public static final Block SHORT_WW_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "cypress_door")));
+    public static final Block SHORT_WW_PALM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "palm_door")));
+    
+    public static final Block TALL_WW_BAOBAB_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "baobab_door")));
+    public static final Block TALL_WW_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "cypress_door")));
+    public static final Block TALL_WW_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "palm_door")));
+    
     // XP Obelisk
     public static final Block SHORT_SOUL_COPPER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("xps_additions", "soul_copper_door"), Blocks.IRON_DOOR));
 
@@ -1316,6 +1325,13 @@ public class DDBlocks {
         
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TOWERWOOD), SHORT_TOWERWOOD_DOOR);
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TOWERWOOD), TALL_TOWERWOOD_DOOR);
+        
+        Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_BAOBAB), SHORT_WW_BAOBAB_DOOR);
+        Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_CYPRESS), SHORT_WW_CYPRESS_DOOR);
+        Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_PALM), SHORT_WW_PALM_DOOR);
+        Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_BAOBAB), TALL_WW_BAOBAB_DOOR);
+        Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_CYPRESS), TALL_WW_CYPRESS_DOOR);
+        Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_PALM), TALL_WW_PALM_DOOR);
         
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SOUL_COPPER), SHORT_SOUL_COPPER_DOOR);
         Registry.register(Registry.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SOUL_COPPER), TALL_SOUL_COPPER_DOOR);

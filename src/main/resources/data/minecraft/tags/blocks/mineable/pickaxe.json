@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
+    "dramaticdoors:short_iron_door",
+    "dramaticdoors:short_iron_glass_door",
+    "dramaticdoors:short_blockus_blackstone_door",
+    "dramaticdoors:short_blockus_obsidian_reinforced_door",
+    "dramaticdoors:short_blockus_stone_door",
+    "dramaticdoors:short_dark_iron_door",
+    "dramaticdoors:short_steel_door",
+    "dramaticdoors:short_gold_door",
+    "dramaticdoors:short_netherite_door",
+    "dramaticdoors:short_soul_copper_door",
     "dramaticdoors:tall_iron_door",
     "dramaticdoors:tall_iron_glass_door",
     "dramaticdoors:tall_blockus_blackstone_door",

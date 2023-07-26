@@ -1,10 +1,10 @@
 package com.fizzware.dramaticdoors.blocks;
 
 import javax.annotation.Nullable;
-import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
+import com.fizzware.dramaticdoors.tags.DDBlockTags;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -183,7 +183,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL && !state.is(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
+    	if (this.material == Material.METAL && !state.is(DDBlockTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
             return InteractionResult.PASS;
         } 
     	else {
@@ -354,7 +354,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
 	public static boolean isWoodenDoor(BlockState state) {
-		return state.getBlock() instanceof TallDoorBlock && (state.is(DDTags.TALL_WOODEN_DOORS) || state.is(DDTags.MOB_OPENABLE_TALL_METAL_DOORS));
+		return state.getBlock() instanceof TallDoorBlock && (state.is(DDBlockTags.TALL_WOODEN_DOORS) || state.is(DDBlockTags.MOB_OPENABLE_TALL_METAL_DOORS));
 	}
 	
     //Double Doors Compatibility.

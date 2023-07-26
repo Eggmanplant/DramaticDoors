@@ -446,6 +446,14 @@ public class DDRecipeCompats
 			createShortDoorRecipeJson(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
 			createTallDoorRecipeJson(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"), "tall_tf_wooden_door");
 		}
+		if (FabricLoader.getInstance().isModLoaded("wilderwild")) {
+			createShortDoorRecipeJson(DDNames.SHORT_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"));
+			createShortDoorRecipeJson(DDNames.SHORT_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"));
+			createShortDoorRecipeJson(DDNames.SHORT_WW_PALM, new ResourceLocation("wilderwild", "palm_door"));
+			createTallDoorRecipeJson(DDNames.TALL_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"), "tall_wooden_door");
+			createTallDoorRecipeJson(DDNames.TALL_WW_PALM, new ResourceLocation("wilderwild", "palm_door"), "tall_wooden_door");
+		}
 		if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
 			createShortDoorRecipeJson(DDNames.SHORT_SOUL_COPPER, new ResourceLocation("xps_additions", "soul_copper_door"));
 			createTallDoorRecipeJson(DDNames.TALL_SOUL_COPPER, new ResourceLocation("xps_additions", "soul_copper_door"), "tall_metal_door");

@@ -492,6 +492,15 @@ public class DDNames
 
     public static final String TALL_STRIPPED_BAMBOO = "tall_stripped_bamboo_door";
     
+    // Wilder Wild
+    public static final String SHORT_WW_BAOBAB = "short_ww_baobab_door";
+    public static final String SHORT_WW_CYPRESS = "short_ww_cypress_door";
+    public static final String SHORT_WW_PALM = "short_ww_palm_door";
+
+    public static final String TALL_WW_BAOBAB = "tall_ww_baobab_door";
+    public static final String TALL_WW_CYPRESS = "tall_ww_cypress_door";
+    public static final String TALL_WW_PALM = "tall_ww_palm_door";
+    
     //XP Obelisk's Additions
     public static final String SHORT_SOUL_COPPER = "short_soul_copper_door";
 

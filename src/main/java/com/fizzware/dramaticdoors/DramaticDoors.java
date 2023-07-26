@@ -1,8 +1,5 @@
 package com.fizzware.dramaticdoors;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.compat.StatementCompat;
@@ -23,9 +20,7 @@ public class DramaticDoors implements ModInitializer
     public static final String MOD_ID = "dramaticdoors";
     
     public static final DDConfig CONFIG = new DDConfig();
-    
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-    
+        
     public static final CreativeModeTab DD_MAIN_TAB = FabricItemGroupBuilder.build(new ResourceLocation(MOD_ID, "talldoors"), () -> { return new ItemStack(DDItems.TALL_OAK_DOOR); } );
     public static final CreativeModeTab DD_CHIPPED_TAB = FabricLoader.getInstance().isModLoaded("chipped") ? FabricItemGroupBuilder.build(new ResourceLocation(MOD_ID, "talldoors_chipped"), () -> { return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_GATED_DOOR); } ) : null;
     public static final CreativeModeTab DD_MACAW_TAB = FabricLoader.getInstance().isModLoaded("mcwdoors") ? FabricItemGroupBuilder.build(new ResourceLocation(MOD_ID, "talldoors_macaw"), () -> { return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR); } ) : null;

@@ -2,7 +2,8 @@ package com.fizzware.dramaticdoors.blockentities;
 
 import javax.annotation.Nullable;
 
-import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.tags.DDItemTags;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -78,7 +79,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
         Inventory inventory = player.getInventory();
         for (int idx = 0; idx < inventory.getContainerSize(); idx++) {
             ItemStack stack = inventory.getItem(idx);
-            if (stack.is(DDTags.KEY)) {
+            if (stack.is(DDItemTags.KEY)) {
                 found = KeyStatus.INCORRECT_KEY;
                 if (isCorrectKey(stack, key)) return KeyStatus.CORRECT_KEY;
             }
@@ -110,7 +111,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
 
         ItemStack stack = player.getItemInHand(handIn);
 
-        boolean isKey = stack.is(DDTags.KEY);
+        boolean isKey = stack.is(DDItemTags.KEY);
         //clear ownership
         if (player.isCrouching() && isKey && (player.isCreative() || this.isCorrectKey(stack))) {
         	this.clearOwner();

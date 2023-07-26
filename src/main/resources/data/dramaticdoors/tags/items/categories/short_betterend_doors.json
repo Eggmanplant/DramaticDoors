@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_terminite_door",
+    "dramaticdoors:short_thallasium_door",
+    "dramaticdoors:short_dragon_tree_door",
+    "dramaticdoors:short_end_lotus_door",
+    "dramaticdoors:short_helix_tree_door",
+    "dramaticdoors:short_jellyshroom_door",
+    "dramaticdoors:short_lacugrove_door",
+    "dramaticdoors:short_lucernia_door",
+    "dramaticdoors:short_mossy_glowshroom_door",
+    "dramaticdoors:short_pythadendron_door",
+    "dramaticdoors:short_tenanea_door",
+    "dramaticdoors:short_umbrella_tree_door"
+  ]
+}

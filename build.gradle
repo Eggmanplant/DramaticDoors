@@ -65,6 +65,7 @@ dependencies {
 	//modImplementation "curse.maven:consistencyplus-430445:3971956"
 	//modRuntimeOnly "curse.maven:configured-457570:4011355"
 	modImplementation "curse.maven:statement-340604:4275909"
+	modImplementation "curse.maven:macaws-doors-378646:4649884"
 }
 
 processResources {

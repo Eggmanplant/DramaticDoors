@@ -419,6 +419,13 @@ public class RenderHandler implements ClientModInitializer
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.SHORT_TOWERWOOD_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_TOWERWOOD_DOOR, RenderType.cutout());
+		
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.SHORT_WW_BAOBAB_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.SHORT_WW_CYPRESS_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.SHORT_WW_PALM_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_WW_BAOBAB_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_WW_CYPRESS_DOOR, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_WW_PALM_DOOR, RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.SHORT_SOUL_COPPER_DOOR, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.TALL_SOUL_COPPER_DOOR, RenderType.cutout());

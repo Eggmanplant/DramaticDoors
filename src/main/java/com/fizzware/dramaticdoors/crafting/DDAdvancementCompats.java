@@ -443,6 +443,14 @@ public class DDAdvancementCompats
 			createRecipeAdvancementJson(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
 			createRecipeAdvancementJson(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
 		}
+		if (FabricLoader.getInstance().isModLoaded("wilderwild")) {
+			createRecipeAdvancementJson(DDNames.SHORT_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"));
+			createRecipeAdvancementJson(DDNames.SHORT_WW_PALM, new ResourceLocation("wilderwild", "palm_door"));
+			createRecipeAdvancementJson(DDNames.TALL_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"));
+			createRecipeAdvancementJson(DDNames.TALL_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"));
+			createRecipeAdvancementJson(DDNames.TALL_WW_PALM, new ResourceLocation("wilderwild", "palm_door"));
+		}
 		if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
 			createRecipeAdvancementJson(DDNames.SHORT_SOUL_COPPER, new ResourceLocation("xps_additions", "soul_copper_door"));
 			createRecipeAdvancementJson(DDNames.TALL_SOUL_COPPER, new ResourceLocation("xps_additions", "soul_copper_door"));
