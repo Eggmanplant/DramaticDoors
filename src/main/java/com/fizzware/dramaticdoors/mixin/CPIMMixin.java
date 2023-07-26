@@ -5,7 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.tags.DDItemTags;
 
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.client.player.LocalPlayer;
@@ -19,9 +19,9 @@ public class CPIMMixin
 	
 	@Inject(method = "performUseItemOn(Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;", at = @At(value = "RETURN"), cancellable = true)
 	private void injectUse(LocalPlayer player, InteractionHand hand, BlockHitResult hitResult, CallbackInfoReturnable<InteractionResult> ci) {
-		boolean blWithKey = player.getMainHandItem() != null && player.getMainHandItem().is(DDTags.KEY);
+		boolean blWithKey = player.getMainHandItem() != null && player.getMainHandItem().is(DDItemTags.KEY);
 		if (blWithKey && ci.isCancellable()) {
-			ci.setReturnValue(player.getLevel().getBlockState(hitResult.getBlockPos()).use(player.getLevel(), player, hand, hitResult));
+			ci.setReturnValue(player.level.getBlockState(hitResult.getBlockPos()).use(player.level, player, hand, hitResult));
 		}
 	}
 	

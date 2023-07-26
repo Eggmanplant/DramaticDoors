@@ -23,10 +23,10 @@ public class LandPathNodeMakerMixin
 	@Inject(at = @At("RETURN"), method = "getBlockPathTypeRaw(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;", cancellable = true)
 	private static void injectDoorType(BlockGetter world, BlockPos pos, CallbackInfoReturnable<BlockPathTypes> callback) {
 		BlockState blockStateDDCheck = world.getBlockState(pos);
-		if ((TallDoorBlock.isWoodenDoor(blockStateDDCheck) && !blockStateDDCheck.getValue(TallDoorBlock.OPEN).booleanValue()) || (ShortDoorBlock.isWoodenDoor(blockStateDDCheck) && !blockStateDDCheck.getValue(BlockStateProperties.OPEN).booleanValue())) {
+		if (TallDoorBlock.isWoodenDoor(blockStateDDCheck) && !blockStateDDCheck.getValue(TallDoorBlock.OPEN).booleanValue()) {
             callback.setReturnValue(BlockPathTypes.DOOR_WOOD_CLOSED);
         }
-		if ((blockStateDDCheck.getBlock() instanceof TallDoorBlock || blockStateDDCheck.getBlock() instanceof ShortDoorBlock) && blockStateDDCheck.getMaterial() == Material.METAL && !blockStateDDCheck.getValue(BlockStateProperties.OPEN).booleanValue()) {
+		if (blockStateDDCheck.getBlock() instanceof TallDoorBlock && blockStateDDCheck.getMaterial() == Material.METAL && !blockStateDDCheck.getValue(TallDoorBlock.OPEN).booleanValue()) {
             callback.setReturnValue(BlockPathTypes.DOOR_IRON_CLOSED);
         }
 		if ((blockStateDDCheck.getBlock() instanceof TallDoorBlock || blockStateDDCheck.getBlock() instanceof ShortDoorBlock) && blockStateDDCheck.getValue(BlockStateProperties.OPEN).booleanValue()) {

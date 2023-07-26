@@ -9,6 +9,7 @@
     "LandPathNodeMakerMixin",
     "DoorBlockMixin",
     "FenceGateBlockMixin",
+    "JapaneseDoorBlockMixin",
     "DoorInteractGoalMixin",
     "OpenDoorsTaskMixin",
     "PiglinBrainMixin",

@@ -9,6 +9,6 @@ public class Compats
 	
     static {
     	COUPLINGS_INSTALLED = FabricLoader.getInstance().isModLoaded("couplings");
-    	DOUBLE_DOORS_INSTALLED = FabricLoader.getInstance().isModLoaded("doubledoors-fabric");
+    	DOUBLE_DOORS_INSTALLED = FabricLoader.getInstance().isModLoaded("doubledoors");
     }
 }

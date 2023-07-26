@@ -2,16 +2,12 @@ package com.fizzware.dramaticdoors.blocks;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
-import com.mojang.blaze3d.MethodsReturnNonnullByDefault;
-
+import com.fizzware.dramaticdoors.tags.DDBlockTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.*;
 import net.minecraft.world.InteractionHand;
@@ -28,6 +24,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
@@ -49,9 +46,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 
-@MethodsReturnNonnullByDefault
 @SuppressWarnings("deprecation")
 public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 
@@ -65,18 +60,16 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     protected static final VoxelShape NORTH_AABB = Block.box(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape WEST_AABB = Block.box(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape EAST_AABB = Block.box(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D);
-    protected final SoundEvent closeSound;
-    protected final SoundEvent openSound;
+    private final BlockSetType type;
 
     public TallDoorBlock(Block from, BlockSetType blockset) {
         this(from, blockset, null);
     }
     
     public TallDoorBlock(Block from, BlockSetType blockset, @Nullable FeatureFlag flag) {
-        super(flag != null ? Properties.copy(from).requiredFeatures(flag) : Properties.copy(from));
+    	super(flag != null ? Properties.copy(from).requiredFeatures(flag) : Properties.copy(from));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER));
-        this.closeSound = blockset.doorClose();
-        this.openSound = blockset.doorOpen();
+        this.type = blockset;
     }
 
     @Override
@@ -189,7 +182,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL && !state.is(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
+    	if ((this.material == Material.METAL || this.material == Material.HEAVY_METAL) && !state.is(DDBlockTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
             return InteractionResult.PASS;
         } 
     	else {
@@ -204,15 +197,6 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             return InteractionResult.sidedSuccess(level.isClientSide);
         }
     }
-    
-	@Override
-	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-		if (!level.isClientSide) {
-			state = state.cycle(OPEN);
-			level.setBlock(pos, state, 10);
-			this.playSound(null, level, pos, state.getValue(OPEN));
-		}
-	}
 
     public void toggleDoor(Level level, BlockPos pos, boolean open) {
         BlockState blockstate = level.getBlockState(pos);
@@ -241,6 +225,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 			level.setBlock(pos, state.setValue(OPEN, Boolean.valueOf(open)), 10);
 			this.playSound(entity, level, pos, open);
 			level.gameEvent(entity, open ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+			tryOpenDoubleDoor(level, state, pos);
 		}
  	}
     
@@ -292,7 +277,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     protected void playSound(@Nullable Entity entity, Level level, BlockPos pos, boolean isOpen) {
-        level.playSound(entity, pos, isOpen ? this.openSound : this.closeSound, SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.1F + 0.9F);
+        level.playSound(entity, pos, isOpen ? this.type.doorOpen() : this.type.doorClose(), SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.1F + 0.9F);
     }
 
     @Override
@@ -358,7 +343,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
 	public static boolean isWoodenDoor(BlockState state) {
-		return state.getBlock() instanceof TallDoorBlock && (state.is(DDTags.TALL_WOODEN_DOORS) || state.is(DDTags.MOB_OPENABLE_TALL_METAL_DOORS));
+		return state.getBlock() instanceof TallDoorBlock && (state.is(DDBlockTags.TALL_WOODEN_DOORS));
 	}
     
     //Double Doors Compatibility
@@ -376,4 +361,8 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             }
         }
     }
+	
+	public BlockSetType type() {
+		return this.type;
+	}
 }
