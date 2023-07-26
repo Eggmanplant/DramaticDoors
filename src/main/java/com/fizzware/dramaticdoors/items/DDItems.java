@@ -518,6 +518,15 @@ public class DDItems {
     
     public static final Item TALL_TOWERWOOD_DOOR = new TallDoorItem(DDBlocks.TALL_TOWERWOOD_DOOR, PROPERTIES);
     
+    // Wilder Wild
+    public static final Item SHORT_WW_BAOBAB_DOOR = new TallDoorItem(DDBlocks.SHORT_WW_BAOBAB_DOOR, PROPERTIES);
+    public static final Item SHORT_WW_CYPRESS_DOOR = new TallDoorItem(DDBlocks.SHORT_WW_CYPRESS_DOOR, PROPERTIES);
+    public static final Item SHORT_WW_PALM_DOOR = new TallDoorItem(DDBlocks.SHORT_WW_PALM_DOOR, PROPERTIES);
+    
+    public static final Item TALL_WW_BAOBAB_DOOR = new TallDoorItem(DDBlocks.TALL_WW_BAOBAB_DOOR, PROPERTIES);
+    public static final Item TALL_WW_CYPRESS_DOOR = new TallDoorItem(DDBlocks.TALL_WW_CYPRESS_DOOR, PROPERTIES);
+    public static final Item TALL_WW_PALM_DOOR = new TallDoorItem(DDBlocks.TALL_WW_PALM_DOOR, PROPERTIES);
+    
     // XP Obelisk
     public static final Item SHORT_SOUL_COPPER_DOOR = new ShortDoorItem(DDBlocks.SHORT_SOUL_COPPER_DOOR, PROPERTIES);
 
@@ -737,6 +746,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_BARN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_BARN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_BARN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_BARN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_BARN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_BARN_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_BARN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_BARN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_BARN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_BARN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_BARN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_BARN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_BARN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_BARN_DOOR, PROPERTIES);
@@ -748,6 +758,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_BARN_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_BARN_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_BARN_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_BARN_GLASS_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_BARN_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_BARN_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_BARN_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_BARN_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_BARN_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_BARN_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_BARN_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_BARN_GLASS_DOOR, PROPERTIES);
@@ -759,6 +770,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_STABLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_STABLE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_STABLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_STABLE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_STABLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_STABLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_STABLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_STABLE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_STABLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_STABLE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_STABLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_STABLE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_STABLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_STABLE_DOOR, PROPERTIES);
@@ -770,6 +782,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_STABLE_HEAD_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_STABLE_HEAD_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_STABLE_HEAD_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_STABLE_HEAD_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_STABLE_HEAD_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_STABLE_HEAD_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_STABLE_HEAD_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_STABLE_HEAD_DOOR, PROPERTIES);
@@ -781,6 +794,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_BARK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_BARK_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_BARK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_BARK_GLASS_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_BARK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_BARK_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_BARK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_BARK_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_STEM_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_STEM_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_STEM_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_STEM_GLASS_DOOR, PROPERTIES);
@@ -792,6 +806,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_GLASS_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_GLASS_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_GLASS_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_GLASS_DOOR, PROPERTIES);
@@ -803,6 +818,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_MODERN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_MODERN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_MODERN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_MODERN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_MODERN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_MODERN_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_MODERN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_MODERN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_MODERN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_MODERN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_MODERN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_MODERN_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_MODERN_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_MODERN_DOOR, PROPERTIES);
@@ -814,6 +830,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_JAPANESE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_JAPANESE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_JAPANESE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_JAPANESE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_JAPANESE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_JAPANESE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_JAPANESE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_JAPANESE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_JAPANESE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_JAPANESE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_JAPANESE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_JAPANESE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_JAPANESE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_JAPANESE_DOOR, PROPERTIES);
@@ -825,6 +842,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_JAPANESE2_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_JAPANESE2_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_JAPANESE2_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_JAPANESE2_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_JAPANESE2_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_JAPANESE2_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_JAPANESE2_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_JAPANESE2_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_JAPANESE2_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_JAPANESE2_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_JAPANESE2_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_JAPANESE2_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_JAPANESE2_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_JAPANESE2_DOOR, PROPERTIES);
@@ -835,6 +853,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_CLASSIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_CLASSIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_CLASSIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_CLASSIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_CLASSIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_CLASSIC_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_CLASSIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_CLASSIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_CLASSIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_CLASSIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_CLASSIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_CLASSIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_CLASSIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_CLASSIC_DOOR, PROPERTIES);
@@ -845,6 +864,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_COTTAGE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_COTTAGE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_COTTAGE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_COTTAGE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_COTTAGE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_COTTAGE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_COTTAGE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_COTTAGE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_COTTAGE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_COTTAGE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_COTTAGE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_COTTAGE_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_COTTAGE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_COTTAGE_DOOR, PROPERTIES);
@@ -855,6 +875,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_PAPER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_PAPER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_PAPER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_PAPER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_PAPER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_PAPER_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_PAPER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_PAPER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_PAPER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_PAPER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_PAPER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_PAPER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_PAPER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_PAPER_DOOR, PROPERTIES);
@@ -865,6 +886,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_BEACH_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_BEACH_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_BEACH_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_BEACH_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_BEACH_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_BEACH_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_BEACH_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_BEACH_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_BEACH_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_BEACH_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_BEACH_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_BEACH_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_BEACH_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_BEACH_DOOR, PROPERTIES);
@@ -875,6 +897,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_JUNGLE_TROPICAL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_JUNGLE_TROPICAL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_TROPICAL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_TROPICAL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_TROPICAL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_TROPICAL_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_TROPICAL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_TROPICAL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_TROPICAL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_TROPICAL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_TROPICAL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_TROPICAL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_TROPICAL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_TROPICAL_DOOR, PROPERTIES);
@@ -885,6 +908,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_ACACIA_FOUR_PANEL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_FOUR_PANEL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_FOUR_PANEL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_FOUR_PANEL_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_FOUR_PANEL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_FOUR_PANEL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_FOUR_PANEL_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_FOUR_PANEL_DOOR, PROPERTIES);
@@ -895,10 +919,22 @@ public class DDItems {
 	public static final Item TALL_MACAW_JUNGLE_SWAMP_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_JUNGLE_SWAMP_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_ACACIA_SWAMP_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_SWAMP_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_SWAMP_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_SWAMP_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_SWAMP_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_SWAMP_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_SWAMP_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_SWAMP_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_SWAMP_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_SWAMP_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_SWAMP_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_SWAMP_DOOR, PROPERTIES);
 
+	public static final Item TALL_MACAW_OAK_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_OAK_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_SPRUCE_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_SPRUCE_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_BIRCH_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BIRCH_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_JUNGLE_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_JUNGLE_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_ACACIA_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_DARK_OAK_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_MANGROVE_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_BAMBOO_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CRIMSON_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_WAFFLE_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_WARPED_WAFFLE_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_WAFFLE_DOOR, PROPERTIES);
+	
 	public static final Item TALL_MACAW_OAK_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_OAK_BAMBOO_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_SPRUCE_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_SPRUCE_BAMBOO_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BIRCH_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BIRCH_BAMBOO_DOOR, PROPERTIES);
@@ -906,6 +942,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_BAMBOO_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_BAMBOO_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_BAMBOO_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_BAMBOO_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_BAMBOO_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_BAMBOO_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_BAMBOO_DOOR, PROPERTIES);
 	
@@ -916,6 +953,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_NETHER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_NETHER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_NETHER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_NETHER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_NETHER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_NETHER_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_NETHER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_NETHER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_NETHER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_NETHER_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_WARPED_NETHER_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_WARPED_NETHER_DOOR, PROPERTIES);
 
@@ -926,6 +964,7 @@ public class DDItems {
 	public static final Item TALL_MACAW_ACACIA_MYSTIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_ACACIA_MYSTIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_DARK_OAK_MYSTIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_DARK_OAK_MYSTIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_MANGROVE_MYSTIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_MANGROVE_MYSTIC_DOOR, PROPERTIES);
+	public static final Item TALL_MACAW_CHERRY_MYSTIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CHERRY_MYSTIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_BAMBOO_MYSTIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_BAMBOO_MYSTIC_DOOR, PROPERTIES);
 	public static final Item TALL_MACAW_CRIMSON_MYSTIC_DOOR = new TallDoorItem(DDBlocks.TALL_MACAW_CRIMSON_MYSTIC_DOOR, PROPERTIES);
     
@@ -1346,6 +1385,13 @@ public class DDItems {
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TOWERWOOD), SHORT_TOWERWOOD_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TOWERWOOD), TALL_TOWERWOOD_DOOR);
 
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_BAOBAB), SHORT_WW_BAOBAB_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_CYPRESS), SHORT_WW_CYPRESS_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_PALM), SHORT_WW_PALM_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_BAOBAB), TALL_WW_BAOBAB_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_CYPRESS), TALL_WW_CYPRESS_DOOR);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_PALM), TALL_WW_PALM_DOOR);
+
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SOUL_COPPER), SHORT_SOUL_COPPER_DOOR);
 		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SOUL_COPPER), TALL_SOUL_COPPER_DOOR);
 
@@ -1561,6 +1607,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BARN), TALL_MACAW_ACACIA_BARN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARN), TALL_MACAW_DARK_OAK_BARN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BARN), TALL_MACAW_MANGROVE_BARN_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BARN), TALL_MACAW_CHERRY_BARN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_BARN), TALL_MACAW_BAMBOO_BARN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_BARN), TALL_MACAW_CRIMSON_BARN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_BARN), TALL_MACAW_WARPED_BARN_DOOR);
@@ -1572,6 +1619,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BARN_GLASS), TALL_MACAW_ACACIA_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARN_GLASS), TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BARN_GLASS), TALL_MACAW_MANGROVE_BARN_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BARN_GLASS), TALL_MACAW_CHERRY_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_BARN_GLASS), TALL_MACAW_BAMBOO_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_BARN_GLASS), TALL_MACAW_CRIMSON_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_BARN_GLASS), TALL_MACAW_WARPED_BARN_GLASS_DOOR);
@@ -1583,6 +1631,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_STABLE), TALL_MACAW_ACACIA_STABLE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_STABLE), TALL_MACAW_DARK_OAK_STABLE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_STABLE), TALL_MACAW_MANGROVE_STABLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_STABLE), TALL_MACAW_CHERRY_STABLE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_STABLE), TALL_MACAW_BAMBOO_STABLE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_STABLE), TALL_MACAW_CRIMSON_STABLE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_STABLE), TALL_MACAW_WARPED_STABLE_DOOR);
@@ -1594,6 +1643,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_STABLE_HEAD), TALL_MACAW_ACACIA_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_STABLE_HEAD), TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_STABLE_HEAD), TALL_MACAW_MANGROVE_STABLE_HEAD_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_STABLE_HEAD), TALL_MACAW_CHERRY_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_STABLE_HEAD), TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_STABLE_HEAD), TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_STABLE_HEAD), TALL_MACAW_WARPED_STABLE_HEAD_DOOR);
@@ -1605,6 +1655,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BARK_GLASS), TALL_MACAW_ACACIA_BARK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARK_GLASS), TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BARK_GLASS), TALL_MACAW_MANGROVE_BARK_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BARK_GLASS), TALL_MACAW_CHERRY_BARK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_BARK_GLASS), TALL_MACAW_BAMBOO_BARK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_STEM_GLASS), TALL_MACAW_CRIMSON_STEM_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_STEM_GLASS), TALL_MACAW_WARPED_STEM_GLASS_DOOR);
@@ -1616,6 +1667,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_GLASS), TALL_MACAW_ACACIA_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_GLASS), TALL_MACAW_DARK_OAK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_GLASS), TALL_MACAW_MANGROVE_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_GLASS), TALL_MACAW_CHERRY_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_GLASS), TALL_MACAW_BAMBOO_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_GLASS), TALL_MACAW_CRIMSON_GLASS_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_GLASS), TALL_MACAW_WARPED_GLASS_DOOR);
@@ -1627,6 +1679,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_MODERN), TALL_MACAW_ACACIA_MODERN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_MODERN), TALL_MACAW_DARK_OAK_MODERN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_MODERN), TALL_MACAW_MANGROVE_MODERN_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_MODERN), TALL_MACAW_CHERRY_MODERN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_MODERN), TALL_MACAW_BAMBOO_MODERN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_MODERN), TALL_MACAW_CRIMSON_MODERN_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_MODERN), TALL_MACAW_WARPED_MODERN_DOOR);
@@ -1638,6 +1691,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_JAPANESE), TALL_MACAW_ACACIA_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_JAPANESE), TALL_MACAW_DARK_OAK_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_JAPANESE), TALL_MACAW_MANGROVE_JAPANESE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_JAPANESE), TALL_MACAW_CHERRY_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_JAPANESE), TALL_MACAW_BAMBOO_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_JAPANESE), TALL_MACAW_CRIMSON_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_JAPANESE), TALL_MACAW_WARPED_JAPANESE_DOOR);
@@ -1649,6 +1703,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_JAPANESE2), TALL_MACAW_ACACIA_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_JAPANESE2), TALL_MACAW_DARK_OAK_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_JAPANESE2), TALL_MACAW_MANGROVE_JAPANESE2_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_JAPANESE2), TALL_MACAW_CHERRY_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_JAPANESE2), TALL_MACAW_BAMBOO_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_JAPANESE2), TALL_MACAW_CRIMSON_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_JAPANESE2), TALL_MACAW_WARPED_JAPANESE2_DOOR);
@@ -1659,6 +1714,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_CLASSIC), TALL_MACAW_ACACIA_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_CLASSIC), TALL_MACAW_DARK_OAK_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_CLASSIC), TALL_MACAW_MANGROVE_CLASSIC_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_CLASSIC), TALL_MACAW_CHERRY_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_CLASSIC), TALL_MACAW_BAMBOO_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_CLASSIC), TALL_MACAW_CRIMSON_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_CLASSIC), TALL_MACAW_WARPED_CLASSIC_DOOR);
@@ -1669,6 +1725,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_COTTAGE), TALL_MACAW_ACACIA_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_COTTAGE), TALL_MACAW_DARK_OAK_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_COTTAGE), TALL_MACAW_MANGROVE_COTTAGE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_COTTAGE), TALL_MACAW_CHERRY_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_COTTAGE), TALL_MACAW_BAMBOO_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_COTTAGE), TALL_MACAW_CRIMSON_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_COTTAGE), TALL_MACAW_WARPED_COTTAGE_DOOR);
@@ -1679,6 +1736,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_PAPER), TALL_MACAW_ACACIA_PAPER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_PAPER), TALL_MACAW_DARK_OAK_PAPER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_PAPER), TALL_MACAW_MANGROVE_PAPER_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_PAPER), TALL_MACAW_CHERRY_PAPER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_PAPER), TALL_MACAW_BAMBOO_PAPER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_PAPER), TALL_MACAW_CRIMSON_PAPER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_PAPER), TALL_MACAW_WARPED_PAPER_DOOR);
@@ -1689,6 +1747,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BEACH), TALL_MACAW_ACACIA_BEACH_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BEACH), TALL_MACAW_DARK_OAK_BEACH_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BEACH), TALL_MACAW_MANGROVE_BEACH_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BEACH), TALL_MACAW_CHERRY_BEACH_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_BEACH), TALL_MACAW_BAMBOO_BEACH_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_BEACH), TALL_MACAW_CRIMSON_BEACH_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_BEACH), TALL_MACAW_WARPED_BEACH_DOOR);
@@ -1699,6 +1758,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_TROPICAL), TALL_MACAW_JUNGLE_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_TROPICAL), TALL_MACAW_DARK_OAK_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_TROPICAL), TALL_MACAW_MANGROVE_TROPICAL_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_TROPICAL), TALL_MACAW_CHERRY_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_TROPICAL), TALL_MACAW_BAMBOO_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_TROPICAL), TALL_MACAW_CRIMSON_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_TROPICAL), TALL_MACAW_WARPED_TROPICAL_DOOR);
@@ -1709,6 +1769,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_FOUR_PANEL), TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_FOUR_PANEL), TALL_MACAW_ACACIA_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_FOUR_PANEL), TALL_MACAW_MANGROVE_FOUR_PANEL_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_FOUR_PANEL), TALL_MACAW_CHERRY_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_FOUR_PANEL), TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_FOUR_PANEL), TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_FOUR_PANEL), TALL_MACAW_WARPED_FOUR_PANEL_DOOR);
@@ -1719,9 +1780,21 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_SWAMP), TALL_MACAW_JUNGLE_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_SWAMP), TALL_MACAW_ACACIA_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_SWAMP), TALL_MACAW_DARK_OAK_SWAMP_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_SWAMP), TALL_MACAW_CHERRY_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_SWAMP), TALL_MACAW_BAMBOO_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_SWAMP), TALL_MACAW_CRIMSON_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_SWAMP), TALL_MACAW_WARPED_SWAMP_DOOR);
+
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_OAK_WAFFLE), TALL_MACAW_OAK_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_SPRUCE_WAFFLE), TALL_MACAW_SPRUCE_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BIRCH_WAFFLE), TALL_MACAW_BIRCH_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_WAFFLE), TALL_MACAW_JUNGLE_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_WAFFLE), TALL_MACAW_ACACIA_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_WAFFLE), TALL_MACAW_DARK_OAK_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_WAFFLE), TALL_MACAW_MANGROVE_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_WAFFLE), TALL_MACAW_BAMBOO_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_WAFFLE), TALL_MACAW_CRIMSON_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_WAFFLE), TALL_MACAW_WARPED_WAFFLE_DOOR);
 
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_OAK_BAMBOO), TALL_MACAW_OAK_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_SPRUCE_BAMBOO), TALL_MACAW_SPRUCE_BAMBOO_DOOR);
@@ -1730,6 +1803,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BAMBOO), TALL_MACAW_ACACIA_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BAMBOO), TALL_MACAW_DARK_OAK_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BAMBOO), TALL_MACAW_MANGROVE_BAMBOO_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BAMBOO), TALL_MACAW_CHERRY_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_BAMBOO), TALL_MACAW_CRIMSON_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_BAMBOO), TALL_MACAW_WARPED_BAMBOO_DOOR);
         
@@ -1740,6 +1814,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_NETHER), TALL_MACAW_ACACIA_NETHER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_NETHER), TALL_MACAW_DARK_OAK_NETHER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_NETHER), TALL_MACAW_MANGROVE_NETHER_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_NETHER), TALL_MACAW_CHERRY_NETHER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_NETHER), TALL_MACAW_BAMBOO_NETHER_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_NETHER), TALL_MACAW_WARPED_NETHER_DOOR);
 
@@ -1750,6 +1825,7 @@ public class DDItems {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_MYSTIC), TALL_MACAW_ACACIA_MYSTIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_MYSTIC), TALL_MACAW_DARK_OAK_MYSTIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_MYSTIC), TALL_MACAW_MANGROVE_MYSTIC_DOOR);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_MYSTIC), TALL_MACAW_CHERRY_MYSTIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_MYSTIC), TALL_MACAW_BAMBOO_MYSTIC_DOOR);
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_MYSTIC), TALL_MACAW_CRIMSON_MYSTIC_DOOR);
     }
@@ -2223,6 +2299,14 @@ public class DDItems {
             entries.accept(SHORT_TOWERWOOD_DOOR);
             entries.accept(TALL_TOWERWOOD_DOOR);
         }
+        if (FabricLoader.getInstance().isModLoaded("wilderwild")) {
+            entries.accept(SHORT_WW_BAOBAB_DOOR);
+            entries.accept(TALL_WW_BAOBAB_DOOR);
+            entries.accept(SHORT_WW_CYPRESS_DOOR);
+            entries.accept(TALL_WW_CYPRESS_DOOR);
+            entries.accept(SHORT_WW_PALM_DOOR);
+            entries.accept(TALL_WW_PALM_DOOR);
+        }
         if (FabricLoader.getInstance().isModLoaded("xps_additions")) {
             entries.accept(SHORT_SOUL_COPPER_DOOR);
             entries.accept(TALL_SOUL_COPPER_DOOR);
@@ -2443,6 +2527,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_BARN_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_BARN_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_BARN_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_BARN_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_BARN_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_BARN_DOOR);
         entries.accept(TALL_MACAW_WARPED_BARN_DOOR);
@@ -2454,6 +2539,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_BARN_GLASS_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_BARN_GLASS_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_BARN_GLASS_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_BARN_GLASS_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_BARN_GLASS_DOOR);
         entries.accept(TALL_MACAW_WARPED_BARN_GLASS_DOOR);
@@ -2465,6 +2551,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_STABLE_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_STABLE_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_STABLE_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_STABLE_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_STABLE_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_STABLE_DOOR);
         entries.accept(TALL_MACAW_WARPED_STABLE_DOOR);
@@ -2476,6 +2563,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_STABLE_HEAD_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_STABLE_HEAD_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_STABLE_HEAD_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR);
         entries.accept(TALL_MACAW_WARPED_STABLE_HEAD_DOOR);
@@ -2487,6 +2575,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_BARK_GLASS_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_BARK_GLASS_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_BARK_GLASS_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_BARK_GLASS_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_STEM_GLASS_DOOR);
         entries.accept(TALL_MACAW_WARPED_STEM_GLASS_DOOR);
@@ -2498,6 +2587,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_GLASS_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_GLASS_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_GLASS_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_GLASS_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_GLASS_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_GLASS_DOOR);
         entries.accept(TALL_MACAW_WARPED_GLASS_DOOR);
@@ -2509,6 +2599,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_MODERN_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_MODERN_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_MODERN_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_MODERN_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_MODERN_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_MODERN_DOOR);
         entries.accept(TALL_MACAW_WARPED_MODERN_DOOR);
@@ -2520,6 +2611,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_JAPANESE_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_JAPANESE_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_JAPANESE_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_JAPANESE_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_JAPANESE_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_JAPANESE_DOOR);
         entries.accept(TALL_MACAW_WARPED_JAPANESE_DOOR);
@@ -2531,6 +2623,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_JAPANESE2_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_JAPANESE2_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_JAPANESE2_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_JAPANESE2_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_JAPANESE2_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_JAPANESE2_DOOR);
         entries.accept(TALL_MACAW_WARPED_JAPANESE2_DOOR);
@@ -2541,6 +2634,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_CLASSIC_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_CLASSIC_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_CLASSIC_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_CLASSIC_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_CLASSIC_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_CLASSIC_DOOR);
         entries.accept(TALL_MACAW_WARPED_CLASSIC_DOOR);
@@ -2551,6 +2645,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_COTTAGE_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_COTTAGE_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_COTTAGE_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_COTTAGE_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_COTTAGE_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_COTTAGE_DOOR);
         entries.accept(TALL_MACAW_WARPED_COTTAGE_DOOR);
@@ -2561,6 +2656,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_PAPER_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_PAPER_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_PAPER_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_PAPER_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_PAPER_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_PAPER_DOOR);
         entries.accept(TALL_MACAW_WARPED_PAPER_DOOR);
@@ -2571,6 +2667,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_BEACH_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_BEACH_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_BEACH_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_BEACH_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_BEACH_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_BEACH_DOOR);
         entries.accept(TALL_MACAW_WARPED_BEACH_DOOR);
@@ -2581,6 +2678,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_JUNGLE_TROPICAL_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_TROPICAL_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_TROPICAL_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_TROPICAL_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_TROPICAL_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_TROPICAL_DOOR);
         entries.accept(TALL_MACAW_WARPED_TROPICAL_DOOR);
@@ -2591,6 +2689,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR);
         entries.accept(TALL_MACAW_ACACIA_FOUR_PANEL_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_FOUR_PANEL_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_FOUR_PANEL_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR);
         entries.accept(TALL_MACAW_WARPED_FOUR_PANEL_DOOR);
@@ -2601,9 +2700,32 @@ public class DDItems {
         entries.accept(TALL_MACAW_JUNGLE_SWAMP_DOOR);
         entries.accept(TALL_MACAW_ACACIA_SWAMP_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_SWAMP_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_SWAMP_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_SWAMP_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_SWAMP_DOOR);
         entries.accept(TALL_MACAW_WARPED_SWAMP_DOOR);
+
+        entries.accept(TALL_MACAW_OAK_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_SPRUCE_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_BIRCH_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_JUNGLE_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_ACACIA_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_DARK_OAK_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_MANGROVE_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_BAMBOO_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_CRIMSON_WAFFLE_DOOR);
+        entries.accept(TALL_MACAW_WARPED_WAFFLE_DOOR);
+
+        entries.accept(TALL_MACAW_OAK_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_SPRUCE_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_BIRCH_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_JUNGLE_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_ACACIA_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_DARK_OAK_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_MANGROVE_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_CRIMSON_BAMBOO_DOOR);
+        entries.accept(TALL_MACAW_WARPED_BAMBOO_DOOR);
 
         entries.accept(TALL_MACAW_OAK_NETHER_DOOR);
         entries.accept(TALL_MACAW_SPRUCE_NETHER_DOOR);
@@ -2612,6 +2734,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_NETHER_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_NETHER_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_NETHER_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_NETHER_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_NETHER_DOOR);
         entries.accept(TALL_MACAW_WARPED_NETHER_DOOR);
 
@@ -2622,6 +2745,7 @@ public class DDItems {
         entries.accept(TALL_MACAW_ACACIA_MYSTIC_DOOR);
         entries.accept(TALL_MACAW_DARK_OAK_MYSTIC_DOOR);
         entries.accept(TALL_MACAW_MANGROVE_MYSTIC_DOOR);
+        entries.accept(TALL_MACAW_CHERRY_MYSTIC_DOOR);
         entries.accept(TALL_MACAW_BAMBOO_MYSTIC_DOOR);
         entries.accept(TALL_MACAW_CRIMSON_MYSTIC_DOOR);
     }

@@ -58,6 +58,9 @@ public class FenceGateBlockMixin extends Block implements SimpleWaterloggedBlock
 	}
 	
 	public FluidState getFluidState(BlockState state) {
+		if (!state.hasProperty(WATERLOGGED)) {
+			return Fluids.EMPTY.defaultFluidState();
+		}
 		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
 	}
 	

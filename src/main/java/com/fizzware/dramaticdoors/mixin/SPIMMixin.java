@@ -5,7 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.tags.DDItemTags;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerPlayerGameMode;
@@ -21,7 +21,7 @@ public class SPIMMixin
 	
 	@Inject(method = "useItemOn(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;", at = @At(value = "RETURN"), cancellable = true)
 	private void injectUse(ServerPlayer player, Level world, ItemStack stack, InteractionHand hand, BlockHitResult hitResult, CallbackInfoReturnable<InteractionResult> ci) {
-		boolean blWithKey = player.getMainHandItem() != null && player.getMainHandItem().is(DDTags.KEY);
+		boolean blWithKey = player.getMainHandItem() != null && player.getMainHandItem().is(DDItemTags.KEY);
 		if (blWithKey) {
 			ci.setReturnValue(world.getBlockState(hitResult.getBlockPos()).use(world, player, hand, hitResult));
 		}

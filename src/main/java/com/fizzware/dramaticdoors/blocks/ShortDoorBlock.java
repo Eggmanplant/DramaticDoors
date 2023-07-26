@@ -2,8 +2,8 @@ package com.fizzware.dramaticdoors.blocks;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
+import com.fizzware.dramaticdoors.tags.DDBlockTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;
@@ -132,7 +132,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (!this.type.canOpenByHand() && !state.is(DDTags.HAND_OPENABLE_SHORT_METAL_DOORS)) {
+    	if (!this.type.canOpenByHand() && !state.is(DDBlockTags.HAND_OPENABLE_SHORT_METAL_DOORS)) {
             return InteractionResult.PASS;
         } 
     	else {
@@ -171,7 +171,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 			tryOpenDoubleDoor(level, state, pos);
 			// If there is a short door above, also try to open that half.
 			BlockState stateAbove = level.getBlockState(pos.above(1));
-			if (stateAbove.is(DDTags.SHORT_WOODEN_DOORS)) {
+			if (stateAbove.is(DDBlockTags.SHORT_WOODEN_DOORS)) {
 				if ((level.isNight() && (open || stateAbove.getValue(OPEN))) || (level.isDay() && !stateAbove.getValue(OPEN))) {
 					level.setBlock(pos.above(), stateAbove.setValue(OPEN, Boolean.valueOf(open)), 10);
 				}
@@ -207,7 +207,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
         BlockState belowState = level.getBlockState(below);
         BlockPos wallPos = pos.relative(state.getValue(FACING).getOpposite(), 1);
         BlockState wallState = level.getBlockState(wallPos);
-        result = belowState.isFaceSturdy(level, below, Direction.UP) || belowState.is(DDTags.SHORT_DOORS) || wallState.isFaceSturdy(level, wallPos, state.getValue(FACING).getOpposite());
+        result = belowState.isFaceSturdy(level, below, Direction.UP) || belowState.is(DDItemTags.SHORT_DOORS) || wallState.isFaceSturdy(level, wallPos, state.getValue(FACING).getOpposite());
         return result;*/
     }
 
@@ -278,7 +278,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
 	public static boolean isWoodenDoor(BlockState state) {
-		return state.getBlock() instanceof ShortDoorBlock && (state.is(DDTags.SHORT_WOODEN_DOORS));
+		return state.getBlock() instanceof ShortDoorBlock && (state.is(DDBlockTags.SHORT_WOODEN_DOORS));
 	}
     
     //Double Doors Compatibility

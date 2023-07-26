@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_blockus_bamboo_door",
+    "dramaticdoors:short_blockus_blackstone_door",
+    "dramaticdoors:short_blockus_charred_door",
+    "dramaticdoors:short_blockus_obsidian_reinforced_door",
+    "dramaticdoors:short_blockus_paper_door",
+    "dramaticdoors:short_blockus_stone_door",
+    "dramaticdoors:short_blockus_white_oak_door"
+  ]
+}

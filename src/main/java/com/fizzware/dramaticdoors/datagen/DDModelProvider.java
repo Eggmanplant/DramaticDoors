@@ -50,6 +50,9 @@ public class DDModelProvider extends FabricModelProvider
 		this.blockStateOutput = blockStateModelGenerator.blockStateOutput;
 		// Data-gen the block models as necessary.
 		for (Block block : BuiltInRegistries.BLOCK.stream().filter(block -> block instanceof ShortDoorBlock || block instanceof TallDoorBlock).toList()) {
+			if (block instanceof TallDoorBlock) {
+				createTallDoor(block);
+			}
 			if (block instanceof ShortDoorBlock) {
 				createShortDoor(block);
 			}
@@ -123,14 +126,14 @@ public class DDModelProvider extends FabricModelProvider
         		.select(Direction.SOUTH, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
         		.select(Direction.WEST, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
         		.select(Direction.NORTH, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-        		.select(Direction.EAST, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation3))
-        		.select(Direction.SOUTH, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
-        		.select(Direction.WEST, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
-        		.select(Direction.NORTH, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-        		.select(Direction.EAST, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
-        		.select(Direction.SOUTH, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
-        		.select(Direction.WEST, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-        		.select(Direction.NORTH, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation2))
+        		.select(Direction.EAST, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation2))
+        		.select(Direction.SOUTH, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+        		.select(Direction.WEST, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+        		.select(Direction.NORTH, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+        		.select(Direction.EAST, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+        		.select(Direction.SOUTH, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+        		.select(Direction.WEST, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+        		.select(Direction.NORTH, tripleBlockPart, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation3))
         		.select(Direction.EAST, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation4).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
         		.select(Direction.SOUTH, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation4))
         		.select(Direction.WEST, tripleBlockPart, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation4).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
@@ -142,18 +145,18 @@ public class DDModelProvider extends FabricModelProvider
         		.select(Direction.SOUTH, DoorHingeSide.LEFT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
         		.select(Direction.WEST, DoorHingeSide.LEFT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
         		.select(Direction.NORTH, DoorHingeSide.LEFT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-        		.select(Direction.EAST, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation3))
-        		.select(Direction.SOUTH, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
-        		.select(Direction.WEST, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
-        		.select(Direction.NORTH, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation3).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-        		.select(Direction.EAST, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
-        		.select(Direction.SOUTH, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
-        		.select(Direction.WEST, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation2).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-        		.select(Direction.NORTH, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation2))
-        		.select(Direction.EAST, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation4).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
-        		.select(Direction.SOUTH, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation4))
-        		.select(Direction.WEST, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation4).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
-        		.select(Direction.NORTH, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation4).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180));
+        		.select(Direction.EAST, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation))
+        		.select(Direction.SOUTH, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+        		.select(Direction.WEST, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+        		.select(Direction.NORTH, DoorHingeSide.RIGHT, (Boolean)false, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+        		.select(Direction.EAST, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+        		.select(Direction.SOUTH, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180))
+        		.select(Direction.WEST, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+        		.select(Direction.NORTH, DoorHingeSide.LEFT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation))
+        		.select(Direction.EAST, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))
+        		.select(Direction.SOUTH, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation))
+        		.select(Direction.WEST, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R90))
+        		.select(Direction.NORTH, DoorHingeSide.RIGHT, (Boolean)true, Variant.variant().with(VariantProperties.MODEL, resourceLocation).with(VariantProperties.Y_ROT, VariantProperties.Rotation.R180));
     }
 
 }

@@ -503,6 +503,15 @@ public class DDBlocks {
     
     public static final Block TALL_TOWERWOOD_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("tflostblocks", "towerwood_door")), BlockSetType.OAK);
     
+    // Wilder Wild
+    public static final Block SHORT_WW_BAOBAB_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "baobab_door")), BlockSetType.JUNGLE);
+    public static final Block SHORT_WW_CYPRESS_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "cypress_door")), BlockSetType.JUNGLE);
+    public static final Block SHORT_WW_PALM_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "palm_door")), BlockSetType.BAMBOO);
+    
+    public static final Block TALL_WW_BAOBAB_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "baobab_door")), BlockSetType.JUNGLE);
+    public static final Block TALL_WW_CYPRESS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "cypress_door")), BlockSetType.JUNGLE);
+    public static final Block TALL_WW_PALM_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("wilderwild", "palm_door")), BlockSetType.BAMBOO);
+    
     // XP Obelisk
     public static final Block SHORT_SOUL_COPPER_DOOR = new ShortDoorBlock(getBlockFromResourceLocation(new ResourceLocation("xps_additions", "soul_copper_door"), Blocks.IRON_DOOR), BlockSetType.IRON);
 
@@ -722,6 +731,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_BARN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_barn_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_BARN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_barn_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_BARN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_barn_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_BARN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_barn_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_BARN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_barn_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_BARN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_barn_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_BARN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_barn_door")), BlockSetType.WARPED);
@@ -733,6 +743,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_BARN_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_barn_glass_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_barn_glass_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_BARN_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_barn_glass_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_BARN_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_barn_glass_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_BARN_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_barn_glass_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_BARN_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_barn_glass_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_BARN_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_barn_glass_door")), BlockSetType.WARPED);
@@ -744,6 +755,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_STABLE_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_stable_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_STABLE_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_stable_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_STABLE_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_stable_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_STABLE_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_stable_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_STABLE_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_stable_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_STABLE_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_stable_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_STABLE_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_stable_door")), BlockSetType.WARPED);
@@ -755,6 +767,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_STABLE_HEAD_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_stable_head_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_stable_head_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_STABLE_HEAD_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_stable_head_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_STABLE_HEAD_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_stable_head_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_stable_head_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_stable_head_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_STABLE_HEAD_DOOR = new TallStableDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_stable_head_door")), BlockSetType.WARPED);
@@ -766,6 +779,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_BARK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_bark_glass_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_bark_glass_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_BARK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_bark_glass_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_BARK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_bark_glass_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_BARK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_bark_glass_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_STEM_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_stem_glass_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_STEM_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_stem_glass_door")), BlockSetType.WARPED);
@@ -777,6 +791,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_glass_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_glass_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_glass_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_glass_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_glass_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_glass_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_GLASS_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_glass_door")), BlockSetType.WARPED);
@@ -788,6 +803,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_MODERN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_modern_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_MODERN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_modern_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_MODERN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_modern_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_MODERN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_modern_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_MODERN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_modern_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_MODERN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_modern_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_MODERN_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_modern_door")), BlockSetType.WARPED);
@@ -799,6 +815,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_JAPANESE_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_japanese_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_JAPANESE_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_japanese_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_JAPANESE_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_japanese_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_JAPANESE_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_japanese_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_JAPANESE_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_japanese_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_JAPANESE_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_japanese_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_JAPANESE_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_japanese_door")), BlockSetType.WARPED);
@@ -810,6 +827,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_JAPANESE2_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_japanese2_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_JAPANESE2_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_japanese2_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_JAPANESE2_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_japanese2_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_JAPANESE2_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_japanese2_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_JAPANESE2_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_japanese2_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_JAPANESE2_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_japanese2_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_JAPANESE2_DOOR = new TallSlidingDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_japanese2_door")), BlockSetType.WARPED);
@@ -820,6 +838,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_CLASSIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_classic_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_CLASSIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_classic_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_CLASSIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_classic_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_CLASSIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_classic_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_CLASSIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_classic_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_CLASSIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_classic_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_CLASSIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_classic_door")), BlockSetType.WARPED);
@@ -830,6 +849,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_COTTAGE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_cottage_door")), BlockSetType.OAK);
 	public static final Block TALL_MACAW_DARK_OAK_COTTAGE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_cottage_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_COTTAGE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_cottage_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_COTTAGE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_cottage_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_COTTAGE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_cottage_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_COTTAGE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_cottage_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_COTTAGE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_cottage_door")), BlockSetType.WARPED);
@@ -840,6 +860,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_paper_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_paper_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_paper_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_paper_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_paper_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_paper_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_PAPER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_paper_door")), BlockSetType.WARPED);
@@ -850,6 +871,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_BEACH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_beach_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_BEACH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_beach_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_BEACH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_beach_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_BEACH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_beach_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_BEACH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_beach_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_BEACH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_beach_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_BEACH_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_beach_door")), BlockSetType.WARPED);
@@ -860,6 +882,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_JUNGLE_TROPICAL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "jungle_tropical_door")), BlockSetType.JUNGLE);
 	public static final Block TALL_MACAW_DARK_OAK_TROPICAL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_tropical_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_TROPICAL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_tropical_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_TROPICAL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_tropical_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_TROPICAL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_tropical_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_TROPICAL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_tropical_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_TROPICAL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_tropical_door")), BlockSetType.WARPED);
@@ -870,6 +893,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "jungle_four_panel_door")), BlockSetType.JUNGLE);
 	public static final Block TALL_MACAW_ACACIA_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_four_panel_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_MANGROVE_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_four_panel_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_four_panel_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_four_panel_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_four_panel_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_FOUR_PANEL_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_four_panel_door")), BlockSetType.WARPED);
@@ -880,9 +904,21 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_JUNGLE_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "jungle_swamp_door")), BlockSetType.JUNGLE);
 	public static final Block TALL_MACAW_ACACIA_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_swamp_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_swamp_door")), BlockSetType.DARK_OAK);
+	public static final Block TALL_MACAW_CHERRY_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_swamp_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_swamp_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_swamp_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_SWAMP_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_swamp_door")), BlockSetType.WARPED);
+
+	public static final Block TALL_MACAW_OAK_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "oak_waffle_door")), BlockSetType.OAK);
+	public static final Block TALL_MACAW_SPRUCE_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "spruce_waffle_door")), BlockSetType.SPRUCE);
+	public static final Block TALL_MACAW_BIRCH_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "birch_waffle_door")), BlockSetType.BIRCH);
+	public static final Block TALL_MACAW_JUNGLE_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "jungle_waffle_door")), BlockSetType.JUNGLE);
+	public static final Block TALL_MACAW_ACACIA_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_waffle_door")), BlockSetType.ACACIA);
+	public static final Block TALL_MACAW_DARK_OAK_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_waffle_door")), BlockSetType.DARK_OAK);
+	public static final Block TALL_MACAW_MANGROVE_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_waffle_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_BAMBOO_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_waffle_door")), BlockSetType.BAMBOO);
+	public static final Block TALL_MACAW_CRIMSON_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_waffle_door")), BlockSetType.CRIMSON);
+	public static final Block TALL_MACAW_WARPED_WAFFLE_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_waffle_door")), BlockSetType.WARPED);
 
 	public static final Block TALL_MACAW_OAK_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "oak_bamboo_door")), BlockSetType.OAK);
 	public static final Block TALL_MACAW_SPRUCE_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "spruce_bamboo_door")), BlockSetType.SPRUCE);
@@ -891,6 +927,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_bamboo_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_bamboo_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_bamboo_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_bamboo_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_CRIMSON_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_bamboo_door")), BlockSetType.CRIMSON);
 	public static final Block TALL_MACAW_WARPED_BAMBOO_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_bamboo_door")), BlockSetType.WARPED);
 	
@@ -901,6 +938,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_nether_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_nether_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_nether_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_nether_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_nether_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_WARPED_NETHER_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "warped_nether_door")), BlockSetType.WARPED);
 
@@ -911,6 +949,7 @@ public class DDBlocks {
 	public static final Block TALL_MACAW_ACACIA_MYSTIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "acacia_mystic_door")), BlockSetType.ACACIA);
 	public static final Block TALL_MACAW_DARK_OAK_MYSTIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "dark_oak_mystic_door")), BlockSetType.DARK_OAK);
 	public static final Block TALL_MACAW_MANGROVE_MYSTIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "mangrove_mystic_door")), BlockSetType.MANGROVE);
+	public static final Block TALL_MACAW_CHERRY_MYSTIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "cherry_mystic_door")), BlockSetType.CHERRY);
 	public static final Block TALL_MACAW_BAMBOO_MYSTIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "bamboo_mystic_door")), BlockSetType.BAMBOO);
 	public static final Block TALL_MACAW_CRIMSON_MYSTIC_DOOR = new TallDoorBlock(getBlockFromResourceLocation(new ResourceLocation("mcwdoors", "crimson_mystic_door")), BlockSetType.CRIMSON);
     
@@ -1330,7 +1369,14 @@ public class DDBlocks {
         
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TOWERWOOD), SHORT_TOWERWOOD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TOWERWOOD), TALL_TOWERWOOD_DOOR);
-        
+
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_BAOBAB), SHORT_WW_BAOBAB_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_CYPRESS), SHORT_WW_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WW_PALM), SHORT_WW_PALM_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_BAOBAB), TALL_WW_BAOBAB_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_CYPRESS), TALL_WW_CYPRESS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WW_PALM), TALL_WW_PALM_DOOR);
+
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SOUL_COPPER), SHORT_SOUL_COPPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SOUL_COPPER), TALL_SOUL_COPPER_DOOR);
 
@@ -1546,6 +1592,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BARN), TALL_MACAW_ACACIA_BARN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARN), TALL_MACAW_DARK_OAK_BARN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BARN), TALL_MACAW_MANGROVE_BARN_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BARN), TALL_MACAW_CHERRY_BARN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_BARN), TALL_MACAW_BAMBOO_BARN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_BARN), TALL_MACAW_CRIMSON_BARN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_BARN), TALL_MACAW_WARPED_BARN_DOOR);
@@ -1557,6 +1604,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BARN_GLASS), TALL_MACAW_ACACIA_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARN_GLASS), TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BARN_GLASS), TALL_MACAW_MANGROVE_BARN_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BARN_GLASS), TALL_MACAW_CHERRY_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_BARN_GLASS), TALL_MACAW_BAMBOO_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_BARN_GLASS), TALL_MACAW_CRIMSON_BARN_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_BARN_GLASS), TALL_MACAW_WARPED_BARN_GLASS_DOOR);
@@ -1568,6 +1616,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_STABLE), TALL_MACAW_ACACIA_STABLE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_STABLE), TALL_MACAW_DARK_OAK_STABLE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_STABLE), TALL_MACAW_MANGROVE_STABLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_STABLE), TALL_MACAW_CHERRY_STABLE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_STABLE), TALL_MACAW_BAMBOO_STABLE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_STABLE), TALL_MACAW_CRIMSON_STABLE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_STABLE), TALL_MACAW_WARPED_STABLE_DOOR);
@@ -1579,6 +1628,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_STABLE_HEAD), TALL_MACAW_ACACIA_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_STABLE_HEAD), TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_STABLE_HEAD), TALL_MACAW_MANGROVE_STABLE_HEAD_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_STABLE_HEAD), TALL_MACAW_CHERRY_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_STABLE_HEAD), TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_STABLE_HEAD), TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_STABLE_HEAD), TALL_MACAW_WARPED_STABLE_HEAD_DOOR);
@@ -1590,6 +1640,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BARK_GLASS), TALL_MACAW_ACACIA_BARK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARK_GLASS), TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BARK_GLASS), TALL_MACAW_MANGROVE_BARK_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BARK_GLASS), TALL_MACAW_CHERRY_BARK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_BARK_GLASS), TALL_MACAW_BAMBOO_BARK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_STEM_GLASS), TALL_MACAW_CRIMSON_STEM_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_STEM_GLASS), TALL_MACAW_WARPED_STEM_GLASS_DOOR);
@@ -1601,6 +1652,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_GLASS), TALL_MACAW_ACACIA_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_GLASS), TALL_MACAW_DARK_OAK_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_GLASS), TALL_MACAW_MANGROVE_GLASS_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_GLASS), TALL_MACAW_CHERRY_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_GLASS), TALL_MACAW_BAMBOO_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_GLASS), TALL_MACAW_CRIMSON_GLASS_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_GLASS), TALL_MACAW_WARPED_GLASS_DOOR);
@@ -1612,6 +1664,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_MODERN), TALL_MACAW_ACACIA_MODERN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_MODERN), TALL_MACAW_DARK_OAK_MODERN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_MODERN), TALL_MACAW_MANGROVE_MODERN_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_MODERN), TALL_MACAW_CHERRY_MODERN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_MODERN), TALL_MACAW_BAMBOO_MODERN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_MODERN), TALL_MACAW_CRIMSON_MODERN_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_MODERN), TALL_MACAW_WARPED_MODERN_DOOR);
@@ -1623,6 +1676,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_JAPANESE), TALL_MACAW_ACACIA_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_JAPANESE), TALL_MACAW_DARK_OAK_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_JAPANESE), TALL_MACAW_MANGROVE_JAPANESE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_JAPANESE), TALL_MACAW_CHERRY_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_JAPANESE), TALL_MACAW_BAMBOO_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_JAPANESE), TALL_MACAW_CRIMSON_JAPANESE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_JAPANESE), TALL_MACAW_WARPED_JAPANESE_DOOR);
@@ -1634,6 +1688,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_JAPANESE2), TALL_MACAW_ACACIA_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_JAPANESE2), TALL_MACAW_DARK_OAK_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_JAPANESE2), TALL_MACAW_MANGROVE_JAPANESE2_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_JAPANESE2), TALL_MACAW_CHERRY_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_JAPANESE2), TALL_MACAW_BAMBOO_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_JAPANESE2), TALL_MACAW_CRIMSON_JAPANESE2_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_JAPANESE2), TALL_MACAW_WARPED_JAPANESE2_DOOR);
@@ -1644,6 +1699,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_CLASSIC), TALL_MACAW_ACACIA_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_CLASSIC), TALL_MACAW_DARK_OAK_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_CLASSIC), TALL_MACAW_MANGROVE_CLASSIC_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_CLASSIC), TALL_MACAW_CHERRY_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_CLASSIC), TALL_MACAW_BAMBOO_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_CLASSIC), TALL_MACAW_CRIMSON_CLASSIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_CLASSIC), TALL_MACAW_WARPED_CLASSIC_DOOR);
@@ -1654,6 +1710,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_COTTAGE), TALL_MACAW_ACACIA_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_COTTAGE), TALL_MACAW_DARK_OAK_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_COTTAGE), TALL_MACAW_MANGROVE_COTTAGE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_COTTAGE), TALL_MACAW_CHERRY_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_COTTAGE), TALL_MACAW_BAMBOO_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_COTTAGE), TALL_MACAW_CRIMSON_COTTAGE_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_COTTAGE), TALL_MACAW_WARPED_COTTAGE_DOOR);
@@ -1664,6 +1721,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_PAPER), TALL_MACAW_ACACIA_PAPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_PAPER), TALL_MACAW_DARK_OAK_PAPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_PAPER), TALL_MACAW_MANGROVE_PAPER_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_PAPER), TALL_MACAW_CHERRY_PAPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_PAPER), TALL_MACAW_BAMBOO_PAPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_PAPER), TALL_MACAW_CRIMSON_PAPER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_PAPER), TALL_MACAW_WARPED_PAPER_DOOR);
@@ -1674,6 +1732,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BEACH), TALL_MACAW_ACACIA_BEACH_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BEACH), TALL_MACAW_DARK_OAK_BEACH_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BEACH), TALL_MACAW_MANGROVE_BEACH_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BEACH), TALL_MACAW_CHERRY_BEACH_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_BEACH), TALL_MACAW_BAMBOO_BEACH_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_BEACH), TALL_MACAW_CRIMSON_BEACH_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_BEACH), TALL_MACAW_WARPED_BEACH_DOOR);
@@ -1684,6 +1743,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_TROPICAL), TALL_MACAW_JUNGLE_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_TROPICAL), TALL_MACAW_DARK_OAK_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_TROPICAL), TALL_MACAW_MANGROVE_TROPICAL_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_TROPICAL), TALL_MACAW_CHERRY_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_TROPICAL), TALL_MACAW_BAMBOO_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_TROPICAL), TALL_MACAW_CRIMSON_TROPICAL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_TROPICAL), TALL_MACAW_WARPED_TROPICAL_DOOR);
@@ -1694,6 +1754,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_FOUR_PANEL), TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_FOUR_PANEL), TALL_MACAW_ACACIA_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_FOUR_PANEL), TALL_MACAW_MANGROVE_FOUR_PANEL_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_FOUR_PANEL), TALL_MACAW_CHERRY_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_FOUR_PANEL), TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_FOUR_PANEL), TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_FOUR_PANEL), TALL_MACAW_WARPED_FOUR_PANEL_DOOR);
@@ -1704,9 +1765,21 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_SWAMP), TALL_MACAW_JUNGLE_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_SWAMP), TALL_MACAW_ACACIA_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_SWAMP), TALL_MACAW_DARK_OAK_SWAMP_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_SWAMP), TALL_MACAW_CHERRY_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_SWAMP), TALL_MACAW_BAMBOO_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_SWAMP), TALL_MACAW_CRIMSON_SWAMP_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_SWAMP), TALL_MACAW_WARPED_SWAMP_DOOR);
+
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_OAK_WAFFLE), TALL_MACAW_OAK_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_SPRUCE_WAFFLE), TALL_MACAW_SPRUCE_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BIRCH_WAFFLE), TALL_MACAW_BIRCH_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_JUNGLE_WAFFLE), TALL_MACAW_JUNGLE_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_WAFFLE), TALL_MACAW_ACACIA_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_WAFFLE), TALL_MACAW_DARK_OAK_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_WAFFLE), TALL_MACAW_MANGROVE_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_WAFFLE), TALL_MACAW_BAMBOO_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_WAFFLE), TALL_MACAW_CRIMSON_WAFFLE_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_WAFFLE), TALL_MACAW_WARPED_WAFFLE_DOOR);
 
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_OAK_BAMBOO), TALL_MACAW_OAK_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_SPRUCE_BAMBOO), TALL_MACAW_SPRUCE_BAMBOO_DOOR);
@@ -1715,6 +1788,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_BAMBOO), TALL_MACAW_ACACIA_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BAMBOO), TALL_MACAW_DARK_OAK_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_BAMBOO), TALL_MACAW_MANGROVE_BAMBOO_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_BAMBOO), TALL_MACAW_CHERRY_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_BAMBOO), TALL_MACAW_CRIMSON_BAMBOO_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_BAMBOO), TALL_MACAW_WARPED_BAMBOO_DOOR);
         
@@ -1725,6 +1799,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_NETHER), TALL_MACAW_ACACIA_NETHER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_NETHER), TALL_MACAW_DARK_OAK_NETHER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_NETHER), TALL_MACAW_MANGROVE_NETHER_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_NETHER), TALL_MACAW_CHERRY_NETHER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_NETHER), TALL_MACAW_BAMBOO_NETHER_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_WARPED_NETHER), TALL_MACAW_WARPED_NETHER_DOOR);
 
@@ -1735,6 +1810,7 @@ public class DDBlocks {
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_ACACIA_MYSTIC), TALL_MACAW_ACACIA_MYSTIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_DARK_OAK_MYSTIC), TALL_MACAW_DARK_OAK_MYSTIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_MANGROVE_MYSTIC), TALL_MACAW_MANGROVE_MYSTIC_DOOR);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CHERRY_MYSTIC), TALL_MACAW_CHERRY_MYSTIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_BAMBOO_MYSTIC), TALL_MACAW_BAMBOO_MYSTIC_DOOR);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MACAW_CRIMSON_MYSTIC), TALL_MACAW_CRIMSON_MYSTIC_DOOR);
     }

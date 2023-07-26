@@ -7,9 +7,8 @@ import java.util.Set;
 import org.apache.commons.lang3.mutable.MutableInt;
 import org.apache.commons.lang3.mutable.MutableObject;
 
-import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
-
+import com.fizzware.dramaticdoors.tags.DDBlockTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.GlobalPos;
 import net.minecraft.world.entity.LivingEntity;
@@ -47,14 +46,14 @@ public class OpenTallDoorsTask
             Node pathNode2 = path.getNextNode();
             BlockPos blockPos = pathNode.asBlockPos();
             BlockState blockState = world.getBlockState(blockPos);
-            if (blockState.is(DDTags.TALL_WOODEN_DOORS, state -> state.getBlock() instanceof TallDoorBlock)) {
+            if (blockState.is(DDBlockTags.TALL_WOODEN_DOORS, state -> state.getBlock() instanceof TallDoorBlock)) {
                 TallDoorBlock doorBlock = (TallDoorBlock)blockState.getBlock();
                 if (!doorBlock.isOpen(blockState)) {
                     doorBlock.setOpen(entity, world, blockState, blockPos, true);
                 }
                 optional = InteractWithDoor.rememberDoorToClose(doorsToClose, optional, world, blockPos);
             }
-            if ((blockState2 = world.getBlockState(blockPos2 = pathNode2.asBlockPos())).is(DDTags.TALL_WOODEN_DOORS, state -> state.getBlock() instanceof TallDoorBlock) && !(doorBlock2 = (TallDoorBlock)blockState2.getBlock()).isOpen(blockState2)) {
+            if ((blockState2 = world.getBlockState(blockPos2 = pathNode2.asBlockPos())).is(DDBlockTags.TALL_WOODEN_DOORS, state -> state.getBlock() instanceof TallDoorBlock) && !(doorBlock2 = (TallDoorBlock)blockState2.getBlock()).isOpen(blockState2)) {
                 doorBlock2.setOpen(entity, world, blockState2, blockPos2, true);
                 optional = InteractWithDoor.rememberDoorToClose(doorsToClose, optional, world, blockPos2);
             }

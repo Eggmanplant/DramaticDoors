@@ -1,27 +1,14 @@
 package com.fizzware.dramaticdoors.items;
 
-import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.tags.DDItemTags;
+
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 
 public class DDFuels
 {
 	public static void addFuels() {
-		// Set up fuel. Only wooden doors can be used as fuel. Nether wood excluded.
-		for (Item item : BuiltInRegistries.ITEM.stream().toList()) {
-			if (item instanceof TallDoorItem) {
-				if (((BlockItem)item).getBlock().defaultBlockState().is(DDTags.TALL_WOODEN_DOORS) && !item.getDefaultInstance().is(ItemTags.NON_FLAMMABLE_WOOD)) {
-					FuelRegistry.INSTANCE.add(item, 300);
-				}
-			}
-			if (item instanceof ShortDoorItem) {
-				if (((BlockItem)item).getBlock().defaultBlockState().is(DDTags.SHORT_WOODEN_DOORS) && !item.getDefaultInstance().is(ItemTags.NON_FLAMMABLE_WOOD)) {
-					FuelRegistry.INSTANCE.add(item, 100);
-				}
-			}
-		}
+		// Set up fuel. Only wooden doors can be used as fuel. Nether wood automatically excluded.
+		FuelRegistry.INSTANCE.add(DDItemTags.TALL_WOODEN_DOORS, 300);
+		FuelRegistry.INSTANCE.add(DDItemTags.SHORT_WOODEN_DOORS, 100);
 	}
 }
