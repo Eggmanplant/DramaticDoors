@@ -1,6 +1,6 @@
 package com.fizzware.dramaticdoors.blocks;
 
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.Orientation;
@@ -75,7 +75,7 @@ public class TallFleshDoorBlock extends TallDoorBlock
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		BlockPos pos = context.getClickedPos();
 		Level level = context.getLevel();
-		if (pos.getY() >= level.getMaxBuildHeight() - 1 || !level.getBlockState(pos.above()).canBeReplaced(context)) {
+		if (pos.getY() >= level.getMaxBuildHeight() - 2 || !(level.getBlockState(pos.above()).canBeReplaced(context) || level.getBlockState(pos.above(2)).canBeReplaced(context))) {
 			return null;
 		}
 

@@ -6,6 +6,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.LivingEntity;
@@ -30,48 +31,61 @@ import net.minecraft.world.level.material.Fluids;
 public class DoorBlockMixin extends Block implements SimpleWaterloggedBlock
 {
 	public DoorBlockMixin(Properties properties) {
-		super(properties); // Doesn't do anything here.
+		super(properties); // Not used.
 	}
-		
+
 	private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	@Inject(at = @At("TAIL"), method = "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V")
 	private void enhanceConstructor(BlockBehaviour.Properties properties, BlockSetType blockset, CallbackInfo callback) {
-		((DoorBlock)(Object)this).registerDefaultState(((DoorBlock)(Object)this).defaultBlockState().setValue(WATERLOGGED, false));
+		if (((DoorBlock)(Object)this).defaultBlockState().hasProperty(WATERLOGGED)) {
+			((DoorBlock)(Object)this).registerDefaultState(((DoorBlock)(Object)this).defaultBlockState().setValue(WATERLOGGED, false));
+		}
 	}
 
 	@Inject(at = @At("TAIL"), method = "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V")
 	protected void injectBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder, CallbackInfo callback) {
-		builder.add(WATERLOGGED);
+		if (!FabricLoader.getInstance().isModLoaded("fixedwaterlogging")) {
+			builder.add(WATERLOGGED);
+		}
 	}
 
 	@Inject(at = @At("HEAD"), method = "getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;", cancellable = true)
 	private void getStateForPlacement(BlockPlaceContext context, CallbackInfoReturnable<BlockState> callback) {
-		BlockPos blockpos = context.getClickedPos();
-		Level level = context.getLevel();
-		if (blockpos.getY() < level.getMaxBuildHeight() - 1 && level.getBlockState(blockpos.above()).canBeReplaced(context)) {
-			boolean flag = level.hasNeighborSignal(blockpos) || level.hasNeighborSignal(blockpos.above());
-			boolean waterfilled = level.getFluidState(blockpos).getType() == Fluids.WATER;
-			callback.setReturnValue(((DoorBlock)(Object)this).defaultBlockState().setValue(DoorBlock.FACING, context.getHorizontalDirection()).setValue(DoorBlock.HINGE, ((DoorBlock)(Object)this).getHinge(context)).setValue(DoorBlock.POWERED, Boolean.valueOf(flag)).setValue(DoorBlock.OPEN, Boolean.valueOf(flag)).setValue(DoorBlock.HALF, DoubleBlockHalf.LOWER).setValue(WATERLOGGED, waterfilled));
-		} else {
-			callback.setReturnValue(null);
+		if (((DoorBlock)(Object)this).defaultBlockState().hasProperty(WATERLOGGED)) {
+			BlockPos blockpos = context.getClickedPos();
+			Level level = context.getLevel();
+			if (blockpos.getY() < level.getMaxBuildHeight() - 1 && level.getBlockState(blockpos.above()).canBeReplaced(context)) {
+				boolean flag = level.hasNeighborSignal(blockpos) || level.hasNeighborSignal(blockpos.above());
+				boolean waterfilled = level.getFluidState(blockpos).getType() == Fluids.WATER;
+				callback.setReturnValue(((DoorBlock)(Object)this).defaultBlockState().setValue(DoorBlock.FACING, context.getHorizontalDirection()).setValue(DoorBlock.HINGE, ((DoorBlock)(Object)this).getHinge(context)).setValue(DoorBlock.POWERED, Boolean.valueOf(flag)).setValue(DoorBlock.OPEN, Boolean.valueOf(flag)).setValue(DoorBlock.HALF, DoubleBlockHalf.LOWER).setValue(WATERLOGGED, waterfilled));
+			} else {
+				callback.setReturnValue(null);
+			}
+			callback.cancel();
 		}
-		callback.cancel();
 	}
 
 	@Inject(at = @At("RETURN"), method = "updateShape(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;")
 	private void injectUpdateShape(BlockState stateIn, Direction direction, BlockState facingState, LevelAccessor accessor, BlockPos pos1, BlockPos pos2, CallbackInfoReturnable<BlockState> callback) {
-		stateIn = stateIn.setValue(WATERLOGGED, accessor.getFluidState(pos1).getType() == Fluids.WATER);
+		if (stateIn.hasProperty(WATERLOGGED)) {
+			stateIn = stateIn.setValue(WATERLOGGED, accessor.getFluidState(pos1).getType() == Fluids.WATER);
+		}
 	}
 
 	@Inject(at = @At("HEAD"), method = "setPlacedBy(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V", cancellable = true)
 	private void injectPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity entity, ItemStack stack, CallbackInfo callback) {
-		boolean waterfilled = level.getFluidState(pos.above()).getType() == Fluids.WATER;
-		level.setBlock(pos.above(), state.setValue(DoorBlock.HALF, DoubleBlockHalf.UPPER).setValue(WATERLOGGED, waterfilled), 3);
-		callback.cancel();
+		if (state.hasProperty(WATERLOGGED)) {
+			boolean waterfilled = level.getFluidState(pos.above()).getType() == Fluids.WATER;
+			level.setBlock(pos.above(), state.setValue(DoorBlock.HALF, DoubleBlockHalf.UPPER).setValue(WATERLOGGED, waterfilled), 3);
+			callback.cancel();
+		}
 	}
 
 	public FluidState getFluidState(BlockState state) {
+		if (!state.hasProperty(WATERLOGGED)) {
+			return Fluids.EMPTY.defaultFluidState();
+		}
 		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
 	}
 	

@@ -4,14 +4,5 @@
       "item": "minecraft:spruce_door"
   },
   "result": "dramaticdoors:short_spruce_door",
-  "count": 2,
-  "conditions": [
-    {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:mod_loaded",
-        "modid": "woodworks"
-      }
-    }
-  ]
+  "count": 2
 }

@@ -1,11 +1,8 @@
 package com.fizzware.dramaticdoors.blockentities;
 
-import java.util.concurrent.atomic.AtomicReference;
+import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nullable;
-
-import com.fizzware.dramaticdoors.DDTags;
-import com.fizzware.dramaticdoors.compat.Compats;
+import com.fizzware.dramaticdoors.tags.DDItemTags;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -14,12 +11,11 @@ import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.items.IItemHandler;
 
 public class TallNetheriteDoorBlockEntity extends BlockEntity
 {
@@ -27,7 +23,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
 	public String password = null;
 	
 	public TallNetheriteDoorBlockEntity(BlockPos pos, BlockState state) {
-		super(DDBlockEntities.TALL_NETHERITE_DOOR.get(), pos, state);
+		super(DDBlockEntities.TALL_NETHERITE_DOOR, pos, state);
 	}
 
 	@Override
@@ -80,21 +76,12 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
     public static KeyStatus hasKeyInInventory(Player player, String key) {
         if (key == null) return KeyStatus.CORRECT_KEY;
         KeyStatus found = KeyStatus.INCORRECT_KEY;
-        //TODO: Figure out how to implement Curios compat.
-        if (Compats.CURIOS_INSTALLED) {
-            //found = SupplementariesCuriosPlugin.isKeyInCurio(player, key);
-            //if (found == KeyStatus.CORRECT_KEY) return found;
-        }
-
-        AtomicReference<IItemHandler> itemHandler = new AtomicReference<>();
-        player.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(itemHandler::set);
-        if (itemHandler.get() != null) {
-            for (int _idx = 0; _idx < itemHandler.get().getSlots(); _idx++) {
-                ItemStack stack = itemHandler.get().getStackInSlot(_idx);
-                if (stack.is(DDTags.KEY)) {
-                    found = KeyStatus.INCORRECT_KEY;
-                    if (isCorrectKey(stack, key)) return KeyStatus.CORRECT_KEY;
-                }
+        Inventory inventory = player.getInventory();
+        for (int idx = 0; idx < inventory.getContainerSize(); idx++) {
+            ItemStack stack = inventory.getItem(idx);
+            if (stack.is(DDItemTags.KEY)) {
+                found = KeyStatus.INCORRECT_KEY;
+                if (isCorrectKey(stack, key)) return KeyStatus.CORRECT_KEY;
             }
         }
         return found;
@@ -124,7 +111,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
 
         ItemStack stack = player.getItemInHand(handIn);
 
-        boolean isKey = stack.is(DDTags.KEY);
+        boolean isKey = stack.is(DDItemTags.KEY);
         //clear ownership
         if (player.isCrouching() && isKey && (player.isCreative() || this.isCorrectKey(stack))) {
         	this.clearOwner();

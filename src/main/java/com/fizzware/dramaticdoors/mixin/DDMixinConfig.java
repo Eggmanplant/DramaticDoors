@@ -7,16 +7,19 @@ import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
-import com.fizzware.dramaticdoors.DDConfig;
-import net.minecraftforge.fml.loading.FMLPaths;
-import net.minecraftforge.fml.loading.LoadingModList;
+import com.fizzware.dramaticdoors.config.DDConfig;
+import net.fabricmc.loader.api.FabricLoader;
 
 public class DDMixinConfig implements IMixinConfigPlugin
 {
+	private boolean waterloggableDoors = true;
+	private boolean waterloggableFenceGates = true;
 
 	@Override
 	public void onLoad(String mixinPackage) {
-		DDConfig.loadConfig(DDConfig.CONFIG, FMLPaths.CONFIGDIR.get().resolve("dramaticdoors-common.toml"));
+		DDConfig.initializeConfigs();
+		waterloggableDoors = DDConfig.CONFIG.getOrDefault("dramaticdoors.waterloggable_doors", true);
+		waterloggableFenceGates = DDConfig.CONFIG.getOrDefault("dramaticdoors.waterloggable_fence_gates", true);
 	}
 
 	@Override
@@ -26,14 +29,14 @@ public class DDMixinConfig implements IMixinConfigPlugin
 
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {			
-			return DDConfig.waterloggableDoors.get();
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {
+			return waterloggableDoors && !FabricLoader.getInstance().isModLoaded("fluidlogged");
+		}
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.JapaneseDoorBlockMixin")) {
+			return waterloggableDoors && FabricLoader.getInstance().isModLoaded("mcwdoors") && !FabricLoader.getInstance().isModLoaded("fluidlogged");
 		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.FenceGateBlockMixin")) {
-			return DDConfig.waterloggableFenceGates.get() && (LoadingModList.get().getModFileById("supplementaries") == null && LoadingModList.get().getModFileById("blockcarpentry") == null);
-		}
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.IronGateBlockMixin")) {
-			return DDConfig.waterloggableFenceGates.get() && LoadingModList.get().getModFileById("supplementaries") != null;
+			return waterloggableFenceGates && !FabricLoader.getInstance().isModLoaded("fluidlogged");
 		}
 		return true;
 	}

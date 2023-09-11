@@ -1,6 +1,6 @@
 package com.fizzware.dramaticdoors.blocks;
 
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.Orientation;

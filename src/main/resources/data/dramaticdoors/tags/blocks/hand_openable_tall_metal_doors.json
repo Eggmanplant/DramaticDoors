@@ -12,6 +12,7 @@
     {"id": "dramaticdoors:tall_steel_door", "required": false}, 
     {"id": "dramaticdoors:tall_chain_door", "required": false}, 
     {"id": "dramaticdoors:tall_sheet_metal_door", "required": false}, 
-    {"id": "dramaticdoors:tall_rusty_sheet_metal_door", "required": false}
+    {"id": "dramaticdoors:tall_rusty_sheet_metal_door", "required": false},
+    {"id": "dramaticdoors:tall_macaw_store_door", "required": false}
   ]
 }

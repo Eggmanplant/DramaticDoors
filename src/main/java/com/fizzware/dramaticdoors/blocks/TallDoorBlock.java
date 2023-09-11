@@ -1,19 +1,17 @@
 package com.fizzware.dramaticdoors.blocks;
 
-import javax.annotation.Nullable;
-import javax.annotation.ParametersAreNonnullByDefault;
+import org.jetbrains.annotations.Nullable;
 
-import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.DDNames;
+import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.compat.Compats;
-import com.fizzware.dramaticdoors.compat.QuarkCompat;
-import com.fizzware.dramaticdoors.compat.registries.DDVanillaesquePackRegistry;
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
-import com.mojang.blaze3d.MethodsReturnNonnullByDefault;
-
+import com.fizzware.dramaticdoors.tags.DDBlockTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.*;
 import net.minecraft.world.InteractionHand;
@@ -51,11 +49,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
-@ParametersAreNonnullByDefault
-@MethodsReturnNonnullByDefault
 @SuppressWarnings("deprecation")
 public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 
@@ -71,6 +65,10 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     protected static final VoxelShape EAST_AABB = Block.box(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D);
     private final BlockSetType type;
 
+    public static final ResourceLocation GOLD_DOOR_RES = new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GOLD);
+    public static final ResourceLocation SILVER_DOOR_RES = new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SILVER);
+    public static final ResourceLocation TOOTH_DOOR_RES = new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TOOTH);
+    
     public TallDoorBlock(Block from, BlockSetType blockset) {
         this(from, blockset, null);
     }
@@ -191,41 +189,21 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (!this.type.canOpenByHand() && !state.is(DDTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
+    	if (!this.type.canOpenByHand() && !state.is(DDBlockTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
             return InteractionResult.PASS;
         } 
     	else {
-    		if (Compats.VANILLAESQUE_PACK_ENABLED.getValue()) {
-	        	if (this == DDVanillaesquePackRegistry.TALL_GOLD_DOOR && state.getValue(POWERED)) {
-	        		return InteractionResult.PASS;
-	        	}
-	        	if (this == DDVanillaesquePackRegistry.TALL_SILVER_DOOR && !state.getValue(POWERED)) {
-	        		return InteractionResult.PASS;
-	        	}
-    		}
+        	if (Compats.SUPPLEMENTARIES_INSTALLED && (this == BuiltInRegistries.BLOCK.get(GOLD_DOOR_RES) && state.getValue(POWERED)) || (this == BuiltInRegistries.BLOCK.get(SILVER_DOOR_RES) && !state.getValue(POWERED))) {
+        		return InteractionResult.PASS;
+        	}
         	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
             level.setBlock(pos, state, 10);
             this.playSound(player, level, pos, state.getValue(OPEN));
             level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
-            if (Compats.VANILLAESQUE_PACK_ENABLED.getValue() && this == DDVanillaesquePackRegistry.TALL_TOOTH_DOOR) {
-            	level.scheduleTick(pos, this, 20);
-            }
             return InteractionResult.sidedSuccess(level.isClientSide);
         }
     }
-    
-	@Override
-	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-		if (this != DDVanillaesquePackRegistry.TALL_TOOTH_DOOR) {
-			return; // Should stop the 'dancing' doors.
-		}
-		if (!level.isClientSide) {
-			state = state.cycle(OPEN);
-			level.setBlock(pos, state, 10);
-			this.playSound(null, level, pos, state.getValue(OPEN));
-		}
-	}
 
     public void toggleDoor(Level level, BlockPos pos, boolean open) {
         BlockState blockstate = level.getBlockState(pos);
@@ -275,7 +253,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             }
         }
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	if (Compats.VANILLAESQUE_PACK_ENABLED.getValue() && (this == DDVanillaesquePackRegistry.TALL_GOLD_DOOR || this == DDVanillaesquePackRegistry.TALL_SILVER_DOOR || this == DDVanillaesquePackRegistry.TALL_LEAD_DOOR)) {
+        	if (Compats.SUPPLEMENTARIES_INSTALLED && (this == BuiltInRegistries.BLOCK.get(GOLD_DOOR_RES) || this == BuiltInRegistries.BLOCK.get(SILVER_DOOR_RES))) {
         		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {
@@ -310,7 +288,6 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     @Override
-    @OnlyIn(Dist.CLIENT)
     public long getSeed(BlockState state, BlockPos pos) {
         return Mth.getSeed(pos.getX(), pos.below(state.getValue(THIRD) == TripleBlockPart.LOWER ? 0 : state.getValue(THIRD) == TripleBlockPart.MIDDLE ? 1 : 2).getY(), pos.getZ());
     }
@@ -373,12 +350,12 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     }
 
 	public static boolean isWoodenDoor(BlockState state) {
-		return state.getBlock() instanceof TallDoorBlock && (state.is(DDTags.TALL_WOODEN_DOORS));
+		return state.getBlock() instanceof TallDoorBlock && (state.is(DDBlockTags.TALL_WOODEN_DOORS));
 	}
     
     //Double Doors Compatibility
 	public static void tryOpenDoubleDoor(Level world, BlockState state, BlockPos pos) {
-        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.MANYIDEAS_DOORS_INSTALLED || QuarkCompat.hasQuarkDoubleDoorsModule()) {
+        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.COUPLINGS_INSTALLED) {
             Direction direction = state.getValue(TallDoorBlock.FACING);
             boolean isOpen = state.getValue(TallDoorBlock.OPEN);
             DoorHingeSide isMirrored = state.getValue(TallDoorBlock.HINGE);

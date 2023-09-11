@@ -1,18 +1,31 @@
 {
-	"required": true,
-	"package": "com.fizzware.dramaticdoors.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"refmap": "mixins.dramaticdoors.refmap.json",
-	"plugin": "com.fizzware.dramaticdoors.mixin.DDMixinConfig",
-	"mixins": [
-        "DoorBlockMixin",
-        "FenceGateBlockMixin",
-        "OpenDoorsTaskMixin",
-        "DoorInteractGoalMixin",
-        "LandPathNodeMakerMixin",
-        "PiglinBrainMixin",
-        "VillagerMixin",
-        "WitchMixin"
-	],
-	"minVersion": "0.8"
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.fizzware.dramaticdoors.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AdvancementManagerMixin",
+    "RecipeManagerMixin",
+    "BlockLootMixin",
+    "LandPathNodeMakerMixin",
+    "DoorBlockMixin",
+    "FenceGateBlockMixin",
+    "JapaneseDoorBlockMixin",
+    "DoorInteractGoalMixin",
+    "OpenDoorsTaskMixin",
+    "PiglinBrainMixin",
+    "VillagerMixin",
+    "WitchMixin"
+  ],
+  "client": [
+    "CPIMMixin"
+  ],
+  "server": [
+    "SPIMMixin"  
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "maxShiftBy": 2,
+  "refmap": "DramaticDoors-QuiFabrge-refmap.json"
 }
