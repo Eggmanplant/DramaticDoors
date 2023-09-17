@@ -9,6 +9,7 @@ public class Compats
 	public static final boolean COUPLINGS_INSTALLED;
 	public static final boolean DOUBLE_DOORS_INSTALLED;
     public static final boolean AUTOMATIC_DOORS_INSTALLED;
+	public static final boolean BLUEPRINT_INSTALLED;
 	public static final boolean WOODWORKS_INSTALLED;
 	public static final boolean SUPPLEMENTARIES_INSTALLED;
     public static final boolean QUARK_INSTALLED;
@@ -17,6 +18,7 @@ public class Compats
     	COUPLINGS_INSTALLED = FabricLoader.getInstance().isModLoaded("couplings");
     	DOUBLE_DOORS_INSTALLED = FabricLoader.getInstance().isModLoaded("doubledoors");
     	AUTOMATIC_DOORS_INSTALLED = FabricLoader.getInstance().isModLoaded("automaticdoors");
+    	BLUEPRINT_INSTALLED = FabricLoader.getInstance().isModLoaded("blueprint");
     	WOODWORKS_INSTALLED = FabricLoader.getInstance().isModLoaded("woodworks");
     	SUPPLEMENTARIES_INSTALLED = FabricLoader.getInstance().isModLoaded("supplementaries");
     	QUARK_INSTALLED = FabricLoader.getInstance().isModLoaded("quark");

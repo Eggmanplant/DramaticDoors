@@ -57,6 +57,7 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	modImplementation "curse.maven:macaws-doors-378646:4649888"
+	modImplementation "curse.maven:macaws-doors-forge-378646:4649910"
 }
 
 processResources {

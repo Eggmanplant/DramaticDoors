@@ -12,6 +12,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.*;
 import net.minecraft.world.InteractionHand;
@@ -201,10 +202,28 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             level.setBlock(pos, state, 10);
             this.playSound(player, level, pos, state.getValue(OPEN));
             level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+            if (Compats.BLUEPRINT_INSTALLED && this == BuiltInRegistries.BLOCK.get(TOOTH_DOOR_RES)) {
+            	level.scheduleTick(pos, this, 20);
+            }
             return InteractionResult.sidedSuccess(level.isClientSide);
         }
     }
 
+	@Override
+	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+		if (!Compats.BLUEPRINT_INSTALLED) {
+			return;
+		}
+		if (this != BuiltInRegistries.BLOCK.get(TOOTH_DOOR_RES)) {
+			return; // Should stop the 'dancing' doors.
+		}
+		if (!level.isClientSide) {
+			state = state.cycle(OPEN);
+			level.setBlock(pos, state, 10);
+			this.playSound(null, level, pos, state.getValue(OPEN));
+		}
+	}
+    
     public void toggleDoor(Level level, BlockPos pos, boolean open) {
         BlockState blockstate = level.getBlockState(pos);
         if (blockstate.getBlock() == this && blockstate.getValue(OPEN) != open) {
