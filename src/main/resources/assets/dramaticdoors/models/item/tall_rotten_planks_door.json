@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dramaticdoors:item/tall_rotten_door"
+    "layer0": "dramaticdoors:item/tall_rotten_planks_door"
   }
 }

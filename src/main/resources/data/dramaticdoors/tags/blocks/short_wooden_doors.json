@@ -110,9 +110,14 @@
     {"id": "dramaticdoors:short_aether_skyroot_door", "required": false},
     
     {"id": "dramaticdoors:short_twisted_door", "required": false},
+
+    {"id": "dramaticdoors:short_deadwood_door", "required": false},
+    {"id": "dramaticdoors:short_palm_door", "required": false},
     
     {"id": "dramaticdoors:short_be_bamboo_door", "required": false},
     {"id": "dramaticdoors:short_be_dry_bamboo_door", "required": false},
+
+    {"id": "dramaticdoors:short_rotten_door", "required": false},
     
     {"id": "dramaticdoors:short_dragon_tree_door", "required": false},
     {"id": "dramaticdoors:short_end_lotus_door", "required": false},

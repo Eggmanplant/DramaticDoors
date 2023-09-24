@@ -11,7 +11,7 @@ public class DDConfig
 		configProvider = new ModConfigProvider();
 		createConfigs();
 		
-		CONFIG = SimpleConfig.of("dramaticdoors-fabric").provider(configProvider).request();
+		CONFIG = SimpleConfig.of("dramaticdoors-quifabrge").provider(configProvider).request();
 		assignConfigs();
 	}
 	

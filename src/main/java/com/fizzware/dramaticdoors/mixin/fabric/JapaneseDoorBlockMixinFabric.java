@@ -18,7 +18,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 
 @Mixin(JapaneseDoors.class)
-public class JapaneseDoorBlockMixin
+public class JapaneseDoorBlockMixinFabric
 {
 	private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 	

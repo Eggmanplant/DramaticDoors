@@ -253,6 +253,28 @@
 
   "block.dramaticdoors.short_twisted_door": "Short Twisted Door",
   "block.dramaticdoors.tall_twisted_door": "Tall Twisted Door",
+
+  "block.dramaticdoors.short_deadwood_door": "Short Deadwood Door",
+  "block.dramaticdoors.short_palm_door": "Short Palm Door",
+  "block.dramaticdoors.short_limestone_door": "Short Limestone Door",
+  "block.dramaticdoors.short_limestone_cracked_door": "Short Cracked Limestone Door",
+  "block.dramaticdoors.short_limestone_brick_small_door": "Short Small Limestone Brick Door",
+  "block.dramaticdoors.short_limestone_brick_large_door": "Short Large Limestone Brick Door",
+  "block.dramaticdoors.short_limestone_brick_cracked_brick_door": "Short Cracked Limestone Brick Door",
+  "block.dramaticdoors.short_limestone_brick_chiseled_door": "Short Chiseled Limestone Brick Door",
+  "block.dramaticdoors.short_limestone_brick_carved_door": "Short Carved Limestone Brick Door",
+  "block.dramaticdoors.tall_deadwood_door": "Tall Deadwood Door",
+  "block.dramaticdoors.tall_palm_door": "Tall Palm Door",
+  "block.dramaticdoors.tall_limestone_door": "Tall Limestone Door",
+  "block.dramaticdoors.tall_limestone_cracked_door": "Tall Cracked Limestone Door",
+  "block.dramaticdoors.tall_limestone_brick_small_door": "Tall Small Limestone Brick Door",
+  "block.dramaticdoors.tall_limestone_brick_large_door": "Tall Large Limestone Brick Door",
+  "block.dramaticdoors.tall_limestone_brick_cracked_brick_door": "Tall Cracked Limestone Brick Door",
+  "block.dramaticdoors.tall_limestone_brick_chiseled_door": "Tall Chiseled Limestone Brick Door",
+  "block.dramaticdoors.tall_limestone_brick_carved_door": "Tall Carved Limestone Brick Door",
+
+  "block.dramaticdoors.short_rotten_door": "Short Rotten Door",
+  "block.dramaticdoors.tall_rotten_door": "Tall Rotten Door",
   
   "block.dramaticdoors.short_terminite_door": "Short Terminite Door",
   "block.dramaticdoors.short_thallasium_door": "Short Thallasium Door",

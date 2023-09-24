@@ -249,12 +249,38 @@ public class DDNames
     
     public static final String TALL_ARCHWOOD = "tall_archwood_door";
     
+    // Atum
+    public static final String SHORT_DEADWOOD = "short_deadwood_door";
+    public static final String SHORT_PALM = "short_palm_door";
+    public static final String SHORT_LIMESTONE = "short_limestone_door";
+    public static final String SHORT_LIMESTONE_CRACKED = "short_limestone_cracked_door";
+    public static final String SHORT_LIMESTONE_BRICK_SMALL = "short_limestone_brick_small_door";
+    public static final String SHORT_LIMESTONE_BRICK_LARGE = "short_limestone_brick_large_door";
+    public static final String SHORT_LIMESTONE_BRICK_CRACKED_BRICK = "short_limestone_brick_cracked_brick_door";
+    public static final String SHORT_LIMESTONE_BRICK_CHISELED = "short_limestone_brick_chiseled_door";
+    public static final String SHORT_LIMESTONE_BRICK_CARVED = "short_limestone_brick_carved_door";
+    
+    public static final String TALL_DEADWOOD = "tall_deadwood_door";
+    public static final String TALL_PALM = "tall_palm_door";
+    public static final String TALL_LIMESTONE = "tall_limestone_door";
+    public static final String TALL_LIMESTONE_CRACKED = "tall_limestone_cracked_door";
+    public static final String TALL_LIMESTONE_BRICK_SMALL = "tall_limestone_brick_small_door";
+    public static final String TALL_LIMESTONE_BRICK_LARGE = "tall_limestone_brick_large_door";
+    public static final String TALL_LIMESTONE_BRICK_CRACKED_BRICK = "tall_limestone_brick_cracked_brick_door";
+    public static final String TALL_LIMESTONE_BRICK_CHISELED = "tall_limestone_brick_chiseled_door";
+    public static final String TALL_LIMESTONE_BRICK_CARVED = "tall_limestone_brick_carved_door";
+    
     //Bamboo Everything
     public static final String SHORT_BE_BAMBOO = "short_be_bamboo_door";
     public static final String SHORT_BE_DRY_BAMBOO = "short_be_dry_bamboo_door";
 
     public static final String TALL_BE_BAMBOO = "tall_be_bamboo_door";
     public static final String TALL_BE_DRY_BAMBOO = "tall_be_dry_bamboo_door";
+    
+    //Better Archaeology
+    public static final String SHORT_ROTTEN = "short_rotten_door";
+    
+    public static final String TALL_ROTTEN = "tall_rotten_door";
     
     //Better End
     public static final String SHORT_TERMINITE = "short_terminite_door";

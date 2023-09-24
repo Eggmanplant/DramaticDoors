@@ -227,11 +227,35 @@ public class DDItems {
             entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWISTED)), TabVisibility.PARENT_AND_SEARCH_TABS);
             entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWISTED)), TabVisibility.PARENT_AND_SEARCH_TABS);
         }
+        if (FabricLoader.getInstance().isModLoaded("atum")) {
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DEADWOOD)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DEADWOOD)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_PALM)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PALM)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LIMESTONE)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LIMESTONE)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LIMESTONE_CRACKED)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LIMESTONE_CRACKED)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LIMESTONE_BRICK_SMALL)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LIMESTONE_BRICK_SMALL)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LIMESTONE_BRICK_LARGE)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LIMESTONE_BRICK_LARGE)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LIMESTONE_BRICK_CRACKED_BRICK)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LIMESTONE_BRICK_CRACKED_BRICK)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LIMESTONE_BRICK_CHISELED)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LIMESTONE_BRICK_CHISELED)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_LIMESTONE_BRICK_CARVED)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_LIMESTONE_BRICK_CARVED)), TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
         if (FabricLoader.getInstance().isModLoaded("bambooeverything")) {
             entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BE_BAMBOO)), TabVisibility.PARENT_AND_SEARCH_TABS);
             entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BE_BAMBOO)), TabVisibility.PARENT_AND_SEARCH_TABS);
             entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BE_DRY_BAMBOO)), TabVisibility.PARENT_AND_SEARCH_TABS);
             entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BE_DRY_BAMBOO)), TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
+        if (FabricLoader.getInstance().isModLoaded("betterarcheology")) {
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ROTTEN)), TabVisibility.PARENT_AND_SEARCH_TABS);
+            entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ROTTEN)), TabVisibility.PARENT_AND_SEARCH_TABS);
         }
         if (FabricLoader.getInstance().isModLoaded("betterend")) {
             entries.accept(BuiltInRegistries.ITEM.get(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TERMINITE)), TabVisibility.PARENT_AND_SEARCH_TABS);

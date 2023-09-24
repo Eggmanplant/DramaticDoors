@@ -40,8 +40,14 @@ public class Compats
 		if (FabricLoader.getInstance().isModLoaded("architects_palette")) {
 			ArchitectsPaletteCompat.registerCompat();
 		}
+		if (FabricLoader.getInstance().isModLoaded("atum")) {
+			AtumCompat.registerCompat();
+		}
 		if (FabricLoader.getInstance().isModLoaded("bambooeverything")) {
 			BambooEverythingCompat.registerCompat();
+		}
+		if (FabricLoader.getInstance().isModLoaded("betterarcheology")) {
+			BetterArchaeologyCompat.registerCompat();
 		}
 		if (FabricLoader.getInstance().isModLoaded("betterend")) {
 			BetterEndCompat.registerCompat();

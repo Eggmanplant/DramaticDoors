@@ -54,17 +54,17 @@ public class BetterNetherCompat
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_WART, new ResourceLocation("betternether", "wart_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BN_WILLOW, new ResourceLocation("betternether", "willow_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_ANCHOR_TREE, new ResourceLocation("betternether", "anchor_tree_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_BONE_CIN, new ResourceLocation("betternether", "bone_cincinnasite_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_BONE_REED, new ResourceLocation("betternether", "bone_reed_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_MUSHROOM_FIR, new ResourceLocation("betternether", "mushroom_fir_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_NETHER_MUSHROOM, new ResourceLocation("betternether", "nether_mushroom_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_NETHER_REED, new ResourceLocation("betternether", "nether_reed_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_NETHER_SAKURA, new ResourceLocation("betternether", "nether_sakura_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_RUBEUS, new ResourceLocation("betternether", "rubeus_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_STALAGNATE, new ResourceLocation("betternether", "stalagnate_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_WART, new ResourceLocation("betternether", "wart_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.TALL_BN_WILLOW, new ResourceLocation("betternether", "willow_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ANCHOR_TREE, new ResourceLocation("betternether", "anchor_tree_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BONE_CIN, new ResourceLocation("betternether", "bone_cincinnasite_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BONE_REED, new ResourceLocation("betternether", "bone_reed_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MUSHROOM_FIR, new ResourceLocation("betternether", "mushroom_fir_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_NETHER_MUSHROOM, new ResourceLocation("betternether", "nether_mushroom_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_NETHER_REED, new ResourceLocation("betternether", "nether_reed_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_NETHER_SAKURA, new ResourceLocation("betternether", "nether_sakura_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_RUBEUS, new ResourceLocation("betternether", "rubeus_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_STALAGNATE, new ResourceLocation("betternether", "stalagnate_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_WART, new ResourceLocation("betternether", "wart_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BN_WILLOW, new ResourceLocation("betternether", "willow_door"), true);
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ANCHOR_TREE, new ResourceLocation("betternether", "anchor_tree_door"), "tall_bn_wooden_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BONE_CIN, new ResourceLocation("betternether", "bone_cincinnasite_door"), "tall_bn_wooden_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BONE_REED, new ResourceLocation("betternether", "bone_reed_door"), "tall_bn_wooden_door");

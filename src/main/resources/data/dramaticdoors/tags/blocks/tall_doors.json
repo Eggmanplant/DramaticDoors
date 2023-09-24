@@ -10,6 +10,14 @@
     {"id": "dramaticdoors:tall_thallasium_door", "required": false},
     
     {"id": "dramaticdoors:tall_aa_steel_door", "required": false}, 
+
+    {"id": "dramaticdoors:tall_limestone_door", "required": false}, 
+    {"id": "dramaticdoors:tall_limestone_cracked_door", "required": false}, 
+    {"id": "dramaticdoors:tall_limestone_brick_small_door", "required": false}, 
+    {"id": "dramaticdoors:tall_limestone_brick_large_door", "required": false}, 
+    {"id": "dramaticdoors:tall_limestone_brick_cracked_brick_door", "required": false}, 
+    {"id": "dramaticdoors:tall_limestone_brick_chiseled_door", "required": false}, 
+    {"id": "dramaticdoors:tall_limestone_brick_carved_door", "required": false}, 
     
     {"id": "dramaticdoors:tall_flesh_door", "required": false},
     {"id": "dramaticdoors:tall_full_flesh_door", "required": false},
