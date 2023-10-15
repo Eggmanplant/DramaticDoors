@@ -86,11 +86,11 @@ public class AbnormalsCompat
 			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MAPLE, new ResourceLocation("autumnity", "maple_door"), "tall_wooden_door");
 		}
 		if (checker.isModLoaded("buzzier_bees")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_HONEYCOMB, new ResourceLocation("buzzier_Bees", "homeycomb_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_HONEYCOMB, new ResourceLocation("buzzier_Bees", "homeycomb_door"));
+			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"));
+			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"));
 	
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_HONEYCOMB, new ResourceLocation("buzzier_Bees", "honeycomb_door"), false);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_HONEYCOMB, new ResourceLocation("buzzier_Bees", "homeycomb_door"), "tall_misc_door");
+			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"), false);
+			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"), "tall_misc_door");
 		}
 		if (checker.isModLoaded("caverns_and_chasms")) {
 			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"));

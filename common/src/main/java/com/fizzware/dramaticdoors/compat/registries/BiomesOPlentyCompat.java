@@ -16,6 +16,7 @@ public class BiomesOPlentyCompat
 	}
 	
 	private static void registerBlocksItems() {
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BOP_CHERRY, DDNames.SHORT_BOP_CHERRY, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("biomesoplenty", "cherry_door")), true, DDRegistry.MAIN_TAB);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BOP_DEAD, DDNames.SHORT_BOP_DEAD, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("biomesoplenty", "dead_door")), true, DDRegistry.MAIN_TAB);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BOP_FIR, DDNames.SHORT_BOP_FIR, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("biomesoplenty", "fir_door")), true, DDRegistry.MAIN_TAB);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BOP_HELLBARK, DDNames.SHORT_BOP_HELLBARK, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("biomesoplenty", "hellbark_door")), true, DDRegistry.MAIN_TAB);
@@ -29,6 +30,7 @@ public class BiomesOPlentyCompat
 	}
 	
 	private static void registerRecipes() {
+		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BOP_CHERRY, new ResourceLocation("biomesoplenty", "cherry_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BOP_DEAD, new ResourceLocation("biomesoplenty", "dead_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BOP_FIR, new ResourceLocation("biomesoplenty", "fir_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BOP_HELLBARK, new ResourceLocation("biomesoplenty", "hellbark_door"));
@@ -39,6 +41,7 @@ public class BiomesOPlentyCompat
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BOP_REDWOOD, new ResourceLocation("biomesoplenty", "redwood_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BOP_UMBRAN, new ResourceLocation("biomesoplenty", "umbran_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BOP_WILLOW, new ResourceLocation("biomesoplenty", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BOP_CHERRY, new ResourceLocation("biomesoplenty", "cherry_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BOP_DEAD, new ResourceLocation("biomesoplenty", "dead_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BOP_FIR, new ResourceLocation("biomesoplenty", "fir_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BOP_HELLBARK, new ResourceLocation("biomesoplenty", "hellbark_door"));
@@ -50,6 +53,7 @@ public class BiomesOPlentyCompat
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BOP_UMBRAN, new ResourceLocation("biomesoplenty", "umbran_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BOP_WILLOW, new ResourceLocation("biomesoplenty", "willow_door"));
 		
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BOP_CHERRY, new ResourceLocation("biomesoplenty", "cherry_door"), true);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BOP_DEAD, new ResourceLocation("biomesoplenty", "dead_door"), true);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BOP_FIR, new ResourceLocation("biomesoplenty", "fir_door"), true);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BOP_HELLBARK, new ResourceLocation("biomesoplenty", "hellbark_door"), true);
@@ -60,6 +64,7 @@ public class BiomesOPlentyCompat
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BOP_REDWOOD, new ResourceLocation("biomesoplenty", "redwood_door"), true);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BOP_UMBRAN, new ResourceLocation("biomesoplenty", "umbran_door"), true);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BOP_WILLOW, new ResourceLocation("biomesoplenty", "willow_door"), true);
+		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BOP_CHERRY, new ResourceLocation("biomesoplenty", "cherry_door"), "tall_bop_wooden_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BOP_DEAD, new ResourceLocation("biomesoplenty", "dead_door"), "tall_bop_wooden_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BOP_FIR, new ResourceLocation("biomesoplenty", "fir_door"), "tall_bop_wooden_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BOP_HELLBARK, new ResourceLocation("biomesoplenty", "hellbark_door"), "tall_bop_wooden_door");

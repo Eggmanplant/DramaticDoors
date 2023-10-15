@@ -20,6 +20,7 @@ public class ForbiddenArcanusCompat
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_DEORUM, DDNames.SHORT_DEORUM, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("forbidden_arcanus", "deorum_door"), Blocks.IRON_DOOR), true, DDRegistry.MAIN_TAB);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_ARCANE_EDELWOOD, DDNames.SHORT_ARCANE_EDELWOOD, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("forbidden_arcanus", "arcane_edelwood_door")), true, DDRegistry.MAIN_TAB);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_AURUM, DDNames.SHORT_AURUM, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("forbidden_arcanus", "aurum_door")), true, DDRegistry.MAIN_TAB);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_CHERRYWOOD, DDNames.SHORT_CHERRYWOOD, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("forbidden_arcanus", "cherry_door")), true, DDRegistry.MAIN_TAB);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_EDELWOOD, DDNames.SHORT_EDELWOOD, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("forbidden_arcanus", "edelwood_door")), true, DDRegistry.MAIN_TAB);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_FUNGYSS, DDNames.SHORT_FUNGYSS, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("forbidden_arcanus", "fungyss_door")), true, DDRegistry.MAIN_TAB);
 	}
@@ -28,22 +29,26 @@ public class ForbiddenArcanusCompat
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_DEORUM, new ResourceLocation("forbidden_arcanus", "deorum_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ARCANE_EDELWOOD, new ResourceLocation("forbidden_arcanus", "arcane_edelwood_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_AURUM, new ResourceLocation("forbidden_arcanus", "aurum_door"));
+		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHERRYWOOD, new ResourceLocation("forbidden_arcanus", "cherry_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EDELWOOD, new ResourceLocation("forbidden_arcanus", "edelwood_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_FUNGYSS, new ResourceLocation("forbidden_arcanus", "fungyss_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_DEORUM, new ResourceLocation("forbidden_arcanus", "deorum_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ARCANE_EDELWOOD, new ResourceLocation("forbidden_arcanus", "arcane_edelwood_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_AURUM, new ResourceLocation("forbidden_arcanus", "aurum_door"));
+		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHERRYWOOD, new ResourceLocation("forbidden_arcanus", "cherry_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EDELWOOD, new ResourceLocation("forbidden_arcanus", "edelwood_door"));
 		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_FUNGYSS, new ResourceLocation("forbidden_arcanus", "fungyss_door"));
 		
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_DEORUM, new ResourceLocation("forbidden_arcanus", "deorum_door"), false);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ARCANE_EDELWOOD, new ResourceLocation("forbidden_arcanus", "arcane_edelwood_door"), true);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_AURUM, new ResourceLocation("forbidden_arcanus", "aurum_door"), true);
+		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHERRYWOOD, new ResourceLocation("forbidden_arcanus", "cherry_door"), true);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EDELWOOD, new ResourceLocation("forbidden_arcanus", "edelwood_door"), true);
 		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_FUNGYSS, new ResourceLocation("forbidden_arcanus", "fungyss_door"), true);
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_DEORUM, new ResourceLocation("forbidden_arcanus", "deorum_door"), "tall_metal_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ARCANE_EDELWOOD, new ResourceLocation("forbidden_arcanus", "arcane_edelwood_door"), "tall_wooden_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_AURUM, new ResourceLocation("forbidden_arcanus", "aurum_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHERRYWOOD, new ResourceLocation("forbidden_arcanus", "cherry_door"), "tall_wooden_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EDELWOOD, new ResourceLocation("forbidden_arcanus", "edelwood_door"), "tall_wooden_door");
 		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_FUNGYSS, new ResourceLocation("forbidden_arcanus", "fungyss_door"), "tall_wooden_door");
 	}
