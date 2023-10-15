@@ -1,7 +1,0 @@
-{
-  "pack": {
-    "description": "DD: Biomes compat pack",
-    "pack_format": 10,
-    "_comment": "Provides compatibility for biome mods."
-  }
-}

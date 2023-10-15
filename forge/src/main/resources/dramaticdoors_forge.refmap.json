@@ -1,0 +1,98 @@
+{
+  "mappings": {
+    "com/fizzware/dramaticdoors/forge/forge/mixin/AdvancementManagerMixin": {
+      "apply": "Lnet/minecraft/server/ServerAdvancementManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/BlockLootMixin": {
+      "Lnet/minecraft/world/level/storage/loot/LootTable;getRandomItems(Lnet/minecraft/world/level/storage/loot/LootContext;)Lit/unimi/dsi/fastutil/objects/ObjectArrayList;": "Lnet/minecraft/world/level/storage/loot/LootTable;m_230922_(Lnet/minecraft/world/level/storage/loot/LootContext;)Lit/unimi/dsi/fastutil/objects/ObjectArrayList;",
+      "getDrops(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/storage/loot/LootContext$Builder;)Ljava/util/List;": "Lnet/minecraft/world/level/block/state/BlockBehaviour;m_7381_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/storage/loot/LootContext$Builder;)Ljava/util/List;"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/DoorInteractGoalMixin": {
+      "isOpen()Z": "Lnet/minecraft/world/entity/ai/goal/DoorInteractGoal;m_25200_()Z",
+      "setOpen(Z)V": "Lnet/minecraft/world/entity/ai/goal/DoorInteractGoal;m_25195_(Z)V",
+      "canUse()Z": "Lnet/minecraft/world/entity/ai/goal/DoorInteractGoal;m_8036_()Z",
+      "Lnet/minecraft/world/level/block/DoorBlock;isWoodenDoor(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z": "Lnet/minecraft/world/level/block/DoorBlock;m_52745_(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/FenceGateBlockMixin": {
+      "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+      "getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/world/level/block/FenceGateBlock;m_5573_(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;",
+      "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/LandPathNodeMakerMixin": {
+      "getBlockPathTypeRaw(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;": "Lnet/minecraft/world/level/pathfinder/WalkNodeEvaluator;m_77643_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/OpenDoorsTaskMixin": {
+      "start(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_6735_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V",
+      "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;rememberDoorToClose(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_23325_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;)V",
+      "Lnet/minecraft/server/level/ServerLevel;getBlockState(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/server/level/ServerLevel;m_8055_(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;",
+      "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;closeDoorsThatIHaveOpenedOrPassedThrough(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_23298_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V",
+      "closeDoorsThatIHaveOpenedOrPassedThrough(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_23298_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/RecipeManagerMixin": {
+      "apply": "Lnet/minecraft/world/item/crafting/RecipeManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/JapaneseDoorBlockMixinForge": {
+      "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+      "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/DoorBlockMixin": {
+      "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/DoorBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+      "getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/world/level/block/DoorBlock;m_5573_(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;",
+      "updateShape(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/world/level/block/DoorBlock;m_7417_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;",
+      "setPlacedBy(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V": "Lnet/minecraft/world/level/block/DoorBlock;m_6402_(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V",
+      "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lnet/minecraft/world/level/block/DoorBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/WitchMixin": {
+      "registerGoals()V": "Lnet/minecraft/world/entity/monster/Witch;m_8099_()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/fizzware/dramaticdoors/forge/forge/mixin/AdvancementManagerMixin": {
+        "apply": "Lnet/minecraft/server/ServerAdvancementManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/BlockLootMixin": {
+        "Lnet/minecraft/world/level/storage/loot/LootTable;getRandomItems(Lnet/minecraft/world/level/storage/loot/LootContext;)Lit/unimi/dsi/fastutil/objects/ObjectArrayList;": "Lnet/minecraft/world/level/storage/loot/LootTable;m_230922_(Lnet/minecraft/world/level/storage/loot/LootContext;)Lit/unimi/dsi/fastutil/objects/ObjectArrayList;",
+        "getDrops(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/storage/loot/LootContext$Builder;)Ljava/util/List;": "Lnet/minecraft/world/level/block/state/BlockBehaviour;m_7381_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/storage/loot/LootContext$Builder;)Ljava/util/List;"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/DoorInteractGoalMixin": {
+        "isOpen()Z": "Lnet/minecraft/world/entity/ai/goal/DoorInteractGoal;m_25200_()Z",
+        "setOpen(Z)V": "Lnet/minecraft/world/entity/ai/goal/DoorInteractGoal;m_25195_(Z)V",
+        "canUse()Z": "Lnet/minecraft/world/entity/ai/goal/DoorInteractGoal;m_8036_()Z",
+        "Lnet/minecraft/world/level/block/DoorBlock;isWoodenDoor(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z": "Lnet/minecraft/world/level/block/DoorBlock;m_52745_(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/FenceGateBlockMixin": {
+        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+        "getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/world/level/block/FenceGateBlock;m_5573_(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;",
+        "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/LandPathNodeMakerMixin": {
+        "getBlockPathTypeRaw(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;": "Lnet/minecraft/world/level/pathfinder/WalkNodeEvaluator;m_77643_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/OpenDoorsTaskMixin": {
+        "start(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_6735_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;J)V",
+        "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;rememberDoorToClose(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_23325_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;)V",
+        "Lnet/minecraft/server/level/ServerLevel;getBlockState(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/server/level/ServerLevel;m_8055_(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;",
+        "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;closeDoorsThatIHaveOpenedOrPassedThrough(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_23298_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V",
+        "closeDoorsThatIHaveOpenedOrPassedThrough(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_23298_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/RecipeManagerMixin": {
+        "apply": "Lnet/minecraft/world/item/crafting/RecipeManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/JapaneseDoorBlockMixinForge": {
+        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+        "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/DoorBlockMixin": {
+        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/DoorBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+        "getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/world/level/block/DoorBlock;m_5573_(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;",
+        "updateShape(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/world/level/block/DoorBlock;m_7417_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;",
+        "setPlacedBy(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V": "Lnet/minecraft/world/level/block/DoorBlock;m_6402_(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V",
+        "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lnet/minecraft/world/level/block/DoorBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/WitchMixin": {
+        "registerGoals()V": "Lnet/minecraft/world/entity/monster/Witch;m_8099_()V"
+      }
+    }
+  }
+}
