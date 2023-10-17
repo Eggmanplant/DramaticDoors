@@ -7,7 +7,6 @@ import com.fizzware.dramaticdoors.compat.DDCompatRecipe;
 
 import net.minecraft.resources.ResourceLocation;
 
-
 public class AetherCompat
 {
 	public static void registerCompat() {

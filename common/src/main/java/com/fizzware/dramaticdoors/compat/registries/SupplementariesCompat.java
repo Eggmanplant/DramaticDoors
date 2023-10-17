@@ -46,14 +46,14 @@ public class SupplementariesCompat
     	DDRegistry.DOOR_BLOCKS_TO_REGISTER.add(new Pair<String, Block>(DDNames.TALL_LEAD, TALL_LEAD_DOOR));
     	DDRegistry.DOOR_BLOCKS_TO_REGISTER.add(new Pair<String, Block>(DDNames.TALL_NETHERITE, TALL_NETHERITE_DOOR));
     	
-    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_GOLD, new ShortDoorItem(SHORT_GOLD_DOOR, DDRegistry.PROPERTIES)));
-    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_SILVER, new ShortDoorItem(SHORT_SILVER_DOOR, DDRegistry.PROPERTIES)));
-    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_LEAD, new ShortDoorItem(SHORT_LEAD_DOOR, DDRegistry.PROPERTIES)));
-    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_NETHERITE, new ShortDoorItem(SHORT_NETHERITE_DOOR, DDRegistry.PROPERTIES)));
-    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_GOLD, new TallDoorItem(TALL_GOLD_DOOR, DDRegistry.PROPERTIES)));
-    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_SILVER, new TallDoorItem(TALL_SILVER_DOOR, DDRegistry.PROPERTIES)));
-    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_LEAD, new TallDoorItem(TALL_LEAD_DOOR, DDRegistry.PROPERTIES)));
-    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_NETHERITE, new TallDoorItem(TALL_NETHERITE_DOOR, DDRegistry.PROPERTIES)));
+    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_GOLD, new ShortDoorItem(SHORT_GOLD_DOOR, DDRegistry.PROPERTIES.tab(DDRegistry.MAIN_TAB))));
+    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_SILVER, new ShortDoorItem(SHORT_SILVER_DOOR, DDRegistry.PROPERTIES.tab(DDRegistry.MAIN_TAB))));
+    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_LEAD, new ShortDoorItem(SHORT_LEAD_DOOR, DDRegistry.PROPERTIES.tab(DDRegistry.MAIN_TAB))));
+    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_NETHERITE, new ShortDoorItem(SHORT_NETHERITE_DOOR, DDRegistry.PROPERTIES.fireResistant().tab(DDRegistry.MAIN_TAB))));
+    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_GOLD, new TallDoorItem(TALL_GOLD_DOOR, DDRegistry.PROPERTIES.tab(DDRegistry.MAIN_TAB))));
+    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_SILVER, new TallDoorItem(TALL_SILVER_DOOR, DDRegistry.PROPERTIES.tab(DDRegistry.MAIN_TAB))));
+    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_LEAD, new TallDoorItem(TALL_LEAD_DOOR, DDRegistry.PROPERTIES.tab(DDRegistry.MAIN_TAB))));
+    	DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_NETHERITE, new TallDoorItem(TALL_NETHERITE_DOOR, DDRegistry.PROPERTIES.fireResistant().tab(DDRegistry.MAIN_TAB))));
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {

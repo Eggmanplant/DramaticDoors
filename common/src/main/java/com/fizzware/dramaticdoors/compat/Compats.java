@@ -56,12 +56,18 @@ public class Compats
 		if (isModLoaded("aether", checker)) {
 			AetherCompat.registerCompat();
 		}
+		if (isModLoaded("aether_redux", checker)) {
+			AetherReduxCompat.registerCompat();
+		}
 		if (isModLoaded("architects_palette", checker)) {
 			ArchitectsPaletteCompat.registerCompat();
 		}
 		if (isModLoaded("atum", checker)) {
 			AtumCompat.registerCompat();
 		}
+		/*if (isModLoaded("aurorasdeco", checker)) {
+			AurorasDecorationsCompat.registerCompat();
+		}*/
 		if (isModLoaded("bambooeverything", checker)) {
 			BambooEverythingCompat.registerCompat();
 		}
@@ -86,6 +92,9 @@ public class Compats
     	if (isModLoaded("biomesoplenty", checker)) {
     		BiomesOPlentyCompat.registerCompat();
     	}
+		if (isModLoaded("blocksplus", checker)) {
+			BlocksPlusCompat.registerCompat();
+		}
 		if (isModLoaded("blockus", checker)) {
 			BlockusCompat.registerCompat();
 		}
@@ -127,6 +136,9 @@ public class Compats
 		}
 		if (isModLoaded("deeperdarker", checker)) {
 			DeeperDarkerCompat.registerCompat();
+		}
+		if (isModLoaded("desolation", checker)) {
+			DesolationCompat.registerCompat();
 		}
 		if (isModLoaded("dustrial_decor", checker)) {
 			DustrialDecorCompat.registerCompat();

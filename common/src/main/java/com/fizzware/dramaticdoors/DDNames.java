@@ -239,6 +239,21 @@ public class DDNames
 
     public static final String TALL_AETHER_SKYROOT = "tall_aether_skyroot_door";
     
+    //Aether Redux
+    public static final String SHORT_BLIGHTWILLOW = "short_blightwillow_door";
+    public static final String SHORT_CLOUDCAP = "short_cloudcap_door";
+    public static final String SHORT_CRYSTAL = "short_crystal_door";
+    public static final String SHORT_GLACIA = "short_glacia_door";
+    public static final String SHORT_PRISMATIC = "short_prismatic_door";
+    public static final String SHORT_SPRINGSHROOM = "short_springshroom_door";
+
+    public static final String TALL_BLIGHTWILLOW = "tall_blightwillow_door";
+    public static final String TALL_CLOUDCAP = "tall_cloudcap_door";
+    public static final String TALL_CRYSTAL = "tall_crystal_door";
+    public static final String TALL_GLACIA = "tall_glacia_door";
+    public static final String TALL_PRISMATIC = "tall_prismatic_door";
+    public static final String TALL_SPRINGSHROOM = "tall_springshroom_door";
+    
     //Architects Palette
     public static final String SHORT_TWISTED = "short_twisted_door";
 
@@ -269,6 +284,13 @@ public class DDNames
     public static final String TALL_LIMESTONE_BRICK_CRACKED_BRICK = "tall_limestone_brick_cracked_brick_door";
     public static final String TALL_LIMESTONE_BRICK_CHISELED = "tall_limestone_brick_chiseled_door";
     public static final String TALL_LIMESTONE_BRICK_CARVED = "tall_limestone_brick_carved_door";
+    
+    // Auroras Decorations
+    public static final String SHORT_AD_AZALEA = "short_ad_azalea_door";
+    public static final String SHORT_AD_JACARANDA = "short_ad_jacaranda_door";
+    
+    public static final String TALL_AD_AZALEA = "tall_ad_azalea_door";
+    public static final String TALL_AD_JACARANDA = "tall_ad_jacaranda_door";
     
     //Bamboo Everything
     public static final String SHORT_BE_BAMBOO = "short_be_bamboo_door";
@@ -526,6 +548,11 @@ public class DDNames
     public static final String SHORT_ECHO = "short_echo_door";
 
     public static final String TALL_ECHO = "tall_echo_door";
+    
+    //Desolation
+    public static final String SHORT_CHARRED = "short_charred_door";
+
+    public static final String TALL_CHARRED = "tall_charred_door";
     
     //Dustrial Decor
     public static final String SHORT_CARDBOARD = "short_cardboard_door";

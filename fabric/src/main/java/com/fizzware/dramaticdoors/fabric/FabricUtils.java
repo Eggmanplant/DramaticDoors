@@ -23,6 +23,11 @@ public class FabricUtils implements CompatChecker, ModdedTab
 	}
 	
 	@Override
+	public boolean isDev() {
+		return FabricLoader.getInstance().isDevelopmentEnvironment();
+	}
+	
+	@Override
 	public CreativeModeTab createTab(String tabname, Supplier<ItemStack> supplier, @Nullable String modid) {
 		if (modid != null) {
 			if (!isModLoaded(modid)) {
