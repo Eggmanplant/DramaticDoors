@@ -1,6 +1,5 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "8.1.1"
-	id 'org.groovymc.modsdotgroovy' version '1.4.1'
 }
 
 archivesBaseName = "forge" // "${rootProject.archives_base_name}-${project.name}"
@@ -8,11 +7,6 @@ archivesBaseName = "forge" // "${rootProject.archives_base_name}-${project.name}
 architectury {
     platformSetupLoomIde()
     forge()
-}
-
-modsDotGroovy {
-    dslVersion = '1.5.0' // Can be replaced with any existing DSL version
-    platform = 'forge'
 }
 
 var generatedResources = file("src/generated/resources")
