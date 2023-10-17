@@ -1,5 +1,6 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "8.1.1"
+	id 'org.groovymc.modsdotgroovy' version '1.4.1'
 }
 
 archivesBaseName = "forge" // "${rootProject.archives_base_name}-${project.name}"
@@ -8,6 +9,13 @@ architectury {
     platformSetupLoomIde()
     forge()
 }
+
+modsDotGroovy {
+    dslVersion = '1.5.0' // Can be replaced with any existing DSL version
+    platform = 'forge'
+}
+
+var generatedResources = file("src/generated/resources")
 
 loom {
     accessWidenerPath.set(project(":common").file("src/main/resources/dramaticdoors.accesswidener"))
@@ -19,6 +27,13 @@ loom {
     }
 	mixin {
 	    defaultRefmapName = "dramaticdoors_forge.refmap.json"
+	}
+	runs {
+        data {
+            data()
+            programArgs "--all", "--mod", "dramaticdoors"
+            programArgs "--output", generatedResources.absolutePath
+        }
 	}
 }
 
@@ -42,14 +57,12 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 	implementation "curse.maven:macaws-doors-378646:4649906"
+	// implementation "curse.maven:pollen-544350:4685983"
+	// implementation "curse.maven:locksmith-544352:4650915"
 }
 
 processResources {
-    inputs.property "version", rootProject.mod_version
 
-    filesMatching("META-INF/mods.toml") {
-        expand "version": rootProject.mod_version
-    }
 }
 
 shadowJar {

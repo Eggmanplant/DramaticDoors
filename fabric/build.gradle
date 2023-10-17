@@ -42,6 +42,12 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
 	modImplementation "curse.maven:macaws-doors-378646:4649884"
+	// modApi("curse.maven:pollen-544350:4685983") { transitive false }
+	// modImplementation "curse.maven:locksmith-544352:4650917"
+}
+
+processResources {
+
 }
 
 sourceSets {
@@ -55,16 +61,6 @@ sourceSets {
 task copyAW(type: Copy) {
     from commonAW
     into generatedResources
-}
-
-processResources {
-    // dependsOn(copyAW)
-
-    inputs.property "version", rootProject.mod_version
-
-    filesMatching("fabric.mod.json") {
-        expand "version": rootProject.mod_version
-    }
 }
 
 shadowJar {

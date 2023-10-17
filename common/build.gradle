@@ -14,6 +14,17 @@ loom {
     accessWidenerPath.set(file("src/main/resources/dramaticdoors.accesswidener"))
 }
 
+processResources {
+	inputs.property "version", rootProject.mod_version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": rootProject.mod_version
+	}
+    filesMatching("mods.toml") {
+        expand "version": rootProject.mod_version
+    }
+}
+
 publishing {
     publications {
         mavenCommon(MavenPublication) {
