@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-      "item": "minecraft:birch_door"
-  },
-  "result": "dramaticdoors:short_birch_door",
-  "count": 2
-}

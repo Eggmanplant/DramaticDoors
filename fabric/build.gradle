@@ -1,0 +1,117 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "8.1.1"
+}
+
+archivesBaseName = "fabric" // "${rootProject.archives_base_name}-${project.name}"
+
+architectury {
+    platformSetupLoomIde()
+    fabric()
+}
+
+var commonAW = project(":common").file("src/main/resources/dramaticdoors.accesswidener")
+var generatedResources = file("src/generated/resources")
+
+loom {
+    accessWidenerPath.set(commonAW)
+	mixin {
+	    defaultRefmapName = "dramaticdoors_fabric.refmap.json"
+	}
+}
+
+configurations {
+    common
+    shadowCommon // Don't use shadow from the shadow plugin because we don't want IDEA to index this.
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentFabric.extendsFrom common
+}
+
+repositories {
+    maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://maven.terraformersmc.com/releases" }
+	maven { url "https://cursemaven.com" } 
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
+    modImplementation "com.terraformersmc:modmenu:7.2.2", {
+        exclude module: "fabric-api"
+    }
+    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
+	modImplementation "curse.maven:macaws-doors-378646:4649888"
+	// modApi("curse.maven:pollen-544350:4685983") { transitive false }
+	// modImplementation "curse.maven:locksmith-544352:4650917"
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir generatedResources
+        }
+    }
+}
+
+task copyAW(type: Copy) {
+    from commonAW
+    into generatedResources
+}
+
+processResources {
+    // dependsOn(copyAW)
+
+    inputs.property "version", rootProject.mod_version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": rootProject.mod_version
+    }
+}
+
+shadowJar {
+    configurations = [project.configurations.shadowCommon]
+    archiveClassifier.set("dev-shadow")
+}
+
+remapJar {
+    injectAccessWidener = true
+    input.set shadowJar.archiveFile
+    dependsOn shadowJar
+    archiveClassifier.set(null)
+}
+
+jar {
+    archiveClassifier.set("dev")
+}
+
+sourcesJar {
+    def commonSources = project(":common").sourcesJar
+    dependsOn(commonSources)
+    from commonSources.archiveFile.map { zipTree(it) }
+    exclude("dramaticdoors.accesswidener")
+}
+
+components.java {
+    withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
+        skip()
+    }
+}
+
+publishing {
+    publications {
+        mavenFabric(MavenPublication) {
+            artifactId = rootProject.archives_base_name + "-" + project.name
+            from components.java
+        }
+    }
+
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    repositories {
+        // Add repositories to publish to here.
+    }
+}
+
+tasks.withType(Jar).configureEach {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}

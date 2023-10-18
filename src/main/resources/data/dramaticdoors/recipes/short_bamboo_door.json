@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-      "item": "minecraft:bamboo_door"
-  },
-  "result": "dramaticdoors:short_bamboo_door",
-  "count": 2
-}
