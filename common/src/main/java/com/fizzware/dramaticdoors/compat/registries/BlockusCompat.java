@@ -26,34 +26,34 @@ public class BlockusCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_RAW_BAMBOO, new ResourceLocation("blockus", "raw_bamboo_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_RAW_BAMBOO, new ResourceLocation("blockus", "raw_bamboo_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_RAW_BAMBOO, new ResourceLocation("blockus", "raw_bamboo_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_RAW_BAMBOO, new ResourceLocation("blockus", "raw_bamboo_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BLOCKUS_RAW_BAMBOO, new ResourceLocation("blockus", "raw_bamboo_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BLOCKUS_RAW_BAMBOO, new ResourceLocation("blockus", "raw_bamboo_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"), "tall_stone_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"), "tall_stone_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLOCKUS_RAW_BAMBOO, new ResourceLocation("blockus", "raw_bamboo_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLOCKUS_RAW_BAMBOO, new ResourceLocation("blockus", "raw_bamboo_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLOCKUS_BLACKSTONE, new ResourceLocation("blockus", "blackstone_door"), "tall_stone_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLOCKUS_CHARRED, new ResourceLocation("blockus", "charred_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLOCKUS_OBSIDIAN_REINFORCED, new ResourceLocation("blockus", "obsidian_reinforced_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLOCKUS_PAPER, new ResourceLocation("blockus", "paper_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLOCKUS_STONE, new ResourceLocation("blockus", "stone_door"), "tall_stone_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLOCKUS_WHITE_OAK, new ResourceLocation("blockus", "white_oak_door"), "tall_wooden_door");
 	}
 }

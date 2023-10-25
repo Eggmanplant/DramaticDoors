@@ -1,12 +1,16 @@
 package com.fizzware.dramaticdoors.fabric.client;
 
 import com.fizzware.dramaticdoors.DDRegistry;
+import com.fizzware.dramaticdoors.fabric.FabricUtils;
+import com.fizzware.dramaticdoors.fabric.addons.create.TallSlidingDoorBlockRenderer;
+import com.fizzware.dramaticdoors.fabric.compat.CreateFabricCompat;
 import com.fizzware.dramaticdoors.DDNames;
 import com.google.common.collect.ImmutableList;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.world.level.block.Block;
 import oshi.util.tuples.Pair;
 
@@ -26,6 +30,9 @@ public class RenderHandler implements ClientModInitializer
 			else {
 				BlockRenderLayerMap.INSTANCE.putBlock(pair.getB(), RenderType.cutout());
 			}
+		}
+		if (FabricUtils.INSTANCE.isModLoaded("create")) {
+			BlockEntityRenderers.register(CreateFabricCompat.TALL_SLIDING_DOOR_BLOCK_ENTITY, TallSlidingDoorBlockRenderer::new);
 		}
 	}
 }

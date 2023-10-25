@@ -373,7 +373,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     
     //Double Doors Compatibility
 	public static void tryOpenDoubleDoor(Level world, BlockState state, BlockPos pos) {
-        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.COUPLINGS_INSTALLED) {
+        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.COUPLINGS_INSTALLED || Compats.modChecker.isQuarkModuleEnabled()) {
             Direction direction = state.getValue(TallDoorBlock.FACING);
             boolean isOpen = state.getValue(TallDoorBlock.OPEN);
             DoorHingeSide isMirrored = state.getValue(TallDoorBlock.HINGE);

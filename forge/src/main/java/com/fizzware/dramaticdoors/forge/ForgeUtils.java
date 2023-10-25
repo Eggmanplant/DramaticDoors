@@ -40,6 +40,11 @@ public class ForgeUtils implements CompatChecker
 		return DDConfigForge.devMode.get();
 	}
     
+	@Override
+	public boolean isQuarkModuleEnabled() {
+		return INSTANCE.isModLoaded("quark");
+	}
+	
     @SuppressWarnings("deprecation")
 	@SubscribeEvent
     public static void assignItemsToTabs(BuildCreativeModeTabContentsEvent event) {

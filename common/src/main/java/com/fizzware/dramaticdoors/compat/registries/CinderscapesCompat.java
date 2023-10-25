@@ -21,14 +21,14 @@ public class CinderscapesCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_SCORCHED, new ResourceLocation("cinderscapes", "scorched_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_UMBRAL, new ResourceLocation("cinderscapes", "umbral_door"), "tall_wooden_door");
 	}
 }

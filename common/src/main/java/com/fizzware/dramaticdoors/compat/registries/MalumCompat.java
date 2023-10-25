@@ -21,14 +21,14 @@ public class MalumCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_RUNEWOOD, new ResourceLocation("malum", "runewood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_SOULWOOD, new ResourceLocation("malum", "soulwood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_RUNEWOOD, new ResourceLocation("malum", "runewood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_SOULWOOD, new ResourceLocation("malum", "soulwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUNEWOOD, new ResourceLocation("malum", "runewood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SOULWOOD, new ResourceLocation("malum", "soulwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RUNEWOOD, new ResourceLocation("malum", "runewood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SOULWOOD, new ResourceLocation("malum", "soulwood_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_RUNEWOOD, new ResourceLocation("malum", "runewood_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_SOULWOOD, new ResourceLocation("malum", "soulwood_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_RUNEWOOD, new ResourceLocation("malum", "runewood_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_SOULWOOD, new ResourceLocation("malum", "soulwood_door"), "tall_wooden_door");	
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RUNEWOOD, new ResourceLocation("malum", "runewood_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SOULWOOD, new ResourceLocation("malum", "soulwood_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_RUNEWOOD, new ResourceLocation("malum", "runewood_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_SOULWOOD, new ResourceLocation("malum", "soulwood_door"), "tall_wooden_door");	
 	}
 }

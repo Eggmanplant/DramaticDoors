@@ -511,6 +511,19 @@ public class DDNames
     public static final String TALL_CO_WEATHERED_COPPER = "tall_co_weathered_copper_door";
     public static final String TALL_CO_OXIDIZED_COPPER = "tall_co_oxidized_copper_door";
     
+    //Create
+    public static final String SHORT_CREATE_ANDESITE = "short_create_andesite_door";
+    public static final String SHORT_CREATE_BRASS = "short_create_brass_door";
+    public static final String SHORT_CREATE_COPPER = "short_create_copper_door";
+    public static final String SHORT_CREATE_GLASS = "short_create_glass_door";
+    public static final String SHORT_CREATE_TRAIN = "short_create_train_door";
+
+    public static final String TALL_CREATE_ANDESITE = "tall_create_andesite_door";
+    public static final String TALL_CREATE_BRASS = "tall_create_brass_door";
+    public static final String TALL_CREATE_COPPER = "tall_create_copper_door";
+    public static final String TALL_CREATE_FRAMED_GLASS = "tall_create_framed_glass_door";
+    public static final String TALL_CREATE_TRAIN = "tall_create_train_door";
+    
     //Create: Alloyed
     public static final String SHORT_STEEL = "short_steel_door";
     public static final String SHORT_LOCKED_STEEL = "short_locked_steel_door";
@@ -1087,7 +1100,11 @@ public class DDNames
     public static final String TALL_GRONGLE = "tall_grongle_door";
     public static final String TALL_SMOGSTEM = "tall_smogstem_door";
     public static final String TALL_WIGGLEWOOD = "tall_wigglewood_door";
-        
+    
+    // Vinery
+    public static final String SHORT_VINERY_CHERRY = "short_vinery_cherry_door";
+    public static final String TALL_VINERY_CHERRY = "tall_vinery_cherry_door";
+    
     // Wilder Wild
     public static final String SHORT_WW_BAOBAB = "short_ww_baobab_door";
     public static final String SHORT_WW_CYPRESS = "short_ww_cypress_door";

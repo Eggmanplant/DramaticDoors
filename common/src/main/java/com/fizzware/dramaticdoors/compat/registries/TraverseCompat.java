@@ -20,10 +20,10 @@ public class TraverseCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"), "tall_wooden_door");
 	}
 }

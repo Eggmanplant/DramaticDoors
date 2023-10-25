@@ -22,28 +22,14 @@ public class AlexsCavesCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
-		// The check is temporary. Futureproofing for Alex's Caves release.
-		if (checker.isModLoaded("alexscaves")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_PEWEN, new ResourceLocation("alexscaves", "pewen_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_PEWEN, new ResourceLocation("alexscaves", "pewen_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"));
-			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_PEWEN, new ResourceLocation("alexscaves", "pewen_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_PEWEN, new ResourceLocation("alexscaves", "pewen_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"), "tall_wooden_door");
-		}
-		if (checker.isModLoaded("alexs_caves")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_PEWEN, new ResourceLocation("alexs_caves", "pewen_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_THORNWOOD, new ResourceLocation("alexs_caves", "thornwood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_PEWEN, new ResourceLocation("alexs_caves", "pewen_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_THORNWOOD, new ResourceLocation("alexs_caves", "thornwood_door"));
-			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_PEWEN, new ResourceLocation("alexs_caves", "pewen_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_THORNWOOD, new ResourceLocation("alexs_caves", "thornwood_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_PEWEN, new ResourceLocation("alexs_caves", "pewen_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_THORNWOOD, new ResourceLocation("alexs_caves", "thornwood_door"), "tall_wooden_door");
-		}
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PEWEN, new ResourceLocation("alexscaves", "pewen_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PEWEN, new ResourceLocation("alexscaves", "pewen_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"));
+		
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PEWEN, new ResourceLocation("alexscaves", "pewen_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PEWEN, new ResourceLocation("alexscaves", "pewen_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"), "tall_wooden_door");
 	}
 }

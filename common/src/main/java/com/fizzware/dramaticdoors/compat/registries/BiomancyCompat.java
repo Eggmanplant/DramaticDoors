@@ -51,18 +51,18 @@ public class BiomancyCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_FLESH, new ResourceLocation("biomancy", "flesh_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_FLESH, new ResourceLocation("biomancy", "flesh_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FLESH, new ResourceLocation("biomancy", "flesh_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FLESH, new ResourceLocation("biomancy", "flesh_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_FLESH, new ResourceLocation("biomancy", "flesh_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"));
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_FLESH, new ResourceLocation("biomancy", "flesh_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"), "tall_misc_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FLESH, new ResourceLocation("biomancy", "flesh_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"));
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_FLESH, new ResourceLocation("biomancy", "flesh_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_FULL_FLESH, new ResourceLocation("biomancy", "full_flesh_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_FLESHKIN, new ResourceLocation("biomancy", "fleshkin_door"), "tall_misc_door");
 	}
 }

@@ -23,22 +23,22 @@ public class EcologicsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ECO_AZALEA, new ResourceLocation("ecologics", "azalea_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ECO_FLOWERING_AZALEA, new ResourceLocation("ecologics", "flowering_azalea_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ECO_COCONUT, new ResourceLocation("ecologics", "coconut_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ECO_WALNUT, new ResourceLocation("ecologics", "walnut_door"), "tall_wooden_door");
 	}
 }

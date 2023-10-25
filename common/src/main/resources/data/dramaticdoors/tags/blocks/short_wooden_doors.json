@@ -277,6 +277,7 @@
     {"id": "dramaticdoors:short_skyroot_door", "required": false}, 
     {"id": "dramaticdoors:short_grongle_door", "required": false}, 
     {"id": "dramaticdoors:short_smogstem_door", "required": false}, 
+    {"id": "dramaticdoors:short_vinery_cherry_door", "required": false}, 
     {"id": "dramaticdoors:short_wigglewood_door", "required": false}, 
     {"id": "dramaticdoors:short_traverse_fir_door", "required": false}, 
     {"id": "dramaticdoors:short_chestnut_door", "required": false}, 

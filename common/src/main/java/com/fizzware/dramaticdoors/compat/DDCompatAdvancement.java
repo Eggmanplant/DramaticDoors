@@ -14,7 +14,7 @@ public class DDCompatAdvancement
 	// The list of recipe advancements that will be filled out.
 	public static List<JsonObject> RECIPE_ADVANCEMENTS = new ArrayList<JsonObject>();
 	
-    public static JsonObject createRecipeAdvancementJson(String recipeName, ResourceLocation triggeringItem) {
+    public static void createRecipeAdvancement(String recipeName, ResourceLocation triggeringItem) {
         //Creating a new json object, where we will store our recipe advancements.
         JsonObject json = new JsonObject();
         json.addProperty("parent", "dramaticdoors:recipes/root");
@@ -60,6 +60,5 @@ public class DDCompatAdvancement
         json.add("rewards", jsonRewards);
  
         RECIPE_ADVANCEMENTS.add(json);
-        return json;
     }
 }

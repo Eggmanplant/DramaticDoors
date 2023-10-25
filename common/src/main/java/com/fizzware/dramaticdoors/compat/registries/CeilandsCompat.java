@@ -21,14 +21,14 @@ public class CeilandsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"));
 				
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"), "tall_wooden_door");
 	}
 }

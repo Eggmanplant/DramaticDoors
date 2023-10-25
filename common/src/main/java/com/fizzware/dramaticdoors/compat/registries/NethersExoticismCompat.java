@@ -21,14 +21,14 @@ public class NethersExoticismCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_JABOTICABA, new ResourceLocation("nethers_exoticism", "jaboticaba_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_RAMBOUTAN, new ResourceLocation("nethers_exoticism", "ramboutan_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_JABOTICABA, new ResourceLocation("nethers_exoticism", "jaboticaba_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_RAMBOUTAN, new ResourceLocation("nethers_exoticism", "ramboutan_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JABOTICABA, new ResourceLocation("nethers_exoticism", "jaboticaba_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RAMBOUTAN, new ResourceLocation("nethers_exoticism", "ramboutan_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_JABOTICABA, new ResourceLocation("nethers_exoticism", "jaboticaba_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RAMBOUTAN, new ResourceLocation("nethers_exoticism", "ramboutan_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_JABOTICABA, new ResourceLocation("nethers_exoticism", "jaboticaba_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_RAMBOUTAN, new ResourceLocation("nethers_exoticism", "ramboutan_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_JABOTICABA, new ResourceLocation("nethers_exoticism", "jaboticaba_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_RAMBOUTAN, new ResourceLocation("nethers_exoticism", "ramboutan_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_JABOTICABA, new ResourceLocation("nethers_exoticism", "jaboticaba_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RAMBOUTAN, new ResourceLocation("nethers_exoticism", "ramboutan_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_JABOTICABA, new ResourceLocation("nethers_exoticism", "jaboticaba_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_RAMBOUTAN, new ResourceLocation("nethers_exoticism", "ramboutan_door"), "tall_wooden_door");
 	}
 }

@@ -79,38 +79,38 @@ public class EverythingCopperCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EC_COPPER, new ResourceLocation("everythingcopper", "copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EC_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "exposed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EC_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "weathered_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EC_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "oxidized_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EC_WAXED_COPPER, new ResourceLocation("everythingcopper", "waxed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EC_WAXED_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "waxed_exposed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EC_WAXED_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "waxed_weathered_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EC_WAXED_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "waxed_oxidized_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EC_COPPER, new ResourceLocation("everythingcopper", "copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EC_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "exposed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EC_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "weathered_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EC_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "oxidized_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EC_WAXED_COPPER, new ResourceLocation("everythingcopper", "waxed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EC_WAXED_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "waxed_exposed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EC_WAXED_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "waxed_weathered_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EC_WAXED_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "waxed_oxidized_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EC_COPPER, new ResourceLocation("everythingcopper", "copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EC_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "exposed_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EC_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "weathered_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EC_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "oxidized_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EC_WAXED_COPPER, new ResourceLocation("everythingcopper", "waxed_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EC_WAXED_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "waxed_exposed_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EC_WAXED_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "waxed_weathered_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EC_WAXED_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "waxed_oxidized_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EC_COPPER, new ResourceLocation("everythingcopper", "copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EC_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "exposed_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EC_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "weathered_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EC_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "oxidized_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EC_WAXED_COPPER, new ResourceLocation("everythingcopper", "waxed_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EC_WAXED_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "waxed_exposed_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EC_WAXED_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "waxed_weathered_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EC_WAXED_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "waxed_oxidized_copper_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EC_COPPER, new ResourceLocation("everythingcopper", "copper_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EC_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "exposed_copper_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EC_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "weathered_copper_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EC_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "oxidized_copper_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EC_WAXED_COPPER, new ResourceLocation("everythingcopper", "waxed_copper_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EC_WAXED_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "waxed_exposed_copper_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EC_WAXED_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "waxed_weathered_copper_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EC_WAXED_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "waxed_oxidized_copper_door"), false);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EC_COPPER, new ResourceLocation("everythingcopper", "copper_door"), "tall_copper_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EC_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "exposed_copper_door"), "tall_copper_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EC_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "weathered_copper_door"), "tall_copper_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EC_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "oxidized_copper_door"), "tall_copper_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EC_WAXED_COPPER, new ResourceLocation("everythingcopper", "copper_door"), "tall_copper_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EC_WAXED_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "waxed_exposed_copper_door"), "tall_copper_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EC_WAXED_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "waxed_weathered_copper_door"), "tall_copper_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EC_WAXED_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "waxed_oxidized_copper_door"), "tall_copper_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EC_COPPER, new ResourceLocation("everythingcopper", "copper_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EC_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "exposed_copper_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EC_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "weathered_copper_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EC_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "oxidized_copper_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EC_WAXED_COPPER, new ResourceLocation("everythingcopper", "waxed_copper_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EC_WAXED_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "waxed_exposed_copper_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EC_WAXED_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "waxed_weathered_copper_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EC_WAXED_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "waxed_oxidized_copper_door"), false);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EC_COPPER, new ResourceLocation("everythingcopper", "copper_door"), "tall_copper_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EC_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "exposed_copper_door"), "tall_copper_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EC_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "weathered_copper_door"), "tall_copper_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EC_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "oxidized_copper_door"), "tall_copper_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EC_WAXED_COPPER, new ResourceLocation("everythingcopper", "copper_door"), "tall_copper_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EC_WAXED_EXPOSED_COPPER, new ResourceLocation("everythingcopper", "waxed_exposed_copper_door"), "tall_copper_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EC_WAXED_WEATHERED_COPPER, new ResourceLocation("everythingcopper", "waxed_weathered_copper_door"), "tall_copper_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EC_WAXED_OXIDIZED_COPPER, new ResourceLocation("everythingcopper", "waxed_oxidized_copper_door"), "tall_copper_door");
 	}
 }

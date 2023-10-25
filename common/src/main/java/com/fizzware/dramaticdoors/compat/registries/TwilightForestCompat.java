@@ -32,46 +32,46 @@ public class TwilightForestCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CANOPY, new ResourceLocation("twilightforest", "canopy_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CANOPY, new ResourceLocation("twilightforest", "canopy_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CANOPY, new ResourceLocation("twilightforest", "canopy_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CANOPY, new ResourceLocation("twilightforest", "canopy_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CANOPY, new ResourceLocation("twilightforest", "canopy_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CANOPY, new ResourceLocation("twilightforest", "canopy_door"), "tall_tf_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"), "tall_tf_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"), "tall_tf_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"), "tall_tf_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"), "tall_tf_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"), "tall_tf_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"), "tall_tf_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"), "tall_tf_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CANOPY, new ResourceLocation("twilightforest", "canopy_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CANOPY, new ResourceLocation("twilightforest", "canopy_door"), "tall_tf_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"), "tall_tf_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"), "tall_tf_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"), "tall_tf_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"), "tall_tf_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"), "tall_tf_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"), "tall_tf_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"), "tall_tf_wooden_door");
 		
 		if (Compats.isModLoaded("tflostblocks", checker)) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
 			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"), "tall_tf_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"), "tall_tf_wooden_door");
 		}
 	}
 }

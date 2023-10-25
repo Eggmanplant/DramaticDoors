@@ -21,14 +21,14 @@ public class GoodEndingCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"), "tall_wooden_door");
 	}
 }

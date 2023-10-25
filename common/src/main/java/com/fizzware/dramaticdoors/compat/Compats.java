@@ -55,7 +55,7 @@ public class Compats
 		if (isModLoaded("aether_redux", checker)) {
 			AetherReduxCompat.registerCompat();
 		}
-		if (isModLoaded("alexscaves", checker) || isModLoaded("alexs_caves", checker)) {
+		if (isModLoaded("alexscaves", checker)) {
 			AlexsCavesCompat.registerCompat(checker);
 		}
 		if (isModLoaded("architects_palette", checker)) {
@@ -64,9 +64,9 @@ public class Compats
 		if (isModLoaded("atum", checker)) {
 			AtumCompat.registerCompat();
 		}
-		/*if (isModLoaded("aurorasdeco", checker)) {
+		if (isModLoaded("aurorasdeco", checker)) {
 			AurorasDecorationsCompat.registerCompat();
-		}*/
+		}
 		if (isModLoaded("bambooeverything", checker)) {
 			BambooEverythingCompat.registerCompat();
 		}
@@ -124,6 +124,9 @@ public class Compats
 		if (isModLoaded("alloyed", checker)) {
 			CreateAlloyedCompat.registerCompat();
 		}
+		/*if (isModLoaded("create", checker)) { // This will be handled on Forge and Fabric side.
+			CreateCompat.registerCompat();
+		}*/
 		if (isModLoaded("createdeco", checker)) {
 			CreateDecoCompat.registerCompat();
 		}
@@ -264,6 +267,9 @@ public class Compats
     	}
 		if (isModLoaded("undergarden", checker)) {
 			UndergardenCompat.registerCompat();
+		}
+		if (isModLoaded("vinery", checker)) {
+			VineryCompat.registerCompat();
 		}
 		if (isModLoaded("wilderwild", checker)) {
 			WilderWildCompat.registerCompat();
