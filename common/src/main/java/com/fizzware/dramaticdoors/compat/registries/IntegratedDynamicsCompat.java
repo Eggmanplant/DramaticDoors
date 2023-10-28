@@ -20,10 +20,10 @@ public class IntegratedDynamicsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"), "tall_wooden_door");
 	}
 }

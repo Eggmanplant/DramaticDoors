@@ -52,94 +52,94 @@ public class AbnormalsCompat
 	 
 	private static void registerRecipes(CompatChecker checker) {
 		if (Compats.isModLoaded("atmospheric", checker)) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ASPEN, new ResourceLocation("atmospheric", "aspen_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GRIMWOOD, new ResourceLocation("atmospheric", "grimwood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_KOUSA, new ResourceLocation("atmospheric", "kousa_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MORADO, new ResourceLocation("atmospheric", "morado_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ROSEWOOD, new ResourceLocation("atmospheric", "rosewood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_YUCCA, new ResourceLocation("atmospheric", "yucca_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ASPEN, new ResourceLocation("atmospheric", "aspen_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GRIMWOOD, new ResourceLocation("atmospheric", "grimwood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_KOUSA, new ResourceLocation("atmospheric", "kousa_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MORADO, new ResourceLocation("atmospheric", "morado_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ROSEWOOD, new ResourceLocation("atmospheric", "rosewood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_YUCCA, new ResourceLocation("atmospheric", "yucca_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ASPEN, new ResourceLocation("atmospheric", "aspen_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GRIMWOOD, new ResourceLocation("atmospheric", "grimwood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_KOUSA, new ResourceLocation("atmospheric", "kousa_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORADO, new ResourceLocation("atmospheric", "morado_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROSEWOOD, new ResourceLocation("atmospheric", "rosewood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YUCCA, new ResourceLocation("atmospheric", "yucca_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ASPEN, new ResourceLocation("atmospheric", "aspen_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GRIMWOOD, new ResourceLocation("atmospheric", "grimwood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_KOUSA, new ResourceLocation("atmospheric", "kousa_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORADO, new ResourceLocation("atmospheric", "morado_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ROSEWOOD, new ResourceLocation("atmospheric", "rosewood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_YUCCA, new ResourceLocation("atmospheric", "yucca_door"));
 			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ASPEN, new ResourceLocation("atmospheric", "aspen_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GRIMWOOD, new ResourceLocation("atmospheric", "grimwood_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_KOUSA, new ResourceLocation("atmospheric", "kousa_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MORADO, new ResourceLocation("atmospheric", "morado_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ROSEWOOD, new ResourceLocation("atmospheric", "rosewood_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_YUCCA, new ResourceLocation("atmospheric", "yucca_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ASPEN, new ResourceLocation("atmospheric", "aspen_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GRIMWOOD, new ResourceLocation("atmospheric", "grimwood_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_KOUSA, new ResourceLocation("atmospheric", "kousa_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MORADO, new ResourceLocation("atmospheric", "morado_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ROSEWOOD, new ResourceLocation("atmospheric", "rosewood_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_YUCCA, new ResourceLocation("atmospheric", "yucca_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ASPEN, new ResourceLocation("atmospheric", "aspen_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GRIMWOOD, new ResourceLocation("atmospheric", "grimwood_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_KOUSA, new ResourceLocation("atmospheric", "kousa_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MORADO, new ResourceLocation("atmospheric", "morado_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ROSEWOOD, new ResourceLocation("atmospheric", "rosewood_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_YUCCA, new ResourceLocation("atmospheric", "yucca_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ASPEN, new ResourceLocation("atmospheric", "aspen_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GRIMWOOD, new ResourceLocation("atmospheric", "grimwood_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_KOUSA, new ResourceLocation("atmospheric", "kousa_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MORADO, new ResourceLocation("atmospheric", "morado_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ROSEWOOD, new ResourceLocation("atmospheric", "rosewood_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_YUCCA, new ResourceLocation("atmospheric", "yucca_door"), "tall_wooden_door");
 		}
 		if (Compats.isModLoaded("autumnity", checker)) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MAPLE, new ResourceLocation("autumnity", "maple_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MAPLE, new ResourceLocation("autumnity", "maple_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MAPLE, new ResourceLocation("autumnity", "maple_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MAPLE, new ResourceLocation("autumnity", "maple_door"));
 	
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MAPLE, new ResourceLocation("autumnity", "maple_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MAPLE, new ResourceLocation("autumnity", "maple_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MAPLE, new ResourceLocation("autumnity", "maple_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MAPLE, new ResourceLocation("autumnity", "maple_door"), "tall_wooden_door");
 		}
 		if (Compats.isModLoaded("buzzier_bees", checker)) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"));
 	
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"), false);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"), "tall_misc_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"), false);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_HONEYCOMB, new ResourceLocation("buzzier_bees", "honeycomb_door"), "tall_misc_door");
 		}
 		if (Compats.isModLoaded("caverns_and_chasms", checker)) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"));
 	
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_AZALEA, new ResourceLocation("caverns_and_chasms", "azalea_door"), "tall_wooden_door");
 	
 		}
 		if (Compats.isModLoaded("endergetic", checker)) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_POISE, new ResourceLocation("endergetic", "poise_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_POISE, new ResourceLocation("endergetic", "poise_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POISE, new ResourceLocation("endergetic", "poise_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_POISE, new ResourceLocation("endergetic", "poise_door"));
 	
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_POISE, new ResourceLocation("endergetic", "poise_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_POISE, new ResourceLocation("endergetic", "poise_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_POISE, new ResourceLocation("endergetic", "poise_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_POISE, new ResourceLocation("endergetic", "poise_door"), "tall_wooden_door");
 		}
 		if (Compats.isModLoaded("environmental", checker)) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_DARK_CHERRY, new ResourceLocation("environmental", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_WILLOW, new ResourceLocation("environmental", "willow_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_WISTERIA, new ResourceLocation("environmental", "wisteria_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_DARK_CHERRY, new ResourceLocation("environmental", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_WILLOW, new ResourceLocation("environmental", "willow_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_WISTERIA, new ResourceLocation("environmental", "wisteria_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARK_CHERRY, new ResourceLocation("environmental", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WILLOW, new ResourceLocation("environmental", "willow_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WISTERIA, new ResourceLocation("environmental", "wisteria_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DARK_CHERRY, new ResourceLocation("environmental", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WILLOW, new ResourceLocation("environmental", "willow_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WISTERIA, new ResourceLocation("environmental", "wisteria_door"));
 	
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_DARK_CHERRY, new ResourceLocation("environmental", "cherry_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_WILLOW, new ResourceLocation("environmental", "willow_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_WISTERIA, new ResourceLocation("environmental", "wisteria_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_DARK_CHERRY, new ResourceLocation("environmental", "cherry_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_WILLOW, new ResourceLocation("environmental", "willow_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_WISTERIA, new ResourceLocation("environmental", "wisteria_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DARK_CHERRY, new ResourceLocation("environmental", "cherry_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WILLOW, new ResourceLocation("environmental", "willow_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WISTERIA, new ResourceLocation("environmental", "wisteria_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_DARK_CHERRY, new ResourceLocation("environmental", "cherry_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WILLOW, new ResourceLocation("environmental", "willow_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WISTERIA, new ResourceLocation("environmental", "wisteria_door"), "tall_wooden_door");
 		}
 		if (Compats.isModLoaded("upgrade_aquatic", checker)) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_DRIFTWOOD, new ResourceLocation("upgrade_aquatic", "driftwood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_RIVER, new ResourceLocation("upgrade_aquatic", "river_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GLASS, new ResourceLocation("upgrade_aquatic", "glass_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TOOTH, new ResourceLocation("upgrade_aquatic", "tooth_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_DRIFTWOOD, new ResourceLocation("upgrade_aquatic", "driftwood_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_RIVER, new ResourceLocation("upgrade_aquatic", "river_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GLASS, new ResourceLocation("upgrade_aquatic", "glass_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TOOTH, new ResourceLocation("upgrade_aquatic", "tooth_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DRIFTWOOD, new ResourceLocation("upgrade_aquatic", "driftwood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RIVER, new ResourceLocation("upgrade_aquatic", "river_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GLASS, new ResourceLocation("upgrade_aquatic", "glass_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TOOTH, new ResourceLocation("upgrade_aquatic", "tooth_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DRIFTWOOD, new ResourceLocation("upgrade_aquatic", "driftwood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RIVER, new ResourceLocation("upgrade_aquatic", "river_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GLASS, new ResourceLocation("upgrade_aquatic", "glass_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TOOTH, new ResourceLocation("upgrade_aquatic", "tooth_door"));
 	
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_DRIFTWOOD, new ResourceLocation("upgrade_aquatic", "driftwood_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_RIVER, new ResourceLocation("upgrade_aquatic", "river_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GLASS, new ResourceLocation("upgrade_aquatic", "glass_door"), false);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TOOTH, new ResourceLocation("upgrade_aquatic", "tooth_door"), false);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_DRIFTWOOD, new ResourceLocation("upgrade_aquatic", "driftwood_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_RIVER, new ResourceLocation("upgrade_aquatic", "river_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GLASS, new ResourceLocation("upgrade_aquatic", "glass_door"), "tall_misc_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TOOTH, new ResourceLocation("upgrade_aquatic", "tooth_door"), "tall_misc_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DRIFTWOOD, new ResourceLocation("upgrade_aquatic", "driftwood_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RIVER, new ResourceLocation("upgrade_aquatic", "river_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GLASS, new ResourceLocation("upgrade_aquatic", "glass_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TOOTH, new ResourceLocation("upgrade_aquatic", "tooth_door"), false);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_DRIFTWOOD, new ResourceLocation("upgrade_aquatic", "driftwood_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_RIVER, new ResourceLocation("upgrade_aquatic", "river_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GLASS, new ResourceLocation("upgrade_aquatic", "glass_door"), "tall_misc_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TOOTH, new ResourceLocation("upgrade_aquatic", "tooth_door"), "tall_misc_door");
 		}
 	}
 }

@@ -21,14 +21,14 @@ public class EnlightenedEndCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CONGEALED, new ResourceLocation("enlightened_end", "ebony_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EE_EBONY, new ResourceLocation("enlightened_end", "congealed_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CONGEALED, new ResourceLocation("enlightened_end", "ebony_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EE_EBONY, new ResourceLocation("enlightened_end", "congealed_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CONGEALED, new ResourceLocation("enlightened_end", "ebony_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EE_EBONY, new ResourceLocation("enlightened_end", "congealed_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CONGEALED, new ResourceLocation("enlightened_end", "ebony_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EE_EBONY, new ResourceLocation("enlightened_end", "congealed_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CONGEALED, new ResourceLocation("enlightened_end", "ebony_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EE_EBONY, new ResourceLocation("enlightened_end", "congealed_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CONGEALED, new ResourceLocation("enlightened_end", "ebony_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EE_EBONY, new ResourceLocation("enlightened_end", "congealed_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CONGEALED, new ResourceLocation("enlightened_end", "ebony_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EE_EBONY, new ResourceLocation("enlightened_end", "congealed_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CONGEALED, new ResourceLocation("enlightened_end", "ebony_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EE_EBONY, new ResourceLocation("enlightened_end", "congealed_door"), "tall_wooden_door");
 	}
 }

@@ -28,38 +28,38 @@ public class DustrialDecorCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CARDBOARD, new ResourceLocation("dustrial_decor", "cardboard_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHAIN, new ResourceLocation("dustrial_decor", "chain_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_IRON_BAR, new ResourceLocation("dustrial_decor", "iron_bar_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_PADDED, new ResourceLocation("dustrial_decor", "padded_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_RUSTY_IRON, new ResourceLocation("dustrial_decor", "rusty_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_INDUSTRIAL_IRON, new ResourceLocation("dustrial_decor", "industrial_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_SHEET_METAL, new ResourceLocation("dustrial_decor", "sheet_metal_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_RUSTY_SHEET_METAL, new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CARDBOARD, new ResourceLocation("dustrial_decor", "cardboard_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHAIN, new ResourceLocation("dustrial_decor", "chain_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_IRON_BAR, new ResourceLocation("dustrial_decor", "iron_bar_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_PADDED, new ResourceLocation("dustrial_decor", "padded_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_RUSTY_IRON, new ResourceLocation("dustrial_decor", "rusty_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_INDUSTRIAL_IRON, new ResourceLocation("dustrial_decor", "industrial_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_SHEET_METAL, new ResourceLocation("dustrial_decor", "sheet_metal_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_RUSTY_SHEET_METAL, new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CARDBOARD, new ResourceLocation("dustrial_decor", "cardboard_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHAIN, new ResourceLocation("dustrial_decor", "chain_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_IRON_BAR, new ResourceLocation("dustrial_decor", "iron_bar_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PADDED, new ResourceLocation("dustrial_decor", "padded_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUSTY_IRON, new ResourceLocation("dustrial_decor", "rusty_iron_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_INDUSTRIAL_IRON, new ResourceLocation("dustrial_decor", "industrial_iron_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SHEET_METAL, new ResourceLocation("dustrial_decor", "sheet_metal_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUSTY_SHEET_METAL, new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CARDBOARD, new ResourceLocation("dustrial_decor", "cardboard_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHAIN, new ResourceLocation("dustrial_decor", "chain_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_IRON_BAR, new ResourceLocation("dustrial_decor", "iron_bar_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PADDED, new ResourceLocation("dustrial_decor", "padded_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RUSTY_IRON, new ResourceLocation("dustrial_decor", "rusty_iron_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_INDUSTRIAL_IRON, new ResourceLocation("dustrial_decor", "industrial_iron_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SHEET_METAL, new ResourceLocation("dustrial_decor", "sheet_metal_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RUSTY_SHEET_METAL, new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CARDBOARD, new ResourceLocation("dustrial_decor", "cardboard_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHAIN, new ResourceLocation("dustrial_decor", "chain_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_IRON_BAR, new ResourceLocation("dustrial_decor", "iron_bar_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_PADDED, new ResourceLocation("dustrial_decor", "padded_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_RUSTY_IRON, new ResourceLocation("dustrial_decor", "rusty_iron_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_INDUSTRIAL_IRON, new ResourceLocation("dustrial_decor", "industrial_iron_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_SHEET_METAL, new ResourceLocation("dustrial_decor", "sheet_metal_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_RUSTY_SHEET_METAL, new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CARDBOARD, new ResourceLocation("dustrial_decor", "cardboard_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHAIN, new ResourceLocation("dustrial_decor", "chain_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_IRON_BAR, new ResourceLocation("dustrial_decor", "iron_bar_door"), "tall_dustrial_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_PADDED, new ResourceLocation("dustrial_decor", "padded_door"), "tall_dustrial_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_RUSTY_IRON, new ResourceLocation("dustrial_decor", "rusty_iron_door"), "tall_dustrial_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_INDUSTRIAL_IRON, new ResourceLocation("dustrial_decor", "industrial_iron_door"), "tall_dustrial_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_SHEET_METAL, new ResourceLocation("dustrial_decor", "sheet_metal_door"), "tall_dustrial_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_RUSTY_SHEET_METAL, new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"), "tall_dustrial_metal_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CARDBOARD, new ResourceLocation("dustrial_decor", "cardboard_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHAIN, new ResourceLocation("dustrial_decor", "chain_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_IRON_BAR, new ResourceLocation("dustrial_decor", "iron_bar_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PADDED, new ResourceLocation("dustrial_decor", "padded_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RUSTY_IRON, new ResourceLocation("dustrial_decor", "rusty_iron_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_INDUSTRIAL_IRON, new ResourceLocation("dustrial_decor", "industrial_iron_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SHEET_METAL, new ResourceLocation("dustrial_decor", "sheet_metal_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RUSTY_SHEET_METAL, new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CARDBOARD, new ResourceLocation("dustrial_decor", "cardboard_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHAIN, new ResourceLocation("dustrial_decor", "chain_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_IRON_BAR, new ResourceLocation("dustrial_decor", "iron_bar_door"), "tall_dustrial_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PADDED, new ResourceLocation("dustrial_decor", "padded_door"), "tall_dustrial_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_RUSTY_IRON, new ResourceLocation("dustrial_decor", "rusty_iron_door"), "tall_dustrial_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_INDUSTRIAL_IRON, new ResourceLocation("dustrial_decor", "industrial_iron_door"), "tall_dustrial_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_SHEET_METAL, new ResourceLocation("dustrial_decor", "sheet_metal_door"), "tall_dustrial_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_RUSTY_SHEET_METAL, new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"), "tall_dustrial_metal_door");
 	}
 }

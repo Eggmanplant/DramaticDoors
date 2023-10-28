@@ -282,6 +282,7 @@
     {"id": "dramaticdoors:tall_traverse_fir_door", "required": false}, 
     {"id": "dramaticdoors:tall_grongle_door", "required": false}, 
     {"id": "dramaticdoors:tall_smogstem_door", "required": false}, 
+    {"id": "dramaticdoors:tall_vinery_cherry_door", "required": false}, 
     {"id": "dramaticdoors:tall_wigglewood_door", "required": false}, 
     {"id": "dramaticdoors:tall_chestnut_door", "required": false}, 
     {"id": "dramaticdoors:tall_holly_door", "required": false}, 

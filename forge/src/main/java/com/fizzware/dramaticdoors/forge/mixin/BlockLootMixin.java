@@ -13,7 +13,6 @@ import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -22,6 +21,7 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import net.minecraftforge.registries.ForgeRegistries;
 
 @Mixin(BlockBehaviour.class)
 public abstract class BlockLootMixin
@@ -31,7 +31,7 @@ public abstract class BlockLootMixin
 	
 	@Inject(method = "getDrops(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/storage/loot/LootParams$Builder;)Ljava/util/List;", cancellable = true, at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/storage/loot/LootTable;getRandomItems(Lnet/minecraft/world/level/storage/loot/LootParams;)Lit/unimi/dsi/fastutil/objects/ObjectArrayList;"))    
 	public void alterDrops(BlockState state, LootParams.Builder builder, CallbackInfoReturnable<List<ItemStack>> cir) {
-		if ((state.getBlock() instanceof TallDoorBlock || state.getBlock() instanceof ShortDoorBlock) && BuiltInRegistries.BLOCK.getKey(state.getBlock()).getNamespace().equals(DramaticDoors.MOD_ID)) {
+		if ((state.getBlock() instanceof TallDoorBlock || state.getBlock() instanceof ShortDoorBlock) && ForgeRegistries.BLOCKS.getKey(state.getBlock()).getNamespace().equals(DramaticDoors.MOD_ID)) {
 			LootParams lootparams = builder.withParameter(LootContextParams.BLOCK_STATE, state).create(LootContextParamSets.BLOCK);
 			LootTable loottable = lootparams.getLevel().getServer().getLootData().getLootTable(((BlockBehaviour)(Object)this).getLootTable());
 			if (loottable != LootTable.EMPTY) {

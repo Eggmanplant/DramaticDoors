@@ -28,42 +28,42 @@ public class TerrestriaCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"), "tall_terrestria_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"), "tall_terrestria_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"), "tall_terrestria_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"), "tall_terrestria_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"), "tall_terrestria_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"), "tall_terrestria_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"), "tall_terrestria_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"), "tall_terrestria_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_CYPRESS, new ResourceLocation("terrestria", "cypress_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_HEMLOCK, new ResourceLocation("terrestria", "hemlock_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_JAPANESE_MAPLE, new ResourceLocation("terrestria", "japanese_maple_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_RAINBOW_EUCALYPTUS, new ResourceLocation("terrestria", "rainbow_eucalyptus_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_REDWOOD, new ResourceLocation("terrestria", "redwood_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_RUBBER, new ResourceLocation("terrestria", "rubber_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_SAKURA, new ResourceLocation("terrestria", "sakura_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_WILLOW, new ResourceLocation("terrestria", "willow_door"), "tall_terrestria_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TERRESTRIA_YUCCA_PALM, new ResourceLocation("terrestria", "yucca_palm_door"), "tall_terrestria_wooden_door");
 	}
 }

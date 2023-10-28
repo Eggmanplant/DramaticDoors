@@ -23,22 +23,22 @@ public class AdAstraCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"));
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"), "tall_metal_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"), false);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"), "tall_metal_door");
 	}
 }

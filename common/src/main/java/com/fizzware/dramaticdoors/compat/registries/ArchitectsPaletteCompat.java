@@ -20,10 +20,10 @@ public class ArchitectsPaletteCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_TWISTED, new ResourceLocation("architects_palette", "twisted_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_TWISTED, new ResourceLocation("architects_palette", "twisted_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWISTED, new ResourceLocation("architects_palette", "twisted_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TWISTED, new ResourceLocation("architects_palette", "twisted_door"));
 	
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_TWISTED, new ResourceLocation("architects_palette", "twisted_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_TWISTED, new ResourceLocation("architects_palette", "twisted_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TWISTED, new ResourceLocation("architects_palette", "twisted_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TWISTED, new ResourceLocation("architects_palette", "twisted_door"), "tall_wooden_door");
 	}
 }

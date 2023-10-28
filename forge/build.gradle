@@ -35,6 +35,10 @@ repositories {
 	    url "https://cursemaven.com"
         content { includeGroup "curse.maven" }
 	}
+    maven {
+        name = 'tterrag maven'
+        url = 'https://maven.tterrag.com/'
+    }
 }
 
 dependencies {
@@ -42,8 +46,9 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 	implementation "curse.maven:macaws-doors-378646:4649910"
-	// implementation "curse.maven:pollen-544350:4685983"
-	// implementation "curse.maven:locksmith-544352:4650915"
+    implementation "com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_version}:slim", { transitive = false }
+    implementation "com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}"
+    implementation "com.tterrag.registrate:Registrate:${rootProject.registrate_version}"
 }
 
 processResources {

@@ -22,18 +22,18 @@ public class CreateMiscThingsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ANDESITE_CASING, new ResourceLocation("create_things_and_misc", "andesite_casing_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BRASS_CASING, new ResourceLocation("create_things_and_misc", "brass_casing_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_COPPER_CASING, new ResourceLocation("create_things_and_misc", "copper_casing_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ANDESITE_CASING, new ResourceLocation("create_things_and_misc", "andesite_casing_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BRASS_CASING, new ResourceLocation("create_things_and_misc", "brass_casing_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_COPPER_CASING, new ResourceLocation("create_things_and_misc", "copper_casing_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ANDESITE_CASING, new ResourceLocation("create_things_and_misc", "andesite_casing_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRASS_CASING, new ResourceLocation("create_things_and_misc", "brass_casing_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPER_CASING, new ResourceLocation("create_things_and_misc", "copper_casing_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ANDESITE_CASING, new ResourceLocation("create_things_and_misc", "andesite_casing_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BRASS_CASING, new ResourceLocation("create_things_and_misc", "brass_casing_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_COPPER_CASING, new ResourceLocation("create_things_and_misc", "copper_casing_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ANDESITE_CASING, new ResourceLocation("create_things_and_misc", "andesite_casing_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BRASS_CASING, new ResourceLocation("create_things_and_misc", "brass_casing_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_COPPER_CASING, new ResourceLocation("create_things_and_misc", "copper_casing_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ANDESITE_CASING, new ResourceLocation("create_things_and_misc", "andesite_casing_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BRASS_CASING, new ResourceLocation("create_things_and_misc", "brass_casing_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_COPPER_CASING, new ResourceLocation("create_things_and_misc", "copper_casing_door"), "tall_misc_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ANDESITE_CASING, new ResourceLocation("create_things_and_misc", "andesite_casing_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BRASS_CASING, new ResourceLocation("create_things_and_misc", "brass_casing_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_COPPER_CASING, new ResourceLocation("create_things_and_misc", "copper_casing_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ANDESITE_CASING, new ResourceLocation("create_things_and_misc", "andesite_casing_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BRASS_CASING, new ResourceLocation("create_things_and_misc", "brass_casing_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_COPPER_CASING, new ResourceLocation("create_things_and_misc", "copper_casing_door"), "tall_misc_door");
 	}
 }

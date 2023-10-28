@@ -136,7 +136,7 @@ public class AutomaticDoorCompat
 		}
 
 		BlockPos ppos = player.blockPosition().above().immutable();
-		Iterator<BlockPos> it1 = BlockPos.betweenClosedStream(ppos.getX()-1, ppos.getY(), ppos.getZ()-1, ppos.getX()+1, ppos.getY(), ppos.getZ()+1).iterator();
+		Iterator<BlockPos> it1 = BlockPos.betweenClosed(ppos.getX()-1, ppos.getY(), ppos.getZ()-1, ppos.getX()+1, ppos.getY(), ppos.getZ()+1).iterator();
 		while (it1.hasNext()) {
 			BlockPos np = it1.next();
 			BlockState state = world.getBlockState(np);

@@ -21,14 +21,14 @@ public class CharmCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"), "tall_wooden_door");
 	}
 }

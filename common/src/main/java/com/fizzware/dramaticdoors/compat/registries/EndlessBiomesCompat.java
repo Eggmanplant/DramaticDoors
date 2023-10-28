@@ -21,14 +21,14 @@ public class EndlessBiomesCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHESTNUT, new ResourceLocation("windswept", "penumbra_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHESTNUT, new ResourceLocation("windswept", "penumbra_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"), "tall_wooden_door");
 	}
 }

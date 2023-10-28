@@ -22,18 +22,18 @@ public class HorizonsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_REDBUD, new ResourceLocation("horizons", "redbud_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CYPRESS, new ResourceLocation("horizons", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_REDBUD, new ResourceLocation("horizons", "redbud_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CYPRESS, new ResourceLocation("horizons", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_REDBUD, new ResourceLocation("horizons", "redbud_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CYPRESS, new ResourceLocation("horizons", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_REDBUD, new ResourceLocation("horizons", "redbud_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CYPRESS, new ResourceLocation("horizons", "cypress_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CYPRESS, new ResourceLocation("horizons", "cypress_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_REDBUD, new ResourceLocation("horizons", "redbud_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CYPRESS, new ResourceLocation("horizons", "cypress_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_REDBUD, new ResourceLocation("horizons", "redbud_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CYPRESS, new ResourceLocation("horizons", "cypress_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_REDBUD, new ResourceLocation("horizons", "redbud_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CYPRESS, new ResourceLocation("horizons", "cypress_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_REDBUD, new ResourceLocation("horizons", "redbud_door"), "tall_wooden_door");
 	}
 }

@@ -40,30 +40,30 @@ public class MorecraftCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MORECRAFT_BONE, new ResourceLocation("morecraft", "bone_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MORECRAFT_GLASS, new ResourceLocation("morecraft", "glass_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MORECRAFT_SOUL_GLASS, new ResourceLocation("morecraft", "soul_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MORECRAFT_NETHERBRICK, new ResourceLocation("morecraft", "netherbrick_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MORECRAFT_NETHERITE, new ResourceLocation("morecraft", "netherite_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MORECRAFT_BONE, new ResourceLocation("morecraft", "bone_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MORECRAFT_GLASS, new ResourceLocation("morecraft", "glass_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MORECRAFT_SOUL_GLASS, new ResourceLocation("morecraft", "soul_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MORECRAFT_NETHERBRICK, new ResourceLocation("morecraft", "netherbrick_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MORECRAFT_NETHERITE, new ResourceLocation("morecraft", "netherite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_BONE, new ResourceLocation("morecraft", "bone_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_GLASS, new ResourceLocation("morecraft", "glass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_SOUL_GLASS, new ResourceLocation("morecraft", "soul_glass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERBRICK, new ResourceLocation("morecraft", "netherbrick_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERITE, new ResourceLocation("morecraft", "netherite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_BONE, new ResourceLocation("morecraft", "bone_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_GLASS, new ResourceLocation("morecraft", "glass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_SOUL_GLASS, new ResourceLocation("morecraft", "soul_glass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_NETHERBRICK, new ResourceLocation("morecraft", "netherbrick_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_NETHERITE, new ResourceLocation("morecraft", "netherite_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MORECRAFT_BONE, new ResourceLocation("morecraft", "bone_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MORECRAFT_GLASS, new ResourceLocation("morecraft", "glass_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MORECRAFT_SOUL_GLASS, new ResourceLocation("morecraft", "soul_glass_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MORECRAFT_NETHERBRICK, new ResourceLocation("morecraft", "netherbrick_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MORECRAFT_NETHERITE, new ResourceLocation("morecraft", "netherite_door"), false);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MORECRAFT_BONE, new ResourceLocation("morecraft", "bone_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MORECRAFT_GLASS, new ResourceLocation("morecraft", "glass_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MORECRAFT_SOUL_GLASS, new ResourceLocation("morecraft", "soul_glass_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MORECRAFT_NETHERBRICK, new ResourceLocation("morecraft", "netherbrick_door"), "tall_misc_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MORECRAFT_NETHERITE, new ResourceLocation("morecraft", "netherite_door"), "tall_metal_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MORECRAFT_BONE, new ResourceLocation("morecraft", "bone_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MORECRAFT_GLASS, new ResourceLocation("morecraft", "glass_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MORECRAFT_SOUL_GLASS, new ResourceLocation("morecraft", "soul_glass_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MORECRAFT_NETHERBRICK, new ResourceLocation("morecraft", "netherbrick_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MORECRAFT_NETHERITE, new ResourceLocation("morecraft", "netherite_door"), false);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MORECRAFT_BONE, new ResourceLocation("morecraft", "bone_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MORECRAFT_GLASS, new ResourceLocation("morecraft", "glass_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MORECRAFT_SOUL_GLASS, new ResourceLocation("morecraft", "soul_glass_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MORECRAFT_NETHERBRICK, new ResourceLocation("morecraft", "netherbrick_door"), "tall_misc_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MORECRAFT_NETHERITE, new ResourceLocation("morecraft", "netherite_door"), "tall_metal_door");
 	}
 }
