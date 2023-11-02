@@ -136,6 +136,9 @@ public class Compats
 		if (isModLoaded("darkerdepths", checker)) {
 			DarkerDepthsCompat.registerCompat();
 		}
+		if (isModLoaded("deep_aether", checker)) {
+			DeepAetherCompat.registerCompat();
+		}
 		if (isModLoaded("deeperdarker", checker)) {
 			DeeperDarkerCompat.registerCompat();
 		}

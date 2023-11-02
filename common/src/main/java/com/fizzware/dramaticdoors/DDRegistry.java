@@ -20,6 +20,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import oshi.util.tuples.Pair;
 
@@ -60,6 +61,21 @@ public class DDRegistry
 			DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(shortname, tempItem));
 		}
 		tempBlock = createDoorBlock(block, blocksettype, true);
+		tempItem = createDoorItem(tempBlock, true);
+		DOOR_BLOCKS_TO_REGISTER.add(new Pair<String, Block>(tallname, tempBlock));
+		DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(tallname, tempItem));
+	}
+	
+	public static void registerDoorBlockAndItem(String tallname, @Nullable String shortname, Properties properties, BlockSetType blocksettype, boolean includeShort) {
+		Block tempBlock;
+		Item tempItem;
+		if (includeShort) {
+			tempBlock = createDoorBlock(properties, blocksettype, false);
+			tempItem = createDoorItem(tempBlock, false);
+			DOOR_BLOCKS_TO_REGISTER.add(new Pair<String, Block>(shortname, tempBlock));
+			DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(shortname, tempItem));
+		}
+		tempBlock = createDoorBlock(properties, blocksettype, true);
 		tempItem = createDoorItem(tempBlock, true);
 		DOOR_BLOCKS_TO_REGISTER.add(new Pair<String, Block>(tallname, tempBlock));
 		DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(tallname, tempItem));
@@ -124,6 +140,17 @@ public class DDRegistry
 		}
 		else {
 			tempBlock = new ShortDoorBlock(block, blocksettype);
+		}
+		return tempBlock;
+	}
+	
+	protected static Block createDoorBlock(Properties properties, BlockSetType blocksettype, boolean isTall) {
+		Block tempBlock;
+		if (isTall) {
+			tempBlock = new TallDoorBlock(properties, blocksettype);
+		}
+		else {
+			tempBlock = new ShortDoorBlock(properties, blocksettype);
 		}
 		return tempBlock;
 	}

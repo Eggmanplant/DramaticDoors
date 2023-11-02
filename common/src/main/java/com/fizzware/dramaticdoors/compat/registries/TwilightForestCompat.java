@@ -8,6 +8,8 @@ import com.fizzware.dramaticdoors.compat.DDCompatAdvancement;
 import com.fizzware.dramaticdoors.compat.DDCompatRecipe;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 
 public class TwilightForestCompat
@@ -27,7 +29,8 @@ public class TwilightForestCompat
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_TRANSWOOD, DDNames.SHORT_TRANSWOOD, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("twilightforest", "transformation_door")), BlockSetType.OAK, true);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_TWILIGHT_OAK, DDNames.SHORT_TWILIGHT_OAK, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("twilightforest", "twilight_oak_door")), BlockSetType.OAK, true);
 		if (Compats.isModLoaded("tflostblocks", checker)) {
-			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_TOWERWOOD, DDNames.SHORT_TOWERWOOD, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("tflostblocks", "towerwood_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_THORN, DDNames.SHORT_THORN, Properties.of().sound(SoundType.WOOD).strength(50.0F, 2000.0F), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_TOWERWOOD, DDNames.SHORT_TOWERWOOD, Properties.of().sound(SoundType.WOOD).strength(40.0F, 6.0F), BlockSetType.OAK, true);
 		}
 	}
 	
@@ -67,9 +70,13 @@ public class TwilightForestCompat
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"), "tall_tf_wooden_door");
 		
 		if (Compats.isModLoaded("tflostblocks", checker)) {
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_THORN, new ResourceLocation("tflostblocks", "thorn_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_THORN, new ResourceLocation("tflostblocks", "thorn_door"));
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"));
 			
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_THORN, new ResourceLocation("tflostblocks", "thorn_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_THORN, new ResourceLocation("tflostblocks", "thorn_door"), "tall_tf_wooden_door");
 			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"), true);
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_TOWERWOOD, new ResourceLocation("tflostblocks", "towerwood_door"), "tall_tf_wooden_door");
 		}

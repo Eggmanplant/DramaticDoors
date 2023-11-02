@@ -9,6 +9,7 @@
     {"id": "dramaticdoors:short_timewood_door", "required": false},
     {"id": "dramaticdoors:short_transwood_door", "required": false},
     {"id": "dramaticdoors:short_twilight_oak_door", "required": false},
+    {"id": "dramaticdoors:short_thorn_door", "required": false},
     {"id": "dramaticdoors:short_towerwood_door", "required": false}
   ]
 }

@@ -132,6 +132,7 @@ public class DDNames
     public static final String SHORT_TRANSWOOD = "short_transwood_door";
     public static final String SHORT_TWILIGHT_OAK = "short_twilight_oak_door";
 
+    public static final String SHORT_THORN = "short_thorn_door"; // Twilight Forest: The Lost Blocks
     public static final String SHORT_TOWERWOOD = "short_towerwood_door"; // Twilight Forest: The Lost Blocks
 
     public static final String TALL_CANOPY = "tall_canopy_door";
@@ -143,6 +144,7 @@ public class DDNames
     public static final String TALL_TRANSWOOD = "tall_transwood_door";
     public static final String TALL_TWILIGHT_OAK = "tall_twilight_oak_door";
 
+    public static final String TALL_THORN = "tall_thorn_door"; // Twilight Forest: The Lost Blocks
     public static final String TALL_TOWERWOOD = "tall_towerwood_door"; // Twilight Forest: The Lost Blocks
 
     // -- Abnormals Mods --
@@ -563,6 +565,19 @@ public class DDNames
     public static final String SHORT_PETRIFIED = "short_petrified_door";
     
     public static final String TALL_PETRIFIED = "tall_petrified_door";
+    
+    //Deep Aether
+    public static final String SHORT_CONBERRY = "short_conberry_door";
+    public static final String SHORT_CRUDEROOT = "short_cruderoot_door";
+    public static final String SHORT_ROSEROOT = "short_roseroot_door";
+    public static final String SHORT_SUNROOT = "short_sunroot_door";
+    public static final String SHORT_YAGROOT = "short_yagroot_door";
+
+    public static final String TALL_CONBERRY = "tall_conberry_door";
+    public static final String TALL_CRUDEROOT = "tall_cruderoot_door";
+    public static final String TALL_ROSEROOT = "tall_roseroot_door";
+    public static final String TALL_SUNROOT = "tall_sunroot_door";
+    public static final String TALL_YAGROOT = "tall_yagroot_door";
     
     //Deeper and Darker
     public static final String SHORT_ECHO = "short_echo_door";
