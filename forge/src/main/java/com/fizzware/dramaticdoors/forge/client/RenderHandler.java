@@ -2,6 +2,7 @@ package com.fizzware.dramaticdoors.forge.client;
 
 import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.forge.ForgeUtils;
+import com.fizzware.dramaticdoors.forge.addons.create.DDPartialModels;
 import com.fizzware.dramaticdoors.forge.addons.create.TallSlidingDoorBlockRenderer;
 import com.fizzware.dramaticdoors.forge.compat.CreateForgeCompat;
 import com.fizzware.dramaticdoors.DDNames;
@@ -31,6 +32,8 @@ public class RenderHandler
 			}
 		}
 		if (ForgeUtils.INSTANCE.isModLoaded("create")) {
+			DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_ANDESITE, "create/tall_andesite_door");
+			DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_COPPER, "create/tall_copper_door");
 			BlockEntityRenderers.register(CreateForgeCompat.TALL_SLIDING_DOOR_BLOCK_ENTITY, TallSlidingDoorBlockRenderer::new);
 		}
 	}

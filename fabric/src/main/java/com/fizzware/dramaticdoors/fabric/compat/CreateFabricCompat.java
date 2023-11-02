@@ -1,10 +1,8 @@
 package com.fizzware.dramaticdoors.fabric.compat;
 
-import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
 import com.fizzware.dramaticdoors.compat.registries.CreateCompat;
-import com.fizzware.dramaticdoors.fabric.addons.create.DDPartialModels;
 import com.fizzware.dramaticdoors.fabric.addons.create.ShortDoorMovingInteraction;
 import com.fizzware.dramaticdoors.fabric.addons.create.TallDoorMovingInteraction;
 import com.fizzware.dramaticdoors.fabric.addons.create.TallFabricCreateSlidingDoorBlock;
@@ -32,9 +30,6 @@ public class CreateFabricCompat
 			CreateCompat.TALL_TRAIN_DOOR = new TallFabricCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("create", "train_door"), Blocks.IRON_DOOR), BlockSetType.IRON, false);
 		}
     	CreateCompat.registerCompat();
-    	
-    	DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_ANDESITE, "create/tall_andesite_door");
-    	DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_COPPER, "create/tall_copper_door");
     	
 		TallDoorMovingInteraction tallDoorBehaviour = new TallDoorMovingInteraction();
 		AllInteractionBehaviours.registerBehaviourProvider(state -> {
