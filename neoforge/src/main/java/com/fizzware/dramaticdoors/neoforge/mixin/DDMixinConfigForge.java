@@ -9,8 +9,8 @@ import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
 import com.fizzware.dramaticdoors.neoforge.config.DDConfigForge;
 
-import net.minecraftforge.fml.loading.FMLPaths;
-import net.minecraftforge.fml.loading.LoadingModList;
+import net.neoforged.fml.loading.FMLPaths;
+import net.neoforged.fml.loading.LoadingModList;
 
 public class DDMixinConfigForge implements IMixinConfigPlugin
 {

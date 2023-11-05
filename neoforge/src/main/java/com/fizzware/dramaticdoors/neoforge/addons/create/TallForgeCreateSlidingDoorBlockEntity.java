@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.neoforge.addons.create;
+/*package com.fizzware.dramaticdoors.neoforge.addons.create;
 
 import java.util.List;
 
@@ -86,3 +86,4 @@ public class TallForgeCreateSlidingDoorBlockEntity extends SmartBlockEntity
 		this.animation = animation;
 	}
 }
+*/

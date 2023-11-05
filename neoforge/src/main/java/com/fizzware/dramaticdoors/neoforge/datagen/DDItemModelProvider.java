@@ -4,9 +4,9 @@ import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.ForgeRegistries;
 
 public class DDItemModelProvider extends ItemModelProvider
 {

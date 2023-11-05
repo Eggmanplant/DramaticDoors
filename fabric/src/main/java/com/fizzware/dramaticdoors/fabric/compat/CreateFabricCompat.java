@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.fabric.compat;
+/*package com.fizzware.dramaticdoors.fabric.compat;
 
 import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
@@ -54,3 +54,4 @@ public class CreateFabricCompat
 		});
 	}
 }
+*/

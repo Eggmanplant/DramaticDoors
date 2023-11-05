@@ -1,16 +1,16 @@
 package com.fizzware.dramaticdoors.neoforge.client;
 
 import com.fizzware.dramaticdoors.DDRegistry;
-import com.fizzware.dramaticdoors.neoforge.NeoforgeUtils;
-import com.fizzware.dramaticdoors.neoforge.addons.create.DDPartialModels;
-import com.fizzware.dramaticdoors.neoforge.addons.create.TallSlidingDoorBlockRenderer;
-import com.fizzware.dramaticdoors.neoforge.compat.CreateForgeCompat;
+//import com.fizzware.dramaticdoors.neoforge.NeoforgeUtils;
+//import com.fizzware.dramaticdoors.neoforge.addons.create.DDPartialModels;
+//import com.fizzware.dramaticdoors.neoforge.addons.create.TallSlidingDoorBlockRenderer;
+//import com.fizzware.dramaticdoors.neoforge.compat.CreateForgeCompat;
 import com.fizzware.dramaticdoors.DDNames;
 import com.google.common.collect.ImmutableList;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+//import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.world.level.block.Block;
 import oshi.util.tuples.Pair;
 
@@ -31,10 +31,10 @@ public class RenderHandler
 				ItemBlockRenderTypes.setRenderLayer(pair.getB(), RenderType.cutout());
 			}
 		}
-		if (NeoforgeUtils.INSTANCE.isModLoaded("create")) {
+		/*if (NeoforgeUtils.INSTANCE.isModLoaded("create")) {
 			DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_ANDESITE, "create/tall_andesite_door");
 			DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_COPPER, "create/tall_copper_door");
 			BlockEntityRenderers.register(CreateForgeCompat.TALL_SLIDING_DOOR_BLOCK_ENTITY, TallSlidingDoorBlockRenderer::new);
-		}
+		}*/
 	}
 }

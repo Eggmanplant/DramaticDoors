@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.fabric.addons.create;
+/*package com.fizzware.dramaticdoors.fabric.addons.create;
 
 import java.util.List;
 
@@ -86,3 +86,4 @@ public class TallFabricCreateSlidingDoorBlockEntity extends SmartBlockEntity
 		this.animation = animation;
 	}
 }
+*/

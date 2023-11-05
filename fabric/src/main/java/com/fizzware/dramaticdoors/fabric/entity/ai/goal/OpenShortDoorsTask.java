@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.fabric.entity.ai.goal;
+package src.main.java.com.fizzware.dramaticdoors.fabric.entity.ai.goal;
 
 import java.util.Objects;
 import java.util.Optional;

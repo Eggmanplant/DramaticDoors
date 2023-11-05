@@ -3,10 +3,10 @@ package com.fizzware.dramaticdoors.neoforge.compat;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.neoforge.config.DDConfigForge;
 
-import net.minecraftforge.event.level.LevelEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.event.config.ModConfigEvent;
-import net.minecraftforge.fml.loading.FMLPaths;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.event.config.ModConfigEvent;
+import net.neoforged.fml.loading.FMLPaths;
+import net.neoforged.neoforge.event.level.LevelEvent;
 
 public class QuarkDoubleDoorCompat
 {

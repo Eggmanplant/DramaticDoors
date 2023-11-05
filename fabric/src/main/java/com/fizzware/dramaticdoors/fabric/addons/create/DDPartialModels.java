@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.fabric.addons.create;
+/*package com.fizzware.dramaticdoors.fabric.addons.create;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,3 +21,4 @@ public class DDPartialModels
 		return new PartialModel(new ResourceLocation(DramaticDoors.MOD_ID, "block/" + path));
 	}
 }
+*/

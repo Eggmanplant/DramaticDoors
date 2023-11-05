@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.neoforge.compat;
+/*package com.fizzware.dramaticdoors.neoforge.compat;
 
 import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
@@ -55,3 +55,4 @@ public class CreateForgeCompat
 		});
 	}
 }
+*/

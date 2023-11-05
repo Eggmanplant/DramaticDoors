@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.neoforge.addons.create;
+/*package com.fizzware.dramaticdoors.neoforge.addons.create;
 
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
 import com.fizzware.dramaticdoors.neoforge.compat.CreateForgeCompat;
@@ -158,3 +158,4 @@ public class TallForgeCreateSlidingDoorBlock extends TallCreateSlidingDoorBlock 
 		return CreateForgeCompat.TALL_SLIDING_DOOR_BLOCK_ENTITY;
 	}
 }
+*/

@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.neoforge.addons.create;
+/*package com.fizzware.dramaticdoors.neoforge.addons.create;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
@@ -203,3 +203,4 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 		return Direction.getNearest(directionVec.x, directionVec.y, directionVec.z);
 	}
 }
+*/

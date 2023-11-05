@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.fabric.addons.create;
+/*package com.fizzware.dramaticdoors.fabric.addons.create;
 
 import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
@@ -55,3 +55,4 @@ public class ShortDoorMovingInteraction extends SimpleBlockMovingInteraction
 		return true;
 	}
 }
+*/

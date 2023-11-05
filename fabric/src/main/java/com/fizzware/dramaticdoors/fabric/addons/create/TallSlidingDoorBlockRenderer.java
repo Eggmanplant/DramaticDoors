@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.fabric.addons.create;
+/*package com.fizzware.dramaticdoors.fabric.addons.create;
 
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
@@ -85,3 +85,4 @@ public class TallSlidingDoorBlockRenderer implements BlockEntityRenderer<TallFab
 		}
 	}
 }
+*/

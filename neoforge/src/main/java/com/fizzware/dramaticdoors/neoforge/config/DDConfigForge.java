@@ -5,22 +5,22 @@ import java.nio.file.Path;
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;
 
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class DDConfigForge
 {
-    private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+    private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 	
-	public static ForgeConfigSpec CONFIG;
+	public static ModConfigSpec CONFIG;
 
 	public static final String CATEGORY_EXPERIMENTAL = "Experimental";
 
-	public static ForgeConfigSpec.BooleanValue devMode;
+	public static ModConfigSpec.BooleanValue devMode;
 
 	public static final String CATEGORY_MIXINS = "Mixins";
 	
-	public static ForgeConfigSpec.BooleanValue waterloggableDoors;
-	public static ForgeConfigSpec.BooleanValue waterloggableFenceGates;
+	public static ModConfigSpec.BooleanValue waterloggableDoors;
+	public static ModConfigSpec.BooleanValue waterloggableFenceGates;
 	
 	static {
 		initializeConfig();
@@ -51,13 +51,13 @@ public class DDConfigForge
 		BUILDER.pop();
 	}
 	
-    public static void loadConfig(ForgeConfigSpec spec, Path path) {
+    public static void loadConfig(ModConfigSpec spec, Path path) {
         final CommentedFileConfig configData = CommentedFileConfig.builder(path).sync().autosave().writingMode(WritingMode.REPLACE).build();
         configData.load();
         spec.setConfig(configData);
     }
 
-    public static boolean getConfigBooleanValue(ForgeConfigSpec spec, Path path, String variable) {
+    public static boolean getConfigBooleanValue(ModConfigSpec spec, Path path, String variable) {
     	final CommentedFileConfig configData = CommentedFileConfig.builder(path).sync().build();
     	configData.load();
     	if (configData.get(variable) != null) {
@@ -68,7 +68,7 @@ public class DDConfigForge
     	}
     }
     
-    public static int getConfigIntValue(ForgeConfigSpec spec, Path path, String variable) {
+    public static int getConfigIntValue(ModConfigSpec spec, Path path, String variable) {
     	final CommentedFileConfig configData = CommentedFileConfig.builder(path).sync().build();
     	configData.load();
     	if (configData.get(variable) != null) {
