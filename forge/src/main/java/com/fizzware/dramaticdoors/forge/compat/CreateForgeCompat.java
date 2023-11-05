@@ -1,8 +1,10 @@
 package com.fizzware.dramaticdoors.forge.compat;
 
+import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
 import com.fizzware.dramaticdoors.compat.registries.CreateCompat;
+import com.fizzware.dramaticdoors.forge.addons.create.DDPartialModels;
 import com.fizzware.dramaticdoors.forge.addons.create.ShortDoorMovingInteraction;
 import com.fizzware.dramaticdoors.forge.addons.create.TallDoorMovingInteraction;
 import com.fizzware.dramaticdoors.forge.addons.create.TallForgeCreateSlidingDoorBlock;
@@ -16,6 +18,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 
 public class CreateForgeCompat
 {
@@ -29,7 +33,10 @@ public class CreateForgeCompat
 			CreateCompat.TALL_FRAMED_GLASS_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("create", "framed_glass_door"), Blocks.IRON_DOOR), BlockSetType.IRON, false);
 			CreateCompat.TALL_TRAIN_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("create", "train_door"), Blocks.IRON_DOOR), BlockSetType.IRON, false);
 		}
-		
+		if (FMLEnvironment.dist == Dist.CLIENT) {
+	    	DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_ANDESITE, "create/tall_andesite_door");
+	    	DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_COPPER, "create/tall_copper_door");
+		}
 		CreateCompat.registerCompat();
     	
 		TallDoorMovingInteraction tallDoorBehaviour = new TallDoorMovingInteraction();
