@@ -1,22 +1,31 @@
 plugins {
     id 'java-library'
-    id 'idea'
     id 'eclipse'
+    id 'idea'
     id 'maven-publish'
     id 'net.neoforged.gradle.userdev' version '7.+'
-    id 'org.spongepowered.mixin'
+    // id 'net.neoforged.gradle.mixin'
 }
 
-base {
-    archivesBaseName = "neoforge" // "${rootProject.archives_base_name}-${project.name}"
+archivesBaseName = "neoforge" // "${rootProject.archives_base_name}-${project.name}"
+
+repositories {
+	maven { 
+	    url "https://cursemaven.com"
+        content { includeGroup "curse.maven" }
+	}
+    maven {
+        name = 'tterrag maven'
+        url = 'https://maven.tterrag.com/'
+    }
 }
 
-mixin {
+// mixin {
     // Only uncomment if you need to generate the refmap. Remember to edit the refmap for the merged JAR file!
     // if (!file('src/main/resources/${rootProject.mod_id}_forge.refmap.json').exists()) {
     //    add(sourceSets.main, "${rootProject.mod_id}_forge.refmap.json")
     // }
-}
+// }
 
 minecraft.accessTransformers.file project(":common").file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -43,32 +52,18 @@ runs {
 
 sourceSets.main.resources.srcDir 'src/generated/resources'
 
-configurations {
-    common
-    compileClasspath.extendsFrom common
-    runtimeClasspath.extendsFrom common
-    developmentForge.extendsFrom common
-}
-
-repositories {
-	maven { 
-	    url "https://cursemaven.com"
-        content { includeGroup "curse.maven" }
-	}
-    maven {
-        name = 'tterrag maven'
-        url = 'https://maven.tterrag.com/'
-    }
+processResources {
+    from project(":common").sourceSets.main.resources
 }
 
 dependencies {
-    implementation("net.neoforged:forge:${rootProject.neoforge_version}")
+    implementation("net.neoforged:neoforge:${project.neoforge_version}")
     compileOnly project(":common")
 	annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
 	implementation("curse.maven:macaws-doors-378646:4649910")
-    // implementation("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_version}:slim") { transitive = false }
-    // implementation("com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}")
-    // implementation("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")
+    // implementation("com.simibubi.create:create-${project.minecraft_version}:${project.create_version}:slim") { transitive = false }
+    // implementation("com.jozufozu.flywheel:flywheel-forge-${project.minecraft_version}:${project.flywheel_version}")
+    // implementation("com.tterrag.registrate:Registrate:${project.registrate_version}")
 }
 
 publishing {
@@ -83,8 +78,4 @@ publishing {
             url "file://" + System.getenv("local_maven")
         }
     }
-}
-
-tasks.withType(Jar).configureEach {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
