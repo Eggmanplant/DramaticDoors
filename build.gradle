@@ -12,10 +12,10 @@ forgix {
 	outputDir = "quifabrge/build/libs"
 	version = '${rootProject.mod_version}'
 	
-	forge {
-		projectName = "forge"
-		jarLocation = "build/libs/forge.jar"
-		additionalRelocate("com.fizzware.dramaticdoors", "com.fizzware.dramaticdoors.forge")
+	custom {
+		projectName = "neoforge"
+		jarLocation = "build/libs/neoforge.jar"
+		additionalRelocate("com.fizzware.dramaticdoors", "com.fizzware.dramaticdoors.neoforge")
 	}
 	fabric {
 		projectName = "fabric"
@@ -80,9 +80,9 @@ subprojects {
 			"version": mod_version,
 			"group": project.group, //Else we target the task's group.
 			"minecraft_version": rootProject.minecraft_version,
-			"forge_version": forge_version,
-			"forge_loader_version_range": forge_loader_version_range,
-			"forge_version_range": forge_version_range,
+			"neoforge_version": neoforge_version,
+			"neoforge_loader_version_range": neoforge_loader_version_range,
+			"neoforge_version_range": neoforge_version_range,
 			"minecraft_version_range": minecraft_version_range,
 			"fabric_version": fabric_api_version,
 			"fabric_loader_version": fabric_loader_version,
