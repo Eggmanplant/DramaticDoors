@@ -20,10 +20,10 @@ public class DeeperDarkerCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ECHO, new ResourceLocation("deeperdarker", "echo_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ECHO, new ResourceLocation("deeperdarker", "echo_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECHO, new ResourceLocation("deeperdarker", "echo_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECHO, new ResourceLocation("deeperdarker", "echo_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ECHO, new ResourceLocation("deeperdarker", "echo_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ECHO, new ResourceLocation("deeperdarker", "echo_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ECHO, new ResourceLocation("deeperdarker", "echo_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ECHO, new ResourceLocation("deeperdarker", "echo_door"), "tall_wooden_door");
 	}
 }

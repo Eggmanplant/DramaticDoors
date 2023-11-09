@@ -17,30 +17,39 @@ public class DDCompatRecipe
 	public static List<JsonObject> SHORT_DOOR_RECIPES = new ArrayList<JsonObject>();
 	public static List<JsonObject> TALL_DOOR_RECIPES = new ArrayList<JsonObject>();
 	
-	public static JsonObject createShortDoorRecipeJson(String recipeID, ResourceLocation baseDoor) {
+	public static JsonObject createShortDoorRecipe(String recipeID, ResourceLocation baseDoor) {
 		JsonObject json = createStonecutterRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID));
 		SHORT_DOOR_RECIPES.add(json);
 		return json;
 	}
 	
-	public static JsonObject createShortDoorRecipeJson(String recipeID, ResourceLocation baseDoor, boolean isWood) {
+	public static void createShortDoorRecipe(String recipeID, ResourceLocation baseDoor, boolean isWood) {
 		JsonObject json;
 		if (isWood) {
-			if (Compats.WOODWORKS_INSTALLED) {
-				json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID));
+			if (Compats.WOODWORKS_INSTALLED || Compats.isModLoaded("aurorasdeco", Compats.modChecker)) {
+				//Woodworks
+				if (Compats.WOODWORKS_INSTALLED) {
+					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), "woodworks:sawmill");
+					SHORT_DOOR_RECIPES.add(json);
+				}
+				//Aurora's Decorations
+				if (Compats.isModLoaded("aurorasdeco", Compats.modChecker)) {
+					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), "aurorasdeco:woodcutting");
+					SHORT_DOOR_RECIPES.add(json);
+				}
 			}
 			else {
 				json = createStonecutterRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID));
+				SHORT_DOOR_RECIPES.add(json);
 			}
 		}
 		else {
 			json = createStonecutterRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID));
+			SHORT_DOOR_RECIPES.add(json);
 		}
-		SHORT_DOOR_RECIPES.add(json);
-		return json;
 	}
 	
-	public static JsonObject createTallDoorRecipeJson(String recipeID, ResourceLocation baseDoor, @Nullable String group) {
+	public static void createTallDoorRecipe(String recipeID, ResourceLocation baseDoor, @Nullable String group) {
 		JsonObject json = createShapedRecipeJson(Lists.newArrayList('#'), // The keys we are using for the input items/tags.
 				Lists.newArrayList(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath())), // The items/tags we are using as input.
 				Lists.newArrayList("item"), // Whether the input we provided is a tag or an item.
@@ -48,7 +57,6 @@ public class DDCompatRecipe
 				new ResourceLocation("dramaticdoors:" + recipeID), group // The crafting output
 		);
 		TALL_DOOR_RECIPES.add(json);
-		return json;
 	}
 
     public static JsonObject createShapedRecipeJson(ArrayList<Character> keys, ArrayList<ResourceLocation> items, ArrayList<String> type, ArrayList<String> pattern, ResourceLocation output, @Nullable String group) {
@@ -104,11 +112,11 @@ public class DDCompatRecipe
         return json;
     }
     
-    public static JsonObject createSawmillRecipeJson(ResourceLocation input, ResourceLocation output) {
+    public static JsonObject createSawmillRecipeJson(ResourceLocation input, ResourceLocation output, String recipeType) {
         //Creating a new json object, where we will store our recipe.
         JsonObject json = new JsonObject();
         //The "type" of the recipe we are creating. In this case, a sawmill recipe.
-        json.addProperty("type", "woodworks:sawmill");
+        json.addProperty("type", recipeType);
         //Add ingredients that will be the input.
         JsonObject ingredient = new JsonObject();
         ingredient.addProperty("item", input.toString());

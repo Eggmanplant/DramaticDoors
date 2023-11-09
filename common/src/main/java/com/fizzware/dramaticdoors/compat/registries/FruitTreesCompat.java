@@ -28,17 +28,17 @@ public class FruitTreesCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_FLESH, new ResourceLocation("fruittrees", "cherry_door"));
-		//DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_FULL_FLESH, new ResourceLocation("fruittrees", "cherry_sliding_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_FLESHKIN, new ResourceLocation("fruittrees", "citrus_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_FLESH, new ResourceLocation("fruittrees", "cherry_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_FULL_FLESH, new ResourceLocation("fruittrees", "cherry_sliding_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_FLESHKIN, new ResourceLocation("fruittrees", "citrus_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FLESH, new ResourceLocation("fruittrees", "cherry_door"));
+		//DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FULL_FLESH, new ResourceLocation("fruittrees", "cherry_sliding_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FLESHKIN, new ResourceLocation("fruittrees", "citrus_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FLESH, new ResourceLocation("fruittrees", "cherry_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FULL_FLESH, new ResourceLocation("fruittrees", "cherry_sliding_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FLESHKIN, new ResourceLocation("fruittrees", "citrus_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_FLESH, new ResourceLocation("fruittrees", "cherry_door"));
-		//DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_FULL_FLESH, new ResourceLocation("fruittrees", "cherry_sliding_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_FLESHKIN, new ResourceLocation("fruittrees", "citrus_door"));
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_FLESH, new ResourceLocation("fruittrees", "cherry_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_FULL_FLESH, new ResourceLocation("fruittrees", "cherry_sliding_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_FLESHKIN, new ResourceLocation("fruittrees", "citrus_door"), "tall_wooden_door");	}
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FLESH, new ResourceLocation("fruittrees", "cherry_door"));
+		//DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FULL_FLESH, new ResourceLocation("fruittrees", "cherry_sliding_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FLESHKIN, new ResourceLocation("fruittrees", "citrus_door"));
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_FLESH, new ResourceLocation("fruittrees", "cherry_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_FULL_FLESH, new ResourceLocation("fruittrees", "cherry_sliding_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_FLESHKIN, new ResourceLocation("fruittrees", "citrus_door"), "tall_wooden_door");	}
 }

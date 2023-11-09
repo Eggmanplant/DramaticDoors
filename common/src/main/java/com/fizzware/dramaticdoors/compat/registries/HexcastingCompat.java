@@ -20,10 +20,10 @@ public class HexcastingCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EDIFIED, new ResourceLocation("hexcasting", "edified_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EDIFIED, new ResourceLocation("hexcasting", "edified_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EDIFIED, new ResourceLocation("hexcasting", "edified_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EDIFIED, new ResourceLocation("hexcasting", "edified_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EDIFIED, new ResourceLocation("hexcasting", "edified_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EDIFIED, new ResourceLocation("hexcasting", "edified_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EDIFIED, new ResourceLocation("hexcasting", "edified_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EDIFIED, new ResourceLocation("hexcasting", "edified_door"), "tall_wooden_door");
 	}
 }

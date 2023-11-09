@@ -20,10 +20,10 @@ public class NewWorldCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_FIR, new ResourceLocation("newworld", "fir_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_FIR, new ResourceLocation("newworld", "fir_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FIR, new ResourceLocation("newworld", "fir_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FIR, new ResourceLocation("newworld", "fir_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_FIR, new ResourceLocation("newworld", "fir_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_FIR, new ResourceLocation("newworld", "fir_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FIR, new ResourceLocation("newworld", "fir_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_FIR, new ResourceLocation("newworld", "fir_door"), "tall_wooden_door");
 	}
 }

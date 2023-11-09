@@ -22,18 +22,18 @@ public class WilderWildCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_WW_PALM, new ResourceLocation("wilderwild", "palm_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_WW_PALM, new ResourceLocation("wilderwild", "palm_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_PALM, new ResourceLocation("wilderwild", "palm_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WW_PALM, new ResourceLocation("wilderwild", "palm_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_WW_PALM, new ResourceLocation("wilderwild", "palm_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_WW_PALM, new ResourceLocation("wilderwild", "palm_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WW_PALM, new ResourceLocation("wilderwild", "palm_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WW_BAOBAB, new ResourceLocation("wilderwild", "baobab_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WW_CYPRESS, new ResourceLocation("wilderwild", "cypress_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WW_PALM, new ResourceLocation("wilderwild", "palm_door"), "tall_wooden_door");
 	}
 }

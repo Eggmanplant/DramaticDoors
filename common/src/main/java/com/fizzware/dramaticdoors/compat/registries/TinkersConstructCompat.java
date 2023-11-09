@@ -22,18 +22,18 @@ public class TinkersConstructCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLOODSHROOM, new ResourceLocation("tconstruct", "bloodshroom_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GREENHEART, new ResourceLocation("tconstruct", "greenheart_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_SKYROOT, new ResourceLocation("tconstruct", "skyroot_door"), "tall_wooden_door");
 	}
 }

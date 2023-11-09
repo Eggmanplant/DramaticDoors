@@ -20,10 +20,10 @@ public class DarkerDepthsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_PETRIFIED, new ResourceLocation("darkerdepths", "petrified_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_PETRIFIED, new ResourceLocation("darkerdepths", "petrified_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PETRIFIED, new ResourceLocation("darkerdepths", "petrified_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PETRIFIED, new ResourceLocation("darkerdepths", "petrified_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_PETRIFIED, new ResourceLocation("darkerdepths", "petrified_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_PETRIFIED, new ResourceLocation("darkerdepths", "petrified_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PETRIFIED, new ResourceLocation("darkerdepths", "petrified_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PETRIFIED, new ResourceLocation("darkerdepths", "petrified_door"), "tall_wooden_door");
 	}
 }

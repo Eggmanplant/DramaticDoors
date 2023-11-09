@@ -19,10 +19,10 @@ public class DesolationCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHARRED, new ResourceLocation("desolation", "charred_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHARRED, new ResourceLocation("desolation", "charred_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARRED, new ResourceLocation("desolation", "charred_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHARRED, new ResourceLocation("desolation", "charred_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHARRED, new ResourceLocation("desolation", "charred_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHARRED, new ResourceLocation("desolation", "charred_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHARRED, new ResourceLocation("desolation", "charred_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHARRED, new ResourceLocation("desolation", "charred_door"), "tall_wooden_door");
 	}
 }

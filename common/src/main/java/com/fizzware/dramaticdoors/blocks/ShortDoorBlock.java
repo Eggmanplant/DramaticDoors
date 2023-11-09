@@ -69,6 +69,11 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 		super(Properties.copy(from));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE));
 	}
+	
+	public ShortDoorBlock(Properties properties) {
+		super(properties);
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE));
+	}
 
     @Override
     public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
@@ -311,7 +316,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     
     //Double Doors Compatibility
 	public static void tryOpenDoubleDoor(Level world, BlockState state, BlockPos pos) {
-        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.MANYIDEAS_DOORS_INSTALLED/* || QuarkCompat.hasQuarkDoubleDoorsModule()*/) {
+        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.MANYIDEAS_DOORS_INSTALLED || Compats.modChecker.isQuarkModuleEnabled()) {
             Direction direction = state.getValue(ShortDoorBlock.FACING);
             boolean isOpen = state.getValue(ShortDoorBlock.OPEN);
             DoorHingeSide isMirrored = state.getValue(ShortDoorBlock.HINGE);

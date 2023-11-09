@@ -2,11 +2,19 @@ package com.fizzware.dramaticdoors.forge.client;
 
 import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DDRegistry;
+import com.fizzware.dramaticdoors.forge.ForgeUtils;
+import com.fizzware.dramaticdoors.forge.addons.blockcarpentry.TallFrameDoorModelLoader;
+import com.fizzware.dramaticdoors.forge.addons.blockcarpentry.TallIllusionDoorModelLoader;
+import com.fizzware.dramaticdoors.forge.addons.create.TallSlidingDoorBlockRenderer;
+import com.fizzware.dramaticdoors.forge.compat.CreateForgeCompat;
 import com.google.common.collect.ImmutableList;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.event.ModelEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import oshi.util.tuples.Pair;
 
 public class RenderHandler
@@ -25,6 +33,17 @@ public class RenderHandler
 			else {
 				ItemBlockRenderTypes.setRenderLayer(pair.getB(), RenderType.cutout());
 			}
+		}
+		if (ForgeUtils.INSTANCE.isModLoaded("create")) {
+			BlockEntityRenderers.register(CreateForgeCompat.TALL_SLIDING_DOOR_BLOCK_ENTITY, TallSlidingDoorBlockRenderer::new);
+		}
+	}
+
+	@SubscribeEvent
+	public static void registerGeometryLoaders(final ModelEvent.RegisterGeometryLoaders event) {
+		if (ForgeUtils.INSTANCE.isModLoaded("blockcarpentry")) {
+			event.register("tall_frame_door_loader", new TallFrameDoorModelLoader());
+			event.register("tall_illusion_door_loader", new TallIllusionDoorModelLoader());
 		}
 	}
 }

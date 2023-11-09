@@ -11,6 +11,7 @@
     "LandPathNodeMakerMixin",
     "DoorBlockMixin",
     "FenceGateBlockMixin",
+    "FenceGateFrameBlockMixinForge",
     "JapaneseDoorBlockMixinForge",
     "DoorInteractGoalMixin",
     "OpenDoorsTaskMixin",
@@ -23,5 +24,6 @@
   "injectors": {
     "defaultRequire": 1
   },
-  "maxShiftBy": 2
+  "maxShiftBy": 2,
+  "refmap": "dramaticdoors_forge.refmap.json"
 }

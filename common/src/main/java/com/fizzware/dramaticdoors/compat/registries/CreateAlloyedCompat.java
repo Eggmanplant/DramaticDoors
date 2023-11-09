@@ -21,14 +21,14 @@ public class CreateAlloyedCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_STEEL, new ResourceLocation("alloyed", "steel_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_LOCKED_STEEL, new ResourceLocation("alloyed", "locked_steel_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_STEEL, new ResourceLocation("alloyed", "steel_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_LOCKED_STEEL, new ResourceLocation("alloyed", "locked_steel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STEEL, new ResourceLocation("alloyed", "steel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LOCKED_STEEL, new ResourceLocation("alloyed", "locked_steel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_STEEL, new ResourceLocation("alloyed", "steel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LOCKED_STEEL, new ResourceLocation("alloyed", "locked_steel_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_STEEL, new ResourceLocation("alloyed", "steel_door"), false);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_LOCKED_STEEL, new ResourceLocation("alloyed", "locked_steel_door"), false);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_STEEL, new ResourceLocation("alloyed", "steel_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_LOCKED_STEEL, new ResourceLocation("alloyed", "locked_steel_door"), "tall_metal_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_STEEL, new ResourceLocation("alloyed", "steel_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LOCKED_STEEL, new ResourceLocation("alloyed", "locked_steel_door"), false);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_STEEL, new ResourceLocation("alloyed", "steel_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_STEEL, new ResourceLocation("alloyed", "locked_steel_door"), "tall_metal_door");
 	}
 }

@@ -32,10 +32,12 @@ public class DramaticDoorsForge
     	DDRegistry.registerTabs(ForgeUtils.INSTANCE);
     	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DDConfigForge.CONFIG);
     	bus.register(DDForgeRegistry.class);
-    	bus.register(ForgeUtils.class);
-    	
+    	bus.register(ForgeUtils.class);  	
         bus.addListener(this::setupCommon);
-        if (FMLEnvironment.dist == Dist.CLIENT) { bus.addListener(this::setupClient); }
+        if (FMLEnvironment.dist == Dist.CLIENT) { 
+        	bus.addListener(this::setupClient); 
+        	bus.register(RenderHandler.class);
+        }
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -45,7 +47,7 @@ public class DramaticDoorsForge
     		MinecraftForge.EVENT_BUS.register(new AutomaticDoorCompat());
     	}
     	if (Compats.QUARK_INSTALLED) {
-    		MinecraftForge.EVENT_BUS.register(new QuarkDoubleDoorCompat());
+    		MinecraftForge.EVENT_BUS.register(QuarkDoubleDoorCompat.class);
     	}
     }
     

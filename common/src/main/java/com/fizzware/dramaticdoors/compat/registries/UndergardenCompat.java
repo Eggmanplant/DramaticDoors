@@ -22,18 +22,18 @@ public class UndergardenCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GRONGLE, new ResourceLocation("undergarden", "grongle_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_SMOGSTEM, new ResourceLocation("undergarden", "smogstem_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_WIGGLEWOOD, new ResourceLocation("undergarden", "wigglewood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GRONGLE, new ResourceLocation("undergarden", "grongle_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_SMOGSTEM, new ResourceLocation("undergarden", "smogstem_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_WIGGLEWOOD, new ResourceLocation("undergarden", "wigglewood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GRONGLE, new ResourceLocation("undergarden", "grongle_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SMOGSTEM, new ResourceLocation("undergarden", "smogstem_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WIGGLEWOOD, new ResourceLocation("undergarden", "wigglewood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GRONGLE, new ResourceLocation("undergarden", "grongle_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SMOGSTEM, new ResourceLocation("undergarden", "smogstem_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WIGGLEWOOD, new ResourceLocation("undergarden", "wigglewood_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GRONGLE, new ResourceLocation("undergarden", "grongle_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_SMOGSTEM, new ResourceLocation("undergarden", "greenheart_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_WIGGLEWOOD, new ResourceLocation("undergarden", "wigglewood_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GRONGLE, new ResourceLocation("undergarden", "grongle_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_SMOGSTEM, new ResourceLocation("undergarden", "smogstem_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_WIGGLEWOOD, new ResourceLocation("undergarden", "wigglewood_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GRONGLE, new ResourceLocation("undergarden", "grongle_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SMOGSTEM, new ResourceLocation("undergarden", "greenheart_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WIGGLEWOOD, new ResourceLocation("undergarden", "wigglewood_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GRONGLE, new ResourceLocation("undergarden", "grongle_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_SMOGSTEM, new ResourceLocation("undergarden", "smogstem_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WIGGLEWOOD, new ResourceLocation("undergarden", "wigglewood_door"), "tall_wooden_door");
 	}
 }

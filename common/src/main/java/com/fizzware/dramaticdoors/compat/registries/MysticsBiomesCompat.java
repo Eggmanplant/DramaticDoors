@@ -22,18 +22,18 @@ public class MysticsBiomesCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"), "tall_wooden_door");
 	}
 }

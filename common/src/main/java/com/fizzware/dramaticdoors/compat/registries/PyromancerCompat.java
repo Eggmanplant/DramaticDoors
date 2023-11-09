@@ -21,14 +21,14 @@ public class PyromancerCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_PYROWOOD, new ResourceLocation("pyromancer", "pyrowood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ROTTEN_PLANKS, new ResourceLocation("pyromancer", "rotten_planks_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_PYROWOOD, new ResourceLocation("pyromancer", "pyrowood_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ROTTEN_PLANKS, new ResourceLocation("pyromancer", "rotten_planks_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PYROWOOD, new ResourceLocation("pyromancer", "pyrowood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROTTEN_PLANKS, new ResourceLocation("pyromancer", "rotten_planks_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PYROWOOD, new ResourceLocation("pyromancer", "pyrowood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ROTTEN_PLANKS, new ResourceLocation("pyromancer", "rotten_planks_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_PYROWOOD, new ResourceLocation("pyromancer", "pyrowood_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ROTTEN_PLANKS, new ResourceLocation("pyromancer", "rotten_planks_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_PYROWOOD, new ResourceLocation("pyromancer", "pyrowood_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ROTTEN_PLANKS, new ResourceLocation("pyromancer", "rotten_planks_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PYROWOOD, new ResourceLocation("pyromancer", "pyrowood_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ROTTEN_PLANKS, new ResourceLocation("pyromancer", "rotten_planks_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PYROWOOD, new ResourceLocation("pyromancer", "pyrowood_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ROTTEN_PLANKS, new ResourceLocation("pyromancer", "rotten_planks_door"), "tall_wooden_door");
 	}
 }

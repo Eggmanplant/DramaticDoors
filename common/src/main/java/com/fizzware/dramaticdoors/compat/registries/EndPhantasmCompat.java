@@ -21,14 +21,14 @@ public class EndPhantasmCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_EBONY, new ResourceLocation("phantasm", "ebony_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_PREAM, new ResourceLocation("phantasm", "pream_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_EBONY, new ResourceLocation("phantasm", "ebony_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_PREAM, new ResourceLocation("phantasm", "pream_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EBONY, new ResourceLocation("phantasm", "ebony_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PREAM, new ResourceLocation("phantasm", "pream_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EBONY, new ResourceLocation("phantasm", "ebony_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PREAM, new ResourceLocation("phantasm", "pream_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_EBONY, new ResourceLocation("phantasm", "ebony_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_PREAM, new ResourceLocation("phantasm", "pream_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_EBONY, new ResourceLocation("phantasm", "ebony_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_PREAM, new ResourceLocation("phantasm", "pream_door"), "tall_wooden_door");	
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EBONY, new ResourceLocation("phantasm", "ebony_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PREAM, new ResourceLocation("phantasm", "pream_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EBONY, new ResourceLocation("phantasm", "ebony_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PREAM, new ResourceLocation("phantasm", "pream_door"), "tall_wooden_door");	
 	}
 }

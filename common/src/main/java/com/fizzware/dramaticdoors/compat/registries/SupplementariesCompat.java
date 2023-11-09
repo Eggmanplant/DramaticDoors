@@ -57,26 +57,26 @@ public class SupplementariesCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GOLD, new ResourceLocation("supplementaries", "gold_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GOLD, new ResourceLocation("supplementaries", "gold_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GOLD, new ResourceLocation("supplementaries", "gold_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GOLD, new ResourceLocation("supplementaries", "gold_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GOLD, new ResourceLocation("supplementaries", "gold_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GOLD, new ResourceLocation("supplementaries", "gold_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"), "tall_metal_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GOLD, new ResourceLocation("supplementaries", "gold_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"));
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GOLD, new ResourceLocation("supplementaries", "gold_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"), "tall_metal_door");
 		
 		if (checker.isModLoaded("forge")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_SILVER, new ResourceLocation("supplementaries", "silver_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_LEAD, new ResourceLocation("supplementaries", "lead_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_SILVER, new ResourceLocation("supplementaries", "silver_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_LEAD, new ResourceLocation("supplementaries", "lead_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SILVER, new ResourceLocation("supplementaries", "silver_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LEAD, new ResourceLocation("supplementaries", "lead_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SILVER, new ResourceLocation("supplementaries", "silver_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LEAD, new ResourceLocation("supplementaries", "lead_door"));
 	
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_SILVER, new ResourceLocation("supplementaries", "silver_door"));
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_LEAD, new ResourceLocation("supplementaries", "lead_door"));
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_SILVER, new ResourceLocation("supplementaries", "silver_door"), "tall_metal_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_LEAD, new ResourceLocation("supplementaries", "lead_door"), "tall_metal_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SILVER, new ResourceLocation("supplementaries", "silver_door"));
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LEAD, new ResourceLocation("supplementaries", "lead_door"));
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_SILVER, new ResourceLocation("supplementaries", "silver_door"), "tall_metal_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LEAD, new ResourceLocation("supplementaries", "lead_door"), "tall_metal_door");
 		}
 	}
 }

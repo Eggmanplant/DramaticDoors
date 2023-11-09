@@ -65,9 +65,9 @@ public class Compats
 		if (isModLoaded("atum", checker)) {
 			AtumCompat.registerCompat();
 		}
-		/*if (isModLoaded("aurorasdeco", checker)) {
+		if (isModLoaded("aurorasdeco", checker)) {
 			AurorasDecorationsCompat.registerCompat();
-		}*/
+		}
 		if (isModLoaded("bambooeverything", checker)) {
 			BambooEverythingCompat.registerCompat();
 		}
@@ -92,6 +92,9 @@ public class Compats
     	if (isModLoaded("biomesoplenty", checker)) {
     		BiomesOPlentyCompat.registerCompat();
     	}
+		/*if (isModLoaded("blockcarpentry", checker)) { // Will be handled separately.
+			BlockCarpentryCompat.registerCompat();
+		}*/
 		if (isModLoaded("blocksplus", checker)) {
 			BlocksPlusCompat.registerCompat();
 		}
@@ -125,6 +128,9 @@ public class Compats
 		if (isModLoaded("alloyed", checker)) {
 			CreateAlloyedCompat.registerCompat();
 		}
+		/*if (isModLoaded("create", checker)) { // This will be handled on Forge and Fabric side.
+			CreateCompat.registerCompat();
+		}*/
 		if (isModLoaded("createdeco", checker)) {
 			CreateDecoCompat.registerCompat();
 		}
@@ -133,6 +139,9 @@ public class Compats
 		}
 		if (isModLoaded("darkerdepths", checker)) {
 			DarkerDepthsCompat.registerCompat();
+		}
+		if (isModLoaded("deep_aether", checker)) {
+			DeepAetherCompat.registerCompat();
 		}
 		if (isModLoaded("deeperdarker", checker)) {
 			DeeperDarkerCompat.registerCompat();
@@ -269,6 +278,9 @@ public class Compats
 		if (isModLoaded("undergarden", checker)) {
 			UndergardenCompat.registerCompat();
 		}
+		if (isModLoaded("vinery", checker)) {
+			VineryCompat.registerCompat();
+		}
 		if (isModLoaded("wilderwild", checker)) {
 			WilderWildCompat.registerCompat();
 		}
@@ -298,13 +310,19 @@ public class Compats
     	initializedCompat = true;
     }
     
-    //TODO: Make this modloader-independent.
     public static boolean isDev() {
     	return modChecker.isDev();
     }
     
     public static boolean isFabric() {
     	return ClientBrandRetriever.getClientModName().equalsIgnoreCase(FABRIC_BRAND) || ClientBrandRetriever.getClientModName().equalsIgnoreCase(QUILT_BRAND);
+    }
+    
+    public static boolean isQuarkModuleEnabled() {
+    	if (modChecker == null) {
+    		return false;
+    	}
+    	return Compats.modChecker.isQuarkModuleEnabled();
     }
     
     public static boolean isModLoaded(String modid, CompatChecker checker) {

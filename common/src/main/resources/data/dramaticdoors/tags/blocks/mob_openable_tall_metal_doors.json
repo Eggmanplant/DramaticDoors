@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_macaw_store_door",
-    "dramaticdoors:tall_macaw_sliding_glass_door"
+    {"id": "dramaticdoors:tall_macaw_store_door", "required": false},
+    {"id": "dramaticdoors:tall_macaw_sliding_glass_door", "required": false}
   ]
 }

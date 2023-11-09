@@ -19,10 +19,10 @@ public class AetherCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"), "tall_wooden_door");
 	}
 }

@@ -18,6 +18,10 @@
       "getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/world/level/block/FenceGateBlock;m_5573_(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;",
       "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
     },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/FenceGateFrameBlockMixinForge": {
+      "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lmod/pianomanu/blockcarpentry/block/FenceGateFrameBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+      "Lnet/minecraft/world/level/block/FenceGateBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
+    },
     "com/fizzware/dramaticdoors/forge/forge/mixin/LandPathNodeMakerMixin": {
       "getBlockPathTypeRaw(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;": "Lnet/minecraft/world/level/pathfinder/WalkNodeEvaluator;m_77643_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;"
     },
@@ -47,7 +51,7 @@
     }
   },
   "data": {
-    "named:intermediary": {
+    "searge": {
       "com/fizzware/dramaticdoors/forge/forge/mixin/AdvancementManagerMixin": {
         "apply": "Lnet/minecraft/server/ServerAdvancementManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
       },
@@ -65,6 +69,10 @@
         "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
         "getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/world/level/block/FenceGateBlock;m_5573_(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;",
         "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/FenceGateFrameBlockMixinForge": {
+        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lmod/pianomanu/blockcarpentry/block/FenceGateFrameBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+        "Lnet/minecraft/world/level/block/FenceGateBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
       },
       "com/fizzware/dramaticdoors/forge/forge/mixin/LandPathNodeMakerMixin": {
         "getBlockPathTypeRaw(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;": "Lnet/minecraft/world/level/pathfinder/WalkNodeEvaluator;m_77643_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;"

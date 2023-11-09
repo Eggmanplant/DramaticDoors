@@ -20,14 +20,14 @@ public class EnderscapeCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CELESTIAL, new ResourceLocation("enderscape", "celestial_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_MURUSHROOM, new ResourceLocation("enderscape", "murushroom_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CELESTIAL, new ResourceLocation("enderscape", "celestial_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_MURUSHROOM, new ResourceLocation("enderscape", "murushroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CELESTIAL, new ResourceLocation("enderscape", "celestial_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MURUSHROOM, new ResourceLocation("enderscape", "murushroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CELESTIAL, new ResourceLocation("enderscape", "celestial_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MURUSHROOM, new ResourceLocation("enderscape", "murushroom_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CELESTIAL, new ResourceLocation("enderscape", "celestial_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_MURUSHROOM, new ResourceLocation("enderscape", "murushroom_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CELESTIAL, new ResourceLocation("enderscape", "celestial_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_MURUSHROOM, new ResourceLocation("enderscape", "murushroom_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CELESTIAL, new ResourceLocation("enderscape", "celestial_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MURUSHROOM, new ResourceLocation("enderscape", "murushroom_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CELESTIAL, new ResourceLocation("enderscape", "celestial_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MURUSHROOM, new ResourceLocation("enderscape", "murushroom_door"), "tall_wooden_door");
 	}
 }

@@ -23,55 +23,55 @@ public class TrailsTalesBackportCompat
 	
 	private static void registerRecipes(CompatChecker checker) {
 		if (checker.isModLoaded("quark")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BAMBOO, new ResourceLocation("quark", "bamboo_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BAMBOO, new ResourceLocation("quark", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BAMBOO, new ResourceLocation("quark", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BAMBOO, new ResourceLocation("quark", "bamboo_door"));
 			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BAMBOO, new ResourceLocation("quark", "bamboo_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BAMBOO, new ResourceLocation("quark", "bamboo_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BAMBOO, new ResourceLocation("quark", "bamboo_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BAMBOO, new ResourceLocation("quark", "bamboo_door"), "tall_wooden_door");
 		}
 		if (checker.isModLoaded("biomebackport")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHERRY, new ResourceLocation("biomebackport", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BAMBOO, new ResourceLocation("biomebackport", "bamboo_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHERRY, new ResourceLocation("biomebackport", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BAMBOO, new ResourceLocation("biomebackport", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHERRY, new ResourceLocation("biomebackport", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BAMBOO, new ResourceLocation("biomebackport", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHERRY, new ResourceLocation("biomebackport", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BAMBOO, new ResourceLocation("biomebackport", "bamboo_door"));
 			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHERRY, new ResourceLocation("biomebackport", "cherry_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BAMBOO, new ResourceLocation("biomebackport", "bamboo_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHERRY, new ResourceLocation("biomebackport", "cherry_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BAMBOO, new ResourceLocation("biomebackport", "bamboo_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHERRY, new ResourceLocation("biomebackport", "cherry_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BAMBOO, new ResourceLocation("biomebackport", "bamboo_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHERRY, new ResourceLocation("biomebackport", "cherry_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BAMBOO, new ResourceLocation("biomebackport", "bamboo_door"), "tall_wooden_door");
 		}
 		if (checker.isModLoaded("onetwenty")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHERRY, new ResourceLocation("onetwenty", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BAMBOO, new ResourceLocation("onetwenty", "bamboo_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHERRY, new ResourceLocation("onetwenty", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BAMBOO, new ResourceLocation("onetwenty", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHERRY, new ResourceLocation("onetwenty", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BAMBOO, new ResourceLocation("onetwenty", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHERRY, new ResourceLocation("onetwenty", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BAMBOO, new ResourceLocation("onetwenty", "bamboo_door"));
 			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHERRY, new ResourceLocation("onetwenty", "cherry_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BAMBOO, new ResourceLocation("onetwenty", "bamboo_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHERRY, new ResourceLocation("onetwenty", "cherry_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BAMBOO, new ResourceLocation("onetwenty", "bamboo_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHERRY, new ResourceLocation("onetwenty", "cherry_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BAMBOO, new ResourceLocation("onetwenty", "bamboo_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHERRY, new ResourceLocation("onetwenty", "cherry_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BAMBOO, new ResourceLocation("onetwenty", "bamboo_door"), "tall_wooden_door");
 		}
 		if (checker.isModLoaded("trails_and_tales")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHERRY, new ResourceLocation("trails_and_tales", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BAMBOO, new ResourceLocation("trails_and_tales", "bamboo_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHERRY, new ResourceLocation("trails_and_tales", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BAMBOO, new ResourceLocation("trails_and_tales", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHERRY, new ResourceLocation("trails_and_tales", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BAMBOO, new ResourceLocation("trails_and_tales", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHERRY, new ResourceLocation("trails_and_tales", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BAMBOO, new ResourceLocation("trails_and_tales", "bamboo_door"));
 			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHERRY, new ResourceLocation("trails_and_tales", "cherry_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BAMBOO, new ResourceLocation("trails_and_tales", "bamboo_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHERRY, new ResourceLocation("trails_and_tales", "cherry_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BAMBOO, new ResourceLocation("trails_and_tales", "bamboo_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHERRY, new ResourceLocation("trails_and_tales", "cherry_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BAMBOO, new ResourceLocation("trails_and_tales", "bamboo_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHERRY, new ResourceLocation("trails_and_tales", "cherry_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BAMBOO, new ResourceLocation("trails_and_tales", "bamboo_door"), "tall_wooden_door");
 		}
 		if (checker.isModLoaded("various_update")) {
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_CHERRY, new ResourceLocation("various_update", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BAMBOO, new ResourceLocation("various_update", "bamboo_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_CHERRY, new ResourceLocation("various_update", "cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BAMBOO, new ResourceLocation("various_update", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHERRY, new ResourceLocation("various_update", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BAMBOO, new ResourceLocation("various_update", "bamboo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHERRY, new ResourceLocation("various_update", "cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BAMBOO, new ResourceLocation("various_update", "bamboo_door"));
 			
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_CHERRY, new ResourceLocation("various_update", "cherry_door"), true);
-			DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BAMBOO, new ResourceLocation("various_update", "bamboo_door"), true);
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_CHERRY, new ResourceLocation("various_update", "cherry_door"), "tall_wooden_door");
-			DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BAMBOO, new ResourceLocation("various_update", "bamboo_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHERRY, new ResourceLocation("various_update", "cherry_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BAMBOO, new ResourceLocation("various_update", "bamboo_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CHERRY, new ResourceLocation("various_update", "cherry_door"), "tall_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BAMBOO, new ResourceLocation("various_update", "bamboo_door"), "tall_wooden_door");
 		}
 	}
 }

@@ -21,14 +21,14 @@ public class AbundantAtmosphereCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ASH, new ResourceLocation("abundant_atmosphere", "ash_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_GOURDROT, new ResourceLocation("abundant_atmosphere", "gourdrot_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ASH, new ResourceLocation("abundant_atmosphere", "ash_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_GOURDROT, new ResourceLocation("abundant_atmosphere", "gourdrot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ASH, new ResourceLocation("abundant_atmosphere", "ash_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GOURDROT, new ResourceLocation("abundant_atmosphere", "gourdrot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ASH, new ResourceLocation("abundant_atmosphere", "ash_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GOURDROT, new ResourceLocation("abundant_atmosphere", "gourdrot_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ASH, new ResourceLocation("abundant_atmosphere", "ash_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_GOURDROT, new ResourceLocation("abundant_atmosphere", "gourdrot_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ASH, new ResourceLocation("abundant_atmosphere", "ash_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_GOURDROT, new ResourceLocation("abundant_atmosphere", "gourdrot_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ASH, new ResourceLocation("abundant_atmosphere", "ash_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GOURDROT, new ResourceLocation("abundant_atmosphere", "gourdrot_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ASH, new ResourceLocation("abundant_atmosphere", "ash_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GOURDROT, new ResourceLocation("abundant_atmosphere", "gourdrot_door"), "tall_wooden_door");
 	}
 }

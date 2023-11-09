@@ -20,10 +20,10 @@ public class CauponaCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_WALNUT, new ResourceLocation("caupona", "walnut_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_WALNUT, new ResourceLocation("caupona", "walnut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WALNUT, new ResourceLocation("caupona", "walnut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WALNUT, new ResourceLocation("caupona", "walnut_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_WALNUT, new ResourceLocation("caupona", "walnut_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_WALNUT, new ResourceLocation("caupona", "walnut_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WALNUT, new ResourceLocation("caupona", "walnut_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WALNUT, new ResourceLocation("caupona", "walnut_door"), "tall_wooden_door");
 	}
 }

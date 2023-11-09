@@ -22,18 +22,18 @@ public class HexereiCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"), true);
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"), "tall_wooden_door");	
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"), "tall_wooden_door");	
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"), "tall_wooden_door");	
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"), "tall_wooden_door");	
 	}
 }

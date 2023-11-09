@@ -27,38 +27,38 @@ public class CreateDecoCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ANDESITE, new ResourceLocation("createdeco", "andesite_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_BRASS, new ResourceLocation("createdeco", "brass_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_COPPER, new ResourceLocation("createdeco", "copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_ZINC, new ResourceLocation("createdeco", "zinc_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ANDESITE, new ResourceLocation("createdeco", "andesite_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_BRASS, new ResourceLocation("createdeco", "brass_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_COPPER, new ResourceLocation("createdeco", "copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_ZINC, new ResourceLocation("createdeco", "zinc_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ANDESITE, new ResourceLocation("createdeco", "andesite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRASS, new ResourceLocation("createdeco", "brass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPER, new ResourceLocation("createdeco", "copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ZINC, new ResourceLocation("createdeco", "zinc_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ANDESITE, new ResourceLocation("createdeco", "andesite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BRASS, new ResourceLocation("createdeco", "brass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_COPPER, new ResourceLocation("createdeco", "copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ZINC, new ResourceLocation("createdeco", "zinc_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ANDESITE, new ResourceLocation("createdeco", "andesite_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_BRASS, new ResourceLocation("createdeco", "brass_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_COPPER, new ResourceLocation("createdeco", "copper_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_ZINC, new ResourceLocation("createdeco", "zinc_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"));
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"));
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ANDESITE, new ResourceLocation("createdeco", "andesite_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_BRASS, new ResourceLocation("createdeco", "brass_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_COPPER, new ResourceLocation("createdeco", "copper_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_ZINC, new ResourceLocation("createdeco", "zinc_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"), "tall_metal_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ANDESITE, new ResourceLocation("createdeco", "andesite_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BRASS, new ResourceLocation("createdeco", "brass_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_COPPER, new ResourceLocation("createdeco", "copper_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ZINC, new ResourceLocation("createdeco", "zinc_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"));
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ANDESITE, new ResourceLocation("createdeco", "andesite_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BRASS, new ResourceLocation("createdeco", "brass_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_COPPER, new ResourceLocation("createdeco", "copper_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ZINC, new ResourceLocation("createdeco", "zinc_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"), "tall_metal_door");
 	}
 }

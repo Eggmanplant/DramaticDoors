@@ -20,10 +20,10 @@ public class TechRebornCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_RUBBER, new ResourceLocation("techreborn", "rubber_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_RUBBER, new ResourceLocation("techreborn", "rubber_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBBER, new ResourceLocation("techreborn", "rubber_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RUBBER, new ResourceLocation("techreborn", "rubber_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_RUBBER, new ResourceLocation("techreborn", "rubber_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_RUBBER, new ResourceLocation("techreborn", "rubber_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RUBBER, new ResourceLocation("techreborn", "rubber_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_RUBBER, new ResourceLocation("techreborn", "rubber_door"), "tall_wooden_door");
 	}
 }

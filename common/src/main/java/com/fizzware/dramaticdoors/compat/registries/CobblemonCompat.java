@@ -20,10 +20,10 @@ public class CobblemonCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.SHORT_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"));
-		DDCompatAdvancement.createRecipeAdvancementJson(DDNames.TALL_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"));
 		
-		DDCompatRecipe.createShortDoorRecipeJson(DDNames.SHORT_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"), true);
-		DDCompatRecipe.createTallDoorRecipeJson(DDNames.TALL_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"), "tall_wooden_door");
 	}
 }
