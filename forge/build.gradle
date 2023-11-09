@@ -1,35 +1,72 @@
 plugins {
-    id "com.github.johnrengelman.shadow" version "8.1.1"
+    id 'idea'
+	id 'eclipse'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle'
+    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'
 }
-
-archivesBaseName = "forge" // "${rootProject.archives_base_name}-${project.name}"
-
-architectury {
-    platformSetupLoomIde()
-    forge()
+base {
+    archivesBaseName = "forge" // "${rootProject.archives_base_name}-${project.name}"
 }
-
-var generatedResources = file("src/generated/resources")
-
-loom {
-    accessWidenerPath.set(project(":common").file("src/main/resources/dramaticdoors.accesswidener"))
-
-    forge {
-        mixinConfig "dramaticdoors_forge.mixins.json"
-        // mixinConfig "dramaticdoors.mixins.json"
-        convertAccessWideners.set(true)
+mixin {
+    // Only uncomment if you need to generate the refmap especially after adding new Mixin class files. Remember to edit the refmap for the merged JAR file!
+    // add(sourceSets.main, "${rootProject.mod_id}_forge.refmap.json")
+}
+minecraft {
+    mappings channel: 'official', version: rootProject.minecraft_version
+	copyIdeResources = true //Calls processResources when in dev
+    if (project(":common").file('src/main/resources/META-INF/accesstransformer.cfg').exists()) {
+        accessTransformer = project(":common").file('src/main/resources/META-INF/accesstransformer.cfg')
     }
-	mixin {
-	    defaultRefmapName = "dramaticdoors_forge.refmap.json"
-	}
-	runs {
-        data {
-            data()
-            programArgs "--all", "--mod", "dramaticdoors"
-            programArgs "--output", generatedResources.absolutePath
+    runs {
+        client {
+            workingDirectory project.file('run')
+            ideaModule "${rootProject.name}.${project.name}.main"
+            taskName 'runClient'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+			arg "-mixin.config=" + "dramaticdoors_forge.mixins.json"
+            mods {
+                modClientRun {
+                    source sourceSets.main
+                    source project(":common").sourceSets.main
+                }
+            }
         }
-	}
+
+        server {
+            workingDirectory project.file('run')
+            ideaModule "${rootProject.name}.${project.name}.main"
+            taskName 'runServer'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+			arg "-mixin.config=" + "dramaticdoors_forge.mixins.json"
+            mods {
+                modServerRun {
+                    source sourceSets.main
+                    source project(":common").sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+            ideaModule "${rootProject.name}.${project.name}.main"
+            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            taskName 'runData'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            mods {
+                modDataRun {
+                    source sourceSets.main
+                    source project(":common").sourceSets.main
+                }
+            }
+        }
+    }
 }
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
 
 configurations {
     common
@@ -44,77 +81,53 @@ repositories {
 	    url "https://cursemaven.com"
         content { includeGroup "curse.maven" }
 	}
+    maven {
+        name = 'tterrag maven'
+        url = 'https://maven.tterrag.com/'
+    }
 }
 
 dependencies {
-    forge "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
-    common(project(path: ":common", configuration: "namedElements")) { transitive false }
-    shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
-	implementation "curse.maven:macaws-doors-378646:4649906"
-	// implementation "curse.maven:pollen-544350:4685983"
-	// implementation "curse.maven:locksmith-544352:4650915"
+    minecraft "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
+    compileOnly project(":common")
+    annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
+    implementation fg.deobf("curse.maven:macaws-doors-378646:4649906")
+    implementation fg.deobf("curse.maven:patchouli-306770:4031402")
+    implementation fg.deobf("curse.maven:blockcarpentry-401658:4842191")
+    // implementation fg.deobf("curse.maven:framedblocks-441647:4762544")
+    implementation fg.deobf("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_version}:slim") { transitive = false }
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}")
+    implementation fg.deobf("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")
+}
+
+tasks.withType(JavaCompile).configureEach {
+    source(project(":common").sourceSets.main.allSource)
+}
+tasks.withType(Javadoc).configureEach {
+    source(project(":common").sourceSets.main.allJava)
+}
+tasks.named("sourcesJar", Jar) {
+    from(project(":common").sourceSets.main.allSource)
 }
 
 processResources {
-
+    from project(":common").sourceSets.main.resources
 }
 
-shadowJar {
-    exclude "fabric.mod.json"
-
-    configurations = [project.configurations.shadowCommon]
-    archiveClassifier.set("dev-shadow")
-}
-
-remapJar {
-    input.set shadowJar.archiveFile
-    dependsOn shadowJar
-    archiveClassifier.set(null)
-}
-
-jar {
-    archiveClassifier.set("dev")
-    from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}" }
-    }
-
-    // add some additional metadata to the jar manifest
-    manifest {
-        attributes([
-                "Specification-Title"     : rootProject.mod_id,
-                "Specification-Vendor"    : rootProject.mod_authors,
-                "Specification-Version"   : "3",
-                "Implementation-Title"    : rootProject.mod_name,
-                "Implementation-Version"  : rootProject.mod_version,
-                "Implementation-Vendor"   : rootProject.mod_authors,
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
-        ])
-    }
-}
-
-sourcesJar {
-    def commonSources = project(":common").sourcesJar
-    dependsOn commonSources
-    from commonSources.archiveFile.map { zipTree(it) }
-}
-
-components.java {
-    withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
-        skip()
-    }
-}
+jar.finalizedBy('reobfJar')
 
 publishing {
     publications {
-        mavenForge(MavenPublication) {
-            artifactId = rootProject.archives_base_name + "-" + project.name
+        mavenJava(MavenPublication) {
+            artifactId base.archivesName.get()
             from components.java
+            fg.component(it)
         }
     }
-
-    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
-        // Add repositories to publish to here.
+        maven {
+            url "file://" + System.getenv("local_maven")
+        }
     }
 }
 
