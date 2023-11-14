@@ -18,6 +18,7 @@
     "WitchMixin"
   ],
   "client": [
+    "GhostBlockRendererMixin"
   ],
   "server": [
   ],

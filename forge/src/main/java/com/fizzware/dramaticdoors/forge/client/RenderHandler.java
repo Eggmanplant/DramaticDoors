@@ -3,9 +3,12 @@ package com.fizzware.dramaticdoors.forge.client;
 import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.forge.ForgeUtils;
-import com.fizzware.dramaticdoors.forge.addons.blockcarpentry.TallFrameDoorModelLoader;
-import com.fizzware.dramaticdoors.forge.addons.blockcarpentry.TallIllusionDoorModelLoader;
-import com.fizzware.dramaticdoors.forge.addons.create.TallSlidingDoorBlockRenderer;
+import com.fizzware.dramaticdoors.forge.addons.blockcarpentry.client.ShortFrameDoorModelLoader;
+import com.fizzware.dramaticdoors.forge.addons.blockcarpentry.client.ShortIllusionDoorModelLoader;
+import com.fizzware.dramaticdoors.forge.addons.blockcarpentry.client.TallFrameDoorModelLoader;
+import com.fizzware.dramaticdoors.forge.addons.blockcarpentry.client.TallIllusionDoorModelLoader;
+import com.fizzware.dramaticdoors.forge.addons.create.client.TallSlidingDoorBlockRenderer;
+import com.fizzware.dramaticdoors.forge.addons.framedblocks.client.DDFramedBlocksClient;
 import com.fizzware.dramaticdoors.forge.compat.CreateForgeCompat;
 import com.google.common.collect.ImmutableList;
 
@@ -42,8 +45,18 @@ public class RenderHandler
 	@SubscribeEvent
 	public static void registerGeometryLoaders(final ModelEvent.RegisterGeometryLoaders event) {
 		if (ForgeUtils.INSTANCE.isModLoaded("blockcarpentry")) {
+			event.register("short_frame_door_loader", new ShortFrameDoorModelLoader());
+			event.register("short_illusion_door_loader", new ShortIllusionDoorModelLoader());
 			event.register("tall_frame_door_loader", new TallFrameDoorModelLoader());
 			event.register("tall_illusion_door_loader", new TallIllusionDoorModelLoader());
 		}
 	}
+	
+    @SubscribeEvent
+    public static void onModelsLoaded(final ModelEvent.BakingCompleted event)
+    {
+    	if (ForgeUtils.INSTANCE.isModLoaded("framedblocks")) {
+    		DDFramedBlocksClient.loadModels(event);
+    	}
+    }
 }

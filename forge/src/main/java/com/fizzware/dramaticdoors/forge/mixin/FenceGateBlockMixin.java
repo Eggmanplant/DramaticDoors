@@ -64,6 +64,6 @@ public class FenceGateBlockMixin extends Block
 		}
 		else {
 			return Fluids.EMPTY.defaultFluidState();
-		}	}
-	
+		}	
+	}
 }

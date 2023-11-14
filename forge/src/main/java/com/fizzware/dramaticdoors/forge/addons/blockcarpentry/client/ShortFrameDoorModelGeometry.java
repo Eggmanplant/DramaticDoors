@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.forge.addons.blockcarpentry;
+package com.fizzware.dramaticdoors.forge.addons.blockcarpentry.client;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -19,16 +19,16 @@ import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraftforge.client.model.geometry.IGeometryBakingContext;
 import net.minecraftforge.client.model.geometry.IUnbakedGeometry;
 
-public class TallFrameDoorModelGeometry implements IUnbakedGeometry<TallFrameDoorModelGeometry>
+public class ShortFrameDoorModelGeometry implements IUnbakedGeometry<ShortFrameDoorModelGeometry>
 {
 	@Override
 	public BakedModel bake(IGeometryBakingContext context, ModelBakery bakery, Function<Material, TextureAtlasSprite> spriteGetter, ModelState modelState, ItemOverrides overrides, ResourceLocation modelLocation) {
-		return new TallDoorBakedModel();
+		return new ShortDoorBakedModel();
 	}
 
 	@Override
 	public Collection<Material> getMaterials(IGeometryBakingContext context, Function<ResourceLocation, UnbakedModel> modelGetter, Set<Pair<String, String>> missingTextureErrors) {
-		return Collections.singletonList(new Material(InventoryMenu.BLOCK_ATLAS, TallDoorBakedModel.TEXTURE));
+		return Collections.singletonList(new Material(InventoryMenu.BLOCK_ATLAS, ShortDoorBakedModel.TEXTURE));
 	}
 
 }

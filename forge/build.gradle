@@ -94,7 +94,7 @@ dependencies {
     implementation fg.deobf("curse.maven:macaws-doors-378646:4649906")
     implementation fg.deobf("curse.maven:patchouli-306770:4031402")
     implementation fg.deobf("curse.maven:blockcarpentry-401658:4842191")
-    // implementation fg.deobf("curse.maven:framedblocks-441647:4762544")
+    implementation fg.deobf("curse.maven:framedblocks-441647:4762544")
     implementation fg.deobf("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_version}:slim") { transitive = false }
     implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")

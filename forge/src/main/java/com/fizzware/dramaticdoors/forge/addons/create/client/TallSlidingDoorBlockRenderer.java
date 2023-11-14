@@ -1,7 +1,8 @@
-package com.fizzware.dramaticdoors.forge.addons.create;
+package com.fizzware.dramaticdoors.forge.addons.create.client;
 
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
+import com.fizzware.dramaticdoors.forge.addons.create.TallForgeCreateSlidingDoorBlockEntity;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import com.jozufozu.flywheel.core.PartialModel;
 import com.mojang.blaze3d.vertex.PoseStack;

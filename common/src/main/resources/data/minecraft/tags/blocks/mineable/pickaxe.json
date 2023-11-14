@@ -131,6 +131,7 @@
     {"id": "dramaticdoors:tall_ec_waxed_weathered_copper_door", "required": false}, 
     {"id": "dramaticdoors:tall_ec_waxed_oxidized_copper_door", "required": false}, 
     {"id": "dramaticdoors:tall_deorum_door", "required": false}, 
+    {"id": "dramaticdoors:tall_framed_iron_door", "required": false}, 
     {"id": "dramaticdoors:tall_dark_iron_door", "required": false}, 
     {"id": "dramaticdoors:tall_bs_crystallized_door", "required": false}, 
     {"id": "dramaticdoors:tall_iron_glass_door", "required": false},

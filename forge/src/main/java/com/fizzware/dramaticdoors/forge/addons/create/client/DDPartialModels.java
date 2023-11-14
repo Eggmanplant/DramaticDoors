@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.forge.addons.create;
+package com.fizzware.dramaticdoors.forge.addons.create.client;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.fizzware.dramaticdoors.forge.addons.blockcarpentry;
+package com.fizzware.dramaticdoors.forge.addons.blockcarpentry.client;
 
 import java.util.ArrayList;
 import java.util.Collections;

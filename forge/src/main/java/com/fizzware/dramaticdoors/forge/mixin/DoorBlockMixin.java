@@ -73,9 +73,11 @@ public class DoorBlockMixin extends Block implements SimpleWaterloggedBlock
 
 	@Inject(at = @At("HEAD"), method = "setPlacedBy(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V", cancellable = true)
 	private void injectPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity entity, ItemStack stack, CallbackInfo callback) {
-		boolean waterfilled = level.getFluidState(pos.above()).getType() == Fluids.WATER;
-		level.setBlock(pos.above(), state.setValue(DoorBlock.HALF, DoubleBlockHalf.UPPER).setValue(WATERLOGGED, waterfilled), 3);
-		callback.cancel();
+		if (state.hasProperty(WATERLOGGED)) {
+			boolean waterfilled = level.getFluidState(pos.above()).getType() == Fluids.WATER;
+			level.setBlock(pos.above(), state.setValue(DoorBlock.HALF, DoubleBlockHalf.UPPER).setValue(WATERLOGGED, waterfilled), 3);
+			callback.cancel();
+		}
 	}
 
 	public FluidState getFluidState(BlockState state) {
@@ -84,6 +86,6 @@ public class DoorBlockMixin extends Block implements SimpleWaterloggedBlock
 		}
 		else {
 			return Fluids.EMPTY.defaultFluidState();
-		}	}
-	
+		}	
+	}
 }

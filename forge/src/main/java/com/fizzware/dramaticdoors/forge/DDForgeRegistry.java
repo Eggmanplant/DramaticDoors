@@ -10,6 +10,8 @@ import com.fizzware.dramaticdoors.compat.registries.SupplementariesCompat;
 import com.fizzware.dramaticdoors.forge.addons.create.TallForgeCreateSlidingDoorBlockEntity;
 import com.fizzware.dramaticdoors.forge.compat.BlockCarpentryForgeCompat;
 import com.fizzware.dramaticdoors.forge.compat.CreateForgeCompat;
+import com.fizzware.dramaticdoors.forge.compat.FramedBlocksForgeCompat;
+
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -29,6 +31,9 @@ public class DDForgeRegistry
 		}
 		if (Compats.isModLoaded("blockcarpentry", ForgeUtils.INSTANCE)) {
 			BlockCarpentryForgeCompat.registerCompat();
+		}
+		if (Compats.isModLoaded("framedblocks", ForgeUtils.INSTANCE)) {
+			FramedBlocksForgeCompat.registerCompat();
 		}
 		event.register(ForgeRegistries.Keys.BLOCKS, helper -> {
 	        for (Pair<String, Block> pair : DDRegistry.DOOR_BLOCKS_TO_REGISTER) {
@@ -51,6 +56,9 @@ public class DDForgeRegistry
 			}
 			if (Compats.isModLoaded("blockcarpentry", ForgeUtils.INSTANCE)) {
 				BlockCarpentryForgeCompat.registerBlockEntities(helper);
+			}
+			if (Compats.isModLoaded("framedblocks", ForgeUtils.INSTANCE)) {
+				FramedBlocksForgeCompat.registerBlockEntities(helper);
 			}
 		});
 	}
