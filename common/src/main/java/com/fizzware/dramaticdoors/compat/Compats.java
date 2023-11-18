@@ -178,6 +178,9 @@ public class Compats
 		if (isModLoaded("forbidden_arcanus", checker)) {
 			ForbiddenArcanusCompat.registerCompat();
 		}
+		/*if (isModLoaded("framedblocks", checker)) { // This will be handled on Forge and Fabric side.
+			FramedBlocksCompat.registerCompat();
+		}*/
 		if (isModLoaded("gardens_of_the_dead", checker)) {
 			GardensOfTheDeadCompat.registerCompat();
 		}
@@ -261,6 +264,9 @@ public class Compats
     	}
     	if (isModLoaded("terrestria", checker)) {
     		TerrestriaCompat.registerCompat();
+    	}
+    	if (isModLoaded("thermal_foundation", checker)) {
+    		ThermalFoundationCompat.registerCompat();
     	}
     	if (isModLoaded("traverse", checker)) {
     		TraverseCompat.registerCompat();

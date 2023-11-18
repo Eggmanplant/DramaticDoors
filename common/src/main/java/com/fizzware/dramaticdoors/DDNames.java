@@ -692,6 +692,13 @@ public class DDNames
     public static final String TALL_FUNGYSS = "tall_fungyss_door";
     public static final String TALL_AURUM = "tall_aurum_door";
     
+    // Framed Blocks
+    public static final String SHORT_FRAMED = "short_framed_door";
+    public static final String SHORT_FRAMED_IRON = "short_framed_iron_door";
+    
+    public static final String TALL_FRAMED = "tall_framed_door";
+    public static final String TALL_FRAMED_IRON = "tall_framed_iron_door";
+    
     //Fruit Trees
     public static final String SHORT_FT_CHERRY = "short_ft_cherry_door";
     public static final String SHORT_FT_CHERRY_SLIDING = "short_ft_cherry_sliding_door";
@@ -1097,6 +1104,11 @@ public class DDNames
     public static final String TALL_TERRESTRIA_SAKURA = "tall_terrestria_sakura_door";
     public static final String TALL_TERRESTRIA_WILLOW = "tall_terrestria_willow_door";
     public static final String TALL_TERRESTRIA_YUCCA_PALM = "tall_terrestria_yucca_palm_door";
+    
+    //Thermal Foundation
+    public static final String SHORT_RUBBERWOOD = "short_rubberwood_door";
+
+    public static final String TALL_RUBBERWOOD = "tall_rubberwood_door";
     
     //Traverse
     public static final String SHORT_TRAVERSE_FIR = "short_traverse_fir_door";
