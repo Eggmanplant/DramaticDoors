@@ -4,7 +4,7 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.neoforged.gradle.userdev' version '7.+'
-    // id 'net.neoforged.gradle.mixin'
+	// id 'net.neoforged.gradle.mixin'
 }
 
 archivesBaseName = "neoforge" // "${rootProject.archives_base_name}-${project.name}"
@@ -31,19 +31,17 @@ minecraft.accessTransformers.file project(":common").file('src/main/resources/ME
 
 runs {
     configureEach {
-        systemProperty 'forge.logging.markers', 'REGISTRIES'
-        systemProperty 'forge.logging.console.level', 'debug'
-
+	    workingDirectory project.file('run')
+	    systemProperty 'mixin.env.disableRefMap', 'true'
         modSource project.sourceSets.main
-    }
-	
+    }	
 	client {
 		systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
-		programArgument "-mixin.config=" + "dramaticdoors.mixins.json"
+		programArgument "-mixin.config=" + "dramaticdoors_neoforge.mixins.json"
 	}
 	server {
 		systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
-		programArgument "-mixin.config=" + "dramaticdoors.mixins.json" + " --nogui"
+		programArgument "-mixin.config=" + "dramaticdoors_neoforge.mixins.json" + " --nogui"
 	}
 	data {
 		programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
@@ -52,18 +50,34 @@ runs {
 
 sourceSets.main.resources.srcDir 'src/generated/resources'
 
-processResources {
-    from project(":common").sourceSets.main.resources
-}
-
 dependencies {
     implementation("net.neoforged:neoforge:${project.neoforge_version}")
     compileOnly project(":common")
-	annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
-	implementation("curse.maven:macaws-doors-378646:4649910")
+	// annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
+	// implementation("curse.maven:macaws-doors-378646:4781680")
     // implementation("com.simibubi.create:create-${project.minecraft_version}:${project.create_version}:slim") { transitive = false }
     // implementation("com.jozufozu.flywheel:flywheel-forge-${project.minecraft_version}:${project.flywheel_version}")
     // implementation("com.tterrag.registrate:Registrate:${project.registrate_version}")
+}
+
+TaskCollection.metaClass.excludingNeoTasks = { ->
+    delegate.matching { !it.name.startsWith("neo") }
+}
+
+tasks.withType(JavaCompile).excludingNeoTasks().configureEach {
+    source(project(":common").sourceSets.main.allSource)
+}
+
+tasks.withType(Javadoc).excludingNeoTasks().configureEach {
+    source(project(":common").sourceSets.main.allJava)
+}
+
+tasks.named("sourcesJar", Jar) {
+    from(project(":common").sourceSets.main.allSource)
+}
+
+tasks.withType(ProcessResources).excludingNeoTasks().configureEach {
+    from project(":common").sourceSets.main.resources
 }
 
 publishing {

@@ -1,7 +1,7 @@
 # The Mod TOML file for Dramatic Doors.
 
 modLoader="javafml"
-loaderVersion="[47,)"
+loaderVersion="[1,)"
 
 # License Schmicense
 license="MIT"
@@ -9,12 +9,13 @@ license="MIT"
 [[mods]]
     modId="dramaticdoors"
     version="${version}"
+    mixin="dramaticdoors_neoforge.mixins.json"
     displayName="Dramatic Doors"
     displayURL="https://www.curseforge.com/minecraft/mc-mods/dramatic-doors"
     logoFile="icon.png"
     issueTrackerURL="https://github.com/Kitteh6660/DramaticDoors/issues"
     authors="FizzWare"
-    credits="Thanks to the creators of Minecraft and Forge.\\n    Kitteh6660 for maintaining and updating this mod.\\n    eWenXin2 for the updated Pokecube compat."
+    credits="Thanks to the creators of Minecraft and Forge.\\n    Kitteh6660 for maintaining and updating this mod.\\n    WenXin2 for the updated Pokecube compat."
     description='''
     Doors that are barely tall enough to fit your player ... ?
     Doors that suffocate you when you ride ol' Blackjack the horse through? Enderman discrimination? Seriously?
@@ -32,20 +33,20 @@ license="MIT"
     
     Short doors can be crafted by using the regular doors in stonecutter or with Woodworks installed: the sawmill for wooden doors.
     
-    Now supports over 80 mods across Forge and Fabric!
+    Now supports over 80 mods across NeoForge, Forge, and Fabric!
     '''
 
 [[dependencies.dramaticdoors]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.20.1,1.21)"
+    versionRange="[1.20.2,1.21)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.dramaticdoors]]
     modId="forge"
     mandatory=false
-    versionRange="[47.1.0,)"
+    versionRange="[48.0.0,)"
     ordering="AFTER"
     side="BOTH"
     

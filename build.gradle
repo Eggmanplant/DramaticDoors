@@ -1,7 +1,6 @@
 plugins {
 	id "io.github.pacifistmc.forgix" version "1.2.6"
     id 'fabric-loom' version '1.3-SNAPSHOT' apply(false)
-    id 'net.minecraftforge.gradle' version '[6.0,6.2)' apply(false)
     id 'org.spongepowered.gradle.vanilla' version '0.2.1-SNAPSHOT' apply(false)
     id("org.spongepowered.mixin") version "0.7-SNAPSHOT" apply(false)
 }
@@ -16,6 +15,11 @@ forgix {
 		projectName = "neoforge"
 		jarLocation = "build/libs/neoforge.jar"
 		additionalRelocate("com.fizzware.dramaticdoors", "com.fizzware.dramaticdoors.neoforge")
+	}
+	forge {
+		projectName = "forge"
+		jarLocation = "build/libs/forge.jar"
+		additionalRelocate("com.fizzware.dramaticdoors", "com.fizzware.dramaticdoors.forge")
 	}
 	fabric {
 		projectName = "fabric"
@@ -80,6 +84,9 @@ subprojects {
 			"version": mod_version,
 			"group": project.group, //Else we target the task's group.
 			"minecraft_version": rootProject.minecraft_version,
+			"forge_version": forge_version,
+			"forge_loader_version_range": forge_loader_version_range,
+			"forge_version_range": forge_version_range,
 			"neoforge_version": neoforge_version,
 			"neoforge_loader_version_range": neoforge_loader_version_range,
 			"neoforge_version_range": neoforge_version_range,
