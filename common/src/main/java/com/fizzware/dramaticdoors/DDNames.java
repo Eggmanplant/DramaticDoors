@@ -12,7 +12,6 @@ public class DDNames
     public static final String SHORT_DARK_OAK = "short_dark_oak_door";
     public static final String SHORT_MANGROVE = "short_mangrove_door";
     public static final String SHORT_BAMBOO = "short_bamboo_door";
-    public static final String SHORT_CHERRY = "short_cherry_door";
     public static final String SHORT_CRIMSON = "short_crimson_door";
     public static final String SHORT_WARPED = "short_warped_door";
     
@@ -25,7 +24,6 @@ public class DDNames
     public static final String TALL_DARK_OAK = "tall_dark_oak_door";
     public static final String TALL_MANGROVE = "tall_mangrove_door";
     public static final String TALL_BAMBOO = "tall_bamboo_door";
-    public static final String TALL_CHERRY = "tall_cherry_door";
     public static final String TALL_CRIMSON = "tall_crimson_door";
     public static final String TALL_WARPED = "tall_warped_door";
 
