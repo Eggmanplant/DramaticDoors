@@ -1000,7 +1000,7 @@ public class DDNames
     public static final String SHORT_RUE_BAOBAB = "short_rue_baobab_door";
     public static final String SHORT_RUE_BLACKWOOD = "short_rue_blackwood_door";
     public static final String SHORT_RUE_BRIMWOOD = "short_rue_brimwood_door";
-    public static final String SHORT_RUE_CHERRY = "short_rue_cherry_door";
+    // public static final String SHORT_RUE_CHERRY = "short_rue_cherry_door";
     public static final String SHORT_RUE_CYPRESS = "short_rue_cypress_door";
     public static final String SHORT_RUE_DEAD = "short_rue_dead_door";
     public static final String SHORT_RUE_EUCALYPTUS = "short_rue_eucalyptus_door";
@@ -1016,7 +1016,7 @@ public class DDNames
     public static final String TALL_RUE_BAOBAB = "tall_rue_baobab_door";
     public static final String TALL_RUE_BLACKWOOD = "tall_rue_blackwood_door";
     public static final String TALL_RUE_BRIMWOOD = "tall_rue_brimwood_door";
-    public static final String TALL_RUE_CHERRY = "tall_rue_cherry_door";
+    // public static final String TALL_RUE_CHERRY = "tall_rue_cherry_door";
     public static final String TALL_RUE_CYPRESS = "tall_rue_cypress_door";
     public static final String TALL_RUE_DEAD = "tall_rue_dead_door";
     public static final String TALL_RUE_EUCALYPTUS = "tall_rue_eucalyptus_door";
