@@ -26,10 +26,15 @@ public class DDCompatRecipe
 	public static void createShortDoorRecipe(String recipeID, ResourceLocation baseDoor, boolean isWood) {
 		JsonObject json;
 		if (isWood) {
-			if (Compats.WOODWORKS_INSTALLED || Compats.isModLoaded("aurorasdeco", Compats.modChecker)) {
+			if (Compats.WOODWORKS_INSTALLED || Compats.isModLoaded("aurorasdeco", Compats.modChecker) || Compats.isModLoaded("sawmill", Compats.modChecker)) {
 				//Woodworks
 				if (Compats.WOODWORKS_INSTALLED) {
 					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), "woodworks:sawmill");
+					SHORT_DOOR_RECIPES.add(json);
+				}
+				//Universal Sawmill
+				if (Compats.isModLoaded("sawmill", Compats.modChecker)) {
+					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), "sawmill:woodcutting");
 					SHORT_DOOR_RECIPES.add(json);
 				}
 				//Aurora's Decorations

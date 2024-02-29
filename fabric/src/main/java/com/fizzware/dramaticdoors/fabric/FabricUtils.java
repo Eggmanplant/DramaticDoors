@@ -5,6 +5,7 @@ import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.compat.CompatChecker;
 import com.fizzware.dramaticdoors.compat.Compats;
+import com.fizzware.dramaticdoors.fabric.config.DDConfigFabric;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -28,7 +29,7 @@ public class FabricUtils implements CompatChecker
 	
 	@Override
 	public boolean isDev() {
-		return FabricLoader.getInstance().isDevelopmentEnvironment();
+		return FabricLoader.getInstance().isDevelopmentEnvironment() || DDConfigFabric.devMode;
 	}
 
 	public static void assignItemsToTabs() {

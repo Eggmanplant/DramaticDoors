@@ -4,6 +4,7 @@ import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.fabric.compat.CreateFabricCompat;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 
 public class DramaticDoorsFabric implements ModInitializer
 {
@@ -12,7 +13,7 @@ public class DramaticDoorsFabric implements ModInitializer
 		// Register stuff.
 		Compats.modChecker = FabricUtils.INSTANCE;
 		Compats.registerCompats(FabricUtils.INSTANCE);
-		if (Compats.isModLoaded("create", FabricUtils.INSTANCE)) {
+		if (FabricLoader.getInstance().isModLoaded("create")) {
 			CreateFabricCompat.registerCompat();
 		}
 		DDFabricRegistry.registerBlocksItems();

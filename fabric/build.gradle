@@ -36,6 +36,9 @@ dependencies {
 	implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
 	modImplementation("curse.maven:macaws-doors-378646:4649888")
     modImplementation("com.simibubi.create:create-fabric-${rootProject.minecraft_version}:${rootProject.create_fabric_version}")
+	modImplementation "curse.maven:architectury-api-419699:4663009"
+    modImplementation "curse.maven:cloth-config-348521:4633442"
+	modImplementation "curse.maven:pandas-extra-details-883585:4869779"
 }
 
 var commonAW = project(":common").file("src/main/resources/dramaticdoors.accesswidener")
@@ -60,6 +63,24 @@ loom {
             setConfigName("Fabric Server")
             ideConfigGenerated(true)
             runDir("run")
+        }
+        datagen {
+            inherit server
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated")}"
+            vmArg "-Dfabric-api.datagen.modid=${mod_id}"
+            runDir("build/datagen")
+        }
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs += [
+                    'src/generated'
+            ]
         }
     }
 }

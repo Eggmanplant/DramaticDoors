@@ -11,6 +11,8 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.fizzware.dramaticdoors.DramaticDoors;
+
 /*
  * Copyright (c) 2021 magistermaks
  *
@@ -128,14 +130,22 @@ public class SimpleConfig
 	}
 
 	private void parseConfigEntry(String entry, int line) {
-		if (!entry.isEmpty() && !entry.startsWith("#")) {
-			String[] parts = entry.split("=", 2);
+		String readEntry = sanitizeConfigEntry(entry);
+		if (!readEntry.isEmpty() && !readEntry.startsWith("#") && !readEntry.startsWith("[")) {
+			String[] parts = readEntry.split("=", 2);
 			if (parts.length == 2) {
 				config.put(parts[0], parts[1]);
 			} else {
 				throw new RuntimeException("Syntax error in config file on line " + line + "!");
 			}
 		}
+	}
+	
+	private String sanitizeConfigEntry(String entry) { // Remove tabs and spaces.
+		String newEntry = entry;
+		newEntry = newEntry.replace("\t", "");
+		newEntry = newEntry.replace(" ", "");
+		return newEntry;
 	}
 
 	private SimpleConfig(ConfigRequest request) {

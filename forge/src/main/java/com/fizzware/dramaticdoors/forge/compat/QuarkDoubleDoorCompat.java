@@ -20,12 +20,12 @@ public class QuarkDoubleDoorCompat
     }
     
     @SubscribeEvent
-	public static void onWorldLoad(LevelEvent.Load e) {
+	public void onWorldLoad(LevelEvent.Load e) {
     	hasQuarkDoubleDoor = DDConfigForge.getConfigBooleanValue(DDConfigForge.CONFIG, FMLPaths.CONFIGDIR.get().resolve("quark-common.toml"), "tweaks.Double Door Opening");
     }
     
     @SubscribeEvent
-    public static void onConfigChange(ModConfigEvent.Reloading e) {
+    public void onConfigChange(ModConfigEvent.Reloading e) {
     	hasQuarkDoubleDoor = DDConfigForge.getConfigBooleanValue(DDConfigForge.CONFIG, FMLPaths.CONFIGDIR.get().resolve("quark-common.toml"), "tweaks.Double Door Opening");    	
     }
 }

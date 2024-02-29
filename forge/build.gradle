@@ -24,7 +24,7 @@ minecraft {
         client {
             workingDirectory project.file('run')
             ideaModule "${rootProject.name}.${project.name}.main"
-            taskName 'Client'
+            taskName 'runClient'
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             mods {
@@ -38,7 +38,7 @@ minecraft {
         server {
             workingDirectory project.file('run')
             ideaModule "${rootProject.name}.${project.name}.main"
-            taskName 'Server'
+            taskName 'runServer'
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             mods {
@@ -53,7 +53,7 @@ minecraft {
             workingDirectory project.file('run')
             ideaModule "${rootProject.name}.${project.name}.main"
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
-            taskName 'Data'
+            taskName 'runData'
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             mods {
@@ -90,11 +90,15 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
     compileOnly project(":common")
-	annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
-	implementation fg.deobf("curse.maven:macaws-doors-378646:4649910")
+    annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
+    implementation fg.deobf("curse.maven:macaws-doors-378646:4649910")
     implementation fg.deobf("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_version}:slim") { transitive = false }
     implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")
+    implementation fg.deobf("curse.maven:framedblocks-441647:4793884")
+    implementation fg.deobf("curse.maven:cloth-config-348521:4633444")
+    implementation fg.deobf("curse.maven:architectury-api-419699:4663010")
+    implementation fg.deobf("curse.maven:pandas-extra-details-883585:4869780")
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -126,8 +130,4 @@ publishing {
             url "file://" + System.getenv("local_maven")
         }
     }
-}
-
-tasks.withType(Jar).configureEach {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }

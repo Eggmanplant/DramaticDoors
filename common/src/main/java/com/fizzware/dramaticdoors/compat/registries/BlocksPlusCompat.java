@@ -62,8 +62,8 @@ public class BlocksPlusCompat
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BP_COPPER, new ResourceLocation("blocksplus", "copper_door"), "tall_metal_door");
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BP_GOLDEN, new ResourceLocation("blocksplus", "golden_door"), "tall_metal_door");
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BP_DIAMOND, new ResourceLocation("blocksplus", "diamond_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BP_EMERALD, new ResourceLocation("blocksplus", "netherite_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BP_NETHERITE, new ResourceLocation("blocksplus", "copper_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BP_EMERALD, new ResourceLocation("blocksplus", "emerald_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BP_NETHERITE, new ResourceLocation("blocksplus", "netherite_door"), "tall_metal_door");
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BP_MUSHROOM, new ResourceLocation("blocksplus", "mushroom_door"), "tall_wooden_door");
 	}
 }

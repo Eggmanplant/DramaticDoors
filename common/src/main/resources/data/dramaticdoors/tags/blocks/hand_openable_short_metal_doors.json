@@ -8,6 +8,7 @@
     {"id": "dramaticdoors:short_andesite_door", "required": false}, 
     {"id": "dramaticdoors:short_brass_door", "required": false}, 
     {"id": "dramaticdoors:short_copper_door", "required": false}, 
+    {"id": "dramaticdoors:short_cd_industrial_iron_door", "required": false}, 
     {"id": "dramaticdoors:short_zinc_door", "required": false}, 
     {"id": "dramaticdoors:short_steel_door", "required": false}, 
     {"id": "dramaticdoors:short_chain_door", "required": false}, 

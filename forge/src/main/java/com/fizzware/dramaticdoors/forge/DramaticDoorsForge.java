@@ -35,7 +35,10 @@ public class DramaticDoorsForge
     	bus.register(ForgeUtils.class);
     	
         bus.addListener(this::setupCommon);
-        if (FMLEnvironment.dist == Dist.CLIENT) { bus.addListener(this::setupClient); }
+        if (FMLEnvironment.dist == Dist.CLIENT) { 
+        	bus.addListener(this::setupClient); 
+        	bus.register(RenderHandler.class);
+        }
 
         MinecraftForge.EVENT_BUS.register(this);
     }

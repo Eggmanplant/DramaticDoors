@@ -16,4 +16,6 @@ public class DDBlockTags
 	public static final TagKey<Block> TALL_DOORS = TagKey.create(Registries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, "tall_doors"));
 	public static final TagKey<Block> TALL_WOODEN_DOORS = TagKey.create(Registries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, "tall_wooden_doors"));
 	public static final TagKey<Block> HAND_OPENABLE_TALL_METAL_DOORS = TagKey.create(Registries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, "hand_openable_tall_metal_doors"));
+
+	public static final TagKey<Block> EXTRA_DETAILS_BLACKLIST = TagKey.create(Registries.BLOCK, new ResourceLocation(DramaticDoors.MOD_ID, "extra_details_blacklist"));
 }

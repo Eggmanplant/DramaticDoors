@@ -29,8 +29,8 @@ public class TwilightForestCompat
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_TRANSWOOD, DDNames.SHORT_TRANSWOOD, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("twilightforest", "transformation_door")), BlockSetType.OAK, true);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_TWILIGHT_OAK, DDNames.SHORT_TWILIGHT_OAK, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("twilightforest", "twilight_oak_door")), BlockSetType.OAK, true);
 		if (Compats.isModLoaded("tflostblocks", checker)) {
-			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_THORN, DDNames.SHORT_THORN, Properties.of().sound(SoundType.WOOD).strength(50.0F, 2000.0F), BlockSetType.OAK, true);
-			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_TOWERWOOD, DDNames.SHORT_TOWERWOOD, Properties.of().sound(SoundType.WOOD).strength(40.0F, 6.0F), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_THORN, DDNames.SHORT_THORN, Properties.of().sound(SoundType.WOOD).strength(50.0F, 2000.0F).noOcclusion(), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_TOWERWOOD, DDNames.SHORT_TOWERWOOD, Properties.of().sound(SoundType.WOOD).strength(40.0F, 6.0F).noOcclusion(), BlockSetType.OAK, true);
 		}
 	}
 	
