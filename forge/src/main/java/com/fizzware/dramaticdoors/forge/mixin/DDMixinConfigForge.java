@@ -33,8 +33,14 @@ public class DDMixinConfigForge implements IMixinConfigPlugin
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.JapaneseDoorBlockMixinForge")) {
 			return DDConfigForge.waterloggableDoors.get() && LoadingModList.get().getModFileById("mcwdoors") != null;
 		}
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.DoTBDoorBlockMixin")) {
+			return DDConfigForge.waterloggableDoors.get() && LoadingModList.get().getModFileById("dawnoftimebuilder") != null;
+		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.FenceGateBlockMixin")) {
 			return DDConfigForge.waterloggableFenceGates.get();
+		}
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.DoTBFenceGateBlockMixin")) {
+			return DDConfigForge.waterloggableFenceGates.get() && LoadingModList.get().getModFileById("dawnoftimebuilder") != null;
 		}
 		return true;
 	}

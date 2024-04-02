@@ -462,8 +462,10 @@ public class DDNames
     
     // Born in Chaos
     public static final String SHORT_MESH = "short_mesh_door";
+    public static final String SHORT_SCORCHED_PLANKS = "short_scorched_planks_door";
     
     public static final String TALL_MESH = "tall_mesh_door";    
+    public static final String TALL_SCORCHED_PLANKS = "tall_scorched_planks_door";
     
     //Caupona
     public static final String SHORT_WALNUT = "short_walnut_door";
@@ -580,6 +582,15 @@ public class DDNames
     public static final String SHORT_PETRIFIED = "short_petrified_door";
     
     public static final String TALL_PETRIFIED = "tall_petrified_door";
+    
+    //Dawn of Time: Builders Edition
+    public static final String SHORT_CHARRED_SPRUCE = "short_charred_spruce_door";
+    public static final String SHORT_WAXED_OAK = "short_waxed_oak_door";
+    public static final String SHORT_PAPER = "short_paper_door";
+    
+    public static final String TALL_CHARRED_SPRUCE = "tall_charred_spruce_door";
+    public static final String TALL_WAXED_OAK = "tall_waxed_oak_door";
+    public static final String TALL_PAPER = "tall_paper_door";
     
     //Deep Aether
     public static final String SHORT_CONBERRY = "short_conberry_door";
@@ -1461,6 +1472,50 @@ public class DDNames
     public static final String TALL_CHIPPED_MANGROVE_FORTIFIED = "tall_chipped_fortified_mangrove_door";
     public static final String TALL_CHIPPED_MANGROVE_SUPPORTED = "tall_chipped_supported_mangrove_door";
     public static final String TALL_CHIPPED_MANGROVE_OVERGROWN = "tall_chipped_overgrown_mangrove_door";
+    
+    public static final String TALL_CHIPPED_CHERRY_HEAVY = "tall_chipped_heavy_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_DUAL_PANELED = "tall_chipped_dual_paneled_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_PRESSED = "tall_chipped_pressed_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_SHACK = "tall_chipped_shack_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_SLIDING = "tall_chipped_sliding_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_SCREEN = "tall_chipped_screen_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_GATED = "tall_chipped_gated_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_GLASS = "tall_chipped_glass_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_WINDOWED = "tall_chipped_windowed_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_TILED = "tall_chipped_tiled_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_TILE_WINDOWED = "tall_chipped_tile_windowed_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_SECRET = "tall_chipped_secret_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_MODERN = "tall_chipped_modern_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_BOARDED = "tall_chipped_boarded_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_PAPER = "tall_chipped_paper_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_BEACH = "tall_chipped_beach_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_BARRED = "tall_chipped_barred_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_PANELED = "tall_chipped_paneled_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_FORTIFIED = "tall_chipped_fortified_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_SUPPORTED = "tall_chipped_supported_cherry_door";
+    public static final String TALL_CHIPPED_CHERRY_OVERGROWN = "tall_chipped_overgrown_cherry_door";
+    
+    public static final String TALL_CHIPPED_BAMBOO_HEAVY = "tall_chipped_heavy_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_DUAL_PANELED = "tall_chipped_dual_paneled_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_PRESSED = "tall_chipped_pressed_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_SHACK = "tall_chipped_shack_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_SLIDING = "tall_chipped_sliding_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_SCREEN = "tall_chipped_screen_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_GATED = "tall_chipped_gated_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_GLASS = "tall_chipped_glass_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_WINDOWED = "tall_chipped_windowed_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_TILED = "tall_chipped_tiled_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_TILE_WINDOWED = "tall_chipped_tile_windowed_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_SECRET = "tall_chipped_secret_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_MODERN = "tall_chipped_modern_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_BOARDED = "tall_chipped_boarded_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_PAPER = "tall_chipped_paper_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_BEACH = "tall_chipped_beach_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_BARRED = "tall_chipped_barred_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_PANELED = "tall_chipped_paneled_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_FORTIFIED = "tall_chipped_fortified_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_SUPPORTED = "tall_chipped_supported_bamboo_door";
+    public static final String TALL_CHIPPED_BAMBOO_OVERGROWN = "tall_chipped_overgrown_bamboo_door";
     
     public static final String TALL_CHIPPED_CRIMSON_HEAVY = "tall_chipped_heavy_crimson_door";
     public static final String TALL_CHIPPED_CRIMSON_DUAL_PANELED = "tall_chipped_dual_paneled_crimson_door";

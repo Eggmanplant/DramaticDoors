@@ -35,6 +35,14 @@
     "com/fizzware/dramaticdoors/forge/forge/mixin/RecipeManagerMixin": {
       "apply": "Lnet/minecraft/world/item/crafting/RecipeManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
     },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/DoTBDoorBlockMixin": {
+      "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lorg/dawnoftimebuilder/block/templates/DoorBlockDoTB;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+      "Lnet/minecraft/world/level/block/DoorBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/DoorBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"    
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/DoTBFenceGateBlockMixin": {
+      "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lorg/dawnoftimebuilder/block/templates/FenceGateBlockDoTB;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+      "Lnet/minecraft/world/level/block/FenceGateBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"    
+    },
     "com/fizzware/dramaticdoors/forge/forge/mixin/JapaneseDoorBlockMixinForge": {
       "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V",
       "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
@@ -86,6 +94,14 @@
       },
       "com/fizzware/dramaticdoors/forge/forge/mixin/RecipeManagerMixin": {
         "apply": "Lnet/minecraft/world/item/crafting/RecipeManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/DoTBDoorBlockMixin": {
+        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lorg/dawnoftimebuilder/block/templates/DoorBlockDoTB;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+        "Lnet/minecraft/world/level/block/DoorBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/DoorBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/DoTBFenceGateBlockMixin": {
+        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lorg/dawnoftimebuilder/block/templates/FenceGateBlockDoTB;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
+        "Lnet/minecraft/world/level/block/FenceGateBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
       },
       "com/fizzware/dramaticdoors/forge/forge/mixin/JapaneseDoorBlockMixinForge": {
         "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V",

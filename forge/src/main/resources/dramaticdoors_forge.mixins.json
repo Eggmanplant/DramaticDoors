@@ -11,6 +11,8 @@
     "LandPathNodeMakerMixin",
     "DoorBlockMixin",
     "FenceGateBlockMixin",
+    "DoTBDoorBlockMixin",
+    "DoTBFenceGateBlockMixin",
     "JapaneseDoorBlockMixinForge",
     "DoorInteractGoalMixin",
     "OpenDoorsTaskMixin",

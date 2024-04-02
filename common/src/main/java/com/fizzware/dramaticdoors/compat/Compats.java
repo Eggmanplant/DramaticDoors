@@ -139,6 +139,9 @@ public class Compats
 		if (isModLoaded("darkerdepths", checker)) {
 			DarkerDepthsCompat.registerCompat();
 		}
+		if (isModLoaded("dawnoftimebuilder", checker)) {
+			DawnOfTimeBuilderCompat.registerCompat();
+		}
 		if (isModLoaded("deep_aether", checker)) {
 			DeepAetherCompat.registerCompat();
 		}
