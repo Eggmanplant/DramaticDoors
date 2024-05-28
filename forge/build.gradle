@@ -11,7 +11,7 @@ base {
 mixin {
     // Only uncomment if you need to generate the refmap. Remember to edit the refmap for the merged JAR file!
     // if (!file('src/main/resources/${rootProject.mod_id}_forge.refmap.json').exists()) {
-    //    add(sourceSets.main, "${rootProject.mod_id}_forge.refmap.json")
+    //   add(sourceSets.main, "${rootProject.mod_id}_forge.refmap.json")
     // }
 }
 minecraft {
@@ -27,6 +27,7 @@ minecraft {
             taskName 'runClient'
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+			arg "-mixin.config=" + "dramaticdoors_forge.mixins.json"
             mods {
                 modClientRun {
                     source sourceSets.main
@@ -41,6 +42,7 @@ minecraft {
             taskName 'runServer'
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+			arg "-mixin.config=" + "dramaticdoors_forge.mixins.json"
             mods {
                 modServerRun {
                     source sourceSets.main
@@ -82,23 +84,29 @@ repositories {
         content { includeGroup "curse.maven" }
 	}
     maven {
-        name = 'tterrag maven'
-        url = 'https://maven.tterrag.com/'
+        name = "tterrag maven"
+        url = "https://maven.tterrag.com/"
     }
+	maven {
+	    name = "jt-dev"
+	    url = "https://maven.jt-dev.tech/releases"
+	}
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
     compileOnly project(":common")
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
+	implementation fg.deobf("net.potionstudios:Oh-The-Biomes-Weve-Gone-Common:1.0.0-Alpha")
     implementation fg.deobf("curse.maven:macaws-doors-378646:4649910")
     implementation fg.deobf("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_version}:slim") { transitive = false }
     implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")
+    implementation fg.deobf("curse.maven:dawn-of-time-312359:5199362")
     implementation fg.deobf("curse.maven:framedblocks-441647:4793884")
     implementation fg.deobf("curse.maven:cloth-config-348521:4633444")
     implementation fg.deobf("curse.maven:architectury-api-419699:4663010")
-    implementation fg.deobf("curse.maven:pandas-extra-details-883585:4869780")
+    implementation fg.deobf("curse.maven:pandas-extra-details-883585:5258176")
 }
 
 tasks.withType(JavaCompile).configureEach {

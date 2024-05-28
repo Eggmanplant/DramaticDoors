@@ -8,8 +8,8 @@ import com.fizzware.dramaticdoors.compat.DDCompatRecipe;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 
-public class MoreDoorsCompat {
-	
+public class MoreDoorsCompat
+{
 	public static void registerCompat() {
 		registerBlocksItems();
 		registerRecipes();

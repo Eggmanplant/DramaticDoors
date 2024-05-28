@@ -7,9 +7,9 @@ import com.fizzware.dramaticdoors.fabric.addons.extradetails.client.ShortDoorRen
 import com.fizzware.dramaticdoors.fabric.addons.extradetails.client.TallDoorRenderer;
 import com.fizzware.dramaticdoors.tags.DDBlockTags;
 
-import me.pandamods.pandalib.client.render.block.BlockRendererRegistry;
-import me.pandamods.pandalib.client.render.block.ClientBlockRegistry;
-import me.pandamods.pandalib.client.render.block.ClientBlockType;
+import me.pandamods.extra_details.api.client.render.block.BlockRendererRegistry;
+import me.pandamods.extra_details.api.client.render.block.ClientBlockRegistry;
+import me.pandamods.extra_details.api.client.render.block.ClientBlockType;
 import net.minecraft.resources.ResourceLocation;
 
 public class ExtraDetailsFabricCompat

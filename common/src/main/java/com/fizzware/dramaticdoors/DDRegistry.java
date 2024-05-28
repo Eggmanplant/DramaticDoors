@@ -6,9 +6,12 @@ import java.util.List;
 import org.jetbrains.annotations.Nullable;
 
 import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
+import com.fizzware.dramaticdoors.blocks.ShortWeatheringDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallSlidingDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallStableDoorBlock;
+import com.fizzware.dramaticdoors.blocks.TallWeatheringDoorBlock;
+import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.items.ShortDoorItem;
 import com.fizzware.dramaticdoors.items.TallDoorItem;
 
@@ -20,6 +23,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.WeatheringCopper.WeatherState;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import oshi.util.tuples.Pair;
@@ -37,7 +41,19 @@ public class DDRegistry
 	public static final ResourceKey<CreativeModeTab> MANYIDEAS_TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation("dramaticdoors", "manyideas_tab"));
 	
 	public static void registerVanilla() {
-		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_IRON, DDNames.SHORT_IRON, Blocks.IRON_DOOR, BlockSetType.IRON, true);
+		// Register iron door.
+		if (Compats.IMMERSIVE_WEATHERING_INSTALLED) {
+			Block shortIronDoor = new ShortWeatheringDoorBlock(Blocks.IRON_DOOR, BlockSetType.IRON, WeatherState.UNAFFECTED);
+			Block tallIronDoor = new TallWeatheringDoorBlock(Blocks.IRON_DOOR, BlockSetType.IRON, WeatherState.UNAFFECTED);
+			DDRegistry.DOOR_BLOCKS_TO_REGISTER.add(new Pair<String, Block>(DDNames.SHORT_IRON, shortIronDoor));
+			DDRegistry.DOOR_BLOCKS_TO_REGISTER.add(new Pair<String, Block>(DDNames.TALL_IRON, tallIronDoor));
+			DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.SHORT_IRON, new ShortDoorItem(shortIronDoor, DDRegistry.PROPERTIES)));
+			DDRegistry.DOOR_ITEMS_TO_REGISTER.add(new Pair<String, Item>(DDNames.TALL_IRON, new TallDoorItem(tallIronDoor, DDRegistry.PROPERTIES)));
+		}
+		else {
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_IRON, DDNames.SHORT_IRON, Blocks.IRON_DOOR, BlockSetType.IRON, true);
+		}
+		// Register wooden doors.
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_OAK, DDNames.SHORT_OAK, Blocks.OAK_DOOR, BlockSetType.OAK, true);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_SPRUCE, DDNames.SHORT_SPRUCE, Blocks.SPRUCE_DOOR, BlockSetType.SPRUCE, true);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BIRCH, DDNames.SHORT_BIRCH, Blocks.BIRCH_DOOR, BlockSetType.BIRCH, true);

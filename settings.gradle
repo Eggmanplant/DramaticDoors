@@ -1,7 +1,6 @@
 pluginManagement {
     repositories {
         maven { url "https://maven.fabricmc.net/" }
-        // maven { url "https://maven.architectury.dev/" }
         maven { url "https://maven.minecraftforge.net/" }
         maven { url 'https://repo.spongepowered.org/repository/maven-public/' }
         gradlePluginPortal()
@@ -9,10 +8,10 @@ pluginManagement {
 }
 
 plugins {
-    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.5.0'
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.+'
 }
 
-rootProject.name = 'DramaticDoors'
+rootProject.name = "${minecraft_version}-DD"
 include("common")
 include("fabric")
 include("forge")

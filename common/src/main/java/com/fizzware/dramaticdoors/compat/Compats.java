@@ -22,6 +22,7 @@ public class Compats
     public static boolean QUARK_INSTALLED;
     public static boolean SUPPLEMENTARIES_INSTALLED;
     public static boolean STATEMENT_INSTALLED;
+    public static boolean IMMERSIVE_WEATHERING_INSTALLED;
     
     public static void registerCompats(CompatChecker checker) {
     	if (initializedCompat) {
@@ -39,6 +40,7 @@ public class Compats
     	QUARK_INSTALLED = isModLoaded("quark", checker);
     	SUPPLEMENTARIES_INSTALLED = isModLoaded("supplementaries", checker);
     	STATEMENT_INSTALLED = isModLoaded("statement", checker);
+    	IMMERSIVE_WEATHERING_INSTALLED = isModLoaded("immersive_weathering", checker);
     	DDRegistry.registerVanilla();
     	if (isModLoaded("blueprint", checker)) {
     		AbnormalsCompat.registerCompat(checker);
@@ -100,8 +102,8 @@ public class Compats
 		if (isModLoaded("born_in_chaos_v1", checker)) {
 			BornInChaosCompat.registerCompat();
 		}
-    	if (isModLoaded("byg", checker)) {
-    		BYGCompat.registerCompat();
+    	if (isModLoaded("biomeswevegone", checker)) { // This replaces BYG.
+    		BWGCompat.registerCompat();
     	}
 		if (isModLoaded("caupona", checker)) {
 			CauponaCompat.registerCompat();
@@ -178,8 +180,8 @@ public class Compats
 		if (isModLoaded("extendedmushrooms", checker)) {
 			ExtendedMushroomsCompat.registerCompat();
 		}
-		if (isModLoaded("fruittrees", checker)) {
-			FruitTreesCompat.registerCompat();
+		if (isModLoaded("fruitfulfun", checker)) { // This replaces Fruit Trees.
+			FruitfulFunCompat.registerCompat();
 		}
 		if (isModLoaded("forbidden_arcanus", checker)) {
 			ForbiddenArcanusCompat.registerCompat();
@@ -205,6 +207,9 @@ public class Compats
 		if (isModLoaded("horizons", checker)) {
 			HorizonsCompat.registerCompat();
 		}
+		if (isModLoaded("immersive_weathering", checker)) {
+			ImmersiveWeatheringCompat.registerCompat();
+		}
 		if (isModLoaded("integrateddynamics", checker)) {
 			IntegratedDynamicsCompat.registerCompat();
 		}
@@ -225,6 +230,9 @@ public class Compats
 		}
 		if (isModLoaded("mysticsbiomes", checker)) {
 			MysticsBiomesCompat.registerCompat();
+		}
+		if (isModLoaded("natures_spirit", checker)) {
+			NaturesSpiritCompat.registerCompat();
 		}
 		if (isModLoaded("nethers_exoticism", checker)) {
 			NethersExoticismCompat.registerCompat();

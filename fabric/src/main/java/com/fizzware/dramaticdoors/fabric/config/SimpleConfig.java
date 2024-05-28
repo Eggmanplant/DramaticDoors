@@ -11,8 +11,7 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.fizzware.dramaticdoors.DramaticDoors;
-
+// Copyright Scmopyright. Whatever.
 /*
  * Copyright (c) 2021 magistermaks
  *

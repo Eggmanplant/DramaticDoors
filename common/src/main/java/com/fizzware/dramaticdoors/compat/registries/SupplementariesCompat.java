@@ -68,16 +68,16 @@ public class SupplementariesCompat
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GOLD, new ResourceLocation("supplementaries", "gold_door"), "tall_metal_door");
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_NETHERITE, new ResourceLocation("supplementaries", "netherite_door"), "tall_metal_door");
 		
-		if (checker.isModLoaded("forge")) {
+		/*if (checker.isModLoaded("forge")) {
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SILVER, new ResourceLocation("supplementaries", "silver_door"));
-			//DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LEAD, new ResourceLocation("supplementaries", "lead_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LEAD, new ResourceLocation("supplementaries", "lead_door"));
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SILVER, new ResourceLocation("supplementaries", "silver_door"));
-			//DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LEAD, new ResourceLocation("supplementaries", "lead_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LEAD, new ResourceLocation("supplementaries", "lead_door"));
 	
 			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SILVER, new ResourceLocation("supplementaries", "silver_door"), false);
-			//DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LEAD, new ResourceLocation("supplementaries", "lead_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LEAD, new ResourceLocation("supplementaries", "lead_door"), false);
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_SILVER, new ResourceLocation("supplementaries", "silver_door"), "tall_metal_door");
-			//DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LEAD, new ResourceLocation("supplementaries", "lead_door"), "tall_metal_door");
-		}
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LEAD, new ResourceLocation("supplementaries", "lead_door"), "tall_metal_door");
+		}*/
 	}
 }

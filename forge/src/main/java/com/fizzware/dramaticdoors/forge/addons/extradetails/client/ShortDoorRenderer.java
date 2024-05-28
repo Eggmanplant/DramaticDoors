@@ -8,10 +8,10 @@ import com.fizzware.dramaticdoors.tags.DDBlockTags;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 import me.pandamods.extra_details.ExtraDetails;
-import me.pandamods.pandalib.client.model.Armature;
-import me.pandamods.pandalib.client.render.block.extensions.MeshClientBlockRenderer;
-import me.pandamods.pandalib.utils.RenderUtils;
-import me.pandamods.pandalib.utils.VectorUtils;
+import me.pandamods.extra_details.api.client.render.block.extensions.MeshClientBlockRenderer;
+import me.pandamods.extra_details.pandalib.client.model.Armature;
+import me.pandamods.extra_details.pandalib.utils.RenderUtils;
+import me.pandamods.extra_details.pandalib.utils.VectorUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.core.Direction;
@@ -34,11 +34,10 @@ public class ShortDoorRenderer extends MeshClientBlockRenderer<ShortDoorClientBl
 		return ExtraDetails.getConfig().blockSettings.door.enabled && ExtraDetails.getConfig().isAllowed(state.getBlock()) && !state.is(DDBlockTags.EXTRA_DETAILS_BLACKLIST);
 	}
 
-	@SuppressWarnings("deprecation")
-	@Override
+	@Override @SuppressWarnings("deprecation")
 	public void render(ShortDoorClientBlock block, PoseStack poseStack, MultiBufferSource buffer, int lightColor, int overlay, float partialTick) {
 		
-			this.renderRig(block, this.model, poseStack, buffer, lightColor, overlay, false);
+			this.renderRig(block, this.model, poseStack, buffer, lightColor, overlay);
 	
 			BlockState blockState = block.getBlockState().setValue(ShortDoorBlock.FACING, Direction.NORTH).setValue(ShortDoorBlock.OPEN, false);
 	

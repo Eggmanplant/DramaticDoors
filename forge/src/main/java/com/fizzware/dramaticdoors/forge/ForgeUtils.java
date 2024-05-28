@@ -4,6 +4,7 @@ import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.compat.CompatChecker;
+import com.fizzware.dramaticdoors.forge.compat.QuarkDoubleDoorCompat;
 import com.fizzware.dramaticdoors.forge.config.DDConfigForge;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -42,7 +43,7 @@ public class ForgeUtils implements CompatChecker
     
 	@Override
 	public boolean isQuarkModuleEnabled() {
-		return INSTANCE.isModLoaded("quark");
+		return QuarkDoubleDoorCompat.hasQuarkDoubleDoorsModule();
 	}
 	
     @SuppressWarnings("deprecation")

@@ -8,7 +8,7 @@ import com.fizzware.dramaticdoors.compat.DDCompatRecipe;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 
-public class DawnOfTimeBuilderCompat 
+public class DawnOfTimeBuilderCompat
 {
 	public static void registerCompat() {
 		registerBlocksItems();

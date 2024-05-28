@@ -1,10 +1,11 @@
 package com.fizzware.dramaticdoors.forge.addons.extradetails.client;
 
 import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
+
 import me.pandamods.extra_details.ExtraDetails;
-import me.pandamods.pandalib.client.animation_controller.Animation;
-import me.pandamods.pandalib.client.animation_controller.AnimationController;
-import me.pandamods.pandalib.client.model.Armature;
+import me.pandamods.extra_details.pandalib.client.animation_controller.Animation;
+import me.pandamods.extra_details.pandalib.client.animation_controller.AnimationController;
+import me.pandamods.extra_details.pandalib.client.model.Armature;
 import net.minecraft.resources.ResourceLocation;
 
 public class ShortDoorAnimationController extends AnimationController<ShortDoorClientBlock>

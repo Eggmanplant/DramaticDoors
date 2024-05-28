@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "dramaticdoors",
+  "id": "${mod_id}",
   "version": "${version}",
 
-  "name": "Dramatic Doors (QuiFabrge)",
-  "description": "Dramatic Doors, the mod that adds three block tall doors and one block short doors! Compatible with Fabric, Forge, and Quilt. Supports over 80 mods!",
+  "name": "${mod_name} (QuiFabrge)",
+  "description": "${description}",
   "authors": [
     "Fizzware (Original creator)", "Kitteh6660 (Fabric port)"
   ],
@@ -41,6 +41,7 @@
   },
   "suggests": {
     "doubledoors-fabric": "*",
+    "extra_details": ">=0.3.1",
     "ad_astra": "*",
     "bewitchment": "*",
     "biomemakeover": "*",

@@ -30,8 +30,8 @@ public class DDNames
     public static final String TALL_WARPED = "tall_warped_door";
 
     // -- The Big Popular Mods --
-    //Biomes o' Plenty (Given name prefix to avoid conflicts
-    public static final String SHORT_BOP_CHERRY = "short_bop_cherry_door";
+    // Biomes o' Plenty (Given name prefix to avoid conflicts)
+    public static final String SHORT_BOP_CHERRY = "short_bop_cherry_door"; // Legacy
     public static final String SHORT_BOP_DEAD = "short_bop_dead_door";
     public static final String SHORT_BOP_FIR = "short_bop_fir_door";
     public static final String SHORT_BOP_HELLBARK = "short_bop_hellbark_door";
@@ -43,7 +43,7 @@ public class DDNames
     public static final String SHORT_BOP_UMBRAN = "short_bop_umbran_door";
     public static final String SHORT_BOP_WILLOW = "short_bop_willow_door";
     
-    public static final String TALL_BOP_CHERRY = "tall_bop_cherry_door";
+    public static final String TALL_BOP_CHERRY = "tall_bop_cherry_door"; // Legacy
     public static final String TALL_BOP_DEAD = "tall_bop_dead_door";
     public static final String TALL_BOP_FIR = "tall_bop_fir_door";
     public static final String TALL_BOP_HELLBARK = "tall_bop_hellbark_door";
@@ -55,7 +55,70 @@ public class DDNames
     public static final String TALL_BOP_UMBRAN = "tall_bop_umbran_door";
     public static final String TALL_BOP_WILLOW = "tall_bop_willow_door";
     
-    //Oh the Biomes You'll Go
+    // Biomes We've Gone
+    public static final String SHORT_BWG_ASPEN = "short_bwg_aspen_door";
+    public static final String SHORT_BWG_BAOBAB = "short_bwg_baobab_door";
+    public static final String SHORT_BWG_BLUE_ENCHANTED = "short_bwg_blue_enchanted_door";
+    public static final String SHORT_BWG_BULBIS = "short_bwg_bulbis_door";
+    public static final String SHORT_BWG_CIKA = "short_bwg_cika_door";
+    public static final String SHORT_BWG_CYPRESS = "short_bwg_cypress_door";
+    public static final String SHORT_BWG_EBONY = "short_bwg_ebony_door";
+    public static final String SHORT_BWG_EMBUR = "short_bwg_embur_door";
+    public static final String SHORT_BWG_ETHER = "short_bwg_ether_door";
+    public static final String SHORT_BWG_FIR = "short_bwg_fir_door";
+    public static final String SHORT_BWG_FLORUS = "short_bwg_florus_door";
+    public static final String SHORT_BWG_GREEN_ENCHANTED = "short_bwg_green_enchanted_door";
+    public static final String SHORT_BWG_HOLLY = "short_bwg_holly_door";
+    public static final String SHORT_BWG_IMPARIUS = "short_bwg_imparius_door";
+    public static final String SHORT_BWG_IRONWOOD = "short_bwg_ironwood_door";
+    public static final String SHORT_BWG_JACARANDA = "short_bwg_jacaranda_door";
+    public static final String SHORT_BWG_MAHOGANY = "short_bwg_mahogany_door";
+    public static final String SHORT_BWG_MAPLE = "short_bwg_maple_door";
+    public static final String SHORT_BWG_NIGHTSHADE = "short_bwg_nightshade_door";
+    public static final String SHORT_BWG_PALM = "short_bwg_palm_door";
+    public static final String SHORT_BWG_PINE = "short_bwg_pine_door";
+    public static final String SHORT_BWG_RAINBOW_EUCALYPTUS = "short_bwg_rainbow_eucalyptus_door";
+    public static final String SHORT_BWG_REDWOOD = "short_bwg_redwood_door";
+    public static final String SHORT_BWG_SAKURA = "short_bwg_sakura_door";
+    public static final String SHORT_BWG_SKYRIS = "short_bwg_skyris_door";
+    public static final String SHORT_BWG_SYTHIAN = "short_bwg_sythian_door";
+    public static final String SHORT_BWG_WHITE_MANGROVE = "short_bwg_white_mangrove_door";
+    public static final String SHORT_BWG_WILLOW = "short_bwg_willow_door";
+    public static final String SHORT_BWG_WITCH_HAZEL = "short_bwg_witch_hazel_door";
+    public static final String SHORT_BWG_ZELKOVA = "short_bwg_zelkova_door";
+
+    public static final String TALL_BWG_ASPEN = "tall_bwg_aspen_door";
+    public static final String TALL_BWG_BAOBAB = "tall_bwg_baobab_door";
+    public static final String TALL_BWG_BLUE_ENCHANTED = "tall_bwg_blue_enchanted_door";
+    public static final String TALL_BWG_BULBIS = "tall_bwg_bulbis_door";
+    public static final String TALL_BWG_CIKA = "tall_bwg_cika_door";
+    public static final String TALL_BWG_CYPRESS = "tall_bwg_cypress_door";
+    public static final String TALL_BWG_EBONY = "tall_bwg_ebony_door";
+    public static final String TALL_BWG_EMBUR = "tall_bwg_embur_door";
+    public static final String TALL_BWG_ETHER = "tall_bwg_ether_door";
+    public static final String TALL_BWG_FIR = "tall_bwg_fir_door";
+    public static final String TALL_BWG_FLORUS = "tall_bwg_florus_door";
+    public static final String TALL_BWG_GREEN_ENCHANTED = "tall_bwg_green_enchanted_door";
+    public static final String TALL_BWG_HOLLY = "tall_bwg_holly_door";
+    public static final String TALL_BWG_IMPARIUS = "tall_bwg_imparius_door";
+    public static final String TALL_BWG_IRONWOOD = "tall_bwg_ironwood_door";
+    public static final String TALL_BWG_JACARANDA = "tall_bwg_jacaranda_door";
+    public static final String TALL_BWG_MAHOGANY = "tall_bwg_mahogany_door";
+    public static final String TALL_BWG_MAPLE = "tall_bwg_maple_door";
+    public static final String TALL_BWG_NIGHTSHADE = "tall_bwg_nightshade_door";
+    public static final String TALL_BWG_PALM = "tall_bwg_palm_door";
+    public static final String TALL_BWG_PINE = "tall_bwg_pine_door";
+    public static final String TALL_BWG_RAINBOW_EUCALYPTUS = "tall_bwg_rainbow_eucalyptus_door";
+    public static final String TALL_BWG_REDWOOD = "tall_bwg_redwood_door";
+    public static final String TALL_BWG_SAKURA = "tall_bwg_sakura_door";
+    public static final String TALL_BWG_SKYRIS = "tall_bwg_skyris_door";
+    public static final String TALL_BWG_SYTHIAN = "tall_bwg_sythian_door";
+    public static final String TALL_BWG_WHITE_MANGROVE = "tall_bwg_white_mangrove_door";
+    public static final String TALL_BWG_WILLOW = "tall_bwg_willow_door";
+    public static final String TALL_BWG_WITCH_HAZEL = "tall_bwg_witch_hazel_door";
+    public static final String TALL_BWG_ZELKOVA = "tall_bwg_zelkova_door";
+    
+    // Oh the Biomes You'll Go (Legacy)
     public static final String SHORT_BYG_ASPEN = "short_byg_aspen_door";
     public static final String SHORT_BYG_BAOBAB = "short_byg_baobab_door";
     public static final String SHORT_BYG_BLUE_ENCHANTED = "short_byg_blue_enchanted_door";
@@ -122,7 +185,7 @@ public class DDNames
     public static final String TALL_BYG_WITCH_HAZEL = "tall_byg_witch_hazel_door";
     public static final String TALL_BYG_ZELKOVA = "tall_byg_zelkova_door";
     
-    //Twilight Forest
+    // Twilight Forest
     public static final String SHORT_CANOPY = "short_canopy_door";
     public static final String SHORT_DARKWOOD = "short_darkwood_door";
     public static final String SHORT_TWILIGHT_MANGROVE = "short_twilight_mangrove_door";
@@ -148,7 +211,7 @@ public class DDNames
     public static final String TALL_TOWERWOOD = "tall_towerwood_door"; // Twilight Forest: The Lost Blocks
 
     // -- Abnormals Mods --
-    //Atmospheric
+    // Atmospheric
     public static final String SHORT_ASPEN = "short_aspen_door";
     public static final String SHORT_GRIMWOOD = "short_grimwood_door";
     public static final String SHORT_KOUSA = "short_kousa_door";
@@ -165,27 +228,27 @@ public class DDNames
     public static final String TALL_ROSEWOOD = "tall_rosewood_door";
     public static final String TALL_YUCCA = "tall_yucca_door";
     
-    //Autumnity
+    // Autumnity
     public static final String SHORT_MAPLE = "short_maple_door";
 
     public static final String TALL_MAPLE = "tall_maple_door";
     
-    //Buzzier Bees
+    // Buzzier Bees
     public static final String SHORT_HONEYCOMB = "short_honeycomb_door";
 
     public static final String TALL_HONEYCOMB = "tall_honeycomb_door";
     
-    //Caverns & Chasms
+    // Caverns & Chasms
     public static final String SHORT_AZALEA = "short_azalea_door";
 
     public static final String TALL_AZALEA = "tall_azalea_door";
 
-    //Endergetic Expansion
+    // Endergetic Expansion
     public static final String SHORT_POISE = "short_poise_door";
 
     public static final String TALL_POISE = "tall_poise_door";
     
-    //Environmental
+    // Environmental
     public static final String SHORT_DARK_CHERRY = "short_dark_cherry_door";
     public static final String SHORT_PINE = "short_pine_door";
     public static final String SHORT_WILLOW = "short_willow_door";
@@ -196,7 +259,7 @@ public class DDNames
     public static final String TALL_WILLOW = "tall_willow_door";
     public static final String TALL_WISTERIA = "tall_wisteria_door";
 
-    //Upgrade Aquatic
+    // Upgrade Aquatic
     public static final String SHORT_DRIFTWOOD = "short_driftwood_door";
     public static final String SHORT_RIVER = "short_river_door";
     public static final String SHORT_GLASS = "short_glass_door";
@@ -208,7 +271,7 @@ public class DDNames
     public static final String TALL_TOOTH = "tall_tooth_door";
     
     // -- Team Aurora Mods --
-    //Abundance
+    // Abundance
     public static final String SHORT_JACARANDA = "short_jacaranda_door";
     public static final String SHORT_REDBUD = "short_redbud_door";
     public static final String SHORT_CYPRESS = "short_cypress_door";
@@ -222,14 +285,14 @@ public class DDNames
     public static final String TALL_RED_MUSHROOM = "tall_red_mushroom_door";
     
     // -- Other Mods --
-    //Abundant Atmosphere
+    // Abundant Atmosphere
     public static final String SHORT_ASH = "short_ash_door";
     public static final String SHORT_GOURDROT = "short_gourdrot_door";
     
     public static final String TALL_ASH = "tall_ash_door";
     public static final String TALL_GOURDROT = "tall_gourdrot_door";
     
-    //Ad Astra
+    // Ad Astra
     public static final String SHORT_AERONOS = "short_aeronos_door";
     public static final String SHORT_GLACIAN = "short_glacian_door";
     public static final String SHORT_STROPHAR = "short_strophar_door";
@@ -240,12 +303,12 @@ public class DDNames
     public static final String TALL_STROPHAR = "tall_strophar_door";
     public static final String TALL_AA_STEEL = "tall_aa_steel_door";
     
-    //Aether
+    // Aether
     public static final String SHORT_AETHER_SKYROOT = "short_aether_skyroot_door";
 
     public static final String TALL_AETHER_SKYROOT = "tall_aether_skyroot_door";
     
-    //Aether Redux
+    // Aether Redux
     public static final String SHORT_BLIGHTWILLOW = "short_blightwillow_door";
     public static final String SHORT_CLOUDCAP = "short_cloudcap_door";
     public static final String SHORT_CRYSTAL = "short_crystal_door";
@@ -262,19 +325,19 @@ public class DDNames
     public static final String TALL_PRISMATIC = "tall_prismatic_door"; // Legacy
     public static final String TALL_SPRINGSHROOM = "tall_springshroom_door";
     
-    //Alex's Caves
+    // Alex's Caves
     public static final String SHORT_PEWEN = "short_pewen_door";
     public static final String SHORT_THORNWOOD = "short_thornwood_door";
 
     public static final String TALL_PEWEN = "tall_pewen_door";
     public static final String TALL_THORNWOOD = "tall_thornwood_door";
     
-    //Architects Palette
+    // Architects Palette
     public static final String SHORT_TWISTED = "short_twisted_door";
 
     public static final String TALL_TWISTED = "tall_twisted_door";
     
-    //Ars Nouveau
+    // Ars Nouveau
     public static final String SHORT_ARCHWOOD = "short_archwood_door";
     
     public static final String TALL_ARCHWOOD = "tall_archwood_door";
@@ -307,19 +370,19 @@ public class DDNames
     public static final String TALL_AD_AZALEA = "tall_ad_azalea_door";
     public static final String TALL_AD_JACARANDA = "tall_ad_jacaranda_door";
     
-    //Bamboo Everything
+    // Bamboo Everything
     public static final String SHORT_BE_BAMBOO = "short_be_bamboo_door";
     public static final String SHORT_BE_DRY_BAMBOO = "short_be_dry_bamboo_door";
 
     public static final String TALL_BE_BAMBOO = "tall_be_bamboo_door";
     public static final String TALL_BE_DRY_BAMBOO = "tall_be_dry_bamboo_door";
     
-    //Better Archaeology
+    // Better Archaeology
     public static final String SHORT_ROTTEN = "short_rotten_door";
     
     public static final String TALL_ROTTEN = "tall_rotten_door";
     
-    //Better End
+    // Better End
     public static final String SHORT_TERMINITE = "short_terminite_door";
     public static final String SHORT_THALLASIUM = "short_thallasium_door";
     public static final String SHORT_DRAGON_TREE = "short_dragon_tree_door";
@@ -346,7 +409,7 @@ public class DDNames
     public static final String TALL_TENANEA = "tall_tenanea_door";
     public static final String TALL_UMBRELLA_TREE = "tall_umbrella_tree_door";
     
-    //Better Nether
+    // Better Nether
     public static final String SHORT_ANCHOR_TREE = "short_anchor_tree_door";
     public static final String SHORT_BONE_CIN = "short_bone_cin_door";
     public static final String SHORT_BONE_REED = "short_bone_reed_door";
@@ -371,7 +434,7 @@ public class DDNames
     public static final String TALL_WART = "tall_wart_door";
     public static final String TALL_BN_WILLOW = "tall_bn_willow_door";
     
-    //Bewitchment
+    // Bewitchment
     public static final String SHORT_BW_CYPRESS = "short_bw_cypress_door";
     public static final String SHORT_DRAGONS_BLOOD = "short_dragons_blood_door";
     public static final String SHORT_ELDER = "short_elder_door";
@@ -382,12 +445,12 @@ public class DDNames
     public static final String TALL_ELDER = "tall_elder_door";
     public static final String TALL_JUNIPER = "tall_juniper_door";
     
-    //Bewitchment Plus
+    // Bewitchment Plus
     public static final String SHORT_YEW = "short_yew_door";
 
     public static final String TALL_YEW = "tall_yew_door";
     
-    //Biomancy
+    // Biomancy
     public static final String SHORT_FLESH = "short_flesh_door";
     public static final String SHORT_FULL_FLESH = "short_full_flesh_door";
     public static final String SHORT_FLESHKIN = "short_fleshkin_door";
@@ -396,7 +459,7 @@ public class DDNames
     public static final String TALL_FULL_FLESH = "tall_full_flesh_door";
     public static final String TALL_FLESHKIN = "tall_fleshkin_door";
     
-    //Biome Makeover
+    // Biome Makeover
     public static final String SHORT_BM_ANCIENT_OAK = "short_bm_ancient_oak_door";
     public static final String SHORT_BM_BLIGHTED_BALSA = "short_bm_blighted_balsa_door";
     public static final String SHORT_BM_SWAMP_CYPRESS = "short_bm_swamp_cypress_door";
@@ -407,7 +470,7 @@ public class DDNames
     public static final String TALL_BM_SWAMP_CYPRESS = "tall_bm_swamp_cypress_door";
     public static final String TALL_BM_WILLOW = "tall_bm_willow_door";
     
-    //Blocks+
+    // Blocks+
     public static final String SHORT_BP_BAMBOO = "short_bp_bamboo_door";
     public static final String SHORT_BP_MUSHROOM = "short_bp_mushroom_door";
     public static final String SHORT_BP_COPPER = "short_bp_copper_door";
@@ -424,7 +487,7 @@ public class DDNames
     public static final String TALL_BP_GOLDEN = "tall_bp_golden_door";
     public static final String TALL_BP_NETHERITE = "tall_bp_netherite_door";
     
-    //Blockus
+    // Blockus
     public static final String SHORT_BLOCKUS_RAW_BAMBOO = "short_blockus_raw_bamboo_door";
     public static final String SHORT_BLOCKUS_BLACKSTONE = "short_blockus_blackstone_door";
     public static final String SHORT_BLOCKUS_CHARRED = "short_blockus_charred_door";
@@ -441,7 +504,7 @@ public class DDNames
     public static final String TALL_BLOCKUS_STONE = "tall_blockus_stone_door";
     public static final String TALL_BLOCKUS_WHITE_OAK = "tall_blockus_white_oak_door";
     
-    //Blue Skies
+    // Blue Skies
     public static final String SHORT_BS_BLUEBRIGHT = "short_bs_bluebright_door";
     public static final String SHORT_BS_CHERRY = "short_bs_cherry_door";
     public static final String SHORT_BS_CRYSTALLIZED = "short_bs_crystallized_door";
@@ -467,38 +530,38 @@ public class DDNames
     public static final String TALL_MESH = "tall_mesh_door";    
     public static final String TALL_SCORCHED_PLANKS = "tall_scorched_planks_door";
     
-    //Caupona
+    // Caupona
     public static final String SHORT_WALNUT = "short_walnut_door";
     
     public static final String TALL_WALNUT = "tall_walnut_door";
     
-    //Ceilands
+    // Ceilands
     public static final String SHORT_CEILTRUNK = "short_ceiltrunk_door";
     public static final String SHORT_LUZAWOOD = "short_luzawood_door";
 
     public static final String TALL_CEILTRUNK = "tall_ceiltrunk_door";
     public static final String TALL_LUZAWOOD = "tall_luzawood_door";
 
-    //Charm
+    // Charm
     public static final String SHORT_CHARM_AZALEA = "short_charm_azalea_door";
     public static final String SHORT_CHARM_EBONY = "short_charm_ebony_door";
 
     public static final String TALL_CHARM_AZALEA = "tall_charm_azalea_door";
     public static final String TALL_CHARM_EBONY = "tall_charm_ebony_door";
     
-    //Cinderscapes
+    // Cinderscapes
     public static final String SHORT_SCORCHED = "short_scorched_door";
     public static final String SHORT_UMBRAL = "short_umbral_door";    
 
     public static final String TALL_SCORCHED = "tall_scorched_door";
     public static final String TALL_UMBRAL = "tall_umbral_door";    
     
-    //Cobblemon
+    // Cobblemon
     public static final String SHORT_APRICORN = "short_apricorn_door";
 
     public static final String TALL_APRICORN = "tall_apricorn_door";
     
-    //Colourful Azaleas
+    // Colourful Azaleas
     public static final String SHORT_AZULE_AZALEA = "short_azule_azalea_door";
     public static final String SHORT_BRIGHT_AZALEA = "short_bright_azalea_door";
     public static final String SHORT_FISS_AZALEA = "short_fiss_azalea_door";
@@ -515,7 +578,7 @@ public class DDNames
     public static final String TALL_TITANIUM_AZALEA = "tall_titanium_azalea_door";
     public static final String TALL_WALNUT_AZALEA = "tall_walnut_azalea_door";
         
-    //Copper Overhaul
+    // Copper Overhaul
     public static final String SHORT_CO_COPPER = "short_co_copper_door";
     public static final String SHORT_CO_EXPOSED_COPPER = "short_co_exposed_copper_door";
     public static final String SHORT_CO_WEATHERED_COPPER = "short_co_weathered_copper_door";
@@ -526,7 +589,7 @@ public class DDNames
     public static final String TALL_CO_WEATHERED_COPPER = "tall_co_weathered_copper_door";
     public static final String TALL_CO_OXIDIZED_COPPER = "tall_co_oxidized_copper_door";
     
-    //Create
+    // Create
     public static final String SHORT_CREATE_ANDESITE = "short_create_andesite_door";
     public static final String SHORT_CREATE_BRASS = "short_create_brass_door";
     public static final String SHORT_CREATE_COPPER = "short_create_copper_door";
@@ -539,14 +602,14 @@ public class DDNames
     public static final String TALL_CREATE_FRAMED_GLASS = "tall_create_framed_glass_door";
     public static final String TALL_CREATE_TRAIN = "tall_create_train_door";
     
-    //Create: Alloyed
+    // Create: Alloyed
     public static final String SHORT_STEEL = "short_steel_door";
     public static final String SHORT_LOCKED_STEEL = "short_locked_steel_door";
     
     public static final String TALL_STEEL = "tall_steel_door";
     public static final String TALL_LOCKED_STEEL = "tall_locked_steel_door";
     
-    //Create: Deco
+    // Create: Deco
     public static final String SHORT_ANDESITE = "short_andesite_door";
     public static final String SHORT_BRASS = "short_brass_door";
     public static final String SHORT_COPPER = "short_copper_door";
@@ -569,7 +632,7 @@ public class DDNames
     public static final String TALL_LOCKED_INDUSTRIAL_IRON = "tall_locked_industrial_iron_door";
     public static final String TALL_LOCKED_ZINC = "tall_locked_zinc_door";
     
-    //Create: Misc & Things
+    // Create: Misc & Things
     public static final String SHORT_ANDESITE_CASING = "short_andesite_casing_door";
     public static final String SHORT_BRASS_CASING = "short_brass_casing_door";
     public static final String SHORT_COPPER_CASING = "short_copper_casing_door";
@@ -578,12 +641,12 @@ public class DDNames
     public static final String TALL_BRASS_CASING = "tall_brass_casing_door";
     public static final String TALL_COPPER_CASING = "tall_copper_casing_door";
     
-    //Darker Depths
+    // Darker Depths
     public static final String SHORT_PETRIFIED = "short_petrified_door";
     
     public static final String TALL_PETRIFIED = "tall_petrified_door";
     
-    //Dawn of Time: Builders Edition
+    // Dawn of Time: Builders Edition
     public static final String SHORT_CHARRED_SPRUCE = "short_charred_spruce_door";
     public static final String SHORT_WAXED_OAK = "short_waxed_oak_door";
     public static final String SHORT_PAPER = "short_paper_door";
@@ -592,7 +655,7 @@ public class DDNames
     public static final String TALL_WAXED_OAK = "tall_waxed_oak_door";
     public static final String TALL_PAPER = "tall_paper_door";
     
-    //Deep Aether
+    // Deep Aether
     public static final String SHORT_CONBERRY = "short_conberry_door";
     public static final String SHORT_CRUDEROOT = "short_cruderoot_door";
     public static final String SHORT_ROSEROOT = "short_roseroot_door";
@@ -605,17 +668,17 @@ public class DDNames
     public static final String TALL_SUNROOT = "tall_sunroot_door";
     public static final String TALL_YAGROOT = "tall_yagroot_door";
     
-    //Deeper and Darker
+    // Deeper and Darker
     public static final String SHORT_ECHO = "short_echo_door";
 
     public static final String TALL_ECHO = "tall_echo_door";
     
-    //Desolation
+    // Desolation
     public static final String SHORT_CHARRED = "short_charred_door";
 
     public static final String TALL_CHARRED = "tall_charred_door";
     
-    //Dustrial Decor
+    // Dustrial Decor
     public static final String SHORT_CARDBOARD = "short_cardboard_door";
     public static final String SHORT_CHAIN = "short_chain_door";
     public static final String SHORT_INDUSTRIAL_IRON = "short_industrial_iron_door";
@@ -634,7 +697,7 @@ public class DDNames
     public static final String TALL_RUSTY_SHEET_METAL = "tall_rusty_sheet_metal_door";
     public static final String TALL_SHEET_METAL = "tall_sheet_metal_door";
     
-    //Ecologics
+    // Ecologics
     public static final String SHORT_ECO_AZALEA = "short_eco_azalea_door";
     public static final String SHORT_ECO_FLOWERING_AZALEA = "short_eco_flowering_azalea_door";
     public static final String SHORT_ECO_COCONUT = "short_eco_coconut_door";
@@ -645,35 +708,35 @@ public class DDNames
     public static final String TALL_ECO_COCONUT = "tall_eco_coconut_door";
     public static final String TALL_ECO_WALNUT = "tall_eco_walnut_door";
     
-    //End's Phantasm
+    // End's Phantasm
     public static final String SHORT_EBONY = "short_ebony_door";
     public static final String SHORT_PREAM = "short_pream_door";
     
     public static final String TALL_EBONY = "tall_ebony_door";
     public static final String TALL_PREAM = "tall_pream_door";
     
-    //Enderscape
+    // Enderscape
     public static final String SHORT_CELESTIAL = "short_celestial_door";
     public static final String SHORT_MURUSHROOM = "short_murushroom_door";
     
     public static final String TALL_CELESTIAL = "tall_celestial_door";
     public static final String TALL_MURUSHROOM = "tall_murushroom_door";
     
-    //Endless Biomes
+    // Endless Biomes
     public static final String SHORT_EB_TWISTED = "short_eb_twisted_door";
     public static final String SHORT_EB_PENUMBRA = "short_eb_penumbra_door";
     
     public static final String TALL_EB_TWISTED = "tall_eb_twisted_door";
     public static final String TALL_EB_PENUMBRA = "tall_eb_penumbra_door";
     
-    //Enlightened End
+    // Enlightened End
     public static final String SHORT_CONGEALED = "short_congealed_door";
     public static final String SHORT_EE_EBONY = "short_ee_ebony_door";
 
     public static final String TALL_CONGEALED = "tall_congealed_door";
     public static final String TALL_EE_EBONY = "tall_ee_ebony_door";
     
-    //Everything is Copper
+    // Everything is Copper
     public static final String SHORT_EC_COPPER = "short_ec_copper_door";
     public static final String SHORT_EC_EXPOSED_COPPER = "short_ec_exposed_copper_door";
     public static final String SHORT_EC_WEATHERED_COPPER = "short_ec_weathered_copper_door";
@@ -692,7 +755,7 @@ public class DDNames
     public static final String TALL_EC_WAXED_WEATHERED_COPPER = "tall_ec_waxed_weathered_copper_door";
     public static final String TALL_EC_WAXED_OXIDIZED_COPPER = "tall_ec_waxed_oxidized_copper_door";
     
-    //Extended Mushrooms
+    // Extended Mushrooms
     public static final String SHORT_MUSHROOM = "short_mushroom_door";
     public static final String SHORT_GLOWSHROOM = "short_glowshroom_door";
     public static final String SHORT_POISONOUS_MUSHROOM = "short_poisonous_mushroom_door";
@@ -703,7 +766,7 @@ public class DDNames
     public static final String TALL_POISONOUS_MUSHROOM = "tall_poisonous_mushroom_door";
     public static final String TALL_HONEY_FUNGUS = "tall_honey_fungus_door";
     
-    //Forbidden & Arcanus
+    // Forbidden & Arcanus
     public static final String SHORT_DEORUM = "short_deorum_door";
     public static final String SHORT_ARCANE_EDELWOOD = "short_arcane_edelwood_door";
     public static final String SHORT_CHERRYWOOD = "short_cherrywood_door"; // Legacy name, no longer used.
@@ -725,7 +788,7 @@ public class DDNames
     public static final String TALL_FRAMED = "tall_framed_door";
     public static final String TALL_FRAMED_IRON = "tall_framed_iron_door";
     
-    //Fruit Trees
+    // Fruit Trees (Legacy, succeeded by Fruitful Fun)
     public static final String SHORT_FT_CHERRY = "short_ft_cherry_door";
     public static final String SHORT_FT_CHERRY_SLIDING = "short_ft_cherry_sliding_door";
     public static final String SHORT_FT_CITRUS = "short_ft_citrus_door";
@@ -734,14 +797,23 @@ public class DDNames
     public static final String TALL_FT_CHERRY_SLIDING = "tall_ft_cherry_sliding_door";
     public static final String TALL_FT_CITRUS = "tall_ft_citrus_door";
     
-    //Gardens of the Dead
+    // Fruitful Fun
+    public static final String SHORT_FF_CITRUS = "short_ff_citrus_door";
+    public static final String SHORT_FF_REDLOVE = "short_ff_redlove_door";
+    public static final String SHORT_FF_REDLOVE_SLIDING = "short_ff_redlove_sliding_door";
+
+    public static final String TALL_FF_CITRUS = "tall_ff_citrus_door";
+    public static final String TALL_FF_REDLOVE = "tall_ff_redlove_door";
+    public static final String TALL_FF_REDLOVE_SLIDING = "tall_ff_redlove_sliding_door";
+    
+    // Gardens of the Dead
     public static final String SHORT_SOULBLIGHT = "short_soulblight_door";
     public static final String SHORT_WHISTLECANE = "short_whistlecane_door";
 
     public static final String TALL_SOULBLIGHT = "tall_soulblight_door";
     public static final String TALL_WHISTLECANE = "tall_whistlecane_door";
     
-    //Glass Doors
+    // Glass Doors
     public static final String SHORT_IRON_GLASS = "short_iron_glass_door";
     public static final String SHORT_OAK_GLASS = "short_oak_glass_door";
     public static final String SHORT_SPRUCE_GLASS = "short_spruce_glass_door";
@@ -768,24 +840,24 @@ public class DDNames
     public static final String TALL_CRIMSON_GLASS = "tall_crimson_glass_door";
     public static final String TALL_WARPED_GLASS = "tall_warped_glass_door";
     
-    //Good Ending
+    // Good Ending
     public static final String SHORT_GE_CYPRESS = "short_ge_cypress_door";
     public static final String SHORT_GE_MUDDY_OAK = "short_ge_muddy_oak_door";
 
     public static final String TALL_GE_CYPRESS = "tall_ge_cypress_door";
     public static final String TALL_GE_MUDDY_OAK = "tall_ge_muddy_oak_door";
     
-    //Graveyard
+    // Graveyard
     public static final String SHORT_DARK_IRON = "short_dark_iron_door";
 
     public static final String TALL_DARK_IRON = "tall_dark_iron_door";
     
-    //Habitat
+    // Habitat
     public static final String SHORT_FAIRY_RING_MUSHROOM = "short_fairy_ring_mushroom_door";
 
     public static final String TALL_FAIRY_RING_MUSHROOM = "tall_fairy_ring_mushroom_door";
     
-    //Tinkers Construct/Hephaestus
+    // Tinkers Construct/Hephaestus
     public static final String SHORT_BLOODSHROOM = "short_bloodshroom_door";
     public static final String SHORT_GREENHEART = "short_greenheart_door";
     public static final String SHORT_SKYROOT = "short_skyroot_door";
@@ -794,12 +866,12 @@ public class DDNames
     public static final String TALL_GREENHEART = "tall_greenheart_door";
     public static final String TALL_SKYROOT = "tall_skyroot_door";
     
-    //Hexcasting
+    // Hexcasting
     public static final String SHORT_EDIFIED = "short_edified_door";
 
     public static final String TALL_EDIFIED = "tall_edified_door";
     
-    //Hexerei
+    // Hexerei
     public static final String SHORT_HEXEREI_MAHOGANY = "short_hexerei_mahogany_door";
     public static final String SHORT_HEXEREI_WILLOW = "short_hexerei_willow_door";
     public static final String SHORT_HEXEREI_WITCH_HAZEL = "short_hexerei_witch_hazel_door";
@@ -808,19 +880,36 @@ public class DDNames
     public static final String TALL_HEXEREI_WILLOW = "tall_hexerei_willow_door";
     public static final String TALL_HEXEREI_WITCH_HAZEL = "tall_hexerei_witch_hazel_door";
     
-    //Integrated Dynamics
+    // Immersive Weathering
+    public static final String SHORT_EXPOSED_IRON = "short_exposed_iron_door";
+    public static final String SHORT_WEATHERED_IRON = "short_weathered_iron_door";
+    public static final String SHORT_RUSTED_IRON = "short_rusted_iron_door";
+    public static final String SHORT_WAXED_IRON = "short_waxed_iron_door";
+    public static final String SHORT_WAXED_EXPOSED_IRON = "short_waxed_exposed_iron_door";
+    public static final String SHORT_WAXED_WEATHERED_IRON = "short_waxed_weathered_iron_door";
+    public static final String SHORT_WAXED_RUSTED_IRON = "short_waxed_rusted_iron_door";
+
+    public static final String TALL_EXPOSED_IRON = "tall_exposed_iron_door";
+    public static final String TALL_WEATHERED_IRON = "tall_weathered_iron_door";
+    public static final String TALL_RUSTED_IRON = "tall_rusted_iron_door";
+    public static final String TALL_WAXED_IRON = "tall_waxed_iron_door";
+    public static final String TALL_WAXED_EXPOSED_IRON = "tall_waxed_exposed_iron_door";
+    public static final String TALL_WAXED_WEATHERED_IRON = "tall_waxed_weathered_iron_door";
+    public static final String TALL_WAXED_RUSTED_IRON = "tall_waxed_rusted_iron_door";
+    
+    // Integrated Dynamics
     public static final String SHORT_MENRIL = "short_menril_door";
 
     public static final String TALL_MENRIL = "tall_menril_door";
     
-    //Malum
+    // Malum
     public static final String SHORT_RUNEWOOD = "short_runewood_door";
     public static final String SHORT_SOULWOOD = "short_soulwood_door";
 
     public static final String TALL_RUNEWOOD = "tall_runewood_door";
     public static final String TALL_SOULWOOD = "tall_soulwood_door";
     
-    //Mo'Shiz
+    // Mo'Shiz
     public static final String SHORT_MS_IRON_BAR = "short_ms_iron_bar_door";
     public static final String SHORT_MS_BAMBOO = "short_ms_bamboo_door";
     public static final String SHORT_MS_CHERRY = "short_ms_cherry_door";
@@ -879,7 +968,7 @@ public class DDNames
     public static final String TALL_MS_LIGHT_BLUE_GLASS = "tall_ms_light_blue_glass_door";
     public static final String TALL_MS_BROWN_GLASS = "tall_ms_brown_glass_door";
     
-    //Morecraft
+    // Morecraft
     public static final String SHORT_MORECRAFT_BONE = "short_morecraft_bone_door";
     public static final String SHORT_MORECRAFT_NETHERWOOD = "short_morecraft_netherwood_door";
     public static final String SHORT_MORECRAFT_NETHERBRICK = "short_morecraft_netherbrick_door";
@@ -1018,30 +1107,79 @@ public class DDNames
     // Mystic's Biomes
     public static final String SHORT_MB_CHERRY = "short_mb_cherry_door";
     public static final String SHORT_MB_JACARANDA = "short_mb_jacaranda_door";
+    public static final String SHORT_MB_MAPLE = "short_mb_maple_door";
+    public static final String SHORT_MB_PEACH = "short_mb_peach_door";
+    public static final String SHORT_MB_SEA_FOAM = "short_mb_sea_foam_door";
     public static final String SHORT_MB_STRAWBERRY = "short_mb_strawberry_door";
 
     public static final String TALL_MB_CHERRY = "tall_mb_cherry_door";
     public static final String TALL_MB_JACARANDA = "tall_mb_jacaranda_door";
+    public static final String TALL_MB_MAPLE = "tall_mb_maple_door";
+    public static final String TALL_MB_PEACH = "tall_mb_peach_door";
+    public static final String TALL_MB_SEA_FOAM = "tall_mb_sea_foam_door";
     public static final String TALL_MB_STRAWBERRY = "tall_mb_strawberry_door";
     
-    //Nether's Exoticism
+    // Natures Spirit
+    public static final String SHORT_NS_ASPEN = "short_ns_aspen_door";
+    public static final String SHORT_NS_CEDAR = "short_ns_cedar_door";
+    public static final String SHORT_NS_COCONUT = "short_ns_coconut_door";
+    public static final String SHORT_NS_CYPRESS = "short_ns_cypress_door";
+    public static final String SHORT_NS_FIR = "short_ns_fir_door";
+    public static final String SHORT_NS_GHAF = "short_ns_ghaf_door";
+    public static final String SHORT_NS_JOSHUA = "short_ns_joshua_door";
+    public static final String SHORT_NS_LARCH = "short_ns_larch_door";
+    public static final String SHORT_NS_MAHOGANY = "short_ns_mahogany_door";
+    public static final String SHORT_NS_MAPLE = "short_ns_maple_door";
+    public static final String SHORT_NS_OLIVE = "short_ns_olive_door";
+    public static final String SHORT_NS_PALO_VERDE = "short_ns_palo_verde_door";
+    public static final String SHORT_NS_REDWOOD = "short_ns_redwood_door";
+    public static final String SHORT_NS_SAXAUL = "short_ns_saxaul_door";
+    public static final String SHORT_NS_SUGI = "short_ns_sugi_door";
+    public static final String SHORT_NS_WILLOW = "short_ns_willow_door";
+    public static final String SHORT_NS_WISTERIA = "short_ns_wisteria_door";
+    public static final String SHORT_NS_PAPER = "short_ns_paper_door";
+    public static final String SHORT_NS_FRAMED_PAPER = "short_ns_framed_paper_door";
+    public static final String SHORT_NS_BLOOMING_PAPER = "short_ns_blooming_paper_door";
+    
+    public static final String TALL_NS_ASPEN = "tall_ns_aspen_door";
+    public static final String TALL_NS_CEDAR = "tall_ns_cedar_door";
+    public static final String TALL_NS_COCONUT = "tall_ns_coconut_door";
+    public static final String TALL_NS_CYPRESS = "tall_ns_cypress_door";
+    public static final String TALL_NS_FIR = "tall_ns_fir_door";
+    public static final String TALL_NS_GHAF = "tall_ns_ghaf_door";
+    public static final String TALL_NS_JOSHUA = "tall_ns_joshua_door";
+    public static final String TALL_NS_LARCH = "tall_ns_larch_door";
+    public static final String TALL_NS_MAHOGANY = "tall_ns_mahogany_door";
+    public static final String TALL_NS_MAPLE = "tall_ns_maple_door";
+    public static final String TALL_NS_OLIVE = "tall_ns_olive_door";
+    public static final String TALL_NS_PALO_VERDE = "tall_ns_palo_verde_door";
+    public static final String TALL_NS_REDWOOD = "tall_ns_redwood_door";
+    public static final String TALL_NS_SAXAUL = "tall_ns_saxaul_door";
+    public static final String TALL_NS_SUGI = "tall_ns_sugi_door";
+    public static final String TALL_NS_WILLOW = "tall_ns_willow_door";
+    public static final String TALL_NS_WISTERIA = "tall_ns_wisteria_door";
+    public static final String TALL_NS_PAPER = "tall_ns_paper_door";
+    public static final String TALL_NS_FRAMED_PAPER = "tall_ns_framed_paper_door";
+    public static final String TALL_NS_BLOOMING_PAPER = "tall_ns_blooming_paper_door";
+    
+    // Nether's Exoticism
     public static final String SHORT_JABOTICABA = "short_jaboticaba_door";
     public static final String SHORT_RAMBOUTAN = "short_ramboutan_door";
 
     public static final String TALL_JABOTICABA = "tall_jaboticaba_door";
     public static final String TALL_RAMBOUTAN = "tall_ramboutan_door";
     
-    //New World
+    // New World
     public static final String SHORT_FIR = "short_fir_door";
 
     public static final String TALL_FIR = "tall_fir_door";
     
-    //Outer End
+    // Outer End
     public static final String SHORT_AZURE = "short_azure_door";
 
     public static final String TALL_AZURE = "tall_azure_door";
     
-    //Pokecube
+    // Pokecube
     public static final String SHORT_POKECUBE_ENIGMA = "short_pokecube_enigma_door";
     public static final String SHORT_POKECUBE_LEPPA = "short_pokecube_leppa_door";
     public static final String SHORT_POKECUBE_NANAB = "short_pokecube_nanab_door";
@@ -1070,7 +1208,7 @@ public class DDNames
     public static final String TALL_POKECUBE_MIRAGE = "tall_pokecube_mirage_door";
     public static final String TALL_POKECUBE_TEMPORAL = "tall_pokecube_temporal_door";    
 
-    //Prehistoric Fauna
+    // Prehistoric Fauna
     public static final String SHORT_AGATHOXYLON = "short_agathoxylon_door";
     public static final String SHORT_ARAUCARIA = "short_araucaria_door";
     public static final String SHORT_BRACHYPHYLLUM = "short_brachyphyllum_door";
@@ -1101,7 +1239,7 @@ public class DDNames
     public static final String TALL_WOODWORTHIA = "tall_woodworthia_door";
     public static final String TALL_ZAMITES = "tall_zamites_door";
     
-    //Premium Wood
+    // Premium Wood
     public static final String SHORT_PW_MAGIC = "short_pw_magic_door";
     public static final String SHORT_PW_MAPLE = "short_pw_maple_door";
     public static final String SHORT_PW_PURPLE_HEART = "short_pw_purple_heart_door";
@@ -1116,7 +1254,7 @@ public class DDNames
     public static final String TALL_PW_TIGER = "tall_pw_tiger_door";
     public static final String TALL_PW_WILLOW = "tall_pw_willow_door";
     
-    //Promenade
+    // Promenade
     public static final String SHORT_PROMENADE_CHERRY_OAK = "short_promenade_cherry_oak_door";
     public static final String SHORT_PROMENADE_DARK_AMARANTH = "short_promenade_dark_amaranth_door";
     public static final String SHORT_PROMENADE_PALM = "short_promenade_palm_door";
@@ -1125,14 +1263,14 @@ public class DDNames
     public static final String TALL_PROMENADE_DARK_AMARANTH = "tall_promenade_dark_amaranth_door";
     public static final String TALL_PROMENADE_PALM = "tall_promenade_palm_door";
 
-    //Pyromancer
+    // Pyromancer
     public static final String SHORT_PYROWOOD = "short_pyrowood_door";
     public static final String SHORT_ROTTEN_PLANKS = "short_rotten_planks_door";
 
     public static final String TALL_PYROWOOD = "tall_pyrowood_door";
     public static final String TALL_ROTTEN_PLANKS = "tall_rotten_planks_door";
 
-    //Quark
+    // Quark
     public static final String SHORT_QUARK_ANCIENT = "short_quark_ancient_door";
     public static final String SHORT_QUARK_AZALEA = "short_quark_azalea_door";
     public static final String SHORT_QUARK_BLOSSOM = "short_quark_blossom_door";
@@ -1141,7 +1279,7 @@ public class DDNames
     public static final String TALL_QUARK_AZALEA = "tall_quark_azalea_door";
     public static final String TALL_QUARK_BLOSSOM = "tall_quark_blossom_door";
     
-    //Regions Unexplored
+    // Regions Unexplored
     public static final String SHORT_RUE_BAOBAB = "short_rue_baobab_door";
     public static final String SHORT_RUE_BLUE_BIOSHROOM = "short_rue_blue_bioshroom_door";
     public static final String SHORT_RUE_GREEN_BIOSHROOM = "short_rue_green_bioshroom_door";
@@ -1188,17 +1326,17 @@ public class DDNames
     public static final String TALL_RUE_SOCOTRA = "tall_rue_socotra_door";
     public static final String TALL_RUE_WILLOW = "tall_rue_willow_door";
     
-    //Silent Gear
+    // Silent Gear
     public static final String SHORT_NETHERWOOD = "short_netherwood_door";
 
     public static final String TALL_NETHERWOOD = "tall_netherwood_door";
     
-    //Snowy Spirit
+    // Snowy Spirit
     public static final String SHORT_GINGERBREAD = "short_gingerbread_door";
 
     public static final String TALL_GINGERBREAD = "tall_gingerbread_door";
     
-    //Supplementaries
+    // Supplementaries
     public static final String SHORT_GOLD = "short_gold_door";
     public static final String SHORT_SILVER = "short_silver_door";
     public static final String SHORT_LEAD = "short_lead_door";
@@ -1209,12 +1347,12 @@ public class DDNames
     public static final String TALL_LEAD = "tall_lead_door";
     public static final String TALL_NETHERITE = "tall_netherite_door";
     
-    //Tech Reborn
+    // Tech Reborn
     public static final String SHORT_RUBBER = "short_rubber_door";
 
     public static final String TALL_RUBBER = "tall_rubber_door";
     
-    //Terraqueous
+    // Terraqueous
     public static final String SHORT_TQ_LIGHT_CLOUD = "short_tq_light_cloud_door";
     public static final String SHORT_TQ_DENSE_CLOUD = "short_tq_dense_cloud_door";
     public static final String SHORT_TQ_STORM_CLOUD = "short_tq_storm_cloud_door";
@@ -1245,7 +1383,7 @@ public class DDNames
     public static final String TALL_TQ_PEAR = "tall_tq_pear_door";
     public static final String TALL_TQ_PLUM = "tall_tq_plum_door";
     
-    //Terrestria
+    // Terrestria
     public static final String SHORT_TERRESTRIA_CYPRESS = "short_terrestria_cypress_door";
     public static final String SHORT_TERRESTRIA_HEMLOCK = "short_terrestria_hemlock_door";
     public static final String SHORT_TERRESTRIA_JAPANESE_MAPLE = "short_terrestria_japanese_maple_door";
@@ -1266,22 +1404,22 @@ public class DDNames
     public static final String TALL_TERRESTRIA_WILLOW = "tall_terrestria_willow_door";
     public static final String TALL_TERRESTRIA_YUCCA_PALM = "tall_terrestria_yucca_palm_door";
     
-    //Thermal Foundation
+    // Thermal Foundation
     public static final String SHORT_RUBBERWOOD = "short_rubberwood_door";
 
     public static final String TALL_RUBBERWOOD = "tall_rubberwood_door";
     
-    //Traverse
+    // Traverse
     public static final String SHORT_TRAVERSE_FIR = "short_traverse_fir_door";
 
     public static final String TALL_TRAVERSE_FIR = "tall_traverse_fir_door";
     
-    //Twigs
+    // Twigs
     public static final String SHORT_STRIPPED_BAMBOO = "short_stripped_bamboo_door";
 
     public static final String TALL_STRIPPED_BAMBOO = "tall_stripped_bamboo_door";
     
-    //Undergarden
+    // Undergarden
     public static final String SHORT_GRONGLE = "short_grongle_door";
     public static final String SHORT_SMOGSTEM = "short_smogstem_door";
     public static final String SHORT_WIGGLEWOOD = "short_wigglewood_door";
@@ -1302,13 +1440,13 @@ public class DDNames
     public static final String TALL_WW_CYPRESS = "tall_ww_cypress_door";
     public static final String TALL_WW_PALM = "tall_ww_palm_door";
     
-    //Windswept
+    // Windswept
     public static final String SHORT_CHESTNUT = "short_chestnut_door";
     public static final String SHORT_HOLLY = "short_holly_door";
     public static final String TALL_CHESTNUT = "tall_chestnut_door";
     public static final String TALL_HOLLY = "tall_holly_door";
     
-    //XP Obelisk's Additions
+    // XP Obelisk's Additions
     public static final String SHORT_SOUL_COPPER = "short_soul_copper_door";
 
     public static final String TALL_SOUL_COPPER = "tall_soul_copper_door";
