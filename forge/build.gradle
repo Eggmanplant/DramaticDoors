@@ -80,17 +80,20 @@ configurations {
 
 repositories {
 	maven { 
-	    url "https://cursemaven.com"
-        content { includeGroup "curse.maven" }
+	    	url "https://cursemaven.com"
+        	content { includeGroup "curse.maven" }
 	}
-    maven {
-        name = "tterrag maven"
-        url = "https://maven.tterrag.com/"
-    }
+    	maven {
+        	name = "tterrag maven"
+        	url = "https://maven.tterrag.com/"
+    	}
 	maven {
-	    name = "jt-dev"
-	    url = "https://maven.jt-dev.tech/releases"
+	    	name = "jt-dev"
+	    	url = "https://maven.jt-dev.tech/releases"
 	}
+	flatDir {
+        	dirs 'lib'
+    	}
 }
 
 dependencies {
@@ -100,7 +103,7 @@ dependencies {
 	implementation fg.deobf("net.potionstudios:Oh-The-Biomes-Weve-Gone-Common:1.0.0-Alpha")
     implementation fg.deobf("curse.maven:macaws-doors-378646:4649910")
     implementation fg.deobf("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_version}:slim") { transitive = false }
-    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}")
+    implementation fg.deobf("dev.engine_room.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")
     implementation fg.deobf("curse.maven:dawn-of-time-312359:5199362")
     implementation fg.deobf("curse.maven:framedblocks-441647:4793884")

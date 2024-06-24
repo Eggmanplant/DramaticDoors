@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.fizzware.dramaticdoors.DramaticDoors;
-import com.jozufozu.flywheel.core.PartialModel;
+import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import com.simibubi.create.foundation.utility.Couple;
 
 import net.minecraft.resources.ResourceLocation;

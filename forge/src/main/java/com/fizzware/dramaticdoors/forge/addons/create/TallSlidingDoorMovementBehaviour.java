@@ -36,11 +36,6 @@ import net.minecraft.world.phys.Vec3;
 public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 {
 	@Override
-	public boolean renderAsNormalBlockEntity() {
-		return true;
-	}
-
-	@Override
 	public boolean mustTickWhileDisabled() {
 		return true;
 	}
