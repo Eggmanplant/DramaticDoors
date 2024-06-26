@@ -7,6 +7,7 @@ import java.util.function.Supplier;
 
 import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DramaticDoors;
+import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
@@ -38,6 +39,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class TallWeatheringDoorBlock extends TallDoorBlock implements WeatheringCopper
 {
+	// Set up database of oxidizable and waxable doors.
     public static final ResourceLocation COPPER_DOOR_RES = new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_EC_COPPER);
     public static final ResourceLocation EXPOSED_COPPER_DOOR_RES = new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_EC_EXPOSED_COPPER);
     public static final ResourceLocation WEATHERED_COPPER_DOOR_RES = new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_EC_WEATHERED_COPPER);
@@ -59,14 +61,27 @@ public class TallWeatheringDoorBlock extends TallDoorBlock implements Weathering
     private static final List<ResourceLocation> WAXED_BLOCKS = Arrays.asList(WAXED_COPPER_DOOR_RES, WAXED_EXPOSED_COPPER_DOOR_RES, WAXED_WEATHERED_COPPER_DOOR_RES, WAXED_OXIDIZED_COPPER_DOOR_RES, WAXED_IRON_DOOR_RES, WAXED_EXPOSED_IRON_DOOR_RES, WAXED_WEATHERED_IRON_DOOR_RES, WAXED_RUSTED_IRON_DOOR_RES);
     private static final List<ResourceLocation> DEOXIDIZABLE_BLOCKS = Arrays.asList(EXPOSED_COPPER_DOOR_RES, WEATHERED_COPPER_DOOR_RES, OXIDIZED_COPPER_DOOR_RES, EXPOSED_IRON_DOOR_RES, WEATHERED_IRON_DOOR_RES, RUSTED_IRON_DOOR_RES);
     
-	private static Supplier<BiMap<Block, Block>> NEXT_BY_BLOCK = Suppliers.memoize(() -> {
-		return ImmutableBiMap.<Block, Block>builder().put(BuiltInRegistries.BLOCK.get(COPPER_DOOR_RES), BuiltInRegistries.BLOCK.get(EXPOSED_COPPER_DOOR_RES)).put(BuiltInRegistries.BLOCK.get(EXPOSED_COPPER_DOOR_RES), BuiltInRegistries.BLOCK.get(WEATHERED_COPPER_DOOR_RES)).put(BuiltInRegistries.BLOCK.get(WEATHERED_COPPER_DOOR_RES), BuiltInRegistries.BLOCK.get(OXIDIZED_COPPER_DOOR_RES))
-				.put(BuiltInRegistries.BLOCK.get(IRON_DOOR_RES), BuiltInRegistries.BLOCK.get(EXPOSED_IRON_DOOR_RES)).put(BuiltInRegistries.BLOCK.get(EXPOSED_IRON_DOOR_RES), BuiltInRegistries.BLOCK.get(WEATHERED_IRON_DOOR_RES)).put(BuiltInRegistries.BLOCK.get(WEATHERED_IRON_DOOR_RES), BuiltInRegistries.BLOCK.get(RUSTED_IRON_DOOR_RES)).build();
-	});
+	private static Supplier<BiMap<Block, Block>> NEXT_BY_BLOCK = Suppliers.memoize(() -> { return buildList().build(); });
 	private static Supplier<BiMap<Block, Block>> PREVIOUS_BY_BLOCK = Suppliers.memoize(() -> { return NEXT_BY_BLOCK.get().inverse(); });
 
+	private static ImmutableBiMap.Builder<Block, Block> buildList() {
+		ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.<Block, Block>builder();
+		if (Compats.modChecker.isModLoaded("everythingcopper")) {
+			builder.put(BuiltInRegistries.BLOCK.get(COPPER_DOOR_RES), BuiltInRegistries.BLOCK.get(EXPOSED_COPPER_DOOR_RES));
+			builder.put(BuiltInRegistries.BLOCK.get(EXPOSED_COPPER_DOOR_RES), BuiltInRegistries.BLOCK.get(WEATHERED_COPPER_DOOR_RES));
+			builder.put(BuiltInRegistries.BLOCK.get(WEATHERED_COPPER_DOOR_RES), BuiltInRegistries.BLOCK.get(OXIDIZED_COPPER_DOOR_RES));
+		}
+		if (Compats.modChecker.isModLoaded("immersive_weathering")) {
+			builder.put(BuiltInRegistries.BLOCK.get(IRON_DOOR_RES), BuiltInRegistries.BLOCK.get(EXPOSED_IRON_DOOR_RES));
+			builder.put(BuiltInRegistries.BLOCK.get(EXPOSED_IRON_DOOR_RES), BuiltInRegistries.BLOCK.get(WEATHERED_IRON_DOOR_RES));
+			builder.put(BuiltInRegistries.BLOCK.get(WEATHERED_IRON_DOOR_RES), BuiltInRegistries.BLOCK.get(RUSTED_IRON_DOOR_RES));
+		}
+		return builder;
+	}
+	
 	private final WeatheringCopper.WeatherState weatherState;
 
+	// Onto the main course.
 	public TallWeatheringDoorBlock(Block from, BlockSetType blockset, WeatherState state) {
 		super(from, blockset);
 		this.weatherState = state;

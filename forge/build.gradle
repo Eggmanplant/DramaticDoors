@@ -107,6 +107,8 @@ dependencies {
     implementation fg.deobf("curse.maven:cloth-config-348521:4633444")
     implementation fg.deobf("curse.maven:architectury-api-419699:4663010")
     implementation fg.deobf("curse.maven:pandas-extra-details-883585:5258176")
+	implementation fg.deobf("curse.maven:blueys-thingamajigs-404380:5283587")
+	implementation fg.deobf("curse.maven:sliding-doors-994764:5294850")
 }
 
 tasks.withType(JavaCompile).configureEach {

@@ -125,61 +125,32 @@ public class DDRegistry
 		}
 	}
 	
-	protected static Block createSlidingDoorBlock(Block block, BlockSetType blocksettype, boolean isTall) {
-		Block tempBlock;
-		if (isTall) {
-			tempBlock = new TallSlidingDoorBlock(block, blocksettype);
-		}
-		else {
-			throw new IllegalArgumentException("Short version of Macaw sliding doors are currently not supported.");
-			//tempBlock = new ShortSlidingDoorBlock(block, blocksettype);
-		}
-		return tempBlock;
-	}
-	
-	protected static Block createStableDoorBlock(Block block, BlockSetType blocksettype, boolean isTall) {
-		Block tempBlock;
-		if (isTall) {
-			tempBlock = new TallStableDoorBlock(block, blocksettype);
-		}
-		else {
-			throw new IllegalArgumentException("Short version of Macaw stable doors are currently not supported.");
-			//tempBlock = new ShortSlidingDoorBlock(block, blocksettype);
-		}
-		return tempBlock;
-	}
-	
+	/* Functions for creation of blocks and items. */
 	protected static Block createDoorBlock(Block block, BlockSetType blocksettype, boolean isTall) {
-		Block tempBlock;
-		if (isTall) {
-			tempBlock = new TallDoorBlock(block, blocksettype);
-		}
-		else {
-			tempBlock = new ShortDoorBlock(block, blocksettype);
-		}
-		return tempBlock;
+		return isTall ? new TallDoorBlock(block, blocksettype) : new ShortDoorBlock(block, blocksettype);
 	}
 	
 	protected static Block createDoorBlock(Properties properties, BlockSetType blocksettype, boolean isTall) {
-		Block tempBlock;
-		if (isTall) {
-			tempBlock = new TallDoorBlock(properties, blocksettype);
-		}
-		else {
-			tempBlock = new ShortDoorBlock(properties, blocksettype);
-		}
-		return tempBlock;
+		return isTall ? new TallDoorBlock(properties, blocksettype) : new ShortDoorBlock(properties, blocksettype);
 	}
 	
 	protected static Item createDoorItem(Block block, boolean isTall) {
-		Item tempItem;
-		if (isTall) {
-			tempItem = new TallDoorItem(block, PROPERTIES);
+		return isTall ? new TallDoorItem(block, PROPERTIES) : new ShortDoorItem(block, PROPERTIES);
+	}
+	
+	/* Functions for creating special doors from Macaw's Doors. */
+	protected static Block createSlidingDoorBlock(Block block, BlockSetType blocksettype, boolean isTall) {
+		if (!isTall) {
+			throw new IllegalArgumentException("Short version of Macaw sliding doors are currently not supported.");
 		}
-		else {
-			tempItem = new ShortDoorItem(block, PROPERTIES);
+		return isTall ? new TallSlidingDoorBlock(block, blocksettype) : null;
+	}
+	
+	protected static Block createStableDoorBlock(Block block, BlockSetType blocksettype, boolean isTall) {
+		if (!isTall) {
+			throw new IllegalArgumentException("Short version of Macaw stable doors are currently not supported.");
 		}
-		return tempItem;
+		return isTall ? new TallStableDoorBlock(block, blocksettype) : null;
 	}
 	
 	/* Utility functions for getting blocks by key. */
@@ -188,12 +159,7 @@ public class DDRegistry
     }
 	
 	public static Block getBlockByKey(ResourceLocation loc, Block fallback) {
-    	if (BuiltInRegistries.BLOCK.containsKey(loc)) {
-    		return BuiltInRegistries.BLOCK.get(loc);
-    	}
-    	else {
-    		return fallback; // Fallback
-    	}
+		return BuiltInRegistries.BLOCK.containsKey(loc) ? BuiltInRegistries.BLOCK.get(loc) : fallback;
     }
     
     public static Block getBlockFromResourceLocation(ResourceLocation resource) {

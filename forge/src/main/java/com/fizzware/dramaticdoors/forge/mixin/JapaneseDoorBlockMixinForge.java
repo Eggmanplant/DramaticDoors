@@ -22,7 +22,7 @@ public class JapaneseDoorBlockMixinForge
 	
 	@Inject(at = @At("TAIL"), method = "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V")
 	private void enhanceConstructor(BlockBehaviour.Properties properties, BlockSetType blocksettype, CallbackInfo callback) {
-		((JapaneseDoors)(Object)this).registerDefaultState(((JapaneseDoors) (Object) this).defaultBlockState().setValue(WATERLOGGED, false));
+		((JapaneseDoors)(Object)this).registerDefaultState(((JapaneseDoors)(Object)this).defaultBlockState().setValue(WATERLOGGED, false));
 	}
 	
 	@Inject(at = @At("TAIL"), method = "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V")
