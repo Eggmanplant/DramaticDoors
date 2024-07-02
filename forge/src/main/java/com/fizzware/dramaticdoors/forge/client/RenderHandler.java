@@ -6,7 +6,7 @@ import com.fizzware.dramaticdoors.forge.ForgeUtils;
 import com.fizzware.dramaticdoors.forge.addons.create.client.TallSlidingDoorBlockRenderer;
 import com.fizzware.dramaticdoors.forge.addons.framedblocks.client.DDFramedBlocksClient;
 import com.fizzware.dramaticdoors.forge.compat.CreateForgeCompat;
-import com.fizzware.dramaticdoors.forge.compat.ExtraDetailsForgeCompat;
+//import com.fizzware.dramaticdoors.forge.compat.ExtraDetailsForgeCompat;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -30,9 +30,9 @@ public class RenderHandler
 		if (ForgeUtils.INSTANCE.isModLoaded("create")) {
 			BlockEntityRenderers.register(CreateForgeCompat.TALL_SLIDING_DOOR_BLOCK_ENTITY, TallSlidingDoorBlockRenderer::new);
 		}
-		if (ForgeUtils.INSTANCE.isModLoaded("extra_details")) {
+		/*if (ForgeUtils.INSTANCE.isModLoaded("extra_details")) {
 			ExtraDetailsForgeCompat.registerCompat();
-		}
+		}*/
 	}
 	
     @SubscribeEvent

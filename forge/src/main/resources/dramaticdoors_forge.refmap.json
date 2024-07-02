@@ -43,9 +43,17 @@
       "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lorg/dawnoftimebuilder/block/templates/FenceGateBlockDoTB;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
       "Lnet/minecraft/world/level/block/FenceGateBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"    
     },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/LockableDoorMixin": {
+      "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lnet/rk/thingamajigs/xtrablock/LockableDoor;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V",
+      "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/rk/thingamajigs/xtrablock/LockableDoor;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
+    },
     "com/fizzware/dramaticdoors/forge/forge/mixin/JapaneseDoorBlockMixinForge": {
       "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V",
       "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
+    },
+    "com/fizzware/dramaticdoors/forge/forge/mixin/SlidingDoorMixin": {
+      "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V": "Lcom/alexander8vkhz/slidingdoors/door/Slidingdoorconfig;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V",
+      "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lcom/alexander8vkhz/slidingdoors/door/Slidingdoorconfig;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
     },
     "com/fizzware/dramaticdoors/forge/forge/mixin/DoorBlockMixin": {
       "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V": "Lnet/minecraft/world/level/block/DoorBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V",
@@ -103,7 +111,15 @@
         "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lorg/dawnoftimebuilder/block/templates/FenceGateBlockDoTB;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
         "Lnet/minecraft/world/level/block/FenceGateBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
       },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/LockableDoorMixin": {
+        "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V": "Lnet/rk/thingamajigs/xtrablock/LockableDoor;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V",
+        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/rk/thingamajigs/xtrablock/LockableDoor;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
+      },
       "com/fizzware/dramaticdoors/forge/forge/mixin/JapaneseDoorBlockMixinForge": {
+        "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V": "Lcom/alexander8vkhz/slidingdoors/door/Slidingdoorconfig;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V",
+        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lcom/alexander8vkhz/slidingdoors/door/Slidingdoorconfig;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
+      },
+      "com/fizzware/dramaticdoors/forge/forge/mixin/SlidingDoorMixin": {
         "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/properties/BlockSetType;)V",
         "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lcom/mcwdoors/kikoz/objects/JapaneseDoors;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
       },
